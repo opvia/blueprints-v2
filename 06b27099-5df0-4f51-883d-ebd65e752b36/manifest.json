@@ -25,6 +25,7 @@
     {
       "id": "24f4e646-984a-4775-a33f-7b58958ccd56",
       "type": "STEP",
+      "subType": "DATA",
       "title": "Measure the stuff",
       "source": {
         "id": "f5de1f07-1b79-4cf7-81a2-895c4d9d5faf",
@@ -34,6 +35,7 @@
     {
       "id": "cd61c599-b313-4a6f-b4d9-608ef1be5e73",
       "type": "STEP",
+      "subType": "SCRIPT",
       "title": "njdnfkdjsnf",
       "source": {
         "id": "1d05c59d-9bbd-4b12-a0f9-eccf2c1e5544",
@@ -43,6 +45,7 @@
     {
       "id": "8380d5ae-0b31-4511-b61f-cb1a8cdc02b8",
       "type": "STEP",
+      "subType": "DATA",
       "title": "multi 1",
       "source": {
         "id": "b1a71438-777f-494d-981d-f95201038e9e",
@@ -52,6 +55,7 @@
     {
       "id": "6f6d04d5-b3d1-486e-ab6e-ce6962ab6c07",
       "type": "STEP",
+      "subType": "DATA",
       "title": "multi 2",
       "source": {
         "id": "b50de729-4cb3-4bbe-a43a-5541ac9fccd7",
@@ -61,6 +65,7 @@
     {
       "id": "fd0bf4e8-b95c-4fda-aeb7-01edc6870418",
       "type": "STEP",
+      "subType": "DATA",
       "title": "multi3",
       "source": {
         "id": "5714e2bc-1468-4011-a61d-edaef7a61d55",
