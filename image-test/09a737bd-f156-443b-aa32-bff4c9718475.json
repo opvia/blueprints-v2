@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "09a737bd-f156-443b-aa32-bff4c9718475",
+  "title": "Test procedure with image",
+  "status": "DRAFT",
+  "version": null,
+  "previousVersion": null,
+  "assignees": [],
+  "tags": [],
+  "duplicatedFromEntity": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": []
+  },
+  "reviewConfig": null,
+  "collections": null,
+  "type": "PROCEDURE",
+  "runReviewConfig": null,
+  "runCollections": null,
+  "stages": [
+    {
+      "id": "f48b2a10-1fae-4c9e-9052-ddafdc252857",
+      "step": {
+        "id": "a48aa55e-5323-4fe6-b3b0-1e7a9428cadf",
+        "version": null
+      }
+    }
+  ]
+}

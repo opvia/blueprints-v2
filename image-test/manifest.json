@@ -1,0 +1,27 @@
+{
+  "id": "image-test",
+  "version": 1,
+  "name": "image test",
+  "description": "",
+  "entities": [
+    {
+      "id": "09a737bd-f156-443b-aa32-bff4c9718475",
+      "type": "PROCEDURE",
+      "title": "Test procedure with image",
+      "source": {
+        "id": "6b343318-2ff6-4e3f-9842-49f91a53ec78",
+        "version": "1"
+      }
+    },
+    {
+      "id": "a48aa55e-5323-4fe6-b3b0-1e7a9428cadf",
+      "type": "STEP",
+      "subType": "DATA",
+      "title": "Image step",
+      "source": {
+        "id": "37eb3d26-bee8-4a25-a6a0-60f665748fc2",
+        "version": "1"
+      }
+    }
+  ]
+}
