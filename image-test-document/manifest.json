@@ -1,0 +1,17 @@
+{
+  "id": "image-test-document",
+  "version": 1,
+  "name": "image test document",
+  "description": "",
+  "entities": [
+    {
+      "id": "b31bad98-3c4a-4daf-a4a5-e814034ce47b",
+      "type": "DOCUMENT",
+      "title": "Document with image",
+      "source": {
+        "id": "33a0d31b-9d84-49d7-be14-e57104bd7f70",
+        "version": "1"
+      }
+    }
+  ]
+}
