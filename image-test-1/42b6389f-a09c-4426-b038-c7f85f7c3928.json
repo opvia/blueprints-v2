@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "id": "09a737bd-f156-443b-aa32-bff4c9718475",
+  "id": "42b6389f-a09c-4426-b038-c7f85f7c3928",
   "title": "Test procedure with image",
   "status": "DRAFT",
   "version": null,
@@ -25,7 +25,7 @@
     {
       "id": "f48b2a10-1fae-4c9e-9052-ddafdc252857",
       "step": {
-        "id": "a48aa55e-5323-4fe6-b3b0-1e7a9428cadf",
+        "id": "52913fba-deeb-4ad7-9b86-02fa4897ebc3",
         "version": null
       }
     }

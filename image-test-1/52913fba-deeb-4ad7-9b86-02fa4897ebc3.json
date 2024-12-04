@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "id": "a48aa55e-5323-4fe6-b3b0-1e7a9428cadf",
-  "title": "Image step",
+  "id": "52913fba-deeb-4ad7-9b86-02fa4897ebc3",
+  "title": "Image step 1",
   "status": "DRAFT",
   "version": null,
   "previousVersion": null,
@@ -44,7 +44,7 @@
             "text": ""
           }
         ],
-        "uploadId": "9e89f3f6-aa16-4cf7-9de6-0ab30af04604"
+        "uploadId": "4ac35c1a-d4b5-4974-aaae-95358321df1d"
       },
       {
         "id": "c0b3f49b-e9ca-4059-b34a-be44055b845b",
