@@ -1,6 +1,6 @@
 {
   "id": "iso-13485-template-pack",
-  "version": 1,
+  "version": 2,
   "name": "ISO 13485 Template Pack",
   "description": "The ISO 13485 Template Pack provides a comprehensive collection of procedures, templates, and Standard Operating Procedures (SOPs) essential for achieving and maintaining compliance with ISO 13485:2016 standards. This pack is designed to streamline the development, implementation, and management of quality management systems (QMS) for medical device manufacturers and related industries.\n\n It includes clear, ready-to-use documentation covering all mandatory and recommended processes, ensuring regulatory compliance and reducing the time and effort required to establish a compliant QMS. Each template is fully customisable to align with your organisation's specific needs and includes detailed guidance on implementation.",
   "entities": [
@@ -617,6 +617,15 @@
       }
     },
     {
+      "id": "3b2282aa-69d5-45cf-a10c-6c57ce0a91b3",
+      "type": "PROCEDURE",
+      "title": "Risk Assessment Form",
+      "source": {
+        "id": "adb92bfd-95e9-4aca-8552-d42166f631b9",
+        "version": "2"
+      }
+    },
+    {
       "id": "8726ea50-044e-4d31-b5d1-e2aaee8b8600",
       "type": "STEP",
       "subType": "DATA",
@@ -1195,6 +1204,24 @@
         "id": "79623096-4657-4fd7-96b8-f05b84889763",
         "version": "2"
       }
+    },
+    {
+      "id": "5c46b83e-6a29-456f-ad45-5d15d41cd44b",
+      "type": "STEP",
+      "subType": "DATA",
+      "title": "Risk Assessment",
+      "source": {
+        "id": "c59fa628-a9b7-4110-bddf-e8889245fe94",
+        "version": "1"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "0b2bf8b9-869a-4e64-a6fd-f66f1a185464",
+      "entityId": "5c46b83e-6a29-456f-ad45-5d15d41cd44b",
+      "filename": "Screen Shot 2024-11-11 at 12.24.56 PM.png",
+      "contentType": "image/png"
     }
   ]
 }
