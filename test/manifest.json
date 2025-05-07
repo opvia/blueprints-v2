@@ -1,0 +1,61 @@
+{
+  "id": "test",
+  "version": 1,
+  "name": "test",
+  "description": "",
+  "entities": [
+    {
+      "id": "20ce535e-d48a-48b5-a091-70d65772251e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Main template",
+      "icon": "document",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "3a855d09-5cc5-445b-bd81-e6561074b842",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "document"
+    },
+    {
+      "id": "914ad931-5c2f-445f-a204-fac7b0f3645a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "submission temp",
+      "icon": "cog",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "b65fa2e5-d9de-4e6f-8b90-bc62feb19909",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Custom type",
+      "icon": "cog"
+    },
+    {
+      "id": "2099ff0b-d100-4186-8e96-4646cd985c99",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Neal the dev's script",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b6bf51c9-133c-436f-a7be-838c8d278883",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code"
+    }
+  ],
+  "assets": [
+    {
+      "id": "b6f74379-a251-4c49-814a-d54bdfde6864",
+      "entityId": "20ce535e-d48a-48b5-a091-70d65772251e",
+      "filename": "cells.jpg",
+      "contentType": "image/jpeg"
+    }
+  ]
+}
