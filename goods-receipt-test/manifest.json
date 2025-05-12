@@ -1,0 +1,23 @@
+{
+  "id": "goods-receipt-test",
+  "version": 1,
+  "name": "Goods Receipt - Test",
+  "description": "",
+  "entities": [
+    {
+      "id": "45c504ba-e7e2-40ab-b9f8-3d693025c8a6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Goods Receipt Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QMS Form",
+      "icon": "application"
+    }
+  ]
+}
