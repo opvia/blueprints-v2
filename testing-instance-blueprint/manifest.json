@@ -1,0 +1,23 @@
+{
+  "id": "testing-instance-blueprint",
+  "version": 1,
+  "name": "Testing instance Blueprint",
+  "description": "",
+  "entities": [
+    {
+      "id": "22ef349d-2c37-4d69-beda-05174e485989",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "My instance",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4344fda0-bcbd-4c33-b8d8-e09643b1d113",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "document"
+    }
+  ]
+}
