@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "36d2c35d-c943-4585-accb-095312ac4c45",
+  "title": "Instance 1",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0",
+    "templateIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Text": {
+      "id": "a316a55d-d50f-4114-ac0d-e87d3ffb3b19",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "User": {
+      "id": "fbcb1699-f81b-4533-ab7b-5b2ba3343289",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Number": {
+      "id": "5d1d3f6e-bbc9-4f7e-89f5-c9de088ddf7b",
+      "type": "NUMBER",
+      "value": null,
+      "config": {},
+      "dataType": "NUMBER"
+    },
+    "Reference": {
+      "id": "a2ef9de5-cb06-4bed-9ef8-9bef4e7c5cb0",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Submission": {
+      "id": "045eaaca-9e4b-46b9-92cd-cbfa34c688b1",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": null
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "0d2d306c-83b7-4418-b5f3-cf8f401d1db9"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "9ef22ac9-d795-4b95-b572-abddd4980784",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "551c8f92-13d1-475a-925f-e7832c6c1465",
+          "type": "field",
+          "fieldId": "fbcb1699-f81b-4533-ab7b-5b2ba3343289",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6cc445b2-01e6-4f81-bf07-93f35d6ad08a",
+          "type": "field",
+          "fieldId": "a2ef9de5-cb06-4bed-9ef8-9bef4e7c5cb0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9703099d-bccc-4c89-8ef6-a4308465506b",
+          "type": "field",
+          "fieldId": "5d1d3f6e-bbc9-4f7e-89f5-c9de088ddf7b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ddb8f554-96ce-4a49-9243-063d1cdec725",
+          "type": "img",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "uploadId": "56e682fd-9828-4b92-9da4-1d28b8dc9661"
+        },
+        {
+          "id": "1c9b8af3-3cc1-4c66-8e39-e793ac580761",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6ab70106-df45-4665-b855-a8669d21bc9b",
+          "type": "p",
+          "children": [
+            {
+              "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+            }
+          ]
+        },
+        {
+          "id": "de579421-08fa-42fa-aef2-e308c09b0286",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0026aa2b-8b1b-408a-9a4a-72cc1420f7d4",
+          "type": "p",
+          "children": [
+            {
+              "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+            }
+          ]
+        },
+        {
+          "id": "3071d3a1-4c7a-44ea-9167-9ba3db6fc0b4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "68664e55-d905-4344-874b-ac510120ee7a",
+          "type": "p",
+          "children": [
+            {
+              "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+            }
+          ]
+        },
+        {
+          "id": "1f661574-9136-4142-9709-b4d21e5aad15",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e9d2c202-7e69-43ea-95ea-e97202b97979",
+          "type": "p",
+          "children": [
+            {
+              "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+            }
+          ]
+        },
+        {
+          "id": "5d706e49-05a8-4729-a162-b691d6cc274e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "23a97a1d-ed98-465b-ac11-1718d3eb0ab2",
+          "type": "p",
+          "children": [
+            {
+              "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

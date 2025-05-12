@@ -1,0 +1,31 @@
+{
+  "id": "instance-blueprint",
+  "version": 1,
+  "name": "Instance blueprint",
+  "description": "",
+  "entities": [
+    {
+      "id": "36d2c35d-c943-4585-accb-095312ac4c45",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Instance 1",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0d2d306c-83b7-4418-b5f3-cf8f401d1db9",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "document"
+    }
+  ],
+  "assets": [
+    {
+      "id": "56e682fd-9828-4b92-9da4-1d28b8dc9661",
+      "entityId": "36d2c35d-c943-4585-accb-095312ac4c45",
+      "filename": "cells.jpg",
+      "contentType": "image/jpeg"
+    }
+  ]
+}
