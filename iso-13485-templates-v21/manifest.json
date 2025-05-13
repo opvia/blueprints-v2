@@ -1,0 +1,198 @@
+{
+  "id": "iso-13485-templates-v21",
+  "version": 1,
+  "name": "ISO 13485 Templates (V2.1)",
+  "description": "",
+  "entities": [
+    {
+      "id": "c28eeba2-b4eb-4ff9-a944-1834fcab54b2",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Testing and Quarantine of Incoming Goods",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QMS Form",
+      "icon": "application"
+    },
+    {
+      "id": "ba49019f-c0e1-4697-b41b-67fd4c3daf94",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Toxicological Risk Assessment",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "4189ed20-f48a-4bcc-8724-aeab6b7ba88a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Purchasing Request Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "2d91968a-8e5a-4029-9cac-0413e32a18ee",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Non-Conformance Report",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "b9435744-7467-416e-9e24-dfce3de2c9e8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cleaning Procedure",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "6938b4e6-60fb-48f9-b31a-870512fc8519",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Customer Complaints Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "039ae5ca-a658-471f-aeb1-51fc5cb24e4a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Fire Incident Reporting Form",
+      "icon": "application",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "45c504ba-e7e2-40ab-b9f8-3d693025c8a6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Goods Receipt Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "f05ef818-e2bf-4e1e-834c-6fe24433c082",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Deviation / Incident Reporting Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "0ce18b37-d78c-487a-80c9-b9b22eb0dc1f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment Calibration Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "ad8cb79c-9c81-43ef-b4c8-0be737fbd5e3",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment Maintenance Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "5b582f89-6c61-4aa5-a2d0-acc003f3e6bb",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment Installation Procedure",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "95a1a8ce-8404-4195-8bf6-5993248388f6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "8659c974-86f3-4bca-8513-0b0b575da3b2",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Internal Audit Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a7f93455-49ba-4e16-ae6e-98df5ff80026",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supplier Performance Evaluation",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "3df4653c-f590-48dc-acd8-56040671346a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Goods Release Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "5ed22ce7-e633-44f2-b024-ca858dda3e74",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment Registration Template",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "01497496-a87e-498d-bff4-d7542bd30b5c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment",
+      "icon": "application"
+    },
+    {
+      "id": "1c530422-dfdc-4255-ae9c-f37ee1767889",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Verification of Effectiveness Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "6f5b9e9a-152a-4b02-af3c-829cb1478f68",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Risk Assessment Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a5a9a965-a0df-4be1-bccd-e1fa928aa5ed",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control Form",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "f103e467-076d-4b7a-abf1-146309eacace",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Periodic Review of the Quality Systems",
+      "icon": "application",
+      "sourceVersion": "2"
+    }
+  ],
+  "assets": [
+    {
+      "id": "0b2bf8b9-869a-4e64-a6fd-f66f1a185464",
+      "entityId": "6f5b9e9a-152a-4b02-af3c-829cb1478f68",
+      "filename": "Screen Shot 2024-11-11 at 12.24.56 PM.png",
+      "contentType": "image/png"
+    }
+  ]
+}

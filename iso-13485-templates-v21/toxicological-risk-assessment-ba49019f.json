@@ -1,0 +1,502 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ba49019f-c0e1-4697-b41b-67fd4c3daf94",
+  "title": "Toxicological Risk Assessment",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Attachments": {
+      "id": "81cda885-ede1-4618-9c16-d4d44f2d6871",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Chemical Name": {
+      "id": "555c83e8-fc20-41f8-904a-16a87e76d2e9",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "pH of Solution": {
+      "id": "b5e95d8e-71cd-4273-b74c-41e87cc5f77f",
+      "type": "NUMBER",
+      "value": null,
+      "config": {},
+      "dataType": "NUMBER"
+    },
+    "Exposure Scenario": {
+      "id": "49d97544-a25a-4052-a140-2ca7a0df1348",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Risk Quantified By": {
+      "id": "b0c993b4-7cf1-44bb-b5de-25bfa5712c24",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Risk Quantified on": {
+      "id": "ea1f836b-ade1-4269-b09d-f17f02c2a252",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Frequency of use/day": {
+      "id": "684c0315-3792-4881-b4f5-972eb3fdab15",
+      "type": "NUMBER",
+      "value": null,
+      "config": {},
+      "dataType": "NUMBER"
+    },
+    "Operational Conditions": {
+      "id": "023be821-494a-466e-9305-b18c3cbd7e0e",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Waste management measures": {
+      "id": "c9a0a26b-cb50-4acd-b322-45c8cc512f64",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Risk Management - Environment": {
+      "id": "fb0fafdf-dde6-456c-aab5-c0392357ce5a",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Risk Management - Human Health": {
+      "id": "6d23c633-4ac2-46ec-ab82-c83978939857",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Toxicological Risk Assessment SOP": {
+      "id": "72dd5b5b-621e-4460-b58f-f40ee555f73c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Concentration of Substance in preparation or article": {
+      "id": "54e38ee0-3bfc-4811-ae3e-fffefa602cca",
+      "type": "NUMBER",
+      "value": null,
+      "config": {},
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "254d26a8-4945-49e0-b58d-191ae70b7d8b",
+          "type": "p",
+          "children": [
+            {
+              "text": "Reference Toxicological Risk Assessment SOP if Applicable:"
+            }
+          ]
+        },
+        {
+          "id": "cc13dad0-0c78-4b9c-86a4-34f44be4d56c",
+          "type": "field",
+          "fieldId": "72dd5b5b-621e-4460-b58f-f40ee555f73c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e1daaa23-b11e-4dd7-8dbb-1671a291ee77",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b75293be-69bf-4b88-8317-e0b5c9f21afa",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Article Details"
+            }
+          ]
+        },
+        {
+          "id": "874ac5fb-9133-4320-be6e-a18350c5b354",
+          "type": "field",
+          "fieldId": "555c83e8-fc20-41f8-904a-16a87e76d2e9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cf534462-b63e-4af0-a1e5-b87f127ba388",
+          "type": "field",
+          "fieldId": "49d97544-a25a-4052-a140-2ca7a0df1348",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b177e4fc-52a4-4a6e-94d1-9ef0b4e77810",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "507f050a-643d-4640-9fdc-f5f782b597ef",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Operational Conditions of Use:"
+            }
+          ]
+        },
+        {
+          "id": "72fe4303-d895-4570-8dca-0aac5499ac06",
+          "type": "field",
+          "fieldId": "684c0315-3792-4881-b4f5-972eb3fdab15",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "599dbf18-ea28-4333-a42b-ba45ae67e07b",
+          "type": "field",
+          "fieldId": "54e38ee0-3bfc-4811-ae3e-fffefa602cca",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "208db469-c4a5-4dfd-9e41-4c62f91c8571",
+          "type": "field",
+          "fieldId": "b5e95d8e-71cd-4273-b74c-41e87cc5f77f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "33521566-0d2f-46ab-bf06-53556780b552",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5b0aef96-0c73-47aa-b79e-a257a605950c",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Other relevant operational conditions of use:"
+            }
+          ]
+        },
+        {
+          "id": "b442a8f6-dfbd-4d0b-99fb-cbe9f96ada5e",
+          "type": "p",
+          "children": [
+            {
+              "text": "Add extra details here about operational conditions:"
+            }
+          ]
+        },
+        {
+          "id": "0e9b1e59-4258-4725-91e0-ec4143256baf",
+          "type": "p",
+          "children": [
+            {
+              "text": "Examples:"
+            }
+          ]
+        },
+        {
+          "id": "347d7ac1-7866-49ac-ab09-1a34f76e251a",
+          "type": "p",
+          "children": [
+            {
+              "text": "- Temperature, mechanical energy output"
+            }
+          ]
+        },
+        {
+          "id": "45da4997-5313-4e85-8c34-486a784db5aa",
+          "type": "p",
+          "children": [
+            {
+              "text": "- Capacity of receiving environment (e.g. ventilation rate, environment, water flow)"
+            }
+          ]
+        },
+        {
+          "id": "f148e364-ff2b-4c94-b2c1-8b933084033a",
+          "type": "p",
+          "children": [
+            {
+              "text": "- Wear and tear with regard to article (e.g. Service life-time of articles)"
+            }
+          ]
+        },
+        {
+          "id": "2d8b6d74-a9b4-4a52-9248-1329d0882edc",
+          "type": "field",
+          "fieldId": "023be821-494a-466e-9305-b18c3cbd7e0e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5ea8ce12-7405-4e24-83e2-ed9e60d367b5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "65c7e767-3d2b-4f42-bceb-8b1e6841b304",
+          "type": "field",
+          "fieldId": "b0c993b4-7cf1-44bb-b5de-25bfa5712c24",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "872fca34-fe0a-4a4f-82ca-934a2eb396de",
+          "type": "field",
+          "fieldId": "ea1f836b-ade1-4269-b09d-f17f02c2a252",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a5724960-fe52-44b0-b89a-bb9616953516",
+          "type": "field",
+          "fieldId": "81cda885-ede1-4618-9c16-d4d44f2d6871",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f1394e6e-4c88-49dc-81de-6fd5cfe9714d",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Risk management relating to human health (workers or consumers)"
+            }
+          ]
+        },
+        {
+          "id": "30e684d5-4152-47cc-a11c-6b56ff68c359",
+          "type": "p",
+          "children": [
+            {
+              "text": "Type and effectiveness of single options or combination of options on exposure."
+            }
+          ]
+        },
+        {
+          "id": "db0c7abe-5886-4edf-932b-4731eb9f1a7a",
+          "type": "p",
+          "children": [
+            {
+              "text": "- Specify oral, inhalation and dermal routes"
+            }
+          ]
+        },
+        {
+          "id": "e2a9ae2a-6145-4ecb-a7c1-6209f60616fd",
+          "type": "field",
+          "fieldId": "6d23c633-4ac2-46ec-ab82-c83978939857",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c5b728fe-5899-4939-bf6c-815dab05c4c6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "420a06f1-d7cd-4e7f-9e24-45bff9a692e7",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Risk management relating to the environment"
+            }
+          ]
+        },
+        {
+          "id": "2fe9ab4f-f61b-42d5-b4a5-9f34ab7a060a",
+          "type": "p",
+          "children": [
+            {
+              "text": "Type and effectiveness of single options or combination of options"
+            }
+          ]
+        },
+        {
+          "id": "7cbf1a72-3d74-48ba-aced-1fc9db801b88",
+          "type": "p",
+          "children": [
+            {
+              "text": " - Specify for waste gases, waste water, protection of the operating environment and natural resources (e.g. soil, rivers)"
+            }
+          ]
+        },
+        {
+          "id": "b3439379-c402-4bb7-b988-13a182e63470",
+          "type": "field",
+          "fieldId": "fb0fafdf-dde6-456c-aab5-c0392357ce5a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ceacb65a-e59e-43e8-bd9e-cf91d2f460e5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fc885d4b-be1b-4316-8a41-ae5f10434f3f",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Waste management measures"
+            }
+          ]
+        },
+        {
+          "id": "47d4cf34-0c87-4e59-9d86-0eca6ab9a42f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Include details at different cycle stages of the substance"
+            }
+          ]
+        },
+        {
+          "id": "6c8711a4-8fb2-4253-8534-fa591031f50f",
+          "type": "p",
+          "children": [
+            {
+              "text": "- Preparation and use of the article, as well as disposal of the products after use of the article"
+            }
+          ]
+        },
+        {
+          "id": "3ea6a2f5-d7f4-41b7-af08-75e8c0436d34",
+          "type": "field",
+          "fieldId": "c9a0a26b-cb50-4acd-b322-45c8cc512f64",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f277bf53-ccd1-4516-8846-a67fa25ddc1b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2e0ffa16-0229-4287-9c42-c08ecfedde38",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

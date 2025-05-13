@@ -1,0 +1,732 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a5a9a965-a0df-4be1-bccd-e1fa928aa5ed",
+  "title": "Change Control Form",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Owner": {
+      "id": "a1a2379b-9bd7-44f5-9389-ecd3fba9c48d",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Tasks": {
+      "id": "3f63cdd7-d450-4e31-aa94-cdee6d9592a9",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Comments": {
+      "id": "becd35de-63a9-4c65-b159-1ffa3b659e26",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Due date": {
+      "id": "6127f8cc-361c-44f1-b00f-1763fdd8a586",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Attachments": {
+      "id": "1719fefe-afdc-4551-8211-8ea7f3adc6b5",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Date Closed": {
+      "id": "905e8eec-0348-4ea0-9edb-63332d6824f9",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Date raised": {
+      "id": "65181c2e-f9e1-4b79-b4a0-32eb8d2fc153",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "QA Sign off": {
+      "id": "c76fe86c-dfee-42e5-9ec2-28073cde5d9a",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "(4) Closed By": {
+      "id": "e976d45c-6ecd-4c75-88ed-d3981a9ccfb3",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Date of Check": {
+      "id": "55dfbf32-22f7-48c8-805f-1cb0c1636c2a",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    },
+    "Justification": {
+      "id": "3a8e6dce-d75c-436f-a9d2-bda4282cf367",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "SOPs to Change": {
+      "id": "b0db5054-040c-4521-abff-9453387ab9cc",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "(1) Completed By": {
+      "id": "3a10f884-7827-49dc-ac06-5c174074cb58",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "(2) Completed By": {
+      "id": "fd1384cb-38f2-4d2e-8906-1e6fb3c83913",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "(3) Completed By": {
+      "id": "9efe97e0-0efe-48c7-8b3d-72504a56a514",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "If Yes, specify:": {
+      "id": "bb88ecaf-caf3-4e46-97e3-97ba48a83927",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Impact Assessment": {
+      "id": "e9976288-b773-4fbc-9498-b1206b60b640",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Tasks Assigned To": {
+      "id": "9cb01b42-c45e-41d2-af91-e1c2489098a9",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Major/Minor change": {
+      "id": "5f72eb50-b96e-4c78-84c2-baf05c39cb07",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Major",
+          "Minor"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Implementation Plan": {
+      "id": "32147401-b068-44b1-aa0f-6e198807bc04",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Summary of Checked Actions": {
+      "id": "a1bd69d9-0f6a-4a60-a960-01c73b972488",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Action or Implementation Task": {
+      "id": "cc81b4b7-a9da-4467-98ef-a171d39e3c00",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Action",
+          "Implementation"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Any follow up actions needed?": {
+      "id": "f251e78f-027a-44fd-acb4-0e261ad4a446",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Detailed Description of Change": {
+      "id": "610bf358-69ae-4421-9acd-4a4a1b48eaf2",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Title (short description of change for reference)": {
+      "id": "c99c9ab0-a113-43db-bba0-b70550854306",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "33f738fd-feb2-4c40-891b-1fc925a0452f",
+          "type": "field",
+          "fieldId": "5f72eb50-b96e-4c78-84c2-baf05c39cb07",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "955a3696-4782-44b6-a49f-3865e676438d",
+          "type": "field",
+          "fieldId": "a1a2379b-9bd7-44f5-9389-ecd3fba9c48d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8515b9e9-e2a5-4c3f-a157-5d4fdee86b69",
+          "type": "task",
+          "children": [
+            {
+              "text": "Add the change control owner as an Assignee, via the info tab on the right. "
+            }
+          ]
+        },
+        {
+          "id": "a4ab00b2-ec4e-4fa2-9786-6c57b22e013a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0cb965be-3dec-427c-abde-7a2694223e03",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Give a short description of the change for reference:"
+            }
+          ]
+        },
+        {
+          "id": "391bb7c1-195f-4819-9415-f6f6fc9a7d41",
+          "type": "field",
+          "fieldId": "c99c9ab0-a113-43db-bba0-b70550854306",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d77e4086-f5db-4bbc-ae6d-e7516dc5ee02",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b9ade154-29bf-4ed6-b494-4812259158f9",
+          "type": "field",
+          "fieldId": "b0db5054-040c-4521-abff-9453387ab9cc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f57c77ae-0ada-4cc1-94e3-f7f13991c67a",
+          "type": "field",
+          "fieldId": "65181c2e-f9e1-4b79-b4a0-32eb8d2fc153",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "350c36c8-b91d-48b8-9d1f-99e496e0fbb9",
+          "type": "field",
+          "fieldId": "6127f8cc-361c-44f1-b00f-1763fdd8a586",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8c834232-a9ca-44c2-8914-5488a591eda9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d0109010-966e-4749-8b49-f263a294d5b3",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Change Details:"
+            }
+          ]
+        },
+        {
+          "id": "8b73284c-8ac4-47af-a777-78719a1052b5",
+          "type": "p",
+          "children": [
+            {
+              "text": "Detail the change being made. Include the justification and the impact assessment. "
+            }
+          ]
+        },
+        {
+          "id": "f5f0608a-0fbf-4f48-a059-bc3bec9f46a0",
+          "type": "field",
+          "fieldId": "610bf358-69ae-4421-9acd-4a4a1b48eaf2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0d2f930e-a7c5-47ff-9349-8ae90835d4ad",
+          "type": "field",
+          "fieldId": "3a8e6dce-d75c-436f-a9d2-bda4282cf367",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "96594f96-3a6a-41bb-af57-097c9d40d72c",
+          "type": "field",
+          "fieldId": "e9976288-b773-4fbc-9498-b1206b60b640",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "06393a9f-5c95-478c-90c3-90016de25585",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "db82cc76-aa8e-4ca1-a380-e72df3310813",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Implementation Plan:"
+            }
+          ]
+        },
+        {
+          "id": "f9ac0707-e711-4a73-b275-affd2365a067",
+          "type": "field",
+          "fieldId": "32147401-b068-44b1-aa0f-6e198807bc04",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "20ec1746-81d7-4bd0-a997-5c7b71a645fe",
+          "type": "field",
+          "fieldId": "3f63cdd7-d450-4e31-aa94-cdee6d9592a9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4c7a4e07-876d-4f7e-b542-ab493a227ea6",
+          "type": "field",
+          "fieldId": "cc81b4b7-a9da-4467-98ef-a171d39e3c00",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7e4962d4-7af8-4d00-8b77-f60507a63b93",
+          "type": "field",
+          "fieldId": "9cb01b42-c45e-41d2-af91-e1c2489098a9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1805e700-efb0-484e-b081-1c3a3cb06877",
+          "type": "task",
+          "children": [
+            {
+              "text": "Also add task assignees as assignees in the info tab on the right hand side."
+            }
+          ]
+        },
+        {
+          "id": "5f22a902-7a94-4738-8205-5d7590988f87",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a02f821f-55e1-4eab-9df8-07e03f74fe36",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Add any additional comments or attach necessary files below:"
+            }
+          ]
+        },
+        {
+          "id": "7fb085bf-2c58-4698-8eae-9ba553ef434d",
+          "type": "field",
+          "fieldId": "becd35de-63a9-4c65-b159-1ffa3b659e26",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "aa5f2da7-bd9b-40ca-bc04-034773fbc02b",
+          "type": "field",
+          "fieldId": "1719fefe-afdc-4551-8211-8ea7f3adc6b5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d5547606-3b37-454b-8b03-347dc0a5f7be",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "36c6abb6-b258-4370-80ef-ab4fd9fcef1b",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "bold": true,
+              "text": "1) Action Items Completed?"
+            }
+          ]
+        },
+        {
+          "id": "d9a4ea03-bd54-4bc2-8970-cb217d31f2fa",
+          "type": "field",
+          "fieldId": "3a10f884-7827-49dc-ac06-5c174074cb58",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "63f90a51-2e13-47bb-8263-3309cfae113b",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "38e52902-13b2-4eb0-bc70-e8c2fa58b85d",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "bold": true,
+              "text": "2) Documents Published?"
+            }
+          ]
+        },
+        {
+          "id": "75c8078e-924c-494b-81f7-392208e2e6e4",
+          "type": "field",
+          "fieldId": "fd1384cb-38f2-4d2e-8906-1e6fb3c83913",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1ee930cd-b705-466d-a8f5-3951a6c651b3",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2e56dd71-7eb1-49e7-9648-432ea09ab2a5",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "bold": true,
+              "text": "3) Training Assigned?"
+            }
+          ]
+        },
+        {
+          "id": "c87fe0e5-d2e0-44fb-be91-1bfaa79de1ab",
+          "type": "field",
+          "fieldId": "9efe97e0-0efe-48c7-8b3d-72504a56a514",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0d35e9b6-c8bc-44d5-aac7-84ae2f662ce5",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0c156c44-7940-4202-b227-df3785be5ea7",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "bold": true,
+              "text": "4) Change Closed?"
+            }
+          ]
+        },
+        {
+          "id": "1989a1e3-5828-4d0a-954a-341fa5c32f0f",
+          "type": "field",
+          "fieldId": "a1bd69d9-0f6a-4a60-a960-01c73b972488",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "52030989-19cd-45cf-b5ea-bc2cafc3e04e",
+          "type": "field",
+          "fieldId": "e976d45c-6ecd-4c75-88ed-d3981a9ccfb3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bd291d77-c226-4e05-9612-27f0f376eff8",
+          "type": "field",
+          "fieldId": "905e8eec-0348-4ea0-9edb-63332d6824f9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9adc6881-3be6-44af-a1e2-c2493262fe7c",
+          "type": "field",
+          "fieldId": "c76fe86c-dfee-42e5-9ec2-28073cde5d9a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "84ef995f-a415-4504-8f92-66ffd923b521",
+          "type": "field",
+          "fieldId": "55dfbf32-22f7-48c8-805f-1cb0c1636c2a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "863fb946-cc6a-422e-818b-309e457157a3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b7ffe2f8-1a15-40d9-a40f-438eb753f48a",
+          "type": "field",
+          "fieldId": "f251e78f-027a-44fd-acb4-0e261ad4a446",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e6bb42e3-369e-44c3-8c33-f4661c478c7a",
+          "type": "field",
+          "fieldId": "bb88ecaf-caf3-4e46-97e3-97ba48a83927",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ed4a9c9e-55cd-4dcb-9a82-1882d448efbe",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ade23d7b-c92e-403d-bf56-aa73bbfd8f02",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "computedTitle": "CC - $TEMPLATE_INDEX - @c99c9ab0-a113-43db-bba0-b70550854306 "
+  }
+}

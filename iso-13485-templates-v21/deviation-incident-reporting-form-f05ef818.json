@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f05ef818-e2bf-4e1e-834c-6fe24433c082",
+  "title": "Deviation / Incident Reporting Form",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "34a41429-65e6-49f4-a7b4-b193a267b6f8",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Severity": {
+      "id": "9420de21-5a6d-4edf-803c-ed9e896c2216",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Department": {
+      "id": "edac2433-4380-4541-84fa-cbfaa4f99e95",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Attachments": {
+      "id": "c35ee978-4402-4874-bc92-7132cf33d5be",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Description": {
+      "id": "63649314-56b2-4da0-acf2-bf0ec01f8639",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Reported By": {
+      "id": "eaa6490f-b364-49c1-baf3-e3882f7e3512",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Actions taken": {
+      "id": "7e176009-dac0-4e1f-84bc-53dda90aa86f",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Type of Incident": {
+      "id": "eb8c6a63-9f18-4dc3-ab00-1c69ca042abd",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Employees Involved": {
+      "id": "6f070c08-9fd0-4508-9e8b-27e297940857",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Affected Departments": {
+      "id": "faf7e199-3f3c-4b17-8adc-816c3fa4fe2f",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Location of Incident": {
+      "id": "8decc891-d9b4-4252-a7a7-2ad2f60d8abc",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Date and Time of Incident": {
+      "id": "fc28bc4b-636b-4d7a-9876-237c34735ddf",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "c46d3deb-9f73-4945-9206-7983ba4064f4",
+          "type": "field",
+          "fieldId": "fc28bc4b-636b-4d7a-9876-237c34735ddf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f67a47f3-88cf-4194-8da1-bcc64c7d08ba",
+          "type": "field",
+          "fieldId": "8decc891-d9b4-4252-a7a7-2ad2f60d8abc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "31147f7f-9977-414c-aa2f-32d4f66df37c",
+          "type": "field",
+          "fieldId": "edac2433-4380-4541-84fa-cbfaa4f99e95",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f630aca1-6b29-496e-8102-f2298a40e16b",
+          "type": "field",
+          "fieldId": "eb8c6a63-9f18-4dc3-ab00-1c69ca042abd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c3f20a86-878d-42d9-af14-d80f14de79d6",
+          "type": "field",
+          "fieldId": "9420de21-5a6d-4edf-803c-ed9e896c2216",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "262192f1-83df-4d54-b836-59b1750e23cb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cd395f6d-7bff-4ba4-80a0-7d5ac1b24873",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Provide description of the Incident, people involved:"
+            }
+          ]
+        },
+        {
+          "id": "7e395e61-7c48-41ff-9fe6-8874661042cb",
+          "type": "field",
+          "fieldId": "63649314-56b2-4da0-acf2-bf0ec01f8639",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fc088632-9762-477c-b36c-ed8a797cb45c",
+          "type": "field",
+          "fieldId": "6f070c08-9fd0-4508-9e8b-27e297940857",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f067333c-8cd2-4dae-bc7c-b9b16a07b658",
+          "type": "field",
+          "fieldId": "faf7e199-3f3c-4b17-8adc-816c3fa4fe2f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "80fb9739-9d6c-4da7-b179-6bad5b4b79cf",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ff31f3cb-9fab-4ac5-9cf4-800e6ddeaafb",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Describe the Immediate Actions taken after this incident occurred:"
+            }
+          ]
+        },
+        {
+          "id": "6c996c38-a287-4491-83b0-8aa245f5aeb6",
+          "type": "field",
+          "fieldId": "eaa6490f-b364-49c1-baf3-e3882f7e3512",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6aa189d7-356a-4f0b-9d9f-a97d8ccd77ee",
+          "type": "field",
+          "fieldId": "7e176009-dac0-4e1f-84bc-53dda90aa86f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1330fce3-d97a-4d1c-be51-6c2f4fef4c05",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "177c944c-b358-4ba7-bcd7-a75cc7d26f0c",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Upload any Attachments / Images below:"
+            }
+          ]
+        },
+        {
+          "id": "dfc0716e-7833-413a-b231-24d3c05a1a97",
+          "type": "field",
+          "fieldId": "c35ee978-4402-4874-bc92-7132cf33d5be",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7c6cc361-2c78-4508-8643-c857f49f762a",
+          "type": "field",
+          "fieldId": "34a41429-65e6-49f4-a7b4-b193a267b6f8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5bb19cf0-8381-47a4-9cb5-2587244cf2c9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

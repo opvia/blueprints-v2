@@ -1,0 +1,531 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f103e467-076d-4b7a-abf1-146309eacace",
+  "title": "Periodic Review of the Quality Systems",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Date": {
+      "id": "f61e6d99-51e3-4176-a785-447a319774ed",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Scope": {
+      "id": "df048811-acb4-41f5-810e-0bd8f1a289a1",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Reviewer": {
+      "id": "a516cf13-0b7f-408d-bd23-4865561295dc",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Severity": {
+      "id": "7519a7b5-a2bf-4f6d-97fc-39dd77d9d2a3",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Closed By": {
+      "id": "b94d51e1-4f47-4f58-93a3-6dd530cf4c51",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Root Cause": {
+      "id": "96f3b588-70cb-469e-891d-11bd8c4f32fc",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Attachments": {
+      "id": "2d7f1785-f538-47ff-85d8-871e81051d31",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Requirements": {
+      "id": "de6eb9fe-e6be-4a7d-8c67-6abe6f3b2c78",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "CAPAs Created": {
+      "id": "2e6b3afc-899b-4579-b3df-7972fc71fea9",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Review Period": {
+      "id": "cc1c65c2-6755-4b21-b271-8e37b39ab577",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Non-Conformity": {
+      "id": "bb9f12a3-8eef-407b-8975-a9885acd37df",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Actions to take": {
+      "id": "359434cc-b239-4804-bdb1-4be350c456f7",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Next Review Date": {
+      "id": "63102c16-36c8-4635-8804-0ede3953932e",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Compliance Status": {
+      "id": "41f4d6e9-0f77-4be3-8546-dd0b17aa779d",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Compliant",
+          "Non-compliant"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "System being reviewed": {
+      "id": "03dc5e60-2143-49a1-ad47-69823ee8a1ec",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Evidence/Documentation": {
+      "id": "5eaba489-f6fb-48f9-bf91-7b9341a35b59",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Comments / Observations": {
+      "id": "68ca43f4-4aad-4892-97f9-bd1030a7f1fe",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Summary of Review and Findings": {
+      "id": "6059b1d7-1ea1-48f4-a5fd-805fcb59cd07",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Standard being Reviewed (Reference SOP)": {
+      "id": "e259cba0-0015-44e3-bb41-b0434cab94e8",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "ff6a27ba-5582-4d5a-af6b-e7296d5f83a1",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Review Information:"
+            }
+          ]
+        },
+        {
+          "id": "090f30c0-7d1f-4e7c-8bfa-2aabb2e0ca31",
+          "type": "field",
+          "fieldId": "03dc5e60-2143-49a1-ad47-69823ee8a1ec",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d1a3ff9e-6bfd-4316-bd5a-380b32c0cd92",
+          "type": "field",
+          "fieldId": "df048811-acb4-41f5-810e-0bd8f1a289a1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "38e82321-f3f3-47b9-8925-1f068484a172",
+          "type": "field",
+          "fieldId": "cc1c65c2-6755-4b21-b271-8e37b39ab577",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9a6445ae-4b14-4be9-9269-dff7310a673d",
+          "type": "field",
+          "fieldId": "e259cba0-0015-44e3-bb41-b0434cab94e8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7df37dfa-8715-436f-bed2-41d8b0b8a622",
+          "type": "field",
+          "fieldId": "a516cf13-0b7f-408d-bd23-4865561295dc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c2447554-83ff-4a70-aa98-1f11b64a93c5",
+          "type": "field",
+          "fieldId": "f61e6d99-51e3-4176-a785-447a319774ed",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9c4b2520-2bc7-4588-9657-f396c8c7c45a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "da468cb0-a707-401d-b58d-71d563d67f01",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Review Requirements and Results"
+            }
+          ]
+        },
+        {
+          "id": "05bf6c59-148d-4e3e-979e-59a07f2908ea",
+          "type": "field",
+          "fieldId": "de6eb9fe-e6be-4a7d-8c67-6abe6f3b2c78",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "106fdd76-24e2-484b-bf2c-cb7fcbcaa076",
+          "type": "field",
+          "fieldId": "41f4d6e9-0f77-4be3-8546-dd0b17aa779d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c0bedffe-3f13-4bfd-bfeb-fd624636888e",
+          "type": "field",
+          "fieldId": "5eaba489-f6fb-48f9-bf91-7b9341a35b59",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c2f64a52-7873-4676-a770-94faa9586562",
+          "type": "field",
+          "fieldId": "68ca43f4-4aad-4892-97f9-bd1030a7f1fe",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "43b79338-329b-494f-84ce-59a3141b0388",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1cb9d17f-9ea0-4a64-835e-76dd96db76a9",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Detail Any Non-conformities"
+            }
+          ]
+        },
+        {
+          "id": "ecd23e7a-1f68-4133-9f01-986277bb2097",
+          "type": "field",
+          "fieldId": "bb9f12a3-8eef-407b-8975-a9885acd37df",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "47058404-4889-4d2e-989d-8e2d0b0f14a6",
+          "type": "field",
+          "fieldId": "7519a7b5-a2bf-4f6d-97fc-39dd77d9d2a3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5fe2ef2a-afed-43d3-a594-9e7171e06c0f",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Identify the Root Cause of the Non-Conformity:"
+            }
+          ]
+        },
+        {
+          "id": "58ebd7ce-6e5b-455c-9e7a-154bc215c534",
+          "type": "field",
+          "fieldId": "96f3b588-70cb-469e-891d-11bd8c4f32fc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3a03285c-d395-4fdd-9f3b-ed1f3ae84dc3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f5ba9256-bfc0-4643-8587-e96139bc04e5",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Detail any actions and reference any CAPAs to be taken as a result of this review:"
+            }
+          ]
+        },
+        {
+          "id": "afae7428-d6cc-42d7-b6dd-5ac98929c945",
+          "type": "field",
+          "fieldId": "359434cc-b239-4804-bdb1-4be350c456f7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bc78ed79-2794-4225-86f0-fdd03a47c2e7",
+          "type": "field",
+          "fieldId": "2e6b3afc-899b-4579-b3df-7972fc71fea9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4bb4e54e-47e9-4069-bb75-9b5030a0b61e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9756f2e5-4792-4f33-9d99-c5c97d1bb0f2",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Closure and Summary of the Review:"
+            }
+          ]
+        },
+        {
+          "id": "6a1d9829-1a5e-426c-942a-cc01c4bc0c6f",
+          "type": "field",
+          "fieldId": "6059b1d7-1ea1-48f4-a5fd-805fcb59cd07",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "59af39c6-ca47-467f-be38-b7bf136b5da1",
+          "type": "field",
+          "fieldId": "2d7f1785-f538-47ff-85d8-871e81051d31",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6337591d-2ebc-4560-bb2b-be60d78b31e4",
+          "type": "field",
+          "fieldId": "b94d51e1-4f47-4f58-93a3-6dd530cf4c51",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "67ab5558-382c-41d0-b103-ebe82ff46924",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Select the next review due date"
+            }
+          ]
+        },
+        {
+          "id": "5d80d519-d2f4-4b9f-a69f-15dc25f0f77c",
+          "type": "field",
+          "fieldId": "63102c16-36c8-4635-8804-0ede3953932e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5fdda10c-329f-40e6-86a7-b3ff3296e540",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4f47a99d-3894-4c16-a062-b0e105bc85e7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "64cd18e7-6ea4-4d17-995b-95ce64c125f7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d4d3528a-65d7-4082-a4b9-b9c2bb50ce5f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
