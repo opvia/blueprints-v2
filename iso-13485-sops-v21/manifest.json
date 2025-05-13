@@ -1,0 +1,375 @@
+{
+  "id": "iso-13485-sops-v21",
+  "version": 1,
+  "name": "ISO 13485 SOPs (V2.1)",
+  "description": "",
+  "entities": [
+    {
+      "id": "1230f41c-9403-4c25-a6ff-155b1e412239",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP -  Product Storage and Distribution",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "48f92785-acb6-444a-9e57-7386991041a3",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP",
+      "icon": "application"
+    },
+    {
+      "id": "763e3f7f-196e-4328-be8a-6127ad14ccc4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Aseptic Techniques",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a3bdb91f-e26d-4ec2-aaf4-a10eca988c21",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Biological Materials Handling",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "38198cc2-baf0-476e-94da-c30fd623f62a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Calibration Procedures",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "76500310-382e-45d6-8be9-8bba823be9d1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Chemical Handling and Storage",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "de5dbdf6-2bfb-4979-9b81-7a898f9bba7c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Complaint Handling",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "add880f6-bb70-4c43-82f0-504e2027afe9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Conducting Change Control",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "492028fd-483d-4d6a-99bd-9e0723cad4b0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Customer Communications and Requirements",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "2c0616e1-1000-4b59-b881-2b36c0545d17",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Data Integrity and Electronic Records",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "4ab806db-c996-4021-8ee7-325323691477",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Design and Development Procedures",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "ab756ff8-a63b-4979-878c-d05e16da32fe",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Document Control",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "0f2976c4-132f-40dc-8653-dfa47299ab2f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Documentation and Record Keeping",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "d2c642aa-a2a9-43e6-ac39-dcc5ab308d50",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Documenting External Audits",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "b5148901-1b26-4126-9074-4f1042a41510",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Electrical Safety",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "cbfb4bfa-5e63-4a25-93eb-b1ff5fa87f21",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Emergency Response and Evacuation",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "db7abc75-ef05-46a9-bae5-2c351d334a90",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Environmental Monitoring",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "aea06f22-919d-4ad0-b9e4-12c1133bfc84",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - First Aid and Fire Safety",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "276e2053-3030-4889-bb93-43624ffb3c26",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - General Laboratory Safety",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "262cecc8-a480-4421-8734-b6b0cd7b93b8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - How to Conduct Change Controls",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "55cd155f-e04d-4d46-a4c2-1a7680c1545a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Incident Reporting and Investigation",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a8320c83-8c81-43cf-8305-1bd0c992d3b9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Internal Audits",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "fc0b145e-48ef-42ec-960c-6de54ee91634",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Job Descriptions and Responsibilities",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "c3aefc90-bc59-4e67-8be0-a5582ee9dd2c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Laboratory Waste Management",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "c4fe749a-d3d7-4517-887d-11b829c419d2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Management Review",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "b3f09741-a66b-4006-b782-da9f56da6531",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Method Validation and Verification",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "aff771b2-83a5-403c-a26d-0a798c7ad234",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Patient Confidentiality",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "99850440-70eb-491a-a11e-02ec8b78afe1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Personnel Records Management",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "385505b4-54dd-49d5-a148-34a325fcc8a3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Post-Market Surveillance Procedures",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a762efbc-1adc-4de8-8c6e-82765238d6f8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Procedure for Quality Control (QC) and Quality Assurance (QA)",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "0b0b156a-167a-462f-bdb1-620a8910c233",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Product Release and Distribution",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "109ae862-1068-4877-9edc-d614e24f34e1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Purchasing",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "06058834-e2e4-42c8-85cc-852d4e2bfc19",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Quality Manual",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a5af4d60-cb73-44c5-9123-13ea5ecef85f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Reagent Preparation and Storage",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "023e4cb0-6dc5-44ee-a634-425b0bd02c7e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Reference Material Handling",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "15bb1948-2526-42b9-b504-ed2c8e27cfa0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Referral Testing",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a5d466b0-cdda-4d00-9018-feb85e974723",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Reporting to Regulatory Authorities",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "35cae6c6-378c-4da5-ac40-f6599fd4d449",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Risk Management",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "55659b21-181e-458b-9c83-dc163851ae4e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Sample Handling and Management",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "02995bfe-4fe2-414b-b476-bfdaaa2a5029",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Staff Training and Competency Assessment",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "aeac60c9-cb4f-49e6-877e-e84147eb96e3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Supplier and Vendor Management",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "792ec311-9755-4536-b012-e0961191746a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Test Methods SOPs",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "e1e47f1a-e070-4057-b59e-73df183b3d60",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Test Result Reporting",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "dec1211e-8da2-4769-b1d8-eeb9973bbd61",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Traceability Procedures",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "afc259a1-6bc5-433d-a555-85398fb26625",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Using and Maintaining the Seal LIMS",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "62ab0963-ff97-4127-9dfb-65853884672e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Validation of Software",
+      "icon": "application",
+      "sourceVersion": "2"
+    }
+  ]
+}
