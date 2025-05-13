@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "6938b4e6-60fb-48f9-b31a-870512fc8519",
+  "title": "Customer Complaints Form",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Status": {
+      "id": "4c05a0ad-426f-41f2-af6a-e8159ed9d651",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Comments": {
+      "id": "ad44b7f5-a9a2-46f8-aa6a-e7f650c39570",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Assigned To": {
+      "id": "ef5a4b12-2399-41b5-b36c-b0c601bfd4c1",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Date Closed": {
+      "id": "57c9b16c-e160-4e9c-a532-492c18d06c1a",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Description": {
+      "id": "538ad35d-b9bd-4f43-beb7-b53d5fda1884",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Action Items": {
+      "id": "e24fd21e-c889-4c22-ab5c-2622c01e9603",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Customer Name": {
+      "id": "a59fef94-01a2-4031-bde5-bab9600a0df1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Date Received": {
+      "id": "16babf3e-cbab-4e58-a39c-6c5951cc6d53",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "abde6291-cf6a-4e8c-8e96-0ba5665f5f15",
+          "type": "field",
+          "fieldId": "a59fef94-01a2-4031-bde5-bab9600a0df1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a2fce3c5-3197-4001-a41b-55d0231319a8",
+          "type": "field",
+          "fieldId": "16babf3e-cbab-4e58-a39c-6c5951cc6d53",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "358ad2e1-7bd2-4d87-b549-cb0c3f6bc184",
+          "type": "field",
+          "fieldId": "4c05a0ad-426f-41f2-af6a-e8159ed9d651",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "96feea57-d382-474c-ad66-b148697542cc",
+          "type": "h3",
+          "children": [
+            {
+              "bold": true,
+              "text": "Description:"
+            }
+          ]
+        },
+        {
+          "id": "9b414ed3-07b4-4ffc-a3e0-19072a30166a",
+          "type": "p",
+          "children": [
+            {
+              "text": "Give a short description on the nature of the complaint and the reasoning behind it:"
+            }
+          ]
+        },
+        {
+          "id": "250caac5-7210-40fc-9dbc-5f355712475e",
+          "type": "field",
+          "fieldId": "538ad35d-b9bd-4f43-beb7-b53d5fda1884",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9d7997a5-0265-4b77-9bca-fbed926b4654",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b44e5664-1d06-44ab-ba81-6e6312574e78",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c0e35af8-9718-4807-b5d6-5dbca4dd8712",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Action Items"
+            }
+          ]
+        },
+        {
+          "id": "b2fd8a43-ca5e-41d5-8eb7-919f80dc8528",
+          "type": "p",
+          "children": [
+            {
+              "text": "Describe the action(s) which will be taken to rectify this complaint and ensure it does not re-occur:"
+            }
+          ]
+        },
+        {
+          "id": "206aae58-7e4a-4541-b882-539ae1218218",
+          "type": "field",
+          "fieldId": "e24fd21e-c889-4c22-ab5c-2622c01e9603",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0d1966cc-f30c-449b-a44e-f1c00d7a99df",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f47027de-2003-4acb-aa0d-106b627adc03",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "18064a0f-6f06-4b2b-b59c-015201191b78",
+          "type": "field",
+          "fieldId": "ef5a4b12-2399-41b5-b36c-b0c601bfd4c1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fe66db82-858e-4e80-a543-a4e4896ece4f",
+          "type": "field",
+          "fieldId": "ad44b7f5-a9a2-46f8-aa6a-e7f650c39570",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7b21966d-ef42-4dd2-ae93-78ddb4cc753d",
+          "type": "field",
+          "fieldId": "57c9b16c-e160-4e9c-a532-492c18d06c1a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4b9ceb39-c593-4302-b5bf-708eb7b51d53",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

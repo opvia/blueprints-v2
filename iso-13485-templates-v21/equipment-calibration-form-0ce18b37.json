@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0ce18b37-d78c-487a-80c9-b9b22eb0dc1f",
+  "title": "Equipment Calibration Form",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Details": {
+      "id": "be71a456-ed69-4ddd-808e-635d24528985",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Comments": {
+      "id": "9354b310-c35b-41f9-b457-617e7548c412",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Equipment": {
+      "id": "201b88cb-9818-481f-b488-77c213ea1f53",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Calibrator": {
+      "id": "b97c85ef-176d-4e39-b4a4-3e7d7f1fbccb",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Pass / Fail": {
+      "id": "a46d7daa-0e2f-41df-87c1-7cdfcb1312ba",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Pass",
+          "Fail"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "QA Reviewer": {
+      "id": "0fa4a193-96fa-4120-aedd-05e5386006b0",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Date of Calibration": {
+      "id": "bec7cdf9-b87b-41fd-868c-3ae5f534d49f",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "In-house / External?": {
+      "id": "03cf8f37-48bb-40d8-b3b4-4d69b6489df1",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "ec95b095-5305-4eb6-b985-a443c34e0887",
+          "type": "field",
+          "fieldId": "201b88cb-9818-481f-b488-77c213ea1f53",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cee11e88-c5a6-40e0-83d3-6142a14c2fa0",
+          "type": "field",
+          "fieldId": "bec7cdf9-b87b-41fd-868c-3ae5f534d49f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "10455e66-a87c-4577-881c-ef3fa9fd3585",
+          "type": "field",
+          "fieldId": "03cf8f37-48bb-40d8-b3b4-4d69b6489df1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e1b5f964-1fff-47ad-a684-d55054dc73cf",
+          "type": "p",
+          "children": [
+            {
+              "text": "If in-house:"
+            }
+          ]
+        },
+        {
+          "id": "b47bc401-b5ed-4754-80fd-2823a53d3423",
+          "type": "field",
+          "fieldId": "b97c85ef-176d-4e39-b4a4-3e7d7f1fbccb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dc9709ec-ca97-4c74-9bbf-19a4c516a672",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "93dd6c20-fad2-4ebc-83d1-ac418a133614",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Describe calibration details below:"
+            }
+          ]
+        },
+        {
+          "id": "b735e5be-ebf9-43d5-a217-99d476a613cc",
+          "type": "field",
+          "fieldId": "a46d7daa-0e2f-41df-87c1-7cdfcb1312ba",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ef98600b-081d-4b02-835d-3025cc343c68",
+          "type": "field",
+          "fieldId": "be71a456-ed69-4ddd-808e-635d24528985",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4b4e98a7-d11d-4980-8cd1-26f9c2b77181",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3a312909-e1f2-4000-b658-d98fb2d45a16",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "391e74d3-dcd6-45db-b42f-463e7bac738d",
+          "type": "field",
+          "fieldId": "0fa4a193-96fa-4120-aedd-05e5386006b0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "375e9537-0f3e-4844-a8f7-8aa08d42ed15",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Comments:"
+            }
+          ]
+        },
+        {
+          "id": "54a25333-3caf-44eb-bff5-a71037cd10e7",
+          "type": "field",
+          "fieldId": "9354b310-c35b-41f9-b457-617e7548c412",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "343ddd2b-2d68-45d3-bb4c-15fce10abe78",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

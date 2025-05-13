@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a7f93455-49ba-4e16-ae6e-98df5ff80026",
+  "title": "Supplier Performance Evaluation",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "a67f8f28-5c29-417e-a316-a77b72a64e1f",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Supplier": {
+      "id": "f9e2595d-9472-46c0-bae0-3f39a9b125b3",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Attachments": {
+      "id": "ae6a55cc-2768-45b6-9677-5a56fdc36c10",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Overall Rating": {
+      "id": "2fc2e4dd-d811-4311-acea-8180887c661d",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Excellent",
+          "Good",
+          "Neutral",
+          "Poor",
+          "Very Poor"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Responsiveness": {
+      "id": "8b617dcc-7462-4f38-8dce-f105240d355a",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Excellent",
+          "Good",
+          "Neutral",
+          "Poor",
+          "Very Poor"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Quality of Goods": {
+      "id": "58680018-40cd-4b6c-a537-9434fb0a359a",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Excellent",
+          "Good",
+          "Neutral",
+          "Poor",
+          "Very Poor"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Date of Evaluation": {
+      "id": "32e3e42c-c5ca-4e71-973d-864c2e2c5ed4",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Delivery Timeliness": {
+      "id": "3f89ca21-3a3e-47c1-98bd-cd76c7a8314b",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Excellent",
+          "Good",
+          "Poor",
+          "Very Poor",
+          "Neutral"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "9d90cc42-17a1-481f-bf15-204475097277",
+          "type": "field",
+          "fieldId": "32e3e42c-c5ca-4e71-973d-864c2e2c5ed4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4fc121c9-e3c4-4b5c-9d0d-0afb1328b0c7",
+          "type": "field",
+          "fieldId": "f9e2595d-9472-46c0-bae0-3f39a9b125b3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9f459b77-f006-4e03-858c-78eb12027ad1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "148a47af-cad8-44c5-b6d3-ecc75968cc1f",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Supplier Evaluation",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "9b075a4a-dfab-4876-be37-661ac9c1673e",
+          "type": "h3",
+          "children": [
+            {
+              "text": "",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "7318b889-10c7-489c-acbb-1edd404d1888",
+          "type": "field",
+          "fieldId": "3f89ca21-3a3e-47c1-98bd-cd76c7a8314b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "edffd286-859c-4f2c-bd6a-ef45430c312a",
+          "type": "field",
+          "fieldId": "58680018-40cd-4b6c-a537-9434fb0a359a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9c294584-3707-4e2b-87c4-9a582417f710",
+          "type": "field",
+          "fieldId": "8b617dcc-7462-4f38-8dce-f105240d355a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d3fe83b6-7412-4463-9dc7-46ca64f89b53",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fc819a93-ab4c-4f20-8ae3-e518bb0b201a",
+          "type": "field",
+          "fieldId": "2fc2e4dd-d811-4311-acea-8180887c661d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9f278426-666d-424e-992c-b6edbc985d1a",
+          "type": "h3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "662e8a02-0a61-4f8c-810e-e6fe48c385c9",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Add Additional Comments Below:"
+            }
+          ]
+        },
+        {
+          "id": "ee2fdc7f-7d79-4efb-9020-7f1849079c8a",
+          "type": "field",
+          "fieldId": "a67f8f28-5c29-417e-a316-a77b72a64e1f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "49bd54f4-a2f9-4fa3-9ac3-79f341a2be87",
+          "type": "field",
+          "fieldId": "ae6a55cc-2768-45b6-9677-5a56fdc36c10",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9c47462c-e950-46c2-ae64-c39767a1ce39",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "704eef1d-167a-467b-8f6b-1f218f8b74bc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

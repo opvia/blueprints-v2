@@ -1,0 +1,844 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "5b582f89-6c61-4aa5-a2d0-acc003f3e6bb",
+  "title": "Equipment Installation Procedure",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Intended Use": {
+      "id": "ce59f40c-614e-4851-ad5d-6ad502b289bf",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Equipment Name": {
+      "id": "d91ae3db-a14a-4be0-8ce7-5d344f797ccd",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Date of Receipt": {
+      "id": "f25503af-e2d0-4c36-ac93-261550f29449",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Equipment Model": {
+      "id": "9d699847-e6ce-47da-ad6c-c3c93e466abe",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Manufacturer OLD": {
+      "id": "0a1d4189-7702-4488-b11d-151b500c2d13",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Acceptance Criteria": {
+      "id": "49e5fab5-325c-4613-9675-d35d77385b5a",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Equipment Condition": {
+      "id": "caf39245-b670-4356-8ec8-b9f800bcf1ae",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Equipment Installed?": {
+      "id": "59743d97-1bc1-4c33-8e85-8016b84d3047",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Developed IQ Protocol": {
+      "id": "8acfd060-4115-4a72-afcf-564d731382ff",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Equipment Ready to Use": {
+      "id": "cfc189f9-6925-4997-ad1d-d1de9318caad",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Installation Procedure": {
+      "id": "1f5205bb-900e-48d7-9b73-99236c627f19",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Supplier / Manufacturer": {
+      "id": "e3217db9-37ba-4dd6-a776-eb6fbca0210f",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Facility / Utility Requirements": {
+      "id": "22fc40f7-220b-4bf0-bbf1-8a46aeffe64b",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Operational Qualification Protocol": {
+      "id": "830019d7-8a86-4b30-8a5a-a171b49b11e9",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Performance Qualification Protocol": {
+      "id": "6a98ecc8-025a-4126-a887-10b087363dde",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Supporting Documentation / Images - OQ": {
+      "id": "19e3c662-9028-4c90-871a-9e86568c382d",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Supporting Documentation / Images - PQ": {
+      "id": "feb3afa3-ca1e-41c7-b567-0115df7c410d",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d72710a2-d9ee-474a-9454-94510c3bcded"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "dc84a403-9363-4139-bd5f-9259832b253d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9e5775a7-dc30-4948-a3f9-74f3d44828f7",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Equipment Info",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "b6ee5df5-07e7-497e-9010-523029372512",
+          "type": "field",
+          "fieldId": "d91ae3db-a14a-4be0-8ce7-5d344f797ccd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "343268da-591a-4747-8f61-4af6cb7152d9",
+          "type": "field",
+          "fieldId": "9d699847-e6ce-47da-ad6c-c3c93e466abe",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e3f28db7-01b8-4061-88b9-c448ebf5bdc6",
+          "type": "field",
+          "fieldId": "e3217db9-37ba-4dd6-a776-eb6fbca0210f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "804d0d15-5b1f-48f3-9d2b-1e12cd3b605f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e1c44b3a-e27e-49b0-b32e-c610752d6171",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Provide details in the intended use of this equipment:"
+            }
+          ]
+        },
+        {
+          "id": "1ae577bb-b3fd-4f56-aaa2-e27687e23fdf",
+          "type": "field",
+          "fieldId": "ce59f40c-614e-4851-ad5d-6ad502b289bf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "00908a42-889b-4396-9bc6-fbeadbda1ff9",
+          "type": "field",
+          "fieldId": "49e5fab5-325c-4613-9675-d35d77385b5a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f50dd037-9655-4c11-99e2-1290dde6d76f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "add92986-b1b3-4f1b-9933-a8a3bda2a787",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "32211b45-aa85-485f-a96a-b945d673151d",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Facility/Utility Assessment",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "3e9acc96-1526-4245-b132-3f014df0247f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Provide details below on the space, power, water, and utility requirements for this equipment:"
+            }
+          ]
+        },
+        {
+          "id": "b17aef02-d91a-443b-a7dd-ce437808a0ad",
+          "type": "field",
+          "fieldId": "22fc40f7-220b-4bf0-bbf1-8a46aeffe64b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1937ac87-694a-41d2-96e7-fe4f4584ab59",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Upload the Developed Installation Qualification Protocol:"
+            }
+          ]
+        },
+        {
+          "id": "9f89df0e-cf7a-4d5d-92de-91ba09f7d067",
+          "type": "field",
+          "fieldId": "8acfd060-4115-4a72-afcf-564d731382ff",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "17742b8f-c1a0-4df7-9f9e-e12d261f9194",
+          "type": "field",
+          "fieldId": "1f5205bb-900e-48d7-9b73-99236c627f19",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6402d378-fd11-4499-b819-424c7d9786ee",
+          "type": "field",
+          "fieldId": "f25503af-e2d0-4c36-ac93-261550f29449",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "01e635a3-1644-4169-8e1d-e74d06a3c37e",
+          "type": "field",
+          "fieldId": "caf39245-b670-4356-8ec8-b9f800bcf1ae",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2c741b60-e0ac-4317-9147-f98259224f4d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3e7eeb1c-4728-4bf1-801a-72dc8a1e961c",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Upload the Developed Operational Qualification Protocol:"
+            }
+          ]
+        },
+        {
+          "id": "f406c485-f963-42af-a4ef-9c74df59b324",
+          "type": "field",
+          "fieldId": "830019d7-8a86-4b30-8a5a-a171b49b11e9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7763d315-3ae3-4263-977e-1c200756fc48",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2a5db99b-8c1c-4b01-9582-fceea884dfd7",
+          "type": "table",
+          "children": [
+            {
+              "id": "b00d6346-edb2-4362-b399-a4b7a06826dd",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "8e718053-c79a-4eb4-928a-7f9f187204e9",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "f3ed7c64-24cb-4173-a784-c67c4bd45210",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Test Results"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "419b7219-bf98-4e95-8724-a002af143580",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "c2441f10-99d8-4815-b321-09c523957f4f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Deviations"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "748a16c3-9423-4ec3-ae73-1342de75c24e",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "fde33cc6-428a-48ab-8cfe-0afab1339bec",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Actions"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e940027c-2ba3-4cc8-b228-f83ec34dabd2",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "134a5678-8a48-48d7-9a16-cd68d2bab4c9",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ab5b2f41-fb15-4134-a70f-0d1120e2ce1e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "24327c32-8194-4e8b-b887-fada950e8899",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "205f1c96-0e0e-4000-97a6-2ba3d305f78b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ed0c796b-61ab-4b35-a83a-9c18f60d9196",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "cfec898d-edae-49c9-b940-4c14a20a5693",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "24bfc750-3158-4bb5-9965-4ad1f3589db4",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "e438dbb0-5ca4-43d0-97ec-b5f3c8f2f507",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "96190ea4-3b9d-40da-bdab-fdb4e095d50f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c9e7a28d-e99d-4437-8b8a-850aca516c80",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "933211ad-892e-4de1-853e-b11f01ba00de",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fbc17b2f-75bc-464f-a2d0-3158bf750a1e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ffae2f1b-72bc-4afd-a1c1-764e10f003aa",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "colSizes": [
+            451,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "9fa60d89-cdde-4f06-8099-875148552f0d",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Upload any documentation or images of supporting tests below:"
+            }
+          ]
+        },
+        {
+          "id": "8b74453c-0b69-4a9a-97a9-042d3822ccb6",
+          "type": "field",
+          "fieldId": "19e3c662-9028-4c90-871a-9e86568c382d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "085e7fc7-2250-41f1-94d8-6f623636f89b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b5a56555-1c13-4967-88c7-613de7a717ec",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Upload the Developed Performance Qualification Protocol:"
+            }
+          ]
+        },
+        {
+          "id": "58870842-f1f1-4648-80eb-bf04e0b8a85b",
+          "type": "field",
+          "fieldId": "6a98ecc8-025a-4126-a887-10b087363dde",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9f041633-86f4-4c03-9451-af5a3d84f2bd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cf385073-20d5-473f-9c5e-fe223e2a8d4d",
+          "type": "table",
+          "children": [
+            {
+              "id": "7ea407a6-06f4-437c-912f-2cf3ceda649c",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "079bf143-1d3c-472e-9f20-b3c6fc21440d",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "2a8def44-1e34-44ff-b593-cffea2d0fe18",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Tests Results "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b3609dc2-591c-4074-b613-e0ecbac72fae",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "3b170d2d-fc61-4f8b-b489-a74272a2e5d7",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Deviations"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4e0bc2b9-21ba-43ff-8c48-984f8d066977",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "48b72133-d6b2-4256-b05d-9c9b86b99149",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Actions"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a1e4ebae-6de8-4b3e-b6b0-7398703deeec",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "18b38d3b-d6d2-4a64-99ce-727bdc098faf",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "03f88b8a-e295-446e-b97d-4da13670c8f0",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0c916d2f-5255-4731-b586-7201cf704d5a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2f595772-98e6-499e-93d8-9ce86e394b13",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "2f037ab8-3701-47d0-97b6-29359b939bba",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "384f3703-8750-42fe-96c3-bd5faab687b5",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9c5ce109-2fa9-4fa3-b30e-e95b1ff80d74",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "da51e07b-0e38-4e46-acc6-7212f92a8a8d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5a6ed4ba-754c-47d8-af37-9edc7fbd4c7b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8a10f02e-f1d0-4cfc-ac7f-97fa8d65f032",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6865ac72-aa82-40af-bac1-1758920e9d2b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "be120bec-0c54-48a8-87d8-159e7f0b7e57",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5099fd5b-e33a-4cd4-8b80-1ce7f7cca890",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5296e597-d67c-41c0-880f-067e37519786",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Upload any images of supporting tests or documentation below:"
+            }
+          ]
+        },
+        {
+          "id": "03d271bd-b69b-499a-9025-bfd92bac36e1",
+          "type": "field",
+          "fieldId": "feb3afa3-ca1e-41c7-b567-0115df7c410d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5b79407d-8f54-4e66-b464-5bea33f7ef98",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e82c36b6-8404-436e-9076-55a9cf20c4a0",
+          "type": "field",
+          "fieldId": "59743d97-1bc1-4c33-8e85-8016b84d3047",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cc372fbe-e3af-4b0d-987e-7b7dac2d7f4e",
+          "type": "field",
+          "fieldId": "cfc189f9-6925-4997-ad1d-d1de9318caad",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6e5b1514-97ce-4c56-8410-23686b481f13",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
