@@ -1,0 +1,65 @@
+{
+  "id": "test-tags",
+  "version": 1,
+  "name": "Test tags",
+  "description": "",
+  "entities": [
+    {
+      "id": "ae2dc78d-329d-486c-80d1-354db0dd7592",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Main template",
+      "icon": "document",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "a1e2e65c-b5cd-4d58-ac93-25a7c6e6719e",
+        "73f6a0c8-f1e5-43ce-bb66-0f9daf59ccd4",
+        "41226b3b-8508-4402-8240-38eb6f994d97"
+      ]
+    },
+    {
+      "id": "0d2d306c-83b7-4418-b5f3-cf8f401d1db9",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document 1",
+      "icon": "document"
+    },
+    {
+      "id": "271962d8-33b8-40da-8ebc-d07bd165bd9c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Legit instance",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "73f6a0c8-f1e5-43ce-bb66-0f9daf59ccd4",
+        "41226b3b-8508-4402-8240-38eb6f994d97"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "62338cda-1665-4c5c-aa45-b514ad269ff9",
+      "entityId": "ae2dc78d-329d-486c-80d1-354db0dd7592",
+      "filename": "cells.jpg",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "tags": [
+    {
+      "id": "a1e2e65c-b5cd-4d58-ac93-25a7c6e6719e",
+      "text": "tag 1",
+      "hexCode": "#aa339e"
+    },
+    {
+      "id": "73f6a0c8-f1e5-43ce-bb66-0f9daf59ccd4",
+      "text": "tag 2",
+      "hexCode": "#ed09b7"
+    },
+    {
+      "id": "41226b3b-8508-4402-8240-38eb6f994d97",
+      "text": "tag 3",
+      "hexCode": "#ce2283"
+    }
+  ]
+}
