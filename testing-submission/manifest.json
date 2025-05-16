@@ -1,0 +1,38 @@
+{
+  "id": "testing-submission",
+  "version": 1,
+  "name": "Testing submission",
+  "description": "",
+  "entities": [
+    {
+      "id": "ab7864c7-6994-48d4-b544-2ff0aeeb6efa",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "testing 123",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4344fda0-bcbd-4c33-b8d8-e09643b1d113",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "document"
+    },
+    {
+      "id": "b8940edf-555b-440b-bcdd-5f127e2de06d",
+      "kind": "TEMPLATE",
+      "contentType": "NONE",
+      "title": "Ingredient template",
+      "icon": "remove-row-bottom",
+      "sourceVersion": "2.4"
+    },
+    {
+      "id": "6826e49e-5a5e-4de7-9538-355c89d6302c",
+      "kind": "TYPE",
+      "contentType": "NONE",
+      "title": "Row",
+      "icon": "remove-row-bottom"
+    }
+  ]
+}
