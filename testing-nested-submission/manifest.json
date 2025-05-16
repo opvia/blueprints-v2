@@ -1,0 +1,53 @@
+{
+  "id": "testing-nested-submission",
+  "version": 1,
+  "name": "Testing nested submission",
+  "description": "",
+  "entities": [
+    {
+      "id": "643fd924-7736-40a6-b64c-85e9e4ad0520",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "testing 123",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2fdb076a-1671-45ae-acd5-33543b0c1bd0",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "document"
+    },
+    {
+      "id": "52949f09-6082-477b-80e9-3f178b5cf6db",
+      "kind": "TEMPLATE",
+      "contentType": "NONE",
+      "title": "Ingredient template",
+      "icon": "remove-row-bottom",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "57bad3f7-1ff6-4690-9564-8aa3da99349a",
+      "kind": "TYPE",
+      "contentType": "NONE",
+      "title": "Row",
+      "icon": "remove-row-bottom"
+    },
+    {
+      "id": "7600f785-5326-42b9-8637-fc4ce5529c77",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "huilnjk",
+      "icon": "saved",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "d4715746-26e8-46b0-b840-2c05e90f6b04",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Record",
+      "icon": "saved"
+    }
+  ]
+}
