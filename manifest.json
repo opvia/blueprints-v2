@@ -1,0 +1,23 @@
+{
+  "id": "kb-new-employee-form",
+  "version": 1,
+  "name": "KB: New Employee Form",
+  "description": "",
+  "entities": [
+    {
+      "id": "ab712174-dc86-4e5d-9574-406b561089a7",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "New Employee Form",
+      "icon": "predictive-analysis",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "61235db4-6911-48cb-bcb8-957b46e6f08b",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Team Member",
+      "icon": "predictive-analysis"
+    }
+  ]
+}
