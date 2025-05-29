@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4344fda0-bcbd-4c33-b8d8-e09643b1d113",
+  "title": "Document",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "document",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": {
+      "can": true
+    },
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          },
+          {
+            "text": "Draft 1",
+            "intent": "primary"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          },
+          {
+            "text": "Draft 2",
+            "intent": "primary"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      }
+    },
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": false
+    },
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": true
+  },
+  "templateConfig": {
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Active",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Active"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "Done",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Done"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "In revision",
+            "intent": "danger"
+          }
+        ],
+        "defaultStatus": "In revision"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Revised",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Revised"
+      }
+    }
+  }
+}
