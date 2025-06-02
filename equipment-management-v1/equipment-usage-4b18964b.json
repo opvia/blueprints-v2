@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4b18964b-7293-46ed-9889-0b17468498a9",
+  "title": "Equipment Usage",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Equipment": {
+      "id": "fb671ddb-595c-4dc6-a93a-4672dcde383b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Usage comments (if any)": {
+      "id": "3f10af7c-f09c-493b-9624-fbba8342b55a",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Verification of calibration": {
+      "id": "05890235-6461-409b-8d58-c1d9239941db",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "01497496-a87e-498d-bff4-d7542bd30b5c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "c676f4ca-a639-4347-ae8b-ec111a979da7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e78c3f3d-f084-45a5-afa4-bfea41be1117",
+          "type": "field",
+          "fieldId": "fb671ddb-595c-4dc6-a93a-4672dcde383b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "7494b6bc-7cad-43c8-a335-193bcbc49b41",
+          "type": "field",
+          "fieldId": "05890235-6461-409b-8d58-c1d9239941db",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6f79e96f-e2be-40c5-8166-afee739a3633",
+          "type": "field",
+          "fieldId": "3f10af7c-f09c-493b-9624-fbba8342b55a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "68d514d4-f6f9-4452-891a-2019961b61e8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

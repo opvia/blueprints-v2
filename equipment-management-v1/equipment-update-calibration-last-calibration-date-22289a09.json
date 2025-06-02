@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "22289a09-2dba-4b1e-9508-3e4c8dc8dc70",
+  "title": "Equipment - Update calibration last calibration date",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3f58ca94-a284-4c86-80e0-4dbbbb6617ba"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the current entity where the script is embedded\ncurrent_entity = seal.get_containing_entity()\n\n# Get the value of the 'Date of Calibration' field from the current entity\ncalibration_date_field = current_entity[\"fields\"].get(\"Date of Calibration\")\ncalibration_date = calibration_date_field[\"value\"] if calibration_date_field else None\n\n# Get the value of the 'Equipment' reference field from the current entity\nequipment_ref_field = current_entity[\"fields\"].get(\"Equipment\")\nequipment_ref_value = equipment_ref_field[\"value\"] if equipment_ref_field else None\n\n# Check if the Equipment reference is set and get the referenced entity ID\nif equipment_ref_value and isinstance(equipment_ref_value, list) and len(equipment_ref_value) > 0:\n    equipment_entity_id = equipment_ref_value[0][\"id\"]\n\n    # Update the 'Most Recent Calibration Date' field in the referenced Equipment entity\n    # The new value will be the calibration_date obtained from the current entity\n    seal.update_field_value_in_entity(equipment_entity_id, \"Most Recent Calibration Date\", calibration_date)\n    # Note: If calibration_date is None, the target field will be set to null\n\n    # Get the change set information for the current entity\n    current_change_set = seal.get_change_set_for_containing_entity()\n\n    # Check if the current entity is in a change set and get its index\n    if current_change_set and current_change_set.get(\"index\") is not None:\n        change_set_index = current_change_set[\"index\"]\n\n        # Add the referenced Equipment entity to the same change set\n        seal.add_entity_to_change_set(equipment_entity_id, change_set_index)\n        print(f\"Added entity {equipment_entity_id} to change set {change_set_index}\")\n    else:\n        # Handle the case where the current entity is not in a change set\n        print(\"Current entity is not in a change set. Cannot add referenced entity.\")\n\n\nelse:\n    # Handle the case where the Equipment reference is not set in the current entity\n    print(\"Equipment reference field is not set in the current entity.\")"
+    }
+  }
+}

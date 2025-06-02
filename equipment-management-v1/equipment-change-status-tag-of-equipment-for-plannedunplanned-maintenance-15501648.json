@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "15501648-47ae-4868-8ef4-44e0f710c0c7",
+  "title": "Equipment - change status tag of Equipment for planned/unplanned maintenance",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3f58ca94-a284-4c86-80e0-4dbbbb6617ba"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the entity containing this script card\ncontaining_entity = seal.get_containing_entity()\n\n# Access the 'Equipment' reference field\nequipment_field = containing_entity[\"fields\"][\"Equipment\"]\n\n# Check if the field has a value (references an entity)\nif equipment_field and equipment_field.get(\"value\") and len(equipment_field[\"value\"]) > 0:\n    # Get the ID of the referenced entity\n    referenced_entity_id = equipment_field[\"value\"][0][\"id\"]\n\n    try:\n        # Update the status tag of the referenced entity\n        # Note: The entity must be in an editable state for this to work.\n        seal.update_entity_status_tag(referenced_entity_id, \"Out for Maintenance\")\n        # You might want to add a print statement for confirmation (visible in script logs)\n        # print(f\"Status tag of entity {referenced_entity_id} updated to 'Under Calibration'\")\n    except Exception as e:\n        # Handle potential errors during the update\n        # print(f\"Error updating status tag for entity {referenced_entity_id}: {e}\")\n        pass # Or handle the error appropriately\nelse:\n    # Handle the case where the 'Equipment' field is empty\n    # print(\"The 'Equipment' field is empty. No entity to update.\")\n    pass # Or handle this case appropriately"
+    }
+  }
+}

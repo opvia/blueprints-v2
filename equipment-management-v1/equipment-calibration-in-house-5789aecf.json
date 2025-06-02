@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "5789aecf-29b0-4fb8-a439-c5bf2458c87a",
+  "title": "Equipment Calibration (In-house)",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "fda3afe0-5538-4c8c-b3f5-7418ed06d4b1",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Equipment": {
+      "id": "9820b365-5984-4f53-8dcb-9b3f538a7b18",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Equipment Status": {
+      "id": "70c03a65-ff2f-4171-a365-54a13d659dca",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "df779eeb-92d8-447c-b08d-d10d07543e3e",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Update"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Date of Calibration": {
+      "id": "6809e8f2-63e0-45a8-8ad6-2b313b345c73",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Next Calibration Due Date": {
+      "id": "fcdc63a7-84db-49da-bb66-cf5bbe73a1b3",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Date of Calibration\") , lookup(__self, \"Calibration Frequency (months)\") , 'months')"
+      },
+      "dataType": null
+    },
+    "Update next calibration date": {
+      "id": "c7bb3c85-0941-4ee9-a863-40e042e29641",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "22289a09-2dba-4b1e-9508-3e4c8dc8dc70",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Update "
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Calibration Frequency (months)": {
+      "id": "2aa93dd5-5d64-4bb2-99f6-4152cedc26dc",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Equipment\") , \"Calibration Frequency (in Months)\" )"
+      },
+      "dataType": null
+    },
+    "Calibration Certificate (if applicable)": {
+      "id": "8b7e8dae-7012-41ad-92c1-e97bc2e15225",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "01497496-a87e-498d-bff4-d7542bd30b5c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "bf2ba368-12ee-4a33-a326-a9e2b02e5497",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Note: there may be multiple in-house equipment calibration SOPs as each equipment may have its own calibration procedure."
+            }
+          ]
+        },
+        {
+          "id": "bb298357-c917-4747-a7b5-68aa4509a481",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4e9fc9e3-9e19-424c-a3c3-c77c0f65a20c",
+          "type": "field",
+          "fieldId": "9820b365-5984-4f53-8dcb-9b3f538a7b18",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "20c745c3-2acb-4156-a9e5-137b54f4e815",
+          "type": "field",
+          "fieldId": "70c03a65-ff2f-4171-a365-54a13d659dca",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "40ef7b29-8f22-4ee4-880c-05deb3243c63",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a22bf59-dfb3-41f3-b972-6ae301f64b3c",
+          "type": "field",
+          "fieldId": "6809e8f2-63e0-45a8-8ad6-2b313b345c73",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "36cb68b6-ab76-4f48-8421-22d496e29be7",
+          "type": "field",
+          "fieldId": "2aa93dd5-5d64-4bb2-99f6-4152cedc26dc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f628f0ee-b553-441a-a6df-c2aa81b3af00",
+          "type": "field",
+          "fieldId": "fcdc63a7-84db-49da-bb66-cf5bbe73a1b3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "63b42994-1927-4e41-8a63-4dafa2f3b4d5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1fffe0b3-1543-481e-a025-7937f244833e",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Calibration Procedure "
+            }
+          ]
+        },
+        {
+          "id": "b8768361-29e8-4c78-9e27-7371729a3a60",
+          "type": "task",
+          "children": [
+            {
+              "text": "1"
+            }
+          ]
+        },
+        {
+          "id": "f775d4a0-88ac-4cff-b4a4-45771c4e00f7",
+          "type": "task",
+          "children": [
+            {
+              "text": "2"
+            }
+          ]
+        },
+        {
+          "id": "7aac006e-d9df-4c8e-bfae-c34f4d7356cb",
+          "type": "task",
+          "children": [
+            {
+              "text": "3"
+            }
+          ]
+        },
+        {
+          "id": "788fec2e-e4d6-4065-a6a3-5189046efef9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "51963caa-c65f-4560-b352-4f31da91b9b6",
+          "type": "field",
+          "fieldId": "8b7e8dae-7012-41ad-92c1-e97bc2e15225",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "6dd75707-4a81-4025-b96a-fa1c0ec5b1be",
+          "type": "task",
+          "children": [
+            {
+              "text": "Per calibration results, this piece of equipment is calibrated for use as per its respective specifications."
+            }
+          ]
+        },
+        {
+          "id": "c2f3bcc0-de79-445e-b712-348ef6c610c0",
+          "type": "field",
+          "fieldId": "fda3afe0-5538-4c8c-b3f5-7418ed06d4b1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b55da42b-1d03-48d7-a383-dc813d891083",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c8d31a50-d10a-4108-98a0-1ab3739a151b",
+          "type": "field",
+          "fieldId": "c7bb3c85-0941-4ee9-a863-40e042e29641",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "54c99648-1b22-4971-a93f-9e3a6ae112ce",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "06f86ab1-622a-441d-bb59-7125c5a9ff9a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2f49d7f1-7ae8-4ab5-b67c-29891dc40b5b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

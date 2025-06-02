@@ -1,0 +1,302 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "7d6e4224-90cc-4209-a5e0-3c5270ec861b",
+  "title": "Equipment Maintenance - Unplanned",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "fda3afe0-5538-4c8c-b3f5-7418ed06d4b1",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Equipment": {
+      "id": "9820b365-5984-4f53-8dcb-9b3f538a7b18",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Equipment Status": {
+      "id": "70c03a65-ff2f-4171-a365-54a13d659dca",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "15501648-47ae-4868-8ef4-44e0f710c0c7",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Update"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Date of Maintenance": {
+      "id": "6809e8f2-63e0-45a8-8ad6-2b313b345c73",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Next Maintenance Due Date": {
+      "id": "fcdc63a7-84db-49da-bb66-cf5bbe73a1b3",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Date of Maintenance\") , lookup(__self, \"Maintenance Frequency (months)\") , 'months')"
+      },
+      "dataType": null
+    },
+    "Update next maintenance date": {
+      "id": "c7bb3c85-0941-4ee9-a863-40e042e29641",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "fb05bc5e-b9c7-4250-96ee-24b53b9f4cf5",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Update "
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Maintenance Frequency (months)": {
+      "id": "2aa93dd5-5d64-4bb2-99f6-4152cedc26dc",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Equipment\")  , \"Maintenance Frequency (in Months)\" )"
+      },
+      "dataType": null
+    },
+    "Reason for Unplanned Maintenance": {
+      "id": "d80fae76-fa0f-40e5-bba0-884548730905",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Maintenance Certificate (if applicable)": {
+      "id": "8b7e8dae-7012-41ad-92c1-e97bc2e15225",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "01497496-a87e-498d-bff4-d7542bd30b5c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "bb298357-c917-4747-a7b5-68aa4509a481",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cd48a600-f4c2-4c58-b625-f4620cf39048",
+          "type": "field",
+          "fieldId": "9820b365-5984-4f53-8dcb-9b3f538a7b18",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "20c745c3-2acb-4156-a9e5-137b54f4e815",
+          "type": "field",
+          "fieldId": "70c03a65-ff2f-4171-a365-54a13d659dca",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "40ef7b29-8f22-4ee4-880c-05deb3243c63",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a22bf59-dfb3-41f3-b972-6ae301f64b3c",
+          "type": "field",
+          "fieldId": "6809e8f2-63e0-45a8-8ad6-2b313b345c73",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "36cb68b6-ab76-4f48-8421-22d496e29be7",
+          "type": "field",
+          "fieldId": "2aa93dd5-5d64-4bb2-99f6-4152cedc26dc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f628f0ee-b553-441a-a6df-c2aa81b3af00",
+          "type": "field",
+          "fieldId": "fcdc63a7-84db-49da-bb66-cf5bbe73a1b3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "63b42994-1927-4e41-8a63-4dafa2f3b4d5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b8768361-29e8-4c78-9e27-7371729a3a60",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d48ff382-087d-491f-ba57-b3d680b19efc",
+          "type": "field",
+          "fieldId": "d80fae76-fa0f-40e5-bba0-884548730905",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "51963caa-c65f-4560-b352-4f31da91b9b6",
+          "type": "field",
+          "fieldId": "8b7e8dae-7012-41ad-92c1-e97bc2e15225",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "6dd75707-4a81-4025-b96a-fa1c0ec5b1be",
+          "type": "task",
+          "children": [
+            {
+              "text": "Per maintenance results, this equipment aligns with required specifications and is cleared for service and is thus suitable for operational use."
+            }
+          ]
+        },
+        {
+          "id": "c2f3bcc0-de79-445e-b712-348ef6c610c0",
+          "type": "field",
+          "fieldId": "fda3afe0-5538-4c8c-b3f5-7418ed06d4b1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b55da42b-1d03-48d7-a383-dc813d891083",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c8d31a50-d10a-4108-98a0-1ab3739a151b",
+          "type": "field",
+          "fieldId": "c7bb3c85-0941-4ee9-a863-40e042e29641",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "54c99648-1b22-4971-a93f-9e3a6ae112ce",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "06f86ab1-622a-441d-bb59-7125c5a9ff9a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2f49d7f1-7ae8-4ab5-b67c-29891dc40b5b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,595 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0bb09221-eff0-4288-9f87-8bc4c830828f",
+  "title": "Equipment Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Location": {
+      "id": "ce9cf8ed-3c95-4140-8b91-6bfb8ed45e64",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Laboratory",
+          "Cleanroom",
+          "Manufacturing",
+          "Office"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Description": {
+      "id": "2b4d9ced-7ce0-46c0-9c65-30a27b2f3ccb",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Equipment #": {
+      "id": "366b73bc-784c-4ad2-88b1-f250b05af596",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Manufacturer": {
+      "id": "71edb3b8-1608-471b-8d84-5d34342598dc",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Serial Number": {
+      "id": "4e893c6a-b646-4338-94ed-b19b1639a1f4",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Equipment Name": {
+      "id": "00738ee9-a63f-4893-b75d-b77385652fd7",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Outsourced/In-house?": {
+      "id": "dbc3fd89-8fc8-450c-8193-4b374db40fea",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Outsourced",
+          "In-house"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Calibration Required?": {
+      "id": "a561dbdb-a167-4e4b-bd78-135997f232db",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Maintenance Required?": {
+      "id": "8b7656a5-559a-4360-944a-7801ba2389ee",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Equipment Model Number": {
+      "id": "13a1be80-ce9d-4f60-b59a-bec98ddd9448",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Responsible Department": {
+      "id": "1c3dbd3d-7b69-4ec5-b7f4-425d6e4bfb8c",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Manufacturing",
+          "QA",
+          "QC"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Attachments / Documents": {
+      "id": "191be567-8c40-4317-9203-f2c2bd13112a",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Maintenance Requirements": {
+      "id": "c8e9dede-72fe-4443-8409-a5c3fe2c61d2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Next Calibration Due Date": {
+      "id": "726b957d-6cd3-4c1c-979e-e2114de16804",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Most Recent Calibration Date\") , lookup(__self, \"Calibration Frequency (in Months)\") , 'months')"
+      },
+      "dataType": null
+    },
+    "Most Recent Calibration Date": {
+      "id": "7ed8d5fe-073f-4ceb-af6b-bbc3bb1c0883",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Most Recent Maintenance Date": {
+      "id": "f8356f32-f049-47e6-aa0d-3269cf6780a2",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Qualification/Validation notes": {
+      "id": "5ce81bc1-7ee1-4382-8ef4-2a718875b80f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Next scheduled maintenance date": {
+      "id": "ede171d9-6345-4369-b9e6-3b3d4a64d9ad",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Most Recent Maintenance Date\") , lookup(__self, \"Maintenance Frequency (in Months)\") , \"months\")"
+      },
+      "dataType": null
+    },
+    "Calibration Frequency (in Months)": {
+      "id": "0102b521-a1ee-46aa-b1dc-c62443f26a13",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Maintenance Frequency (in Months)": {
+      "id": "caddc528-fb5b-495f-bdb1-3dc54d388e73",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Attach Qualification Documentation": {
+      "id": "7f7f8c0c-a551-46bb-9b32-5d3fe5ecd7d4",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "If relevant, link In-house calibration SOP": {
+      "id": "ed245132-563c-4027-99bc-be65c935a282",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "01497496-a87e-498d-bff4-d7542bd30b5c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "c4602e67-36e7-4d25-b7fa-0f671504fca9",
+          "type": "field",
+          "fieldId": "00738ee9-a63f-4893-b75d-b77385652fd7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b79f4be9-1456-44dd-b5da-cd645b786a59",
+          "type": "field",
+          "fieldId": "366b73bc-784c-4ad2-88b1-f250b05af596",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "28a05007-466d-46e0-b03c-f04770fa59ec",
+          "type": "field",
+          "fieldId": "13a1be80-ce9d-4f60-b59a-bec98ddd9448",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "188abde6-f701-418b-bd52-ffe39a3e6f5c",
+          "type": "field",
+          "fieldId": "2b4d9ced-7ce0-46c0-9c65-30a27b2f3ccb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "47d0392e-22b3-48a1-b4ad-26933150fe9b",
+          "type": "field",
+          "fieldId": "4e893c6a-b646-4338-94ed-b19b1639a1f4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3d362c5c-66dc-4387-b87e-5ca37bcd09c9",
+          "type": "field",
+          "fieldId": "71edb3b8-1608-471b-8d84-5d34342598dc",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "ad8dc02e-c443-4135-9177-a1fe426622a3",
+          "type": "field",
+          "fieldId": "ce9cf8ed-3c95-4140-8b91-6bfb8ed45e64",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fb664ce8-b14d-4be6-baa2-8b8f224cd7a4",
+          "type": "field",
+          "fieldId": "1c3dbd3d-7b69-4ec5-b7f4-425d6e4bfb8c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "35158ca6-9953-4fad-a9f9-b32f7d262f27",
+          "type": "field",
+          "fieldId": "191be567-8c40-4317-9203-f2c2bd13112a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6a4400a0-eef3-4f56-9a43-d03a510eb3d2",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5cd25212-21e0-4381-b7c6-60f4540d2d94",
+          "type": "h3",
+          "align": "left",
+          "children": [
+            {
+              "text": "Qualification"
+            }
+          ]
+        },
+        {
+          "id": "33db8b7a-c8b7-47d2-adb1-5e30cc149c92",
+          "type": "field",
+          "fieldId": "5ce81bc1-7ee1-4382-8ef4-2a718875b80f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "823b7adc-40ed-4300-b0ba-4bc30b8deb89",
+          "type": "field",
+          "fieldId": "7f7f8c0c-a551-46bb-9b32-5d3fe5ecd7d4",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "15e2eca6-7d06-4562-8e04-2391d3f82290",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "330f4a64-cf62-4561-9f5b-9893f7528d46",
+          "type": "h3",
+          "align": "left",
+          "children": [
+            {
+              "text": "Maintenance "
+            }
+          ]
+        },
+        {
+          "id": "b882d1e3-20b6-4a21-84f6-3ef2ea7cbac1",
+          "type": "field",
+          "fieldId": "8b7656a5-559a-4360-944a-7801ba2389ee",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b10226aa-1e2c-4e37-8d9b-222469e47c1b",
+          "type": "field",
+          "fieldId": "caddc528-fb5b-495f-bdb1-3dc54d388e73",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "71ad354a-93d6-4ad2-98c8-e3cc1d554f53",
+          "type": "field",
+          "fieldId": "c8e9dede-72fe-4443-8409-a5c3fe2c61d2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "572d955e-7300-4ed9-9d93-3d3ee610b78b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "75995300-304e-429d-a061-527c525f0c1f",
+          "type": "field",
+          "fieldId": "f8356f32-f049-47e6-aa0d-3269cf6780a2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "885f6574-8a53-4914-aa90-d90334150a9b",
+          "type": "field",
+          "fieldId": "ede171d9-6345-4369-b9e6-3b3d4a64d9ad",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b84266ef-c80e-4a81-9861-39cd0235539c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "64193cf2-e6a6-4dc5-a2f8-2c1744401f14",
+          "type": "h3",
+          "align": "left",
+          "children": [
+            {
+              "text": "Calibration"
+            }
+          ]
+        },
+        {
+          "id": "48aeccfa-e022-4513-b984-b42c37b8f3b3",
+          "type": "field",
+          "fieldId": "a561dbdb-a167-4e4b-bd78-135997f232db",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "935054ad-8af6-4b51-9418-d469c491e622",
+          "type": "p",
+          "children": [
+            {
+              "text": "Complete the following fields if Calibration is required. Leave blank if N/A."
+            }
+          ]
+        },
+        {
+          "id": "15b215e3-f059-4144-ba15-f12fb63adf18",
+          "type": "field",
+          "fieldId": "0102b521-a1ee-46aa-b1dc-c62443f26a13",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9698d9b6-1e51-4d3a-9f2e-39654a6c0ec8",
+          "type": "field",
+          "fieldId": "dbc3fd89-8fc8-450c-8193-4b374db40fea",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d993ac6c-41ba-4d63-a029-e7d752dadcb8",
+          "type": "field",
+          "fieldId": "ed245132-563c-4027-99bc-be65c935a282",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "17bedad1-e762-4174-bd68-c0b7618e4a00",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b4ca648d-cbf8-4f72-9ae7-830e583db9b5",
+          "type": "h3",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a4ec4cd1-9c26-4209-8df4-7e8732cea4ea",
+          "type": "field",
+          "fieldId": "7ed8d5fe-073f-4ceb-af6b-bbc3bb1c0883",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d87e8361-a30a-4bbf-a265-15421488d243",
+          "type": "field",
+          "fieldId": "726b957d-6cd3-4c1c-979e-e2114de16804",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ce06c9e3-c657-45fa-9c2a-98017ddcdc8c",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8eb42c9b-baac-4818-9367-9a12d2cd7294",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8c8ea209-b9e9-465c-a01f-a80b769a2a1b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "computedTitle": "@366b73bc-784c-4ad2-88b1-f250b05af596 - @00738ee9-a63f-4893-b75d-b77385652fd7 "
+  }
+}
