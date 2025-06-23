@@ -1,0 +1,342 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2551fa30-59ad-4908-8028-94deca403e8e",
+  "title": "Change Control - Implementation Stages",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Change Control": {
+      "id": "998f7f6e-f2c9-45d0-80cc-e154aed96ed0",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Training Completed": {
+      "id": "0e98cc76-c802-4856-be69-d20e5c9eeaac",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Validation Completed": {
+      "id": "0f2194ea-c53d-4733-b467-2ef25cf46ed8",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Any Other Attachments": {
+      "id": "641299d7-ad49-4fd7-bf6e-c16be44a9f6e",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Document Updates Completed": {
+      "id": "8deb1b6f-c80d-497a-9b82-3457520b68ae",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Any Additional Actions Completed": {
+      "id": "ddf4f2d2-7093-4fec-a97b-0301ab1030b9",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "eb08fa73-486d-4280-97b6-d86a72541d5c",
+          "type": "field",
+          "fieldId": "998f7f6e-f2c9-45d0-80cc-e154aed96ed0",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "897d3ffc-0c8b-47b5-bb8d-f378634b1a84",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fe4b3f73-26c8-4ac4-aa18-34469ea24e80",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Validation "
+            },
+            {
+              "bold": true,
+              "text": "Completed"
+            }
+          ]
+        },
+        {
+          "id": "9d75971e-b2b2-4fed-8f3c-091f1716f30a",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the validation that has been completed, and the outcomes."
+            }
+          ]
+        },
+        {
+          "id": "87ed92e0-e271-4b04-a96f-f364a1745fa1",
+          "type": "p",
+          "children": [
+            {
+              "text": "If validation is not successful, the change cannot be implemented."
+            }
+          ]
+        },
+        {
+          "id": "a8cd9bab-ab27-4b6f-af1e-62aea7e8a5fc",
+          "type": "p",
+          "children": [
+            {
+              "text": "If not required, justify."
+            }
+          ]
+        },
+        {
+          "id": "c1a4701c-8f1c-4dac-b0be-d3dfe470e65a",
+          "type": "field",
+          "fieldId": "0f2194ea-c53d-4733-b467-2ef25cf46ed8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d3178f88-4f2b-48ee-9261-147f14e9a6f7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "00013d07-3025-4b20-b863-7e4ce6cfafca",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Training "
+            },
+            {
+              "bold": true,
+              "text": "Completed"
+            }
+          ]
+        },
+        {
+          "id": "4f81f858-46ef-48d2-900f-31674282a434",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the training that has been completed."
+            }
+          ]
+        },
+        {
+          "id": "7f0623d9-7046-468d-8e43-1a08e921243a",
+          "type": "p",
+          "children": [
+            {
+              "text": "If training is to be included at time of document issue or after implementation, this shall be documented.  A CA shall be raised to document the training and the CA reference included."
+            }
+          ]
+        },
+        {
+          "id": "ceb07cb0-ab9f-4b5d-a144-6554d2ba969a",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no training is required, this must be justified."
+            }
+          ]
+        },
+        {
+          "id": "95becf1a-322b-4915-9017-71d7a2594ad3",
+          "type": "field",
+          "fieldId": "0e98cc76-c802-4856-be69-d20e5c9eeaac",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0380735d-685a-4a7e-8ad9-887117805241",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e96fe98b-1974-480a-9bc3-bc7ce884d748",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Document Updates "
+            },
+            {
+              "bold": true,
+              "text": "Completed"
+            }
+          ]
+        },
+        {
+          "id": "bffae7f1-135e-41b3-adf8-fe35f1fbbd3f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the documents that have been updated as part of the change.  The documents must NOT be issued at this stage."
+            }
+          ]
+        },
+        {
+          "id": "1948e369-020f-4577-9df7-97ed9aca8b3a",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no documents are updated, this must be justified."
+            }
+          ]
+        },
+        {
+          "id": "7b6cf391-aca4-4b75-8755-4e76387678e2",
+          "type": "field",
+          "fieldId": "8deb1b6f-c80d-497a-9b82-3457520b68ae",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cccbf49a-b45b-40cc-934c-17f3cc0f80e0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d2c338be-bb2d-4b9c-954c-739d1a589b64",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Any Additional Actions "
+            },
+            {
+              "bold": true,
+              "text": "Completed"
+            }
+          ]
+        },
+        {
+          "id": "7ec0a7e5-35ac-4379-bcac-35f7839e6e24",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the additional actions completed."
+            }
+          ]
+        },
+        {
+          "id": "a15c2037-a182-4eb0-9767-c3f5fb24178b",
+          "type": "p",
+          "children": [
+            {
+              "text": "If notifications to customers or regulators were carried out, evidence of the response / approval to proceed shall be attached."
+            }
+          ]
+        },
+        {
+          "id": "f147d3a0-98f9-4a90-873c-26b3983d4164",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no additional actions were identified, this must be justified"
+            }
+          ]
+        },
+        {
+          "id": "d04442ee-bae2-4854-bf66-f8e39a420f54",
+          "type": "field",
+          "fieldId": "ddf4f2d2-7093-4fec-a97b-0301ab1030b9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5cdf5b49-bac9-4bb9-8641-82dd52d2e256",
+          "type": "field",
+          "fieldId": "641299d7-ad49-4fd7-bf6e-c16be44a9f6e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "67941f95-b59a-4a68-8a14-89f894e6a205",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

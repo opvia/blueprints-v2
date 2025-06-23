@@ -1,0 +1,378 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "743df9d6-2e4d-4327-aabd-42aa9e90a662",
+  "title": "Change Control - Propose Change and Approval to Proceed",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "QA Approval": {
+      "id": "26f18bc2-af41-4bd7-9c83-47a051cfdaa1",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved",
+          "Not Approved",
+          "N/A"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "BIO Approval": {
+      "id": "5ed59f5b-d9e3-406b-a471-6604a2f9f278",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved",
+          "Not Approved",
+          "N/A"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "CHE Approval": {
+      "id": "d40dc7eb-d58f-4896-b7c7-6c904a41c5ba",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved",
+          "Not Approved",
+          "N/A"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "DSP Approval": {
+      "id": "76edcb4b-3c6d-4889-8456-478584a9dbba",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved",
+          "Not Approved",
+          "N/A"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "FER Approval": {
+      "id": "c36812c8-a055-4554-800f-a2c7586cd50e",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved",
+          "Not Approved",
+          "N/A"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "H&S Approval": {
+      "id": "8b5830c5-04fc-407d-b5bf-4e1f0eb32efa",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved",
+          "Not Approved",
+          "N/A"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "OPS Approval": {
+      "id": "aed562e4-25b8-4b48-aeb8-0083c338adbb",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved",
+          "Not Approved",
+          "N/A"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Change Control": {
+      "id": "03833b86-65d0-4486-9aa6-f04463eeac97",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Change Proposed": {
+      "id": "7abcb688-5015-412e-9376-5927a5ccb602",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Supporting Documents": {
+      "id": "d9504662-0bca-4c76-9d22-f6094ee3a68c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Project Reference (if any)": {
+      "id": "fea6b404-fc4b-42ad-96f3-4b9b17059485",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Customer Reference (if any)": {
+      "id": "19fda810-b678-47d1-94c4-bff19e56284f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8b4922ee-7f1b-477a-b33e-76a800c5aaaa",
+          "type": "field",
+          "fieldId": "03833b86-65d0-4486-9aa6-f04463eeac97",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "64272387-754a-4bc1-8d5c-c38363595bc6",
+          "type": "field",
+          "fieldId": "fea6b404-fc4b-42ad-96f3-4b9b17059485",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "afbcab9e-c806-45b8-af01-c3a6dca4926f",
+          "type": "field",
+          "fieldId": "19fda810-b678-47d1-94c4-bff19e56284f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a0cf539e-c133-49ad-9084-5f68db9384c7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8cc62375-a341-432e-8f19-7d6a3421254d",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Change Proposed"
+            }
+          ]
+        },
+        {
+          "id": "73db2d38-3c25-47b6-84e9-a7abd773b2d5",
+          "type": "p",
+          "children": [
+            {
+              "text": "Include what the current process is, what it will be changed to, and the impact of not completing the change.  "
+            }
+          ]
+        },
+        {
+          "id": "81da52a8-5fe8-46ec-95cc-ec0dccbd02ff",
+          "type": "p",
+          "children": [
+            {
+              "text": "If the change is an outcome of a CAPA, please include that in the proposal."
+            }
+          ]
+        },
+        {
+          "id": "64040b30-41d4-4433-989c-824126742786",
+          "type": "p",
+          "children": [
+            {
+              "text": "(Attach supporting Documents)"
+            }
+          ]
+        },
+        {
+          "id": "73968b54-261f-4c80-8a5c-30ad47200f6d",
+          "type": "field",
+          "fieldId": "7abcb688-5015-412e-9376-5927a5ccb602",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4d802001-23d6-4826-886a-6e49a2fa55ba",
+          "type": "field",
+          "fieldId": "d9504662-0bca-4c76-9d22-f6094ee3a68c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "c5be5178-982b-4b11-b068-9bb0d08bbf8d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "06be44d1-618f-4352-8393-b96b1d0095a8",
+          "type": "h3",
+          "children": [
+            {
+              "text": "SME from each dept shall document their approval decision and justification.  Where a dept is not impacted, QA ONLY shall complete the field as N/A"
+            }
+          ]
+        },
+        {
+          "id": "4c68d0f6-e123-45ba-b32b-340b7ff8389d",
+          "type": "p",
+          "children": [
+            {
+              "text": "Create Approval to Proceed Record"
+            }
+          ]
+        },
+        {
+          "id": "0dddd312-6787-4823-9b93-5d16d6165282",
+          "type": "field",
+          "fieldId": "5ed59f5b-d9e3-406b-a471-6604a2f9f278",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "91a5ee09-e66a-4a74-86bd-61c42eeaea3a",
+          "type": "field",
+          "fieldId": "d40dc7eb-d58f-4896-b7c7-6c904a41c5ba",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d2e24223-cbd4-4c7c-a09b-47cf3d395a2d",
+          "type": "field",
+          "fieldId": "aed562e4-25b8-4b48-aeb8-0083c338adbb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6d16f9a9-8021-40a4-92db-1fe763a4273e",
+          "type": "field",
+          "fieldId": "76edcb4b-3c6d-4889-8456-478584a9dbba",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cc1bb6f8-e130-4677-abf2-5ef5b0dfd2e5",
+          "type": "field",
+          "fieldId": "8b5830c5-04fc-407d-b5bf-4e1f0eb32efa",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f2ed460f-29e9-48cc-bf8e-0bdfa0f0fa2c",
+          "type": "field",
+          "fieldId": "c36812c8-a055-4554-800f-a2c7586cd50e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5f7c9698-a2c2-412d-96f0-d8491a1d9a85",
+          "type": "field",
+          "fieldId": "26f18bc2-af41-4bd7-9c83-47a051cfdaa1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d804448d-0d5c-46f1-bb7d-4964b441b05f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

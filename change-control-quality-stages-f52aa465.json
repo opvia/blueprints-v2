@@ -1,0 +1,305 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f52aa465-b88a-482e-b13e-cc1054fe1e4a",
+  "title": "Change Control - Quality Stages",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Change Control": {
+      "id": "7f06d2dc-e5a0-46cc-8dec-e4790a7f3347",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "QA Closure Date": {
+      "id": "c956814a-5a98-460d-9cb1-b6f72536a69e",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Closure Decision": {
+      "id": "df9e6eac-e8c8-44d2-a051-dd4f8b4df3e9",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Document Issuing": {
+      "id": "f38e6b2e-b45a-447a-896b-2aab2e266af7",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "QA Closure Completed By": {
+      "id": "b82f6e88-2500-46e8-84ef-42ab9ddc3d38",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Effectiveness Check Agreed": {
+      "id": "6e507baf-17e2-411a-b5c8-2597a102fc8b",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No",
+          "N/A"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Additional Actions Completed": {
+      "id": "d92443ba-fba9-4400-b8b4-9b1edf275f25",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Attach Evidence Of Completion": {
+      "id": "e03d99fd-6115-48db-88a4-dd1c656cd7d7",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Any Additional Actions Required": {
+      "id": "1cb0c19f-1088-4008-af27-0e2d37095953",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "ec9596d6-77bb-49d4-be8c-61fa0667913a",
+          "type": "field",
+          "fieldId": "7f06d2dc-e5a0-46cc-8dec-e4790a7f3347",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "15ccae39-149e-4b62-8e4c-4543a76b7550",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "31505d6b-bc86-4662-af7c-9976edf5ec53",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Document Issuing"
+            }
+          ]
+        },
+        {
+          "id": "6ef4357d-5a54-4870-98fe-02ed06e9d574",
+          "type": "p",
+          "children": [
+            {
+              "text": "List all documents that have been issued, and the issue date."
+            }
+          ]
+        },
+        {
+          "id": "5aa82f99-3776-4249-ac2c-372513f02c56",
+          "type": "field",
+          "fieldId": "f38e6b2e-b45a-447a-896b-2aab2e266af7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "17975d90-8a55-4e67-97bc-93e26221489f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a550bab0-f111-4c82-b832-c54a01aee0c3",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Effectiveness Check Agreed"
+            }
+          ]
+        },
+        {
+          "id": "4dcf66bd-b4e0-456d-af19-a3af1aabb20e",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the effectiveness check agreed to be completed."
+            }
+          ]
+        },
+        {
+          "id": "59c7c471-13d3-47ba-aa5f-74da56be5fa1",
+          "type": "p",
+          "children": [
+            {
+              "text": "Raise the record and include the reference number"
+            }
+          ]
+        },
+        {
+          "id": "6ed23d18-e4fd-4912-a49e-b676fb0bb91e",
+          "type": "field",
+          "fieldId": "6e507baf-17e2-411a-b5c8-2597a102fc8b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "35878002-b19e-438f-8096-e39ad0c1bb3b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7d87075e-0f34-453f-8c75-85cf61d0dff5",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Closure"
+            }
+          ]
+        },
+        {
+          "id": "73495100-3b5e-4505-8f2e-d9d9b402f736",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the decision to close the record, and any additional actions required.  This change must not be implemented until these are completed."
+            }
+          ]
+        },
+        {
+          "id": "5a59f987-671a-4039-a4bf-ee595d08ed8f",
+          "type": "field",
+          "fieldId": "df9e6eac-e8c8-44d2-a051-dd4f8b4df3e9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "51c6d2af-4419-4ce6-8a59-560c6855fe87",
+          "type": "field",
+          "fieldId": "1cb0c19f-1088-4008-af27-0e2d37095953",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d0e7f537-14cb-44a8-af25-3d58534cadf2",
+          "type": "field",
+          "fieldId": "d92443ba-fba9-4400-b8b4-9b1edf275f25",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2309cef2-be39-4f7c-b6ac-ea0e68125add",
+          "type": "field",
+          "fieldId": "e03d99fd-6115-48db-88a4-dd1c656cd7d7",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "8abe253f-78ab-40e3-b89c-29a5a2429512",
+          "type": "field",
+          "fieldId": "b82f6e88-2500-46e8-84ef-42ab9ddc3d38",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c8fd3d03-00c0-4996-aefd-89605353304f",
+          "type": "field",
+          "fieldId": "c956814a-5a98-460d-9cb1-b6f72536a69e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ba3671fb-7829-4bf3-8869-da8b1a1e8665",
+          "type": "p",
+          "children": [
+            {
+              "text": "\n"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

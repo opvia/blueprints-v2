@@ -1,0 +1,165 @@
+{
+  "id": "simple-qms",
+  "version": 1,
+  "name": "Simple QMS",
+  "description": "",
+  "entities": [
+    {
+      "id": "4ff6cf9f-b20b-46d1-8541-7d275c1f0f3a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP Template",
+      "icon": "application",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "e801632e-3c77-45b5-a7b9-bf110a18a77d",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "application"
+    },
+    {
+      "id": "2f2925e4-418f-411f-bc32-6c1570dabf13",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Work Instruction Template",
+      "icon": "application",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "16e9e198-c140-45ab-a58b-a919c0b15d97",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Record",
+      "icon": "application"
+    },
+    {
+      "id": "9ba42291-26ab-489c-99bf-a9ac87b994d9",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Materials",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7b2e86cf-95d9-4f9c-9fa8-0e4d001dfae3",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "a4eee5d4-5994-49fb-9b58-1d766ae774f0"
+      ]
+    },
+    {
+      "id": "328bf5d1-15bd-4394-9ddc-20957ba319f3",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control - Assessment Stages",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "a4eee5d4-5994-49fb-9b58-1d766ae774f0"
+      ]
+    },
+    {
+      "id": "2551fa30-59ad-4908-8028-94deca403e8e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control - Implementation Stages",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "a4eee5d4-5994-49fb-9b58-1d766ae774f0"
+      ]
+    },
+    {
+      "id": "743df9d6-2e4d-4327-aabd-42aa9e90a662",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control - Propose Change and Approval to Proceed",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "a4eee5d4-5994-49fb-9b58-1d766ae774f0"
+      ]
+    },
+    {
+      "id": "f52aa465-b88a-482e-b13e-cc1054fe1e4a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control - Quality Stages",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "a4eee5d4-5994-49fb-9b58-1d766ae774f0"
+      ]
+    },
+    {
+      "id": "3f55e83d-0b81-4135-aa44-cc611310d0db",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document Change Request",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e691cf6c-0c7d-40dd-9569-d0f93763013b"
+      ]
+    },
+    {
+      "id": "af32b9ff-822b-484a-89bc-0810632a2b5e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "DCR - Change Requested",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "e691cf6c-0c7d-40dd-9569-d0f93763013b"
+      ]
+    },
+    {
+      "id": "4fd31cf3-c183-46e0-9313-68a6391e13e9",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "DCR - Document Owner / SME Response",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e691cf6c-0c7d-40dd-9569-d0f93763013b"
+      ]
+    },
+    {
+      "id": "495b3589-70c2-48c0-835a-f6517b34f86e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "DCR -  Quality Review & Closure",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e691cf6c-0c7d-40dd-9569-d0f93763013b"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "a4eee5d4-5994-49fb-9b58-1d766ae774f0",
+      "text": "Change Control",
+      "hexCode": "#e4bb4b"
+    },
+    {
+      "id": "e691cf6c-0c7d-40dd-9569-d0f93763013b",
+      "text": "DCR",
+      "hexCode": "#0057c9"
+    }
+  ]
+}

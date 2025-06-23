@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "495b3589-70c2-48c0-835a-f6517b34f86e",
+  "title": "DCR -  Quality Review & Closure",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Change Control Required": {
+      "id": "b788016a-b90d-4c9a-b361-0ed34228b368",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Document Change Request": {
+      "id": "14d229c5-ff36-4577-89c4-ee8f65fbfa85",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Change Control Reference": {
+      "id": "d4dedadb-c0aa-4a04-a6b4-144d42f487f6",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Justification For Decision": {
+      "id": "1d82e473-1d0d-4dd0-b43c-b1b811082c55",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "9b61c081-48e7-4114-8b66-3c8f155f75e3",
+          "type": "field",
+          "fieldId": "14d229c5-ff36-4577-89c4-ee8f65fbfa85",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "76d629ef-2621-4f55-8a19-9a354616015f",
+          "type": "field",
+          "fieldId": "b788016a-b90d-4c9a-b361-0ed34228b368",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b799d54b-0aa9-403c-b17c-8279b48d9ea2",
+          "type": "field",
+          "fieldId": "d4dedadb-c0aa-4a04-a6b4-144d42f487f6",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "dcd8ab44-d34d-44c6-89b6-d950a97ca6d6",
+          "type": "field",
+          "fieldId": "1d82e473-1d0d-4dd0-b43c-b1b811082c55",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a6ccf7ec-f5b4-49c1-ac54-7491740e474a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

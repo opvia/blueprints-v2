@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4fd31cf3-c183-46e0-9313-68a6391e13e9",
+  "title": "DCR - Document Owner / SME Response",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Change Approved": {
+      "id": "e0093641-e128-498a-bf62-81310b83565c",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved",
+          "Not Approved"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Document Change Request": {
+      "id": "6aa9dd3f-61e7-4562-b90a-d2a3750afc41",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Justification For Decision": {
+      "id": "bab28d37-9f75-4a49-9867-09330c8be2e0",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "0c5dcef2-5cae-451b-b4b8-d15143dd0d52",
+          "type": "field",
+          "fieldId": "6aa9dd3f-61e7-4562-b90a-d2a3750afc41",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "a413b1ed-6279-4edf-9cec-5147b4cb4290",
+          "type": "field",
+          "fieldId": "e0093641-e128-498a-bf62-81310b83565c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "31d92fe3-ff68-4b29-a815-0d8243a0b568",
+          "type": "field",
+          "fieldId": "bab28d37-9f75-4a49-9867-09330c8be2e0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "10cd1a61-7de2-4a93-b580-ada3d501e3b3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
