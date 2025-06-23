@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "9ba42291-26ab-489c-99bf-a9ac87b994d9",
+  "title": "Materials",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "SKU": {
+      "id": "48e8ffad-e463-4e5f-b4de-9d52ac19511d",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Description": {
+      "id": "46cbbd34-dda1-4e93-9170-3d8c1646c241",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Material ID": {
+      "id": "fc3aef7b-8b5c-480e-9791-a09d1f022a5a",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    },
+    "Material Name": {
+      "id": "df063a9a-609d-4542-8149-f8c531bfcf49",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Material Type": {
+      "id": "f8912404-4eca-4ec4-8181-875d1babf9de",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Supplier Name": {
+      "id": "b0b980f8-e6b9-4c41-ac1d-aa5ffc364f0a",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Catalog Number": {
+      "id": "f9d09f89-3843-4957-b3f6-323f7497af0c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Lot / Batch Number": {
+      "id": "1b445719-7f6b-46aa-9d4f-f5397f80d9b7",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "4a78b32a-3310-4f3c-8f02-ad983bce6be5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e29377bf-3038-492d-9bc3-c8164cf2acdf",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Core Identification Fields"
+            }
+          ]
+        },
+        {
+          "id": "90d25180-ce0b-4631-9026-6f3efd44fc2f",
+          "type": "field",
+          "fieldId": "fc3aef7b-8b5c-480e-9791-a09d1f022a5a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b00ec7df-4d18-4b28-8622-a9580902f70a",
+          "type": "field",
+          "fieldId": "df063a9a-609d-4542-8149-f8c531bfcf49",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3bdd754b-a2b1-40e4-a503-ad3abc45e695",
+          "type": "field",
+          "fieldId": "f8912404-4eca-4ec4-8181-875d1babf9de",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d90ba2f5-d445-4098-9bb9-67ceb56319b8",
+          "type": "field",
+          "fieldId": "46cbbd34-dda1-4e93-9170-3d8c1646c241",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "28ce3fbd-cf6c-4acd-83a7-4e31b3e2b8b6",
+          "type": "field",
+          "fieldId": "48e8ffad-e463-4e5f-b4de-9d52ac19511d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0dd8f258-a5e8-4590-8c58-6246d4843607",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b6336594-9e69-4d9c-9261-7932c506cb76",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Vendor & Ordering Info"
+            }
+          ]
+        },
+        {
+          "id": "a91b35cf-b544-4c7c-ade7-271ecf369ab9",
+          "type": "field",
+          "fieldId": "b0b980f8-e6b9-4c41-ac1d-aa5ffc364f0a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d3216bad-2020-4bb8-8a52-29431d105dd6",
+          "type": "field",
+          "fieldId": "f9d09f89-3843-4957-b3f6-323f7497af0c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1a52f298-b34e-4654-951b-0323e9120310",
+          "type": "field",
+          "fieldId": "1b445719-7f6b-46aa-9d4f-f5397f80d9b7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "45abaaa7-81bc-4580-89c9-211db098dc5e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "11d38de1-cf34-4761-8fbc-3bbec2be4ccd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

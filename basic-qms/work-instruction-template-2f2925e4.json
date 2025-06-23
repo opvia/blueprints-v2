@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2f2925e4-418f-411f-bc32-6c1570dabf13",
+  "title": "Work Instruction Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Equipment": {
+      "id": "4991e405-6c2b-4ef9-9462-a2d38d5c7d8d",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "16e9e198-c140-45ab-a58b-a919c0b15d97",
+          "placeholderValue": "activeVersion"
+        },
+        "placeholderInstances": [
+          {}
+        ]
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Materials": {
+      "id": "0215c094-9e6f-4a8e-8e5d-96e4ea2d0189",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "9ba42291-26ab-489c-99bf-a9ac87b994d9",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Prepared By": {
+      "id": "9124e3d6-4aed-4af5-badb-7d74d48d573c",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Document Type": {
+      "id": "391edfcd-4496-4fd9-8a08-fb236b101e94",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "SOP",
+          "Work Instruction",
+          "Template",
+          "Supporting Documentation",
+          "Form"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Document Title": {
+      "id": "bf45eadc-0e42-41bb-acbc-a16385079ac5",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Published Date": {
+      "id": "887d2b69-3077-48f1-9f8d-683b72835ae0",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "convertToDatetimeField( lookup(__self, \"LAST_EDITED_AT\")  )"
+      },
+      "dataType": null
+    },
+    "Functional Area": {
+      "id": "b9e3645e-3f85-47f0-ad77-b059ccf9f946",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Operations",
+          "Business Development",
+          "Community",
+          "Medical",
+          "Tech",
+          "Product",
+          "Customer Success",
+          "Marketing",
+          "Quality Management"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Work Instruction ID": {
+      "id": "7bdbc810-7cd4-4842-b3fd-cb031661c103",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "concat('Work Instruction: ' , lookup(__self, \"TEMPLATE_INDEX\") )"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "e801632e-3c77-45b5-a7b9-bf110a18a77d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "7ae45ea2-1958-46a2-b887-d9115bf5f2b9",
+          "type": "field",
+          "fieldId": "7bdbc810-7cd4-4842-b3fd-cb031661c103",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "86f03447-ac9d-47d4-ab89-9e1a6289f961",
+          "type": "field",
+          "fieldId": "b9e3645e-3f85-47f0-ad77-b059ccf9f946",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1b59d493-5d2e-42ab-a077-52782fca2889",
+          "type": "field",
+          "fieldId": "391edfcd-4496-4fd9-8a08-fb236b101e94",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f888cf1f-8e0e-4db6-842a-ff071d6ea59a",
+          "type": "field",
+          "fieldId": "bf45eadc-0e42-41bb-acbc-a16385079ac5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "37fde76e-b940-4b3a-9019-549a72b42302",
+          "type": "field",
+          "fieldId": "9124e3d6-4aed-4af5-badb-7d74d48d573c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "55d4dcfc-0759-47ba-b034-a8fd21b1c0bc",
+          "type": "field",
+          "fieldId": "887d2b69-3077-48f1-9f8d-683b72835ae0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f223469e-f43f-49dd-9665-f3a7872648af",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "05daee6e-88bf-4469-8e83-27265b428d76",
+          "type": "h2",
+          "children": [
+            {
+              "text": "1. Purpose"
+            }
+          ]
+        },
+        {
+          "id": "cab1dd8d-d3cc-44ed-866e-66b017a225d7",
+          "type": "p",
+          "children": [
+            {
+              "text": "Brief summary of what this work instruction achieves."
+            }
+          ]
+        },
+        {
+          "id": "34026997-bfe0-4c25-9fc7-9447a776bdb9",
+          "type": "p",
+          "children": [
+            {
+              "text": " "
+            }
+          ]
+        },
+        {
+          "id": "041c24aa-ee7f-4881-a35a-a4915344d2d4",
+          "type": "h2",
+          "children": [
+            {
+              "text": "2. Required Materials / Equipment"
+            }
+          ]
+        },
+        {
+          "id": "3db2ce73-fd12-4c6e-9aef-5a36e7756c94",
+          "type": "p",
+          "children": [
+            {
+              "text": "List of tools, materials, or equipment needed before starting."
+            }
+          ]
+        },
+        {
+          "id": "27b87a03-e148-4ba3-be7a-487275993ba1",
+          "type": "field",
+          "fieldId": "4991e405-6c2b-4ef9-9462-a2d38d5c7d8d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "81fa8ed4-21d4-4d28-bb27-f80037270976",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "86379705-4b61-4c79-a3b3-bebebad9e36b",
+          "type": "field",
+          "fieldId": "0215c094-9e6f-4a8e-8e5d-96e4ea2d0189",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "673d8b26-2adc-4391-8193-df23096605a1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1bad8db2-f558-46ec-ad16-030e70bc22ea",
+          "type": "h2",
+          "children": [
+            {
+              "text": "3. Safety and Precautions"
+            }
+          ]
+        },
+        {
+          "id": "a8ed29ec-0d78-4d6f-abad-a6eb62127bf1",
+          "type": "p",
+          "children": [
+            {
+              "text": "Any relevant safety instructions, PPE requirements, or hazards. "
+            }
+          ]
+        },
+        {
+          "id": "cd4196ba-c6cd-4ae4-8479-9d2335ae276b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ed1ea4a9-10ab-4cc4-a630-a1da359694fe",
+          "type": "h2",
+          "children": [
+            {
+              "text": "4. Prerequisites"
+            }
+          ]
+        },
+        {
+          "id": "078c9896-4667-4093-808a-789c04a21b8e",
+          "type": "p",
+          "children": [
+            {
+              "text": "Tasks or conditions that must be met before beginning (e.g. equipment calibrated, area sanitized)"
+            }
+          ]
+        },
+        {
+          "id": "45e5431b-729e-43d3-a800-871a604664bb",
+          "type": "h3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "01840932-ce56-4326-995c-d15710e8a264",
+          "type": "h2",
+          "children": [
+            {
+              "text": "5. Step-by-Step Instructions"
+            }
+          ]
+        },
+        {
+          "id": "ae2b003e-c21d-456b-b3be-f80681671a2c",
+          "type": "p",
+          "children": [
+            {
+              "text": "Clearly numbered or bulleted steps "
+            }
+          ]
+        },
+        {
+          "id": "2cc59db0-e60a-405a-baa5-3cd26e0c2653",
+          "type": "p",
+          "children": [
+            {
+              "text": "Include diagrams, photos, tables if helpful "
+            }
+          ]
+        },
+        {
+          "id": "08ea7032-36db-49c7-95fc-937a08162aab",
+          "type": "p",
+          "children": [
+            {
+              "text": "Keep it action-oriented and concise "
+            }
+          ]
+        },
+        {
+          "id": "9fd334cb-ad0e-4aee-983e-89b608bb0aa2",
+          "type": "p",
+          "children": [
+            {
+              "text": "Optionally include expected values, ranges, or outcomes"
+            }
+          ]
+        },
+        {
+          "id": "ae0b9c6c-cb67-422d-b915-0123af35cfb5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fefd5ba7-be3a-4c8f-91e3-4851f2194f7b",
+          "type": "h2",
+          "children": [
+            {
+              "text": "6. Acceptance Criteria / Completion Check"
+            }
+          ]
+        },
+        {
+          "id": "cc880790-681b-4d26-a0a4-24366b8a6b06",
+          "type": "p",
+          "children": [
+            {
+              "text": "What defines success? How does the operator know it’s completed correctly?"
+            }
+          ]
+        },
+        {
+          "id": "58f2c780-5e73-411d-baa2-4db534a9c4f1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "79e7891a-47a0-432a-99ce-12e0842bbfc9",
+          "type": "h2",
+          "children": [
+            {
+              "text": "7. References"
+            }
+          ]
+        },
+        {
+          "id": "17afa49a-3c6d-4c69-a7fa-94e0ebf5c668",
+          "type": "p",
+          "children": [
+            {
+              "text": "Any forms, SOPs, or standards referenced."
+            }
+          ]
+        },
+        {
+          "id": "e0fdd550-7251-4e31-9c90-0ad624967b58",
+          "type": "h3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "da9d2525-62eb-4979-82bb-74c1a159f04a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ea478491-1a4a-4213-a166-e307932430de",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "072e953f-8442-4206-bef9-1ae807415211",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
