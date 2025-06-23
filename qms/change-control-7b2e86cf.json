@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "7b2e86cf-95d9-4f9c-9fa8-0e4d001dfae3",
+  "title": "Change Control",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Change Control Title": {
+      "id": "b001b346-3eeb-4573-acea-dbadf535afec",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "93cdc91f-c78f-4691-8042-8704695c9101",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Instructions - See also QA SOP [X]"
+            }
+          ]
+        },
+        {
+          "id": "89e976d8-4d6f-49bb-b30e-08acd23bb36e",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Create new Change Control Record"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "99557396-f69e-4022-935a-8b48774b31db",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Give the Change control a title"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "a302ab1c-37fc-42ba-83df-959a9fc76a7e",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Publish the Change Control record via the change set"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "a282659a-ee4f-4039-90b1-3aed26acf820",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Create a ‘Propose Change and Approval to Proceed Stage"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "9ae0b742-1cd5-43e5-9aad-061e753a4b0b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Complete the entries, send to QA for review via the change set.  QA will raise Assessment Stage"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "cc692833-f422-446c-9e49-68d75f8ac12d",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Complete the entries etc."
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "a8c63a4b-7fde-42b9-880f-10d5213f4286",
+          "type": "field",
+          "fieldId": "b001b346-3eeb-4573-acea-dbadf535afec",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a59dd83-7e9a-4bcf-96f6-82362eca9f59",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

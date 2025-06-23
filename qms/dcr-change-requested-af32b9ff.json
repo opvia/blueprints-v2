@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "af32b9ff-822b-484a-89bc-0810632a2b5e",
+  "title": "DCR - Change Requested",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Change Requested": {
+      "id": "eb2f2e68-224e-484c-b8d1-5909043684de",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Document Reference": {
+      "id": "56ed6bd9-1c25-4d07-8090-f6bbbb21e4cd",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Document Change Request\")  , 'Document Reference')"
+      },
+      "dataType": null
+    },
+    "Document Change Request": {
+      "id": "2575b3a7-3aba-4394-a804-99f72eb55b41",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "0fb6d00c-aec3-43dd-8846-1319253ba34d",
+          "type": "field",
+          "fieldId": "2575b3a7-3aba-4394-a804-99f72eb55b41",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "bdd63991-8a26-459d-9394-518994f4a6c5",
+          "type": "field",
+          "fieldId": "56ed6bd9-1c25-4d07-8090-f6bbbb21e4cd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7ed7fd27-e6be-49af-b6ab-f85f8da94748",
+          "type": "field",
+          "fieldId": "eb2f2e68-224e-484c-b8d1-5909043684de",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8b64be20-4bd9-4d7d-8736-d12708212647",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

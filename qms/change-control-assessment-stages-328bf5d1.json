@@ -1,0 +1,382 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "328bf5d1-15bd-4394-9ddc-20957ba319f3",
+  "title": "Change Control - Assessment Stages",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Change Control": {
+      "id": "d3403d0a-e291-4828-ac92-50daae563a7b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Training Required": {
+      "id": "2a992936-fd82-47cd-a865-c18d68d708a2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "RA & IA Attachments": {
+      "id": "4efe9fa6-b251-4435-82af-9111fb70f2d0",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Validation Required": {
+      "id": "dcf241f2-5d6e-4949-8baf-e9806db610ef",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Any Other Attachments": {
+      "id": "9440c107-f043-4b25-a46a-ab6d06983dbd",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Any additional Actions": {
+      "id": "a0528e5e-0474-4df9-bb22-2564a633b660",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Document Updates Required": {
+      "id": "a84c2144-bcbf-4bd3-a0bd-de3121586a61",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Risk Analysis & Impact Assessment": {
+      "id": "e533b2cd-98a6-4d27-8dbe-eb8f45726d7f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "25404b47-9857-4104-aa7c-4cb40a9a6c49"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "cc71ff88-0ff8-4b3e-bfa7-6391f54ab83d",
+          "type": "field",
+          "fieldId": "d3403d0a-e291-4828-ac92-50daae563a7b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "a4b82999-9b4c-4f3b-a3b6-4f461fcb6a24",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "08ac0a15-fe7c-40f7-94a9-dc2bc6ae179d",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Risk Analysis and Impact Assessment"
+            }
+          ]
+        },
+        {
+          "id": "c3df3d89-d45e-43ea-a32b-65e3609e99eb",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the risk assessment process and attach all findings."
+            }
+          ]
+        },
+        {
+          "id": "12e4a593-97bb-4e63-94cb-45d8f7b4ad82",
+          "type": "p",
+          "children": [
+            {
+              "text": "Include review of the impact of the change on other departments, current projects, previously released material etc."
+            }
+          ]
+        },
+        {
+          "id": "33154d1d-ebd5-4c16-bb20-9c872743da5f",
+          "type": "field",
+          "fieldId": "e533b2cd-98a6-4d27-8dbe-eb8f45726d7f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bfc54171-f93a-4830-ae71-43cdd2e77bd9",
+          "type": "field",
+          "fieldId": "4efe9fa6-b251-4435-82af-9111fb70f2d0",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "89e7ad1b-69c9-4cea-86d3-929e8c854b38",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fe4b3f73-26c8-4ac4-aa18-34469ea24e80",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Validation Required"
+            }
+          ]
+        },
+        {
+          "id": "5c709f3c-0f6d-4037-acbc-ea6f2e2a0b23",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the validation that will be required before the implementation of the change, e.g. equipment qualification, process validation.  If not required, justify."
+            }
+          ]
+        },
+        {
+          "id": "14ef0041-5cf1-440f-8715-10f4a4284fae",
+          "type": "field",
+          "fieldId": "dcf241f2-5d6e-4949-8baf-e9806db610ef",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f4a9a95e-fb92-4ef8-a161-672196480deb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "00013d07-3025-4b20-b863-7e4ce6cfafca",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Training Required"
+            }
+          ]
+        },
+        {
+          "id": "0872a347-1287-4139-a563-f2bbbc71b919",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the training that will be required before the implementation of the change, e.g. read and acknowledge documents, internal training session, external training etc.  If training is to be included at time of document issue only, or after implementation this shall be documented."
+            }
+          ]
+        },
+        {
+          "id": "f5296fac-80f3-42e1-8ae2-5fe3f99216e7",
+          "type": "p",
+          "children": [
+            {
+              "text": "List all staff (or by dept.) who are required to complete the training. "
+            }
+          ]
+        },
+        {
+          "id": "ac0b5409-0233-4523-89e3-28270ba39c92",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no training is required, this must be justified."
+            }
+          ]
+        },
+        {
+          "id": "c4187229-c68a-4037-b312-9cdc7420da37",
+          "type": "field",
+          "fieldId": "2a992936-fd82-47cd-a865-c18d68d708a2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2a68f665-b693-4e4c-8e3c-dc733e745d28",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d01c3edf-9781-444d-8619-3f179e7e3c04",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Document Updates Required"
+            }
+          ]
+        },
+        {
+          "id": "27dd5e9f-f1b1-4ff5-a9b5-5931e0c4dceb",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the documents that will be required to be updated before the implementation of the change.  Ensure that the associated forms, work instructions and attachments are considered.  Review associated processes to ensure they are viewed and updated if they are impacted."
+            }
+          ]
+        },
+        {
+          "id": "2749cabf-0afa-4328-b276-686e2243d725",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no documents are updated, this must be justified."
+            }
+          ]
+        },
+        {
+          "id": "83a240f4-5828-4eb4-ad94-d1a1e2c795de",
+          "type": "field",
+          "fieldId": "a84c2144-bcbf-4bd3-a0bd-de3121586a61",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "11cd825a-6eca-47db-a50d-923a1e61560d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d2c338be-bb2d-4b9c-954c-739d1a589b64",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Any Additional Actions"
+            }
+          ]
+        },
+        {
+          "id": "06e2129e-2bea-43a7-85e7-4855f44e0d12",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the additional actions identified as part of the risk assessment and impact assessment.  "
+            }
+          ]
+        },
+        {
+          "id": "da05182e-fe77-4f83-ab4e-3e7027ba00dd",
+          "type": "p",
+          "children": [
+            {
+              "text": "These may include notification to customer, notifying regulators, etc."
+            }
+          ]
+        },
+        {
+          "id": "240c0e30-c1b8-4b07-a382-020a6db2dce0",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no additional actions are identified, this must be justified"
+            }
+          ]
+        },
+        {
+          "id": "feb039e8-cd99-464a-93bf-18e5250c30bc",
+          "type": "field",
+          "fieldId": "a0528e5e-0474-4df9-bb22-2564a633b660",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "75e67da9-4972-4b9d-a8d5-9c02f0ff7603",
+          "type": "field",
+          "fieldId": "9440c107-f043-4b25-a46a-ab6d06983dbd",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "02304ed9-e67b-4971-b2a3-04b94dd464c0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
