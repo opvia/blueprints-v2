@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b2105710-d9e3-4c16-bee5-b1205afb80b7",
+  "title": "Test Suite",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Test": {
+      "id": "370348df-95e6-4c15-a371-99b296dfcce6",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "3db79dea-5a28-4bec-b1b8-2a13cb0462b6",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Test List": {
+      "id": "72858552-84b7-4455-aa78-4219800236c4",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE",
+              "INSTANCE"
+            ],
+            "type": [
+              "Tests"
+            ]
+          }
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Template Title": {
+      "id": "ec1736fe-b88a-495a-aadb-bdd33ce4a437",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Related Template\") , 'TITLE')"
+      },
+      "dataType": null
+    },
+    "Related Template": {
+      "id": "3f524d92-5d00-4d1e-be2b-3b9c7e0b192c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "215f1bb9-cbe9-49c0-ae24-069c118f6c64"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f02a79c2-6a3d-47ae-948e-5a9567098145",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "391af302-9f19-4a9a-a9cb-5ebfd93f8524",
+          "type": "field",
+          "fieldId": "3f524d92-5d00-4d1e-be2b-3b9c7e0b192c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "b9c5e8e2-3baa-415b-8df8-5449ae6c0488",
+          "type": "field",
+          "fieldId": "72858552-84b7-4455-aa78-4219800236c4",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "f6cb8b73-c603-4af6-95c5-31c8771f9249",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c82af1c1-04dd-43ef-a137-276f6cf3ce74",
+          "type": "field",
+          "fieldId": "370348df-95e6-4c15-a371-99b296dfcce6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f90641b9-bd90-4701-82b6-650e5f43bb75",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "computedTitle": "Test Suite for @ec1736fe-b88a-495a-aadb-bdd33ce4a437 "
+  }
+}
