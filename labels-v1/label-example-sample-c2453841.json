@@ -17,23 +17,14 @@
   "sourceInfo": {},
   "fields": {
     "Name": {
-      "id": "02e1191d-874d-4be8-8742-bbe508504de5",
+      "id": "203c5abd-acd3-478d-bcf9-0bb43b15edb3",
       "type": "STRING",
       "value": null,
       "config": {},
       "dataType": "STRING"
     },
-    "Reviewer": {
-      "id": "870e26d1-354d-4161-932d-3cb108e7abdb",
-      "type": "USER",
-      "value": null,
-      "config": {
-        "allowMultiple": false
-      },
-      "dataType": "ROLE"
-    },
     "Sample ID": {
-      "id": "008fcd11-b929-4ad8-a1de-ea9e9aff0985",
+      "id": "249577ad-8f94-4f56-beb2-9eeae644bbb9",
       "type": "NUMBER",
       "value": null,
       "config": {
@@ -42,14 +33,14 @@
       "dataType": "NUMBER"
     },
     "Expiration": {
-      "id": "94864116-4453-4978-b301-b064f9184c2c",
+      "id": "c6ba7db1-dd66-4a26-b13d-9aefbd582470",
       "type": "DATE",
       "value": null,
       "config": {},
       "dataType": "DATE"
     },
     "Reference Number": {
-      "id": "22f77635-0dc3-46ed-85e0-2e93cb6815c1",
+      "id": "af942b8a-4a2b-4265-a7b1-b6c06c15bba4",
       "type": "FORMULA",
       "value": null,
       "config": {},

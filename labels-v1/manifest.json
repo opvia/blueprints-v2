@@ -21,7 +21,7 @@
       "contentType": "PAGE_CONTENT",
       "title": "Label Configuration",
       "icon": "cog",
-      "sourceVersion": "1.1",
+      "sourceVersion": "1.2",
       "tagIds": [
         "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
       ]
@@ -43,7 +43,7 @@
       "contentType": "SCRIPT_CODE",
       "title": "Label Script",
       "icon": "code",
-      "sourceVersion": "1",
+      "sourceVersion": "1.1",
       "tagIds": [
         "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
       ]
@@ -65,7 +65,7 @@
       "contentType": "PAGE_CONTENT",
       "title": "Label Configuration List",
       "icon": "array",
-      "sourceVersion": "1",
+      "sourceVersion": "1.1",
       "tagIds": [
         "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
       ]
@@ -92,7 +92,7 @@
       "contentType": "PAGE_CONTENT",
       "title": "Label Example Sample",
       "icon": "document",
-      "sourceVersion": "1",
+      "sourceVersion": "1.1",
       "tagIds": [
         "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
       ]
@@ -103,7 +103,7 @@
       "contentType": "PAGE_CONTENT",
       "title": "Label Element",
       "icon": "media",
-      "sourceVersion": "1",
+      "sourceVersion": "1.1",
       "tagIds": [
         "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
       ]
