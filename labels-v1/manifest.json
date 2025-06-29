@@ -1,0 +1,300 @@
+{
+  "id": "labels-v1",
+  "version": 1,
+  "name": "labels-v1",
+  "description": "",
+  "entities": [
+    {
+      "id": "0641ef2e-8811-4eba-be86-5ba987573748",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample Label Configuration",
+      "icon": "cog",
+      "sourceVersion": "1.7",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "f1684e52-ca5f-4883-b83d-941b56cc49b7",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Configuration",
+      "icon": "cog",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "f2d008a9-3dd6-4276-a949-f7fab82b6fe6",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Create Label",
+      "icon": "code",
+      "sourceVersion": "1.9",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "b9f2b6dd-6c2f-43c0-9767-7a1400934d01",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Label Script",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "320b50b3-766f-45ba-834f-e79ed778d13d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Configuration List",
+      "icon": "array",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "e56ca767-cda4-4353-9580-7721f3117007",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Configuration List",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "a987cc5f-5eb9-4072-9166-df8142886d20",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample label configuration map",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "77d88fac-3bcb-4c98-8f78-9aefa9ccb302",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Example Sample",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c2453841-7e93-4b1e-83df-f7ac3511baf4",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Example Sample",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "8279b6ce-d05d-498f-8364-4f67ab8d6d1d",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Element",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "5cd90b22-c2d0-46af-b58d-8f7aed60283c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #2775",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "4fdc191d-c398-4130-a9cc-66bbeb6c292f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field",
+      "icon": "media",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "a62f66ba-3148-4108-8755-a0baae4678e4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #2776",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "495d36cf-ea2b-4536-970a-73155e0e0032",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #2780",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "532dab08-30ec-4736-b6b0-95dd848f14a2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QR Code #2797",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "1b9aa661-3ab1-4856-9cb3-7a6cc6b2f2ba",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QR Code",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "b0d0b9ad-9634-423b-8129-28e2bff2a949",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Barcode Code128 #2801",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "aac4d167-fd13-42a1-9c68-0896f7951879",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Barcode Code128",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "1b3bac49-d181-4219-82b1-1db1685e8685",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Border #2809",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "a26cd44b-645f-4459-ac50-aed1455fa801",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Border",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "aead40e6-d9a7-4079-84e8-ec302802104e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Text #2812",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "e48c215a-68ce-4d19-9fa8-1414a52fcea6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Text",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    },
+    {
+      "id": "b3e48760-5dcb-44ae-8643-7f2c61e29bad",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Border #2813",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "8acd7a5b-d62b-464d-b971-3cf677982d06",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Text #2818",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "032fac64-9ee8-4255-9544-41501dd7ce3f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Example Sample 2727",
+      "icon": "document",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    },
+    {
+      "id": "58d4b8ad-c288-486e-abc8-7f49e72b77a8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Configuration Template",
+      "icon": "cog",
+      "sourceVersion": "1",
+      "tagIds": [
+        "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "361c5fbb-dfa3-4727-98c7-f4b6ea3c0f17",
+      "text": "Label Blueprint",
+      "hexCode": "#61a0e1"
+    },
+    {
+      "id": "b46a534d-6d53-4083-80e6-4bbaeeaed40a",
+      "text": "tagged by a trigger",
+      "hexCode": "#56eb68"
+    }
+  ]
+}

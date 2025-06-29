@@ -1,0 +1,364 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0641ef2e-8811-4eba-be86-5ba987573748",
+  "title": "Sample Label Configuration",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "58d4b8ad-c288-486e-abc8-7f49e72b77a8",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Units": {
+      "id": "08c08b0a-b8f3-4a93-9a58-544e3f6a177e",
+      "type": "SELECT",
+      "value": [
+        "mm"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "cm",
+          "mm",
+          "inch"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Label Width": {
+      "id": "0fe88bb0-3582-439d-9915-a98d655584b4",
+      "type": "NUMBER",
+      "value": 210,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Create Label": {
+      "id": "ec517b54-807e-49d9-826e-63efa4676c17",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "f2d008a9-3dd6-4276-a949-f7fab82b6fe6",
+          "version": "1.9"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create Label Previews"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Default Font": {
+      "id": "f2a2f59a-9bc1-4b81-aa5f-2e48f2c118df",
+      "type": "SELECT",
+      "value": [
+        "Helvetica"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Helvetica",
+          "Times-Roman",
+          "Courier"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Label Height": {
+      "id": "eed737e1-1722-4c3b-93e2-0d1e8b5bc4f8",
+      "type": "NUMBER",
+      "value": 297,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Label Elements": {
+      "id": "c8fa5ef3-af20-42ec-8ad9-9217e2601032",
+      "type": "INSTANCE_SUBMISSION",
+      "value": [
+        {
+          "id": "5cd90b22-c2d0-46af-b58d-8f7aed60283c",
+          "version": "1"
+        },
+        {
+          "id": "a62f66ba-3148-4108-8755-a0baae4678e4",
+          "version": "1"
+        },
+        {
+          "id": "495d36cf-ea2b-4536-970a-73155e0e0032",
+          "version": "1"
+        },
+        {
+          "id": "532dab08-30ec-4736-b6b0-95dd848f14a2",
+          "version": "1"
+        },
+        {
+          "id": "b0d0b9ad-9634-423b-8129-28e2bff2a949",
+          "version": "1"
+        },
+        {
+          "id": "1b3bac49-d181-4219-82b1-1db1685e8685",
+          "version": "1"
+        },
+        {
+          "id": "aead40e6-d9a7-4079-84e8-ec302802104e",
+          "version": "1"
+        },
+        {
+          "id": "b3e48760-5dcb-44ae-8643-7f2c61e29bad",
+          "version": "1"
+        },
+        {
+          "id": "8acd7a5b-d62b-464d-b971-3cf677982d06",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "typeOrTemplateRef": {
+          "ref": {
+            "id": "8279b6ce-d05d-498f-8364-4f67ab8d6d1d"
+          }
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Preview Labels": {
+      "id": "cb63ab41-3a67-442a-be27-cace23d81a27",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Preview Entities": {
+      "id": "758997dd-0c41-45a6-8411-1ce4d8aec912",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "032fac64-9ee8-4255-9544-41501dd7ce3f",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Default Font Size": {
+      "id": "fa10a7c9-ce28-4801-a640-c79a663ce902",
+      "type": "NUMBER",
+      "value": 12,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Label Title Field Name": {
+      "id": "fc835bf2-3fe1-4892-8546-f0d6baa0bdb6",
+      "type": "STRING",
+      "value": "Name",
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "f1684e52-ca5f-4883-b83d-941b56cc49b7"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "23ea9c68-f104-4ff1-aa2f-713056b8f669",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "89f96a3d-cf4d-47a7-8a62-109064f85305",
+          "type": "field",
+          "fieldId": "ec517b54-807e-49d9-826e-63efa4676c17",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4441600c-cc22-419d-9ef9-180c4fb919e8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5dd99846-5a58-4edb-a46a-3f04a392375a",
+          "type": "field",
+          "fieldId": "c8fa5ef3-af20-42ec-8ad9-9217e2601032",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Element Type",
+                "name": "Element Type",
+                "isHidden": false
+              },
+              {
+                "id": "Field Name",
+                "name": "Field Name",
+                "isHidden": false
+              },
+              {
+                "id": "Text",
+                "name": "Text",
+                "isHidden": false
+              },
+              {
+                "id": "X Position",
+                "name": "X Position",
+                "isHidden": false
+              },
+              {
+                "id": "Y Position",
+                "name": "Y Position",
+                "isHidden": false
+              },
+              {
+                "id": "Width",
+                "name": "Width",
+                "isHidden": false
+              },
+              {
+                "id": "Height",
+                "name": "Height",
+                "isHidden": false
+              },
+              {
+                "id": "Alignment",
+                "name": "Alignment",
+                "isHidden": false
+              },
+              {
+                "id": "Rotation (°)",
+                "name": "Rotation (°)",
+                "isHidden": false
+              },
+              {
+                "id": "Prefix Text",
+                "name": "Prefix Text",
+                "isHidden": false
+              },
+              {
+                "id": "Stroke Color",
+                "name": "Stroke Color",
+                "isHidden": false
+              },
+              {
+                "id": "Font Name",
+                "name": "Font Name",
+                "isHidden": false
+              },
+              {
+                "id": "Font Size",
+                "name": "Font Size",
+                "isHidden": false
+              },
+              {
+                "id": "Line Width",
+                "name": "Line Width",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "78e8f2a6-2c14-4a97-8ac3-bec8235a04b8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6ad532b7-5776-43f9-b719-eda6c5a0d446",
+          "type": "field",
+          "fieldId": "758997dd-0c41-45a6-8411-1ce4d8aec912",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "91499345-536e-4654-8d14-d47f9b35c3b7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ad5ad043-1bc5-4cc6-b2bb-f6f27cfe2e3c",
+          "type": "field",
+          "fieldId": "cb63ab41-3a67-442a-be27-cace23d81a27",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "16a83a94-0268-4968-a30d-46a704093f99",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
