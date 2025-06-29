@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c2453841-7e93-4b1e-83df-f7ac3511baf4",
+  "title": "Label Example Sample",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Name": {
+      "id": "203c5abd-acd3-478d-bcf9-0bb43b15edb3",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Sample ID": {
+      "id": "249577ad-8f94-4f56-beb2-9eeae644bbb9",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Expiration": {
+      "id": "c6ba7db1-dd66-4a26-b13d-9aefbd582470",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Reference Number": {
+      "id": "af942b8a-4a2b-4265-a7b1-b6c06c15bba4",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    }
+  },
+  "kind": "TYPE",
+  "icon": "document",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": null,
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": true
+    },
+    "reviewRequirements": null,
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": true
+  }
+}
