@@ -1,0 +1,80 @@
+{
+  "id": "validation-v1",
+  "version": 1,
+  "name": "Validation v1",
+  "description": "",
+  "entities": [
+    {
+      "id": "da345e1a-71fd-425f-8bcd-0f6982921789",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Master Template Validation Script",
+      "icon": "clean",
+      "sourceVersion": "1.12"
+    },
+    {
+      "id": "0b207d85-cb9e-4a4f-9d78-7c73834dae31",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "clean",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "c2050adc-4e59-4a67-9f89-f309ef6c2cdf",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Check Script For Entities requiring validation",
+      "icon": "clean",
+      "sourceVersion": "1.4"
+    },
+    {
+      "id": "c185fa7d-f999-42b6-bc2c-bf060d8e3973",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Check Scripts",
+      "icon": "clean",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "d6afbf16-7c75-42e8-8f27-6d318beda6f0",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Validation Check Document",
+      "icon": "document",
+      "sourceVersion": "1.4"
+    },
+    {
+      "id": "380c7073-4e92-497a-96ba-531ed4b7e59c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "document",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "b2105710-d9e3-4c16-bee5-b1205afb80b7",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Test Suite",
+      "icon": "shield",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "215f1bb9-cbe9-49c0-ae24-069c118f6c64",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tests",
+      "icon": "shield",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3db79dea-5a28-4bec-b1b8-2a13cb0462b6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Test Template",
+      "icon": "shield",
+      "sourceVersion": "1.1"
+    }
+  ]
+}

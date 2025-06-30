@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "d6afbf16-7c75-42e8-8f27-6d318beda6f0",
+  "title": "Validation Check Document",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Validation Log": {
+      "id": "b0322e26-01f4-4901-9ad5-f5a1b44e476b",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Validation Passed": {
+      "id": "00742a7e-4575-42dd-a117-2e74ca91c1bc",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Validation Script": {
+      "id": "ecda54a9-1937-4e07-a9b7-deed18d3814b",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "da345e1a-71fd-425f-8bcd-0f6982921789",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Run Validation"
+        }
+      },
+      "dataType": "SCRIPT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "380c7073-4e92-497a-96ba-531ed4b7e59c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "27557bac-4dcd-44d8-831a-1af39c32d72d",
+          "type": "p",
+          "children": [
+            {
+              "text": "An instance of this document must be added to all change sets and the script run."
+            }
+          ]
+        },
+        {
+          "id": "1b55ae39-eb8d-45ee-b38a-19658d21ee05",
+          "type": "p",
+          "children": [
+            {
+              "text": "The output will be stored in the ‘Validation Log’ field."
+            }
+          ]
+        },
+        {
+          "id": "dddd0bae-8156-4059-b2e2-0ad2405c6ab9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e4266c4a-5d35-4fa3-b965-72267630bee9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "50d72f38-1f04-41b5-805b-74739f6b81ab",
+          "type": "field",
+          "fieldId": "ecda54a9-1937-4e07-a9b7-deed18d3814b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5c316fa3-0923-4426-8a22-603f9b19819c",
+          "type": "field",
+          "fieldId": "00742a7e-4575-42dd-a117-2e74ca91c1bc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d0c2fc53-4642-4b71-85a3-13f670011dc8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8055af33-c89b-4e7f-b947-d399067b680c",
+          "type": "field",
+          "fieldId": "b0322e26-01f4-4901-9ad5-f5a1b44e476b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d5542944-13c9-4e78-8ed6-2f4bea65ef73",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
