@@ -1,0 +1,42 @@
+{
+  "id": "guide",
+  "version": 1,
+  "name": "guide",
+  "description": "",
+  "entities": [
+    {
+      "id": "ff9a9ff8-1418-401b-aedb-2aacca2f2cd2",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Blueprint Guide",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a49c7d6f-a575-44b8-bfa4-046d9789beb9",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Blueprint Document",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "84fea815-2b96-4796-b03d-29d5ed307400",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label blueprint guide instance",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "b46a534d-6d53-4083-80e6-4bbaeeaed40a"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "b46a534d-6d53-4083-80e6-4bbaeeaed40a",
+      "text": "tagged by a trigger",
+      "hexCode": "#56eb68"
+    }
+  ]
+}
