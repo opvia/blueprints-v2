@@ -1,0 +1,664 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ff9a9ff8-1418-401b-aedb-2aacca2f2cd2",
+  "title": "Instructions: Label Blueprints",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "a49c7d6f-a575-44b8-bfa4-046d9789beb9"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "39d7bc14-331e-4fa9-9716-0afafc50a382",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            },
+            {
+              "url": "https://seal.run/blueprints/create-labels",
+              "type": "a",
+              "children": [
+                {
+                  "text": "Seal Blueprint documentation"
+                }
+              ]
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a0fbb2d4-9720-46c7-ace2-88cd09aea614",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e060e301-f777-4edb-819c-cf1dd41c6592",
+          "type": "h2",
+          "children": [
+            {
+              "text": "How Seal Labels work"
+            }
+          ]
+        },
+        {
+          "id": "b3c89485-a6bf-437b-ae7e-bb423a1da1a9",
+          "type": "p",
+          "children": [
+            {
+              "text": "Labels are generated using data from your Seal instances. For example, you can extract a field named “Serial Number” into a barcode on your PDF label. Labels are standalone file entities and will link back to the original entity. There are two ways to generate labels: "
+            }
+          ]
+        },
+        {
+          "id": "aa58a74e-b246-4eb0-93f4-86e26d1eb1a6",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Trigger mode"
+            },
+            {
+              "text": ": Automatically generate labels when your entity is published."
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "837d1f85-64ad-4b3c-ab0f-f8eece23af8a",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Manual mode"
+            },
+            {
+              "text": ": Generate labels at the click of the button"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "9da3e478-a250-4d23-8909-b468da630676",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1587b5b2-127d-4e11-b9df-01ea7ed8a533",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Using the example"
+            }
+          ]
+        },
+        {
+          "id": "e8e8c8ca-df5f-4881-9e7e-0f1e6d7dd278",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Make a new draft (click \"make changes\") of “Sample Label Configuration”"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "d8c8f459-c375-458a-ae70-6e19b241c5ec",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Click “Create Label Previews” "
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "b90d51d4-e44b-4d90-a5a2-bed4f1517302",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "This will run the create labels script"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "7bf768d2-bced-4e98-aaa7-fc2b748bde0d",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "The sample entity referenced in “Preview Entities” is used"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "7349303a-193b-4924-af25-a4853c0f10cf",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Your generated label will appear in in the “Labels” field"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "a75e6326-779f-4565-9812-51d31e49dc30",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "To add new elements to the label add a row to “Label Elements”"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "8952f25c-75b0-4b6e-819f-39689ff73c63",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": " Select the type of element, then fill out the row"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "e8aa8ab9-5754-437f-9a63-b2e06bb46413",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "To use data from the “Example Sample” you can include the field name matching a field in the sample entity"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "d7935ada-9a2e-4514-910e-1f7046e86506",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Click the create button again and the new label will have your element"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "968ead09-1bd0-4278-8887-b3224942171a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f12e0372-26e1-48af-90e6-65ba60d8a73a",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Creating a new label"
+            }
+          ]
+        },
+        {
+          "id": "657bda70-5853-4a43-bb56-d2bb3ab3cbd1",
+          "type": "p",
+          "children": [
+            {
+              "text": "[Prerequisite] Ensure you have a template setup "
+            }
+          ]
+        },
+        {
+          "id": "adddfea8-35dd-462c-aa6b-fc5fbc84e7d4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b4342638-404a-420f-9572-fc856b58787e",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Configuring:"
+            }
+          ]
+        },
+        {
+          "id": "4a493add-f04a-44b8-9fb0-a76829dc015c",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Make a new instance of the “Label Configuration Template” and fill in the name"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "3be06e47-8d6a-4c03-b8d3-f0d293d67dde",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Attach example instances you want to generate labels from"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "32e5e060-5333-42ac-bfe7-eb266fee5a4b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Add rows to the label elements table. Each row renders content on the label"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "538b9afd-ede2-4b14-a8bf-7b9a06fa1c19",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Tip: You can configure default settings in the Fields tab"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "4."
+        },
+        {
+          "id": "31cc1ca7-eb21-426f-9fac-c2c133f0dacf",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Click the create button to test it out"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "0df83fba-c73d-470a-a7c4-4ef1b3db9045",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9c2065ec-e470-407b-8416-0749bd78ca25",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Publishing"
+            }
+          ]
+        },
+        {
+          "id": "7935edff-74c3-4fff-9719-dc6b461e0a97",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Once you are happy with the label, publish the configuration instance"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "bc1736a9-7672-4c2d-a572-c5d0ed7afb06",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Search for the “Create Label” script and make a new draft"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "dac1e5d4-3798-421d-891f-c3382a2dc1c6",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "In the fields tab open the “Trigger Configurations” submission table"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "9d3b3cec-ed58-477c-8f7e-13307cc01e68",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Add a row"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "577f09d2-f482-4958-a9e5-bbceecb197e4",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Click the “Label Configuration” cell and add your new configuration instance"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "c3e27313-9479-4ee8-b0d9-11123b477d25",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Click the \"Trigger Template\" cell and add the template you want to generate labels from"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "c22291e4-6be7-49d8-ae6f-a2f7a9fc5ea9",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "To configure automatic label generation on publish:"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "ee7b2c87-0c1f-4f4e-a53a-312390a8fa84",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Open the triggers tab and add a new trigger"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "b1d60863-67e4-4297-b1c5-e3a25acc6ee9",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Select:"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "8e59838c-e975-4574-9aa9-91ed606ae41e",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": " Trigger Event: “onMoveOutOfEditable” (on publish)"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "3.2."
+        },
+        {
+          "id": "b8682baf-9c47-4ef5-ab4a-f4db4c087c05",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Applies To: INSTANCES"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "3.2."
+        },
+        {
+          "id": "e606c646-3ffc-4fed-9969-dbbfb117dd7f",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Entities to trigger on: select your template"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal",
+          "listParentIndex": "3.2."
+        },
+        {
+          "id": "cb077a1d-3f6b-4533-a591-7de1a273c214",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Publish the script "
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "f5d14e62-7b08-4e38-a965-2b9a8b7de8e4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a0764306-6ca2-4279-ba1d-4d5da1f18670",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Generating labels manually"
+            }
+          ]
+        },
+        {
+          "id": "fd94608d-bd83-4760-adf7-44e38859cb19",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Navigate to your template"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "9130ff06-bbc4-4cbf-a966-7f9680773ffa",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Add:"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "7a58b17a-608f-4b7a-a14f-6bc18e9d70bb",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Script field pointing to “Create Label” - “Active Version”"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "a5aca95d-d90a-4b5d-a4e2-09f3aeb038f7",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Set the button text to “Create Label”"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2.1."
+        },
+        {
+          "id": "e8ba8a10-eea2-44e7-ba5e-b0204361e0e2",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Reference field named “Labels”"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "51a51090-58e5-405e-8c19-6eed0f6f281c",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Publish the template and make a new instance"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "f876a807-9966-40fd-98ae-62e7dbef8aea",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The “Create Label” button will now generate a label using the live instance data. The label will be included in the document and in the same change set to review"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "d905480e-012a-4ca2-8ce0-88d76f7bd5ba",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1ec19c01-1dd7-4ed6-ab72-baa02513ea19",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c3bbfd48-104b-45ae-82be-4da48932bfdb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f6266a73-4847-4b38-9260-34d6a6da8ebb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
