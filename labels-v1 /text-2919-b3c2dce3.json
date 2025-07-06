@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b3c2dce3-123c-4fee-b666-0cc1cfa4ebad",
+  "title": "Text #2919",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "e48c215a-68ce-4d19-9fa8-1414a52fcea6",
+      "version": "1.4"
+    },
+    "submissionField": {
+      "fieldId": "c8fa5ef3-af20-42ec-8ad9-9217e2601032",
+      "fieldName": "Label Elements",
+      "parentEntityId": "7c75b65b-079e-494a-8b39-81bbc4f7b127"
+    }
+  },
+  "fields": {
+    "Text": {
+      "id": "fb5c7762-e06b-42fd-a490-356d7959f497",
+      "type": "STRING",
+      "value": "STORE AT AMBIENT TEMPERATURE (50°F-86°F / 10°C-30°C)",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Alignment": {
+      "id": "5de8c795-efc0-46d8-adfa-7f72c81597f8",
+      "type": "SELECT",
+      "value": [
+        "Center"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Top-Left",
+          "Center",
+          "Top-right",
+          "Bottom-Left",
+          "Bottom-Right"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Font Name": {
+      "id": "cff6fcb7-706b-4852-84c0-a71291fe185f",
+      "type": "SELECT",
+      "value": [
+        "Courier"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Helvetica",
+          "Times-Roman",
+          "Courier"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Font Size": {
+      "id": "a760dd4a-790a-4cac-8668-7900a0328d31",
+      "type": "NUMBER",
+      "value": 14,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "X Position": {
+      "id": "73730f00-d5cd-4823-8a46-57cefed20c97",
+      "type": "NUMBER",
+      "value": 105,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Y Position": {
+      "id": "7dd28c20-5266-4a07-9204-532fbf3bb5b5",
+      "type": "NUMBER",
+      "value": 70,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Element Type": {
+      "id": "3feb6297-48e4-4fc9-bc6d-7bc4bb4e987f",
+      "type": "SELECT",
+      "value": [
+        "Text"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Field",
+          "Text",
+          "Image",
+          "QR Code",
+          "Barcode Code128",
+          "Barcode Code39",
+          "Border"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Stroke Color": {
+      "id": "71f21315-c54f-416c-af39-ffbb9310758f",
+      "type": "SELECT",
+      "value": [
+        "Gray"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Black",
+          "Gray",
+          "Blue",
+          "Red"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Rotation (°)": {
+      "id": "27566bd4-6c23-4f06-aa40-ceae4b840b29",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "@3feb6297-48e4-4fc9-bc6d-7bc4bb4e987f #@INDEX ",
+  "type": {
+    "ref": {
+      "id": "8279b6ce-d05d-498f-8364-4f67ab8d6d1d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "45b9d6f1-2159-4d3c-88a2-5eb58e58df3c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
