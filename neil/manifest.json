@@ -19,6 +19,22 @@
       "title": "File",
       "icon": "paperclip",
       "sourceVersion": "1"
+    },
+    {
+      "id": "4a074d24-8c91-44d5-805a-ba62735c779f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Blueprint part",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "926b2415-8b98-4f05-a409-b5bf96b99041",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Part",
+      "icon": "document",
+      "sourceVersion": "1.1"
     }
   ],
   "assets": [
