@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0bfc8c74-421f-464d-adb5-2e9bd54f2124",
+  "title": "Example Sample 1234",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "77d88fac-3bcb-4c98-8f78-9aefa9ccb302",
+      "version": "1.4"
+    }
+  },
+  "fields": {
+    "Name": {
+      "id": "02e1191d-874d-4be8-8742-bbe508504de5",
+      "type": "STRING",
+      "value": "Amniotic Membrane",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Image": {
+      "id": "70823896-c693-482a-9d0f-29df39bad05e",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Labels": {
+      "id": "8b842ee2-f060-4e15-a86c-cbaa39e7eebe",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Label"
+            ]
+          }
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Sample ID": {
+      "id": "008fcd11-b929-4ad8-a1de-ea9e9aff0985",
+      "type": "NUMBER",
+      "value": 1234,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Expiration": {
+      "id": "94864116-4453-4978-b301-b064f9184c2c",
+      "type": "DATE",
+      "value": "2025-07-10",
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Create labels": {
+      "id": "3ae4b486-1599-4228-9b7d-2bc2e9ae668a",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "f2d008a9-3dd6-4276-a949-f7fab82b6fe6",
+          "version": "1.8"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create Labels"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Reference Number": {
+      "id": "22f77635-0dc3-46ed-85e0-2e93cb6815c1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Name\") #lookup(__self, \"Sample ID\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "Example Sample @008fcd11-b929-4ad8-a1de-ea9e9aff0985 ",
+  "type": {
+    "ref": {
+      "id": "c2453841-7e93-4b1e-83df-f7ac3511baf4"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "24cb07bb-a05f-4a41-a4d5-d32fe06993c9",
+          "type": "field",
+          "fieldId": "3ae4b486-1599-4228-9b7d-2bc2e9ae668a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cbd98b36-cce9-41fc-9637-ed3aa7780380",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "433f1df5-d3ed-4d25-9092-7c90590ce32b",
+          "type": "field",
+          "fieldId": "8b842ee2-f060-4e15-a86c-cbaa39e7eebe",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "c13f95cb-175e-427f-a6c2-87d0f564a262",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
