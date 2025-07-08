@@ -1,0 +1,1904 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c38fc498-2562-44de-aae9-75510e033a11",
+  "title": "SOP - Internal Audit",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Author(s)": {
+      "id": "4ba6e25a-fc9c-452d-a753-21054207da38",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "CAPA Form": {
+      "id": "01f35a4f-12a8-46c1-b533-6224c0e1cf6c",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "802ea3fe-2be7-4cec-a687-770233b8dd01",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Approver(s)": {
+      "id": "2550b7fb-a116-409e-9b29-f7c250100de9",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Review Date": {
+      "id": "a475fb8e-738c-4ddd-b8c7-0b1c11cac176",
+      "type": "DATE",
+      "value": null,
+      "config": {
+        "format": "dd-MMM-yy"
+      },
+      "dataType": "DATE"
+    },
+    "Effective Date": {
+      "id": "0a621b0d-b2b6-4873-8dc7-82c37474ded7",
+      "type": "DATE",
+      "value": null,
+      "config": {
+        "format": "dd-MMM-yy"
+      },
+      "dataType": "DATE"
+    },
+    "Audit Findings Log": {
+      "id": "5e998407-b642-4338-ac4a-48d8ad477728",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "d25aa1ed-2947-40ad-83de-c87a6265f5e4",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Meeting Summary Form": {
+      "id": "88ba6026-72cd-42ca-86b1-b3f70c5a9e0e",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "6be4304c-30c2-4609-bb5b-8043346fc8e8",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Audit Completion Form": {
+      "id": "ad325f92-ed0f-4862-9a7a-ab38b543f1bb",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "9da170a2-39f4-45a2-9ee1-6802e99ded95",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Evidence Request Form": {
+      "id": "d277130d-0a15-4fb1-bcb7-2051dffcf619",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "5da64e9a-4f8f-4a03-9d8c-75b8365275dc",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Internal Audit Checklist": {
+      "id": "791b8b28-a916-4216-a4db-48cfd6e9a775",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "9998389d-578b-47ae-98f7-6195af3771e8",
+          "version": "3"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Root Cause Analysis Form": {
+      "id": "4933bd20-f6e0-4f3c-b9bb-65dfa155d065",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "efa36c5b-5259-4cfb-8dea-f0539d04e8e9",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Question and Response Log": {
+      "id": "a3a4deb7-6e90-406a-8bba-303f4cc00bfe",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "54b05c3d-863e-46a1-9f69-cc6de522d83a",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Internal Audit Notification": {
+      "id": "42bfb552-8eae-41aa-be6e-0f51bb28405e",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "4c93e574-b83a-4183-ae44-3c85f1d3eede",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Audit Report Generation Form": {
+      "id": "cc0f56c4-0c09-4ca8-b0c8-1dcfc9ce17f0",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "CAPA Effectiveness Review Form": {
+      "id": "7b1724f1-68c7-48a6-bc54-e80057e915b8",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "d8155faf-9609-49e3-93f7-c39e44e13609",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "48f92785-acb6-444a-9e57-7386991041a3"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "96defa18-ac32-4614-b05a-3479446b16de",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f0e86600-6a18-4abb-ad74-e7cf7e7a76ba",
+          "type": "field",
+          "fieldId": "0a621b0d-b2b6-4873-8dc7-82c37474ded7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9b7f2002-1078-4c2b-9bd1-83b9f2849afb",
+          "type": "field",
+          "fieldId": "a475fb8e-738c-4ddd-b8c7-0b1c11cac176",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2edb794e-d677-4be5-8f7f-af342fa54c42",
+          "type": "field",
+          "fieldId": "4ba6e25a-fc9c-452d-a753-21054207da38",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3c73e601-8a69-40d5-a2bd-94fb73ab57eb",
+          "type": "field",
+          "fieldId": "2550b7fb-a116-409e-9b29-f7c250100de9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5af6fa01-f34d-4cc1-b114-a67eaa5d4dae",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "813d3f77-f6ec-46db-8f01-6599b4528174",
+          "type": "h2",
+          "children": [
+            {
+              "text": "1. Purpose"
+            }
+          ]
+        },
+        {
+          "id": "377547cb-6744-4fc8-bd64-9bdea2d9e8dc",
+          "type": "p",
+          "children": [
+            {
+              "text": "The purpose of this Standard Operating Procedure (SOP) is to outline the process for planning, conducting, reporting, and following up on internal audits within [Company Name]. This process ensures compliance with [relevant standards, e.g., company policies, industry regulations, quality management system requirements], identifies opportunities for process improvement, and prepares the organization for external assessments."
+            }
+          ]
+        },
+        {
+          "id": "edcc141a-ba22-45c0-9cdd-2150164207f3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ffc379d8-d849-4738-8926-45f44438afc8",
+          "type": "h2",
+          "children": [
+            {
+              "text": "2. Scope"
+            }
+          ]
+        },
+        {
+          "id": "8ca8d1db-129b-4ef3-8133-de4ead7443bd",
+          "type": "p",
+          "children": [
+            {
+              "text": "This SOP applies to all [Company Name] personnel involved in or subject to internal audits. It encompasses all [relevant company activities/areas, e.g., operational processes, departments, facilities, systems] that fall under the scope of the internal audit program."
+            }
+          ]
+        },
+        {
+          "id": "6305072e-2f39-4c0d-a7f6-80ff33233630",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2ec23c44-5b49-4d9f-b4c0-8fbcb76d0896",
+          "type": "h2",
+          "children": [
+            {
+              "text": "3. Responsibilities"
+            }
+          ]
+        },
+        {
+          "id": "b3601e6c-fe4f-4f70-853b-2277c4c3ae5a",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "[Overall Program Oversight Role, e.g., Head of Quality, Senior Management]"
+            }
+          ]
+        },
+        {
+          "id": "820b32a9-4ad1-4b0a-afba-8e2475420154",
+          "type": "p",
+          "children": [
+            {
+              "text": "Oversees the overall internal audit program, ensures adequate resources, and reviews significant audit outcomes."
+            }
+          ]
+        },
+        {
+          "id": "6a6de2e6-f75a-40fe-89e6-357634cb760a",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "[Audit Program Coordinator Role, e.g., Quality Assurance Manager, Internal Audit Lead]"
+            }
+          ]
+        },
+        {
+          "id": "d1bdcd4b-0c78-4647-acaa-22f4851ffd3a",
+          "type": "p",
+          "children": [
+            {
+              "text": "Coordinates the internal audit process, develops and maintains the audit schedule, ensures auditor competence, reviews audit reports, and tracks corrective actions."
+            }
+          ]
+        },
+        {
+          "id": "986c10dc-3330-42d8-8083-5ff116e935a8",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Internal Auditors/Audit Teams"
+            }
+          ]
+        },
+        {
+          "id": "7cdde555-3eeb-460a-8965-9c9497054d03",
+          "type": "p",
+          "children": [
+            {
+              "text": "Conduct audits in compliance with this SOP, objectively document findings, and provide feedback to audited personnel."
+            }
+          ]
+        },
+        {
+          "id": "2a785da5-72b4-4af7-89c6-1122dc77997a",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Audited Personnel/Departments"
+            }
+          ]
+        },
+        {
+          "id": "09b863d1-caa9-4a7c-bfc1-3b0955bb5a9f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Cooperate with the audit team, provide requested documentation and access, and implement corrective actions as required."
+            }
+          ]
+        },
+        {
+          "id": "aace3cb7-77d2-4062-aecf-d9f106aeebb5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3caa85a3-0a5e-4336-807c-6a525bfb44ad",
+          "type": "h2",
+          "children": [
+            {
+              "text": "4. Definitions"
+            }
+          ]
+        },
+        {
+          "id": "a02ea46c-3411-4d0d-81e4-938b43fe669a",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Internal Audit: A systematic, independent, and documented process for obtaining audit evidence and evaluating it objectively to determine the extent to which audit criteria are fulfilled."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "54bffacf-6679-4bba-a846-138c25a4e952",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Audit Criteria: A set of policies, procedures, or requirements against which audit evidence is compared."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "3704c3d6-3e85-4141-b462-655de411fb54",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Non-Conformance (NC): A deviation from a specified requirement, policy, procedure, or standard."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "45bd3c0a-0c69-4d42-9d77-24d07f9eb579",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Observation: A statement of fact made during an audit, which may indicate a potential area for improvement or a minor deviation not classified as a non-conformance."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "91cb6d74-77f3-450f-b15f-7827e68e961d",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Corrective Action: Action to eliminate the cause of a detected non-conformance or other undesirable situation."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "76bcd7de-eef3-481b-a2b1-42f0a5bd2046",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Audit Report: A formal document summarizing the audit process, findings, and conclusions."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b92f74c3-cdb2-4ba7-87b5-6b0fcb18639c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6ca4b8d4-edbf-48f0-b288-2b327ae55939",
+          "type": "h2",
+          "children": [
+            {
+              "text": "5. Audit Planning"
+            }
+          ]
+        },
+        {
+          "id": "74b3159b-fb65-484e-9c9c-80616c659782",
+          "type": "h3",
+          "children": [
+            {
+              "text": "5.1 Developing the Audit Schedule"
+            }
+          ]
+        },
+        {
+          "id": "cecccac3-4806-4cf5-a9ba-0fbd1cd8f7c8",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Annual Audit Plan"
+            }
+          ]
+        },
+        {
+          "id": "1d581738-163d-4436-b9a9-41cacd414312",
+          "type": "p",
+          "children": [
+            {
+              "text": "Develop an annual audit plan covering all [relevant company activities/areas]. The plan should be [risk-based, e.g., high-risk areas audited more frequently]."
+            }
+          ]
+        },
+        {
+          "id": "ee9652ab-5380-44d1-a7a4-f8b91585bdb5",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Audit Frequency"
+            }
+          ]
+        },
+        {
+          "id": "2548e1d3-51bf-4dd8-9954-d45d27a76470",
+          "type": "p",
+          "children": [
+            {
+              "text": "Determine audit frequency based on factors such as [regulatory requirements, historical performance, process criticality, changes in processes or systems]. Include additional ad-hoc audits as needed (e.g., for new processes, after significant changes, in response to specific incidents)."
+            }
+          ]
+        },
+        {
+          "id": "c29ddabc-2410-4047-81b5-44c87b319979",
+          "type": "h3",
+          "children": [
+            {
+              "text": "5.2. Assignment of Audit Team"
+            }
+          ]
+        },
+        {
+          "id": "3f756391-3d71-4268-a96f-fe7d6882e893",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Auditor Selection"
+            }
+          ]
+        },
+        {
+          "id": "621060b0-0934-4c55-b6ce-5e7de78b39ad",
+          "type": "p",
+          "children": [
+            {
+              "text": "Appoint qualified internal auditors who are independent of the area being audited to ensure objectivity."
+            }
+          ]
+        },
+        {
+          "id": "4f42da0e-7889-484e-95cb-7296555aaef2",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Auditor Competence"
+            }
+          ]
+        },
+        {
+          "id": "0e1cb726-3bf2-4ce7-b5d6-93cf2a7a2f2f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Ensure auditors possess the necessary knowledge of [relevant standards/regulations/processes] and auditing techniques. [Specify training requirements, e.g., internal auditor training course]."
+            }
+          ]
+        },
+        {
+          "id": "0f3304f6-3181-4a5c-ad8b-0dd02920dfec",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Notification of Auditees"
+            }
+          ]
+        },
+        {
+          "id": "45a46fde-8fe2-4701-9ad5-b92389b045fc",
+          "type": "p",
+          "children": [
+            {
+              "text": "Inform the department or personnel scheduled for an audit at least [specific timeframe, e.g., one week] in advance, allowing time for preparation. Use the "
+            },
+            {
+              "text": "Internal Audit Notification",
+              "italic": true
+            },
+            {
+              "text": " form for this purpose."
+            }
+          ]
+        },
+        {
+          "id": "a9d5083b-9097-45d0-a38d-b2c0112d79ed",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "48578a22-6b29-4ad8-a859-9fc88009dfd1",
+          "type": "h2",
+          "children": [
+            {
+              "text": "6. Conducting the Audit"
+            }
+          ]
+        },
+        {
+          "id": "0098132d-4400-4e07-b12d-2259690a32bd",
+          "type": "h3",
+          "children": [
+            {
+              "text": "6.1. Opening Meeting"
+            }
+          ]
+        },
+        {
+          "id": "a73d6d8a-7201-422b-aea1-08a27d33f17c",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Initial Briefing"
+            }
+          ]
+        },
+        {
+          "id": "a7d96d15-7a33-49b4-be82-1e16a6ca806c",
+          "type": "p",
+          "children": [
+            {
+              "text": "Conduct an opening meeting with auditees to discuss the audit objectives, scope, criteria, and schedule. Clarify roles and responsibilities during the audit. Document key points of this meeting using the "
+            },
+            {
+              "text": "Meeting Summary Form",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "2571be89-3173-4f9b-8b20-3eb66d372d5c",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Review of Previous Actions"
+            }
+          ]
+        },
+        {
+          "id": "99bb84b2-86b8-445c-9524-f0efceccc4e3",
+          "type": "p",
+          "children": [
+            {
+              "text": "Briefly review the status of corrective actions from previous audits (if applicable)."
+            }
+          ]
+        },
+        {
+          "id": "ed2231b1-d4c5-4e91-a24d-c0d8f5d6e0bb",
+          "type": "h3",
+          "children": [
+            {
+              "text": "6.2. Audit Process"
+            }
+          ]
+        },
+        {
+          "id": "068454e1-5fab-4904-8868-ee54431d85f5",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Document Review"
+            }
+          ]
+        },
+        {
+          "id": "07c0731d-1112-449c-bf76-f41ec8e373bd",
+          "type": "p",
+          "children": [
+            {
+              "text": "Review relevant documentation (e.g., SOPs, work instructions, records, policies) against the audit criteria."
+            }
+          ]
+        },
+        {
+          "id": "dfcc0249-af21-4032-9309-c7f7244a440c",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Observation of Processes"
+            }
+          ]
+        },
+        {
+          "id": "2d95869d-e8f3-4c8e-b07b-0c7a0f99a039",
+          "type": "p",
+          "children": [
+            {
+              "text": "Observe personnel performing tasks and processes to verify adherence to documented procedures."
+            }
+          ]
+        },
+        {
+          "id": "1114f64a-93be-479a-a734-e48f98611eba",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Interviews"
+            }
+          ]
+        },
+        {
+          "id": "5f401048-05bc-4bfe-8636-2d62866ed2ec",
+          "type": "p",
+          "children": [
+            {
+              "text": "Interview staff members to assess their understanding of procedures, roles, and responsibilities. Record questions asked and responses received using the "
+            },
+            {
+              "text": "Question and Response Log",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "bbfb3b50-56cc-44c8-b54c-0f42d9731974",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Evidence Collection"
+            }
+          ]
+        },
+        {
+          "id": "ce1335f2-6593-48fc-b10d-6a7ed928b6b6",
+          "type": "p",
+          "children": [
+            {
+              "text": "Collect objective evidence (e.g., documents, records, observations, interview notes) to support findings. Use the "
+            },
+            {
+              "text": "Evidence Request Form",
+              "italic": true
+            },
+            {
+              "text": " to formally request specific documentation from auditees."
+            }
+          ]
+        },
+        {
+          "id": "f4e01bb4-2257-4fb4-88cf-b11dc5944404",
+          "type": "h3",
+          "children": [
+            {
+              "text": "6.3. Recording Observations and Findings"
+            }
+          ]
+        },
+        {
+          "id": "15290757-beaa-468a-854a-9bec93183736",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Documentation of Findings"
+            }
+          ]
+        },
+        {
+          "id": "c1d3f1ea-411f-40c7-8fdf-925a7beb735b",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record all non-conformances and observations clearly, specifying the requirement not met, the evidence of the non-conformance, and the specific area/process in the "
+            },
+            {
+              "text": "Audit Findings Log",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "3275919f-e998-43a8-b34a-2d997f6b7f62",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Classification of Findings"
+            }
+          ]
+        },
+        {
+          "id": "6e7e088d-f9bc-407a-9d5a-63123aa345ab",
+          "type": "p",
+          "children": [
+            {
+              "text": "Classify findings based on their severity:"
+            }
+          ]
+        },
+        {
+          "id": "aa7d99dc-970d-43f8-a2c8-999a2f2ef76e",
+          "type": "p",
+          "align": "left",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Minor Non-Conformance: [Define criteria, e.g., isolated deviation with minimal impact on quality or compliance]."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4dc40982-b88c-4185-851c-90f5bef37697",
+          "type": "p",
+          "align": "left",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Major Non-Conformance: [Define criteria, e.g., systemic deviation, significant impact on quality/compliance, or potential for regulatory non-compliance]."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "8f8f08eb-2932-4ba8-9702-e805f720d1ca",
+          "type": "p",
+          "align": "left",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Critical Non-Conformance: [Define criteria, e.g., severe breach with immediate and significant impact on safety, regulatory status, or product quality]."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e9f58ee8-fa7e-495e-b9f7-35feafdd9ffa",
+          "type": "h3",
+          "children": [
+            {
+              "text": "6.4. Audit Checklist"
+            }
+          ]
+        },
+        {
+          "id": "52b61c60-df37-4b43-b5a4-8229a25a6856",
+          "type": "p",
+          "children": [
+            {
+              "text": "Utilize a standardized audit checklist tailored to the area being audited to ensure consistency and thoroughness - "
+            },
+            {
+              "text": "Internal Audit",
+              "italic": true
+            },
+            {
+              "bold": true,
+              "text": " ",
+              "italic": true
+            },
+            {
+              "text": "form."
+            }
+          ]
+        },
+        {
+          "id": "043df58a-077c-4cdb-867a-169b06956ea9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3b9d92ae-7979-490d-b60a-396409876a94",
+          "type": "h2",
+          "children": [
+            {
+              "text": "7. Reporting Audit Findings"
+            }
+          ]
+        },
+        {
+          "id": "c5f1add7-d37c-4437-9f26-ef405bfad9b1",
+          "type": "h3",
+          "children": [
+            {
+              "text": "7.1. Audit Report Preparation"
+            }
+          ]
+        },
+        {
+          "id": "a9f09e4a-e872-4466-a7e0-de277055ce99",
+          "type": "p",
+          "children": [
+            {
+              "text": "Report Content: Prepare an "
+            },
+            {
+              "text": "Audit Report",
+              "italic": true
+            },
+            {
+              "text": " that includes:"
+            }
+          ]
+        },
+        {
+          "id": "699e60c3-81b2-4fcf-aee2-ea43b4a88d4a",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Date(s) of the audit"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e752cdef-0fb8-4ad0-8c93-76d03af357df",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Scope, objectives, and audit criteria"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4443f576-4171-4ad6-92ca-41a22b92991e",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Summary of findings (non-conformances and observations), categorized by severity"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "378d6476-aa8f-46c9-9e26-7bd2fbe4bfef",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Recommendations for corrective actions (if applicable)"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "f4f0800b-f8dc-47a5-a24a-6e8cba835f02",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Positive observations/areas of good practice"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "d1fb5e7a-93eb-4e03-94ef-33662d3c8f74",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Audit team members"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "52028988-e0e8-4183-a51d-ca698f19ed26",
+          "type": "p",
+          "children": [
+            {
+              "text": "Review and Approval: Submit the "
+            },
+            {
+              "text": "Audit Report",
+              "italic": true
+            },
+            {
+              "text": " to [appropriate role, e.g., QA Manager] for review and approval prior to distribution."
+            }
+          ]
+        },
+        {
+          "id": "3a8ae57e-b817-45dc-8470-4f0ed4c70d0e",
+          "type": "h3",
+          "children": [
+            {
+              "text": "7.2. Closing Meeting"
+            }
+          ]
+        },
+        {
+          "id": "71609dad-ff57-41be-af61-e1fbdc38c0bf",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Summary Discussion"
+            }
+          ]
+        },
+        {
+          "id": "84387368-7610-4ceb-9c7d-27bfdfed8bab",
+          "type": "p",
+          "children": [
+            {
+              "text": "Conduct a closing meeting with auditees and [relevant management] to discuss the audit findings, classifications, and recommended actions. Provide an opportunity for clarification and discussion. Document key points of this meeting using the "
+            },
+            {
+              "text": "Meeting Summary Form",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "b495f89d-c8af-45fa-9e72-3cdb45f49bea",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Acknowledgement of Strengths"
+            }
+          ]
+        },
+        {
+          "id": "24ba7441-5823-4f47-97dd-5e40ec936346",
+          "type": "p",
+          "children": [
+            {
+              "text": "Acknowledge areas of compliance or exemplary practices."
+            }
+          ]
+        },
+        {
+          "id": "d69049fa-5ae3-4b21-ad1c-3fea38712bc0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "17aa71c3-f5ba-4de0-9cef-59032e653ab8",
+          "type": "h2",
+          "children": [
+            {
+              "text": "8. Corrective Actions and Follow-Up"
+            }
+          ]
+        },
+        {
+          "id": "cd5d3061-5706-4173-80af-093bd5e1e15d",
+          "type": "h3",
+          "children": [
+            {
+              "text": "8.1. Developing Corrective Action Plans"
+            }
+          ]
+        },
+        {
+          "id": "213b83f2-1d9b-44b8-a750-8b6c2d036e3a",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Responsibility Assignment: Assign specific personnel responsible for addressing each non-conformance."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "fd75e933-b2e4-4182-89c0-3200a838dc73",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Root Cause Analysis: For [e.g., all major and critical non-conformances], a "
+            },
+            {
+              "text": "Root Cause Analysis Form",
+              "italic": true
+            },
+            {
+              "text": " must be completed to identify the underlying causes."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e69a9f4d-3250-4aca-a958-c59a70e0f035",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Action Plan Documentation: Document corrective actions in a "
+            },
+            {
+              "text": "CAPA Form",
+              "italic": true
+            },
+            {
+              "text": " that includes:"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e3e9f4e4-febd-46ab-8fd2-fa0c15e4b5c7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Description of the root cause(s)"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "5b9c91a4-3672-4870-8896-25ed52f8c9af",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Description of the corrective action(s)"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b898a20f-d4a7-43fe-88ba-bfed4ef44b72",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Responsible personnel"
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "ed545f45-5ae0-4412-8f06-caab8857fcc4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Target completion dates"
+            }
+          ],
+          "listStart": 7,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "861bd3ae-166e-44f2-a732-335348848882",
+          "type": "h3",
+          "children": [
+            {
+              "text": "8.2. Implementing and Verifying Corrective Actions"
+            }
+          ]
+        },
+        {
+          "id": "118f6502-30a8-4164-affe-dce6b221aa12",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Execution"
+            }
+          ]
+        },
+        {
+          "id": "bca8a3f3-d460-4e38-aa1b-b63bd62a6768",
+          "type": "p",
+          "children": [
+            {
+              "text": "Implement corrective actions according to the approved plan."
+            }
+          ]
+        },
+        {
+          "id": "e1ecbb18-9fba-4e7b-b7ab-8e1aa9fe3699",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Verification of Effectiveness"
+            }
+          ]
+        },
+        {
+          "id": "2ec66e02-f447-404c-9de8-28d9af4b76e2",
+          "type": "p",
+          "children": [
+            {
+              "text": "Once actions are completed, verify their effectiveness in addressing the non-conformance and preventing recurrence. Document the completion and effectiveness verification using the "
+            },
+            {
+              "text": "CAPA Effectiveness Review Form",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "57a36b97-b05c-4f94-8b7f-e37152891c1e",
+          "type": "h3",
+          "children": [
+            {
+              "text": "8.3. Follow-Up Audits/Reviews"
+            }
+          ]
+        },
+        {
+          "id": "003e383c-7fa2-494e-80dc-3977fe0f5d06",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Re-Audit/Verification"
+            }
+          ]
+        },
+        {
+          "id": "14750ab5-afc7-40eb-b436-3307d2d4425f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Schedule a follow-up audit or specific verification activities for [e.g., all major and critical findings, or based on risk] to confirm effective implementation of corrective actions."
+            }
+          ]
+        },
+        {
+          "id": "3b454388-0c45-43bb-96ce-6b792facdec6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f59e9b5a-9925-413a-bde2-836b5d3a4679",
+          "type": "h2",
+          "children": [
+            {
+              "text": "9. Documentation and Record-Keeping"
+            }
+          ]
+        },
+        {
+          "id": "01bd2861-bfe0-403a-8200-69005791fa45",
+          "type": "h3",
+          "children": [
+            {
+              "text": "9.1. Required Documentation"
+            }
+          ]
+        },
+        {
+          "id": "420bd815-2b22-47a0-8414-5629c8e78858",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Internal Audit checklist"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "aec6ad51-026c-41ed-a6b6-fc40cefe1390",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Internal Audit Notification"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e9b70982-122b-490f-b8dd-9df9e31c24d3",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Evidence Request Form"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "35266a7e-5248-4b71-8545-5879822f484f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Question and Response Log"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b7ed96c7-fb53-4350-9d6b-16c1d782f865",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Meeting Summary Form"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "1e6dbe75-f688-43e1-b420-1a540d37977b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Audit Findings Log"
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "5f1d956a-8b4e-4605-bb12-df6c5ca294ce",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Root Cause Analysis Form"
+            }
+          ],
+          "listStart": 7,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e879722a-62c2-4173-b3ae-94c15eecc52c",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "CAPA Form"
+            }
+          ],
+          "listStart": 8,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4836df15-fa68-4f3e-9a75-521047bbd337",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "CAPA Effectiveness Review Form"
+            }
+          ],
+          "listStart": 9,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "ecbafd88-4057-4d43-8b08-a8d0b9199d0d",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Audit Report Generation Forn"
+            }
+          ],
+          "listStart": 10,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4d6ccc08-ab5f-4225-8460-830d0c86db12",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Audit Report"
+            }
+          ],
+          "listStart": 11,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "ba41d71f-8f47-4740-946b-bbd422ff3c42",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Audit Completion Form"
+            }
+          ],
+          "listStart": 12,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b3630931-6454-4664-bc42-5b6fd015c67a",
+          "type": "h3",
+          "children": [
+            {
+              "text": "9.2. Retention of Records"
+            }
+          ]
+        },
+        {
+          "id": "286c0bcd-5900-4cd9-a24d-2d64ed1abf1f",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Retention Period"
+            }
+          ]
+        },
+        {
+          "id": "2b061c02-2b56-4c5e-8a05-8fba49bd9704",
+          "type": "p",
+          "children": [
+            {
+              "text": "Retain all audit-related documents for a minimum of [specific timeframe, e.g., five years, or as required by regulatory standards/company policy]."
+            }
+          ]
+        },
+        {
+          "id": "dac55682-8d20-4611-a851-7ceb96dec2c7",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Storage"
+            }
+          ]
+        },
+        {
+          "id": "b73500dd-0335-4542-839d-d05ab9671655",
+          "type": "p",
+          "children": [
+            {
+              "text": "Store records securely and ensure they are readily accessible for review."
+            }
+          ]
+        },
+        {
+          "id": "26e83aad-31b6-4b10-b6a4-edb2f0e520ab",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "69e510da-d7f9-4701-b3ef-cb36a036d106",
+          "type": "h2",
+          "children": [
+            {
+              "text": "10. Monitoring and Review of the Audit Program"
+            }
+          ]
+        },
+        {
+          "id": "c0f39272-5d4e-4f2d-88c6-2d8b229fc4dd",
+          "type": "h3",
+          "children": [
+            {
+              "text": "10.1. Annual Program Review"
+            }
+          ]
+        },
+        {
+          "id": "32c09e3c-7fd5-4dee-b5ee-0234c322a50b",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Evaluation"
+            }
+          ]
+        },
+        {
+          "id": "1168e751-6ccd-41a9-9a4d-286536a767dc",
+          "type": "p",
+          "children": [
+            {
+              "text": "Conduct an annual review of the overall internal audit program to assess its effectiveness, efficiency, and continued suitability."
+            }
+          ]
+        },
+        {
+          "id": "1bbca692-ec1b-4055-aa2f-485e3ed7116b",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Adjustment"
+            }
+          ]
+        },
+        {
+          "id": "05f5ce19-f1a6-4c35-98ca-0ba24eef9c11",
+          "type": "p",
+          "children": [
+            {
+              "text": "Adjust audit frequencies, checklists, procedures, and auditor training as needed based on audit results, changing risks, and organizational changes."
+            }
+          ]
+        },
+        {
+          "id": "fb31da38-8780-4aa0-b743-f8de76b456f9",
+          "type": "h3",
+          "children": [
+            {
+              "text": "10.2. Oversight"
+            }
+          ]
+        },
+        {
+          "id": "ec5e4d79-885d-48c6-8c5a-f78e9ff47588",
+          "type": "p",
+          "children": [
+            {
+              "text": "[Specific Role, e.g., QA Manager/Internal Audit Lead] Review: Periodically review the entire audit program, focusing on trends in non-conformances, recurring issues, and overall compliance status."
+            }
+          ]
+        },
+        {
+          "id": "88b35ae3-0b27-469b-9d9a-02908f71934b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "771e4e85-02a6-4585-a311-f5088c158ba9",
+          "type": "h2",
+          "children": [
+            {
+              "text": "11. Training on Internal Audits"
+            }
+          ]
+        },
+        {
+          "id": "188f789d-9e1b-461c-b67e-778c550a5206",
+          "type": "h3",
+          "children": [
+            {
+              "text": "11.1. Initial Training for Auditors"
+            }
+          ]
+        },
+        {
+          "id": "9f7ed60d-10e2-4a1e-a35f-672d4d22fd4b",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Requirements"
+            }
+          ]
+        },
+        {
+          "id": "abe4aa46-d04e-457a-b580-78b148d40031",
+          "type": "p",
+          "children": [
+            {
+              "text": "All personnel assigned as internal auditors must undergo initial training on audit procedures, [e.g., relevant standards, risk assessment, interviewing techniques, documentation standards, handling non-conformances], and the proper use of all associated audit forms/documents."
+            }
+          ]
+        },
+        {
+          "id": "aec817b2-9210-40d9-9aa1-68f85208e8ff",
+          "type": "h3",
+          "children": [
+            {
+              "text": "11.2. Refresher Training"
+            }
+          ]
+        },
+        {
+          "id": "812ddbd1-60dc-49ab-a434-716c4b299d48",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Frequency"
+            }
+          ]
+        },
+        {
+          "id": "d813bdf9-5cab-4bcc-ab77-d3b68de42f6e",
+          "type": "p",
+          "children": [
+            {
+              "text": "Conduct refresher training for auditors at least [specific frequency, e.g., annually, biennially] to ensure they remain updated on best practices, regulatory changes, program updates, and any revisions to the audit forms/documents."
+            }
+          ]
+        },
+        {
+          "id": "87b930d3-406f-4931-b014-4dde9328bcce",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e3ef6b69-d756-4e0d-8d22-5fa673a4496f",
+          "type": "h2",
+          "children": [
+            {
+              "text": "12. References"
+            }
+          ]
+        },
+        {
+          "id": "4e0c04ba-8d52-494f-9093-5301f7296adb",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "[List any relevant external standards, e.g., ISO 9001:2015 - Quality management systems – Requirements]"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "34db32a3-a640-490f-b544-29abe5511196",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "[List any relevant internal company policies or procedures, e.g., Company Quality Manual]"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "9764ef8e-f16b-4566-9ef3-1cd4574d648e",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "[List any specific regulatory guidelines, e.g., applicable FDA regulations, EMA guidelines]"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a56884b4-1639-464a-9ae3-74ab4a0ce7db",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0683eac6-212a-4dc8-844a-3ef42fbcb25c",
+          "type": "field",
+          "fieldId": "791b8b28-a916-4216-a4db-48cfd6e9a775",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "36d92624-1b11-4be1-a70f-a91aa5a01b4e",
+          "type": "field",
+          "fieldId": "42bfb552-8eae-41aa-be6e-0f51bb28405e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "0cfedfce-d992-4867-9f62-33116dad05c3",
+          "type": "field",
+          "fieldId": "d277130d-0a15-4fb1-bcb7-2051dffcf619",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "bfa7957c-e10d-417d-a641-224f328f9fd6",
+          "type": "field",
+          "fieldId": "a3a4deb7-6e90-406a-8bba-303f4cc00bfe",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "ba65433f-5ebd-4092-8dd5-59b4596e01ad",
+          "type": "field",
+          "fieldId": "88ba6026-72cd-42ca-86b1-b3f70c5a9e0e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "3a45eb96-77ab-4de6-8187-8ecb610b987d",
+          "type": "field",
+          "fieldId": "5e998407-b642-4338-ac4a-48d8ad477728",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "d496e7ad-8097-4e83-8dae-340294df4234",
+          "type": "field",
+          "fieldId": "4933bd20-f6e0-4f3c-b9bb-65dfa155d065",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "a68648c8-7e56-402d-ab67-c666416b8038",
+          "type": "field",
+          "fieldId": "01f35a4f-12a8-46c1-b533-6224c0e1cf6c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "0c2edcff-b1e7-4ca5-9861-fb16b053c072",
+          "type": "field",
+          "fieldId": "7b1724f1-68c7-48a6-bc54-e80057e915b8",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "05536bc2-77a3-4930-beb6-a5df515e89bb",
+          "type": "field",
+          "fieldId": "cc0f56c4-0c09-4ca8-b0c8-1dcfc9ce17f0",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "70298836-ed27-41d8-8a7a-33c8a751af8a",
+          "type": "field",
+          "fieldId": "ad325f92-ed0f-4862-9a7a-ab38b543f1bb",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "69e51512-a956-47fc-bbfc-550a402597ac",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

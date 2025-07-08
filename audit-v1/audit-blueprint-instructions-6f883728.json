@@ -1,0 +1,824 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "6f883728-1091-4f18-ac53-bde4e1887cb4",
+  "title": "Audit Blueprint Instructions",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "ac353ed7-1b0c-4ced-81ef-e432dd4e84dc",
+      "version": "2"
+    }
+  },
+  "fields": {
+    "Formula": {
+      "id": "79b49dc1-c2d6-4b51-b3c5-de1ebfd244ff",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "79f76516-f3c4-40f1-bb1c-353a41311b4d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "028dbca6-dc3f-4dbb-a66e-5250b7defe5d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5bf9c476-a97e-447d-8a8f-91fafd06d0d4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            },
+            {
+              "url": "https://seal.run/blueprints/audit-management",
+              "type": "a",
+              "children": [
+                {
+                  "text": "﻿Seal Blueprint documentation﻿"
+                }
+              ]
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "31ce7fa8-e8f6-45f0-bad1-9c5a17dacf56",
+          "type": "h2",
+          "children": [
+            {
+              "text": "﻿\nEntities included in Blueprint:"
+            }
+          ]
+        },
+        {
+          "id": "71b986bd-240b-4e87-9af2-5a88abcd76ab",
+          "type": "table",
+          "children": [
+            {
+              "id": "d95815e0-6eef-464b-8df6-a18a77799216",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "67f4a220-0ae6-488b-b63e-6de078c181fe",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "86563354-bcd2-4395-9967-ebf6592d7864",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Types"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "48f42920-68b0-40b0-a3aa-06adc19596a5",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "e378b124-5ee0-4d7d-99cc-eba8cd7ce782",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Templates"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4c98dcf7-dbe9-456e-84b3-5cb4cac7f4ad",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "acff5085-1248-41a9-a7e5-0671e8ad7a27",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Instances"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fe843dc0-48ba-4204-bd1c-69f7a335a487",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "277f192e-40b3-46ca-823d-7c5596a730f9",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4ed10e81-6576-46de-abbc-9065358f6826",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit SOP"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f0293a88-43f0-4f34-bc4a-df00c959c104",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "57f06238-0ba9-4e14-9ce3-0710d3d4c175",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1f81a6a2-5168-48f6-911c-cd12b2c1c752",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7a7345e2-4203-4305-8c0e-6fc32e4fc0d7",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "SOP - Internal Audit"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "5392be9b-3502-43be-9e6f-96eb2f718ec9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "SOP - Supplier Audit"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "80c393ff-b11d-407e-baab-56988833ca2b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "SOP - External Audit"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ad6543d0-a30d-4108-9746-77c4680ea98b",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "de928f73-6ea8-4cde-9ba2-7068aaa5b18a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c4b65d4b-28cb-42ee-b88e-b1afcc9dc4d3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Checklist"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4a16473c-ea54-4a7a-b2d6-35b370c2b2db",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "775e3cc3-a53c-4251-a145-a6d5dc04ab3c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Internal Audit"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "98373fb7-6a9b-4ee0-b54d-4fc1463bb06b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Supplier Audit"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "7b071330-ef01-4320-b9d8-75dbbe5f99da",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "External Audit"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2d342986-0898-4f75-a490-87cc3a07d2d2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Regulatory Audit"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b7273c07-8233-42ed-bf21-c03fdaffd317",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "f829d0b8-e0f1-4d6c-ab6e-fcc2297e9031",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f7906a7b-052d-45d4-9163-b67cb245e159",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "e4493ff5-ec0f-4fd6-9c51-9b735622cd42",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6d64948e-d4ec-4c7d-b9a2-d947347a711b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Form"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d88b8914-3b4e-46ea-b30c-b5d10c92b9d0",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a2800058-8d23-400f-8b7e-2f2606773fcf",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Internal Audit Notification"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "47e9bec0-d178-4b3b-abb7-d831ce3d3eb8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Supplier Audit Notification Letter"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0143eeef-4ad7-4e90-9cfe-102421687b25",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Receipt of Audit Notification Letter"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "6bf8547a-2d1a-4b51-8fca-c89ef4aa717c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Evidence Request Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "42dc9e08-fd75-4d19-83cf-214f8f0afe61",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "External Evidence Request Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "eebb5cee-e81d-4f33-8fb1-019634f35c08",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Question and Response Log"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "235ca369-c9b7-4a2c-8ff9-afa94cb9bb24",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Meeting Summary Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ce9f88c3-8b72-4be0-a284-482791ee607f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Findings Log"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "41a6ff50-055d-457e-af8e-e8e3db68bd31",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Root Cause Analysis Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "12bad247-2ac7-440c-84c5-641233cf85fd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "CAPA Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "202d5435-ffaf-4cf1-bf4d-8388a0956b44",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "SCAR Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "e186aba5-f51a-4318-9376-6c5892630ba1",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "CAPA Effectiveness Review Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "caed0720-cfed-49e1-aa81-0b589ba539b8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "SCAR Effectiveness Review Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "317e401c-56a0-4c40-b69e-7dc1bdd45b25",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Report Generation Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "71be4866-9edb-4bf1-98b8-aa5c51f5e8b8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Report Acknowledgement Form"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "61c130ed-9949-4407-b06f-bd247126d723",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Completion Form"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9b750470-767f-4301-9c62-be05e211c26d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5502d67d-10a5-4ee1-b152-b949c421b19e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Blueprint Instructions (this entity)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a1803ce8-653c-42a1-9b46-af36e913f619",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "1d8caf08-c8fa-4e7d-93d7-2838140f9c5f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "044556e3-88a2-4563-b8f4-d48febc7ba63",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Script"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "56c5176c-cb50-4a9f-9130-a3fa7d665f24",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ebaf4f65-3caa-40e6-8cda-9a65744c37a3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "17ad672f-3766-4dcf-9065-7d3e0e02d3f1",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "97c9657d-dd69-4feb-ba7d-18da10992ded",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Report Generating Script"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6d30245f-be1c-450e-b8d8-c60222bd306e",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "e1828404-0550-419a-908c-d28a15222b84",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6a169ca9-bbb1-4137-aec0-dd98cd40ef4b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Suppliers"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "02a84695-8424-48f4-baa1-c88292703bad",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "30e78e75-6284-4c90-8a79-4d94532f8766",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Supplier Form"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "438d0613-5a9f-4370-a882-bd0f0d5ae75c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4e565c15-2580-4128-83bd-a4c103692756",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0585c3f6-92da-4dd7-99e9-68f7e13e714d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9b48ecd7-e18b-4d23-b451-306fa49a10ee",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Setup Instructions"
+            }
+          ]
+        },
+        {
+          "id": "44ac5a9e-0d19-4001-a7a6-5a06f9cba171",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e046f60f-b51a-4732-8654-c4414da60e3c",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "View Group"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "517b9d59-4942-4e90-8b6c-732a6f9f9b27",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Settings > View Groups > + New"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "3992b3f1-a2a8-443d-b48f-e798dafabb3b",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Click the edit icon to change the view group name, icon and position in side panel; suggested name “Audit”"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "10808a27-0caa-4437-920d-a97c90b0576b",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Saved Views"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "c8cccc91-a6a4-442f-8969-ccf532afc0fc",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Add to search bar “tag:”Audit Blueprint\" to bring up all of the entities contained in this blueprint."
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "21f7b3d5-2191-452a-8e0e-684a845c18f9",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "If desired, this can be saved through the panel at the top of the page."
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2.1."
+        },
+        {
+          "id": "48b7d4b7-0bc2-432d-a6b4-acb73445a5b5",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Suggested Saved Views:"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "c1427f43-6650-4f4d-805a-b1f8b484c064",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Templates, search for: tag:\"Audit Blueprint\" kind:template"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "a74b2c81-794e-4a6c-aab8-dd892edc5766",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Audits, search for: template:Internal Audit template:External Audit template:Regulatory Audit template:Supplier Audit "
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "93ca7f41-ee3a-42fa-afad-6aaa88c03ec6",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Audit SOP templates"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "78a21eda-97b9-4bda-9b41-fd691aab35b2",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": " Audit SOP templates should all be updated to contain details specific to your company and its procedures."
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "4e75cca4-4bc9-4056-bb26-6ff777ee69b1",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Select the SOP of interest, Make Changes > Go to change set > update the Upcoming Status Tag (i.e. Published) > Publish."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "fe428cc0-a343-4169-805d-ef918d358076",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dac3ee67-6664-4d1c-9e6c-5f556a3dcdb2",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Instructions"
+            }
+          ]
+        },
+        {
+          "id": "5279b4b6-d826-4865-b99b-2cb856d593ae",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Start new audit by selecting one of the Audit Checklist templates - Internal, Supplier, External or Regulatory - and clicking New Instance"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "cd076c2a-08a4-4594-aee7-3e307b087dff",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Complete the critical information about the audit"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "b81648c0-260d-4b9f-b8ad-8d79db5b17b0",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "As stages of the audit occur, fill out the relevant forms by creating new instances within the reference fields in the checklist. "
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "4215ff77-d564-47c5-84f6-59c79a5003d7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Always refer back to the checklist to check the status of the audit."
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "16e6aa0b-fed5-4f9a-a42c-7125c5e96b6f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
