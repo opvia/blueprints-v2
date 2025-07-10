@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f1191eb6-b4dc-49c7-816d-a3b3b7340038",
+  "title": "Preview_Example Sample 1234_1752155668.pdf",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Label Source": {
+      "id": "336c3b18-0f9e-44a4-9a45-fd18b73b4018",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3f278c7c-27bd-4c08-80b4-4b6e77c67b3e"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": "50a833d1-2356-4222-bc8c-b71566ab5cb6"
+    }
+  }
+}
