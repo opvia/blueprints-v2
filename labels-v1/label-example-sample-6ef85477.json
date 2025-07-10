@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "8279b6ce-d05d-498f-8364-4f67ab8d6d1d",
-  "title": "Label Element",
+  "id": "6ef85477-0aef-4e90-894d-2dbbdcf28195",
+  "title": "Label Example Sample",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -16,18 +16,15 @@
   },
   "sourceInfo": {},
   "fields": {
-    "Alignment": {
-      "id": "5de8c795-efc0-46d8-adfa-7f72c81597f8",
-      "type": "SELECT",
+    "Name": {
+      "id": "afbe3a37-ce8c-4d85-a97e-4b7228ee9aeb",
+      "type": "STRING",
       "value": null,
-      "config": {
-        "allowMultiple": false,
-        "selectOptions": []
-      },
-      "dataType": "SELECT"
+      "config": {},
+      "dataType": "STRING"
     },
-    "X Position": {
-      "id": "73730f00-d5cd-4823-8a46-57cefed20c97",
+    "Sample ID": {
+      "id": "42f9badc-cc31-4667-b546-9fd7c3c541da",
       "type": "NUMBER",
       "value": null,
       "config": {
@@ -35,37 +32,23 @@
       },
       "dataType": "NUMBER"
     },
-    "Y Position": {
-      "id": "7dd28c20-5266-4a07-9204-532fbf3bb5b5",
-      "type": "NUMBER",
+    "Expiration": {
+      "id": "f344f8fb-eaf5-4345-963c-328b5b11017a",
+      "type": "DATE",
       "value": null,
-      "config": {
-        "format": "0.X"
-      },
-      "dataType": "NUMBER"
+      "config": {},
+      "dataType": "DATE"
     },
-    "Element Type": {
-      "id": "3feb6297-48e4-4fc9-bc6d-7bc4bb4e987f",
-      "type": "SELECT",
+    "Reference Number": {
+      "id": "64c06973-c4f6-46ec-8d4f-dfcbc7fffe64",
+      "type": "FORMULA",
       "value": null,
-      "config": {
-        "allowMultiple": false,
-        "selectOptions": []
-      },
-      "dataType": "SELECT"
-    },
-    "Rotation (°)": {
-      "id": "27566bd4-6c23-4f06-aa40-ceae4b840b29",
-      "type": "NUMBER",
-      "value": null,
-      "config": {
-        "format": "0.X"
-      },
-      "dataType": "NUMBER"
+      "config": {},
+      "dataType": null
     }
   },
   "kind": "TYPE",
-  "icon": "media",
+  "icon": "globe",
   "contentType": "PAGE_CONTENT",
   "instanceConfig": {
     "strictMode": false,
@@ -115,11 +98,11 @@
     "hideVersionNumber": false,
     "createFromTemplate": {
       "can": true,
-      "onlyCreateFromActiveVersion": false
+      "onlyCreateFromActiveVersion": true
     },
     "reviewRequirements": null,
     "enforceUniqueTitles": false,
-    "canChooseActiveVersion": false
+    "canChooseActiveVersion": true
   },
   "templateConfig": {
     "customStatusGroup": {

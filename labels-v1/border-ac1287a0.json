@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "8f96f35b-d26e-4055-b523-ec3609b133ed",
-  "title": "Field #2914",
+  "id": "ac1287a0-f74c-4b23-974a-41f947f61403",
+  "title": "Border",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -14,23 +14,31 @@
     "editors": [],
     "typeIndex": "0"
   },
-  "sourceInfo": {
-    "template": {
-      "id": "4fdc191d-c398-4130-a9cc-66bbeb6c292f",
-      "version": "1.5"
-    },
-    "submissionField": {
-      "fieldId": "c8fa5ef3-af20-42ec-8ad9-9217e2601032",
-      "fieldName": "Label Elements",
-      "parentEntityId": "7c75b65b-079e-494a-8b39-81bbc4f7b127"
-    }
-  },
+  "sourceInfo": {},
   "fields": {
+    "Width": {
+      "id": "5f90c0af-ba0b-4294-bf18-a68810d04ccd",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Height": {
+      "id": "1a9a9232-2cc0-441e-8c11-831e2c31b7e7",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
     "Alignment": {
       "id": "5de8c795-efc0-46d8-adfa-7f72c81597f8",
       "type": "SELECT",
       "value": [
-        "Top-Left"
+        "Center"
       ],
       "config": {
         "allowMultiple": false,
@@ -44,22 +52,8 @@
       },
       "dataType": "SELECT"
     },
-    "Font Name": {
-      "id": "cff6fcb7-706b-4852-84c0-a71291fe185f",
-      "type": "SELECT",
-      "value": null,
-      "config": {
-        "allowMultiple": false,
-        "selectOptions": [
-          "Helvetica",
-          "Times-Roman",
-          "Courier"
-        ]
-      },
-      "dataType": "SELECT"
-    },
-    "Font Size": {
-      "id": "a760dd4a-790a-4cac-8668-7900a0328d31",
+    "Line Width": {
+      "id": "ceef99a9-0afc-44ea-bf1a-3195510d8fa1",
       "type": "NUMBER",
       "value": null,
       "config": {
@@ -67,17 +61,10 @@
       },
       "dataType": "NUMBER"
     },
-    "Field Name": {
-      "id": "889e1dbc-8291-4a1b-acb0-1957a400c43b",
-      "type": "STRING",
-      "value": "Expiration",
-      "config": {},
-      "dataType": "STRING"
-    },
     "X Position": {
       "id": "73730f00-d5cd-4823-8a46-57cefed20c97",
       "type": "NUMBER",
-      "value": 20,
+      "value": null,
       "config": {
         "format": "0.X"
       },
@@ -86,24 +73,17 @@
     "Y Position": {
       "id": "7dd28c20-5266-4a07-9204-532fbf3bb5b5",
       "type": "NUMBER",
-      "value": 30,
+      "value": null,
       "config": {
         "format": "0.X"
       },
       "dataType": "NUMBER"
     },
-    "Prefix Text": {
-      "id": "9121f49d-36e4-47fa-985c-fa2b426447c0",
-      "type": "STRING",
-      "value": "Expiration Date: ",
-      "config": {},
-      "dataType": "STRING"
-    },
     "Element Type": {
       "id": "3feb6297-48e4-4fc9-bc6d-7bc4bb4e987f",
       "type": "SELECT",
       "value": [
-        "Field"
+        "Border"
       ],
       "config": {
         "allowMultiple": false,
@@ -139,18 +119,17 @@
     "Rotation (°)": {
       "id": "27566bd4-6c23-4f06-aa40-ceae4b840b29",
       "type": "NUMBER",
-      "value": null,
+      "value": 0,
       "config": {
         "format": "0.X"
       },
       "dataType": "NUMBER"
     }
   },
-  "kind": "INSTANCE",
-  "computedTitle": "@3feb6297-48e4-4fc9-bc6d-7bc4bb4e987f #@INDEX ",
+  "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "8279b6ce-d05d-498f-8364-4f67ab8d6d1d"
+      "id": "7445d898-7c69-4626-8b9b-3c7d15ea9707"
     }
   },
   "content": {
@@ -168,5 +147,9 @@
         }
       ]
     }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@3feb6297-48e4-4fc9-bc6d-7bc4bb4e987f #@INDEX "
   }
 }

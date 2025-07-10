@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "ff9a9ff8-1418-401b-aedb-2aacca2f2cd2",
+  "id": "f06b09e7-07b5-425f-949f-72a88a704745",
   "title": "Instructions: Label Blueprints",
   "status": "EDITABLE",
   "version": null,
@@ -19,7 +19,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "a49c7d6f-a575-44b8-bfa4-046d9789beb9"
+      "id": "3c5e2a94-b068-45eb-87af-381643f597d4"
     }
   },
   "content": {
@@ -320,7 +320,7 @@
           "indent": 1,
           "children": [
             {
-              "text": "Add rows to the label elements table. Each row renders content on the label"
+              "text": "Add rows to the label elements table. Each row renders content on the label. See the “Label Elements” below."
             }
           ],
           "listStart": 3,
@@ -337,7 +337,7 @@
             }
           ],
           "listStyleType": "decimal",
-          "listParentIndex": "4."
+          "listParentIndex": "3."
         },
         {
           "id": "31cc1ca7-eb21-426f-9fac-c2c133f0dacf",
@@ -362,6 +362,188 @@
           ],
           "listStart": 5,
           "listStyleType": "decimal"
+        },
+        {
+          "id": "10b6ac91-6d56-451c-98f4-0a57e1adbfbb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "039267c8-6fc2-4ed9-ab78-24e67ea5450f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a9056ff9-d956-4a9c-8705-614f80a5831d",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Label Elements:"
+            }
+          ]
+        },
+        {
+          "id": "c0ef743b-b3b5-4672-9351-ebc01826d880",
+          "type": "p",
+          "children": [
+            {
+              "text": "All elements require an ‘x’ and ‘y’ position where (x=0, y=0) is in the "
+            },
+            {
+              "bold": true,
+              "text": "top left corner"
+            },
+            {
+              "text": " of the page. "
+            }
+          ]
+        },
+        {
+          "id": "28d6b0c6-3228-417b-9746-7acc43444d76",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Plain Text: Used to render text that is the same on all labels. Font and color settings are "
+            },
+            {
+              "bold": true,
+              "text": "optional"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "c263389a-b184-4cc3-a087-b7ac5adc1a08",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Field Value: Specify the field name from your template to add the value to the label"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "c124a5f1-8370-4a52-972b-58caf130e66f",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Tip: Use prefix text to add text before the field value eg. ‘Expiration Date: 01-02-24’",
+              "italic": true
+            }
+          ],
+          "listStyleType": "disc",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "3c7c094e-1b81-47ed-9687-c0590e0d77bb",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Barcode128, Barcode39, QR Code: Points to a field in your template. The value of the field is converted to the chosen code."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b67b3c4a-0f26-4a89-9778-e94d62137d0c",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Tip: Use ‘Title’ as the barcode ‘field or property name’, then scan the barcode when filling out a reference field to look up the label's entity.",
+              "italic": true
+            }
+          ],
+          "listStyleType": "disc",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "5257ac3f-78fa-4179-8b90-7ad025517358",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Border: A rectangular border with width and color settings"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a8e08510-ed7d-47d3-8547-c115d1784904",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Image: Specify the field name from your template that contains an image file entity"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "efb64dbb-0d60-4ab0-9268-5b4864db77ac",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Table: Specify the field name from your template containing a 'Reference' or ‘Submission’ field"
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b3e78816-2cb5-4cf8-9419-993d8b9d82e4",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Each entity will be it's own row in the table"
+            }
+          ],
+          "listStyleType": "disc",
+          "listParentIndex": "6."
+        },
+        {
+          "id": "df72e0df-b44b-4517-8a4a-a67b4da66ff3",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "‘Column Names' should match the field names in the reference or submission entities. These are comma separated names where the order matches the column order eg. ‘field name 1, field name 2…’"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc",
+          "listParentIndex": "6."
+        },
+        {
+          "id": "758f5727-f27e-4d48-aec5-674ade26807d",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "To adjust the size of the table change the font size"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc",
+          "listParentIndex": "6."
         },
         {
           "id": "9e45b8c5-2af4-4efb-8804-f172d63c7244",

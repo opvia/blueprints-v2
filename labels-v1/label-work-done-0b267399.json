@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "b9f2b6dd-6c2f-43c0-9767-7a1400934d01",
-  "title": "Label Script",
+  "id": "0b267399-9f96-47d7-b054-b07247c47512",
+  "title": "Label Work Done",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -17,13 +17,10 @@
   "sourceInfo": {},
   "fields": {},
   "kind": "TYPE",
-  "icon": "code",
-  "contentType": "SCRIPT_CODE",
+  "icon": "clipboard",
+  "contentType": "PAGE_CONTENT",
   "instanceConfig": {
-    "strictMode": false,
-    "createFromType": {
-      "can": true
-    },
+    "createFromType": null,
     "customStatusGroup": {
       "editableFirst": {
         "statuses": [
@@ -66,10 +63,55 @@
         "defaultStatus": "Published"
       }
     },
-    "hideVersionNumber": false,
-    "createFromTemplate": null,
-    "reviewRequirements": null,
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": false
+    },
     "enforceUniqueTitles": false,
-    "canChooseActiveVersion": true
+    "canChooseActiveVersion": false
+  },
+  "templateConfig": {
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "New Blueprint",
+            "intent": "primary"
+          },
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "New Blueprint"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      }
+    }
   }
 }
