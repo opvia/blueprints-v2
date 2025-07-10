@@ -15,7 +15,30 @@
     "typeIndex": "0"
   },
   "sourceInfo": {},
-  "fields": {},
+  "fields": {
+    "Example": {
+      "id": "b2069770-27a7-483f-8bbb-8a5a4893dc32",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "57507a3c-b9cd-4942-8620-9f7069aa9291",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Label Configuration"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
   "kind": "TEMPLATE",
   "type": {
     "ref": {
@@ -34,7 +57,7 @@
               "text": ""
             },
             {
-              "url": "https://seal.run/blueprints/create-labels",
+              "url": "https://seal.run/blueprints/labels-v1",
               "type": "a",
               "children": [
                 {
@@ -48,7 +71,20 @@
           ]
         },
         {
-          "id": "a0fbb2d4-9720-46c7-ace2-88cd09aea614",
+          "id": "367cbcbc-b6ab-4664-b7c0-b2cb08630428",
+          "type": "field",
+          "fieldId": "b2069770-27a7-483f-8bbb-8a5a4893dc32",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "287fe98f-f479-45bb-80cf-29d1e6282406",
           "type": "p",
           "children": [
             {
