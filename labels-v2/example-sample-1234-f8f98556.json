@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f8f98556-c7f1-4b30-a4e4-2ef42896ee2c",
+  "title": "Example Sample 1234",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "8d92d84b-7263-4578-be66-0d44410a9f9a",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Name": {
+      "id": "02e1191d-874d-4be8-8742-bbe508504de5",
+      "type": "STRING",
+      "value": "Amniotic Membrane",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Image": {
+      "id": "70823896-c693-482a-9d0f-29df39bad05e",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "f4db1490-b17b-476c-b8cb-dc1fd22748e5",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Labels": {
+      "id": "8b842ee2-f060-4e15-a86c-cbaa39e7eebe",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Label"
+            ]
+          }
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Sample ID": {
+      "id": "008fcd11-b929-4ad8-a1de-ea9e9aff0985",
+      "type": "NUMBER",
+      "value": 1234,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Expiration": {
+      "id": "94864116-4453-4978-b301-b064f9184c2c",
+      "type": "DATE",
+      "value": "2025-07-10",
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Sub Samples": {
+      "id": "fdc865bf-5b18-45a8-9a2c-0e8cda5e87c0",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "3919588f-0f17-4df4-a777-e73f025b70b1",
+          "version": "1"
+        },
+        {
+          "id": "0eef7efe-3cd6-432f-b2bd-b968d51796f5",
+          "version": "1"
+        },
+        {
+          "id": "51623169-251b-435e-9478-6d0125fad962",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Create labels": {
+      "id": "3ae4b486-1599-4228-9b7d-2bc2e9ae668a",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "75319d67-86fb-485a-9875-4460b31cf2e8",
+          "version": "1.3"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create Labels"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Reference Number": {
+      "id": "22f77635-0dc3-46ed-85e0-2e93cb6815c1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Name\") #lookup(__self, \"Sample ID\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "Example Sample @008fcd11-b929-4ad8-a1de-ea9e9aff0985 ",
+  "type": {
+    "ref": {
+      "id": "f2bf4d58-8c30-4e3f-83ad-7b8d24874940"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "24cb07bb-a05f-4a41-a4d5-d32fe06993c9",
+          "type": "field",
+          "fieldId": "3ae4b486-1599-4228-9b7d-2bc2e9ae668a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cbd98b36-cce9-41fc-9637-ed3aa7780380",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "433f1df5-d3ed-4d25-9092-7c90590ce32b",
+          "type": "field",
+          "fieldId": "8b842ee2-f060-4e15-a86c-cbaa39e7eebe",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "c13f95cb-175e-427f-a6c2-87d0f564a262",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "8d92d84b-7263-4578-be66-0d44410a9f9a",
+  "title": "Example Sample",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Name": {
+      "id": "02e1191d-874d-4be8-8742-bbe508504de5",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Image": {
+      "id": "70823896-c693-482a-9d0f-29df39bad05e",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Labels": {
+      "id": "8b842ee2-f060-4e15-a86c-cbaa39e7eebe",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Label"
+            ]
+          }
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Sample ID": {
+      "id": "008fcd11-b929-4ad8-a1de-ea9e9aff0985",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Expiration": {
+      "id": "94864116-4453-4978-b301-b064f9184c2c",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Create labels": {
+      "id": "3ae4b486-1599-4228-9b7d-2bc2e9ae668a",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "75319d67-86fb-485a-9875-4460b31cf2e8",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create Labels"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Reference Number": {
+      "id": "22f77635-0dc3-46ed-85e0-2e93cb6815c1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Name\") #lookup(__self, \"Sample ID\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "f2bf4d58-8c30-4e3f-83ad-7b8d24874940"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "24cb07bb-a05f-4a41-a4d5-d32fe06993c9",
+          "type": "field",
+          "fieldId": "3ae4b486-1599-4228-9b7d-2bc2e9ae668a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cbd98b36-cce9-41fc-9637-ed3aa7780380",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "433f1df5-d3ed-4d25-9092-7c90590ce32b",
+          "type": "field",
+          "fieldId": "8b842ee2-f060-4e15-a86c-cbaa39e7eebe",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "c13f95cb-175e-427f-a6c2-87d0f564a262",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Example Sample @008fcd11-b929-4ad8-a1de-ea9e9aff0985 "
+  }
+}

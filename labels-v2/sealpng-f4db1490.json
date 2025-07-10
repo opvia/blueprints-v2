@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f4db1490-b17b-476c-b8cb-dc1fd22748e5",
+  "title": "Seal.png",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Label Source": {
+      "id": "336c3b18-0f9e-44a4-9a45-fd18b73b4018",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "6624638e-0e52-4aa6-936e-9e3ea1c91e00"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": "802e7f82-fe24-40b6-a321-85155ee3e7e9"
+    }
+  }
+}
