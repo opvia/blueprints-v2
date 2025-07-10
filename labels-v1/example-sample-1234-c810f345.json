@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c810f345-4f6b-4ac7-8076-8c7451c2985a",
+  "title": "Example Sample 1234",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "9e364a5c-e2b0-46fd-b364-27ad8573cacc",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "For:": {
+      "id": "fd9e2c44-4f3d-4086-a2d5-483bb7e4bf80",
+      "type": "SELECT",
+      "value": [
+        "Sample packslip"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Sample packslip",
+          "Test"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Name": {
+      "id": "02e1191d-874d-4be8-8742-bbe508504de5",
+      "type": "STRING",
+      "value": "Amniotic Membrane",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Image": {
+      "id": "70823896-c693-482a-9d0f-29df39bad05e",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "602fad27-dd49-4c23-b9c8-52b7550419b5",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Notes": {
+      "id": "d4b520cf-33a8-4d04-8a0b-35f16994a760",
+      "type": "STRING",
+      "value": "NOTES:\nTracking: 1234 5678 0000",
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Table": {
+      "id": "f8ceec49-3eca-4ff1-a20e-23f3f0f9470d",
+      "type": "INSTANCE_SUBMISSION",
+      "value": [
+        {
+          "id": "3051e9a8-5ab4-4e02-a61f-3cb43848789c",
+          "version": "1.1"
+        },
+        {
+          "id": "0ebe240c-d8e9-4f60-bc72-72563ab33201",
+          "version": "1.1"
+        },
+        {
+          "id": "5ab17c29-1e91-4ec3-8ea0-51100575d68b",
+          "version": "1.1"
+        },
+        {
+          "id": "2f6deb0c-ceb9-44bc-a053-63107976d16a",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "7b4b9f25-4682-4475-8e8d-53d442136cde",
+          "version": "1"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Labels": {
+      "id": "8b842ee2-f060-4e15-a86c-cbaa39e7eebe",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Label"
+            ]
+          }
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Ship to:": {
+      "id": "026eb8e5-f91c-4bb7-ad00-2747459d489b",
+      "type": "STRING",
+      "value": "Ship to:\nMedical Device Corporation \nApt. 37\n573 Stoney Road \nAtherton, CX 0374",
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Sample ID": {
+      "id": "008fcd11-b929-4ad8-a1de-ea9e9aff0985",
+      "type": "NUMBER",
+      "value": 1234,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Expiration": {
+      "id": "94864116-4453-4978-b301-b064f9184c2c",
+      "type": "DATE",
+      "value": "2025-07-10",
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Create labels": {
+      "id": "3ae4b486-1599-4228-9b7d-2bc2e9ae668a",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "afab6d48-fad2-482c-9d22-b86743b08285",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create Labels"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Reference Number": {
+      "id": "22f77635-0dc3-46ed-85e0-2e93cb6815c1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Name\") #lookup(__self, \"Sample ID\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "Example Sample @008fcd11-b929-4ad8-a1de-ea9e9aff0985 ",
+  "type": {
+    "ref": {
+      "id": "6ef85477-0aef-4e90-894d-2dbbdcf28195"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "24cb07bb-a05f-4a41-a4d5-d32fe06993c9",
+          "type": "field",
+          "fieldId": "3ae4b486-1599-4228-9b7d-2bc2e9ae668a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cbd98b36-cce9-41fc-9637-ed3aa7780380",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "71d86bfc-49a7-417e-b1ad-b67c3ea2382f",
+          "type": "field",
+          "fieldId": "f8ceec49-3eca-4ff1-a20e-23f3f0f9470d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": false
+              },
+              {
+                "id": "PART/REF",
+                "name": "PART/REF",
+                "isHidden": false
+              },
+              {
+                "id": "DESCRIPTION",
+                "name": "DESCRIPTION",
+                "isHidden": false
+              },
+              {
+                "id": "LOT/SERIAL",
+                "name": "LOT/SERIAL",
+                "isHidden": false
+              },
+              {
+                "id": "QUANTITY",
+                "name": "QUANTITY",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "433f1df5-d3ed-4d25-9092-7c90590ce32b",
+          "type": "field",
+          "fieldId": "8b842ee2-f060-4e15-a86c-cbaa39e7eebe",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "c13f95cb-175e-427f-a6c2-87d0f564a262",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
