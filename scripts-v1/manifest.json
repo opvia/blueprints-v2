@@ -1,0 +1,245 @@
+{
+  "id": "scripts-v1",
+  "version": 1,
+  "name": "scripts-v1",
+  "description": "",
+  "entities": [
+    {
+      "id": "b1f31441-f62f-420a-927f-afc43bf8cc10",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Import CSV",
+      "icon": "document",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "bc2eed14-3975-4893-9e73-1310409c61ef"
+      ]
+    },
+    {
+      "id": "c7863f64-a37a-474a-90d2-90acc8f8d126",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Script Runner",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "5f866d34-4b29-464b-9c88-dbb2125d033d",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Import CSV Script",
+      "icon": "code",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "6130dcfd-5fed-4a6c-90da-4ac07852f91f",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Scripts",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7c2f19b9-8f4b-4052-bfc3-d9cd511b35d2",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Generate Template From CSV",
+      "icon": "code",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "52d351e7-b430-4cb4-b9df-f37fce51b1e8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Bulk Update Entities",
+      "icon": "document",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "331b82ca-b0b0-4c21-ab5c-58cfaa670835",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Bulk Delete Fields",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "3730e825-db77-405a-ad9d-13869c9f35a9",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Bulk Add Fields",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "d319d8d4-3f86-4119-bd95-3eeda03e1043",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Bulk Update fields",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "92e5bddb-fb4d-4340-b0b8-7523876717f1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Import Chromatography",
+      "icon": "document",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "b468ecc5-50a5-4977-bd7d-ad9ae8c090f4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "example Template",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "a433c9ea-cb85-4dc0-b733-25d15c506be3",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Script CSV Template",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "2df7dc74-f85a-4381-a0be-1d88f6104da2",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "example.csv",
+      "icon": "paperclip",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "fe0bce43-ddbf-4125-a4cf-a2b8d4fb4250",
+      "kind": "TYPE",
+      "contentType": "FILE",
+      "title": "Script Files",
+      "icon": "paperclip",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "5fd5698b-4234-4b25-bbe8-4dfcf856d14d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Chromatography - 1.8",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "3cbd8250-113d-40cc-a995-c0ac730ae5a3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Chromatography - 2",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "bfa47d75-8268-4ddb-a6e2-7bd459aedfed",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Chromatography - 2.2",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "11ab6655-d258-4ff9-b8fc-96fe8ea9d925",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Chromatography - 2.5",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "d0f4317c-cab8-4b51-bf32-d08fb8da50d8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Chromatography - 3.1",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    },
+    {
+      "id": "79ccfb0f-9dbf-48f0-8349-ac457324a1ca",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Update Chromatography",
+      "icon": "document",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "81231acc-acd1-4e67-85ea-7afec024d427"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "16d30d26-7ca1-4d81-ba9b-5f4845ef90f8",
+      "entityId": "2df7dc74-f85a-4381-a0be-1d88f6104da2",
+      "filename": "example.csv",
+      "contentType": "text/csv"
+    }
+  ],
+  "tags": [
+    {
+      "id": "bc2eed14-3975-4893-9e73-1310409c61ef",
+      "text": "Label Blueprint",
+      "hexCode": "#61a0e1"
+    },
+    {
+      "id": "81231acc-acd1-4e67-85ea-7afec024d427",
+      "text": "Script Blueprint",
+      "hexCode": "#c2d44e"
+    }
+  ]
+}
