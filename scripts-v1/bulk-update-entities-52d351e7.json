@@ -1,0 +1,265 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "52d351e7-b430-4cb4-b9df-f37fce51b1e8",
+  "title": "Bulk Update Entities",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Script": {
+      "id": "4cafeff8-a92c-4326-8193-6d1b95e80ed8",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "331b82ca-b0b0-4c21-ab5c-58cfaa670835",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Delete"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Script 2": {
+      "id": "cfdb27b6-5fe2-4f93-8b7c-92331637a1c0",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "3730e825-db77-405a-ad9d-13869c9f35a9",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Add"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Script 3": {
+      "id": "1ab7c53b-a6af-4cf6-b5ed-0410fde5e97c",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "d319d8d4-3f86-4119-bd95-3eeda03e1043",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Update"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Search Entities": {
+      "id": "5c3f64a9-23e7-4c47-9a11-e16d6a66d783",
+      "type": "SEARCH",
+      "value": null,
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Field Names To Add": {
+      "id": "c0e71287-1064-472e-9d87-b9183423ae8d",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Reference Entities": {
+      "id": "d3217c14-46ae-454f-b7a2-1c62dbeab868",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Field Names To Delete": {
+      "id": "19ab0c20-3f83-4e9a-96ab-da71960072d6",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Field Names To Update": {
+      "id": "fbd7ea3b-a52e-4603-873e-d58aefc2df23",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "c7863f64-a37a-474a-90d2-90acc8f8d126"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "2ef3d2f9-1903-43ec-94a3-90250bbf4e9f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Select the entities to update either through search or a reference field. Entities in either field will be updated "
+            }
+          ]
+        },
+        {
+          "id": "d61508a4-d12e-4c97-af9d-04f2e0c45f0f",
+          "type": "field",
+          "fieldId": "5c3f64a9-23e7-4c47-9a11-e16d6a66d783",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "11cc9075-8149-4dfc-ad0d-dc9dc5651649",
+          "type": "field",
+          "fieldId": "d3217c14-46ae-454f-b7a2-1c62dbeab868",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "d55a0d64-50ea-40f0-9023-cb828ae536fc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d1beb82b-4127-4749-88bd-f716c5f60067",
+          "type": "field",
+          "fieldId": "19ab0c20-3f83-4e9a-96ab-da71960072d6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d9740508-0e11-499f-b8ab-3892e1f7a8a0",
+          "type": "field",
+          "fieldId": "4cafeff8-a92c-4326-8193-6d1b95e80ed8",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "20264372-a35f-4f3b-8ca2-8934b87c0f5a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "974902e9-8fc5-4c22-aba5-f3c029c655b0",
+          "type": "p",
+          "children": [
+            {
+              "text": "Add fields and configure in this document then include the field names here to add them to all entities"
+            }
+          ]
+        },
+        {
+          "id": "31eef5bd-7575-48a4-8102-b4c2bd9fdf94",
+          "type": "field",
+          "fieldId": "c0e71287-1064-472e-9d87-b9183423ae8d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "04bbba6d-ecce-44bb-8e25-e460b10fba36",
+          "type": "field",
+          "fieldId": "cfdb27b6-5fe2-4f93-8b7c-92331637a1c0",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "e704dd96-6de1-4139-b3c8-cce20844c9f4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8aea3a61-65cc-4358-b3d6-da7c9b9a3375",
+          "type": "field",
+          "fieldId": "fbd7ea3b-a52e-4603-873e-d58aefc2df23",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "66875c47-ce82-4aa6-8c62-974c962b30ee",
+          "type": "field",
+          "fieldId": "1ab7c53b-a6af-4cf6-b5ed-0410fde5e97c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "31231cf4-196c-4e18-a16b-4f40c5f3bf00",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
