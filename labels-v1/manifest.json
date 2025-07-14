@@ -97,7 +97,7 @@
       "contentType": "SCRIPT_CODE",
       "title": "Create Label",
       "icon": "code",
-      "sourceVersion": "1.4",
+      "sourceVersion": "1.5",
       "tagIds": [
         "5b4e4992-3a94-4dcb-9ae3-daa97eb4682c"
       ]
@@ -412,6 +412,114 @@
       ]
     },
     {
+      "id": "a74d7036-8396-4250-bafd-ba646c616818",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Manual_Example Sample 1234_1752487377.pdf",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2e8181cc-eecf-441e-97c8-a0e44b7eb12c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Packing Slip Label Configuration",
+      "icon": "cog",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e22aad55-af22-4259-b80a-a80bfc3a40f9",
+        "5b4e4992-3a94-4dcb-9ae3-daa97eb4682c"
+      ]
+    },
+    {
+      "id": "0e191d78-571a-4446-af2d-bf4c5b4a8c96",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Preview_Example Sample 1234_1752487398.pdf",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c0d0164d-0f70-4ec7-89e9-bde6a3097e19",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Table #2072",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6ca14465-b4a9-4c47-828d-b24d6ec06744",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Image #2073",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "28faf1cf-958d-4fc6-bc20-64bdfa935a14",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Text #2074",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "434c7b0d-dab2-409a-ad67-a1fba609083a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #2075",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "11cc32e8-0a7c-4e0a-bd81-9bd073a6bbb0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #2078",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e58fdbac-6483-44fa-ab41-a9d194a0418b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Text #2079",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "d5bd2f00-984d-4e06-94fa-523a1239a8d5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #2082",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0caa418f-af10-4a2c-add3-994dae5d4909",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #2083",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4eb01aea-dd9c-4a4b-98c8-714f029e18c1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Barcode Code128 #2084",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "dd149e41-c233-47c3-9516-724c7bb5a868",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Border #2085",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
       "id": "cd5cfcea-baeb-4902-9f67-716b535352b7",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
@@ -446,6 +554,18 @@
       "entityId": "602fad27-dd49-4c23-b9c8-52b7550419b5",
       "filename": "Pasted Graphic 2.png",
       "contentType": "image/png"
+    },
+    {
+      "id": "fcc972da-aa51-4232-94b5-4216953f93bd",
+      "entityId": "a74d7036-8396-4250-bafd-ba646c616818",
+      "filename": "Manual_Example Sample 1234_1752487377.pdf",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "553d700c-aeb5-4ad3-a98d-e6b0da226133",
+      "entityId": "0e191d78-571a-4446-af2d-bf4c5b4a8c96",
+      "filename": "Preview_Example Sample 1234_1752487398.pdf",
+      "contentType": "application/pdf"
     }
   ],
   "tags": [

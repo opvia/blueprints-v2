@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a74d7036-8396-4250-bafd-ba646c616818",
+  "title": "Manual_Example Sample 1234_1752487377.pdf",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Label Source": {
+      "id": "336c3b18-0f9e-44a4-9a45-fd18b73b4018",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3f278c7c-27bd-4c08-80b4-4b6e77c67b3e"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": "fcc972da-aa51-4232-94b5-4216953f93bd"
+    }
+  }
+}
