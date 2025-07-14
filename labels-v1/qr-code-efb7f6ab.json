@@ -79,13 +79,7 @@
       "config": {
         "allowMultiple": false,
         "selectOptions": [
-          "Field",
-          "Text",
-          "Image",
-          "QR Code",
-          "Barcode Code128",
-          "Barcode Code39",
-          "Border"
+          "QR Code"
         ]
       },
       "dataType": "SELECT"
@@ -93,7 +87,7 @@
     "Rotation (°)": {
       "id": "27566bd4-6c23-4f06-aa40-ceae4b840b29",
       "type": "NUMBER",
-      "value": null,
+      "value": 0,
       "config": {
         "format": "0.X"
       },

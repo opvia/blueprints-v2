@@ -49,7 +49,7 @@
       "type": "REFERENCE",
       "value": [
         {
-          "id": "cbff73af-4c92-46c4-b296-2135910aad79",
+          "id": "dee598db-3fa2-4938-b8d2-1d613077be6d",
           "version": "1"
         }
       ],
@@ -101,7 +101,7 @@
       "value": [
         {
           "id": "afab6d48-fad2-482c-9d22-b86743b08285",
-          "version": "1.2"
+          "version": "1.3"
         }
       ],
       "config": {
@@ -241,13 +241,6 @@
         "format": "0.X"
       },
       "dataType": "NUMBER"
-    },
-    "Label Title Field Name": {
-      "id": "fc835bf2-3fe1-4892-8546-f0d6baa0bdb6",
-      "type": "STRING",
-      "value": null,
-      "config": {},
-      "dataType": "STRING"
     }
   },
   "kind": "INSTANCE",
@@ -262,30 +255,29 @@
     "value": {
       "pageContent": [
         {
-          "id": "f3c07907-1049-4c56-9cef-9197bb1d39c9",
-          "type": "field",
-          "fieldId": "1655a93a-f90d-4bee-afd8-1305ba483fb3",
-          "children": [
-            {
-              "text": ""
-            }
-          ]
-        },
-        {
           "id": "36ebbf13-22de-4e5c-bc84-88010cb143c8",
           "type": "p",
           "children": [
             {
-              "text": "This entity is used to design your labels for instances of the selected templates below. "
-            },
-            {
-              "bold": true,
-              "text": "Configure the label dimensions and default settings in the fields side drawer."
+              "text": "This label configuration is used to setup how the labels look for instances of the selected templates below. See the instructions for help:"
             }
           ]
         },
         {
-          "id": "2ae2eaf6-1da6-4550-a9ff-406e4c093ddb",
+          "id": "323b3286-cee0-4dcd-aa18-bf0138694fd4",
+          "type": "field",
+          "fieldId": "e11c1bd1-9e6c-431b-99ca-9bdc2e58d93e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "25843ed0-faec-48d7-a587-c475bebf1ad3",
           "type": "p",
           "children": [
             {
@@ -294,7 +286,7 @@
           ]
         },
         {
-          "id": "25843ed0-faec-48d7-a587-c475bebf1ad3",
+          "id": "ba115441-6520-4d86-8150-bffacf730b55",
           "type": "p",
           "children": [
             {
@@ -356,8 +348,9 @@
           ]
         },
         {
-          "id": "9f40c1e1-b713-4d1f-80f6-32c2abf32423",
-          "type": "p",
+          "id": "f6cbeca0-e4b8-4868-9b36-c42ee050314b",
+          "type": "field",
+          "fieldId": "65234b91-e507-45b6-bbc5-588692a6ade9",
           "children": [
             {
               "text": ""
@@ -365,9 +358,49 @@
           ]
         },
         {
-          "id": "f6cbeca0-e4b8-4868-9b36-c42ee050314b",
+          "id": "65610de7-d2b9-4ce1-a31c-6b855ee359f6",
           "type": "field",
-          "fieldId": "65234b91-e507-45b6-bbc5-588692a6ade9",
+          "fieldId": "08c08b0a-b8f3-4a93-9a58-544e3f6a177e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d2960ae4-2ba1-418d-a464-1b2a2611e2bd",
+          "type": "field",
+          "fieldId": "0fe88bb0-3582-439d-9915-a98d655584b4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "896dd71b-1e3e-442d-9cb0-a42f3f0f1f42",
+          "type": "field",
+          "fieldId": "eed737e1-1722-4c3b-93e2-0d1e8b5bc4f8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "259c750c-7591-4dd9-82dc-0eb6472d5b1d",
+          "type": "field",
+          "fieldId": "f2a2f59a-9bc1-4b81-aa5f-2e48f2c118df",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3e2da332-2e82-4a7a-b0a7-4d79f6a6efd7",
+          "type": "field",
+          "fieldId": "fa10a7c9-ce28-4801-a640-c79a663ce902",
           "children": [
             {
               "text": ""
@@ -392,17 +425,7 @@
           "type": "p",
           "children": [
             {
-              "text": "Tip: Field and column names must match the field names in your templates. You can also specify properties like “Title”",
-              "italic": true
-            }
-          ]
-        },
-        {
-          "id": "f07e1dd4-2de9-4385-a5c3-c5c7d1f8ed30",
-          "type": "p",
-          "children": [
-            {
-              "text": "Tip: Font and color settings are optional, default values can be set in the side drawer",
+              "text": "Tip: Field and column names (table elements only) must match the field names in your templates. You can also specify properties like “Title”",
               "italic": true
             }
           ]
@@ -469,11 +492,6 @@
                 "isHidden": false
               },
               {
-                "id": "Rotation (°)",
-                "name": "Rotation (°)",
-                "isHidden": false
-              },
-              {
                 "id": "Prefix Text",
                 "name": "Prefix Text",
                 "isHidden": false
@@ -491,6 +509,11 @@
               {
                 "id": "Font Name",
                 "name": "Font Name",
+                "isHidden": false
+              },
+              {
+                "id": "Rotation (°)",
+                "name": "Rotation (°)",
                 "isHidden": false
               },
               {

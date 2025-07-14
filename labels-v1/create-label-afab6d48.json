@@ -68,7 +68,7 @@
           "appliesToEntityKinds": "INSTANCE"
         }
       ],
-      "scriptCode": "\"\"\"\nThis script requires the Seal labels blueprint to be installed:\nhttps://seal.run/blueprints/labels-v1\n\nSource code here:\nhttps://docs.seal.run/manage/writing-scripts-with-the-seal-module#creating-labels\n\"\"\"\nseal.create_label_v1()"
+      "scriptCode": "\"\"\"\nThis script requires the Seal labels blueprint to be installed:\nhttps://seal.run/blueprints/create-labels\n\nSource code here:\nhttps://docs.seal.run/manage/writing-scripts-with-the-seal-module#creating-labels\n\"\"\"\nseal.create_label_v1()"
     }
   }
 }

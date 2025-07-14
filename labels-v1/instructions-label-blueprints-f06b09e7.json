@@ -561,7 +561,14 @@
           "indent": 2,
           "children": [
             {
-              "text": "‘Column Names' should match the field names in the reference or submission entities. These are comma separated names where the order matches the column order eg. ‘field name 1, field name 2…’"
+              "text": "‘"
+            },
+            {
+              "text": "Column Names",
+              "italic": true
+            },
+            {
+              "text": "' should match the field names in the reference or submission entities. These are comma separated names where the order matches the column order eg. ‘field name 1, field name 2…’"
             }
           ],
           "listStart": 2,

@@ -17,7 +17,7 @@
   "sourceInfo": {},
   "fields": {
     "Units": {
-      "id": "1c6189a8-0111-44d8-b850-433ab7c44237",
+      "id": "2ab66d7d-b0bd-46f0-9b21-4f22836fbc51",
       "type": "SELECT",
       "value": null,
       "config": {
@@ -27,7 +27,7 @@
       "dataType": "SELECT"
     },
     "Labels": {
-      "id": "0caade9f-8cf7-49c7-8878-e2512a2f02a1",
+      "id": "fed89bf4-56be-4b6f-9d39-a2fc281cf359",
       "type": "REFERENCE",
       "value": null,
       "config": {
@@ -36,7 +36,7 @@
       "dataType": "ENTITY"
     },
     "Label Width": {
-      "id": "eed713b4-b925-430a-9263-b763a4fb79e5",
+      "id": "6b880224-563a-4121-a698-4a52eeb77af6",
       "type": "NUMBER",
       "value": null,
       "config": {
@@ -45,14 +45,14 @@
       "dataType": "NUMBER"
     },
     "Create Label": {
-      "id": "c2e82149-71e1-4f9c-8909-e972d40f2934",
+      "id": "46626afd-5494-43ab-b03b-876820be7303",
       "type": "SCRIPT",
       "value": null,
       "config": {},
       "dataType": "SCRIPT"
     },
     "Default Font": {
-      "id": "0c66987c-d5ca-4f42-b168-4fd5712a3e52",
+      "id": "abb51f10-d72e-4a71-923d-3dd8d31dd182",
       "type": "SELECT",
       "value": null,
       "config": {
@@ -62,7 +62,7 @@
       "dataType": "SELECT"
     },
     "Label Height": {
-      "id": "effe2f0e-13a9-4f3d-9236-aa79d1d9cb25",
+      "id": "03e9e30c-c96c-4ba8-b4b4-849643a358a4",
       "type": "NUMBER",
       "value": null,
       "config": {
@@ -71,7 +71,7 @@
       "dataType": "NUMBER"
     },
     "Label Elements": {
-      "id": "369cc8b1-afa2-49f6-aad7-0ff95bdb5cd1",
+      "id": "97a3bab4-2934-48a1-b0c5-8a59f777d0d1",
       "type": "INSTANCE_SUBMISSION",
       "value": null,
       "config": {
@@ -80,7 +80,7 @@
       "dataType": "INSTANCE_SUBMISSION"
     },
     "Preview Entities": {
-      "id": "34fb887d-e025-4dd8-8aee-9920ee08126f",
+      "id": "a0b49091-171f-4514-b13b-2283a10570a3",
       "type": "REFERENCE",
       "value": null,
       "config": {
@@ -89,20 +89,13 @@
       "dataType": "ENTITY"
     },
     "Default Font Size": {
-      "id": "7560dce9-f883-48fe-800a-d574a037089f",
+      "id": "717c6687-9941-47ba-8c37-ef410e17d8ef",
       "type": "NUMBER",
       "value": null,
       "config": {
         "format": "0.X"
       },
       "dataType": "NUMBER"
-    },
-    "Label Title Field Name": {
-      "id": "a7b6d56c-1063-4d1b-ba46-a475ad8d7e0f",
-      "type": "STRING",
-      "value": null,
-      "config": {},
-      "dataType": "STRING"
     }
   },
   "kind": "TYPE",
