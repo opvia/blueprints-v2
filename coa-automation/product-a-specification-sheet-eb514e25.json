@@ -1,0 +1,357 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "eb514e25-766a-4f51-b22c-fc25bbb59e22",
+  "title": "Product A - Specification Sheet",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "5b3a7f5e-f703-4c87-b3c9-94fcc269d5bb",
+      "version": "2"
+    }
+  },
+  "fields": {
+    "Number": {
+      "id": "2322c36e-f5bb-4f6d-9874-c8302628d65e",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "8e5f7e66-3132-408c-af23-f455ccf92dfa"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "65340872-0675-4686-8331-d16368237cc0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "260775f8-9326-4bbc-9a9c-10c6bc31a9ad",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Specifications"
+            }
+          ]
+        },
+        {
+          "id": "bce3764a-b406-44b4-9221-ab8801eb5e5e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0b60eedb-54c9-4fb6-af25-b273f0e979a6",
+          "type": "table",
+          "children": [
+            {
+              "id": "9dbad0c7-6727-4387-bc98-cecf523ca2b7",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "62cf2fc5-d3ac-492f-a5ec-aaa03c2b24d3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ab000741-a9b1-4af5-ae32-334efadfa7bf",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Parameter"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7d58c1b0-d674-4685-9dd6-60df02e5e8a5",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a4803cc1-b136-4f5d-95c1-9596a7a75c3a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Specification"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1d926da4-a7da-4eac-ac93-a694e5cc7170",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ac5309e0-5bc0-4601-ada6-c97703f0886c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Lower Limit"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f7e46dc0-3d06-422b-9071-76208ac21fa2",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "481469de-c00b-4914-ae96-9ed34afb08c3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Upper Limit"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f0864ea7-3d6d-4479-9582-9fb1001f8c99",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "667b09bd-31d5-4a4c-96d0-088a37b92a5f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "fc9cf0d8-105b-492e-b02e-49e6045209d2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Parameter 1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ccbeb412-15df-453f-a2ad-1ed4e95f84e3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "57ccc596-702c-4eb6-8d25-17745bcf1083",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "4.5 - 7.0"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "eec0afd5-d101-4ae0-b353-800374d1b185",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "03904300-a5bf-4ca7-b619-79945ef551f5",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "4.5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7b650fd3-ac83-439a-a5b4-d6d762653751",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "18193d9a-cb1b-440e-b741-7bf34d46d88f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "7.0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c75dc6d7-64aa-4831-99f0-44a520083c9c",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "4ec93ee5-0ddc-4690-8779-5934b8153e9b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "fba462ec-e078-41c6-89b0-c18b05da80c6",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Parameter 2"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5e74ddf5-076a-468d-8f4b-48c526e28d0d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "48f9b5f3-f0c7-4a67-a307-67f66d4f8eaf",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "270 - 310"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "acd21b4a-6546-4f5d-86c7-0b2a72988257",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "caf435bc-ddd8-4527-a159-3d1ad02729cb",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "270"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "cd14714a-1a2a-41c7-aff2-8883425fe494",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "9ee3ef1b-bba1-4754-9a88-02f93ac28914",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "310"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fb609cd4-b6a9-4c5f-beff-2d794f8bb6b0",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "fd241a73-eb41-471c-b40d-5646ddc9c321",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ccd69893-ba09-445d-8e31-8b1b43378f90",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Parameter 3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bf285d9c-5fe0-4666-9ebe-af312b5df365",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "8e34a259-1259-44e0-abc2-ebe0c8d920cd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "< 0.25"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e42ceac5-6748-42d0-86f8-c63197171a49",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "80ab6c61-e92f-4c83-86c6-9fdf2c224a56",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "0"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8648863a-7a10-4f7d-82bd-d6eae1387fc2",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "00443706-28fa-48bb-ac3e-f8f52ca06434",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "0.25"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "93ad8187-5574-46fb-879e-1a76af935125",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
