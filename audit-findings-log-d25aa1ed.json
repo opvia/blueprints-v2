@@ -1,0 +1,1547 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "d25aa1ed-2947-40ad-83de-c87a6265f5e4",
+  "title": "Audit Findings Log",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Author": {
+      "id": "ca8c14eb-f66f-41a3-84b8-962a854d16bd",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Create CAPA 1": {
+      "id": "8a42ce26-9dd0-41eb-9f4e-889e3fbd7a96",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Create CAPA 2": {
+      "id": "179c3072-1131-4622-bb22-36e939d7627a",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Create CAPA 3": {
+      "id": "8bc81c2b-e13a-469a-8d3f-9c5042f63999",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Create CAPA 4": {
+      "id": "da2bc9a8-b218-4941-b3fe-b0772c6be979",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Audit Master Document": {
+      "id": "dbcfb032-06e1-45b7-90bc-49b9a7831304",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Audit Checklist"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Findings",
+              "config": "Findings"
+            },
+            {
+              "name": "Assigned To",
+              "config": "Assigned To"
+            },
+            {
+              "name": "Attachments",
+              "config": "Attachments"
+            },
+            {
+              "name": "Verified By",
+              "config": "Verified By"
+            },
+            {
+              "name": "Action Items",
+              "config": "Action Items"
+            },
+            {
+              "name": "Lead Auditor",
+              "config": "Lead Auditor"
+            },
+            {
+              "name": "Date of Audit",
+              "config": "Date of Audit"
+            },
+            {
+              "name": "Completed Date",
+              "config": "Completed Date"
+            },
+            {
+              "name": "Other Auditors",
+              "config": "Other Auditors"
+            },
+            {
+              "name": "Associated CAPAs",
+              "config": "Associated CAPAs"
+            },
+            {
+              "name": "Purpose of Audit",
+              "config": "Purpose of Audit"
+            },
+            {
+              "name": "Summary of Audit",
+              "config": "Summary of Audit"
+            },
+            {
+              "name": "Attachments - Completion",
+              "config": "Attachments - Completion"
+            },
+            {
+              "name": "Estimated Completion Date",
+              "config": "Estimated Completion Date"
+            },
+            {
+              "name": "Description and Scope of Audit",
+              "config": "Description and Scope of Audit"
+            },
+            {
+              "name": "Quality Improvement Opportunities",
+              "config": "Quality Improvement Opportunities"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "79f76516-f3c4-40f1-bb1c-353a41311b4d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "1f806bfe-793e-4d01-b594-c7aeba465b71",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9cb5292f-f300-47f5-92c4-47589c4f9b0a",
+          "type": "field",
+          "fieldId": "dbcfb032-06e1-45b7-90bc-49b9a7831304",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fec4ea40-9800-4e3c-a1d6-c9a243774abe",
+          "type": "field",
+          "fieldId": "ca8c14eb-f66f-41a3-84b8-962a854d16bd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "289dad9c-59d6-446b-852a-f4cb840b6bc1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "82016ff4-e9ee-4935-86a9-4377d7a0b015",
+          "type": "table",
+          "children": [
+            {
+              "id": "d6a10a91-d47b-44bc-8536-d6bb77629e75",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "3147d7d9-177a-4d3b-a99a-b35af2419611",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "85b61fc7-bfc7-4aa4-a12f-9ae0b5c368a3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Observation"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1f693c5c-c31d-4202-bfc3-a94ebaf825c8",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "8fcd9915-58c7-4de0-9e10-3a5690aaf695",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Criticality"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "24e447f9-a987-4d40-845a-5c075db6acd7",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "409a4a3c-c527-4084-89ed-cd2dc9050aa2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Details"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b7c85c1e-a0d3-44c2-9d7e-b2dd786610ee",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "e8745679-ba5e-4b0a-b193-be368aafb86e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Date Issue Raised"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "555b28a9-55eb-4599-b152-b716d85fce03",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "15ca3c6c-d0e0-4152-af00-7166bac14272",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Issue Raised By"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3d35f6f8-92cf-4806-91aa-88f1bdd27fa5",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "82ac6087-1005-4c5c-beaa-7a17b127cb2f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c31cc093-855d-4af3-b650-23cb58ee1765",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "93a317b6-f12e-4407-9d9a-3a88d632fe1f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4237ad86-1d7c-4589-a02e-1eef0aca9544",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "2823bdcf-b5bb-45f7-a3eb-479ed22c3551",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "fa9f388b-c418-4e17-85fb-28903ec9c8f5",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fcbd892c-de85-4ce2-adcf-31108f5fd3ab",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2c570fd3-89f9-46c5-bf32-1ddabb9c967e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "227b554f-dca7-4755-9e86-01a10265aaae",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b6bb3456-ff28-478c-b953-1e9074cd8e79",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "daa60ff4-f938-4c15-94ae-8726487c9746",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "1e13277b-36f0-4615-953b-eb59e5d73c6e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e823e2f1-6d65-40ef-a6dc-b81b8f78ede9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "2"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6122f42c-bfad-4663-8cae-7f99a6d0e596",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b02fa7af-4fa7-4666-8910-955474e63ff9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "052675e2-7ffa-4ea0-999f-295dda39bb81",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b5619716-c635-4385-8cf4-6eda6a0207e4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "efadbd3b-f79c-42f9-a4fd-1ce71af0f4a4",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ca51c364-95bc-40a0-8a0a-fe35fd9d2a5e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e44b07e0-39e4-4614-af70-3d6689bf3354",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e9594a6a-c519-45d9-92c7-893163ee0551",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0edc320e-609f-435c-bce4-69f694390acd",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "a50e06c5-3814-47ca-8a47-209c44b3dc63",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1bcdc3b1-6bda-4a39-ac9e-51680a020d62",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "29900a59-9655-4098-9c71-4aaea0fa3d74",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "248f3da1-f3cd-448b-b0dc-828a8d0094e9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "eb3fbb5f-1741-4dc8-82f3-660791ae0ac0",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4c446bd5-2cde-48bf-aa59-b63e39212d18",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "81370413-3775-46df-a117-58311b2dc962",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "59b34b77-5585-4d1f-96f3-3c488f5df2cf",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "132e310b-96be-4eb9-9f5c-c0ada41e4bbf",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "53f15177-e306-4a75-a589-5eb70f97f999",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ad6c4e0a-f70c-4161-a8a9-d7ecc4f55e6e",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "d6020c15-b490-48cb-91d2-81ebd2c2679d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6ee8136e-37ed-4610-a4bc-41a206e79f35",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "4"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9eb0d1e3-58c4-450b-8985-475194ac2d63",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "319c202b-8a36-434a-8cbd-24856c101b9b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "af883f7a-1051-4616-8562-43cad4ab4f12",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6853fb97-e149-40f5-9e1a-793b2595565d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4c639e6e-5848-4357-9762-02fa5818bc2a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "38f58186-4211-4a83-83f2-bf50edde8b35",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "775bdcb0-9030-4c54-a6dc-5cd5f96eaccb",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "81640dfb-68e0-4996-b647-0b02c19931e6",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a25062b4-125e-48d7-b20d-361b59900c47",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1411f50b-9cdc-4774-ab87-5b3860d2786c",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Observation 1"
+            }
+          ]
+        },
+        {
+          "id": "cd7cf956-133f-4cea-a0ee-e2a9d3a41ecd",
+          "type": "table",
+          "children": [
+            {
+              "id": "cac8a20e-b052-4c14-9130-8a423f87981d",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "e77c9b55-ef24-4368-924b-da8263bc98ec",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "69dbbcb1-2a2f-4458-bf0d-fa6c89c377cd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Condition"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "92b3d8e7-10bc-478a-8f98-b0c03367faa3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "fe1b3eb3-b887-4674-989d-1ee8a50b343b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "21d25c5f-0022-47fe-ab53-1b3465c84fcd",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "38dfeda5-3b95-4a68-9a5d-bcf0fb172d17",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "9e943e75-765e-41fe-a698-1ccdebf1eda8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Criteria"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "75b7210f-601f-483f-8786-b539a22f3dbd",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "07a1bc08-87a5-4f0c-8f14-6465b426e484",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0ac89a9b-7270-4163-97c0-b36f925a1fad",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "e6b0325f-3ffb-45f4-89ba-d07999dd9f04",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "5651eedd-8432-4699-8122-ce8a7e4278db",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Cause"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d648e4f7-a677-455d-b0f9-d9b05da9bf58",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b00355b8-f715-4412-bbaa-43472283c9ce",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0fbc29c6-92df-424d-8007-a398cfc38f44",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "747a879e-2a1d-4220-95bb-ea480cc88ea6",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "ed056a22-fe92-4015-898b-9c76e5126f38",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Consequence"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "daf82319-ed81-40e0-b809-f726b222b120",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "69fa0292-a95f-4a68-bd8d-008b3e52ca8a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cc28892b-ae3e-46c4-aa9a-2a683cad5dc8",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "748d58c5-1fe8-42f6-897d-379908847d69",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "b820ce6d-7a31-4b06-bbc3-1397e3784e67",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Corrective Action"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "035c6eff-0aba-420a-9f6f-658b589696e2",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "3add6b76-955e-4944-b805-37aa5392e3e9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cba5d120-b4a9-440e-b671-2a974c676657",
+          "type": "field",
+          "fieldId": "8a42ce26-9dd0-41eb-9f4e-889e3fbd7a96",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "33586102-de5a-4545-9b61-603dfac2dcb6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1eff7556-1f12-46e5-9c76-52e08fed0297",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Observation 2"
+            }
+          ]
+        },
+        {
+          "id": "9251f891-5115-40e1-921c-c1ec71531f82",
+          "type": "table",
+          "children": [
+            {
+              "id": "594934ca-7275-4a7f-8f89-ff7095fe06b5",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "623f8ff0-485d-40d9-abb7-d1f18229edba",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "160ee69c-a011-4e2b-a30c-434b9a95e21b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Condition"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9c1b1c2e-b447-47c4-bf91-174890541505",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c2fad796-0a93-4573-86d6-363485564dbe",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6eed041c-1de6-4998-b7f3-d7ab147bd33b",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "bf954b44-d98c-4888-b697-efd248841301",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "9be29b34-b61c-46aa-b45e-c74aed23f54e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Criteria"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "012d8072-73c7-4881-ba3e-55b9e9078bf4",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "38f9edcd-1134-462f-b10e-2c9cd2772ea2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e0d51aa6-e6cb-4b9d-b576-a20bc463cc94",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "3ec5e254-0372-40b6-9b20-51d4dbffd19a",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "1210bbc8-3b8d-4f1e-8eef-d7eecbd54831",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Cause"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d20156e8-4acd-4e60-a9ed-7e64e534da24",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7b4c3127-4973-4529-bea6-43b5b0737616",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a27bbfc9-c103-40a3-af2f-14cc6b3567db",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "7c9d1d2d-f7ae-4f1b-a952-c3a88b746d14",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "4f28e8cf-2bbb-468a-ad09-d98065feeff8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Consequence"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4b660a85-16d1-4aa9-9b03-67ae07be3e57",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5790c000-e408-409a-ad57-5057a114aa87",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "058bf42f-725a-45f5-a716-62f05f6b0425",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "0da32a29-7745-490f-bf3d-7868af7989e0",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "3dddfb2e-417a-475a-bdbe-c26d259d2561",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Corrective Action"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6afd0b99-f4e4-4081-97d3-0d157268fd29",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "69442065-a24d-4f5a-92b0-a2a24c86f725",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "59b159c8-17b3-436b-b086-76588d371ee9",
+          "type": "field",
+          "fieldId": "179c3072-1131-4622-bb22-36e939d7627a",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "5070ce85-ed48-4478-a993-d05fab8c4a73",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6c13e13a-f6a1-4a33-8fb3-e74535a96bce",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Observation 3"
+            }
+          ]
+        },
+        {
+          "id": "a0f1265f-e41d-48b3-be2b-f678b32f14bf",
+          "type": "table",
+          "children": [
+            {
+              "id": "2a04a0b2-f91b-4895-8879-a85e052041d4",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "abdaf548-daa3-4b33-8d61-b4e781a0a670",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "65f159d8-18d4-4ed6-a29c-8760b772884e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Condition"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4578ea91-a343-469d-b5df-82f48ddf9850",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "545bec55-b5ce-47df-91f8-e3a2353b2e8d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9f872d73-889d-474e-86fa-b4563e66cc04",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "43009cb9-703e-45fc-b5d3-c9db68db87bf",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "1e2473f1-e424-4ef9-8986-6f9325e9bb86",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Criteria"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c2665549-e875-4d6a-902d-65e71045c11a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "8a8f4e0c-9196-440f-a39c-f27f043a6e11",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "58379aa7-415f-40ec-9c4e-e78942a38c87",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "9b4f5799-ee49-4860-a971-11652d1e6177",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "ac84d0c6-6031-4708-9d74-2bb240ab2070",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Cause"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9b1d2e4c-23a3-4e74-8419-86f85d0f2024",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b25fc8ff-29eb-4e15-bcba-fc876d669ce8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f9416f15-4127-48db-94d6-3483bfada268",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "cda87046-3132-4e83-88f5-e23037a75893",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "19d832f3-a7f3-42d9-96fd-f1c70fc30e6b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Consequence"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a1a474ad-8b01-4fa8-ada2-b56f80c92896",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "92b24b25-13f8-4b9f-bece-1eda796585b0",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ea3783fa-7d65-4e5c-950a-5053ea022c7b",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "458f5b00-055b-4fd4-bd12-673e39d3e55e",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "8233d255-708a-4f7c-a837-4e8ff19f50fc",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Corrective Action"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a5ba2c40-269b-48aa-8e6d-e2604b7a7f98",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "628fad56-95b5-4734-acd2-12cea22b3ef1",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d939e6ac-8205-4eb6-80a7-b21fdfe6e8a9",
+          "type": "field",
+          "fieldId": "8bc81c2b-e13a-469a-8d3f-9c5042f63999",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "4c5849a8-3f6f-4b09-9502-3d36c5fd0aa8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1376ecc1-1684-47a3-aabd-c7ff8ecc2f7e",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Observation 4"
+            }
+          ]
+        },
+        {
+          "id": "48a1cccf-fc30-4873-be0b-5fc1c9dfb184",
+          "type": "table",
+          "children": [
+            {
+              "id": "66324a33-96ca-4cf3-ae25-e99e4c0ac855",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "6d2faad8-88d3-43b6-be0d-9fdee2533259",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "b300c73c-75d2-4723-b060-3ae3d85785ec",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Condition"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8ac85041-b393-4b68-96ec-eae22cfb9c3d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "46d257b9-90bd-4b0a-982e-1450fb5d60da",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "14d4e9bb-8428-4351-b2a0-0fe9745bde8f",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "bc663cae-fb6c-4a4d-86cf-7b7e211c0001",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "e303e1b3-01f2-46f9-9e4d-6b8089c44fc9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Criteria"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0fd86461-94b6-4fff-a7e3-ebd9d56d99d6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4009c5cd-4ca1-41a4-b155-b31c2d5980e5",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ae57855f-6023-4c61-b93e-1ca214769bef",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "b5bf1faa-a795-455b-8d5d-d48e59844789",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "b8d92697-d3a6-44bc-82ce-68f18e12b099",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Cause"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c3759141-1333-42bb-be8d-7173c60de66d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "35def3d6-badc-4259-94de-7f4c38412133",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c35b695d-42c4-4f18-8abd-1274a0591f16",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "5d11dba0-9575-47b8-8616-a55985f00c32",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "42b2b825-080d-4fed-9dc8-3f0729c6485b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Consequence"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "37e1a9e5-f760-4d96-a5e7-f6c43942a976",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "d3f0132b-8517-4b05-9c3d-0c56d3eab0c1",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e7ebefd2-e661-4a1e-ba03-1b7daad2dce7",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "6c73c166-e8c5-4322-9b5b-39917a6ad1c9",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "7b63115d-bd14-406c-9999-2acc9a9771ac",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Corrective Action"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "eec3c953-b4af-43ea-be03-946e22ce82a3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6eaad205-4ddf-4f23-a20f-d44c69393758",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "32c5e2a8-f4e6-4cee-963e-365bfd81cb5b",
+          "type": "field",
+          "fieldId": "da2bc9a8-b218-4941-b3fe-b0772c6be979",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f1e9b1ba-cd69-4b8c-be80-ed70cd8cc343",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Audit Findings - @dbcfb032-06e1-45b7-90bc-49b9a7831304 "
+  }
+}

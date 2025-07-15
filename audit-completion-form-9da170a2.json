@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "9da170a2-39f4-45a2-9ee1-6802e99ded95",
+  "title": "Audit Completion Form",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Completion Date": {
+      "id": "8fd94735-26a2-4c0d-bbde-063edecbc127",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Overall outcome": {
+      "id": "1e2df715-091d-4303-bedf-959e8bc7631d",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "No findings / Full compliance",
+          "Minor Observations",
+          "Major Observations",
+          "Critical Observations",
+          "Certification Granted",
+          "Approval Granted",
+          "Certification Denied",
+          "Approval Denied"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Audit Master Document": {
+      "id": "8bcc7195-4444-40b6-9f2d-4f3f48873608",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Audit Checklist"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Attachements - Completion": {
+      "id": "98e1f80e-39d1-4e89-8905-36b789ac825b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "79f76516-f3c4-40f1-bb1c-353a41311b4d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "168f96de-dfed-4ecc-8653-54de31b63eb1",
+          "type": "field",
+          "fieldId": "8bcc7195-4444-40b6-9f2d-4f3f48873608",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "4c8d7fbd-a33b-45fb-a590-2431025ba61f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8671b9fe-991a-41a0-86d1-d16fe632cc80",
+          "type": "field",
+          "fieldId": "8fd94735-26a2-4c0d-bbde-063edecbc127",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e5fee73c-d456-48a7-9ab1-8bf3b1cff14c",
+          "type": "field",
+          "fieldId": "1e2df715-091d-4303-bedf-959e8bc7631d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bc14c0fd-8ec2-46ca-94ed-98d2600f6c41",
+          "type": "field",
+          "fieldId": "98e1f80e-39d1-4e89-8905-36b789ac825b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "8ffa9459-2bd9-478d-8c0e-8678324aa642",
+          "type": "task",
+          "children": [
+            {
+              "text": "Signature & Date"
+            }
+          ]
+        },
+        {
+          "id": "4072b295-bb38-4a0f-8ce0-014ebd86025b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Audit Completion @TEMPLATE_INDEX\n"
+  }
+}
