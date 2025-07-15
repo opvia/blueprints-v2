@@ -1,0 +1,1073 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "7621d7b3-3004-4e1c-896d-c60e36588eda",
+  "title": "External Audit",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "SOP": {
+      "id": "1688851c-d846-45e9-9b84-291b11d2ad5d",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "2112502c-871b-4cd6-965f-fd09aa10a451",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Lead": {
+      "id": "4b304111-4468-435a-9613-117f680ded3c",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Others": {
+      "id": "5ba428b2-0d89-411b-b5b6-1abb6e250f68",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "CAPA Form": {
+      "id": "436db00b-23f2-4b1c-88f8-2d6ca51a562b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "SOP",
+              "config": "SOP"
+            },
+            {
+              "name": "Source",
+              "config": "Source"
+            },
+            {
+              "name": "Details",
+              "config": "Details"
+            },
+            {
+              "name": "CA or PA",
+              "config": "CA or PA"
+            },
+            {
+              "name": "Evidence",
+              "config": "Evidence"
+            },
+            {
+              "name": "CAPA Title",
+              "config": "CAPA Title"
+            },
+            {
+              "name": "Date Opened",
+              "config": "Date Opened"
+            },
+            {
+              "name": "Supporting Documents",
+              "config": "Supporting Documents"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            },
+            {
+              "name": "Effectiveness Check Agreed",
+              "config": "Effectiveness Check Agreed"
+            },
+            {
+              "name": "Effectiveness Check Record Reference",
+              "config": "Effectiveness Check Record Reference"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Start Date": {
+      "id": "4bf07544-b80e-4e30-b56f-945f1eb23a3b",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Purpose of Audit": {
+      "id": "2e7dbd47-af62-41fd-a520-08a2e3423505",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Supplier Qualification",
+          "Ongoing Monitoring",
+          "Risk Management",
+          "Contract Compliance",
+          "Risk assessment prior to funding/acquisition",
+          "Systems Maturity Evaluation",
+          "Compliance Liability Exposure",
+          "Verifying Policy Compliance",
+          "Gap Assessment",
+          "Readiness Evaluation",
+          "Preventative Legal Risk Assessment",
+          "Environmental Safety",
+          "Occupational Safety ",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Summary of Audit": {
+      "id": "9d40b056-d6e3-4a51-810e-1a77a93134a5",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Audit Findings Log": {
+      "id": "073a0c5d-b95d-4758-876c-7f3436cce807",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Details of Issue",
+              "config": "Details of Issue"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            },
+            {
+              "name": "Time & date Issue Raised",
+              "config": "Time & date Issue Raised"
+            },
+            {
+              "name": "Issue raised by (External)",
+              "config": "Issue raised by (External)"
+            },
+            {
+              "name": "Issue raised by (Internal)",
+              "config": "Issue raised by (Internal)"
+            },
+            {
+              "name": "Author",
+              "config": "Author"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Meeting Summary Form": {
+      "id": "f5298890-6489-4ecc-bedc-17abca38907c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Absentees",
+              "config": "Absentees"
+            },
+            {
+              "name": "Time & date",
+              "config": "Time & date"
+            },
+            {
+              "name": "Meeting Title",
+              "config": "Meeting Title"
+            },
+            {
+              "name": "External Attendees",
+              "config": "External Attendees"
+            },
+            {
+              "name": "Internal Attendees",
+              "config": "Internal Attendees"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            },
+            {
+              "name": "Time & date of next meeting",
+              "config": "Time & date of next meeting"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Audit Completion Form": {
+      "id": "1c5afd50-d635-4986-b59d-6250077b7010",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Completion Date",
+              "config": "Completion Date"
+            },
+            {
+              "name": "Overall outcome",
+              "config": "Overall outcome"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            },
+            {
+              "name": "Attachements - Completion",
+              "config": "Attachements - Completion"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "External Auditor Type": {
+      "id": "6432c9dd-b276-4ee0-af1c-732a4db916a5",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Customer",
+          "Partner",
+          "Investor",
+          "Due Diligence Team",
+          "Insurance Auditor",
+          "Independent Third-Party",
+          "Legal",
+          "Joint Venture",
+          "Public Health or Safety Authority (Non-Regulatory)",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "External Auditor Title": {
+      "id": "6b61eee3-1dda-41bd-bdb6-26a9a4d87870",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Root Cause Analysis Form": {
+      "id": "9f3bc9d9-42b1-4209-bc87-2b831d301a56",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "SOP",
+              "config": "SOP"
+            },
+            {
+              "name": "CAPA Form",
+              "config": "CAPA Form"
+            },
+            {
+              "name": "Reported By",
+              "config": "Reported By"
+            },
+            {
+              "name": "Incident Time",
+              "config": "Incident Time"
+            },
+            {
+              "name": "Root Cause(s)",
+              "config": "Root Cause(s)"
+            },
+            {
+              "name": "Causal Factors",
+              "config": "Causal Factors"
+            },
+            {
+              "name": "Recommendations",
+              "config": "Recommendations"
+            },
+            {
+              "name": "Incident Details",
+              "config": "Incident Details"
+            },
+            {
+              "name": "Associated Documents",
+              "config": "Associated Documents"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Question and Response Log": {
+      "id": "918ff0a3-214f-4459-a513-29b6b840e70b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Author",
+              "config": "Author"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Audit Report Acknowledgement": {
+      "id": "5cba933c-f1ef-4d2f-9620-189ac19cf9cd",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Attach Report",
+              "config": "Attach Report"
+            },
+            {
+              "name": "Acknowledged By",
+              "config": "Acknowledged By"
+            },
+            {
+              "name": "Acknowledgment Date",
+              "config": "Acknowledgment Date"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "CAPA Effectiveness Review Form": {
+      "id": "67a02017-a61c-4973-b064-75cc826987fb",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "CAPA(s)",
+              "config": "CAPA(s)"
+            },
+            {
+              "name": "Reviewer",
+              "config": "Reviewer"
+            },
+            {
+              "name": "Conclusion",
+              "config": "Conclusion"
+            },
+            {
+              "name": "Date of Review",
+              "config": "Date of Review"
+            },
+            {
+              "name": "Follow up actions?",
+              "config": "Follow up actions?"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Description and Scope of Audit": {
+      "id": "71a5a161-ddc2-434f-b5d4-287215bc1dbb",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "External Evidence Request Form": {
+      "id": "1e2b361d-873f-4a33-9fcb-bdc14818f03a",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Due Date",
+              "config": "Due Date"
+            },
+            {
+              "name": "Requested By",
+              "config": "Requested By"
+            },
+            {
+              "name": "Requested From",
+              "config": "Requested From"
+            },
+            {
+              "name": "Evidence Description",
+              "config": "Evidence Description"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            },
+            {
+              "name": "Attachments - Evidence",
+              "config": "Attachments - Evidence"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Receipt of Audit Notification Letter": {
+      "id": "a0cff9b5-b536-4deb-a68b-e4e550c45838",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ],
+            "type": [
+              "Audit Form"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Date",
+              "config": "Date"
+            },
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Lead Auditor",
+              "config": "Lead Auditor"
+            },
+            {
+              "name": "Parent Document",
+              "config": "Parent Document"
+            },
+            {
+              "name": "Audit Master Document",
+              "config": "Audit Master Document"
+            },
+            {
+              "name": "Confirmed By",
+              "config": "Confirmed By"
+            },
+            {
+              "name": "Audit Notification Letter",
+              "config": "Audit Notification Letter"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "88e37426-89d3-4c87-923e-74de39a7ae05"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "c9929799-a46e-4838-b61d-972832d272f8",
+          "type": "p",
+          "children": [
+            {
+              "text": "For reference on executing this audit:"
+            }
+          ]
+        },
+        {
+          "id": "a9221ebb-b0ef-418e-b980-57b7fbff2e7d",
+          "type": "field",
+          "fieldId": "1688851c-d846-45e9-9b84-291b11d2ad5d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "cda1e00d-1734-4e3e-80d3-48ee364c5eec",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6b621d86-c7d0-4857-ae97-b98a2b37e8ec",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Audit Information:"
+            }
+          ]
+        },
+        {
+          "id": "a820d78a-6cfa-4277-b727-1d455c4a1390",
+          "type": "field",
+          "fieldId": "4bf07544-b80e-4e30-b56f-945f1eb23a3b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "44172e63-16c9-458c-bde6-1af013d38c15",
+          "type": "field",
+          "fieldId": "4b304111-4468-435a-9613-117f680ded3c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cabc7625-4680-4eb9-99ad-9a2436adf52c",
+          "type": "field",
+          "fieldId": "5ba428b2-0d89-411b-b5b6-1abb6e250f68",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "18eef271-2de7-417f-bbbf-7914fdcf4401",
+          "type": "field",
+          "fieldId": "2e7dbd47-af62-41fd-a520-08a2e3423505",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "93537c30-738a-4597-b056-54768af1aeb1",
+          "type": "field",
+          "fieldId": "6432c9dd-b276-4ee0-af1c-732a4db916a5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e0730733-64d8-4bac-80bf-20af8ffe5419",
+          "type": "field",
+          "fieldId": "6b61eee3-1dda-41bd-bdb6-26a9a4d87870",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6a1aa28d-d49c-41d8-84a6-cfb1246146c5",
+          "type": "field",
+          "fieldId": "71a5a161-ddc2-434f-b5d4-287215bc1dbb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "962de520-1abb-4114-b439-d697dd8b664d",
+          "type": "field",
+          "fieldId": "9d40b056-d6e3-4a51-810e-1a77a93134a5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "01ad1004-d348-4341-8a6d-d7a6d8820eea",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "68dda02d-4a2f-4abe-9c2e-b48961699e4b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "78d87195-ecc9-49f1-848c-307840f64814",
+          "type": "field",
+          "fieldId": "a0cff9b5-b536-4deb-a68b-e4e550c45838",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "9303e6fb-0eca-433e-88cf-5d9dd41d777e",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that we have received the Audit Notification Letter."
+            }
+          ]
+        },
+        {
+          "id": "83e8a76b-1ba3-4788-a534-36db190813e4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d6a5daf4-89a0-4564-8dce-d6f93e250de2",
+          "type": "field",
+          "fieldId": "1e2b361d-873f-4a33-9fcb-bdc14818f03a",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "0542a5e7-9be6-40b3-aa36-2912b5197ce6",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that the Evidence Request Form has been completed."
+            }
+          ]
+        },
+        {
+          "id": "09a2e036-cae0-40f1-9abd-233aebb080eb",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "95ff7e91-9719-48a6-bd0a-dc6f26337e5f",
+          "type": "field",
+          "fieldId": "918ff0a3-214f-4459-a513-29b6b840e70b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "6ce0cd5d-9add-4eed-a98e-e5f4d21f378a",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that the Question and Response Log is complete."
+            }
+          ]
+        },
+        {
+          "id": "a380ac2a-9939-4e4c-84b9-8ab1257f7361",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "90d72362-1226-4245-a165-c33df8dc355e",
+          "type": "field",
+          "fieldId": "f5298890-6489-4ecc-bedc-17abca38907c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "1ed1c280-a695-4368-84b4-147934bc05ed",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that the Meeting Summary Form is complete."
+            }
+          ]
+        },
+        {
+          "id": "aca1800d-642f-4d31-8295-b18433b5e7b1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "50ccbb62-c65b-4a75-8f19-eead9fdb45d1",
+          "type": "field",
+          "fieldId": "073a0c5d-b95d-4758-876c-7f3436cce807",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "cc455510-b3f1-4527-9af3-68235104ffa2",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that the Audit Findings Log is complete."
+            }
+          ]
+        },
+        {
+          "id": "6e1ff4ed-d298-4d3d-bf72-bf6f62429ec4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4f1b66b7-4fb2-4d49-bfc8-3e3f5770ebac",
+          "type": "field",
+          "fieldId": "9f3bc9d9-42b1-4209-bc87-2b831d301a56",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "b314c0b1-ddc3-4622-a35a-dc724bd61896",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that the Root Cause Analysis Form is complete."
+            }
+          ]
+        },
+        {
+          "id": "d3ee246d-87bf-41a7-9b6e-23707c2714ea",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "89fd8812-d6d3-4b89-bb0f-e2280febe9e8",
+          "type": "field",
+          "fieldId": "436db00b-23f2-4b1c-88f8-2d6ca51a562b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "7f1f7d36-1919-458b-9167-14cf8f32af48",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that the CAPA Form is complete."
+            }
+          ]
+        },
+        {
+          "id": "7684feaa-cd0f-43e2-897e-f3e83e1a02f3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9680501d-3b76-4dc0-a6a2-bde479ffa73b",
+          "type": "field",
+          "fieldId": "67a02017-a61c-4973-b064-75cc826987fb",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "d7af49dd-7827-454f-9503-c0fcc5f6f9ae",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that the CAPA Effectiveness Review Form is complete."
+            }
+          ]
+        },
+        {
+          "id": "a8f46a65-8806-4fbf-9ea0-194cf72fb764",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "27f3132f-cbbd-42e6-af65-c9ce033b6849",
+          "type": "field",
+          "fieldId": "5cba933c-f1ef-4d2f-9620-189ac19cf9cd",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "f260370c-d099-43c7-bcbc-8fe06d473977",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that the Audit Report Acknowledgement is complete."
+            }
+          ]
+        },
+        {
+          "id": "6646fbea-6464-4fc2-a3d1-714d5f1ab269",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "41c1684e-fec6-4dbb-81ab-d8dc340f5b22",
+          "type": "field",
+          "fieldId": "1c5afd50-d635-4986-b59d-6250077b7010",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "c04740ae-8345-46c0-9b8f-f899a5a972e5",
+          "type": "task",
+          "children": [
+            {
+              "text": "I confirm that the Audit Completion Form is complete."
+            }
+          ]
+        },
+        {
+          "id": "ca5027ee-8afa-451f-9aaf-62352ec49393",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@6432c9dd-b276-4ee0-af1c-732a4db916a5 Audit @TEMPLATE_INDEX - @6b61eee3-1dda-41bd-bdb6-26a9a4d87870 @2e7dbd47-af62-41fd-a520-08a2e3423505"
+  }
+}

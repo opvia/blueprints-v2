@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "54b05c3d-863e-46a1-9f69-cc6de522d83a",
+  "title": "Question and Response Log",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Author": {
+      "id": "c4167736-7e0c-4c39-88d3-3da96cccc870",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Audit Master Document": {
+      "id": "6824a659-f510-4f17-828c-773af9bbeb90",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Audit Checklist"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "79f76516-f3c4-40f1-bb1c-353a41311b4d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "24b9698b-2c0f-4258-ad88-1df880c97dfe",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1c99c735-0c25-4a68-ae36-0ee440b8a48d",
+          "type": "field",
+          "fieldId": "6824a659-f510-4f17-828c-773af9bbeb90",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "79fc3793-65e4-4e30-9263-9818893307bb",
+          "type": "field",
+          "fieldId": "c4167736-7e0c-4c39-88d3-3da96cccc870",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6032e908-7425-4eed-8eb6-d46c8d25bb24",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "14aa6018-5a51-4d4d-be96-2ba614b183a2",
+          "type": "table",
+          "children": [
+            {
+              "id": "abd02dec-b907-4a8b-9227-8fc1d90203de",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "edd923ea-b7fa-4b86-af81-c41db9a85996",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "afccdcb1-7efa-45ed-b2cb-667f6df91245",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Question"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "68b5a014-8540-4794-822e-6924cfb9e746",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "9a3e0a14-2d90-414b-a684-363f10200e71",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Asked By"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6f655d21-dc13-4a4a-94a4-2073f6fb9c24",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "41f34608-3838-4d1e-ac4d-413ae6627739",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Answer"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7adbb96e-b970-4419-81ea-ce4b2cf52e68",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "f37823c4-ce24-4f3b-9fe8-5312352caf48",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Answered By"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a8c431a3-21d7-436c-b3e6-d95824b89986",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "9646299a-7ce5-4a46-b338-2f47dd51eb72",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "67fbe314-8612-4499-a51a-da6426389cba",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ac1ab2b9-0c9b-4b3d-aef5-91555fd39300",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "95975b97-3e5f-47ae-8f8e-1827adfa00a0",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "533c999b-322f-407a-a360-1d47405155d6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "98d51f9d-a538-4519-9ecb-be26e05eb27a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5bd58e19-4eda-4bf9-85c0-07e1cb769f22",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ddb39994-8cbc-4d25-a320-ba3b64e36be8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ed221524-18dc-4852-82d8-79be6d5d29d8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7e6adb7f-edc1-4b82-a5b1-4de830c4e9c5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Q&R @TEMPLATE_INDEX"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "652750b2-9ae7-4fd7-a25a-880ab589651a",
+  "title": "Audit Report Acknowledgment Form",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "af164b3d-f902-4f3d-9926-bd25fe83150f",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Attach Report": {
+      "id": "31906770-3084-4c0b-9f72-5599a0279c17",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Acknowledged By": {
+      "id": "baa4139a-12df-48e7-86e9-eb8bbb6796b1",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Acknowledgment Date": {
+      "id": "fbb5f8a0-07c4-4009-ac80-94bbabbb5dfe",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Audit Master Document": {
+      "id": "3188de81-01d7-4ecb-8e42-8555ea679d86",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Audit Checklist"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "79f76516-f3c4-40f1-bb1c-353a41311b4d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "1b29297b-feba-449b-9f08-8ac494132e54",
+          "type": "field",
+          "fieldId": "3188de81-01d7-4ecb-8e42-8555ea679d86",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "150056ae-7f2b-4f53-8ee8-6031903e6e8e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a7f153f8-2499-4d72-9d42-f520dceca5b6",
+          "type": "field",
+          "fieldId": "baa4139a-12df-48e7-86e9-eb8bbb6796b1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d38650f4-a94e-4f98-aaf6-a72e7d8d64e1",
+          "type": "field",
+          "fieldId": "fbb5f8a0-07c4-4009-ac80-94bbabbb5dfe",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "80b31490-d994-46d5-836e-f56040ff144d",
+          "type": "field",
+          "fieldId": "31906770-3084-4c0b-9f72-5599a0279c17",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "9fff27ba-3fc0-40d4-8105-e3a9d36c45c3",
+          "type": "field",
+          "fieldId": "af164b3d-f902-4f3d-9926-bd25fe83150f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "86512b3a-444e-4d4b-b3ca-344409992958",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Report Ack. @TEMPLATE_INDEX"
+  }
+}

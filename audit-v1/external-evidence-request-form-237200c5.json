@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "237200c5-bbbc-4ebc-8c7e-cb9d9f0b9c57",
+  "title": "External Evidence Request Form",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Due Date": {
+      "id": "35994584-5bcb-4d9c-8b37-ab95ff87ad18",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Requested By": {
+      "id": "7ee71915-0ea8-4948-b717-a8c48eb5eca4",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Requested From": {
+      "id": "a74fdfea-52fe-42cb-a43b-722e5975dbce",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Evidence Description": {
+      "id": "28db854f-0b33-4e14-ab77-8dd1cb4194d4",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Audit Master Document": {
+      "id": "89b0e2a9-25b0-40ae-9fba-2418a914f159",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Audit Checklist"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Attachments - Evidence": {
+      "id": "7a73fa41-13a1-4438-87a4-a66ede4e36a1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "79f76516-f3c4-40f1-bb1c-353a41311b4d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "2a28832c-132c-4829-8619-42f92efdbd2c",
+          "type": "field",
+          "fieldId": "89b0e2a9-25b0-40ae-9fba-2418a914f159",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5bbf44ec-b98f-421e-8010-ab15436eb9a8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "85fa84b1-4f7d-416d-83df-5db5229f63a9",
+          "type": "field",
+          "fieldId": "28db854f-0b33-4e14-ab77-8dd1cb4194d4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e35f7ecb-3657-4622-8152-7c71cad2844f",
+          "type": "field",
+          "fieldId": "35994584-5bcb-4d9c-8b37-ab95ff87ad18",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8a18277b-2725-41be-87a1-ddc2c58f855a",
+          "type": "field",
+          "fieldId": "7ee71915-0ea8-4948-b717-a8c48eb5eca4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "64d7d0d0-2dd5-409e-badd-faa815a2fef0",
+          "type": "field",
+          "fieldId": "a74fdfea-52fe-42cb-a43b-722e5975dbce",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "319de8d8-fc92-4c6f-bb18-fbdf51aceb73",
+          "type": "field",
+          "fieldId": "7a73fa41-13a1-4438-87a4-a66ede4e36a1",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "9f5d2320-3751-4c14-b952-1dc388ddb68f",
+          "type": "task",
+          "children": [
+            {
+              "text": "Evidence sent as requested"
+            }
+          ]
+        },
+        {
+          "id": "603e5d3e-fce2-450b-adb7-84b6c646709c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "External Evidence Request @TEMPLATE_INDEX "
+  }
+}
