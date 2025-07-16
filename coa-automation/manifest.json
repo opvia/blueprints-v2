@@ -1,0 +1,120 @@
+{
+  "id": "coa-automation",
+  "version": 1,
+  "name": "CoA Automation",
+  "description": "",
+  "entities": [
+    {
+      "id": "3e4e16f1-e33c-49b0-abc5-70e541c0431f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "B001",
+      "icon": "array",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "28e635ed-4466-40d3-98eb-3be8059d2a96",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Batch",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1bf9b242-29b6-47c9-bd10-be939424be83",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Batch",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "f807a785-e937-4494-b545-e17d8b08d7de",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "B002",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "534fce57-9881-4ceb-a6d3-29c01de0b30e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "B003",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "eb514e25-766a-4f51-b22c-fc25bbb59e22",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Product A - Specification Sheet",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "8e5f7e66-3132-408c-af23-f455ccf92dfa",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Specification",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5b3a7f5e-f703-4c87-b3c9-94fcc269d5bb",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Specification Template",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "e313581b-0622-447b-92b4-27d568ebd8b3",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Certificate of Analysis (CoA) - Template",
+      "icon": "application",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "7556a0c3-28e5-4f4a-bbd2-604188cf9072",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CoA",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "dc6ebcde-55b6-4e9e-973d-c970b0825685",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "COA Data Aggregator",
+      "icon": "predictive-analysis",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "66a14f85-37ab-434b-84ef-6bfd54f8b4cd",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "predictive-analysis",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "299de281-02b6-4bfc-8f6a-df05185539f7",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "COA Data Record",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "669fdb1f-1a6f-4ca4-b5bc-ff9bf565a418",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Data Record",
+      "icon": "array",
+      "sourceVersion": "1"
+    }
+  ]
+}

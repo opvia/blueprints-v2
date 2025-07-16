@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f8ca25dc-8262-4075-96f4-1b9a4fd6dcd0",
+  "title": "Receipt of Audit Notification Letter",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "82c4aad6-1d00-45d1-83c5-01d534fe7b9e",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Confirmed By": {
+      "id": "402bd29f-337f-4db9-b2c5-f01bfa05fe33",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Audit Master Document": {
+      "id": "1fe5bea9-e72e-4755-843e-b7aca188e163",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Audit Checklist"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Audit Notification Letter": {
+      "id": "e6edf900-5b41-4deb-a231-d26da50c5862",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "79f76516-f3c4-40f1-bb1c-353a41311b4d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f5c9b1ed-c979-499a-95a2-f03f37288338",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1a925ff2-5a89-4983-9c97-c03bd8d9574f",
+          "type": "field",
+          "fieldId": "1fe5bea9-e72e-4755-843e-b7aca188e163",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "13c02424-013d-4250-bbc5-44a934d6280a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7976cf5f-9aef-460f-a31b-71722fb25d69",
+          "type": "field",
+          "fieldId": "e6edf900-5b41-4deb-a231-d26da50c5862",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "d51d5f24-317d-4e58-869a-6b8b8cfa1fc8",
+          "type": "field",
+          "fieldId": "402bd29f-337f-4db9-b2c5-f01bfa05fe33",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8f4bf2c3-3088-4e3c-841a-10ddc5581b8e",
+          "type": "field",
+          "fieldId": "82c4aad6-1d00-45d1-83c5-01d534fe7b9e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "77e36da6-cac1-4ad4-86e5-3ffd539f5dcc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Receipt of Audit Notification @TEMPLATE_INDEX"
+  }
+}

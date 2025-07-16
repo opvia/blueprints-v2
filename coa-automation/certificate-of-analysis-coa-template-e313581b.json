@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "e313581b-0622-447b-92b4-27d568ebd8b3",
+  "title": "Certificate of Analysis (CoA) - Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "User": {
+      "id": "30f8c90d-a874-4eee-b241-33b4e771a40d",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Batch": {
+      "id": "fa9ab98f-b9b7-48fb-990a-5a7c8a02a01f",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Batch"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Expiry": {
+      "id": "c6f0c659-849e-4c18-97c9-8ed01e8fab15",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Batch\") , \"Expiry\")"
+      },
+      "dataType": null
+    },
+    "Script": {
+      "id": "258ea6f3-836e-43fa-bbf7-c115e7b59f33",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "dc6ebcde-55b6-4e9e-973d-c970b0825685",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Collate Data"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Submission": {
+      "id": "eebe9d61-681c-48ca-b7c2-162b32849ed3",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "299de281-02b6-4bfc-8f6a-df05185539f7",
+          "version": "2"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Date of Manufacture": {
+      "id": "5fbbdd9f-3dc7-4a02-a28a-961902ff9e6c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup ( lookup(__self, \"Batch\") , \"Date of Manufacture\")"
+      },
+      "dataType": null
+    },
+    "Product Specification": {
+      "id": "a1a26863-42ee-4f2a-a92a-a92c5ee5164b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Specification"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "7556a0c3-28e5-4f4a-bbd2-604188cf9072"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "a4f69efa-66fd-47a0-b934-bca1b022cafd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "335d7290-8b68-4732-8043-a08fcc74f8e5",
+          "type": "h2",
+          "children": [
+            {
+              "text": "General Information"
+            }
+          ]
+        },
+        {
+          "id": "1bf14322-c8b1-4c27-a868-33d59bf1ec89",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7c0631d5-bde0-4285-937e-b7ec37766ad8",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "81279a7f-e19d-41de-829f-fec576c5a302",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "805aab79-5cd7-469c-94fb-2aa996a58154",
+                  "type": "field",
+                  "fieldId": "fa9ab98f-b9b7-48fb-990a-5a7c8a02a01f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "dcf63ed3-6e68-4920-8545-b1f7eb289320",
+                  "type": "field",
+                  "fieldId": "30f8c90d-a874-4eee-b241-33b4e771a40d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "acd3e75c-e973-4dd5-b417-84d528c5c94e",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "968429a6-2d64-4a2b-a01c-dfdc2111749e",
+                  "type": "field",
+                  "fieldId": "5fbbdd9f-3dc7-4a02-a28a-961902ff9e6c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "b21f59c9-68ac-45d0-aa4a-640bb625c579",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "822cd4ba-83b1-41eb-8ca8-da208bc1ce54",
+                  "type": "field",
+                  "fieldId": "c6f0c659-849e-4c18-97c9-8ed01e8fab15",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "248a580b-a199-41f5-b5c5-37153910bd31",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "60d88827-82d6-4064-8cf0-cd587724ff11",
+          "type": "field",
+          "fieldId": "a1a26863-42ee-4f2a-a92a-a92c5ee5164b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "3242ca1b-5083-44a8-8ff6-58d41450720d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3398a0d1-fda5-429a-8ef6-a03614b94079",
+          "type": "field",
+          "fieldId": "258ea6f3-836e-43fa-bbf7-c115e7b59f33",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "ed5efaff-6125-4002-802b-b7d1a1ddc979",
+          "type": "h2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6d2eeddb-836f-47a4-a61f-8b14b484ff44",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Analysis Results"
+            }
+          ]
+        },
+        {
+          "id": "1e0ff7b0-eb24-4b19-95dc-98c805d81065",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "50ff04c0-16bc-4079-84d1-4ca29443001b",
+          "type": "field",
+          "fieldId": "eebe9d61-681c-48ca-b7c2-162b32849ed3",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Parameter",
+                "name": "Parameter",
+                "isHidden": false
+              },
+              {
+                "id": "Upper Limit",
+                "name": "Upper Limit",
+                "isHidden": false
+              },
+              {
+                "id": "Lower Limit",
+                "name": "Lower Limit",
+                "isHidden": false
+              },
+              {
+                "id": "Value",
+                "name": "Value",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "8e5621e0-4cc4-48e9-8a2d-7c085319475b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": true,
+    "computedTitle": "CERTIFICATE OF ANALYSIS - @TEMPLATE_INDEX "
+  }
+}
