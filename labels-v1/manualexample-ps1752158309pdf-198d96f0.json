@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "198d96f0-eb8d-4846-a942-1ce208821939",
+  "title": "Manual_Example PS_1752158309.pdf",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Label Source": {
+      "id": "336c3b18-0f9e-44a4-9a45-fd18b73b4018",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "076d0154-3427-4589-98d7-33fbde36ba49"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": "9063a0eb-96ac-4706-9e46-2a04eff7c305"
+    }
+  }
+}
