@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "80d6962e-12cc-4d2a-9335-07f84e4ad3c7",
+  "title": "Cross-Experiment Comparison Report",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "eb963984-bc64-4c46-bf40-4ab2e9daa77c",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Script": {
+      "id": "bcc7b5a9-a2b4-455d-9579-cdfb9ae3e0e5",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "a10b3ece-166a-4f74-8de8-8de047a8b08c",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Run script"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Reference": {
+      "id": "bc02e36b-ee79-493e-ae73-8be38b7cb0f8",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Saved search": {
+      "id": "598effd0-523b-4c86-850a-db47b0f43200",
+      "type": "SEARCH",
+      "value": null,
+      "config": {},
+      "dataType": "SEARCH"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "0c0591fd-4c8b-4414-bdba-0f58b9f65da0"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "95952e22-0ed2-48f1-8766-bca01b7e5b4a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7d20ab9e-6c27-47ae-a3d8-d8109009a78a",
+          "type": "h2",
+          "children": [
+            {
+              "text": "All Data"
+            }
+          ]
+        },
+        {
+          "id": "1a4aaeea-9b43-4a1e-a901-31730877f75c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9dfcd795-cdda-40ec-9581-f3ee7bf6b1b3",
+          "type": "field",
+          "fieldId": "598effd0-523b-4c86-850a-db47b0f43200",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cf58a610-6b41-46a0-8e7b-41acfe4ee46a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f2110f09-ce75-4daa-bada-f8b3f92dfe4d",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Comparison"
+            }
+          ]
+        },
+        {
+          "id": "26fdd103-d511-4af4-abc6-90f0b34d9d22",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "eff6bdf5-764a-403c-bd53-a3f45fcaf4e0",
+          "type": "field",
+          "fieldId": "bcc7b5a9-a2b4-455d-9579-cdfb9ae3e0e5",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": true
+        },
+        {
+          "id": "16d353b4-0d4f-4731-9181-7fcb541a2215",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "592c2e11-e02a-43b4-a892-0751b28ba9bc",
+          "type": "field",
+          "fieldId": "bc02e36b-ee79-493e-ae73-8be38b7cb0f8",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "b988ef3f-f258-4477-8bb6-adc18d77a133",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "3c4ba4bc-094f-4f04-93bc-d71cd42dc744",
+  "title": "Experiment - 002",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "8eadb2f1-9efb-4b05-9b09-31e1aa42ddeb",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Submission": {
+      "id": "ffafdefa-5d4b-4fb2-88f6-07b4c3363a45",
+      "type": "INSTANCE_SUBMISSION",
+      "value": [
+        {
+          "id": "b4d857da-3000-48e4-b02e-990cfa840508",
+          "version": "1"
+        },
+        {
+          "id": "c80f3ebb-e6ba-416e-87c4-731f412dcc5d",
+          "version": "1"
+        },
+        {
+          "id": "69ba4e28-1656-4ee9-865a-ebc8718b6d2a",
+          "version": "1"
+        },
+        {
+          "id": "c79d1e89-3cd6-4225-89b2-a1059fb139db",
+          "version": "1"
+        },
+        {
+          "id": "383e8910-e05a-4b78-ace2-592d85bb3df6",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "9b801495-d133-4e71-b890-8c62fa600080",
+          "version": "3"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "ac0f0ed2-6a78-47fe-a503-b0e29fa40cd4"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b3e6bd63-43da-46a5-9c94-f096d0381012",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f3fb2bbe-99b8-4c18-85a6-7ec3ba07b927",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Results"
+            }
+          ]
+        },
+        {
+          "id": "70e68ed6-f26a-423a-967a-770812500b27",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "94910fa0-45cf-4208-b264-659b7f7671fc",
+          "type": "field",
+          "fieldId": "ffafdefa-5d4b-4fb2-88f6-07b4c3363a45",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9bb3e18b-0f44-458b-8e28-52aab38a8523",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
