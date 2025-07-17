@@ -1,0 +1,177 @@
+{
+  "id": "sample-location-management",
+  "version": 1,
+  "name": "Sample Location Management",
+  "description": "",
+  "entities": [
+    {
+      "id": "9707f29e-5a8f-4514-b353-47b646beb273",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample Template",
+      "icon": "lab-test",
+      "sourceVersion": "3",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "ccd46cdc-3aa3-4ac0-9e51-72bfd6e6f127",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample",
+      "icon": "lab-test",
+      "sourceVersion": "5",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "8bec2618-7376-4bab-9419-45720cbfdf36",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Position Updater Script - On Being Referenced",
+      "icon": "code",
+      "sourceVersion": "2",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "3f58ca94-a284-4c86-80e0-4dbbbb6617ba",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a7470169-3d2e-4d91-8514-404992e0757d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Position Template",
+      "icon": "grid-view",
+      "sourceVersion": "2",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "dce70466-0bbe-4542-bdcc-415aa8517d00",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Position",
+      "icon": "grid-view",
+      "sourceVersion": "2",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "fa08e9d1-4ba5-47d1-91fc-f9f102ce7855",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Position Status Updater - OnSchedule",
+      "icon": "code",
+      "sourceVersion": "4",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "61972b7c-c2f3-45fc-82fc-7652cfa4efda",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template",
+      "icon": "box",
+      "sourceVersion": "3",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "3a4d7c2b-eea6-4357-b4e2-bb8f6dabc30b",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box",
+      "icon": "box",
+      "sourceVersion": "4",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "b2472df9-fab8-40a0-90fc-e53109386f9b",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Room Template",
+      "icon": "office",
+      "sourceVersion": "4",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "a74cc113-b69c-4640-ab03-5a4c0b124646",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Room",
+      "icon": "office",
+      "sourceVersion": "2",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "3377ce58-13b4-41c4-808a-759a85f8c3dd",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tank/Freezer/Fridge Template",
+      "icon": "cube",
+      "sourceVersion": "4",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "d063628d-e14d-492d-9cf0-56b7bf31d7a7",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tank/Freezer/Fridge",
+      "icon": "cube",
+      "sourceVersion": "2",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "69a96201-b95f-4ec0-877a-a4766c70103f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Rack/Shelf/Drawer Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "4",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "6171a1e1-d775-43c5-8fd6-4ace3a3396ab",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Rack/Shelf/Drawer",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "3",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "c103a65e-1eb2-4c69-bc83-1855587f5a16",
+      "text": "Sample Location Management",
+      "hexCode": "#0cd991"
+    }
+  ]
+}

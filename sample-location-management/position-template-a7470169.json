@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a7470169-3d2e-4d91-8514-404992e0757d",
+  "title": "Position Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Box": {
+      "id": "f725ab38-5c79-48a2-a49c-001dc9d87110",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "61972b7c-c2f3-45fc-82fc-7652cfa4efda"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Positions",
+              "config": "Positions"
+            },
+            {
+              "name": "Rack/Shelf/Drawer",
+              "config": "Rack/Shelf/Drawer"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Status": {
+      "id": "43deb25f-2bbd-4199-8a05-44bd42b7d3d2",
+      "type": "SELECT",
+      "value": [
+        "Available"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Available",
+          "Full"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Position": {
+      "id": "aa9da5d0-828e-4572-8e31-a835226ec430",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "dce70466-0bbe-4542-bdcc-415aa8517d00"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b5d51261-b728-4270-bb6b-274035da1425",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8e5bd710-5c2f-49a5-a255-7543a0a308ac",
+          "type": "field",
+          "fieldId": "aa9da5d0-828e-4572-8e31-a835226ec430",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ed23c4a8-da73-490b-8b81-e3c9faa21fb4",
+          "type": "field",
+          "fieldId": "f725ab38-5c79-48a2-a49c-001dc9d87110",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "79d99103-aaea-4cca-86fb-477cfe798be2",
+          "type": "field",
+          "fieldId": "43deb25f-2bbd-4199-8a05-44bd42b7d3d2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fcb665be-4cf0-46cb-9a92-147c5301bfe7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@f725ab38-5c79-48a2-a49c-001dc9d87110 - @aa9da5d0-828e-4572-8e31-a835226ec430 "
+  }
+}
