@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ccd46cdc-3aa3-4ac0-9e51-72bfd6e6f127",
+  "title": "Sample",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Box": {
+      "id": "06c9cdd6-3b5c-467a-9d25-adce8ff245ce",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Position": {
+      "id": "307ee008-2ab2-4ae2-9dfb-e516967507d2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Position Status Updater": {
+      "id": "74e73582-e5ab-40a4-a7c5-6cc8e5461df8",
+      "type": "SCRIPT",
+      "value": null,
+      "config": {},
+      "dataType": "SCRIPT"
+    },
+    "Position Status Updated to Full?": {
+      "id": "ba5c2faf-9da1-4a67-aca4-9afcd0f9155a",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "lab-test",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": {
+      "can": true
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": false
+    },
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": false
+  }
+}

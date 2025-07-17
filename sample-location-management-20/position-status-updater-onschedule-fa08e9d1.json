@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "fa08e9d1-4ba5-47d1-91fc-f9f102ce7855",
+  "title": "Position Status Updater - OnSchedule",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Description": {
+      "id": "e287894c-0ddf-45d9-be14-ed94f6a879e0",
+      "type": "STRING",
+      "value": "Updates the status for all position instances based on whether a live version of a sample references it.",
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "deb9c65b-19b6-4b4a-bf97-a610edd6838a"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "triggers": [
+        {
+          "id": "61502f6b-de15-4db0-88b9-65d0a8942532",
+          "name": "On Schedule Position status updater",
+          "schedule": "*/5 * * * *",
+          "description": "Runs every 5 minutes to keep Positions' statuses up to date.",
+          "systemEvent": "onSchedule"
+        }
+      ],
+      "scriptCode": "import traceback # Import the traceback module for detailed error logging\n\n# Configuration\n# Please ensure these are the exact titles of your TEMPLATE entities in Seal.\n# The script will find instances created from these specific templates.\nPOSITION_TEMPLATE_TITLE = \"Position Template\"\nSAMPLE_TEMPLATE_TITLE = \"Sample Template\"\nSTATUS_FIELD_NAME = \"Status\"\nSTATUS_FULL = \"Full\"\nSTATUS_AVAILABLE = \"Available\"\n\ndef get_field_value(entity, field_name, default=None):\n    \"\"\"\n    Extracts a field's value from an entity, handling various field structures.\n    If the field is multi-valued (list), it returns the first item.\n    Includes checks to ensure the input 'entity' and its 'fields' attribute are dictionaries.\n    \"\"\"\n    if not isinstance(entity, dict):\n        print(f\"DEBUG: get_field_value received non-dict entity: {type(entity)}\")\n        return default\n\n    fields = entity.get(\"fields\", {})\n    \n    # NEW CHECK: Ensure 'fields' attribute is a dictionary\n    if not isinstance(fields, dict):\n        print(f\"DEBUG: 'fields' attribute for entity (ID: {entity.get('id', 'N/A')}) is not a dictionary: {type(fields)}. Returning default.\")\n        return default\n\n    field_data = fields.get(field_name)\n\n    if field_data is None:\n        return default\n\n    if isinstance(field_data, dict) and \"value\" in field_data:\n        value = field_data[\"value\"]\n        if isinstance(value, list) and value:\n            return value[0]\n        return value\n    elif isinstance(field_data, list) and field_data:\n        return field_data[0]\n    return field_data if field_data is not None else default\n\ndef run_script():\n    print(f\"Starting status management for instances of template '{POSITION_TEMPLATE_TITLE}'...\")\n\n    # Get the ID of the 'Position' TEMPLATE by its exact title.\n    position_templates_found = seal.search_entities(query_config={\"filters\": {\"text\": [POSITION_TEMPLATE_TITLE], \"kind\": [\"TEMPLATE\"]}})\n    if not position_templates_found:\n        print(f\"Error: No TEMPLATE entity found with title '{POSITION_TEMPLATE_TITLE}'. Please ensure the template exists and its title matches.\")\n        return\n    # Assuming the first match is the correct template\n    position_template_id = position_templates_found[0][\"id\"]\n    print(f\"Found '{POSITION_TEMPLATE_TITLE}' Template ID: {position_template_id}\")\n\n    # Get the ID of the 'Sample' TEMPLATE by its exact title.\n    sample_templates_found = seal.search_entities(query_config={\"filters\": {\"text\": [SAMPLE_TEMPLATE_TITLE], \"kind\": [\"TEMPLATE\"]}})\n    if not sample_templates_found:\n        print(f\"Error: No TEMPLATE entity found with title '{SAMPLE_TEMPLATE_TITLE}'. Please ensure the template exists and its title matches.\")\n        return\n    sample_template_id = sample_templates_found[0][\"id\"]\n    print(f\"Found '{SAMPLE_TEMPLATE_TITLE}' Template ID: {sample_template_id}\")\n\n    # Search for all INSTANCES created FROM the specific 'Position' template (live data).\n    all_position_instances = seal.search_entities(\n        query_config={\n            \"filters\": {\n                \"template\": [position_template_id], # Correctly filter by template ID for instances\n                \"kind\": [\"INSTANCE\"]\n            },\n            \"searchType\": \"LIVE\" # Ensure we work with live, published data\n        }\n    )\n\n    if not all_position_instances:\n        print(f\"No instances of template '{POSITION_TEMPLATE_TITLE}' found.\")\n        return\n\n    print(f\"Found {len(all_position_instances)} instances of template '{POSITION_TEMPLATE_TITLE}'.\")\n\n    for position_instance_summary in all_position_instances:\n        position_id = position_instance_summary[\"id\"]\n        position_title = position_instance_summary[\"title\"]\n\n        try:\n            # Get the full entity data for the current position instance\n            position_entity = seal.get_entity(entity_id=position_id)\n            \n            # Ensure the retrieved entity is a dictionary before proceeding\n            if not isinstance(position_entity, dict):\n                print(f\"Warning: seal.get_entity for Position '{position_title}' (ID: {position_id}) returned an unexpected type ({type(position_entity)}). Skipping this position.\")\n                continue\n\n            current_status = get_field_value(position_entity, STATUS_FIELD_NAME)\n\n            if current_status is None:\n                print(f\"Warning: Position '{position_title}' (ID: {position_id}) does not have a '{STATUS_FIELD_NAME}' field or it is empty. Skipping.\")\n                continue\n\n            # Get live backlinks to this position instance\n            referenced_by_ids = seal.get_live_backlinks(entity_id=position_id)\n\n            is_referenced_by_sample = False\n            if referenced_by_ids:\n                for backlink_id in referenced_by_ids:\n                    try:\n                        backlink_entity = seal.get_entity(entity_id=backlink_id)\n                        \n                        # IMPORTANT: Check if the retrieved entity is a dictionary\n                        if not isinstance(backlink_entity, dict):\n                            print(f\"Warning: seal.get_entity for backlink ID {backlink_id} returned an unexpected type ({type(backlink_entity)}). Skipping this backlink.\")\n                            continue\n\n                        # Check if the backlinked entity is an instance of the 'Sample' template\n                        backlink_template_ref = backlink_entity.get(\"sourceInfo\", {}).get(\"template\", {})\n                        if backlink_template_ref.get(\"id\") == sample_template_id:\n                            is_referenced_by_sample = True\n                            break # Found a referencing 'Sample', no need to check further\n                    except Exception as e:\n                        print(f\"Warning: Could not retrieve or process backlinked entity {backlink_id} for Position '{position_title}': {e}\")\n                        # Log full traceback for this specific backlink error\n                        print(f\"Traceback for backlink {backlink_id}: {traceback.format_exc()}\")\n                        continue\n\n            desired_status = STATUS_FULL if is_referenced_by_sample else STATUS_AVAILABLE\n\n            if current_status != desired_status:\n                print(f\"Updating status for '{position_title}' (ID: {position_id}) from '{current_status}' to '{desired_status}'...\")\n                # Make the entity editable if it's not already\n                if position_entity[\"status\"] != \"EDITABLE\":\n                    seal.make_entity_editable(entity_id=position_id)\n                \n                # Update the status field\n                seal.update_field_value_in_entity(\n                    entity_id=position_id,\n                    field_name=STATUS_FIELD_NAME,\n                    field_value=[desired_status]\n                )\n                print(f\"Successfully updated status for '{position_title}' to '{desired_status}'.\")\n            else:\n                print(f\"Status for '{position_title}' (ID: {position_id}) is already '{current_status}'. No change needed.\")\n\n        except Exception as e:\n            print(f\"Error processing Position '{position_title}' (ID: {position_id}): {e}\")\n            # Log full traceback for the main position processing error\n            print(f\"Full traceback for Position '{position_title}': {traceback.format_exc()}\")\n            continue\n\n    print(\"Script finished.\")\n\n# Call the main function\nrun_script()"
+    }
+  }
+}

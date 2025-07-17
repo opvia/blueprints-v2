@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "9707f29e-5a8f-4514-b353-47b646beb273",
+  "title": "Sample Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Box": {
+      "id": "8601b7e3-1ccf-42d3-938e-9490dbc4e85b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "61972b7c-c2f3-45fc-82fc-7652cfa4efda"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Positions",
+              "config": "Positions"
+            },
+            {
+              "name": "Rack/Shelf/Drawer",
+              "config": "Rack/Shelf/Drawer"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Position": {
+      "id": "9a9caa67-4f94-45ee-9dca-0b31476315db",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "a7470169-3d2e-4d91-8514-404992e0757d"
+            ],
+            "fieldValue": [
+              {
+                "name": "Status",
+                "value": "Available",
+                "operator": "="
+              }
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Box",
+              "config": "Box"
+            },
+            {
+              "name": "Position",
+              "config": "Position"
+            },
+            {
+              "name": "Status",
+              "config": "Status"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Position Status Updater": {
+      "id": "9e0cfcea-0cfc-4057-97c7-d2021f822dea",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "8bec2618-7376-4bab-9419-45720cbfdf36",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "cog",
+          "label": "Update"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Position Status Updated to Full?": {
+      "id": "5754371d-14fb-4afc-961d-961c111a2e2e",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "ccd46cdc-3aa3-4ac0-9e51-72bfd6e6f127"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "7a97782e-cc75-48ff-a7f3-6a3d1b4771be",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "66f5b111-bcd3-46b8-94f2-c5a795b37363",
+          "type": "field",
+          "fieldId": "8601b7e3-1ccf-42d3-938e-9490dbc4e85b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "5f048b3f-22f6-4394-ab16-61c8fe89d47f",
+          "type": "field",
+          "fieldId": "9a9caa67-4f94-45ee-9dca-0b31476315db",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f7afd0b9-8b17-47a0-aa74-1df746f4518e",
+          "type": "field",
+          "fieldId": "9e0cfcea-0cfc-4057-97c7-d2021f822dea",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4428da5f-cfec-45ad-836a-fd5b2728f84f",
+          "type": "field",
+          "fieldId": "5754371d-14fb-4afc-961d-961c111a2e2e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "65f86d07-a5b1-4302-9a6f-8dccbf0e5ec8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
