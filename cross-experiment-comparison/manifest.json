@@ -1,0 +1,176 @@
+{
+  "id": "cross-experiment-comparison",
+  "version": 1,
+  "name": "Cross-Experiment Comparison",
+  "description": "",
+  "entities": [
+    {
+      "id": "8eadb2f1-9efb-4b05-9b09-31e1aa42ddeb",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Experiment Data Submission",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "ac0f0ed2-6a78-47fe-a503-b0e29fa40cd4",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Data Submission",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9b801495-d133-4e71-b890-8c62fa600080",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "669fdb1f-1a6f-4ca4-b5bc-ff9bf565a418",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Data Record",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "83030a46-1814-40a3-a7de-a5e0f3f6c577",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Experiment - 001",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "f47b047e-87ad-404f-8252-5363c1e7eba5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 31",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "69575075-674a-4fa5-ac8e-2196d6fb7867",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 32",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9520454d-5337-464c-bccf-27ce55aa5632",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 33",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1cef4984-d158-4b76-a92f-20edce11e073",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 34",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f783d8cf-7467-4edf-829b-82246c1a6a80",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 35",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3c4ba4bc-094f-4f04-93bc-d71cd42dc744",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Experiment - 002",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "b4d857da-3000-48e4-b02e-990cfa840508",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 36",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c80f3ebb-e6ba-416e-87c4-731f412dcc5d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 37",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "69ba4e28-1656-4ee9-865a-ebc8718b6d2a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 38",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c79d1e89-3cd6-4225-89b2-a1059fb139db",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 39",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "383e8910-e05a-4b78-ace2-592d85bb3df6",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Result - 40",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "eb963984-bc64-4c46-bf40-4ab2e9daa77c",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Historical Result Comparison Report - Template",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "0c0591fd-4c8b-4414-bdba-0f58b9f65da0",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Report Generator",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a10b3ece-166a-4f74-8de8-8de047a8b08c",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Historical Comparison",
+      "icon": "predictive-analysis",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "66a14f85-37ab-434b-84ef-6bfd54f8b4cd",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "predictive-analysis",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "80d6962e-12cc-4d2a-9335-07f84e4ad3c7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cross-Experiment Comparison Report",
+      "icon": "array",
+      "sourceVersion": "2"
+    }
+  ]
+}
