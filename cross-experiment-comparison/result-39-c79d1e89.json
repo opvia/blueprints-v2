@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c79d1e89-3cd6-4225-89b2-a1059fb139db",
+  "title": "Result - 39",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "9b801495-d133-4e71-b890-8c62fa600080",
+      "version": "3"
+    },
+    "submissionField": {
+      "fieldId": "ffafdefa-5d4b-4fb2-88f6-07b4c3363a45",
+      "fieldName": "Submission",
+      "parentEntityId": "3c4ba4bc-094f-4f04-93bc-d71cd42dc744"
+    }
+  },
+  "fields": {
+    "Time (h)": {
+      "id": "9edb8d08-9282-4104-ad81-c7cff9ba06e0",
+      "type": "NUMBER",
+      "value": 8,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Bioreactor ID": {
+      "id": "30e6e213-f0bc-42e4-8b86-05e749e8d057",
+      "type": "NUMBER",
+      "value": 1,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Experiment ID": {
+      "id": "88a32946-8a80-44aa-8686-cb81511e39f5",
+      "type": "STRING",
+      "value": "EXP-002",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Viability (%)": {
+      "id": "92f9755e-e848-4543-a3d9-35b5e9f2ed8d",
+      "type": "NUMBER",
+      "value": 50,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "Result - @TEMPLATE_INDEX ",
+  "type": {
+    "ref": {
+      "id": "669fdb1f-1a6f-4ca4-b5bc-ff9bf565a418"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "92495d7b-5872-4639-8da6-e7441989018d",
+          "type": "field",
+          "fieldId": "9edb8d08-9282-4104-ad81-c7cff9ba06e0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c21e4acd-e486-41f1-bc5e-b5078264ff02",
+          "type": "field",
+          "fieldId": "92f9755e-e848-4543-a3d9-35b5e9f2ed8d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fc9060f8-e569-4c85-b7ca-a5d743c4ad3e",
+          "type": "field",
+          "fieldId": "30e6e213-f0bc-42e4-8b86-05e749e8d057",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2f184a3d-3709-4157-88a8-d282d490f96c",
+          "type": "field",
+          "fieldId": "88a32946-8a80-44aa-8686-cb81511e39f5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e2f4ebec-ec48-41bc-9b55-dd3f7bd6b77d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
