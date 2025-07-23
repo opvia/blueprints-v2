@@ -1,0 +1,407 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "bd072d9d-7404-499d-90ea-191ed112af5a",
+  "title": "Labeling Specification Demo",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Logo": {
+      "id": "0da01b42-c803-4ded-b0e1-012e56af5731",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "97152468-e01a-4669-812e-19887faf3785",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Labels": {
+      "id": "cc7704c8-7fab-4ca5-bcd9-f5563fd62b66",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Script": {
+      "id": "325f8a04-7b6a-45f5-a73d-0092191fd3f7",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "cbd438ce-5267-47f1-a80c-650567327352",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create Label"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Revision": {
+      "id": "db0f730f-b546-4b46-a1fb-ae1127c6cf24",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Reference": {
+      "id": "60a9d126-a600-4eb3-b35e-6c9c50a37117",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "1d5e5897-117a-4d68-b21c-ac8b4ae7c8a9",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Where Used": {
+      "id": "832a8348-fa36-4bd2-a73c-7e8cf4115d66",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "Cortical Module",
+          "Extension Lead",
+          "Internal Transceiver",
+          "Wearable",
+          "External Transceiver",
+          "Control Unit",
+          "Surgical Instruments",
+          "General Labeling",
+          "V&V Test Specific Label"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Serial Number": {
+      "id": "b7b13057-02b3-4f4f-aaa8-c74a1259bcf1",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Specification": {
+      "id": "477a13e4-7bfc-49b1-ae18-a3ea4696f698",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Approval Change Set": {
+      "id": "8079698a-8f46-449b-8a07-fbbc0865d79e",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Document Number Log Reference": {
+      "id": "29c40a95-7b0e-4eb8-a230-65bc5d6e4c6e",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE",
+              "INSTANCE"
+            ],
+            "type": [
+              "Document and Part Number Assignment"
+            ]
+          }
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Is this part a Design Output?": {
+      "id": "fa7d2b6e-50f0-4bfa-9ac0-2ba5e5c63f41",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Other Included Document Numbers": {
+      "id": "a7b8d2cc-e121-487f-aac8-3a6a05d728d6",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "If Yes, Link the Related Design Input(s)": {
+      "id": "28c75356-f166-4fa9-acb0-f0b86ecafbd3",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE",
+              "INSTANCE"
+            ],
+            "template": [
+              "da78b1b4-5d2f-4cc8-9329-38769fdbfb10"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Description",
+              "config": "Description"
+            },
+            {
+              "name": "User Need(s)",
+              "config": "User Need(s)"
+            },
+            {
+              "name": "Justification",
+              "config": "Justification"
+            },
+            {
+              "name": "Acceptance Criteria",
+              "config": "Acceptance Criteria"
+            },
+            {
+              "name": "Relevant Component(s)",
+              "config": "Relevant Component(s)"
+            },
+            {
+              "name": "Design Output Description",
+              "config": "Design Output Description"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Manufacturing/Artwork Files (if applicable)": {
+      "id": "842845a4-a511-4cc4-9863-7c726daa70df",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "a1f4e74e-bab8-4077-ab6c-7100467480d2"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "bbe065f6-c9db-4dc4-9dbd-86878bf88830",
+          "type": "field",
+          "fieldId": "29c40a95-7b0e-4eb8-a230-65bc5d6e4c6e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1bab2a2d-fbf3-4fe2-994c-f3df363e072a",
+          "type": "field",
+          "fieldId": "db0f730f-b546-4b46-a1fb-ae1127c6cf24",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8edda033-ee3d-48e7-b220-c2fd9b6081a5",
+          "type": "table",
+          "children": [
+            {
+              "id": "bfd9db4b-b69f-4096-8760-1bb5031b0598",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "f31c9b9c-92c2-45e6-bcf7-c1fe482dfd92",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "d4f525af-5483-47d9-a78f-2201546ee0fb",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "If applicable, list all of the other Document Numbers whose specifications are included in this spec (e.g., LBL-12345-1)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bf7bef41-d962-4ae9-94ff-d5ad84bbf839",
+          "type": "field",
+          "fieldId": "a7b8d2cc-e121-487f-aac8-3a6a05d728d6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a1f94a14-3510-44c8-bd15-541a92197595",
+          "type": "field",
+          "fieldId": "477a13e4-7bfc-49b1-ae18-a3ea4696f698",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "701eafcf-9fbf-4598-9d64-c96d9066ea10",
+          "type": "field",
+          "fieldId": "842845a4-a511-4cc4-9863-7c726daa70df",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e7b6065c-4a66-4fd1-86eb-3b5da170a189",
+          "type": "field",
+          "fieldId": "fa7d2b6e-50f0-4bfa-9ac0-2ba5e5c63f41",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "13aa7e77-2981-43d6-a726-5f401a2f2a18",
+          "type": "field",
+          "fieldId": "28c75356-f166-4fa9-acb0-f0b86ecafbd3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5274fced-2399-43c5-a988-31970fe58295",
+          "type": "field",
+          "fieldId": "832a8348-fa36-4bd2-a73c-7e8cf4115d66",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9e660add-5c38-4eb5-95df-4f8cded518ed",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "16c549f7-5a8c-4e13-904a-593eef0f31ca",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f1ed9203-ce5a-4424-b977-b6f9d0b0f2f2",
+          "type": "field",
+          "fieldId": "325f8a04-7b6a-45f5-a73d-0092191fd3f7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7b7a6197-3027-4ca8-a99f-943b77f97c53",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ee9d1e45-b35e-4d85-8cbe-6605cb0c0931",
+          "type": "field",
+          "fieldId": "cc7704c8-7fab-4ca5-bcd9-f5563fd62b66",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "819d6155-fddf-41e0-85f0-ed6930dfda27",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
