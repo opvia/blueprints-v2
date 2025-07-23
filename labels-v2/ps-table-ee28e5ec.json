@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ee28e5ec-f97f-4c55-9298-c6b25a4678c4",
+  "title": "PS Table",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "PART/REF": {
+      "id": "d7defbbb-e169-477e-9781-f58ff8d4a88c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Quantity": {
+      "id": "f8e6b50a-37f3-49eb-87b6-c1fbcf193602",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "LOT/SERIAL": {
+      "id": "23228b7a-e640-45be-828e-49935fc030ab",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Description": {
+      "id": "49303865-7778-46d3-9d9d-37ef96be2a30",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "4e63cba1-fc20-4a5e-958f-e48daac1ff29"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "88abcab4-cb2f-4adb-8b37-31cc3745ea6b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
