@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "716b2739-0b03-45ca-9961-c97fe96d47bb",
+  "title": "Harmful_Irritant.png",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "15373f50-a81f-48d6-8b85-959a751c460c",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "cd9e75b2-ce1e-41c9-81f1-0815fe2ed808"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": "254c0e29-3e0d-490e-833e-dac34a8c4cb5"
+    }
+  }
+}

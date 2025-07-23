@@ -1,0 +1,648 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "8e400db6-3702-45ad-bbaf-65b07ded4cec",
+  "title": "MA166104",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "61492112-efd1-46ee-abf9-e237b1951d32",
+      "version": "18"
+    }
+  },
+  "fields": {
+    "Room": {
+      "id": "bd80a1b6-a91f-4064-a07a-9822820c8d1c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Site": {
+      "id": "273108c4-703d-4dd0-a09f-e4c49a211db2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Units": {
+      "id": "6fcb46d0-febd-4773-b9e3-68f49cf634d1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Units"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Labels": {
+      "id": "ff6d0230-79a7-4ac8-a4c2-e934d0772239",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "13dc899c-96eb-495c-a5e7-daa8a6e7dc72",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "filePreview",
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Freezer": {
+      "id": "fb5580c2-a50a-4e14-8552-f02164bc7e72",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Building": {
+      "id": "955f46c1-59e1-4899-9a0f-e4f3e781cef0",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Comments": {
+      "id": "c0fc4928-c8fe-4e14-bda9-cad86d6d1431",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Material": {
+      "id": "0744067c-a1df-467a-8a27-8dc141e65288",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "750235c8-6d3b-411a-a647-fb8c494b6b19",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "89824622-24be-46dd-93d5-06606f1f1dac"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Name",
+              "config": "Name"
+            },
+            {
+              "name": "Corrosive",
+              "config": "Corrosive"
+            },
+            {
+              "name": "Unstable?",
+              "config": "Unstable?"
+            },
+            {
+              "name": "Flammability",
+              "config": "Flammability"
+            },
+            {
+              "name": "Health Hazards",
+              "config": "Health Hazards"
+            },
+            {
+              "name": "Specific Hazards",
+              "config": "Specific Hazards"
+            },
+            {
+              "name": "FDBK Hazard Level",
+              "config": "FDBK Hazard Level"
+            },
+            {
+              "name": "Environmental Hazard",
+              "config": "Environmental Hazard"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Supplier": {
+      "id": "7e89cd59-5ebc-4c8d-8419-b3a4db5b7582",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "319a1b8f-39af-4e71-a6d6-58c2649ef27a"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Address",
+              "config": "Address"
+            },
+            {
+              "name": "Supplier",
+              "config": "Supplier"
+            },
+            {
+              "name": "Main contact",
+              "config": "Main contact"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Lot number": {
+      "id": "37bc2a88-db46-4123-bd98-35cb9ad22bb4",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "concat( \"MA\" , lookup(__self, \"INDEX\")  )"
+      },
+      "dataType": null
+    },
+    "Opened Date": {
+      "id": "240bb7d7-c6db-4f82-ac17-a90e02f22ecb",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Hazard Symbol": {
+      "id": "dc23bb0c-d209-4d5b-b856-4e08a6006baa",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Material\") , \"Hazard Symbol\" )"
+      },
+      "dataType": null
+    },
+    "Material name": {
+      "id": "a53bbb13-e862-4109-957c-97a56bbc5ac3",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Material\") , \"Name\" )"
+      },
+      "dataType": null
+    },
+    "Generate Label": {
+      "id": "99828ad1-fafe-4efa-9161-25229e822dee",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "80e9b081-62eb-40c1-9c0e-5e5986b9c71d",
+          "version": "3"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "tag",
+          "label": "Create Label"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Freezer location": {
+      "id": "e5099c6c-a895-488d-9371-8195f77667c5",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Project Assigned": {
+      "id": "36eefe08-eb36-4694-bd5d-adf86cd39adb",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Projects"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Address",
+              "config": "Address"
+            },
+            {
+              "name": "Supplier",
+              "config": "Supplier"
+            },
+            {
+              "name": "Main contact",
+              "config": "Main contact"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "FDBK Hazard Level": {
+      "id": "228a9429-5396-42e0-b01d-47838968914f",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Material\") , 'FDBK Hazard Level')"
+      },
+      "dataType": null
+    },
+    "Opened expiration day": {
+      "id": "b492d7d4-eaae-48ec-89b0-1774cab35af9",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd(lookup(__self, \"Opened Date\"), lookup(__self, \"Opened expiry period (days)\"), \"days\")"
+      },
+      "dataType": null
+    },
+    "Current amount in stock": {
+      "id": "75f4f0b5-6c33-40c1-984c-be7da4f2c693",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Initial amount in stock": {
+      "id": "8a2e9b55-a857-48fd-92ff-f72dcad69138",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Secondary Hazard Symbol": {
+      "id": "cc12fecf-7827-4683-baba-3baf25322317",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Material\")  , \"Secondary Hazard Symbol\" )"
+      },
+      "dataType": null
+    },
+    "Manufacture's Expiry Date": {
+      "id": "855a71b7-cbe9-47dc-a52e-ebfeed979dd2",
+      "type": "DATE",
+      "value": "2025-07-18",
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Opened expiry period (days)": {
+      "id": "2e891b24-bd9e-44fb-b0f4-cbb7499f03f6",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Provisional amount in stock": {
+      "id": "da5b7836-11b9-48e1-9467-f02119e20de0",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Material / Supplier / Cat. No.": {
+      "id": "366e18a4-e1df-45fa-84cd-33d2bd5733d8",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "55fee57e-c16a-4f32-a48e-fadb1bef3e9b"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "MSDS",
+              "config": "MSDS"
+            },
+            {
+              "name": "Supplier",
+              "config": "Supplier"
+            },
+            {
+              "name": "Catalogue No",
+              "config": "Catalogue No"
+            },
+            {
+              "name": "Material Name",
+              "config": "Material Name"
+            },
+            {
+              "name": "Validation level",
+              "config": "Validation level"
+            },
+            {
+              "name": "Storage Conditions",
+              "config": "Storage Conditions"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "@37bc2a88-db46-4123-bd98-35cb9ad22bb4 ",
+  "type": {
+    "ref": {
+      "id": "aa1295ba-dfa4-492d-8908-2c4e7f7cfb56"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "a0139b56-b75a-432e-a78e-33b7fe3bb7d5",
+          "type": "field",
+          "fieldId": "37bc2a88-db46-4123-bd98-35cb9ad22bb4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b68707bc-a871-4d66-a12c-7cf647a601c1",
+          "type": "field",
+          "fieldId": "0744067c-a1df-467a-8a27-8dc141e65288",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "81541b72-c354-43f4-97ab-dc918a507a1c",
+          "type": "field",
+          "fieldId": "7e89cd59-5ebc-4c8d-8419-b3a4db5b7582",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "8a093f8e-1a4c-4530-92fb-cf2a8e2ae30f",
+          "type": "field",
+          "fieldId": "366e18a4-e1df-45fa-84cd-33d2bd5733d8",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "49e68055-4935-4f77-a850-1bf33aed04e2",
+          "type": "field",
+          "fieldId": "36eefe08-eb36-4694-bd5d-adf86cd39adb",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "12343d8e-46f5-4b86-8380-3c14f26d9ede",
+          "type": "field",
+          "fieldId": "8a2e9b55-a857-48fd-92ff-f72dcad69138",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "74089e16-e1db-4dd5-ba7e-6b80de6ace49",
+          "type": "field",
+          "fieldId": "6fcb46d0-febd-4773-b9e3-68f49cf634d1",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "3778feb1-6985-4ca8-8347-a0ed54a3860d",
+          "type": "field",
+          "fieldId": "855a71b7-cbe9-47dc-a52e-ebfeed979dd2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fecc730a-d8a3-448a-a700-331ae381d9e7",
+          "type": "field",
+          "fieldId": "240bb7d7-c6db-4f82-ac17-a90e02f22ecb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "072c93c0-c303-40ef-b712-6019dd15ebe2",
+          "type": "field",
+          "fieldId": "2e891b24-bd9e-44fb-b0f4-cbb7499f03f6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "41bca861-bc21-4eeb-aa15-81360f9e9306",
+          "type": "field",
+          "fieldId": "273108c4-703d-4dd0-a09f-e4c49a211db2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0b76ceb1-f622-4c67-a52a-e8d2d54d64f6",
+          "type": "field",
+          "fieldId": "955f46c1-59e1-4899-9a0f-e4f3e781cef0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2ef36faf-5f61-4574-beb4-fb4dec1714c1",
+          "type": "field",
+          "fieldId": "bd80a1b6-a91f-4064-a07a-9822820c8d1c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4a7b2a0c-adac-4cb0-9fb2-2c4e561fb205",
+          "type": "field",
+          "fieldId": "fb5580c2-a50a-4e14-8552-f02164bc7e72",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "099102e0-586f-4c47-9b56-03151fe7a829",
+          "type": "field",
+          "fieldId": "e5099c6c-a895-488d-9371-8195f77667c5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9068b1ba-d182-40cf-b57f-af8831e9a47e",
+          "type": "field",
+          "fieldId": "c0fc4928-c8fe-4e14-bda9-cad86d6d1431",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "885660cc-ea75-49de-b2b4-4ce545fc3f83",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4de1f56e-d99b-4c63-8cd8-c1a55673e523",
+          "type": "table",
+          "children": [
+            {
+              "id": "de0e4ffe-8092-4cf3-8e07-3b209371d10d",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "9379d37c-f2a7-4bf5-870f-fd9408409ee7",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "5e5f593f-702a-4405-9774-fe5f0813f5c6",
+                      "type": "h1",
+                      "children": [
+                        {
+                          "text": "Generate Labels"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ae4a0ac2-0dd8-4ef0-8be4-9de80ed7df47",
+          "type": "field",
+          "fieldId": "99828ad1-fafe-4efa-9161-25229e822dee",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7da0cf54-af81-48a9-9e77-3936b03d5b66",
+          "type": "field",
+          "fieldId": "ff6d0230-79a7-4ac8-a4c2-e934d0772239",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "4323636b-b8b6-47ce-bdd6-6fa97f1e8a9b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6b4ad717-bb3e-48fe-a259-2c1533893208",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

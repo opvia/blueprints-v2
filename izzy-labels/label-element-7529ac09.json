@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "7529ac09-c090-4393-b593-f70308aacef3",
+  "title": "Label Element",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Alignment": {
+      "id": "5de8c795-efc0-46d8-adfa-7f72c81597f8",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "X Position": {
+      "id": "73730f00-d5cd-4823-8a46-57cefed20c97",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Y Position": {
+      "id": "7dd28c20-5266-4a07-9204-532fbf3bb5b5",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Element Type": {
+      "id": "3feb6297-48e4-4fc9-bc6d-7bc4bb4e987f",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Rotation (°)": {
+      "id": "27566bd4-6c23-4f06-aa40-ceae4b840b29",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "media",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": null,
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "New Blueprint",
+            "intent": "primary"
+          },
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "New Blueprint"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      }
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": false
+    },
+    "reviewRequirements": null,
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": false
+  },
+  "templateConfig": {
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "New Blueprint",
+            "intent": "primary"
+          },
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "New Blueprint"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      }
+    }
+  }
+}

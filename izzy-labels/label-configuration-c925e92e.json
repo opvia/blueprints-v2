@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c925e92e-e85c-468e-871b-ce5db9b0e063",
+  "title": "Label Configuration",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Units": {
+      "id": "1c6189a8-0111-44d8-b850-433ab7c44237",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Labels": {
+      "id": "0caade9f-8cf7-49c7-8878-e2512a2f02a1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Label Width": {
+      "id": "eed713b4-b925-430a-9263-b763a4fb79e5",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Create Label": {
+      "id": "c2e82149-71e1-4f9c-8909-e972d40f2934",
+      "type": "SCRIPT",
+      "value": null,
+      "config": {},
+      "dataType": "SCRIPT"
+    },
+    "Default Font": {
+      "id": "0c66987c-d5ca-4f42-b168-4fd5712a3e52",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Label Height": {
+      "id": "effe2f0e-13a9-4f3d-9236-aa79d1d9cb25",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Label Elements": {
+      "id": "369cc8b1-afa2-49f6-aad7-0ff95bdb5cd1",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": null
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Preview Entities": {
+      "id": "34fb887d-e025-4dd8-8aee-9920ee08126f",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Default Font Size": {
+      "id": "7560dce9-f883-48fe-800a-d574a037089f",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Label Title Field Name": {
+      "id": "a7b6d56c-1063-4d1b-ba46-a475ad8d7e0f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "cog",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": null,
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "New Blueprint",
+            "intent": "primary"
+          },
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "New Blueprint"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      }
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": true
+    },
+    "reviewRequirements": null,
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": true
+  },
+  "templateConfig": {
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "New Blueprint",
+            "intent": "primary"
+          },
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "New Blueprint"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      }
+    }
+  }
+}
