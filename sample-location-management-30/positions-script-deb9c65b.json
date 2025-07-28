@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "deb9c65b-19b6-4b4a-bf97-a610edd6838a",
+  "title": "Positions Script",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "code",
+  "contentType": "SCRIPT_CODE",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": {
+      "can": true
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": null,
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": true
+  }
+}

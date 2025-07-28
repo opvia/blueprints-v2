@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "8bec2618-7376-4bab-9419-45720cbfdf36",
+  "title": "Position Updater Script - On Being Referenced",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Description": {
+      "id": "8ca6e1d5-e854-4910-997c-32eb90b17f42",
+      "type": "STRING",
+      "value": "Updates the positions status to 'Full' after being referenced by a sample. ",
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "deb9c65b-19b6-4b4a-bf97-a610edd6838a"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the entity where this script is embedded (the 'Sample' instance)\nsample_entity = seal.get_containing_entity()\nprint(f\"Script running on Sample entity: {sample_entity.get('title')} (ID: {sample_entity['id']})\")\n\n# Initialize a flag to track if the position update was successful\nposition_update_successful = False\n\n# Get the 'Position' reference field\nposition_field = sample_entity[\"fields\"].get(\"Position\")\n\nif not position_field or not position_field.get(\"value\"):\n    # If the 'Position' field is empty or doesn't exist, print a message and exit\n    print(\"The 'Position' reference field is empty or not found. No action taken.\")\nelse:\n    # Assume 'Position' is a single reference field. Get the first reference.\n    position_ref = position_field[\"value\"][0]\n    position_entity_id = position_ref[\"id\"]\n    print(f\"Referenced Position entity ID: {position_entity_id}\")\n\n    # Get the current state of the Position entity\n    current_position_entity = seal.get_entity(entity_id=position_entity_id)\n\n    # Make the Position entity editable (create a new draft) if not already\n    if current_position_entity[\"status\"] == \"EDITABLE\":\n        print(f\"Position entity {current_position_entity.get('title')} is already in draft.\")\n        position_draft_id = current_position_entity[\"id\"]\n    else:\n        print(f\"Putting Position entity {current_position_entity.get('title')} into draft...\")\n        new_position_draft = seal.make_entity_editable(position_entity_id)\n        position_draft_id = new_position_draft[\"id\"]\n        print(f\"Position entity is now in draft. New draft ID: {position_draft_id}\")\n\n    # Update the 'Status' select field in the Position instance to 'Full'\n    print(f\"Updating 'Status' field of Position entity {position_draft_id} to 'Full'...\")\n    seal.update_field_value_in_entity(\n        entity_id=position_draft_id,\n        field_name=\"Status\",\n        field_value=[\"Full\"] # Select fields expect a list of strings\n    )\n    print(\"Successfully updated 'Status' field.\")\n\n    # Get the change set information for the containing 'Sample' entity\n    sample_change_set = seal.get_change_set_for_containing_entity()\n\n    if not sample_change_set:\n        print(\"The Sample entity is not part of a change set. Cannot add Position entity.\")\n    else:\n        change_set_index = sample_change_set[\"index\"]\n        print(f\"Sample entity is in Change Set: {change_set_index}\")\n\n        # Add the Position draft entity to the Sample's change set\n        print(f\"Adding Position draft ({position_draft_id}) to Change Set {change_set_index}...\")\n        seal.add_entity_to_change_set(position_draft_id, change_set_index)\n        print(\"Position entity successfully added to the Sample's change set.\")\n        position_update_successful = True # Set flag to True as all steps completed\n\n# Check the Sample's checkbox field if the position update was successful\nif position_update_successful:\n    print(\"All position updates completed. Checking 'Position Status Updated to Full?' checkbox on Sample.\")\n    seal.update_field_value(\n        field_name=\"Position Status Updated to Full?\",\n        field_value=True\n    )\n    print(\"Checkbox 'Position Status Updated to Full?' updated on Sample.\")"
+    }
+  }
+}
