@@ -19,11 +19,11 @@
     "Formula": {
       "id": "54245e46-4eb0-4406-8629-36a5a4c58c8e",
       "type": "FORMULA",
-      "value": null,
+      "value": "Packing Slip Label Configuration- Width - mm",
       "config": {
         "formulaExpression": "concat(string(lookup( lookup(__self, \"Reference\") , 'TITLE')), \"- Width - \", string(lookup( lookup(__self, \"Reference\") , \"Units\")))"
       },
-      "dataType": null
+      "dataType": "STRING"
     },
     "Reference": {
       "id": "50509e78-b655-42aa-94d2-4aaed7c631f0",
