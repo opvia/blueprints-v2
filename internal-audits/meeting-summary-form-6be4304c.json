@@ -1,0 +1,388 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "6be4304c-30c2-4609-bb5b-8043346fc8e8",
+  "title": "Meeting Summary Form",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Absentees": {
+      "id": "b3b4b6a3-49c0-4c5f-9c64-be18067c84a8",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Time & date": {
+      "id": "2e2c727e-65c8-438f-86c1-e00186255767",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    },
+    "Meeting Title": {
+      "id": "27d383e7-0999-498e-aa9b-9949d46fa683",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "External Attendees": {
+      "id": "de46cba6-7844-4310-a8fa-b865ebf4c270",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Internal Attendees": {
+      "id": "3d9cac55-8656-44f6-b857-671da87f1afa",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Audit Master Document": {
+      "id": "bb993341-47b8-4b09-a659-941e6de4f216",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Audit Checklist"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Time & date of next meeting": {
+      "id": "eec25225-7522-4644-93b5-ff1f60be7690",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "79f76516-f3c4-40f1-bb1c-353a41311b4d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "a1d83528-59a2-4169-b7fe-10638b56b05c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "beeb3566-4532-4f29-93ac-144ae6b3b5cf",
+          "type": "field",
+          "fieldId": "bb993341-47b8-4b09-a659-941e6de4f216",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ac40e518-922b-4ed6-95ad-8131b880d2dc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "147e4330-5da9-4c7b-8d66-0706d05b42fd",
+          "type": "field",
+          "fieldId": "27d383e7-0999-498e-aa9b-9949d46fa683",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d7e58719-606b-42e9-956c-132bfb6d86ec",
+          "type": "field",
+          "fieldId": "2e2c727e-65c8-438f-86c1-e00186255767",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3b719aab-efce-4c40-9359-98f60ad16ba6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4f1860a4-cf05-4617-85bc-1e9f0fdcd561",
+          "type": "field",
+          "fieldId": "3d9cac55-8656-44f6-b857-671da87f1afa",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c70401bc-99ce-4c02-bbc5-84b5a345463d",
+          "type": "field",
+          "fieldId": "de46cba6-7844-4310-a8fa-b865ebf4c270",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "00edd43a-7a94-48ea-86e6-43f2a3f098f8",
+          "type": "field",
+          "fieldId": "b3b4b6a3-49c0-4c5f-9c64-be18067c84a8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "44d43af2-43a5-48d7-80a0-244c01eb8bb5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "312a08b7-1c2c-41af-8fee-d72c0cadae96",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Meeting Objective/Purpose"
+            }
+          ]
+        },
+        {
+          "id": "82879683-bf0a-4a2f-8684-17b46dedd0d7",
+          "type": "p",
+          "children": [
+            {
+              "text": "[Briefly state the objective or purpose of the meeting]"
+            }
+          ]
+        },
+        {
+          "id": "ce79ffbb-c61a-4770-b8c1-b42bb20d19f9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b943b5f4-5538-49a4-b62c-0803014b325a",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Discussion Points/Agenda Items"
+            }
+          ]
+        },
+        {
+          "id": "8355f971-b9f2-4c72-a3ea-cebb541830fe",
+          "type": "p",
+          "children": [
+            {
+              "text": "[List the topics discussed]"
+            }
+          ]
+        },
+        {
+          "id": "bf1d8044-c6d5-4b08-8e45-115832ccdd2b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8bde0dbe-1d15-4664-a751-7935b7b6b92e",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Decisions Made"
+            }
+          ]
+        },
+        {
+          "id": "4e25d3d1-48f4-4558-be5e-b276e5aa1fb9",
+          "type": "p",
+          "children": [
+            {
+              "text": "[Summarise the key decisions made]"
+            }
+          ]
+        },
+        {
+          "id": "e294cb28-5492-4255-a8ab-52d982672ef2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "82accdac-d03c-4f86-bb5a-74c2187b8a76",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Action Items"
+            }
+          ]
+        },
+        {
+          "id": "4c97d19f-f873-4ed2-9da3-5984c417dcf9",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "[Action Item 1: What, Who, Due Date]"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e32c460a-89be-47f1-9fdf-385a9e746686",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "[Action Item 2: What, Who, Due Date]"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "7845a0d4-79f9-4c2c-bed5-483efa15132b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "[Action Item 3: What, Who, Due Date]"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a41cbacd-48a6-4015-8a70-aafcdc0af578",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "655378b1-ed60-4a0b-926d-2a8397f59b0c",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Next Steps"
+            }
+          ]
+        },
+        {
+          "id": "df5d45e1-6f6d-4422-99a2-a23279d39e75",
+          "type": "p",
+          "children": [
+            {
+              "text": "[Outline the next steps]"
+            }
+          ]
+        },
+        {
+          "id": "24bee108-b7a2-4008-8c30-c069225a067e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ce52a542-4b61-4e46-b955-8caaaf0923bc",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Date of Next Meeting (if applicable)"
+            }
+          ]
+        },
+        {
+          "id": "f701e89a-b3f6-43c7-ab4f-3d84212ec1e2",
+          "type": "field",
+          "fieldId": "eec25225-7522-4644-93b5-ff1f60be7690",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5ca7c262-4df3-4ca2-8a5e-0ec444cc7fd5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@27d383e7-0999-498e-aa9b-9949d46fa683 - Meeting Summary @TEMPLATE_INDEX "
+  }
+}
