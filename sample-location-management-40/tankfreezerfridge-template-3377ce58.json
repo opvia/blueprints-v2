@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "3377ce58-13b4-41c4-808a-759a85f8c3dd",
+  "title": "Tank/Freezer/Fridge Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Room": {
+      "id": "fc93cfc8-f111-4b82-8b9f-e736ed7a5500",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "b2472df9-fab8-40a0-90fc-e53109386f9b"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Tank/Freezer/Fridges",
+              "config": "Tank/Freezer/Fridges"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Racks/Shelfs/Drawers": {
+      "id": "b92e8f19-576b-4524-8fd9-82f00d6bfc09",
+      "type": "SEARCH",
+      "value": null,
+      "config": {},
+      "dataType": "SEARCH"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d063628d-e14d-492d-9cf0-56b7bf31d7a7"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "4b1876c6-9465-4f72-ae97-e3c0bdf2374c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "45386b0c-5b5c-4ccc-b2c4-a0fc0dd4414c",
+          "type": "field",
+          "fieldId": "fc93cfc8-f111-4b82-8b9f-e736ed7a5500",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "adb6f13e-9103-400b-935f-ae3ef01c14f8",
+          "type": "field",
+          "fieldId": "b92e8f19-576b-4524-8fd9-82f00d6bfc09",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1edca965-9e50-4f79-843c-408d0765dac0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

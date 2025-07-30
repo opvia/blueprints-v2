@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "61972b7c-c2f3-45fc-82fc-7652cfa4efda",
+  "title": "Box Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Room": {
+      "id": "56b0fd5d-64c3-4de5-9c38-63378bb08082",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Tank/Fridge/Freezer\") , \"Room\")"
+      },
+      "dataType": null
+    },
+    "Samples": {
+      "id": "a25425bd-8f47-437c-84e6-fc517692f1f1",
+      "type": "SEARCH",
+      "value": null,
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Positions": {
+      "id": "3d1386df-82b6-4ebb-bbdb-2770446fa704",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "a7470169-3d2e-4d91-8514-404992e0757d",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Rack/Shelf/Drawer": {
+      "id": "bf7b8ca2-02c2-44e2-a0b0-076c2e799d0b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "69a96201-b95f-4ec0-877a-a4766c70103f"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Boxes",
+              "config": "Boxes"
+            },
+            {
+              "name": "tank/Fridge/Freezer",
+              "config": "tank/Fridge/Freezer"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Tank/Fridge/Freezer": {
+      "id": "ec1daf2c-926d-4885-ae73-8d101889a6ee",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Rack/Shelf/Drawer\") , \"Tank/Fridge/Freezer\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "3a4d7c2b-eea6-4357-b4e2-bb8f6dabc30b"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8bb284ac-d713-49e6-a6d3-b26439f1bfb2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a44a0ea5-fcbd-4273-b1c7-8d03f3f069d2",
+          "type": "field",
+          "fieldId": "bf7b8ca2-02c2-44e2-a0b0-076c2e799d0b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "7bbcc5b8-b97a-481b-92c2-6d115b825759",
+          "type": "field",
+          "fieldId": "a25425bd-8f47-437c-84e6-fc517692f1f1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8082a7da-ac78-41d7-a4e1-9bc081d661c3",
+          "type": "field",
+          "fieldId": "3d1386df-82b6-4ebb-bbdb-2770446fa704",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2b44b14f-689b-4880-a143-ce05e08c9032",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
