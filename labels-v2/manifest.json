@@ -1,0 +1,527 @@
+{
+  "id": "labels-v2",
+  "version": 1,
+  "name": "labels-v2",
+  "description": "",
+  "entities": [
+    {
+      "id": "9fdeaa25-849f-46ce-9174-5891d742f290",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Instructions: Label Blueprints",
+      "icon": "document",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "12aa8a16-56e6-4912-9ece-98537c1f800f",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Instructions Document",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "d144e3b9-cb98-4d6f-87e6-c32b285474e3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Packing Slip Label Configuration",
+      "icon": "cog",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "16d4b7f5-e04c-48e0-9b8a-22c09ac3b887",
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "7ef471a9-089b-42a2-b902-18655f254e2c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Configuration",
+      "icon": "cog",
+      "sourceVersion": "1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "784fbddc-95f2-46ac-a5bb-9f6b27ae27e1",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Preview_Example PS_1752158950.pdf",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "076d0154-3427-4589-98d7-33fbde36ba49",
+      "kind": "TYPE",
+      "contentType": "FILE",
+      "title": "Label",
+      "icon": "paperclip",
+      "sourceVersion": "1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "e7c17fcb-6808-4a67-84c6-67de63074e46",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Packing Slip",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4e63cba1-fc20-4a5e-958f-e48daac1ff29",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Goods-out",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "97152468-e01a-4669-812e-19887faf3785",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Paradromics_Logo.png",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ee28e5ec-f97f-4c55-9298-c6b25a4678c4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "PS Table",
+      "icon": "document",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "cbd438ce-5267-47f1-a80c-650567327352",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Create Label",
+      "icon": "code",
+      "sourceVersion": "1.5",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "bd0844ec-79d4-4a3b-be1d-9168f30a3ff3",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Label Script",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "3b38d361-d27e-41ec-9f19-028c47350564",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Configuration Template",
+      "icon": "cog",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "52ea766b-47b0-4b7f-b448-89decaa7a9d7",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Element",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "d4423e29-ee48-45fc-ba95-c1b9ef646fc3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Table #107186",
+      "icon": "media",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "cc6ca194-4aba-4c06-b15f-6ddb1db639e5",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Table",
+      "icon": "media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "68a6d7e8-f8c8-4d65-be8e-8bd8184a9890",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Image #107187",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "096812a0-a628-4c23-b5cc-48c8179613b8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Image",
+      "icon": "media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "cf74db7f-0510-45c8-807c-b3a6b1221542",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Text #107188",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3c5e7f51-4951-4d67-894c-0813d9b86358",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Plain Text",
+      "icon": "media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "92160da4-1d5e-458f-b216-b12070ac93ae",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #107189",
+      "icon": "media",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "3e5cad5b-c752-47de-bd54-c4549bfcbfb4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field Value",
+      "icon": "media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "c9daf747-73c0-4eb5-891f-530cbec1ac23",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #107192",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b6cc5b4c-d76e-456a-bb3d-e2a0695f374c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Text #107193",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "cc31651f-f2ea-4298-9b04-bdbb657c97ac",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #107194",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e7da0d54-c246-4a41-8c40-40ecbae83b50",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #107195",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "d857f8a0-0a08-44aa-a8fd-659fe6cbc7c2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Example PS",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "16d4b7f5-e04c-48e0-9b8a-22c09ac3b887",
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "c923631a-2cfe-4ec8-b32e-65040a451cb9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "1",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0e18a2ac-1357-40ba-80e5-6b9ba8f3b1eb",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "2",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c697c6ba-a55a-48f0-8455-5ba7799bed2b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "3",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "198d96f0-eb8d-4846-a942-1ce208821939",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Manual_Example PS_1752158309.pdf",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "95fce135-51f2-4646-ac9f-32132629643e",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Example Sample",
+      "icon": "globe",
+      "sourceVersion": "1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "66c4f88e-6d29-4994-a62c-23382a505403",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Labeling Specification",
+      "icon": "application",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "a1f4e74e-bab8-4077-ab6c-7100467480d2",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "PN/FIX",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "bd072d9d-7404-499d-90ea-191ed112af5a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Labeling Specification Demo",
+      "icon": "application",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "1d5e5897-117a-4d68-b21c-ac8b4ae7c8a9",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "label-hazard-icons.png",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "35a300a3-2a38-49c7-af81-b7ffabb45112",
+      "kind": "TYPE",
+      "contentType": "FILE",
+      "title": "File",
+      "icon": "paperclip",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "f0d8954f-8745-4605-ba88-0c1e69ae255c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Packing Slip Label Configuration",
+      "icon": "cog",
+      "sourceVersion": "1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5",
+        "16d4b7f5-e04c-48e0-9b8a-22c09ac3b887"
+      ]
+    },
+    {
+      "id": "f4ff704e-a6fd-489c-9a81-2463560e5da1",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Preview_Example PS_1752667868.pdf",
+      "icon": "paperclip",
+      "sourceVersion": "1",
+      "tagIds": [
+        "16d4b7f5-e04c-48e0-9b8a-22c09ac3b887",
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "ac58a99e-d697-4e89-87b0-575370815682",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Table #108853",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "88a080e1-be61-4d17-bb23-a6f7b876c2d3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Image #108855",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "571d09aa-7807-4d35-9f34-32828d21c952",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Text #108856",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "49f8ab8e-aeda-4128-8a14-4872f3931dbf",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #108857",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "058be395-ddc6-4f2b-b1c2-737523c1e5fd",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #108858",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4d3b1b3b-bf62-47d3-9ee1-e3f985bdde4f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Text #108859",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "601ed620-a3a7-4e9b-be78-c7bfe50f78af",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #108860",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5853849e-5c9f-4120-aa23-9d0bb53fb55e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Field #108861",
+      "icon": "media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "924aad4a-a4e3-4c18-83d2-c3cdf5ae1fe1",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Barcode Code128",
+      "icon": "media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "cfb26a1c-78dc-4964-8d50-e6797d9189bc",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Barcode Code39",
+      "icon": "media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "463d8f1c-764f-4281-b478-222904c861d6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QR Code",
+      "icon": "media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    },
+    {
+      "id": "916c392f-4f4b-4971-8add-53e013363e28",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Border",
+      "icon": "media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "502936d2-30b7-4142-9ccf-d269a99a76b5"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "82d88d57-d585-4589-ba19-5feac1a176b8",
+      "entityId": "784fbddc-95f2-46ac-a5bb-9f6b27ae27e1",
+      "filename": "Preview_Example PS_1752158950.pdf",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "08341f41-3724-4466-8ad1-7caee34bc3a8",
+      "entityId": "97152468-e01a-4669-812e-19887faf3785",
+      "filename": "Paradromics_Logo.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "9063a0eb-96ac-4706-9e46-2a04eff7c305",
+      "entityId": "198d96f0-eb8d-4846-a942-1ce208821939",
+      "filename": "Manual_Example PS_1752158309.pdf",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "edd3921b-0fea-42fb-b3ed-a0f69751f6db",
+      "entityId": "1d5e5897-117a-4d68-b21c-ac8b4ae7c8a9",
+      "filename": "STERILE EO.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "1be7cd14-2439-45fa-b19f-8911323946d7",
+      "entityId": "f4ff704e-a6fd-489c-9a81-2463560e5da1",
+      "filename": "Preview_Example PS_1752667868.pdf",
+      "contentType": "application/pdf"
+    }
+  ],
+  "tags": [
+    {
+      "id": "502936d2-30b7-4142-9ccf-d269a99a76b5",
+      "text": "Label Blueprint",
+      "hexCode": "#61a0e1"
+    },
+    {
+      "id": "16d4b7f5-e04c-48e0-9b8a-22c09ac3b887",
+      "text": "Blueprint Example",
+      "hexCode": "#31ba91"
+    }
+  ]
+}
