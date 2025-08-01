@@ -1,0 +1,92 @@
+{
+  "id": "capa",
+  "version": 1,
+  "name": "CAPA",
+  "description": "",
+  "entities": [
+    {
+      "id": "01ea2495-ce25-47fe-9e23-eba1173d3411",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Template - Raising Stage",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "7e32ee16-a931-4ba7-96c7-9bb9cb93fbf9"
+      ]
+    },
+    {
+      "id": "cf257a1c-fdf2-4091-b8da-bd82c5888347",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "7e32ee16-a931-4ba7-96c7-9bb9cb93fbf9"
+      ]
+    },
+    {
+      "id": "86ee6ad6-ff11-4b62-9527-14c2de3247b7",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Template - Actions Stage",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "7e32ee16-a931-4ba7-96c7-9bb9cb93fbf9"
+      ]
+    },
+    {
+      "id": "154d9038-1a72-4cdd-82e8-da41d67a9d83",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Action Plan",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "7e32ee16-a931-4ba7-96c7-9bb9cb93fbf9"
+      ]
+    },
+    {
+      "id": "d94b5fb2-7941-4179-be17-27478d0f6b5a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Corrective Action Template",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "7e32ee16-a931-4ba7-96c7-9bb9cb93fbf9"
+      ]
+    },
+    {
+      "id": "92aa6311-e042-464d-8eb3-933f951e3d34",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Preventative Action Template",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "7e32ee16-a931-4ba7-96c7-9bb9cb93fbf9"
+      ]
+    },
+    {
+      "id": "10d043f3-1ed4-457b-a36b-e87da064e905",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Template",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "7e32ee16-a931-4ba7-96c7-9bb9cb93fbf9"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "7e32ee16-a931-4ba7-96c7-9bb9cb93fbf9",
+      "text": "CAPA",
+      "hexCode": "#9064e8"
+    }
+  ]
+}

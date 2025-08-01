@@ -1,0 +1,341 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "86ee6ad6-ff11-4b62-9527-14c2de3247b7",
+  "title": "CAPA Template - Actions Stage",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "CAPA": {
+      "id": "76066a1e-cc70-4da3-b4e8-8c9bbf922144",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Corrective Actions": {
+      "id": "0a60374e-2ccf-49ac-9d23-16b481c9875d",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "d94b5fb2-7941-4179-be17-27478d0f6b5a",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Preventative Actions": {
+      "id": "17a4a660-6925-4164-84df-f7eb0dcdbece",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "92aa6311-e042-464d-8eb3-933f951e3d34",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "154d9038-1a72-4cdd-82e8-da41d67a9d83"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "a53ae330-54e6-4804-ba64-0576860d80a9",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Instructions"
+            }
+          ]
+        },
+        {
+          "id": "b0c667fd-8ba9-4abb-bf55-799c46e79db2",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "1 - Action Plan",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "f502e4a9-c264-480a-b430-56d488a11043",
+          "type": "p",
+          "children": [
+            {
+              "text": "Add and detail all planned actions.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "deb0ffdf-a1ae-4faa-bc96-d2287e7cfcd7",
+          "type": "p",
+          "children": [
+            {
+              "text": "Once complete, send for review. Await approval before completing the actions.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "f5bf918f-5f3b-4ddf-b131-5abeabc80aa5",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "2 - Action Completion",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "915e9401-03eb-44f1-ad59-c8f7f7b5669b",
+          "type": "p",
+          "children": [
+            {
+              "text": "Complete the planned actions once they are approved. ",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "2c521811-4ec3-4cdf-9e76-a27a50439b25",
+          "type": "p",
+          "children": [
+            {
+              "text": "Add any evidence of completion and the effectiveness of the actions.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "0a479606-ebe4-4c1e-8cc8-71714b5b6c63",
+          "type": "p",
+          "children": [
+            {
+              "text": "Send for review once all actions are completed.  ",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "9d93fba8-5a0e-4dc4-a231-ca58116d8d1a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b4a9760c-ceb3-4b1c-aa84-139b68c69e12",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Corrective Actions"
+            }
+          ]
+        },
+        {
+          "id": "ec6de984-40be-41ce-a5a7-4e28e0377800",
+          "type": "p",
+          "children": [
+            {
+              "text": "Detail the Corrective Action items required. Create a separate row for each individual action. "
+            }
+          ]
+        },
+        {
+          "id": "678b5e3b-4119-4909-80f9-b76dd0606374",
+          "type": "field",
+          "fieldId": "0a60374e-2ccf-49ac-9d23-16b481c9875d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Corrective Action Plan",
+                "name": "Corrective Action Plan",
+                "isHidden": false
+              },
+              {
+                "id": "Implementation plan",
+                "name": "Implementation plan",
+                "isHidden": false
+              },
+              {
+                "id": "Responsible person",
+                "name": "Responsible person",
+                "isHidden": false
+              },
+              {
+                "id": "Due Date",
+                "name": "Due Date",
+                "isHidden": false
+              },
+              {
+                "id": "Attachments",
+                "name": "Attachments",
+                "isHidden": false
+              },
+              {
+                "id": "Status",
+                "name": "Status",
+                "isHidden": false
+              },
+              {
+                "id": "Date Completed",
+                "name": "Date Completed",
+                "isHidden": false
+              },
+              {
+                "id": "Evidence of Completion",
+                "name": "Evidence of Completion",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "b8d2e82d-37f9-44ef-8f9d-41abee6cd71e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9c05c2fe-522f-48c2-bc78-3f24b24b0fe5",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Preventative Actions"
+            }
+          ]
+        },
+        {
+          "id": "1fbcc137-41eb-4563-9c8d-4152541c1c3e",
+          "type": "p",
+          "children": [
+            {
+              "text": "Detail the Preventative Action items required. Create a separate row for each individual action. "
+            }
+          ]
+        },
+        {
+          "id": "02793daa-7692-462f-bddb-56713ace111f",
+          "type": "field",
+          "fieldId": "17a4a660-6925-4164-84df-f7eb0dcdbece",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Preventative Action Plan",
+                "name": "Preventative Action Plan",
+                "isHidden": false
+              },
+              {
+                "id": "Implementation plan",
+                "name": "Implementation plan",
+                "isHidden": false
+              },
+              {
+                "id": "Responsible Person",
+                "name": "Responsible Person",
+                "isHidden": false
+              },
+              {
+                "id": "Due Date",
+                "name": "Due Date",
+                "isHidden": false
+              },
+              {
+                "id": "Attachments",
+                "name": "Attachments",
+                "isHidden": false
+              },
+              {
+                "id": "Status",
+                "name": "Status",
+                "isHidden": false
+              },
+              {
+                "id": "Date Completed",
+                "name": "Date Completed",
+                "isHidden": false
+              },
+              {
+                "id": "Evidence of Completion",
+                "name": "Evidence of Completion",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "da1e5e78-17e9-4e29-bd6b-087ee78e9dd0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "58a94576-9c97-4ef8-b303-ef398d7a37a8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Actions"
+  }
+}
