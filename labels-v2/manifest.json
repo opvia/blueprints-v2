@@ -10,7 +10,7 @@
       "contentType": "PAGE_CONTENT",
       "title": "Instructions: Label Blueprints",
       "icon": "document",
-      "sourceVersion": "1",
+      "sourceVersion": "1.1",
       "tagIds": [
         "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
@@ -27,6 +27,18 @@
       ]
     },
     {
+      "id": "7cc4601d-dc8c-4708-bf12-f6134a9ffb1f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Packing Slip Label Configuration",
+      "icon": "cog",
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
       "id": "ff38473c-562c-4445-b873-f743c9eebfcc",
       "kind": "TYPE",
       "contentType": "PAGE_CONTENT",
@@ -35,6 +47,18 @@
       "sourceVersion": "1",
       "tagIds": [
         "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
+      "id": "c5e25338-b28a-4590-83cd-a06c967d40f6",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Preview_Example PS_1754333729.pdf",
+      "icon": "paperclip",
+      "sourceVersion": "1",
+      "tagIds": [
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee",
+        "43ec2369-f040-4a32-90e0-69113344ba90"
       ]
     },
     {
@@ -49,13 +73,25 @@
       ]
     },
     {
-      "id": "c01358fe-40a0-4c7c-8725-e1d0a55d4aab",
+      "id": "f927d347-59e0-4bd4-a3ec-72b380ae6365",
       "kind": "TEMPLATE",
       "contentType": "FILE",
-      "title": "Label template",
+      "title": "Default Label Template",
       "icon": "paperclip",
       "sourceVersion": "1",
       "tagIds": [
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
+      "id": "a090dc5a-2a5f-430c-9b4b-bb7402e857b6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Packing Slip",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
         "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
@@ -68,6 +104,17 @@
       "sourceVersion": "1.1",
       "tagIds": [
         "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
+      "id": "c01358fe-40a0-4c7c-8725-e1d0a55d4aab",
+      "kind": "TEMPLATE",
+      "contentType": "FILE",
+      "title": "Label template",
+      "icon": "paperclip",
+      "sourceVersion": "1",
+      "tagIds": [
         "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
@@ -195,113 +242,6 @@
       ]
     },
     {
-      "id": "a090dc5a-2a5f-430c-9b4b-bb7402e857b6",
-      "kind": "TEMPLATE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Packing Slip",
-      "icon": "document",
-      "sourceVersion": "1",
-      "tagIds": [
-        "43ec2369-f040-4a32-90e0-69113344ba90",
-        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
-      ]
-    },
-    {
-      "id": "f3c73034-051f-41b9-a008-43ac0ee1f588",
-      "kind": "INSTANCE",
-      "contentType": "FILE",
-      "title": "Logo.png",
-      "icon": "paperclip",
-      "sourceVersion": "1",
-      "tagIds": [
-        "43ec2369-f040-4a32-90e0-69113344ba90",
-        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
-      ]
-    },
-    {
-      "id": "db1835df-b1e9-473e-b852-61f59f83a9c9",
-      "kind": "INSTANCE",
-      "contentType": "PAGE_CONTENT",
-      "title": "1",
-      "icon": "document",
-      "sourceVersion": "1",
-      "tagIds": [
-        "43ec2369-f040-4a32-90e0-69113344ba90",
-        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
-      ]
-    },
-    {
-      "id": "c42e5da4-dad5-4b6e-b046-8e13a18def6c",
-      "kind": "INSTANCE",
-      "contentType": "PAGE_CONTENT",
-      "title": "2",
-      "icon": "document",
-      "sourceVersion": "1",
-      "tagIds": [
-        "43ec2369-f040-4a32-90e0-69113344ba90",
-        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
-      ]
-    },
-    {
-      "id": "e363b401-6769-4411-b101-24ac2807fa98",
-      "kind": "INSTANCE",
-      "contentType": "PAGE_CONTENT",
-      "title": "3",
-      "icon": "document",
-      "sourceVersion": "1",
-      "tagIds": [
-        "43ec2369-f040-4a32-90e0-69113344ba90",
-        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
-      ]
-    },
-    {
-      "id": "f697b0a9-5ce7-448c-8204-9776f5b289b0",
-      "kind": "INSTANCE",
-      "contentType": "FILE",
-      "title": "Manual_Example PS_1754333702.pdf",
-      "icon": "paperclip",
-      "sourceVersion": "1",
-      "tagIds": [
-        "43ec2369-f040-4a32-90e0-69113344ba90",
-        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
-      ]
-    },
-    {
-      "id": "f927d347-59e0-4bd4-a3ec-72b380ae6365",
-      "kind": "TEMPLATE",
-      "contentType": "FILE",
-      "title": "Default Label Template",
-      "icon": "paperclip",
-      "sourceVersion": "1",
-      "tagIds": [
-        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
-      ]
-    },
-    {
-      "id": "7cc4601d-dc8c-4708-bf12-f6134a9ffb1f",
-      "kind": "INSTANCE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Packing Slip Label Configuration",
-      "icon": "cog",
-      "sourceVersion": "1",
-      "tagIds": [
-        "43ec2369-f040-4a32-90e0-69113344ba90",
-        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
-      ]
-    },
-    {
-      "id": "c5e25338-b28a-4590-83cd-a06c967d40f6",
-      "kind": "INSTANCE",
-      "contentType": "FILE",
-      "title": "Preview_Example PS_1754333729.pdf",
-      "icon": "paperclip",
-      "sourceVersion": "1",
-      "tagIds": [
-        "3bc049fc-a9dd-4853-acca-57cb5f8702ee",
-        "43ec2369-f040-4a32-90e0-69113344ba90"
-      ]
-    },
-    {
       "id": "7b0d3675-a23d-4a78-bed3-514274b7bbb8",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
@@ -421,6 +361,66 @@
       ]
     },
     {
+      "id": "f3c73034-051f-41b9-a008-43ac0ee1f588",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Logo.png",
+      "icon": "paperclip",
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
+      "id": "db1835df-b1e9-473e-b852-61f59f83a9c9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "1",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
+      "id": "c42e5da4-dad5-4b6e-b046-8e13a18def6c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "2",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
+      "id": "e363b401-6769-4411-b101-24ac2807fa98",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "3",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
+      "id": "f697b0a9-5ce7-448c-8204-9776f5b289b0",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Manual_Example PS_1754333702.pdf",
+      "icon": "paperclip",
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
       "id": "8799a8ff-3edc-4334-9ee9-f3a4a3ed5a58",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
@@ -456,6 +456,12 @@
   ],
   "assets": [
     {
+      "id": "f1dbaaa8-3e44-4c06-8e37-a2231e48e1f2",
+      "entityId": "c5e25338-b28a-4590-83cd-a06c967d40f6",
+      "filename": "Preview_Example PS_1754333729.pdf",
+      "contentType": "application/pdf"
+    },
+    {
       "id": "d3b15233-6529-4511-9cb6-8b7a784a77b5",
       "entityId": "f3c73034-051f-41b9-a008-43ac0ee1f588",
       "filename": "Pasted Graphic 2.png",
@@ -465,12 +471,6 @@
       "id": "1437c933-3929-4183-a567-4f4df480331c",
       "entityId": "f697b0a9-5ce7-448c-8204-9776f5b289b0",
       "filename": "Manual_Example PS_1754333702.pdf",
-      "contentType": "application/pdf"
-    },
-    {
-      "id": "f1dbaaa8-3e44-4c06-8e37-a2231e48e1f2",
-      "entityId": "c5e25338-b28a-4590-83cd-a06c967d40f6",
-      "filename": "Preview_Example PS_1754333729.pdf",
       "contentType": "application/pdf"
     }
   ],
