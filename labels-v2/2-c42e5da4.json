@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c42e5da4-dad5-4b6e-b046-8e13a18def6c",
+  "title": "2",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "8108d60a-926e-4432-b27e-f7fedbd0723c",
+      "version": "1"
+    },
+    "submissionField": {
+      "fieldId": "70a6c0e8-7b97-49fa-ab3c-b175e4eba931",
+      "fieldName": "Submission",
+      "parentEntityId": "704f0c62-bcdd-4415-9555-aa44e969f22d"
+    }
+  },
+  "fields": {
+    "PART/REF": {
+      "id": "d7defbbb-e169-477e-9781-f58ff8d4a88c",
+      "type": "STRING",
+      "value": "PN-10125",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Quantity": {
+      "id": "f8e6b50a-37f3-49eb-87b6-c1fbcf193602",
+      "type": "NUMBER",
+      "value": 1,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "LOT/SERIAL": {
+      "id": "23228b7a-e640-45be-828e-49935fc030ab",
+      "type": "STRING",
+      "value": "CR25-01-25-005-023",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Description": {
+      "id": "49303865-7778-46d3-9d9d-37ef96be2a30",
+      "type": "STRING",
+      "value": "IT Electromagnetic Assembly",
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "9532dd8f-1bbf-48df-8812-f6bb9325a5a0"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "88abcab4-cb2f-4adb-8b37-31cc3745ea6b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

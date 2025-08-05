@@ -5,147 +5,141 @@
   "description": "",
   "entities": [
     {
-      "id": "f2348585-3a8e-4ee0-a1a0-2a7ece621643",
+      "id": "45275101-5f8f-4797-bf70-8f60de91bcc5",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Instructions: Label Blueprints",
       "icon": "document",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "a77e7074-5f52-47fc-8043-76beec4738a3",
+      "id": "48264902-a90c-40a2-be85-72c683394489",
       "kind": "TYPE",
       "contentType": "PAGE_CONTENT",
       "title": "Label Instructions Document",
       "icon": "document",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "7a334a66-61de-4e42-9744-ada96e8709f6",
-      "kind": "INSTANCE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Packing Slip Label Configuration",
-      "icon": "cog",
-      "sourceVersion": "1",
-      "tagIds": [
-        "c85f0b7f-6554-4e1b-8850-8a3eb36d1e15",
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
-      ]
-    },
-    {
-      "id": "59f38ded-9a8a-4d6a-9e8a-3ad5c175f424",
+      "id": "ff38473c-562c-4445-b873-f743c9eebfcc",
       "kind": "TYPE",
       "contentType": "PAGE_CONTENT",
       "title": "Label Configuration",
       "icon": "cog",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "a0f39ef8-2ac5-4f3d-ae3f-7147b2b11784",
-      "kind": "INSTANCE",
-      "contentType": "FILE",
-      "title": "Preview_Example PS_1752158950.pdf",
-      "icon": "paperclip",
-      "sourceVersion": "1"
-    },
-    {
-      "id": "af6b6671-7440-4486-9459-7b7ebbe9c564",
+      "id": "ea49bac3-d8cf-48ed-a39b-f547474b944f",
       "kind": "TYPE",
       "contentType": "FILE",
       "title": "Label",
       "icon": "paperclip",
-      "sourceVersion": "1.1",
+      "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "fefd1d79-bd4f-4032-8fde-feaa43f646ac",
+      "id": "c01358fe-40a0-4c7c-8725-e1d0a55d4aab",
       "kind": "TEMPLATE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Packing Slip",
-      "icon": "document",
-      "sourceVersion": "1.1"
+      "contentType": "FILE",
+      "title": "Label template",
+      "icon": "paperclip",
+      "sourceVersion": "1",
+      "tagIds": [
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "f4f33a45-1621-4bf3-b120-018a15a15a53",
+      "id": "9532dd8f-1bbf-48df-8812-f6bb9325a5a0",
       "kind": "TYPE",
       "contentType": "PAGE_CONTENT",
-      "title": "Goods-out",
+      "title": "Label Example Goods-out",
       "icon": "document",
-      "sourceVersion": "1"
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "b69d424e-b5ce-4ccb-bc1c-4a70522f53a9",
-      "kind": "INSTANCE",
-      "contentType": "FILE",
-      "title": "Paradromics_Logo.png",
-      "icon": "paperclip",
-      "sourceVersion": "1"
-    },
-    {
-      "id": "a5929da8-15fc-429f-a659-0124f20064e5",
+      "id": "8108d60a-926e-4432-b27e-f7fedbd0723c",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "PS Table",
       "icon": "document",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "115091dc-ce1c-4579-b979-a8e4b22f02a9",
+      "id": "0085dba3-34b9-4662-a8c1-30711e2396d4",
       "kind": "INSTANCE",
       "contentType": "SCRIPT_CODE",
       "title": "Create Label",
       "icon": "code",
-      "sourceVersion": "1.2",
+      "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "77ca3f71-edc8-478b-8841-dad011f2a1c8",
+      "id": "92062da7-6132-4a19-99f2-f3751bd67aa7",
       "kind": "TYPE",
       "contentType": "SCRIPT_CODE",
       "title": "Label Script",
       "icon": "code",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "4ec4264f-2428-4c02-8772-5b8a652e6b22",
+      "id": "e014cd9a-85cd-43b8-ad30-64100f1c8f28",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Label Configuration Template",
       "icon": "cog",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "31afa13f-f513-42a9-a5c4-3defa63c3909",
+      "id": "25fff4ec-4850-445f-9e3d-e2e48f5d14b7",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Label Script template",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
+      "id": "6515a273-5ce0-4986-95c7-5ac6507d883f",
       "kind": "TYPE",
       "contentType": "PAGE_CONTENT",
       "title": "Label Element",
       "icon": "media",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "5aadffdb-cfc8-40d0-b2fc-801ff73540d9",
+      "id": "9f597069-4eb8-45e5-96c9-08b5a2d0f9e1",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Table #128",
@@ -153,18 +147,18 @@
       "sourceVersion": "1"
     },
     {
-      "id": "4c96b4a2-eb45-4d66-8223-5e2253149200",
+      "id": "35f3bff1-981b-4d9b-9770-66cda6374d3e",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Table",
       "icon": "media",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "9284201f-2862-4ff1-a4c2-8bbad292e691",
+      "id": "9c1217c9-b8c8-49f0-9ed5-deb8fb251a0d",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Image #129",
@@ -172,18 +166,18 @@
       "sourceVersion": "1"
     },
     {
-      "id": "7f5aa34d-891d-470e-825a-8f07ebabef17",
+      "id": "1f6b3ccc-08e8-432f-8f86-9f914b04e38a",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Image",
       "icon": "media",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "9600e2ec-4e32-471b-924f-57a23ab5e584",
+      "id": "e21f4f04-9df5-42b3-83eb-5b9c4e9de13f",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Text #130",
@@ -191,18 +185,18 @@
       "sourceVersion": "1"
     },
     {
-      "id": "4cc18abf-7495-4888-8c63-57b5cd2a53ed",
+      "id": "cd14e95f-f125-4eb8-9c3e-3a696a85100b",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Plain Text",
       "icon": "media",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "0bcb243d-0534-4be3-bc47-507f8f15d7d3",
+      "id": "e26be4d9-e00c-4651-a618-4ade9ec26c73",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Field #131",
@@ -210,18 +204,18 @@
       "sourceVersion": "1"
     },
     {
-      "id": "d83c60da-2a71-4109-b52b-35a875772fa1",
+      "id": "fee8e5c2-efdb-4904-8be5-e2a563dbc704",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Field Value",
       "icon": "media",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "5505849c-1ba1-422a-98b3-576b191b5262",
+      "id": "35ac1f59-aa2d-4f91-a698-af2feeaf09ed",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Field #134",
@@ -229,7 +223,7 @@
       "sourceVersion": "1"
     },
     {
-      "id": "89dadcba-ce26-411c-9b76-e1b1ed6c5761",
+      "id": "5e05c626-be45-447d-9e3e-7c7da108687b",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Text #135",
@@ -237,7 +231,7 @@
       "sourceVersion": "1"
     },
     {
-      "id": "ea20a0a5-2df4-481f-96cd-95cd176ee40c",
+      "id": "d681d7f0-349e-4b65-b3dd-97256d45e48a",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Field #136",
@@ -245,7 +239,7 @@
       "sourceVersion": "1"
     },
     {
-      "id": "9262ed63-b3a3-440a-af7f-96458dd1033d",
+      "id": "c4ab6c64-e618-4613-9243-a1ce97e29f12",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Field #137",
@@ -253,259 +247,293 @@
       "sourceVersion": "1"
     },
     {
-      "id": "c3c7e045-b5b4-480d-b82e-894b648539d4",
+      "id": "704f0c62-bcdd-4415-9555-aa44e969f22d",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Example PS",
       "icon": "document",
-      "sourceVersion": "1.3",
+      "sourceVersion": "1",
       "tagIds": [
-        "c85f0b7f-6554-4e1b-8850-8a3eb36d1e15",
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee",
+        "43ec2369-f040-4a32-90e0-69113344ba90"
       ]
     },
     {
-      "id": "6e429daa-586e-4851-89fa-827f3ff8960d",
-      "kind": "INSTANCE",
-      "contentType": "PAGE_CONTENT",
-      "title": "1",
-      "icon": "document",
-      "sourceVersion": "1"
-    },
-    {
-      "id": "d2f93031-2d4a-48b0-9efa-f77a87144c53",
+      "id": "f3c73034-051f-41b9-a008-43ac0ee1f588",
       "kind": "INSTANCE",
       "contentType": "FILE",
       "title": "Logo.png",
       "icon": "paperclip",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "bbe3c471-25f8-4f4a-856b-8dfc076dd2fe",
+      "id": "db1835df-b1e9-473e-b852-61f59f83a9c9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "1",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
+    },
+    {
+      "id": "c42e5da4-dad5-4b6e-b046-8e13a18def6c",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "2",
       "icon": "document",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "4d010394-185e-461f-a434-602ca86a7b27",
+      "id": "e363b401-6769-4411-b101-24ac2807fa98",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "3",
       "icon": "document",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "49068da6-a410-488b-871b-61fbf6e04df6",
+      "id": "f697b0a9-5ce7-448c-8204-9776f5b289b0",
       "kind": "INSTANCE",
       "contentType": "FILE",
       "title": "Manual_Example PS_1754333702.pdf",
       "icon": "paperclip",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "c8c60cf2-7153-4fdb-aa55-06708527f2ad",
+      "id": "f927d347-59e0-4bd4-a3ec-72b380ae6365",
       "kind": "TEMPLATE",
       "contentType": "FILE",
       "title": "Default Label Template",
       "icon": "paperclip",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "bd63295e-d900-4711-92a3-4c0ae7f2a107",
-      "kind": "INSTANCE",
-      "contentType": "FILE",
-      "title": "Manual_Example PS_1752158309.pdf",
-      "icon": "paperclip",
-      "sourceVersion": "1"
-    },
-    {
-      "id": "ff312f76-9c13-4bc5-ab47-066616486548",
+      "id": "7cc4601d-dc8c-4708-bf12-f6134a9ffb1f",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Packing Slip Label Configuration",
       "icon": "cog",
-      "sourceVersion": "1.2",
+      "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541",
-        "c85f0b7f-6554-4e1b-8850-8a3eb36d1e15"
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "fcd61c5f-150e-4720-9cf8-e2fd5d5de692",
+      "id": "c5e25338-b28a-4590-83cd-a06c967d40f6",
       "kind": "INSTANCE",
       "contentType": "FILE",
       "title": "Preview_Example PS_1754333729.pdf",
       "icon": "paperclip",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee",
+        "43ec2369-f040-4a32-90e0-69113344ba90"
+      ]
     },
     {
-      "id": "65e81687-877e-4b85-8016-232e9ca977b0",
+      "id": "7b0d3675-a23d-4a78-bed3-514274b7bbb8",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Table #141",
       "icon": "media",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "373f26a7-0614-453e-8201-c4add1772fd1",
+      "id": "ebee23bd-3c93-42ac-a0ea-bddbacabcddf",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Image #142",
       "icon": "media",
-      "sourceVersion": "1.1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "55906319-1eba-4e4f-b054-8c04f49956fd",
+      "id": "3df63dd3-1d1b-45ba-97e1-dabc24215314",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Text #143",
       "icon": "media",
-      "sourceVersion": "1.1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "d01aaab6-5bac-464f-9877-3a1192cf6ac8",
+      "id": "3d8bb3a2-d873-4af7-a027-7af988de4feb",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Field #144",
       "icon": "media",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "53365dc0-1324-4b1c-8a04-d8447fff1db6",
+      "id": "8199c6de-15df-4e3b-88e7-20edeb549c3a",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Field #145",
       "icon": "media",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "7958eea5-d50a-450b-a1a2-3af273ec1053",
+      "id": "67a1354f-d24e-4882-ae0f-26db233ab0d0",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Text #146",
       "icon": "media",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "adee2e15-6b7a-4d9a-9a7c-6bd6974178b7",
+      "id": "990b6ef6-b7c8-4afc-994b-8b98030ec5ff",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Field #147",
       "icon": "media",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "d5e1f13e-15d9-4bfa-a906-dca0362cb9d2",
+      "id": "4e0ee2f9-54d4-4224-b33f-8af32584b9bc",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Field #148",
       "icon": "media",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "92f8bbc4-0324-4bce-9c0d-c50a4c898e35",
+      "id": "69cbf1c7-2943-45b2-882a-9f64b611a01f",
       "kind": "INSTANCE",
       "contentType": "PAGE_CONTENT",
       "title": "Barcode Code128 #157",
       "icon": "media",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "43ec2369-f040-4a32-90e0-69113344ba90",
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
+      ]
     },
     {
-      "id": "12b99045-05dc-4e71-80b1-169860bd0a85",
+      "id": "45a83555-c7d0-4d37-8fbe-6a440c7ba2f3",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Barcode Code128",
       "icon": "media",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "4fea8529-c673-4543-9e34-4f3492bd302e",
+      "id": "8799a8ff-3edc-4334-9ee9-f3a4a3ed5a58",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Barcode Code39",
       "icon": "media",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "6ccc39f9-d81a-44f3-ba6c-9b1783a5a48f",
+      "id": "ff64d4ce-9f1d-4f62-90e9-4541def35379",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "QR Code",
       "icon": "media",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     },
     {
-      "id": "daa11171-1e46-4a68-977a-9c2e98c7bb94",
+      "id": "94b476a8-32b8-4317-a0e3-5c17ffc673e7",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Border",
       "icon": "media",
       "sourceVersion": "1",
       "tagIds": [
-        "501aa1a3-8776-41ea-aeb5-287ea9deb541"
+        "3bc049fc-a9dd-4853-acca-57cb5f8702ee"
       ]
     }
   ],
   "assets": [
     {
-      "id": "63151b08-f16c-4df0-be9a-0733d41e6d76",
-      "entityId": "a0f39ef8-2ac5-4f3d-ae3f-7147b2b11784",
-      "filename": "Preview_Example PS_1752158950.pdf",
-      "contentType": "application/pdf"
-    },
-    {
-      "id": "a7e985b2-8e02-499d-8301-03219cef3612",
-      "entityId": "b69d424e-b5ce-4ccb-bc1c-4a70522f53a9",
-      "filename": "Paradromics_Logo.png",
-      "contentType": "image/png"
-    },
-    {
-      "id": "5e3cc555-b804-4633-b015-b6dbcfa4d844",
-      "entityId": "d2f93031-2d4a-48b0-9efa-f77a87144c53",
+      "id": "d3b15233-6529-4511-9cb6-8b7a784a77b5",
+      "entityId": "f3c73034-051f-41b9-a008-43ac0ee1f588",
       "filename": "Pasted Graphic 2.png",
       "contentType": "image/png"
     },
     {
-      "id": "12f3fef4-636e-4bb3-9a03-d22e89b83121",
-      "entityId": "49068da6-a410-488b-871b-61fbf6e04df6",
+      "id": "1437c933-3929-4183-a567-4f4df480331c",
+      "entityId": "f697b0a9-5ce7-448c-8204-9776f5b289b0",
       "filename": "Manual_Example PS_1754333702.pdf",
       "contentType": "application/pdf"
     },
     {
-      "id": "00d3dadb-2502-422b-b454-1b4b00f3a58f",
-      "entityId": "bd63295e-d900-4711-92a3-4c0ae7f2a107",
-      "filename": "Manual_Example PS_1752158309.pdf",
-      "contentType": "application/pdf"
-    },
-    {
-      "id": "3af75516-72d4-485a-a1d7-492bcda4cdc6",
-      "entityId": "fcd61c5f-150e-4720-9cf8-e2fd5d5de692",
+      "id": "f1dbaaa8-3e44-4c06-8e37-a2231e48e1f2",
+      "entityId": "c5e25338-b28a-4590-83cd-a06c967d40f6",
       "filename": "Preview_Example PS_1754333729.pdf",
       "contentType": "application/pdf"
     }
   ],
   "tags": [
     {
-      "id": "501aa1a3-8776-41ea-aeb5-287ea9deb541",
+      "id": "3bc049fc-a9dd-4853-acca-57cb5f8702ee",
       "text": "Label Blueprint",
       "hexCode": "#61a0e1"
     },
     {
-      "id": "c85f0b7f-6554-4e1b-8850-8a3eb36d1e15",
+      "id": "43ec2369-f040-4a32-90e0-69113344ba90",
       "text": "Blueprint Example",
       "hexCode": "#31ba91"
     }
