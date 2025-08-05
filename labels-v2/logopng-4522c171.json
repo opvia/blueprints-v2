@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4522c171-d223-4427-9715-c2a60c6249bf",
+  "title": "Logo.png",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "7b47fb1e-63ef-41dd-91c6-a36b3c13e0a2",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Label Source": {
+      "id": "336c3b18-0f9e-44a4-9a45-fd18b73b4018",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "8cc71451-761f-4097-9099-3ec7f86bb604"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": "e722d9f3-184e-48f9-b044-7352f0dec439"
+    }
+  }
+}
