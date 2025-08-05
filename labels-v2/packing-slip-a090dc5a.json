@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a090dc5a-2a5f-430c-9b4b-bb7402e857b6",
+  "title": "Packing Slip",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Date": {
+      "id": "5941d10f-d52e-4186-9e07-7f129a933b4a",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "For:": {
+      "id": "b7cc1f35-59b7-43d4-8ef1-9e82ff9b0a4a",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Image": {
+      "id": "2403dec1-9751-4cb1-9a60-071d1b161453",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "faa3629d-1320-4fff-b832-c8754b73a91e",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "displayMode": "table",
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Notes": {
+      "id": "b278c70e-d8a4-4b16-8e93-ffc7ec2c39a3",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Table": {
+      "id": "6a3fbac7-9b56-4f1f-82f1-1e18474052ef",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "8108d60a-926e-4432-b27e-f7fedbd0723c",
+          "placeholderValue": "activeVersion"
+        },
+        "placeholderInstances": [
+          {
+            "LOT/SERIAL": []
+          }
+        ]
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Labels": {
+      "id": "d5dd1212-e907-4ee3-8767-fd9b1e5a93d1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Ship to:": {
+      "id": "ac2819e6-1305-4939-87d8-0b7d18d0e322",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Create Labels": {
+      "id": "780e15a4-97c8-43cb-b57c-c07c9180a01a",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "0085dba3-34b9-4662-a8c1-30711e2396d4",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Run script"
+        }
+      },
+      "dataType": "SCRIPT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9532dd8f-1bbf-48df-8812-f6bb9325a5a0"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "575fcf22-e6d8-4c50-84ce-2d2c84e432dc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d7269205-3a14-4aa1-bd86-6e3990495634",
+          "type": "field",
+          "fieldId": "5941d10f-d52e-4186-9e07-7f129a933b4a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fe014bf4-5eca-4ea7-96c1-2195a47614b8",
+          "type": "field",
+          "fieldId": "ac2819e6-1305-4939-87d8-0b7d18d0e322",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2adf948e-6e24-4f07-a275-5a5ca6658c6f",
+          "type": "field",
+          "fieldId": "b7cc1f35-59b7-43d4-8ef1-9e82ff9b0a4a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "34b70375-c8fc-4bfd-bd7a-27fdde43eae3",
+          "type": "field",
+          "fieldId": "b278c70e-d8a4-4b16-8e93-ffc7ec2c39a3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e545b65f-5350-4b90-928c-c3af4c62733e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a264f306-28fc-4847-beef-f51120bdc01c",
+          "type": "field",
+          "fieldId": "6a3fbac7-9b56-4f1f-82f1-1e18474052ef",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "PART/REF",
+                "name": "PART/REF",
+                "isHidden": false
+              },
+              {
+                "id": "Description",
+                "name": "Description",
+                "isHidden": false
+              },
+              {
+                "id": "LOT/SERIAL",
+                "name": "LOT/SERIAL",
+                "isHidden": false
+              },
+              {
+                "id": "LOT/SERIAL Txt",
+                "name": "LOT/SERIAL Txt",
+                "isHidden": true
+              },
+              {
+                "id": "Quantity",
+                "name": "Quantity",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "29a927e9-8004-4379-b299-b5d304a971d2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "208ddaf4-9d55-4f24-8d68-24ca247d8992",
+          "type": "field",
+          "fieldId": "780e15a4-97c8-43cb-b57c-c07c9180a01a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "71d3d593-d7f5-45f9-88cf-c1c663cc331a",
+          "type": "field",
+          "fieldId": "d5dd1212-e907-4ee3-8767-fd9b1e5a93d1",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "24ac3911-ec39-40ca-8f2c-34b73f1e3337",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
