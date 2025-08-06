@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "460b4867-870e-4fe4-9020-2b54c9a79447",
+  "title": "OOS - Material",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "OOS": {
+      "id": "f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Attach supporting documents": {
+      "id": "6f825b26-acdf-4852-a373-5d817c9d3047",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fc7230b2-ddfe-425d-8210-2f5d66ad3411"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "7321d0a9-6dd8-4c1a-b238-822ebf5e9835",
+          "type": "field",
+          "fieldId": "f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f6781b63-a4bc-46b5-84bb-00b27830d980",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c41b9625-faaf-4091-a288-7433d1232b68",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Was the sample integrity maintained (e.g. no leaks, no damage to container, stored at correct temperature)?"
+            }
+          ]
+        },
+        {
+          "id": "346eba09-b4c2-47d9-a08a-2dfd7bbd25a4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a56b20e4-70af-4e38-9030-67ea56d660d1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2a4e4b18-756f-4689-b66b-ffc9e699d8d9",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Do sample label details reflect the sample under test and are accurate and reflect the expected material?"
+            }
+          ]
+        },
+        {
+          "id": "ec46f1c9-2e37-4be5-b705-0ccc3d3b00b5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1249d1ec-1547-4c80-b79d-0dc9ad878074",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "18c6bc0a-4bf6-4c0e-ad18-2b51d61fbe1c",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Confirm the sample visual integrity is intact:"
+            }
+          ]
+        },
+        {
+          "id": "5554c067-36c2-4255-953c-50cfcee37c6a",
+          "type": "h3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "574dd158-9aa9-4ba7-8d34-194759372ccd",
+          "type": "h3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "17142e67-5da0-4019-af9d-9b4b86e4c831",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Confirm if the correct supplementary reagents were used for the testing, and if they were used within defined expiry dates:"
+            }
+          ]
+        },
+        {
+          "id": "8edee1f4-812b-47f5-9335-305e45f5963b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "40b0f634-fbfb-4f91-b9dc-af8382ee1e1e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2dd168b4-2575-4e14-b8f3-9b719eb4e312",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Record any other pertinent information:"
+            }
+          ]
+        },
+        {
+          "id": "63939dce-c02e-45e7-bba2-52f6cf8a296a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e9f0bb23-8708-46a3-abb5-09d3fd252075",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4b65e486-d509-4648-bc94-05e244e77715",
+          "type": "field",
+          "fieldId": "6f825b26-acdf-4852-a373-5d817c9d3047",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "bd7a0d75-5363-47c1-8f4e-306bb5b4f4fc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6 - Material"
+  }
+}

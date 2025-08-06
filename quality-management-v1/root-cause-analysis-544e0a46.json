@@ -1,0 +1,478 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "544e0a46-904f-49c7-b9ee-f57db6a3ab8f",
+  "title": "Root Cause Analysis",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "SOP": {
+      "id": "d69f5774-1f97-4b27-a19c-3019ddee3447",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "b33e4025-3599-44e9-9a56-5758d5ce7c74",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "QMS SOP"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Date": {
+      "id": "282446ca-66a3-49de-aef8-4ace08704b5c",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Issue": {
+      "id": "6ddf8848-16d7-486f-9122-e4ed67cb8dea",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"CREATED_FROM\") , \"Issue Title\")"
+      },
+      "dataType": null
+    },
+    "Category": {
+      "id": "1e100a10-79bb-4369-abba-a72c4ca9a6b5",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Materials",
+          "Man",
+          "Machine",
+          "Environment",
+          "Management",
+          "Methods",
+          "Management System",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Analysis By": {
+      "id": "1ca4b60e-1926-43a8-b214-84ffca2afa86",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Attachments": {
+      "id": "51fbe72c-bee9-41b5-b976-2ace9dd131aa",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Corrective Action": {
+      "id": "75346fcc-b8da-419e-9868-87d79a0987c4",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "daaf5031-d599-4da5-9d2f-7d83bc38391b"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "SOP",
+              "config": "SOP"
+            },
+            {
+              "name": "Issue",
+              "config": "Issue"
+            },
+            {
+              "name": "Source",
+              "config": "Source"
+            },
+            {
+              "name": "Attachments",
+              "config": "Attachments"
+            },
+            {
+              "name": "Source type",
+              "config": "Source type"
+            },
+            {
+              "name": "CA completed",
+              "config": "CA completed"
+            },
+            {
+              "name": "Completed By",
+              "config": "Completed By"
+            },
+            {
+              "name": "Confirm CA Closure",
+              "config": "Confirm CA Closure"
+            },
+            {
+              "name": "Date of Completion",
+              "config": "Date of Completion"
+            },
+            {
+              "name": "Responsible Person",
+              "config": "Responsible Person"
+            },
+            {
+              "name": "Effectiveness Check",
+              "config": "Effectiveness Check"
+            },
+            {
+              "name": "Implementation Plan",
+              "config": "Implementation Plan"
+            },
+            {
+              "name": "Corrective Action Plan",
+              "config": "Corrective Action Plan"
+            },
+            {
+              "name": "Additional Action Required",
+              "config": "Additional Action Required"
+            },
+            {
+              "name": "Effectiveness Check Agreed",
+              "config": "Effectiveness Check Agreed"
+            },
+            {
+              "name": "Attach evidence of completion",
+              "config": "Attach evidence of completion"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Preventive Action": {
+      "id": "7b51d585-30c7-4730-bd27-eab10ba67641",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "8ae994fd-6ecc-45a6-a9dc-abc600baed07"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "SOP",
+              "config": "SOP"
+            },
+            {
+              "name": "Issue",
+              "config": "Issue"
+            },
+            {
+              "name": "Source",
+              "config": "Source"
+            },
+            {
+              "name": "Attachments",
+              "config": "Attachments"
+            },
+            {
+              "name": "Source type",
+              "config": "Source type"
+            },
+            {
+              "name": "Completed By",
+              "config": "Completed By"
+            },
+            {
+              "name": "PA completed",
+              "config": "PA completed"
+            },
+            {
+              "name": "Confirm CA Closure",
+              "config": "Confirm CA Closure"
+            },
+            {
+              "name": "Date of Completion",
+              "config": "Date of Completion"
+            },
+            {
+              "name": "Responsible Person",
+              "config": "Responsible Person"
+            },
+            {
+              "name": "Effectiveness Check",
+              "config": "Effectiveness Check"
+            },
+            {
+              "name": "Implementation Plan",
+              "config": "Implementation Plan"
+            },
+            {
+              "name": "Preventive Action Plan",
+              "config": "Preventive Action Plan"
+            },
+            {
+              "name": "Additional Action Required",
+              "config": "Additional Action Required"
+            },
+            {
+              "name": "Effectiveness Check Agreed",
+              "config": "Effectiveness Check Agreed"
+            },
+            {
+              "name": "Attach evidence of completion",
+              "config": "Attach evidence of completion"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Root Cause Analysis": {
+      "id": "2a76828c-db5f-4812-9c6a-91341dbbd64e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Additional Actions Required?": {
+      "id": "6abe4489-9955-45ea-a91e-4c096a82d160",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "4305c901-7867-474f-8b28-749693c47a90"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f93367ad-a6e3-4a0e-8916-1f2e8ec5a70d",
+          "type": "p",
+          "children": [
+            {
+              "text": "For detailed instructions see:"
+            }
+          ]
+        },
+        {
+          "id": "cac9d5d4-d1bc-4e91-91c9-52b10d281e79",
+          "type": "field",
+          "fieldId": "d69f5774-1f97-4b27-a19c-3019ddee3447",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "d6479ab3-10ba-49cd-9567-802e690cffba",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8e89daa4-0b4d-4d48-a1c6-3f84b2ae3e91",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a6f23e7b-5990-4c47-bae3-4f91568f944c",
+          "type": "field",
+          "fieldId": "6ddf8848-16d7-486f-9122-e4ed67cb8dea",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "95a2b7cb-1e01-4cb9-8d35-ee1ae5d2279b",
+          "type": "field",
+          "fieldId": "2a76828c-db5f-4812-9c6a-91341dbbd64e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "40a99383-3ccf-4d6a-a3d0-91e6c3abc8da",
+          "type": "field",
+          "fieldId": "51fbe72c-bee9-41b5-b976-2ace9dd131aa",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e0fa1937-a6ba-4bb3-a841-e8922124e204",
+          "type": "field",
+          "fieldId": "1e100a10-79bb-4369-abba-a72c4ca9a6b5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "80364757-94b2-44f8-aa73-43743d238751",
+          "type": "field",
+          "fieldId": "75346fcc-b8da-419e-9868-87d79a0987c4",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e9e1387c-3b9a-4d21-b2da-272dbb584606",
+          "type": "field",
+          "fieldId": "7b51d585-30c7-4730-bd27-eab10ba67641",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f8ce5962-7dd0-4d55-8375-418c534c21e5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d8074b53-0de4-4290-b040-8f7358a12538",
+          "type": "field",
+          "fieldId": "1ca4b60e-1926-43a8-b214-84ffca2afa86",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fd4a1241-9933-441b-bae2-fb19ce8a5a8e",
+          "type": "field",
+          "fieldId": "282446ca-66a3-49de-aef8-4ace08704b5c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "57a0536e-a469-400b-a32c-76dfe36bf93b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3b071a52-ddd4-45fc-8dd4-0a2c2b820714",
+          "type": "h3",
+          "children": [
+            {
+              "text": "QA to complete"
+            }
+          ]
+        },
+        {
+          "id": "7c279772-1fbe-4051-8fe4-80e7b8beb3a4",
+          "type": "field",
+          "fieldId": "6abe4489-9955-45ea-a91e-4c096a82d160",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "381d8075-89f0-448e-ad37-b39e15016421",
+          "type": "task",
+          "children": [
+            {
+              "text": "Confirm RCA closure"
+            }
+          ]
+        },
+        {
+          "id": "62e75144-7508-4f4e-b48c-e2b77d82b136",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "RCA-@TEMPLATE_INDEX - @6ddf8848-16d7-486f-9122-e4ed67cb8dea "
+  }
+}
