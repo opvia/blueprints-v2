@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "7889213d-c94c-478e-ba70-9be313679990",
+  "title": "Incident Report",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Formula": {
+      "id": "40136a54-0ec1-4c7b-a82c-0343b7d3c346",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    },
+    "Location": {
+      "id": "6982b7ed-70a9-4383-a950-68a90e6021c1",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Lab 1",
+          "Lab 2"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Injuries?": {
+      "id": "57de4b72-9e47-45ee-bf5d-d94de5f41175",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "PPE Worn?": {
+      "id": "907fbeea-f573-4ad5-89bc-91ac75b54cab",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Reported By": {
+      "id": "bd80de63-153d-4db0-ae74-83ea10720e81",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Incident Type": {
+      "id": "56b84b34-4d85-402d-9462-3be19250f0bf",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Spill",
+          "Exposure",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Additional Notes": {
+      "id": "e46ce2dc-d8bc-400e-b39e-4b4932ddf72e",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "First Aid Given?": {
+      "id": "da76a99f-31a3-4216-b4df-086bc66a3d49",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Brief Description": {
+      "id": "6a272344-98f5-46ce-9b39-a512e87ca9eb",
+      "type": "STRING",
+      "value": "-\n-\n",
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Exposed Personnel": {
+      "id": "1f5fc599-de9b-4bb5-82ed-83d15004d24f",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Immediate Actions": {
+      "id": "b5cf0bb0-c3b0-4c35-8032-083c7bd96be0",
+      "type": "STRING",
+      "value": "-\n-\n\n\n",
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Substance Involved": {
+      "id": "2a4bd3b0-afc3-4575-9cfa-c64c06f10144",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Substance Register"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Follow-Up Required?": {
+      "id": "b381a93b-99ea-4177-b6fa-1ba72dc8bbf4",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Emergency Services Called?": {
+      "id": "07e7ee49-9e8f-4947-b5a7-bd1a7bdd65aa",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Time & date of the incident": {
+      "id": "e6fb2a65-748a-477d-bc8a-3e325c3bb967",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "93995019-e2ba-4fd2-a225-23d99c698adf"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "10f37ea0-c2a8-4847-97bd-f014be159e86",
+          "type": "p",
+          "children": [
+            {
+              "text": "This Incident Report template helps quickly record key details of chemical-related incidents, including what happened, who was involved, and immediate actions taken. It supports clear documentation for safety, compliance, and follow-up to prevent future issues."
+            }
+          ]
+        },
+        {
+          "id": "2aae2bac-7a92-44fb-98d9-57e424fce862",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "510a4c9e-89e4-414f-a7eb-9d8df959f98a",
+          "type": "h1",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Report Details"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "4108d37f-13a5-4940-ad07-7e7cfc296798",
+          "type": "field",
+          "fieldId": "e6fb2a65-748a-477d-bc8a-3e325c3bb967",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "97db3c14-7782-4550-afda-2a8b2dfbf21f",
+          "type": "field",
+          "fieldId": "bd80de63-153d-4db0-ae74-83ea10720e81",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1a2856a0-cbae-49ab-91fb-741b77162e17",
+          "type": "field",
+          "fieldId": "6982b7ed-70a9-4383-a950-68a90e6021c1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cbaa2bbc-f9f7-4fc6-9f35-c0ac1133da10",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9cbed59d-26e2-48d8-b7d4-a7e8bfc3d043",
+          "type": "h1",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Incident Summary"
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "72b7eaa7-9be6-4d8b-9f02-6a0148d6a6d9",
+          "type": "field",
+          "fieldId": "56b84b34-4d85-402d-9462-3be19250f0bf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e65bd30c-bec3-44eb-80e8-fffd554c76d7",
+          "type": "field",
+          "fieldId": "2a4bd3b0-afc3-4575-9cfa-c64c06f10144",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4bbea88e-0d3c-4709-beb2-4239c26c1b23",
+          "type": "field",
+          "fieldId": "6a272344-98f5-46ce-9b39-a512e87ca9eb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2a98a398-3aa4-4d85-9c36-93b8d7b53c84",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f7236686-26c0-4937-963a-f6b91d2e1fc6",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f1c68ce0-86f2-4c3f-a6c7-75998ad835fb",
+          "type": "h1",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Impact & Actions Taken"
+            }
+          ],
+          "listRestart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "6c4c0534-612c-4722-932f-62b9247d91a9",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "782e0d35-99d2-4193-965a-14c3e3599adf",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "6a24b558-66d7-4cdf-b470-68533a64bf5a",
+                  "type": "field",
+                  "fieldId": "1f5fc599-de9b-4bb5-82ed-83d15004d24f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0c02179b-c198-4b49-9564-afb0608eaf41",
+                  "type": "field",
+                  "fieldId": "57de4b72-9e47-45ee-bf5d-d94de5f41175",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "86fc89d8-f963-4588-8d8e-920adf2e00cd",
+                  "type": "field",
+                  "fieldId": "907fbeea-f573-4ad5-89bc-91ac75b54cab",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "33ee16ef-0ee2-49cd-80e4-8e426d05b59d",
+                  "type": "field",
+                  "fieldId": "da76a99f-31a3-4216-b4df-086bc66a3d49",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "5a27f4a4-d076-4c2f-b4aa-b3f5978f4908",
+                  "type": "field",
+                  "fieldId": "07e7ee49-9e8f-4947-b5a7-bd1a7bdd65aa",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fc30a261-d721-4d62-8dc0-ebf92ed5918a",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "cd380374-fab2-4c74-ae7f-70802f19e7aa",
+                  "type": "field",
+                  "fieldId": "b5cf0bb0-c3b0-4c35-8032-083c7bd96be0",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "bcfc47e1-0996-4151-9be9-7eb8d724a5ad",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ed9543db-cfb4-4ffe-8c9c-9a279fb3f927",
+          "type": "h1",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Follow-Up"
+            }
+          ],
+          "listRestart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "b15aee68-f8c5-44b6-b93c-fc87a412deba",
+          "type": "field",
+          "fieldId": "b381a93b-99ea-4177-b6fa-1ba72dc8bbf4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "35b1f8bf-e832-45bd-a5a4-480b65367253",
+          "type": "field",
+          "fieldId": "e46ce2dc-d8bc-400e-b39e-4b4932ddf72e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "45ceddd0-3ec9-43c3-a469-934e7d6499f4",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bfa87d77-95b4-44d0-95b3-e74b3c446270",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Incident Report: @2a4bd3b0-afc3-4575-9cfa-c64c06f10144 "
+  }
+}

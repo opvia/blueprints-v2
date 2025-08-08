@@ -1,0 +1,599 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "1096bc9f-fbb7-414b-b6a3-de77c3dd586d",
+  "title": "Substance Register",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "CAS Number": {
+      "id": "edd10275-781f-4a22-bb6f-c329eb7f7978",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Date added": {
+      "id": "133386ab-d592-4492-a121-fb0b1545b4cc",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Expiry Date": {
+      "id": "58547316-5127-4ad7-9210-431b3183b928",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Signal Word": {
+      "id": "e95107e3-0eb7-4cca-8e88-06ebcef4129c",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Danger",
+          "Warning"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "H-Statements": {
+      "id": "924981dd-4835-49e7-9959-4c496a445066",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "H225",
+          "H319",
+          "H332",
+          "H335",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Physical Form": {
+      "id": "56866c88-2c3b-4e8e-9bd1-fd7535f33da3",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Solid",
+          "Liquid",
+          "Gas"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "SDS Available?": {
+      "id": "5aaddb26-ad78-4d42-90ac-979e54cbad79",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Substance Name": {
+      "id": "2f067271-363d-42bb-bf43-61082a668e36",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Disposal Method": {
+      "id": "a0cde786-e691-4dfc-9476-8b3360bd21dd",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Notes / Comments": {
+      "id": "11f0cb4a-a77c-45f4-ab72-a13dd891f458",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "If yes, attach below": {
+      "id": "1bbc4539-1814-4d1b-bf35-039c9ec8e2be",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "template": [
+              "c0df8bac-169e-4f3e-817b-e065c855dbe9"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "CAS Number",
+              "config": "CAS Number"
+            },
+            {
+              "name": "Date added",
+              "config": "Date added"
+            },
+            {
+              "name": "Expiry Date",
+              "config": "Expiry Date"
+            },
+            {
+              "name": "Signal Word",
+              "config": "Signal Word"
+            },
+            {
+              "name": "H-Statements",
+              "config": "H-Statements"
+            },
+            {
+              "name": "Physical Form",
+              "config": "Physical Form"
+            },
+            {
+              "name": "SDS Available?",
+              "config": "SDS Available?"
+            },
+            {
+              "name": "Substance Name",
+              "config": "Substance Name"
+            },
+            {
+              "name": "Disposal Method",
+              "config": "Disposal Method"
+            },
+            {
+              "name": "Notes / Comments",
+              "config": "Notes / Comments"
+            },
+            {
+              "name": "If yes, attach below",
+              "config": "If yes, attach below"
+            },
+            {
+              "name": "Hazard Classification",
+              "config": "Hazard Classification"
+            },
+            {
+              "name": "Internal Substance ID",
+              "config": "Internal Substance ID"
+            },
+            {
+              "name": "Supplier / Manufacturer",
+              "config": "Supplier / Manufacturer"
+            },
+            {
+              "name": "COSHH Assessment Required",
+              "config": "COSHH Assessment Required"
+            },
+            {
+              "name": "Storage Location / Condition",
+              "config": "Storage Location / Condition"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Hazard Classification": {
+      "id": "8364566c-52d0-4b20-b005-970a5d623280",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "template": [
+              "7196b926-33bb-402b-8a1a-29dbd09a2cb1"
+            ]
+          }
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Internal Substance ID": {
+      "id": "fa28c50d-8c56-4935-a48d-d64659bd4fdc",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "concat( lookup(__self, \"Substance Name\") ,\" \", lookup(__self, \"CAS Number\") )"
+      },
+      "dataType": null
+    },
+    "Supplier / Manufacturer": {
+      "id": "76dcd439-0c9c-494b-9880-1fcec5488e17",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "ABC Ltd",
+          "AAA Ltd",
+          "BBB Ltd",
+          "CCC Ltd"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "COSHH Assessment Required": {
+      "id": "f9172fd2-8a51-4223-9066-db3dc2e4bd14",
+      "type": "BOOLEAN",
+      "value": false,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Storage Location / Condition": {
+      "id": "c2e198d9-ceb2-462b-be10-090644dbb834",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Room Temp",
+          "Cold Room",
+          "Freezer",
+          "Flammable Cabinet",
+          "Corrosive Cabinet"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d4c3dcef-9360-4be6-bfde-16f41c0dfba0"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "2eaf2600-9fca-4005-b1f2-fc358942f13f",
+          "type": "h1",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Substance Details"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "85e92a0e-cd9c-4223-a4b4-14d4b586c705",
+          "type": "p",
+          "children": [
+            {
+              "text": " This section provides key information about the chemical, including supplier, storage conditions, identification numbers, physical form, and relevant dates."
+            }
+          ]
+        },
+        {
+          "id": "85f74a2d-bc9e-4267-99e8-225df5ae473f",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "887ca963-0212-4ce4-89ab-bac24cf79eaa",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "2c0da6d0-de9c-4d00-94ab-c8bcc8977813",
+                  "type": "field",
+                  "fieldId": "2f067271-363d-42bb-bf43-61082a668e36",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "733bbc44-674e-4adf-924c-b2f0170d492d",
+                  "type": "field",
+                  "fieldId": "edd10275-781f-4a22-bb6f-c329eb7f7978",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "abf90520-2241-42a7-b822-eb91fec7f705",
+                  "type": "field",
+                  "fieldId": "fa28c50d-8c56-4935-a48d-d64659bd4fdc",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c57a2e69-92f1-4ed8-9c3f-0541c713bd5f",
+                  "type": "field",
+                  "fieldId": "133386ab-d592-4492-a121-fb0b1545b4cc",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "6608c6ea-e79b-4c8f-86b9-f7cb4ec7d23b",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2bdd8df4-f0cf-4899-b879-bb4305e83883",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "4ceaeaa0-ed02-4172-89e1-6c9126d8b77d",
+                  "type": "field",
+                  "fieldId": "56866c88-2c3b-4e8e-9bd1-fd7535f33da3",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "9485708e-e255-4fa7-b5e4-fb19bc6b842e",
+                  "type": "field",
+                  "fieldId": "c2e198d9-ceb2-462b-be10-090644dbb834",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "7dfd04b0-2382-4798-bcec-33369a8e918d",
+                  "type": "field",
+                  "fieldId": "76dcd439-0c9c-494b-9880-1fcec5488e17",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "fff27d18-3480-454a-9437-78932979549b",
+                  "type": "field",
+                  "fieldId": "58547316-5127-4ad7-9210-431b3183b928",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "32893c20-adc9-4f0c-9bb0-a3603cdc6cc2",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "92afe59a-2825-4704-a57d-bccc0b8bbba9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fa4066ef-9491-4410-a7ee-3c1be5bde1a0",
+          "type": "h1",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Hazard Information"
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "371f6c8f-2f1e-46dc-aca8-51b63e1b412f",
+          "type": "p",
+          "children": [
+            {
+              "text": " This section outlines the substance’s hazard classifications, regulatory references, required certifications, and safety warnings."
+            }
+          ]
+        },
+        {
+          "id": "1e8cfe66-29f7-4287-9474-de15e1e753f1",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "5fd561c1-9a8a-46f4-9b7b-fe91b02b3791",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "30b07ca9-69e9-4e61-9c55-045d9e1d320d",
+                  "type": "field",
+                  "fieldId": "8364566c-52d0-4b20-b005-970a5d623280",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "319ffaf3-f266-4d58-a650-18a7bb667277",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "050d5389-5237-49d0-b90b-f3093566a63b",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "48060c93-0a81-46ff-a373-ed60b390f677",
+                  "type": "field",
+                  "fieldId": "924981dd-4835-49e7-9959-4c496a445066",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "4aea6f7c-1930-4539-9e0e-e01f23e9bb54",
+                  "type": "field",
+                  "fieldId": "e95107e3-0eb7-4cca-8e88-06ebcef4129c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "00a17242-bca4-473d-889b-c88d8a83aeef",
+                  "type": "field",
+                  "fieldId": "a0cde786-e691-4dfc-9476-8b3360bd21dd",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "84205e34-d371-49ab-87c2-f219b4cbdb93",
+                  "type": "field",
+                  "fieldId": "5aaddb26-ad78-4d42-90ac-979e54cbad79",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "887bb613-5c2b-4d16-b5da-36ab0aa04a2e",
+                  "type": "field",
+                  "fieldId": "1bbc4539-1814-4d1b-bf35-039c9ec8e2be",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "4e3a76a8-214c-46a8-8229-86493912398a",
+                  "type": "field",
+                  "fieldId": "f9172fd2-8a51-4223-9066-db3dc2e4bd14",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "fbdbff16-eac4-4d6f-a951-9479c7d2b236",
+                  "type": "field",
+                  "fieldId": "11f0cb4a-a77c-45f4-ab72-a13dd891f458",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d2102491-3a2c-4e80-89d2-a9cbc02c9b15",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d1617a0b-9cbd-4cb1-b3fa-f6f61d1d2241",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6ad8f04b-e1de-49b8-a100-967cfa3038f0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@fa28c50d-8c56-4935-a48d-d64659bd4fdc "
+  }
+}

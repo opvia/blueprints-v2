@@ -1,0 +1,1430 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f2075386-ef09-4594-921e-691aa05860dc",
+  "title": "COSHH Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Date": {
+      "id": "8deccdae-faa6-419e-84ac-9aa7eeab27b6",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Author": {
+      "id": "b34ab72b-c4d7-4121-abf1-d00dd1e30b82",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "COSHH ID": {
+      "id": "d72e12f7-6a55-4b94-b202-66f9a808f21c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "concat( \"COSHH \", lookup( lookup(__self, \"Select Substance\"), 'TITLE' ))"
+      },
+      "dataType": null
+    },
+    "Department": {
+      "id": "9f6df5bc-cc2c-4a7a-a6b0-2c2cdfd6bfd6",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "R&D",
+          "Manufacturing",
+          "Quality"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Review Date": {
+      "id": "0b77522d-3781-492e-9e23-abc1a797aadc",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "PPE Required": {
+      "id": "060f3294-52f9-46ec-9c1e-a8c0588cd15a",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "Safety goggles / face shield",
+          "Chemical-resistant gloves (e.g. nitrile)",
+          "Lab coat / protective clothing",
+          "Respirator or mask (specify type if needed)",
+          "Hearing protection",
+          "None / Not required"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Associated SOP": {
+      "id": "44f8b1e4-0039-4ec0-b9e5-48ec2fd07610",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Effective Date": {
+      "id": "5da42296-e637-4105-ac10-23ec167b2297",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Select Substance": {
+      "id": "daf01ec6-932c-48bb-9f0f-6bb1ce3d80f0",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "template": [
+              "1096bc9f-fbb7-414b-b6a3-de77c3dd586d"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "REMOVE",
+              "config": "REMOVE"
+            },
+            {
+              "name": "Remove",
+              "config": "Remove"
+            },
+            {
+              "name": "hazard",
+              "config": "hazard"
+            },
+            {
+              "name": "remove",
+              "config": "remove"
+            },
+            {
+              "name": "remove2",
+              "config": "remove2"
+            },
+            {
+              "name": "Reference",
+              "config": "Reference"
+            },
+            {
+              "name": "CAS Number",
+              "config": "CAS Number"
+            },
+            {
+              "name": "Date Added",
+              "config": "Date Added"
+            },
+            {
+              "name": "Date added",
+              "config": "Date added"
+            },
+            {
+              "name": "Expiry Date",
+              "config": "Expiry Date"
+            },
+            {
+              "name": "Signal Word",
+              "config": "Signal Word"
+            },
+            {
+              "name": "H-Statements",
+              "config": "H-Statements"
+            },
+            {
+              "name": "Physical Form",
+              "config": "Physical Form"
+            },
+            {
+              "name": "SDS Available?",
+              "config": "SDS Available?"
+            },
+            {
+              "name": "Substance Name",
+              "config": "Substance Name"
+            },
+            {
+              "name": "Disposal Method",
+              "config": "Disposal Method"
+            },
+            {
+              "name": "Notes / Comments",
+              "config": "Notes / Comments"
+            },
+            {
+              "name": "If yes, attach below",
+              "config": "If yes, attach below"
+            },
+            {
+              "name": "Hazard Classification",
+              "config": "Hazard Classification"
+            },
+            {
+              "name": "Internal Substance ID",
+              "config": "Internal Substance ID"
+            },
+            {
+              "name": "Supplier / Manufacturer",
+              "config": "Supplier / Manufacturer"
+            },
+            {
+              "name": "SDS File Link / Location",
+              "config": "SDS File Link / Location"
+            },
+            {
+              "name": "COSHH Assessment Required",
+              "config": "COSHH Assessment Required"
+            },
+            {
+              "name": "Storage Location / Condition",
+              "config": "Storage Location / Condition"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Storage Location": {
+      "id": "971761bc-25de-4a3b-a2fb-a3436a913dda",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Select Substance\") , \"Storage Location / Condition\")"
+      },
+      "dataType": null
+    },
+    "Emergency Contacts": {
+      "id": "5b8b43aa-93ec-443d-93ee-d016309d5d45",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Substance Reference": {
+      "id": "6443b176-95cc-4c8b-b9a0-04b66aab1fc1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "tableConfig": {
+          "properties": [
+            {
+              "id": "TITLE",
+              "name": "Title",
+              "isHidden": true
+            },
+            {
+              "id": "Substance Name",
+              "name": "Substance Name",
+              "isHidden": false
+            },
+            {
+              "id": "CAS Number",
+              "name": "CAS Number",
+              "isHidden": true
+            },
+            {
+              "id": "Internal Substance ID",
+              "name": "Internal Substance ID",
+              "isHidden": true
+            },
+            {
+              "id": "Signal Word",
+              "name": "Signal Word",
+              "isHidden": false
+            },
+            {
+              "id": "Physical Form",
+              "name": "Physical Form",
+              "isHidden": false
+            },
+            {
+              "id": "Date added",
+              "name": "Date added",
+              "isHidden": true
+            },
+            {
+              "id": "Storage Location / Condition",
+              "name": "Storage Location / Condition",
+              "isHidden": true
+            },
+            {
+              "id": "Supplier / Manufacturer",
+              "name": "Supplier / Manufacturer",
+              "isHidden": true
+            },
+            {
+              "id": "Expiry Date",
+              "name": "Expiry Date",
+              "isHidden": false
+            },
+            {
+              "id": "Hazard Classification",
+              "name": "Hazard Classification",
+              "isHidden": false
+            },
+            {
+              "id": "H-Statements",
+              "name": "H-Statements",
+              "isHidden": false
+            },
+            {
+              "id": "Disposal Method",
+              "name": "Disposal Method",
+              "isHidden": false
+            },
+            {
+              "id": "COSHH Assessment Required",
+              "name": "COSHH Assessment Required",
+              "isHidden": true
+            },
+            {
+              "id": "Notes / Comments",
+              "name": "Notes / Comments",
+              "isHidden": true
+            },
+            {
+              "id": "SDS Available?",
+              "name": "SDS Available?",
+              "isHidden": false
+            },
+            {
+              "id": "If yes, attach below",
+              "name": "If yes, attach below",
+              "isHidden": false
+            }
+          ]
+        },
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "template": [
+              "1096bc9f-fbb7-414b-b6a3-de77c3dd586d"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "REMOVE",
+              "config": "REMOVE"
+            },
+            {
+              "name": "Remove",
+              "config": "Remove"
+            },
+            {
+              "name": "hazard",
+              "config": "hazard"
+            },
+            {
+              "name": "remove",
+              "config": "remove"
+            },
+            {
+              "name": "remove2",
+              "config": "remove2"
+            },
+            {
+              "name": "Reference",
+              "config": "Reference"
+            },
+            {
+              "name": "CAS Number",
+              "config": "CAS Number"
+            },
+            {
+              "name": "Date Added",
+              "config": "Date Added"
+            },
+            {
+              "name": "Date added",
+              "config": "Date added"
+            },
+            {
+              "name": "Expiry Date",
+              "config": "Expiry Date"
+            },
+            {
+              "name": "Signal Word",
+              "config": "Signal Word"
+            },
+            {
+              "name": "H-Statements",
+              "config": "H-Statements"
+            },
+            {
+              "name": "Physical Form",
+              "config": "Physical Form"
+            },
+            {
+              "name": "SDS Available?",
+              "config": "SDS Available?"
+            },
+            {
+              "name": "Substance Name",
+              "config": "Substance Name"
+            },
+            {
+              "name": "Disposal Method",
+              "config": "Disposal Method"
+            },
+            {
+              "name": "Notes / Comments",
+              "config": "Notes / Comments"
+            },
+            {
+              "name": "If yes, attach below",
+              "config": "If yes, attach below"
+            },
+            {
+              "name": "Hazard Classification",
+              "config": "Hazard Classification"
+            },
+            {
+              "name": "Internal Substance ID",
+              "config": "Internal Substance ID"
+            },
+            {
+              "name": "Supplier / Manufacturer",
+              "config": "Supplier / Manufacturer"
+            },
+            {
+              "name": "SDS File Link / Location",
+              "config": "SDS File Link / Location"
+            },
+            {
+              "name": "COSHH Assessment Required",
+              "config": "COSHH Assessment Required"
+            },
+            {
+              "name": "Storage Location / Condition",
+              "config": "Storage Location / Condition"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Engineering Controls": {
+      "id": "6c2d4c14-0919-4fd0-b0d2-c50bdeec32a8",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "Local exhaust ventilation (LEV)",
+          "Fume hood / spray booth",
+          "Enclosed process / automation",
+          "Isolation of hazard",
+          "Substitution with less hazardous material",
+          "None / Not applicable"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Administrative Controls": {
+      "id": "85d7130d-fc3d-4680-a0e5-8756845c0184",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "SOP available and enforced",
+          "Training required before access",
+          "Restricted area / controlled entry",
+          "Maintenance or inspection schedule",
+          "Signage and labelling in place",
+          "None / Not applicable"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Safe Handling & Hygiene": {
+      "id": "95cd0dee-e8be-4b76-bcc9-56860d592472",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "No food/drink in work area",
+          "Handwashing facilities nearby",
+          "Use of spill trays / bunding",
+          "Proper storage in sealed containers",
+          "Immediate cleanup of spills",
+          "None / Not applicable"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Potentially Exposed Personnel": {
+      "id": "cf75b9cc-15d0-4fc6-bd85-f71ba0d2994e",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "Laboratory staff",
+          "Technicians",
+          "Students",
+          "Maintenance staff",
+          "Cleaners",
+          "Visitors (supervised)",
+          "Waste Disposal Contractors"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "2. Quality Manager or Head of Department": {
+      "id": "35a559a2-019f-4325-abed-bcf9b02f5dcd",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "1. Department Manager or Head of Department": {
+      "id": "8ae140d6-76e6-45ba-94c7-7ce031370dff",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "50ebd007-209d-498f-a714-a4b87473bf72"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b83676ff-d2c6-49f7-ac13-c217b8b4a752",
+          "type": "h1",
+          "align": "left",
+          "children": [
+            {
+              "bold": true,
+              "text": "Summary Information"
+            }
+          ]
+        },
+        {
+          "id": "024fb626-896a-48a8-9491-bbafc37ab15f",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": "Brief overview of the substance and assessment, with author and approver names."
+            }
+          ]
+        },
+        {
+          "id": "58f90018-75ca-4d51-a2d6-0de545678a90",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "2a0497a7-5ce2-4cf4-a53f-c4d72a3d2d90",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "a20597b3-380e-438e-9344-b693849b4503",
+                  "type": "field",
+                  "fieldId": "daf01ec6-932c-48bb-9f0f-6bb1ce3d80f0",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "c452d580-0469-477e-9600-a5f9d7798c6b",
+                  "type": "field",
+                  "fieldId": "d72e12f7-6a55-4b94-b202-66f9a808f21c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "a57dbd60-5a58-4198-8c45-1e84c69a5074",
+                  "type": "field",
+                  "fieldId": "971761bc-25de-4a3b-a2fb-a3436a913dda",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "cb9ba022-b5e8-4195-8b4d-be5565706381",
+                  "type": "field",
+                  "fieldId": "5da42296-e637-4105-ac10-23ec167b2297",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "9d98c43a-fd67-487f-9919-568699447959",
+                  "type": "field",
+                  "fieldId": "0b77522d-3781-492e-9e23-abc1a797aadc",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ff44b8ac-7f27-44c7-abb4-dc3ab37efbc7",
+                  "type": "field",
+                  "fieldId": "9f6df5bc-cc2c-4a7a-a6b0-2c2cdfd6bfd6",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1d2d3f8f-1a85-486f-9cdf-84a2f471ca61",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "10695025-b242-4ead-85cd-079828c9f621",
+                  "type": "h3",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Written by: "
+                    }
+                  ]
+                },
+                {
+                  "id": "aab6532a-e35b-4a4e-927d-3e3ad08424b3",
+                  "type": "field",
+                  "fieldId": "b34ab72b-c4d7-4121-abf1-d00dd1e30b82",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ed05f0fb-abd7-4159-b20e-0aea75135f6f",
+                  "type": "field",
+                  "fieldId": "8deccdae-faa6-419e-84ac-9aa7eeab27b6",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "f2c136b2-c2f9-4dd3-9c3e-9354107c8757",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "2af59d43-be2d-48d5-a7c6-2cd1a51e330f",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "34f24877-405f-45cd-b4aa-59477ad34874",
+                  "type": "h3",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Authorised by:"
+                    }
+                  ]
+                },
+                {
+                  "id": "5618b040-948b-45a1-985b-81f2db7ff97b",
+                  "type": "field",
+                  "fieldId": "8ae140d6-76e6-45ba-94c7-7ce031370dff",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "a0b882b1-0792-400c-af84-22fff1b4f2f2",
+                  "type": "field",
+                  "fieldId": "35a559a2-019f-4325-abed-bcf9b02f5dcd",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b9f4343a-ec7b-4291-8c14-07988954ec66",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "36ba1f43-2ea6-4bb2-960a-b84fd8e32f05",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3040d93b-ed2c-400b-95a2-711c4f708604",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "bold": true,
+              "text": "This assessment only addresses the risk of harm to health from the substances listed. Additional risk assessments may be required to control the risk from other hazards associated with this work/the procedures used.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "40eeefab-7bd0-4652-8cd4-523e3f2cc439",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "267ab47f-2837-4800-8bf2-709bc141f7d6",
+          "type": "h2",
+          "children": [
+            {
+              "bold": true,
+              "text": "1. Hazards Identified"
+            }
+          ]
+        },
+        {
+          "id": "749311aa-3774-490c-8311-bfb7403ea671",
+          "type": "p",
+          "children": [
+            {
+              "text": "List all health and safety risks the substance may pose, such as flammability, toxicity, irritants, and environmental hazards."
+            }
+          ]
+        },
+        {
+          "id": "058cb2f6-9bd9-4460-ab8f-64a066058b88",
+          "type": "field",
+          "fieldId": "6443b176-95cc-4c8b-b9a0-04b66aab1fc1",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "7c51aa79-7aeb-42b5-a0a8-eff71860e236",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0aa598d1-413a-4d52-a9a2-8951e378a060",
+          "type": "h2",
+          "children": [
+            {
+              "bold": true,
+              "text": "2. Prevention / Control Measures"
+            }
+          ],
+          "listRestart": 2
+        },
+        {
+          "id": "896927cc-f4d1-4fb8-9c64-2acc93b1247f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Select or add the safety steps used to reduce risk such as equipment, safe work methods, rules, and protective gear."
+            }
+          ],
+          "listRestart": 2
+        },
+        {
+          "id": "4d6f286d-8f49-489d-812d-d688e34e4373",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "216e32f7-a5a0-4525-a427-777083be400a",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "f5544cd0-04c1-45b1-be95-9cce02e5d5fe",
+                  "type": "field",
+                  "fieldId": "6c2d4c14-0919-4fd0-b0d2-c50bdeec32a8",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "9b5f858e-e8fa-448e-bba5-f1e4d9fa26f7",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "9dd13fed-c755-4cc6-9098-cff3e955d195",
+                  "type": "field",
+                  "fieldId": "85d7130d-fc3d-4680-a0e5-8756845c0184",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d467d7d5-a406-4dc9-b01f-8c34e140b395",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "19b94fea-4d26-4f98-b472-7a95154611c2",
+                  "type": "field",
+                  "fieldId": "95cd0dee-e8be-4b76-bcc9-56860d592472",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "5ba2559d-54f1-443b-9f0a-215254a6f543",
+                  "type": "p",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "23cefdae-0370-418c-af59-7313da628415",
+                  "type": "field",
+                  "fieldId": "060f3294-52f9-46ec-9c1e-a8c0588cd15a",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c27be414-50e2-484c-bcc3-77b631accf4e",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ff8d1688-f568-4a85-bf66-58ae585fa739",
+          "type": "h2",
+          "children": [
+            {
+              "bold": true,
+              "text": "3. Response / Emergency Procedures "
+            }
+          ],
+          "listRestart": 3
+        },
+        {
+          "id": "fa681f0a-3329-4841-816a-119f073b1812",
+          "type": "p",
+          "children": [
+            {
+              "text": "Fill in emergency contact details, list who might be exposed, and describe first aid, firefighting, and spill response steps."
+            }
+          ]
+        },
+        {
+          "id": "099bfead-3384-469b-9998-a0d87a3fe859",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "cf6dcde7-0231-41a3-8d14-037427667668",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "78029695-f350-402f-81e6-8ba2b43b8373",
+                  "type": "field",
+                  "fieldId": "cf75b9cc-15d0-4fc6-bd85-f71ba0d2994e",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "8e18e815-85f3-4fde-8e07-da0befb9d466",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0cd6e14b-75e0-4b7e-b12a-66caae387483",
+                  "type": "field",
+                  "fieldId": "5b8b43aa-93ec-443d-93ee-d016309d5d45",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "09531af2-f0a0-4c5f-8e0d-3b90b82fb324",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ee01a57d-9ebe-4eda-a67a-19d6c2a3d88b",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "427d03fe-3624-4bc7-bf41-7ec69c7ab990",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fc06f843-cb41-4ffb-a6cf-ac2a37a18a4c",
+          "type": "table",
+          "children": [
+            {
+              "id": "9980ba66-fb1a-41a1-9241-2fbc10a238a5",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "9fdc27d8-f031-4439-ae3e-cea852872fd7",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "f4c2c237-7c01-4319-b9ab-c3e9f92d2837",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "First Aid Measures"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7adb59df-243f-4386-b47f-437cd1303573",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "81c93a56-7a3a-4c49-af4b-072039c3e833",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Fire Fighting Measures"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b0b71983-dc48-4054-9d78-67da71b71be7",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "665f895f-34d9-4fae-bdac-da91ea945344",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Accidental Release Measures"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "01d7174e-9f03-4cc2-9771-5b15073c8f26",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "429d322e-b334-4daa-a8e5-029a2c79bf7b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6353953f-7835-4114-b549-ee34beb8e91a",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": ""
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    }
+                  ]
+                },
+                {
+                  "id": "ac62b077-43c8-4118-91a6-92a1f9f8d7ae",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "282b63c9-014a-4db7-90f4-0cd78b89e9f7",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "57cfa90b-45ed-4a45-8c78-03c24fff254e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8f20393f-e87d-4b19-b801-7766774e1641",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "0dd5a33d-061b-4f15-85de-8418a9ab7c9b",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "c213361d-8191-4416-82a5-3294f0c12db4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3b715cf4-fdb5-4d59-9e49-ed71389dcbc8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e22abeb9-b3f1-4d21-9ef4-4c9ff5361a27",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "420cdc52-1264-4371-8fce-ec51a3ade754",
+          "type": "h2",
+          "children": [
+            {
+              "bold": true,
+              "text": "4. Disposal"
+            }
+          ],
+          "listRestart": 4
+        },
+        {
+          "id": "79286bac-0e4c-4b09-a0f9-abbad7454c33",
+          "type": "p",
+          "children": [
+            {
+              "text": "Explain how to safely dispose of the substance and where to place waste."
+            }
+          ],
+          "listRestart": 4
+        },
+        {
+          "id": "f13e71f2-ff94-4b1f-835c-3dc78b14ec37",
+          "type": "table",
+          "children": [
+            {
+              "id": "b4864077-295c-4264-b5a7-e8111517fb1f",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "b8869c05-a9f0-4a89-992e-094d4382e93e",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "826c9c8d-8688-4e88-91f7-4c95512fbc9f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Disposal Method"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f9438aaf-670b-438b-959a-ad3110489439",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "0843bcf3-74a0-47e9-93ed-380ba41d981d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Disposal Precautions"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bdd5d6b5-05e4-4d43-bec9-8af1ebd61e18",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "6bdd7e50-8ac9-47a9-b23a-4d811be35be3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Disposal Location"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8598e0ec-3507-4b61-8ce2-c43a3513e617",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "145fc6f9-e418-4a80-b7a3-93ed4c4faef6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "cbb41cab-f2dd-465d-ba14-f5b9f5124efa",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    }
+                  ]
+                },
+                {
+                  "id": "d652ce16-dd2f-4ddc-a070-fb5e06d6a915",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4ac4e517-9853-45e4-b1c3-be36772e6bf9",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    }
+                  ]
+                },
+                {
+                  "id": "e5b5c597-34b1-41ea-bba8-b5e6efc7e81f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "96e7037f-2d71-4558-9f6c-e7e736b11668",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "66ea73ce-8781-4843-bc0c-cc2bbc08fee9",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bd6ec9e0-b373-4f53-b7e7-883e1fa30e00",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "62069ad3-b451-4e83-a8aa-de521f2e0575",
+          "type": "h2",
+          "align": "left",
+          "children": [
+            {
+              "bold": true,
+              "text": "5. Training"
+            }
+          ]
+        },
+        {
+          "id": "eaac0477-6ee4-4f8d-8e5e-a24ea72e468f",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": "List any specialised training needed before starting work, based on SOPs or specific hands-on training."
+            }
+          ]
+        },
+        {
+          "id": "c14cacc4-5311-46ee-83d4-55cfcbfcf55b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "ec5f4c77-3444-4598-a749-279d4da4e177",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e1cbd898-eb3b-4e9b-a60c-83aaa41926e0",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ac3911ed-bb5e-4e75-8f27-315a07dc533e",
+          "type": "h2",
+          "align": "left",
+          "children": [
+            {
+              "bold": true,
+              "text": "6. References"
+            }
+          ]
+        },
+        {
+          "id": "16ef2b59-806c-4926-a9ac-7f9163373735",
+          "type": "p",
+          "align": "left",
+          "children": [
+            {
+              "text": "List any related documents such as SOPs, safety guidelines, manuals, or regulations that support this assessment."
+            }
+          ]
+        },
+        {
+          "id": "17590e73-2762-4032-af4f-958d38d80aee",
+          "type": "field",
+          "width": 1472,
+          "fieldId": "44f8b1e4-0039-4ec0-b9e5-48ec2fd07610",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "19b18c8f-d3fc-4dd0-a196-c86a03fa05f0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "aa663b36-eb06-4f7c-b51e-f48fc8f569ed",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@d72e12f7-6a55-4b94-b202-66f9a808f21c "
+  }
+}
