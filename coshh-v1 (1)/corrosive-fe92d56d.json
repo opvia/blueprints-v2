@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "fe92d56d-ce47-41f8-b461-8cfb09813c36",
+  "title": "Corrosive",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "7196b926-33bb-402b-8a1a-29dbd09a2cb1",
+      "version": "1.2"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "fe053fe3-f625-4fdc-81d6-53c9daac1f26"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": "b4fa5609-5527-4043-b5dc-4377953876fb"
+    }
+  }
+}
