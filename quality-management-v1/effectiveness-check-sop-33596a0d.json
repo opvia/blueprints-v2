@@ -1,0 +1,348 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "33596a0d-e980-4bdf-90ec-625d09fd40be",
+  "title": "Effectiveness Check SOP",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Author": {
+      "id": "c86ffeb6-31bc-47e4-8983-9062531a72a0",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Document Title": {
+      "id": "2ae27612-b54a-4240-b139-13177ad589c2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Functional Area": {
+      "id": "2362c999-cd7f-4362-8580-d7b22c57fa82",
+      "type": "SELECT",
+      "value": [
+        "Quality Management"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Operations",
+          "Business Development",
+          "Community",
+          "Medical",
+          "Tech",
+          "Product",
+          "Customer Success",
+          "Marketing",
+          "Quality Management"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "References/Forms": {
+      "id": "9464fa5c-aa5d-4b41-8e77-9e5c3e9eb539",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "3c95d26e-0a7f-4545-9ba6-f3b53548c50d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b3c1d769-a271-4d8e-9f47-0b6d8f0d8e3f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "35bad7b4-f9cd-4830-9fc8-2c1a5dc12846",
+          "type": "field",
+          "fieldId": "2362c999-cd7f-4362-8580-d7b22c57fa82",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "40beaf29-e2a3-4189-a372-314725b9ec83",
+          "type": "field",
+          "fieldId": "c86ffeb6-31bc-47e4-8983-9062531a72a0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3a312a24-b16d-40d7-8e7a-3c8f8a0a3b73",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0208e173-56d5-4dc8-9cc8-b4c0a7909e02",
+          "type": "h2",
+          "children": [
+            {
+              "text": "1. PURPOSE:"
+            }
+          ]
+        },
+        {
+          "id": "4b809e66-aa4c-4466-8869-0818ec34cd36",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "What is the purpose of the policy? What are we trying to accomplish with this procedure?"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "f7541624-62da-41cc-aee5-3a827913d9cb",
+          "type": "h2",
+          "children": [
+            {
+              "text": " "
+            }
+          ]
+        },
+        {
+          "id": "a1a8b078-c0f0-4aa9-97d4-ba45e2f6daf6",
+          "type": "h2",
+          "children": [
+            {
+              "text": "2. SCOPE:"
+            }
+          ]
+        },
+        {
+          "id": "c9988cfc-e6bc-4b6f-bbc7-54852ee9b6a7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Who is this policy applicable to?"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "bfc50468-b21c-47e9-be02-d51e0b6e04a4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Who owns responsibility for parts of this process?"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a991251d-40c1-4bba-a916-0dfc2691db27",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "276b796d-b29f-4acc-8750-e7518afa3a41",
+          "type": "h2",
+          "children": [
+            {
+              "text": "3. RESPONSIBILITIES"
+            }
+          ]
+        },
+        {
+          "id": "9cdedac5-6ab3-4792-ba4e-b42e3811704b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Who does what? (Can be bulleted by role: QA, Operator, etc.)"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "13e5e986-ec57-43cb-9f39-d2d771fb8c34",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c1282aa4-d7c1-4700-8ab0-4ab3b2299bcc",
+          "type": "h2",
+          "children": [
+            {
+              "text": "4. DEFINITIONS"
+            }
+          ]
+        },
+        {
+          "id": "512a0e3e-adae-4e0f-a036-61108a1aa2b7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Clarify any technical terms, acronyms, or abbreviations."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4d42844b-701e-40aa-b9a2-9f5e9f652e12",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ac2accca-5b2e-4a86-9ff7-330a65711b49",
+          "type": "h2",
+          "children": [
+            {
+              "text": "5. REFERENCES/FORMS:"
+            }
+          ]
+        },
+        {
+          "id": "ed70b945-5604-42f6-967a-15f48c485361",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Section to link to/reference any associated forms, procedures, supporting documentation, etc. utilised in this procedure"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e8604fbb-dc7b-46b6-820b-36441f7e0cf2",
+          "type": "field",
+          "fieldId": "9464fa5c-aa5d-4b41-8e77-9e5c3e9eb539",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "74a06058-0c18-4a8b-b60d-05f990f5581b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d259c93b-cfbf-465c-b3c3-44cb68eedc07",
+          "type": "h2",
+          "children": [
+            {
+              "text": "6. PROCEDURE:"
+            }
+          ]
+        },
+        {
+          "id": "f751435d-fa76-4003-aad7-e41134b8d752",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Procedure Step 1 (name steps as appropriate for procedure)"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b233ebf4-19d1-445c-bd00-6e01f0ef7dfd",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Detailed description of the procedure step"
+            }
+          ],
+          "listStyleType": "disc",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "64599fb0-4334-4d75-a076-2b6dce8a5e1f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Procedure Step 2 "
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e2620737-d636-4f10-bf0e-18cc66f4982c",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Detailed description of procedure step, etc. "
+            }
+          ],
+          "listStyleType": "disc",
+          "listParentIndex": "2."
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": null
+  }
+}

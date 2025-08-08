@@ -1,0 +1,963 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "66e14764-73d7-485a-8a5f-ce7c6e4e2bcc",
+  "title": "QMS Blueprint Instructions",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "3c95d26e-0a7f-4545-9ba6-f3b53548c50d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "e8d74d56-1a78-43e9-8fe6-caf2b426dbba",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7fe98bb4-aa0d-4cf4-8b26-d9bbeb5871a5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            },
+            {
+              "url": "https://seal.run/blueprints/quality-management",
+              "type": "a",
+              "children": [
+                {
+                  "text": "Seal Blueprint Documentation"
+                }
+              ]
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "99f21907-dad4-4e42-b933-9208b16cea43",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "62ff3147-ec1e-4662-9edd-4f6c58f7b959",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Setup"
+            }
+          ]
+        },
+        {
+          "id": "e70ab76d-a6d8-4f6d-a582-1fa6f9113c1b",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "View Group"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "02b599c5-9952-4615-acac-04e4465254be",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Settings > View Groups > + New"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "517b9d59-4942-4e90-8b6c-732a6f9f9b27",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Click the edit icon to chnage the view group name, icon and position in side panel, suggested name “QMS”"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "904599d7-dd44-475f-afb5-67a98d0736cf",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Saved Views"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "81cfd17f-95f0-4313-a476-46dcf345de10",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Add to search bar “tag:QMS Blueprint” to bring up all of the entities contained in this blueprint."
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "497f1e3a-a081-4950-be49-928c8506f19d",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "If desired, this can be saved through the panel at the top of the page"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2.1."
+        },
+        {
+          "id": "bd5b7de8-53d3-4f2e-9f5c-592287614f3d",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Suggested Saved Views:"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "1798eadf-1678-4121-a1d3-530aa140e1c9",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Templates, search for: tag:\"QMS Blueprint\" kind:template"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "3fa30f7a-0d5d-43d7-8fd2-5db8a083122e",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Deviations, search for template:Deviation"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "3d0404ba-6487-41fa-990d-8f72ce235df6",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "NCR, search for template:Non-Conformance Report"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "d4bf9494-dcbd-4f9b-a60f-4b5f079963f6",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "OOS, search for template:Out of Specification"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "2d6bc83c-efbb-4426-9f37-bd5c4d489d59",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Complaints, search for template:Complaint"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "d9d883eb-46e6-4b54-b510-8fae9cc6c1fa",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "RCA, search for template:Root Cause Analysis"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "60ab6fb1-c925-4ff8-b963-85139dfd36a2",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "CC, search for template:Change Control"
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "dab6f476-a936-41ff-be0c-bdfc1a57bbff",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "DCR, search for template:Document Change Request"
+            }
+          ],
+          "listStart": 7,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "5fb54eca-f4ae-4e57-bf09-2b34454bcd64",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "CAPA, search for template:Corrective Action template:Preventive Action"
+            }
+          ],
+          "listStart": 8,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "ac777b80-058c-4d1b-9df4-9afba020c00e",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "EC, search for template:Effectiveness Check"
+            }
+          ],
+          "listStart": 9,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "772bac66-ea30-425b-b107-e54ff8b821fa",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "SOPs, search for template:QMS SOP"
+            }
+          ],
+          "listStart": 10,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2.2."
+        },
+        {
+          "id": "f556cf10-80f5-4aa3-b195-5e86694a22e2",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "QMS SOP Templates"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "617578b7-d363-4557-a8d2-889110b1b180",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "QMS SOP templates should all be completed to contain details specific to your company and its procedures."
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "e174811a-d58b-4c56-bc3d-a1efe52e8e6c",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Select the SOP of interest , Make Changes > make the changes > Go to change set > Publish."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "b1fdce96-8c8c-4eb5-91f6-193ddbca7b2b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3b089be5-d01d-4b52-9af4-054921a085d8",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Instructions"
+            }
+          ]
+        },
+        {
+          "id": "e138346e-c9c2-444c-a5b7-d2fbe39b1724",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "To raise a new issue go to saved view “Templates” and select one of Deviation, Out of Specification, Non-Conformance Report or Complaint, as relevant. Click New Instance."
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "697f3a81-1758-46a3-bdc9-b24ee8c13f6f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Complete all information as it becomes available and add assignees to the entity who must complete certain sections."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "82312a8c-2474-4cc6-a6d8-cd028e495aeb",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Subsequent stages of investigation are started by creating instances in a nested fashion as you complete the steps in one of the processes."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "13696748-7616-4647-8112-2558cdf978f2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a7ce9e53-caca-4d9e-809c-ab9f38e635d3",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Entities included in Blueprint:"
+            }
+          ]
+        },
+        {
+          "id": "3aebda14-50af-4df0-8a54-9048294ae5a0",
+          "type": "table",
+          "children": [
+            {
+              "id": "79043464-8893-4f76-b86c-ea4bfae46d19",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "22df8728-346f-4c4f-bfdc-f95014552501",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "d2381180-377c-43c2-9bfa-36026b058d33",
+                      "type": "h3",
+                      "children": [
+                        {
+                          "text": "Types"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b0c6b61f-c63d-4ebf-8a64-faa4477564ab",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "a6bcad38-441e-4dbb-9b7a-3384c0301f83",
+                      "type": "h3",
+                      "children": [
+                        {
+                          "text": "Templates"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dc2737ac-a142-4373-abee-b48fd3f56c82",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "f3f0a00b-eb6e-4d90-8111-56cc12ee38b6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "8c27c7ad-7e9d-4e50-bfb6-71153e9ada91",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "QMS SOP"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9edfc718-79aa-47f4-bf87-100449d98e9b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5d331ab4-97e3-44c1-acc6-a69af96b6e82",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "QMS Blueprint Instructions (this entity)"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "8e198268-fd76-46ca-8657-48877633271f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Deviation SOP"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "1d15e2db-f905-46f5-8ac7-6f91a7956151",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Out of Specification SOP"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "fe7379d8-88da-4a8d-823f-a005480f4e9f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Non-Conformance Report SOP"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "146c32ad-8f26-4448-8e1d-9f75ff8c80df",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Complaint SOP"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "b05c8630-4d68-4016-8a03-ddc246944c9d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Root Cause Analysis SOP"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "16368029-a635-45bd-ab84-661b4776d39c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Change Control SOP"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "7790de2f-74f6-4542-ba97-695344d36800",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Document Change Request SOP"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "f074cc0c-1851-457b-a673-146d0b9b5eb2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "CAPA SOP"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9157e0ce-9c35-4f71-87d7-97593b158b8f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Effectiveness Check SOP"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "683f4161-7f71-4ded-a64f-36d2172cdad3",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "0e97fb0a-2eda-4b6d-a6e1-37b46bc55393",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "286848d6-fc3d-4b32-8a90-45093701cab7",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Deviation"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0c276704-8fb1-4098-b2cb-c7423fe167cf",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7374e895-4d72-4262-8d8f-61ad43bf315f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Deviation"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9f1f09d8-ba45-432a-8e23-6b04d5d93e03",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "e800a0bb-2fd8-42e7-bd69-012c018a06cb",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "57e68339-0d93-4f60-a14a-62fcc7e06ff8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Out of Spec"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "90cf4b78-fb93-40a4-a5a7-e392fca47e15",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "f8f88f4f-cd34-4d28-b594-f951f21d2fd8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Out of Specification"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9b50fcce-9634-4ca8-9015-c96d9e0ae4af",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "OOS - Machine"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "5608a2f1-98e6-4d63-8d7a-8b38f2b2b143",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "OOS - Material"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "518397af-08f0-418f-a5ce-0face5d17f0b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "OOS - Method"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "4a6fead6-3503-48c1-8bfd-87bc58d3c94a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "OOS - Measurement and Environment"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ad1aa8ce-c6cf-4841-824b-1b2e8b178924",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "OOS - Human"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "758d9d7e-22c0-4ef0-b35e-e9cc4108b257",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "bcbf3bf7-ec24-4188-ad3b-5223f9e20a2b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "fe06e3a8-e152-41e9-b5bd-25a19f21ca7d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Non-Conformance Report"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5edbf2df-fddb-4b51-92a4-4175fae6833f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "38fe493c-f60a-45e8-aae9-2f3591c2a692",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Non-Conformance Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "966e5aeb-9bbf-4303-b9d9-0ab07732b2a2",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "010a5ea1-7ae6-4d21-98d6-c0da871db938",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "628c6ad6-11fd-4a78-8968-b01a19d74e52",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Complaint"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "634cc764-d0e7-4be7-9e83-9d208906ad99",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "3fb80c24-511b-4d7b-9c02-4ab2ee1b0cb1",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Complaint"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6b4d86eb-5872-4010-9fb0-6544afcd900d",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "5eb2ec4b-2eb9-45fc-93e1-74d512157a7c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "84ac6ea4-d626-4cfb-a571-b66364e1b6f8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Root Cause Analysis"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "06a1a9d6-d11f-4323-beb3-563f833f0c72",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "11a8f174-6feb-4b11-b7f9-5125a50cc0f3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Root Cause Analysis"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f98f6ba9-a784-44be-9e45-36545b3ae61f",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "56e40f51-7c25-4bf9-993e-440bd8ac959d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "bd26fbdf-2b54-401a-a9aa-12d2d8db8501",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Change Control"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a4b39725-25af-4f70-a121-827438811200",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "0e78b9d9-2e30-4e06-a347-955686fa6bd3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Change Control"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fc021401-f6e7-4875-90ab-974cf0684fe4",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "afc585aa-4da8-4c6c-8ad5-892c4c96daf3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "bfed7e47-a484-4f26-aee9-78643986374f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Document Change Request"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "507f2e83-29ea-4fd6-ae7c-b538633043ef",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "cf9f46b1-aa3e-4acc-b515-cf764fe39bf4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Document Change Request"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "35b86ec1-770e-4fee-9e9a-275068827077",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "d16ec1dc-a3cf-44c6-876b-4a47468e5857",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "243a3593-c5c0-4623-9052-060ecc864fd1",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "CAPA"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8dafafab-9e87-485f-b632-0796330ef18a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "9bf85c9f-554a-4cad-b8c3-884bad351c41",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Corrective Action"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c87b8149-82c3-4179-8548-2aef8d946993",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Preventive Action"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "832b43b2-371e-4a32-ac37-47c0fea16b2d",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "b28b5701-c02c-408e-a5b8-dbaa976e2bb0",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7cd8244c-97c7-41f1-bbc8-c21c36e6eeb2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Effectiveness Check"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a346ce56-1845-4869-bbc0-304233ae6086",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1c1b0a4e-7d89-46e8-a787-381cfa9110e9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Effectiveness Check"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6ed6b73d-1b9d-4d02-bc55-8f4a750c4707",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
