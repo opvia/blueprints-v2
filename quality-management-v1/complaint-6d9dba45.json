@@ -1,0 +1,930 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "6d9dba45-0e38-403b-9ae1-c90f0d5d9cc8",
+  "title": "Complaint",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "SOP": {
+      "id": "fb1cff98-5907-4778-bb68-847a9973df8d",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "c817a7ee-e0da-4f83-9494-3d1df417c41e",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "QMS SOP"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Source": {
+      "id": "bda5c002-7771-4501-abf3-b31316e49f3d",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Reportable": {
+      "id": "7c1f5fd6-6d9b-4303-8fc2-0f35a11b2a88",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Criticality": {
+      "id": "84e7fce8-cb47-4506-aafd-8c2a58cd0f65",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Minor",
+          "Major",
+          "Critical"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Issue Title": {
+      "id": "286cf2b4-4476-48cc-9e16-e5314d5d1504",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Attachements": {
+      "id": "37903474-0719-4b40-bc92-94bcf12e2323",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Justification": {
+      "id": "42dd01fe-5f00-4150-803f-f58934198c7d",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Reportable to": {
+      "id": "c104c826-2e4f-46b9-91f0-5637aed38502",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Closure Decision": {
+      "id": "1a05a921-2f82-4d81-8979-c6b0af5ce71b",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Corrective Action": {
+      "id": "158e6324-0553-46c9-93cb-2ddcb7a912f6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Root Cause Analysis\") , 'Corrective Action')"
+      },
+      "dataType": null
+    },
+    "Preventive Action": {
+      "id": "894aee1c-6f85-4aff-841a-d5eb1acf24b0",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Root Cause Analysis\")  , 'Preventive Action')"
+      },
+      "dataType": null
+    },
+    "Reporting Response": {
+      "id": "360b2c8a-f574-4c32-b7af-d15b061a663c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Root Cause Analysis": {
+      "id": "1626c8e4-ac45-4e1c-9636-e2470cdb65ed",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "4ed01e96-4a3a-410a-ac16-727463645b0f"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "CAPA",
+              "config": "CAPA"
+            },
+            {
+              "name": "Issue",
+              "config": "Issue"
+            },
+            {
+              "name": "Category",
+              "config": "Category"
+            },
+            {
+              "name": "Attachments",
+              "config": "Attachments"
+            },
+            {
+              "name": "Root Cause Analysis",
+              "config": "Root Cause Analysis"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Decision Attachments": {
+      "id": "0d094f96-6716-430f-abd5-b1751badafcd",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Details of Complaint": {
+      "id": "84677809-5952-4795-8b88-07e0b3c16039",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Material Disposition": {
+      "id": "62c982e5-ae8b-470f-8a39-9e061ca07ac7",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "Release for Use",
+          "Quarantine / Hold",
+          "Reprocess",
+          "Rework",
+          "Reject / Discard",
+          "Return to Supplier",
+          "Use As Is",
+          "Downgrade",
+          "Investigational Hold",
+          "Sample Retention",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Reporting Attachments": {
+      "id": "571889f9-12b4-485d-8aba-4f96bb6a554f",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Assessment Attachments": {
+      "id": "ef73d1de-5947-4f31-b9af-c86717261d7f",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Investigation Required": {
+      "id": "63712127-9fb4-473c-8a76-b6a2fd023c73",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Correction/Containment Action": {
+      "id": "8650075b-192e-4862-b41d-af75ad5899c5",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Severity Rating and Justification": {
+      "id": "fed08659-22bc-4874-b343-720588b7fbdc",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Detection Rating and Justification": {
+      "id": "d1cdaa94-947b-41a3-8cf1-0c863551545c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Occurrence Rating and Justification": {
+      "id": "665f0da3-ef24-4819-a89c-568161142999",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Additional Actions Required / Raised": {
+      "id": "3796438d-4093-4161-a609-54f338800f2f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "3ce18d80-9a6f-4843-bd57-c798b8a1dcfe"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "64d8f53c-3a21-47e0-9130-8d06747652a3",
+          "type": "p",
+          "children": [
+            {
+              "text": "For detailed instructions see:"
+            }
+          ]
+        },
+        {
+          "id": "959d43cd-1fe5-4def-90f5-fc127b6368b9",
+          "type": "field",
+          "fieldId": "fb1cff98-5907-4778-bb68-847a9973df8d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "082b8fa0-cfec-4947-8df1-45fcc8415b6b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "56215466-c0bf-4da4-aa3d-2a1a5ab0e13c",
+          "type": "field",
+          "fieldId": "286cf2b4-4476-48cc-9e16-e5314d5d1504",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "33300763-fd15-45de-adfb-3ca66c98925f",
+          "type": "field",
+          "fieldId": "bda5c002-7771-4501-abf3-b31316e49f3d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "468ff554-6253-42c3-8006-0162c633ef2d",
+          "type": "field",
+          "fieldId": "84677809-5952-4795-8b88-07e0b3c16039",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "246641a2-d894-431d-aad5-f03b51c00319",
+          "type": "field",
+          "fieldId": "37903474-0719-4b40-bc92-94bcf12e2323",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "5f809369-af19-4faa-ad6e-866326ebe14c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "193a9b7d-4026-455a-b6aa-c1965309af2c",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Assessment"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "e7354cbf-5d40-4eb7-86db-212a5ad18371",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Correction/Containment Actions"
+            }
+          ]
+        },
+        {
+          "id": "555c3af6-b493-4003-838a-01eaec2cffc7",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "d908041b-6d99-4379-9490-b47d162cbd7b",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "52432bc0-e293-4a5d-b467-22553ff38d95",
+                  "type": "field",
+                  "fieldId": "8650075b-192e-4862-b41d-af75ad5899c5",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "87dd1d5d-9061-4134-ad4b-5fb2f48ac555",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "e040d3d6-de09-48b1-a7d1-f1e3f43ce7b6",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "68b858b2-31a1-4377-8eca-98c0a8da6660",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "400eb8cf-c07c-467b-b89a-d669669aea1c",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Initial Risk Assessment"
+            }
+          ]
+        },
+        {
+          "id": "54d60d4a-e744-4d6e-bea9-7709b51052ff",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "60496593-9653-4817-8aa7-577770ce3e3d",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "d43f9eaf-c255-4e3a-ad0d-256f639c742c",
+                  "type": "field",
+                  "fieldId": "665f0da3-ef24-4819-a89c-568161142999",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "59c16693-198c-4a48-8679-7084f461b62d",
+                  "type": "field",
+                  "fieldId": "fed08659-22bc-4874-b343-720588b7fbdc",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "f44e59b6-3f60-43d9-aca8-2ad2bde88b7f",
+                  "type": "field",
+                  "fieldId": "d1cdaa94-947b-41a3-8cf1-0c863551545c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "012cbc70-f23a-492b-9be9-17fc1087d9ad",
+                  "type": "field",
+                  "fieldId": "84e7fce8-cb47-4506-aafd-8c2a58cd0f65",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "fe1453cf-b599-43b8-a15f-9a8dd3609ec6",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "e0d0fefd-d3df-4855-b241-b8bb256dbff8",
+                  "type": "field",
+                  "fieldId": "ef73d1de-5947-4f31-b9af-c86717261d7f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fd1e2539-e3f5-4d41-98fc-b9da862a62bc",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "88a5b10d-ad2f-4a5c-8f03-828b2e43536d",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "647c33f0-2eec-4468-b303-ffdddff4f58f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fcc54e85-1d7a-4249-b5a8-6b08e49dbc6e",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Decision"
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "4d35115d-bfc8-4906-bfd5-b01893ac01d3",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "6e013ead-dde6-4ddf-8d07-b1d53b01675f",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "bc2b20fb-a453-4531-851a-5bef53f35097",
+                  "type": "field",
+                  "fieldId": "63712127-9fb4-473c-8a76-b6a2fd023c73",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "f9150604-4ce0-40ec-99a3-3c635dded3ab",
+                  "type": "field",
+                  "fieldId": "42dd01fe-5f00-4150-803f-f58934198c7d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "63fe9906-ee23-4082-937a-90427d9dd6d1",
+                  "type": "field",
+                  "fieldId": "0d094f96-6716-430f-abd5-b1751badafcd",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "29858f14-98cb-45ce-ad42-334960961ad7",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "36af2349-6a14-4b2d-ab23-2bb2605202e5",
+                  "type": "field",
+                  "fieldId": "7c1f5fd6-6d9b-4303-8fc2-0f35a11b2a88",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "1af813de-7b9a-4b0c-9859-7baa09cfea24",
+                  "type": "field",
+                  "fieldId": "c104c826-2e4f-46b9-91f0-5637aed38502",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "da1cfa19-8c6e-4d28-b60d-4d4a996b4a49",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2cac6b2f-f7cc-4f8c-a613-3e6fe44df552",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Root Cause Analysis"
+            }
+          ],
+          "listRestart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "57ecd3e7-b005-4a86-9802-65d79ba956fd",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "14c836d2-5df3-4487-925b-49d51d574333",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "faecf8f7-38c7-4940-ba7e-223c67d30eb5",
+                  "type": "field",
+                  "fieldId": "1626c8e4-ac45-4e1c-9636-e2470cdb65ed",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "f23c9113-7c64-41b8-9b03-508cc36eb144",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bb940cde-04f6-4212-9784-69cccaa7e2a7",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "e1fc4f82-0997-4c75-8299-feb2c1d6dd86",
+                  "type": "field",
+                  "fieldId": "158e6324-0553-46c9-93cb-2ddcb7a912f6",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "2d4a3e11-db2e-437c-9994-39d997f83cd9",
+                  "type": "field",
+                  "fieldId": "894aee1c-6f85-4aff-841a-d5eb1acf24b0",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "159602b1-22bf-4a0d-bc81-4c99f70af890",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ae79ebf9-245a-4f5c-816c-1e4bd608dc70",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Material Disposition"
+            }
+          ],
+          "listRestart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "b52c7c7c-bee1-4dd3-ae4f-5ae990f14229",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "4629877c-7f14-434d-af10-db4a41b465f2",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "23f15b7b-57d5-4bed-a1ee-fbf9b3b5abde",
+                  "type": "field",
+                  "fieldId": "62c982e5-ae8b-470f-8a39-9e061ca07ac7",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cf4774e2-4f62-46b8-a72c-a888f2ce4c64",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "bd70753d-5c9f-4b60-a890-f214733ced80",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3014639a-4296-490a-a17b-591a8abfc9e2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "976d8335-225f-455c-8e4e-f409db3e0064",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Closure"
+            }
+          ],
+          "listRestart": 5,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "1a28dcd4-ba41-41a4-891b-103c92673b9a",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Document response to reporting if complaint was defined as reportable:"
+            }
+          ]
+        },
+        {
+          "id": "a6f1d332-d016-4c90-85a6-5cd2a12a0b5f",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "8366c99e-ef25-4fd9-9841-5a904f179ee0",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "b8e5a137-d119-4ad3-b5db-fc43bb9bc489",
+                  "type": "field",
+                  "fieldId": "360b2c8a-f574-4c32-b7af-d15b061a663c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c91e42c0-d5f9-44d9-bfab-fff7a471e807",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "eeebe6bd-93da-4ce7-b86f-ce6ffa519238",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "9ceb9946-41a0-4661-bf36-76bfe0ca2acc",
+                  "type": "field",
+                  "fieldId": "571889f9-12b4-485d-8aba-4f96bb6a554f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "224a9fc6-dbd9-4385-ae3a-9dbba987b880",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Record the decision to close the record, and any additional actions required:"
+            }
+          ]
+        },
+        {
+          "id": "157c2177-0f96-4493-83db-e54aa3e86a32",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "7ecfeee7-87cb-4ed1-ba36-4258a32c37d0",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "f7e4dc0b-3c53-48ce-80fd-01b001fdb459",
+                  "type": "field",
+                  "fieldId": "1a05a921-2f82-4d81-8979-c6b0af5ce71b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "55e83400-7fd0-41b0-aca6-977341dcdb24",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "22f1eb4d-d1ef-4c01-839b-fd345e8dc3bd",
+                  "type": "field",
+                  "fieldId": "3796438d-4093-4161-a609-54f338800f2f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "971ce9b4-bba1-43cc-8b25-c2a6de1009b3",
+          "type": "task",
+          "children": [
+            {
+              "text": "Confirm Complaint closure"
+            }
+          ]
+        },
+        {
+          "id": "278384b4-48c0-4e04-b455-a79df7f3e53c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "C-@TEMPLATE_INDEX @286cf2b4-4476-48cc-9e16-e5314d5d1504 "
+  }
+}
