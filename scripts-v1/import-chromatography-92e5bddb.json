@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "92e5bddb-fb4d-4340-b0b8-7523876717f1",
+  "title": "Import Chromatography",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "b1f31441-f62f-420a-927f-afc43bf8cc10",
+      "version": "1.1"
+    }
+  },
+  "fields": {
+    "Script": {
+      "id": "cfdb27b6-5fe2-4f93-8b7c-92331637a1c0",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "5f866d34-4b29-464b-9c88-dbb2125d033d",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Import CSV Data"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Template": {
+      "id": "681245d9-1789-46cb-a298-455eca7ee620",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "b468ecc5-50a5-4977-bd7d-ad9ae8c090f4",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "TEMPLATE"
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "CSV Files": {
+      "id": "92445eb4-952f-49ff-a48f-6225ef9e7d43",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "2df7dc74-f85a-4381-a0be-1d88f6104da2",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ]
+          }
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Imported Data": {
+      "id": "da524992-5916-4aad-8879-c1e8532f6cec",
+      "type": "INSTANCE_SUBMISSION",
+      "value": [
+        {
+          "id": "5fd5698b-4234-4b25-bbe8-4dfcf856d14d",
+          "version": "1"
+        },
+        {
+          "id": "3cbd8250-113d-40cc-a995-c0ac730ae5a3",
+          "version": "1"
+        },
+        {
+          "id": "bfa47d75-8268-4ddb-a6e2-7bd459aedfed",
+          "version": "1"
+        },
+        {
+          "id": "11ab6655-d258-4ff9-b8fc-96fe8ea9d925",
+          "version": "1"
+        },
+        {
+          "id": "d0f4317c-cab8-4b51-bf32-d08fb8da50d8",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "b468ecc5-50a5-4977-bd7d-ad9ae8c090f4",
+          "version": "1"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Create Template": {
+      "id": "917d1eba-fcbf-499e-8661-655f2f97f507",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "7c2f19b9-8f4b-4052-bfc3-d9cd511b35d2",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create Template From CSV"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Template Type Name": {
+      "id": "acc8d54a-be2e-4f3b-b52a-c97579be9232",
+      "type": "STRING",
+      "value": "Script CSV Template",
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "c7863f64-a37a-474a-90d2-90acc8f8d126"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "151f1432-da34-478e-b2d1-086cc3e01bf8",
+          "type": "p",
+          "children": [
+            {
+              "text": "Upload the CSV files here:"
+            }
+          ]
+        },
+        {
+          "id": "0d384334-ba11-4441-a263-e518067d34f4",
+          "type": "field",
+          "fieldId": "92445eb4-952f-49ff-a48f-6225ef9e7d43",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "a418422d-0dac-41b0-8c36-ad2308e1bbeb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e5021102-f74a-4424-9ea6-2e40526df4c7",
+          "type": "p",
+          "children": [
+            {
+              "text": "(Optional) Automatically generate the submission template (columns of the table) from the csv columns"
+            }
+          ]
+        },
+        {
+          "id": "a03c7fb1-0e9a-4b9b-ba6b-ca37f4fa4dda",
+          "type": "p",
+          "children": [
+            {
+              "text": "The type to generate the template from:"
+            }
+          ]
+        },
+        {
+          "id": "9fe2d611-c82a-4e75-ace6-8052faf32ec7",
+          "type": "field",
+          "fieldId": "acc8d54a-be2e-4f3b-b52a-c97579be9232",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "03842750-312a-4797-871b-4f964de634e8",
+          "type": "field",
+          "fieldId": "917d1eba-fcbf-499e-8661-655f2f97f507",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "26ac2ab6-4b23-437f-b719-ec215e242855",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b75296c6-30d5-41a6-ac97-2fa4c10ff5cd",
+          "type": "p",
+          "children": [
+            {
+              "text": "Choose an existing template for the data or generate one from above:"
+            }
+          ]
+        },
+        {
+          "id": "0f1cfb60-bfe5-479c-bde8-154232ef934c",
+          "type": "field",
+          "fieldId": "681245d9-1789-46cb-a298-455eca7ee620",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "77925f6f-c0d7-4fee-b9f9-e19b5d547e8a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "48e3a408-2dda-4f5e-be59-b7395fc5e3d5",
+          "type": "field",
+          "fieldId": "cfdb27b6-5fe2-4f93-8b7c-92331637a1c0",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "c0c49fc6-66db-43d0-ada9-9f4f585f1735",
+          "type": "field",
+          "fieldId": "da524992-5916-4aad-8879-c1e8532f6cec",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a4c9f1d7-cddf-4d76-8551-aeea209030b8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
