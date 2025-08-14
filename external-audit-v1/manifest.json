@@ -1,0 +1,180 @@
+{
+  "id": "external-audit-v1",
+  "version": 1,
+  "name": "external-audit-v1",
+  "description": "",
+  "entities": [
+    {
+      "id": "e3e71174-21d3-46f5-9fc8-e14bb2d88a87",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "External Audit",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "b80798f4-8c92-434b-9c5a-4963799c9004",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Checklist",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "76027e47-13b9-441b-afb2-9952e814eeea",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - External Audit",
+      "icon": "document",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "64d4dc4c-3675-47b4-b1b5-77027484b57f",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit SOP",
+      "icon": "document",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "7652337f-64cc-4c12-ac2d-af26832900db",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "d99f07f2-b4b8-440c-a177-10e2822a1dc8",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "cff04d45-e06b-408f-ab9e-e4b90e9c3460",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Findings Log",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "581b6930-8186-4e28-bea4-8245cdbcaba6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Meeting Summary Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "c4647367-50fe-4282-9c0f-9615308f1e3e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Completion Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "ebbdc29a-3aba-4f9e-a85b-71685c445b79",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.6",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "f0a26340-5ef7-48b1-9baf-ce8d504c9cac",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Question and Response Log",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "98605d34-8e8a-43e8-b51f-3d35ef7f0978",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Effectiveness Review Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "d7069688-783b-4f16-9d9a-5aec237fbc31",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "External Evidence Request Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "4da191c3-0000-40c6-b4d5-ef93c7e48611",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Report Acknowledgment Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    },
+    {
+      "id": "dad23318-1c94-4a73-a171-41e03d16a1d3",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Receipt of Audit Notification Letter",
+      "icon": "clipboard",
+      "sourceVersion": "1.3",
+      "tagIds": [
+        "98f22629-29bd-4ac1-8abf-84e4b753297b"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "98f22629-29bd-4ac1-8abf-84e4b753297b",
+      "text": "External Audit Blueprint",
+      "hexCode": "#41a285"
+    }
+  ]
+}
