@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "91184ae1-98f2-480e-ab8f-cd1d83b353a3",
+  "title": "Supplier Audit Notification",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Date": {
+      "id": "39df4734-51a5-4d1c-8890-c2566357ba91",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Letter": {
+      "id": "82c4aad6-1d00-45d1-83c5-01d534fe7b9e",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Lead Auditor": {
+      "id": "402bd29f-337f-4db9-b2c5-f01bfa05fe33",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Audit Master Document": {
+      "id": "047e25f3-7d63-4d79-ac7a-1151e6ccff8e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d99f07f2-b4b8-440c-a177-10e2822a1dc8"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "1c9e8f05-6e4f-467a-8b68-e857d59ded48",
+          "type": "field",
+          "fieldId": "047e25f3-7d63-4d79-ac7a-1151e6ccff8e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "13c02424-013d-4250-bbc5-44a934d6280a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8f4bf2c3-3088-4e3c-841a-10ddc5581b8e",
+          "type": "field",
+          "fieldId": "82c4aad6-1d00-45d1-83c5-01d534fe7b9e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d51d5f24-317d-4e58-869a-6b8b8cfa1fc8",
+          "type": "field",
+          "fieldId": "402bd29f-337f-4db9-b2c5-f01bfa05fe33",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "98f22027-648e-433f-9c60-8066d67c9fef",
+          "type": "field",
+          "fieldId": "39df4734-51a5-4d1c-8890-c2566357ba91",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "77e36da6-cac1-4ad4-86e5-3ffd539f5dcc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Notification @TEMPLATE_INDEX - @CREATED_FROM "
+  }
+}

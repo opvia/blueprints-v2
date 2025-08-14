@@ -1,0 +1,319 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "43944c75-d0d9-4e49-b014-d4187e5ed705",
+  "title": "Supplier Form",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Email": {
+      "id": "e4371a95-5fb0-47c9-a932-11a4d24f3583",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Phone": {
+      "id": "617dc84d-1d3d-4077-bb94-cd7fe7c6948b",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Audits": {
+      "id": "36b18acb-d257-4c8a-ae40-d5d31067e017",
+      "type": "SEARCH",
+      "value": {
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "SOP",
+            "config": "SOP"
+          },
+          {
+            "name": "SCAR Form",
+            "config": "SCAR Form"
+          },
+          {
+            "name": "Start Date",
+            "config": "Start Date"
+          },
+          {
+            "name": "Lead Auditor",
+            "config": "Lead Auditor"
+          },
+          {
+            "name": "Other Auditors",
+            "config": "Other Auditors"
+          },
+          {
+            "name": "Purpose of Audit",
+            "config": "Purpose of Audit"
+          },
+          {
+            "name": "Summary of Audit",
+            "config": "Summary of Audit"
+          },
+          {
+            "name": "Audit Report Form",
+            "config": "Audit Report Form"
+          },
+          {
+            "name": "Audit Findings Log",
+            "config": "Audit Findings Log"
+          },
+          {
+            "name": "Meeting Summary Form",
+            "config": "Meeting Summary Form"
+          },
+          {
+            "name": "Audit Completion Form",
+            "config": "Audit Completion Form"
+          },
+          {
+            "name": "Evidence Request Form",
+            "config": "Evidence Request Form"
+          },
+          {
+            "name": "Generate Audit Report",
+            "config": "Generate Audit Report"
+          },
+          {
+            "name": "Root Cause Analysis Form",
+            "config": "Root Cause Analysis Form"
+          },
+          {
+            "name": "Question and Response Log",
+            "config": "Question and Response Log"
+          },
+          {
+            "name": "Description and Scope of Audit",
+            "config": "Description and Scope of Audit"
+          },
+          {
+            "name": "SCAR Effectiveness Review Form",
+            "config": "SCAR Effectiveness Review Form"
+          },
+          {
+            "name": "Supplier Audit Notification Letter",
+            "config": "Supplier Audit Notification Letter"
+          }
+        ],
+        "hiddenDefaultColumns": [
+          "WORK_INSTRUCTIONS_PROGRESS",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Status": {
+      "id": "346f8173-a1a4-45c4-a121-4ef8cb40607e",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved",
+          "Undergoing Evaluation",
+          "Undergoing Re-evaluation",
+          "Previous"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Address": {
+      "id": "13d1dba6-e486-48e5-af16-5f97d5089c8a",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Supplier Name": {
+      "id": "67685b94-96f1-42b9-8b9d-8155a659a84b",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Scope of Supply": {
+      "id": "ae4fcd0c-ac2f-4f11-8d0e-c7c8928ab09c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Primary Contact Name": {
+      "id": "18ed829f-03c9-463a-9796-5efff6e3c3bf",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Supplier Criticality": {
+      "id": "4dd49cbe-fefe-4d85-b008-96315582a8b5",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Critical",
+          "Non-critical"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "2463fd3d-e13f-44dd-abd7-ce8cdb5017b6"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "ea078976-d33b-43d4-9f2d-c2db10cc7eae",
+          "type": "field",
+          "fieldId": "67685b94-96f1-42b9-8b9d-8155a659a84b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1c9f4b97-029c-49ed-a9c3-0e750aa37abf",
+          "type": "field",
+          "fieldId": "346f8173-a1a4-45c4-a121-4ef8cb40607e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a6de866c-8722-41de-a799-c02d9ff0dcd6",
+          "type": "field",
+          "fieldId": "13d1dba6-e486-48e5-af16-5f97d5089c8a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f778ffc1-4768-4aa2-a866-5da095e29449",
+          "type": "field",
+          "fieldId": "617dc84d-1d3d-4077-bb94-cd7fe7c6948b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c4dc18c4-7298-4fdb-a602-5699aac24eb5",
+          "type": "field",
+          "fieldId": "e4371a95-5fb0-47c9-a932-11a4d24f3583",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f14c32b6-a279-4f04-8041-90172df33468",
+          "type": "field",
+          "fieldId": "18ed829f-03c9-463a-9796-5efff6e3c3bf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "620d5aa1-e682-4c65-927a-35eee44504fa",
+          "type": "field",
+          "fieldId": "ae4fcd0c-ac2f-4f11-8d0e-c7c8928ab09c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b4112db0-b741-40d5-9e02-16454b3870fe",
+          "type": "field",
+          "fieldId": "4dd49cbe-fefe-4d85-b008-96315582a8b5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "231c5f4a-7c30-4df0-ab97-995fa878ba61",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f3be7a2d-6de5-4094-802d-17e51105f047",
+          "type": "p",
+          "children": [
+            {
+              "text": "set configuration below to - field:\"Supplier (Auditee)\"=ref(@ID)"
+            }
+          ]
+        },
+        {
+          "id": "15ec4a03-7c50-470d-a4e9-9ea3d72ac92e",
+          "type": "field",
+          "fieldId": "36b18acb-d257-4c8a-ae40-d5d31067e017",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "40ffd212-5554-44ab-9016-d8db1728c36b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@67685b94-96f1-42b9-8b9d-8155a659a84b "
+  }
+}
