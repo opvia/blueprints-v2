@@ -1,0 +1,1971 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "d78455e7-e58c-4091-ae86-b6889cf91490",
+  "title": "SOP - Supplier Audit",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Author(s)": {
+      "id": "4ba6e25a-fc9c-452d-a753-21054207da38",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "SCAR Form": {
+      "id": "01f35a4f-12a8-46c1-b533-6224c0e1cf6c",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "0fec1301-6701-4664-bca6-2d11dd83a24d",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Approver(s)": {
+      "id": "2550b7fb-a116-409e-9b29-f7c250100de9",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Review Date": {
+      "id": "a475fb8e-738c-4ddd-b8c7-0b1c11cac176",
+      "type": "DATE",
+      "value": null,
+      "config": {
+        "format": "dd-MMM-yy"
+      },
+      "dataType": "DATE"
+    },
+    "Effective Date": {
+      "id": "0a621b0d-b2b6-4873-8dc7-82c37474ded7",
+      "type": "DATE",
+      "value": null,
+      "config": {
+        "format": "dd-MMM-yy"
+      },
+      "dataType": "DATE"
+    },
+    "Meeting Summary Form": {
+      "id": "88ba6026-72cd-42ca-86b1-b3f70c5a9e0e",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "581b6930-8186-4e28-bea4-8245cdbcaba6",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Audit Completion Form": {
+      "id": "ad325f92-ed0f-4862-9a7a-ab38b543f1bb",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "c4647367-50fe-4282-9c0f-9615308f1e3e",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Evidence Request Form": {
+      "id": "d277130d-0a15-4fb1-bcb7-2051dffcf619",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "7c03235d-e1c3-45dd-9a71-6b25ff679f87",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Supplier Management SOP": {
+      "id": "9d4efe7e-4e27-4dd7-9697-f0ccf046ecf4",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Root Cause Analysis Form": {
+      "id": "4933bd20-f6e0-4f3c-b9bb-65dfa155d065",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "ebbdc29a-3aba-4f9e-a85b-71685c445b79",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Supplier Audit Checklist": {
+      "id": "7ed1895b-8675-4a54-833d-4f87020fa748",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "10e21ce5-8d0f-4526-bc6f-b2362bdba743",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Question and Response Log": {
+      "id": "a3a4deb7-6e90-406a-8bba-303f4cc00bfe",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "f0a26340-5ef7-48b1-9baf-ce8d504c9cac",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Supplier Audit Findings Log": {
+      "id": "5e998407-b642-4338-ac4a-48d8ad477728",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "2bf7a295-7a9a-42fc-86c4-cb41edf30dc0",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Audit Report Generation Form": {
+      "id": "cc0f56c4-0c09-4ca8-b0c8-1dcfc9ce17f0",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "cbc2d3ad-b066-42e4-99ad-b24c4ccceed5",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "SCAR Effectiveness Review Form": {
+      "id": "7b1724f1-68c7-48a6-bc54-e80057e915b8",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "ef7632f7-a879-4a4a-bd7f-f7b9c1d7cfbd",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Supplier Audit Notification Letter": {
+      "id": "14ee0735-8835-4d4c-b4e7-46b059dd22c8",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "91184ae1-98f2-480e-ab8f-cd1d83b353a3",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "64d4dc4c-3675-47b4-b1b5-77027484b57f"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "93c99e84-c217-4000-adbe-9f168c9d25be",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d882c33e-1194-42e5-8717-dafad7c457dc",
+          "type": "field",
+          "fieldId": "0a621b0d-b2b6-4873-8dc7-82c37474ded7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bf725bb3-40b1-4ef4-8b4b-567108a9bd83",
+          "type": "field",
+          "fieldId": "a475fb8e-738c-4ddd-b8c7-0b1c11cac176",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ead71e3e-539a-4708-8942-60323f595a88",
+          "type": "field",
+          "fieldId": "4ba6e25a-fc9c-452d-a753-21054207da38",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d1508531-3435-44d5-88bd-756fd1c3e647",
+          "type": "field",
+          "fieldId": "2550b7fb-a116-409e-9b29-f7c250100de9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "80225ac9-ac0f-4520-950b-5cf64de7681a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ded37d44-d083-4354-b69e-db6cb7f9282a",
+          "type": "h2",
+          "children": [
+            {
+              "text": "1. Purpose"
+            }
+          ]
+        },
+        {
+          "id": "265974b6-5b81-45a2-a69c-a5a81ed727a6",
+          "type": "p",
+          "children": [
+            {
+              "text": "The purpose of this Standard Operating Procedure (SOP) is to define the process for planning, conducting, reporting, and following up on audits of external suppliers, contractors, and service providers utilized by [Company Name]. This process ensures that suppliers' quality management systems and capabilities meet [Company Name]'s requirements and relevant regulatory standards, thereby mitigating supply chain risks and ensuring the quality and compliance of incoming materials, components, and services. This SOP is a critical component of the overall Supplier Management Program as defined in [Insert e.g. "
+            },
+            {
+              "text": "SOP - Supplier Management]",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "56c3ad98-4189-406c-acec-72cd9267991f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5179b00c-8024-41da-87fc-bc4e11e6e72b",
+          "type": "h2",
+          "children": [
+            {
+              "text": "2. Scope"
+            }
+          ]
+        },
+        {
+          "id": "98deddcb-ccd7-41fd-b7d6-70552f7c2088",
+          "type": "p",
+          "children": [
+            {
+              "text": "This SOP applies to all supplier audits initiated and conducted by [Company Name] personnel or their designated representatives. It covers the entire lifecycle of a supplier audit, from initial assessment and scheduling to audit conduct, documentation of findings, management of supplier corrective actions, and follow-up activities."
+            }
+          ]
+        },
+        {
+          "id": "b72b9a12-741f-4d5c-b85e-9da41064570c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a34a79d-8c58-4d79-8522-a149bae4d868",
+          "type": "p",
+          "children": [
+            {
+              "text": "This SOP is applicable to suppliers of [specify types of materials/services, e.g., critical raw materials, finished components, contract manufacturing, testing services, sterilization services, etc.] that impact the quality, safety, or regulatory compliance of [Company Name]'s products or services. The scope of each individual supplier audit will be determined by a risk-based approach, considering factors such as:"
+            }
+          ]
+        },
+        {
+          "id": "0bba288b-1edd-421a-9c57-fc20106d0fe2",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The criticality of the material or service provided"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "c535b663-b5fb-47db-b50f-13de8ed1fc04",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The supplier's previous audit history and performance"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "29f547a7-f417-482a-842c-a2a97470ee41",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Regulatory requirements (e.g., FDA 21 CFR Part 820.50 Purchasing Controls)"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "9e7b3b03-c57b-492f-af18-ddb055693f59",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "[Company Name]'s internal quality requirements"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "9d8d274c-241d-4073-96a0-a86efddf568b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "75b1ff04-1ba0-41d1-bf8e-ae5789292d00",
+          "type": "h2",
+          "children": [
+            {
+              "text": "3. Responsibilities"
+            }
+          ]
+        },
+        {
+          "id": "435932a7-dbf0-4135-9d52-2416b70a2ce9",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "[Audit Program Coordinator Role, e.g., Quality Assurance Manager, Supplier Quality Lead]"
+            }
+          ]
+        },
+        {
+          "id": "5fca36c5-750d-4e92-bc09-79c09c6b07d0",
+          "type": "p",
+          "children": [
+            {
+              "text": "Manages the overall supplier audit program, develops the annual audit schedule, selects and qualifies auditors, reviews and approves audit reports, and tracks supplier corrective action progress. Serves as the primary liaison with suppliers for audit-related matters."
+            }
+          ]
+        },
+        {
+          "id": "fc3a028f-fa7e-4721-99cc-49a3a2c1da38",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Supplier Auditors/Audit Teams"
+            }
+          ]
+        },
+        {
+          "id": "aa406be3-19fc-48ff-bbee-457083f88929",
+          "type": "p",
+          "children": [
+            {
+              "text": "Conduct supplier audits in accordance with this SOP, objectively document findings, and prepare audit reports. Must be qualified and independent of the direct purchasing relationship with the audited supplier."
+            }
+          ]
+        },
+        {
+          "id": "03e31d97-7589-4723-936c-3ffdfdb3f071",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "[Relevant Purchasing/Supply Chain Department]"
+            }
+          ]
+        },
+        {
+          "id": "4a657f49-55da-40c2-9436-0827674922f4",
+          "type": "p",
+          "children": [
+            {
+              "text": "Provides input on supplier criticality and performance, facilitates communication with suppliers, and supports the implementation of supplier corrective actions as needed."
+            }
+          ]
+        },
+        {
+          "id": "c3c7c639-20d9-4e7e-b8a3-cc6387ed0891",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "[Relevant Technical/Operations Departments]"
+            }
+          ]
+        },
+        {
+          "id": "c69d2363-7833-4c10-b7dd-8d3d1718ac7d",
+          "type": "p",
+          "children": [
+            {
+              "text": "Provides technical expertise to the audit team regarding specific materials or processes, and reviews supplier capabilities and responses."
+            }
+          ]
+        },
+        {
+          "id": "097e8371-28cf-4c21-9109-b9a2ea8f441e",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Suppliers/Audited Organizations"
+            }
+          ]
+        },
+        {
+          "id": "b208d7d6-fed6-4224-a24e-ab1138b198a6",
+          "type": "p",
+          "children": [
+            {
+              "text": "Cooperate with the audit team, provide requested documentation and access to facilities, and implement corrective actions as required by audit findings."
+            }
+          ]
+        },
+        {
+          "id": "34a774d6-0ef3-4a44-9734-9104a945d811",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "41d5d743-0f4b-42d6-8885-e2cb9d222ebb",
+          "type": "h2",
+          "children": [
+            {
+              "text": "4. Definitions"
+            }
+          ]
+        },
+        {
+          "id": "f18fce8f-4f6d-4398-a267-f58a05b9ed9e",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Supplier Audit: A systematic, independent, and documented process conducted by [Company Name] (or its authorized representative) at a supplier's facility to evaluate their quality management system, processes, and compliance with specified requirements."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "353f9139-a8fa-448a-811d-88a9e58a39d1",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Supplier: An external party that provides products or services used by [Company Name] that can affect product quality, safety, or regulatory compliance."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "ff1b7237-7d13-4a3f-8ecc-c902a45bbc2b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Critical Supplier: A supplier whose products or services, if non-conforming, would have a significant impact on product quality, patient safety, or regulatory compliance."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "c07cc4a2-e444-4d28-9b8d-0c9602b08708",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Audit Criteria: The set of requirements against which a supplier's quality system or processes are audited (e.g., ISO [relevant ISO standard], FDA regulations, [Company Name] specifications, quality agreements)."
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "eeb5b701-224f-4652-bb57-be3508be9025",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Non-Conformity (NC): A failure by the supplier to meet a specified requirement, standard, or regulation observed during the audit."
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "48fb4b0d-ae57-4b85-9efa-18fc6159a14a",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Observation: A statement of fact made during a supplier audit, which may indicate a potential area for improvement or a minor deviation not classified as a non-conformity."
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "91fd4205-3525-48ce-98c6-64d6acc8494d",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Supplier Corrective Action Request (SCAR): A formal request issued to a supplier for a root cause investigation and implementation of corrective actions for identified non-conformities."
+            }
+          ],
+          "listStart": 7,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a79a5010-bbc8-47e4-8967-04b655184b4e",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Corrective Action: Action taken by the supplier to eliminate the cause of a detected non-conformity and prevent its recurrence."
+            }
+          ],
+          "listStart": 8,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "6c73b838-9b3c-4015-84b0-7bb2feae5a51",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "CAPA (Corrective and Preventive Action): A system for addressing identified non-conformities or potential non-conformities by determining their root causes and implementing actions to correct and prevent recurrence."
+            }
+          ],
+          "listStart": 9,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a63efbf2-0eb5-42ea-902e-fddab7b426f3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5ae5b89b-a67a-41fa-8c0e-0cc637ba80a6",
+          "type": "h2",
+          "children": [
+            {
+              "text": "5. General Guidelines for Conducting Supplier Audits"
+            }
+          ]
+        },
+        {
+          "id": "cfab1631-36d6-4b76-95b3-f56212ec8120",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Risk-Based Approach: Audit frequency and depth should be determined by the criticality and risk associated with the supplier's product or service."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "9c7bddb3-c9c1-406a-8d1a-feed9bb9ae61",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Independence: Auditors must be independent of the direct relationship and day-to-day operations with the supplier being audited to ensure objectivity."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "8affd304-74a3-4971-8dac-a74f8c6071d5",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Preparedness: Ensure all relevant documents, audit checklists, and necessary equipment are prepared prior to the audit."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "bb682266-196b-495c-a564-3c3e4629b33a",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Professionalism: Conduct all audit activities in a professional and ethical manner, fostering constructive dialogue."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "6bf31857-141d-4fba-ac41-cecaa6afc5d5",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Accuracy & Objectivity: Record all findings accurately and objectively, supported by clear evidence."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b242c6e0-684f-4c5d-bbdc-707c327d1ba4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Confidentiality: Ensure that all audit-related documents and discussions are handled with appropriate confidentiality."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "c5538dd1-990d-421d-84fd-1210d782a4e4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Communication: Maintain clear and concise communication with the supplier throughout the audit process."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "ac065bc8-5152-4668-b364-5d405521634d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1a0ec19c-5f0d-4fff-87f4-a803bfb9540f",
+          "type": "h2",
+          "children": [
+            {
+              "text": "6. Supplier Audit Process"
+            }
+          ]
+        },
+        {
+          "id": "91a62658-dc5d-4f12-acb3-9dd8cb1ca0d9",
+          "type": "h3",
+          "children": [
+            {
+              "text": "6.1. Pre-Audit Planning and Scheduling"
+            }
+          ]
+        },
+        {
+          "id": "7fd9a0a9-7d25-4d99-80b9-47672a05abd4",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Supplier Audit Schedule"
+            }
+          ]
+        },
+        {
+          "id": "607b5f38-8341-48cb-bf7f-756aff9da5d4",
+          "type": "p",
+          "children": [
+            {
+              "text": "The [Audit Program Coordinator Role] develops and maintains an annual or periodic supplier audit schedule based on risk assessments and supplier performance."
+            }
+          ]
+        },
+        {
+          "id": "5ec3a934-40ec-431e-a469-ed62291323f0",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Auditor Selection"
+            }
+          ]
+        },
+        {
+          "id": "ee40bfce-f16c-446f-ba46-50c0d851efba",
+          "type": "p",
+          "children": [
+            {
+              "text": "Select qualified internal auditors from [Company Name] or external contract auditors with relevant expertise. Ensure auditors are trained in auditing techniques and familiar with applicable [Company Name] requirements and regulatory standards."
+            }
+          ]
+        },
+        {
+          "id": "c8b1544f-2422-4b20-826f-bb6b8d2a98f2",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Audit Plan Development"
+            }
+          ]
+        },
+        {
+          "id": "a539a54b-5222-4f29-a0b6-ab3626391df9",
+          "type": "p",
+          "children": [
+            {
+              "text": "Develop a detailed audit plan, including audit objectives, scope, criteria, audit team members, and proposed schedule. The scope should clearly state the QMS elements or processes to be assessed at the supplier."
+            }
+          ]
+        },
+        {
+          "id": "5b9b0ac8-e588-4e6f-8b8b-899d081c142f",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Supplier Notification"
+            }
+          ]
+        },
+        {
+          "id": "c8b32b08-8972-4f98-afe2-0d602969ddd5",
+          "type": "p",
+          "children": [
+            {
+              "text": "Provide formal notification to the supplier well in advance of the planned audit using the "
+            },
+            {
+              "text": "Supplier Audit Notification Letter",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "3f1f1282-e910-4d36-b990-e8aff9395bfa",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Pre-Audit Document Request"
+            }
+          ]
+        },
+        {
+          "id": "85c4c064-6956-4877-a460-9f94f638b9fa",
+          "type": "p",
+          "children": [
+            {
+              "text": "Request relevant documents from the supplier (e.g., QMS manual, certifications, key procedures, previous audit reports) prior to the audit using an "
+            },
+            {
+              "text": "Evidence Request Form",
+              "italic": true
+            },
+            {
+              "text": " to facilitate efficient on-site review."
+            }
+          ]
+        },
+        {
+          "id": "a4d02c17-2252-42ff-8227-abefc34d1eaa",
+          "type": "h3",
+          "children": [
+            {
+              "text": "6.2. On-Site Audit Conduct"
+            }
+          ]
+        },
+        {
+          "id": "59cae52e-9135-472a-869f-f4da0d8639d1",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Opening Meeting"
+            }
+          ]
+        },
+        {
+          "id": "0bc932ae-62da-4196-8834-5901d768a429",
+          "type": "p",
+          "children": [
+            {
+              "text": "Conduct an opening meeting with the supplier's management and relevant personnel to discuss the audit objectives, scope, criteria, schedule, and confirm logistics. Document key discussions using the "
+            },
+            {
+              "text": "Meeting Summary Form",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "398f47d2-3de2-4c56-9f78-351c86ec7405",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Audit Execution:"
+            }
+          ]
+        },
+        {
+          "id": "a1b48b34-ba1b-4ddf-9711-434d52a73e35",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Document and Record Review: Review relevant supplier documents and records (e.g., procedures, work instructions, training records, calibration logs, production records, quality control data, internal audit reports, SCAR and CAPA records) against the defined audit criteria."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "29796499-3a54-4703-a595-59f55a128e4e",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Observation of Processes: Observe supplier personnel as they carry out tasks and processes to verify adherence to documented procedures and quality system requirements."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "f960bff7-bcbe-48a5-8ace-205df0658e5b",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Interviews: Interview supplier staff members to assess their understanding of procedures, roles, and responsibilities. Record questions asked and responses received using the "
+            },
+            {
+              "text": "Question and Response Log",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "3a0ec4ca-632c-49b5-a31d-d52b5bd04c8b",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Evidence Collection: Collect objective evidence (e.g., copies of records, photographs, interview notes) to support findings."
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "79316bf6-c9bd-4e96-847c-0071e1e8d052",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Recording Observations and Findings:"
+            }
+          ]
+        },
+        {
+          "id": "41a178fc-b633-4c42-8aea-93a954002595",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Document all non-conformities and observations clearly, specifying the requirement not met, the objective evidence, and the specific area/process in the "
+            },
+            {
+              "text": "Audit Findings Log",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "02dd09da-e19a-45cc-af33-22c733907ebb",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Classify findings based on their severity:"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e21be183-5103-478c-9cb3-5fc36640b23e",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Minor Non-Conformity: [Define criteria, e.g., isolated deviation with limited impact on quality or compliance]."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "79cf8200-2dcd-46e7-9e24-ccb7962bcc6f",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Major Non-Conformity: [Define criteria, e.g., systemic deviation, significant impact on quality/compliance, or potential for regulatory non-compliance]."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "27c9551d-4270-4033-8ad5-116c3ea6840f",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Critical Non-Conformity: [Define criteria, e.g., severe breach with immediate and significant impact on safety, product quality, or regulatory status]."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "516cc401-3077-4526-9188-82f2f48e718a",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Supplier Audit checklist"
+            }
+          ]
+        },
+        {
+          "id": "9c2a3670-a209-42fa-93cd-daa2d9dbe0c0",
+          "type": "p",
+          "children": [
+            {
+              "text": "Utilize the standardized "
+            },
+            {
+              "text": "Supplier Audit",
+              "italic": true
+            },
+            {
+              "text": " checklist tailored to the supplier's processes and the audit scope to ensure consistency and thoroughness."
+            }
+          ]
+        },
+        {
+          "id": "875d12b5-cd58-463b-a8ee-e947938dbe0c",
+          "type": "h3",
+          "children": [
+            {
+              "text": "6.3. Post-Audit Reporting and Follow-up"
+            }
+          ]
+        },
+        {
+          "id": "c4ea4f02-7c54-4df4-b79f-f70f608ea5a1",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Closing Meeting"
+            }
+          ]
+        },
+        {
+          "id": "d7c34fa8-acad-4c3b-b20f-6a448c476f01",
+          "type": "p",
+          "children": [
+            {
+              "text": "Conduct a closing meeting with the supplier's management and relevant personnel to summarize findings (non-conformities and observations). Provide an opportunity for clarification and discussion. Document key discussions using the "
+            },
+            {
+              "text": "Meeting Summary Form",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "7849497e-c62a-4b97-bad7-a0da09e852b3",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Supplier Audit Report Preparation "
+            }
+          ]
+        },
+        {
+          "id": "d2e15ec5-a137-4b43-b647-dea68358eab6",
+          "type": "p",
+          "children": [
+            {
+              "text": "Prepare a comprehensive Supplier "
+            },
+            {
+              "text": "Audit Report",
+              "italic": true
+            },
+            {
+              "text": " that includes:"
+            }
+          ]
+        },
+        {
+          "id": "28ce4540-c30a-4fc5-a60f-42ffc9659b8d",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Date(s) of the audit"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "2739986a-dee9-4a77-9467-b8963dd35a4a",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Audit objectives, scope, and criteria"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "617f5115-c063-4493-9f21-9f3e3a84e15f",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Summary of findings (non-conformities and observations), categorized by severity"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e3a51d90-6d77-456f-9b01-3a6eff02230c",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Positive observations/areas of good practice"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "42d5c591-9929-48b7-b090-507263ab3ac9",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Audit team members"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "04c68f37-6ca1-4a0f-a90a-234f03651545",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Acknowledgment that the supplier will receive a formal "
+            },
+            {
+              "text": "Supplier Corrective Action Request",
+              "italic": true
+            },
+            {
+              "text": " (SCAR) if non-conformities were identified."
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e87992c6-163a-423e-bddd-8ecd334211a3",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Report Review and Approval"
+            }
+          ]
+        },
+        {
+          "id": "c47ac081-eaa5-4c89-a0da-cfa501d50192",
+          "type": "p",
+          "children": [
+            {
+              "text": "The [Audit Program Coordinator Role] reviews and approves the Supplier "
+            },
+            {
+              "text": "Audit Report",
+              "italic": true
+            },
+            {
+              "text": " before official issuance."
+            }
+          ]
+        },
+        {
+          "id": "8ce1662e-6c63-4de7-8df1-40a28975b638",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "SCAR Issuance"
+            }
+          ]
+        },
+        {
+          "id": "46efd093-10b4-4bf3-b68e-21008ad4ab6d",
+          "type": "p",
+          "children": [
+            {
+              "text": "For all identified non-conformities, issue a formal Supplier Corrective Action Request using the "
+            },
+            {
+              "text": "SCAR Form",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "9d0712dc-67cd-4c15-83af-febf3bf2fd00",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cafd8342-c6b9-4ab1-be59-320731f551b9",
+          "type": "h2",
+          "children": [
+            {
+              "text": "7. Supplier Corrective Actions and Follow-Up"
+            }
+          ]
+        },
+        {
+          "id": "9214e2ad-9795-4903-85fc-67237363f1c4",
+          "type": "h3",
+          "children": [
+            {
+              "text": "7.1. Supplier Root Cause Analysis and Action Plan"
+            }
+          ]
+        },
+        {
+          "id": "4bb5fa68-3846-4495-a8f8-2caf4b2c76d1",
+          "type": "p",
+          "children": [
+            {
+              "text": "Upon receipt of the SCAR, the supplier is responsible for conducting a root cause analysis using their internal processes (or guided by the "
+            },
+            {
+              "text": "Root Cause Analysis Form",
+              "italic": true
+            },
+            {
+              "text": " if provided to them)."
+            }
+          ]
+        },
+        {
+          "id": "b1174f81-0d51-47e2-8157-dc7069cb3d47",
+          "type": "p",
+          "children": [
+            {
+              "text": "The supplier must submit a proposed action plan, detailing corrective actions, responsible personnel, and target completion dates to [Company Name] via the "
+            },
+            {
+              "text": "SCAR Form",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "1405f43e-3802-4701-b5f8-56c9cc694b18",
+          "type": "h3",
+          "children": [
+            {
+              "text": "7.2. Review and Approval of Supplier CAPA"
+            }
+          ]
+        },
+        {
+          "id": "f23358ca-2a45-421c-8782-76f418d4144c",
+          "type": "p",
+          "children": [
+            {
+              "text": "The [Audit Program Coordinator Role] reviews the supplier's proposed root cause analysis and corrective action plan for adequacy and completeness."
+            }
+          ]
+        },
+        {
+          "id": "aaef7982-1d3b-4c28-8c88-1f8f45ec16d4",
+          "type": "p",
+          "children": [
+            {
+              "text": "[Company Name] may request revisions or additional information from the supplier if the proposed actions are deemed insufficient."
+            }
+          ]
+        },
+        {
+          "id": "75f6ab44-3d62-4244-bae0-a93b2a04dec1",
+          "type": "p",
+          "children": [
+            {
+              "text": "Once approved, the "
+            },
+            {
+              "text": "SCAR Form",
+              "italic": true
+            },
+            {
+              "text": " reflects the agreed-upon plan."
+            }
+          ]
+        },
+        {
+          "id": "cb5f73a1-6547-406e-8e12-d65b5363c286",
+          "type": "h3",
+          "children": [
+            {
+              "text": "7.3. Implementation and Verification of Effectiveness"
+            }
+          ]
+        },
+        {
+          "id": "8cf4fb43-74e6-4a5e-a209-57eff5519711",
+          "type": "p",
+          "children": [
+            {
+              "text": "The supplier is responsible for implementing the agreed-upon corrective actions within the defined timelines."
+            }
+          ]
+        },
+        {
+          "id": "28aeb255-d4d0-490f-b365-0e755b53a0f9",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Verification of Effectiveness"
+            }
+          ]
+        },
+        {
+          "id": "82f67a5d-96b2-4ede-9ad7-68da284fffd5",
+          "type": "p",
+          "children": [
+            {
+              "text": "The [Audit Program Coordinator Role] verifies the effectiveness of the implemented supplier corrective actions. This may involve:"
+            }
+          ]
+        },
+        {
+          "id": "58d5d426-127d-4f70-981b-4c0a8bfb7736",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Reviewing documentation provided by the supplier."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4833c271-77c2-430f-b0f9-19d7c406a271",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Performing on-site follow-up activities."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "2b73b838-bcd4-4f2f-acef-4a86cc0e9e62",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Reviewing subsequent incoming material quality data."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "2751a0e2-1391-43a1-b059-c987540fcb6d",
+          "type": "p",
+          "children": [
+            {
+              "text": "Document this verification using the "
+            },
+            {
+              "text": "SCAR Effectiveness Review Form",
+              "italic": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "877b9816-5400-4143-bde9-9e50af56cf63",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "25286d62-6420-4374-855b-bf448417e605",
+          "type": "h2",
+          "children": [
+            {
+              "text": "8. Post-Audit Review and Record Keeping"
+            }
+          ]
+        },
+        {
+          "id": "55fc2546-dbe0-4c88-a045-c2b48b3eebbb",
+          "type": "h3",
+          "children": [
+            {
+              "text": "8.1. Integration into Supplier Performance Review"
+            }
+          ]
+        },
+        {
+          "id": "a03f8347-31a2-40b0-be9c-2f3fcb1d2780",
+          "type": "p",
+          "children": [
+            {
+              "text": "The results of supplier audits, including findings and the effectiveness of corrective actions, are integrated into the overall supplier performance monitoring and review process, as defined in [e.g. "
+            },
+            {
+              "text": "SOP - Supplier Management",
+              "italic": true
+            },
+            {
+              "text": "]."
+            }
+          ]
+        },
+        {
+          "id": "5ce2d74a-b11c-4754-a2e2-be1ecb6ed8a0",
+          "type": "h3",
+          "children": [
+            {
+              "text": "8.2. Record Retention"
+            }
+          ]
+        },
+        {
+          "id": "93857ded-3263-497c-a41c-609c9811bfbf",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Required Documentation"
+            }
+          ]
+        },
+        {
+          "id": "7d803d7d-3805-49d0-a027-264b60f87056",
+          "type": "p",
+          "children": [
+            {
+              "text": "All supplier audit-related records, including:"
+            }
+          ]
+        },
+        {
+          "id": "40adefa0-7f97-43ab-aa37-4cea4ccb4079",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Supplier Audit checklist"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "07d6d2fc-97d1-40a0-a124-1fc96c831e82",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Supplier Audit Notification Letter"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "2f65d623-54ce-416b-a8ee-60600fa71eb3",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Evidence Request Form"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "ee3d44f0-e2c5-4d50-8d73-1e37f2b13892",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Question and Response Log"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "43f301af-04f0-4ab8-bff1-a40b10b4d1ba",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Meeting Summary Form"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "bcc56ac5-5a01-4b8c-8520-5f161b978a72",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Audit Findings Log"
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "744c84de-4909-4b94-83a5-91c224340b90",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Root Cause Analysis Form"
+            }
+          ],
+          "listStart": 7,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "9ec8cb8f-cac9-40a9-b545-127fa71d10a9",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "SCAR Form"
+            }
+          ],
+          "listStart": 8,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "bff0c0ba-c2d4-4b00-a42b-3909b17dcf33",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "SCAR Effectiveness Review Form"
+            }
+          ],
+          "listStart": 9,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "d05f74b2-f38e-4f6a-a62e-465fffc2ee69",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Audit Report Generation Form"
+            }
+          ],
+          "listStart": 10,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "74eac048-d437-41ef-85dc-5dcb43466d97",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Audit Report"
+            }
+          ],
+          "listStart": 11,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e5ad4383-4a8e-4dc6-bdbd-aa982384c050",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Audit Completion Form"
+            }
+          ],
+          "listStart": 12,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e743b480-9cb2-46cc-a824-1267e95865cf",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Retention Period"
+            }
+          ]
+        },
+        {
+          "id": "deb737be-3c07-4851-a15b-83a85e1ebdcd",
+          "type": "p",
+          "children": [
+            {
+              "text": "Retain all supplier audit documentation for a minimum of [specific timeframe, e.g., ten years from product expiration, or as required by regulatory standards and company policy]."
+            }
+          ]
+        },
+        {
+          "id": "37115290-881e-45b7-9aa9-967518441d7b",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Storage"
+            }
+          ]
+        },
+        {
+          "id": "73655fb3-8317-4798-8b99-a6965db28fe5",
+          "type": "p",
+          "children": [
+            {
+              "text": "Store records securely and ensure they are readily accessible for internal review and regulatory inspections."
+            }
+          ]
+        },
+        {
+          "id": "e2118bc5-1874-46ff-9409-a835efbfbea8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "96d2a1c4-82c9-43f8-9caf-4b473239755e",
+          "type": "h2",
+          "children": [
+            {
+              "text": "9. Training"
+            }
+          ]
+        },
+        {
+          "id": "0ab77cd5-fbc2-4979-97d6-53b58ba20354",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Auditor Training"
+            }
+          ]
+        },
+        {
+          "id": "a05bb785-8607-4bb6-b4e3-1f8f736af175",
+          "type": "p",
+          "children": [
+            {
+              "text": "All personnel assigned as supplier auditors must undergo initial training on this SOP, general auditing techniques, relevant regulatory requirements (e.g., FDA Purchasing Controls), and the proper use of all associated audit forms."
+            }
+          ]
+        },
+        {
+          "id": "0a5bc160-8e53-4785-9d31-cc6dc55d4580",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Refresher Training"
+            }
+          ]
+        },
+        {
+          "id": "b8fe63d1-ec57-4097-95e8-f10190e761b4",
+          "type": "p",
+          "children": [
+            {
+              "text": "Conduct refresher training for supplier auditors at least [specific frequency, e.g., annually, biennially] or when significant updates are made to this SOP, relevant regulations, or the audit program."
+            }
+          ]
+        },
+        {
+          "id": "8823c898-e3dd-4abe-8bf7-e105d9258a68",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Training Records"
+            }
+          ]
+        },
+        {
+          "id": "9675c0d6-b830-44bd-8a5f-95975043f674",
+          "type": "p",
+          "children": [
+            {
+              "text": "Maintain training records for all auditors."
+            }
+          ]
+        },
+        {
+          "id": "bfd5ce7d-010d-4565-a76b-25ac1aba54a4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "eedc46d5-287a-4982-96d4-217b5f750eb7",
+          "type": "h2",
+          "children": [
+            {
+              "text": "10. References"
+            }
+          ]
+        },
+        {
+          "id": "170f2553-c8ff-446b-afb2-340b784983e8",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "[Relevant external standards, e.g., ISO 13485:2016 Quality Management Systems – Requirements for Regulatory Purposes (specifically section 7.4 Purchasing)]"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "acb10ca9-382a-452d-b70c-58a5d533502a",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "[Relevant regulatory guidelines, e.g., FDA 21 CFR Part 820.50 Purchasing Controls, EU MDR Article 10(9) – Supplier Control]"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a1fe436f-7df3-46e7-a64e-fddf21a021f1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f07fdc2b-8358-4f78-acd9-6ffddf7c01f1",
+          "type": "field",
+          "fieldId": "7ed1895b-8675-4a54-833d-4f87020fa748",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9f19c1cd-5e54-4269-b4c3-b4270e518006",
+          "type": "field",
+          "fieldId": "14ee0735-8835-4d4c-b4e7-46b059dd22c8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "982c2fd4-17d5-4ffa-8480-d882c193df64",
+          "type": "field",
+          "fieldId": "d277130d-0a15-4fb1-bcb7-2051dffcf619",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e3cc82bd-3853-4fb5-8b80-b19f0e9b775b",
+          "type": "field",
+          "fieldId": "a3a4deb7-6e90-406a-8bba-303f4cc00bfe",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1a2ede93-25e5-45ed-a75b-4421379df246",
+          "type": "field",
+          "fieldId": "88ba6026-72cd-42ca-86b1-b3f70c5a9e0e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4403928f-f5bc-45a5-be30-52c555cb8d00",
+          "type": "field",
+          "fieldId": "5e998407-b642-4338-ac4a-48d8ad477728",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "afc51791-5b98-4844-bc12-db7f11bdcad5",
+          "type": "field",
+          "fieldId": "cc0f56c4-0c09-4ca8-b0c8-1dcfc9ce17f0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e520cecb-55fc-4d18-a643-d2084088d9cc",
+          "type": "field",
+          "fieldId": "4933bd20-f6e0-4f3c-b9bb-65dfa155d065",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0875d5cc-9d6c-4a2c-8615-864a619a1224",
+          "type": "field",
+          "fieldId": "01f35a4f-12a8-46c1-b533-6224c0e1cf6c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "081520da-f587-47ad-8934-624b1b005e03",
+          "type": "field",
+          "fieldId": "7b1724f1-68c7-48a6-bc54-e80057e915b8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a562c0a6-7035-40b5-b541-50e75e0dc34c",
+          "type": "field",
+          "fieldId": "ad325f92-ed0f-4862-9a7a-ab38b543f1bb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6fc53b10-6d0d-49a2-b2e0-c751e76e4db3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "02fa28ce-c0c0-429a-90da-829f743a6baa",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3589384b-bfe3-48a8-a727-f8bb3b58f80b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
