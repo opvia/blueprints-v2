@@ -1,0 +1,235 @@
+{
+  "id": "supplier-audit-v1",
+  "version": 1,
+  "name": "supplier-audit-v1",
+  "description": "",
+  "entities": [
+    {
+      "id": "10e21ce5-8d0f-4526-bc6f-b2362bdba743",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supplier Audit",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.4",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "b80798f4-8c92-434b-9c5a-4963799c9004",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Checklist",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "d78455e7-e58c-4091-ae86-b6889cf91490",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Supplier Audit",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "64d4dc4c-3675-47b4-b1b5-77027484b57f",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit SOP",
+      "icon": "document",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "0fec1301-6701-4664-bca6-2d11dd83a24d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SCAR Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "d99f07f2-b4b8-440c-a177-10e2822a1dc8",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "581b6930-8186-4e28-bea4-8245cdbcaba6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Meeting Summary Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "c4647367-50fe-4282-9c0f-9615308f1e3e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Completion Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "7c03235d-e1c3-45dd-9a71-6b25ff679f87",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Evidence Request Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "ebbdc29a-3aba-4f9e-a85b-71685c445b79",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.5",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "f0a26340-5ef7-48b1-9baf-ce8d504c9cac",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Question and Response Log",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "2bf7a295-7a9a-42fc-86c4-cb41edf30dc0",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supplier Audit Findings Log",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "cbc2d3ad-b066-42e4-99ad-b24c4ccceed5",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Report Form",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "ef7632f7-a879-4a4a-bd7f-f7b9c1d7cfbd",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SCAR Effectiveness Review Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "91184ae1-98f2-480e-ab8f-cd1d83b353a3",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supplier Audit Notification",
+      "icon": "clipboard",
+      "sourceVersion": "1.3",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "e63352d9-a0b7-48bc-8952-7f804a9e776a",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Audit Report Generating Script",
+      "icon": "code",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "81803fcf-3ae1-4778-ae92-d1aa17336ca1",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Audit Script",
+      "icon": "code",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "3f10efe7-f3b2-4155-aa54-0b3a5a12bb44",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Audit Script",
+      "icon": "code",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "43944c75-d0d9-4e49-b014-d4187e5ed705",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supplier Form",
+      "icon": "cube",
+      "sourceVersion": "1.4",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    },
+    {
+      "id": "2463fd3d-e13f-44dd-abd7-ce8cdb5017b6",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Suppliers",
+      "icon": "cube",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "f09000e8-5ad7-4fc7-810f-1715acaf899f"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "f09000e8-5ad7-4fc7-810f-1715acaf899f",
+      "text": "Supplier Audit Blueprint",
+      "hexCode": "#d5f391"
+    }
+  ]
+}
