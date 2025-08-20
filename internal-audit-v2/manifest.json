@@ -1,0 +1,213 @@
+{
+  "id": "internal-audit-v2",
+  "version": 1,
+  "name": "internal-audit-v2",
+  "description": "",
+  "entities": [
+    {
+      "id": "95359264-125d-486b-b110-5fd5181d8caf",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Internal Audit",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "b80798f4-8c92-434b-9c5a-4963799c9004",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Checklist",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "ff0f1e74-6251-47e1-ba28-e75415587e77",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Internal Audit",
+      "icon": "document",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "64d4dc4c-3675-47b4-b1b5-77027484b57f",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit SOP",
+      "icon": "document",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "7652337f-64cc-4c12-ac2d-af26832900db",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "d99f07f2-b4b8-440c-a177-10e2822a1dc8",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "cbc2d3ad-b066-42e4-99ad-b24c4ccceed5",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Report Form",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "cff04d45-e06b-408f-ab9e-e4b90e9c3460",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Findings Log",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "581b6930-8186-4e28-bea4-8245cdbcaba6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Meeting Summary Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "c4647367-50fe-4282-9c0f-9615308f1e3e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Completion Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "7c03235d-e1c3-45dd-9a71-6b25ff679f87",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Evidence Request Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "ebbdc29a-3aba-4f9e-a85b-71685c445b79",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.6",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "f0a26340-5ef7-48b1-9baf-ce8d504c9cac",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Question and Response Log",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "62366e93-362c-4f02-895d-6f799780f58a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Internal Audit Notification",
+      "icon": "clipboard",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "98605d34-8e8a-43e8-b51f-3d35ef7f0978",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Effectiveness Review Form",
+      "icon": "clipboard",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "e63352d9-a0b7-48bc-8952-7f804a9e776a",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Audit Report Generating Script",
+      "icon": "code",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "81803fcf-3ae1-4778-ae92-d1aa17336ca1",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Audit Script",
+      "icon": "code",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    },
+    {
+      "id": "3f10efe7-f3b2-4155-aa54-0b3a5a12bb44",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Audit Script",
+      "icon": "code",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "ed1f323e-ce68-4319-a523-d66edf8f0943"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "ed1f323e-ce68-4319-a523-d66edf8f0943",
+      "text": "Internal Audit Blueprint",
+      "hexCode": "#be7a2e"
+    }
+  ]
+}
