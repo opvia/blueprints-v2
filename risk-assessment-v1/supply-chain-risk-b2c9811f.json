@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b2c9811f-a248-4abd-acd2-df7246b22504",
+  "title": "Supply Chain Risk",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Impact": {
+      "id": "ccd02638-c33c-4ee6-b573-655e22cdc6a8",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Status": {
+      "id": "4e4f4b9f-11d1-4c07-901b-8801be7d2f1d",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Open",
+          "In Review",
+          "Closed"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Likelihood": {
+      "id": "7b1cb1a2-7fb7-441b-b52b-3208dc3e404a",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Mitigation": {
+      "id": "3fb0364e-902c-4adf-ab58-fb4dd59920d2",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Risk Score": {
+      "id": "0a77f9b9-78ec-40b1-823c-b4e8585fa4b2",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Likelihood\") * lookup(__self, \"Impact\")"
+      },
+      "dataType": null
+    },
+    "Title_code": {
+      "id": "968c9207-4b91-44d1-addc-8c9106898f37",
+      "type": "STRING",
+      "value": "SC-Risk",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Subcategory": {
+      "id": "63b019ef-c93d-4a38-9a25-adca94b35198",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Supplier",
+          "Raw Material",
+          "Cold Chain",
+          "Warehouse"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Mitigation Owner": {
+      "id": "bd76c07b-70a9-4e1f-a8fb-211b3699bf67",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Risk Description": {
+      "id": "acf1e7b9-a4d7-46c5-ac08-e28aa59c773e",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Reference documents": {
+      "id": "37224081-9697-4d4d-bfc3-079de0a4b72b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Target Completion Date": {
+      "id": "ce5794e9-4532-4a8e-9e0e-f3d1312f2b9f",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "2b51778b-242a-4f9a-8786-978974685ff9"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "97680c3d-a894-468f-a291-a02ec70e1f00",
+          "type": "field",
+          "fieldId": "63b019ef-c93d-4a38-9a25-adca94b35198",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a38b857-d739-4e31-b5c5-8fadbd7b2c7e",
+          "type": "field",
+          "fieldId": "acf1e7b9-a4d7-46c5-ac08-e28aa59c773e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c015d2e6-aa2a-415e-85b5-a10ba1f9aa67",
+          "type": "field",
+          "fieldId": "7b1cb1a2-7fb7-441b-b52b-3208dc3e404a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2f575d85-94fb-4fc1-9e31-5653a401b66d",
+          "type": "field",
+          "fieldId": "ccd02638-c33c-4ee6-b573-655e22cdc6a8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2ad8e845-7d0f-4b70-afc5-82e2ac0b7462",
+          "type": "field",
+          "fieldId": "0a77f9b9-78ec-40b1-823c-b4e8585fa4b2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "04c91fdb-53c9-4c38-abd6-f94258c7c7eb",
+          "type": "field",
+          "fieldId": "3fb0364e-902c-4adf-ab58-fb4dd59920d2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "45eceb20-aac0-43cd-bea5-9c4c6a9ff820",
+          "type": "field",
+          "fieldId": "bd76c07b-70a9-4e1f-a8fb-211b3699bf67",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "340530c4-6074-45c0-8b8e-e6faea5f0ec7",
+          "type": "field",
+          "fieldId": "ce5794e9-4532-4a8e-9e0e-f3d1312f2b9f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "93b26489-37f7-495c-ba3c-226f10f29ba5",
+          "type": "field",
+          "fieldId": "4e4f4b9f-11d1-4c07-901b-8801be7d2f1d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1dff0b8a-376e-4502-a531-c458ab48b623",
+          "type": "field",
+          "fieldId": "37224081-9697-4d4d-bfc3-079de0a4b72b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "0d46fbdf-72d3-4c2a-958f-871b225a4e63",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1cd8e35d-15a5-4242-bbe0-589ddbb4e6c3",
+          "type": "field",
+          "fieldId": "968c9207-4b91-44d1-addc-8c9106898f37",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7bfaa7bb-c4a5-45cf-9f3a-5a02aed682f7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@968c9207-4b91-44d1-addc-8c9106898f37 @TEMPLATE_INDEX  "
+  }
+}
