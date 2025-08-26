@@ -1,0 +1,168 @@
+{
+  "id": "longevron-zen",
+  "version": 1,
+  "name": "longevron-zen",
+  "description": "",
+  "entities": [
+    {
+      "id": "ef5a0daf-8432-4056-83f3-d6729ef66334",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Biometrics",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9dc19522-cc77-4b59-8084-e3c84febfd89",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Metadata Objects",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f6af0f8a-69f5-48f8-ac53-740e62d5c580",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Department",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c9496c59-7d35-4bc4-aed8-adfb66c459a0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Clinical Operations",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "66b53dbf-2fae-4db6-8e6c-64ffb776ef28",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default template",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e24804d8-e55f-4562-9474-83465c25faf5",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e3fb8289-2782-46ad-8845-64fd057533f9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "General/Corporate",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "799d7c38-97b4-4458-9db6-74b483a6b1f2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IT",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c9f9d67f-2aeb-49ee-9dbf-50ec537ac00a",
+      "kind": "TYPE",
+      "contentType": "FILE",
+      "title": "Legacy Document",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "abdf8848-2754-457e-ba04-de1cdd184432",
+      "kind": "TEMPLATE",
+      "contentType": "FILE",
+      "title": "Default template",
+      "icon": "paperclip",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "f9040ce3-f31f-4c30-bd18-22df0475e640",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Materials Management",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "81566c94-6f32-42aa-b336-908df057e733",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP-0003 Pest Control",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a3c9fdde-6fa5-442c-b6c3-8f4794dc78a4",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "Pest control legacy",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5bf858cd-f226-4bcc-9b1c-ba145204499b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Quality Control",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7810f1d0-58a1-4621-a8ac-1a074871470e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP Template",
+      "icon": "document",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "5f70936d-e19f-4908-88bd-803dd0d4648a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Quality Assurance",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8a42babe-6b0a-4797-9a86-4e8e87d1b6b6",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Pharmacovigilance",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "99a825c8-ccdf-48c8-b31b-d5bb1b019b2b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Validation/Calibration",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1b370af9-88ac-4ce3-918b-a761b58447fa",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Manufacturing",
+      "icon": "document",
+      "sourceVersion": "1"
+    }
+  ],
+  "assets": [
+    {
+      "id": "092e12ea-31bd-43da-9efb-2a7d4c5c86b6",
+      "entityId": "a3c9fdde-6fa5-442c-b6c3-8f4794dc78a4",
+      "filename": "MIG1-2 SOP-0003 Pest Control (v6.0).pdf",
+      "contentType": "application/pdf"
+    }
+  ]
+}

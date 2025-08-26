@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "abdf8848-2754-457e-ba04-de1cdd184432",
+  "title": "Default template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Name": {
+      "id": "850ec680-6d8f-47f1-9f0f-e6b81d872346",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "State": {
+      "id": "d2ca6262-cf12-4bdc-aa20-4548371ae9f3",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "AWAITING APPROVAL",
+          "DRAFT REVIEW",
+          "DRAFT",
+          "EFFECTIVE",
+          "REVIEWED",
+          "REJECTED"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Author": {
+      "id": "585a1a92-d7b6-4a31-8700-db1a97232144",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Key ID": {
+      "id": "fb8b1ba7-ab58-49d7-b636-682775824837",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Version": {
+      "id": "7a59f131-add3-4e2a-ac50-389136ea3bc2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "File Name": {
+      "id": "b178f3b7-d30f-4857-ab50-197c5a83aaa6",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Department": {
+      "id": "903a2f96-6434-4b06-9efd-49bb9c2b9027",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "f6af0f8a-69f5-48f8-ac53-740e62d5c580"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Saved search",
+              "config": "Saved search"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Description": {
+      "id": "195ee38a-352d-4603-8a30-0d5d640f462c",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Document ID": {
+      "id": "bc25a56c-63dc-4745-8dbf-65e412fdfa1c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Date Created": {
+      "id": "736e14f3-44cf-4b71-b5b4-dee4802d1c4f",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Category Name": {
+      "id": "497c9e7b-052d-48f2-a24a-8e7a137c470c",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Material Specifications",
+          "Note To File",
+          "Secretome",
+          "Validation Documents (IOPQ)",
+          "Technical Reports",
+          "Forms",
+          "BPRs",
+          "SOPs",
+          "Policy",
+          "Clinical Pathways",
+          "Manuals",
+          "Worksheets"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Date Approved": {
+      "id": "9de19d9c-649f-4c59-9ce2-7c92128bb68f",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Effective Date": {
+      "id": "fc285e6d-b395-456a-b864-5677f50f8815",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Training Status": {
+      "id": "e697c6ee-ab43-46ee-b759-e830a0ec2121",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "compliant",
+          "at_risk",
+          "past_due",
+          "na"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Active Workflows": {
+      "id": "1ac02dc4-6db5-45a7-910d-e3bba1a2a480",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "approve",
+          "review",
+          "na"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Training Required?": {
+      "id": "39f05426-4ed6-4d4b-b64c-3473294f53ae",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "c9f9d67f-2aeb-49ee-9dbf-50ec537ac00a"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": null
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@850ec680-6d8f-47f1-9f0f-e6b81d872346 "
+  }
+}

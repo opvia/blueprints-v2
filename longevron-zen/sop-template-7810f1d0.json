@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "7810f1d0-58a1-4621-a8ac-1a074871470e",
+  "title": "SOP Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "SOP Number": {
+      "id": "67743eef-e2a9-4d19-ae88-28cf526b84ff",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Source File": {
+      "id": "0660468f-4bc4-4380-a81f-c210184399aa",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "a3c9fdde-6fa5-442c-b6c3-8f4794dc78a4",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Document Name": {
+      "id": "d801cb92-7264-4b9e-9708-ab50f6d9bcdf",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "e24804d8-e55f-4562-9474-83465c25faf5"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "0f1da15d-14b5-46c4-8781-8737d039db5c",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "08cf63b8-c665-4a24-94cd-a1f487ac4216",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "70165036-dffc-4694-a516-e83505dc1eed",
+                  "type": "field",
+                  "fieldId": "d801cb92-7264-4b9e-9708-ab50f6d9bcdf",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c8defbbf-6939-484b-905b-ee4f2c25f10a",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "4c9800f0-43dd-45e7-9e02-7f7f1f9d19c8",
+                  "type": "field",
+                  "fieldId": "67743eef-e2a9-4d19-ae88-28cf526b84ff",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0c574211-4128-449e-8e21-115b36df8d25",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@67743eef-e2a9-4d19-ae88-28cf526b84ff @d801cb92-7264-4b9e-9708-ab50f6d9bcdf "
+  }
+}

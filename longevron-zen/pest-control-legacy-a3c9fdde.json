@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a3c9fdde-6fa5-442c-b6c3-8f4794dc78a4",
+  "title": "Pest control legacy",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "abdf8848-2754-457e-ba04-de1cdd184432",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "c9f9d67f-2aeb-49ee-9dbf-50ec537ac00a"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": "092e12ea-31bd-43da-9efb-2a7d4c5c86b6"
+    }
+  }
+}

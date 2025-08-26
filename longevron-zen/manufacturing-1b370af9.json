@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "1b370af9-88ac-4ce3-918b-a761b58447fa",
+  "title": "Manufacturing",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "f6af0f8a-69f5-48f8-ac53-740e62d5c580",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Saved search": {
+      "id": "b4661b22-f1de-411c-8a36-f50edff28d38",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "fieldValue": [
+            {
+              "name": "Department",
+              "value": "ref(lookup(__self, \"ID\"))",
+              "operator": "="
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Department",
+            "config": "Department"
+          }
+        ],
+        "hiddenDefaultColumns": [
+          "WORK_INSTRUCTIONS_PROGRESS",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "9dc19522-cc77-4b59-8084-e3c84febfd89"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "5f89e080-32e0-4473-a58c-8ec5539e1a31",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "44ef14f0-e52d-43d8-b366-65e67796c61c",
+          "type": "field",
+          "fieldId": "b4661b22-f1de-411c-8a36-f50edff28d38",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f3300349-d628-4b66-b4f8-8934700a62cd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
