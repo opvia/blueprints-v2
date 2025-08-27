@@ -1,0 +1,490 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a68b4d99-57d6-4b84-ae40-88491e95d423",
+  "title": "Risk Assessment template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Risks": {
+      "id": "4d417cce-4185-4e1b-b64f-eb9e56deecd6",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "209ec2f0-1322-42fa-8977-634aa95a8eee",
+              "5c0b8cf9-f3a9-4aaf-8d14-e2f0b806d010",
+              "b2c9811f-a248-4abd-acd2-df7246b22504"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "SDS",
+              "config": "SDS"
+            },
+            {
+              "name": "Impact",
+              "config": "Impact"
+            },
+            {
+              "name": "Status",
+              "config": "Status"
+            },
+            {
+              "name": "Likelihood",
+              "config": "Likelihood"
+            },
+            {
+              "name": "Mitigation",
+              "config": "Mitigation"
+            },
+            {
+              "name": "Risk Score",
+              "config": "Risk Score"
+            },
+            {
+              "name": "Subcategory",
+              "config": "Subcategory"
+            },
+            {
+              "name": "Raw materials",
+              "config": "Raw materials"
+            },
+            {
+              "name": "Department Code",
+              "config": "Department Code"
+            },
+            {
+              "name": "Mitigation Owner",
+              "config": "Mitigation Owner"
+            },
+            {
+              "name": "Risk Description",
+              "config": "Risk Description"
+            },
+            {
+              "name": "Supplier / Vendor",
+              "config": "Supplier / Vendor"
+            },
+            {
+              "name": "Reference documents",
+              "config": "Reference documents"
+            },
+            {
+              "name": "Computed title formula",
+              "config": "Computed title formula"
+            },
+            {
+              "name": "Target Completion Date",
+              "config": "Target Completion Date"
+            },
+            {
+              "name": "System",
+              "config": "System"
+            },
+            {
+              "name": "Vendor",
+              "config": "Vendor"
+            },
+            {
+              "name": "Material",
+              "config": "Material"
+            },
+            {
+              "name": "Risk Type",
+              "config": "Risk Type"
+            },
+            {
+              "name": "Department",
+              "config": "Department"
+            },
+            {
+              "name": "Approved by",
+              "config": "Approved by"
+            },
+            {
+              "name": "Approved on",
+              "config": "Approved on"
+            },
+            {
+              "name": "Prepared by",
+              "config": "Prepared by"
+            },
+            {
+              "name": "Prepared on",
+              "config": "Prepared on"
+            },
+            {
+              "name": "Title_code",
+              "config": "Title_code"
+            },
+            {
+              "name": "Attachments",
+              "config": "Attachments"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Department": {
+      "id": "c041f91a-9a9f-4858-82f5-9941c34d8f15",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Supply Chain",
+          "IT / Systems",
+          "Clinical"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Approved by": {
+      "id": "eb93a987-014a-4493-a28f-52e1313005bc",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Approved on": {
+      "id": "cffeb443-afa0-496d-b38b-bf3c5583b56f",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Prepared by": {
+      "id": "74902563-46f3-4a77-8346-4f335f4bee25",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Prepared on": {
+      "id": "bf1acacd-f998-4ee6-9d42-3dfc5826dd85",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Department_code": {
+      "id": "cb78159d-4291-493e-9bca-3872a77ecceb",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "equalText( lookup(__self, \"Department\"), \"Supply Chain\") ? \"SC\" :\nequalText( lookup(__self, \"Department\"), \"Clinical\") ? \"CLN\" :\nequalText( lookup(__self, \"Department\"), \"IT / Systems\") ? \"IT\" :\n\"GEN\""
+      },
+      "dataType": null
+    },
+    "Last Reviewed by": {
+      "id": "cea09118-73dc-494c-8f5a-4dda3e50a73a",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Last Reviewed on": {
+      "id": "e4d98f5a-d65f-4089-a6c2-0b47fe584cd1",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Next Review date": {
+      "id": "c4831aea-6ae3-4e71-924b-a699335bac53",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Last Reviewed on\"),\n  equalText( lookup(__self, \"Review Frequency\"), \"6 months\")  ? 6  :\n  equalText( lookup(__self, \"Review Frequency\"), \"12 months\") ? 12 :\n  equalText( lookup(__self, \"Review Frequency\"), \"18 months\") ? 18 :\n  equalText( lookup(__self, \"Review Frequency\"), \"24 months\") ? 24 : 0,\n  \"months\")"
+      },
+      "dataType": null
+    },
+    "Review Frequency": {
+      "id": "d6c504ae-51cb-4559-8c5d-e18e526b5738",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "6 months",
+          "12 months",
+          "18 months",
+          "24 months"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Risk Assessment ID": {
+      "id": "2c672679-15fa-42e0-a25b-9ff90b00ca28",
+      "type": "FORMULA",
+      "value": "RA-null-6",
+      "config": {
+        "formulaExpression": "concat( \"RA-\", string( lookup(__self, \"Department_code\") ), \"-\", string(lookup(__self, \"INDEX\")))"
+      },
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "2b51778b-242a-4f9a-8786-978974685ff9"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b6f68d5d-7545-49ad-ace6-e1514ae3f716",
+          "type": "h2",
+          "children": [
+            {
+              "text": "General Information"
+            }
+          ]
+        },
+        {
+          "id": "c35e8539-0f76-42e6-a3e4-68e1aa9b3b04",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "447915ee-9e6b-4898-af79-61c2ff75e96f",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "eaa02b24-5c46-4b1e-9630-9ee5e6a765c1",
+                  "type": "field",
+                  "fieldId": "74902563-46f3-4a77-8346-4f335f4bee25",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d85abd80-e3d7-4a89-b423-9855af288c95",
+                  "type": "field",
+                  "fieldId": "bf1acacd-f998-4ee6-9d42-3dfc5826dd85",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9858b4aa-7a12-4774-b34e-019843c1337b",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "c2f37e89-d063-4ea6-830a-3e32e9f59f65",
+                  "type": "field",
+                  "fieldId": "eb93a987-014a-4493-a28f-52e1313005bc",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "764e0bac-3e87-4267-8c18-7eddc1332fea",
+                  "type": "field",
+                  "fieldId": "cffeb443-afa0-496d-b38b-bf3c5583b56f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "497f96da-02db-4cfc-9756-95cb815d9a3a",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "5ef23528-f48a-4029-9223-577af4994e8e",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "aa0f5c74-3c7c-4657-b60f-b361bfb5b750",
+                  "type": "field",
+                  "fieldId": "c041f91a-9a9f-4858-82f5-9941c34d8f15",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "9e7a8a6b-0d3d-4499-bb32-003a68851670",
+                  "type": "field",
+                  "fieldId": "cb78159d-4291-493e-9bca-3872a77ecceb",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "585ecd75-ef4d-4e0f-a235-ab25ff9ac98a",
+                  "type": "field",
+                  "fieldId": "2c672679-15fa-42e0-a25b-9ff90b00ca28",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "3ae63da5-312e-43c0-a2e9-398fc20217f8",
+                  "type": "field",
+                  "fieldId": "d6c504ae-51cb-4559-8c5d-e18e526b5738",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "96f55acf-516a-44ab-81a1-f8bd46661afd",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "98736380-a03a-4223-bab3-6776a013beca",
+                  "type": "field",
+                  "fieldId": "cea09118-73dc-494c-8f5a-4dda3e50a73a",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "a7433d2e-c823-4a87-8904-feb2c756f1e4",
+                  "type": "field",
+                  "fieldId": "e4d98f5a-d65f-4089-a6c2-0b47fe584cd1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "fe13db11-33e5-4a1a-b0e3-bd27035fa29c",
+                  "type": "field",
+                  "fieldId": "c4831aea-6ae3-4e71-924b-a699335bac53",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4d49959-b76f-42dc-9d91-02041ced93ee",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f39dca93-55f4-4a4a-b2c9-7376ef22cfab",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Assessment"
+            }
+          ]
+        },
+        {
+          "id": "036e1887-b5fb-4316-a3c3-a47e921f3814",
+          "type": "p",
+          "children": [
+            {
+              "text": "Select the department to load the relevant assessment fields",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "b133b209-5215-4359-84a1-ee0824f3f455",
+          "type": "field",
+          "fieldId": "4d417cce-4185-4e1b-b64f-eb9e56deecd6",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "541cf2da-7349-4e38-9c26-272b106826c4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b21ef799-86e3-478f-ba2c-4d2b42cf4f59",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ada55467-25bd-4776-8786-0c48c623de6c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@2c672679-15fa-42e0-a25b-9ff90b00ca28 "
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "risk-assessment-v1",
+  "version": 1,
+  "name": "risk-assessment-v1",
+  "description": "",
+  "entities": [
+    {
+      "id": "2b51778b-242a-4f9a-8786-978974685ff9",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Risk Assessment",
+      "icon": "build",
+      "sourceVersion": "3",
+      "tagIds": [
+        "aad9ed0a-50a3-4e3c-a910-9a174efe097e"
+      ]
+    },
+    {
+      "id": "a68b4d99-57d6-4b84-ae40-88491e95d423",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Risk Assessment template",
+      "icon": "build",
+      "sourceVersion": "8",
+      "tagIds": [
+        "aad9ed0a-50a3-4e3c-a910-9a174efe097e"
+      ]
+    },
+    {
+      "id": "209ec2f0-1322-42fa-8977-634aa95a8eee",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Clinical Risks",
+      "icon": "build",
+      "sourceVersion": "4",
+      "tagIds": [
+        "aad9ed0a-50a3-4e3c-a910-9a174efe097e"
+      ]
+    },
+    {
+      "id": "5c0b8cf9-f3a9-4aaf-8d14-e2f0b806d010",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IT / Systems Risk",
+      "icon": "build",
+      "sourceVersion": "5",
+      "tagIds": [
+        "aad9ed0a-50a3-4e3c-a910-9a174efe097e"
+      ]
+    },
+    {
+      "id": "b2c9811f-a248-4abd-acd2-df7246b22504",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supply Chain Risk",
+      "icon": "build",
+      "sourceVersion": "8",
+      "tagIds": [
+        "aad9ed0a-50a3-4e3c-a910-9a174efe097e"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "aad9ed0a-50a3-4e3c-a910-9a174efe097e",
+      "text": "Risk Assessment Blueprint",
+      "hexCode": "#343c1e"
+    }
+  ]
+}
