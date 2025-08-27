@@ -1,0 +1,32 @@
+{
+  "id": "bug",
+  "version": 1,
+  "name": "bug",
+  "description": "",
+  "entities": [
+    {
+      "id": "235fb5a1-bf48-4126-826e-2072c08bd602",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Nanomaster Target Consumables Template",
+      "icon": "application",
+      "sourceVersion": "1.4"
+    },
+    {
+      "id": "6a3e6136-5e38-411e-b1be-c2f12439654c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Consumables",
+      "icon": "application",
+      "sourceVersion": "1.1"
+    }
+  ],
+  "assets": [
+    {
+      "id": "95c1c459-c515-4960-9696-c0bf146a18ae",
+      "entityId": "235fb5a1-bf48-4126-826e-2072c08bd602",
+      "filename": "eaa2a08f-e38f-4d51-8e30-ce09d0c892e3__IMG_5926.jpg",
+      "contentType": "image/jpeg"
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "235fb5a1-bf48-4126-826e-2072c08bd602",
+  "title": "Nanomaster Target Consumables Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Name": {
+      "id": "3bf688a3-f3ae-4b39-a5cf-064ab1de9381",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "PO #": {
+      "id": "4c66f07d-45f9-4c10-85bf-c628e5b49d54",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Location": {
+      "id": "bcafd4e6-8caf-4be7-a512-7a3cbe099f52",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "EDM Room",
+          "EE Lab",
+          "Lapping Room",
+          "Wet/Dry Labs",
+          "Decon Room",
+          "Blue Room",
+          "Parts Cleaning Room",
+          "PPE",
+          "Suite 350",
+          "Expiring",
+          "Non-Expiring"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Material": {
+      "id": "4788032b-4e43-4e62-84dd-6dbcf5016915",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Platinum",
+          "Gold",
+          "Titanium"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "On time?": {
+      "id": "7c7787a8-9168-40d4-8388-af39e3929482",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Lot Number": {
+      "id": "f47b3c2a-8e14-4cd3-8dfd-5344b74f11bc",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Received In": {
+      "id": "a63fce4d-a961-4fa5-a048-ee19c42decc5",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Product Type": {
+      "id": "e2bc0c87-9fe3-4298-8fa4-0002344e8822",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "-",
+          "WIP Product",
+          "Expiring Consumable",
+          "Non-Expiring Consumable",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Expiration Date": {
+      "id": "b00f9288-5ff9-4c43-a8e9-4a9d4765eace",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Initial Quantity (A)": {
+      "id": "0e8c4b05-b354-4eb4-a8e8-bc2ec9f3dfb0",
+      "type": "NUMBER",
+      "value": null,
+      "config": {},
+      "dataType": "NUMBER"
+    },
+    "Was the correct qty received?": {
+      "id": "33bc9315-a02f-46af-a276-ea4525d782cc",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Is the condition of the item(s) acceptable?": {
+      "id": "a1060e04-b601-4369-9dad-70f97a58aa86",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Does the product received match what was ordered?": {
+      "id": "84537f3a-4dfb-41e2-a379-0c36f11391da",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6a3e6136-5e38-411e-b1be-c2f12439654c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "1b785d61-d2d8-4d10-89e4-00f6b339b815",
+          "type": "field",
+          "fieldId": "4c66f07d-45f9-4c10-85bf-c628e5b49d54",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fc04a38a-3f4a-4e13-9dff-768deee259ff",
+          "type": "field",
+          "fieldId": "3bf688a3-f3ae-4b39-a5cf-064ab1de9381",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "41772a97-40ae-4dc9-b1d1-7557b6b160fb",
+          "type": "field",
+          "fieldId": "4788032b-4e43-4e62-84dd-6dbcf5016915",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4f3ce93c-a148-4644-8b97-6bd7a9d12d13",
+          "type": "field",
+          "fieldId": "bcafd4e6-8caf-4be7-a512-7a3cbe099f52",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c44686a5-b1dd-41b8-acd0-8169ea154f2f",
+          "type": "field",
+          "fieldId": "f47b3c2a-8e14-4cd3-8dfd-5344b74f11bc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e8f25833-0c41-4588-acd6-50a01a44bb37",
+          "type": "field",
+          "fieldId": "7c7787a8-9168-40d4-8388-af39e3929482",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2635d911-da7b-4e98-b739-368b3e5ce444",
+          "type": "field",
+          "fieldId": "84537f3a-4dfb-41e2-a379-0c36f11391da",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e3e051d2-08b0-4c1e-a65d-2ab2e808e0e6",
+          "type": "field",
+          "fieldId": "e2bc0c87-9fe3-4298-8fa4-0002344e8822",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7f05aafa-d9e6-45a0-9193-b6105aadb5c3",
+          "type": "field",
+          "fieldId": "33bc9315-a02f-46af-a276-ea4525d782cc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b686bf4e-f677-4136-8915-2ba5ef0955f7",
+          "type": "field",
+          "fieldId": "a1060e04-b601-4369-9dad-70f97a58aa86",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e7183764-eeb1-47e2-a2d4-c6135375223f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4e1dbae3-5157-425e-81ea-9ba4fc8355b7",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Add any extra details of the product below (e.g. Expiration date, storage temperatures):"
+            }
+          ]
+        },
+        {
+          "id": "5d401a9b-f497-47e4-a0d5-4626d379cca0",
+          "type": "field",
+          "fieldId": "b00f9288-5ff9-4c43-a8e9-4a9d4765eace",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1d4a353e-b6e2-42ef-8b91-6fad1bf2612b",
+          "type": "field",
+          "fieldId": "0e8c4b05-b354-4eb4-a8e8-bc2ec9f3dfb0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "baed47f8-64ba-4b9c-bd47-e76540f2456c",
+          "type": "field",
+          "fieldId": "a63fce4d-a961-4fa5-a048-ee19c42decc5",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": true
+          }
+        },
+        {
+          "id": "8b480ba0-c538-4e3a-bb48-28546331fc87",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "08cde6eb-555a-4e42-8531-e2790c5c1f10",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Reference image of what the received target should look like (Copper backing and Magnetic keeper in the middle):"
+            }
+          ]
+        },
+        {
+          "id": "e69f5492-11a3-4fa1-b246-6380860044de",
+          "type": "img",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "uploadId": "95c1c459-c515-4960-9696-c0bf146a18ae"
+        },
+        {
+          "id": "cd87c9d1-95aa-49c2-a9e9-9bc73ca27a1e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "80e94a4d-971f-45fe-a7ad-a0e10e3a80c7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@db8daca4-acef-4cce-9d01-b35d368614ca "
+  }
+}
