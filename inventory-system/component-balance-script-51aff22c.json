@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "51aff22c-6a06-436e-b20c-02b87811c41a",
+  "title": "Component Balance Script",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "d43adebc-8c8d-446a-b581-26de5fb81ecd",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "77138cf0-1a9f-43bb-9060-ba4c2806d02d"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# ------------------------------\n# Field Names (used to reference fields in Seal entities)\n# ------------------------------\n\n# Fields on the Component Balance entity\nCOMPONENT_BAL_SPEC_REFERENCE_FIELD_NAME = \"Specification Reference\"\nCOMPONENT_BAL_COMPONENT_REFERENCE_FIELD_NAME = \"Component Reference\"\nCOMPONENT_BAL_USAGES_FIELD_NAME = \"Inventory Usages\"\nCOMPONENT_BAL_QUANTITY_USED_FIELD_NAME = \"Quantity Used\"\nCOMPONENT_BAL_QUANTITY_CREATED_FIELD_NAME = \"Quantity Created\"\nCOMPONENT_BAL_ADDITIONS_FIELD_NAME = \"Inventory Additions\"\nCOMPONENT_BAL_STOCK_FIELD_NAME = \"Quantity In Stock\"\n\n# Fields on Usage entities\nUSAGE_SPEC_REFERENCE_FIELD_NAME = \"Specification Reference\"\nUSAGE_COMPONENT_REFERENCE_FIELD_NAME = \"Component Reference\"\nUSAGE_QUANTITY_FIELD_NAME = \"Quantity\"\n\n# Fields on Addition entities\nADDITION_SPEC_REFERENCE_FIELD_NAME = \"Specification Reference\"\nADDITION_COMPONENT_REFERENCE_FIELD_NAME = \"Component Reference\"\nADDITION_QUANTITY_FIELD_NAME = \"Quantity\"\n\n# ------------------------------\n# Query configurations\n# ------------------------------\n\n# Search for all \"Invnetory Usage\" entities that are in a non editable state\nUSAGE_QUERY_CONFIG = {\n    \"searchType\": \"ACTIVE_VERSIONS\",\n    \"filters\": {\n        \"and\": [\n            {\n                \"or\": [\n                    {\n                        \"operator\": \"in\",\n                        \"filter\": \"type\",\n                        \"value\": [\"Inventory Usage\"]\n                    }\n                ]\n            }\n        ]\n    }\n}\n\n# Search for all \"Inventory Addition\" entities that are in a non editable state\nADDITION_QUERY_CONFIG = {\n    \"searchType\": \"ACTIVE_VERSIONS\",\n    \"filters\": {\n        \"and\": [\n            {\n                \"or\": [\n                    {\n                        \"operator\": \"in\",\n                        \"filter\": \"type\",\n                        \"value\": [\"Inventory Addition\"]\n                    }\n                ]\n            }\n        ]\n    }\n}\n\n# ------------------------------\n# Helper Function\n# ------------------------------\n\ndef map_ref_id_to_entities(entities, field_name):\n    \"\"\"\n    Create a dictionary mapping from a component reference ID\n    to all entities (Usage/Addition) that point to that component.\n\n    Example output:\n    {\n        \"component123\": [ {\"id\": \"usageA\", \"version\": 1}, {\"id\": \"usageB\", \"version\": 1} ],\n        \"component456\": [ {\"id\": \"additionC\", \"version\": 2} ]\n    }\n    \"\"\"\n    mapping = {}\n\n    for e in entities:\n        try:\n            ref_id = e['fields'][field_name]['value'][0]['id']\n            mapping.setdefault(ref_id, []).append({'id': e['id'], 'version': e['version']})\n        except (KeyError, IndexError, TypeError):\n            # Skip any entities that don’t have the expected structure\n            continue\n\n    return mapping\n\n# ------------------------------\n# Get all Usage and addition entities in the system\n# ------------------------------\n\nusages = seal.search_entities(USAGE_QUERY_CONFIG)\nusages_by_id = {e['id']: e for e in usages}  # Lookup table for full usage entities\n\nadditions = seal.search_entities(ADDITION_QUERY_CONFIG)\nadditions_by_id = {e['id']: e for e in additions}  # Lookup table for full addition entities\n\n# Build mappings: component_id → list of usage/addition entities\nusage_map = map_ref_id_to_entities(usages, USAGE_COMPONENT_REFERENCE_FIELD_NAME)\naddition_map = map_ref_id_to_entities(additions, ADDITION_COMPONENT_REFERENCE_FIELD_NAME)\n\n# ------------------------------\n# Get the current Component Balance entity\n# ------------------------------\n\ncomponent_balance = seal.get_containing_entity()  # The balance entity where this script is running\ncomponent_bal_id = component_balance['id']        # Its ID (so we can update it later)\n\n# Find which component this balance is tracking\ncomponent_ref = component_balance['fields'][COMPONENT_BAL_COMPONENT_REFERENCE_FIELD_NAME]['value'][0]\ncomponent_id = component_ref['id']\n\n# ------------------------------\n# Find all relevant Usages and Additions for this component\n# ------------------------------\n\nlinked_usages = usage_map.get(component_id, [])\nlinked_additions = addition_map.get(component_id, [])\n\n# ------------------------------\n# Calculate totals\n# ------------------------------\n\n# Total quantity created\ncreated_quantity = 0\nfor addition in linked_additions:\n    addition_id = addition['id']\n    addition_entity = additions_by_id[addition_id]\n    addition_quantity = addition_entity['fields'][ADDITION_QUANTITY_FIELD_NAME]['value']\n    created_quantity += addition_quantity\n\n# Total quantity used\nused_quantity = 0\nfor usage in linked_usages:\n    usage_id = usage['id']\n    usage_entity = usages_by_id[usage_id]\n    usage_quantity = usage_entity['fields'][USAGE_QUANTITY_FIELD_NAME]['value']\n    used_quantity += usage_quantity\n\n# Net stock = created - used\nquantity_in_stock = created_quantity - used_quantity\n\n# ------------------------------\n# Update the Component Balance entity with results\n# ------------------------------\n\nseal.update_field_value_in_entity(component_bal_id, COMPONENT_BAL_ADDITIONS_FIELD_NAME, linked_additions)\nseal.update_field_value_in_entity(component_bal_id, COMPONENT_BAL_QUANTITY_CREATED_FIELD_NAME, created_quantity)\nseal.update_field_value_in_entity(component_bal_id, COMPONENT_BAL_USAGES_FIELD_NAME, linked_usages)\nseal.update_field_value_in_entity(component_bal_id, COMPONENT_BAL_QUANTITY_USED_FIELD_NAME, used_quantity)\nseal.update_field_value_in_entity(component_bal_id, COMPONENT_BAL_STOCK_FIELD_NAME, quantity_in_stock)\n"
+    }
+  }
+}

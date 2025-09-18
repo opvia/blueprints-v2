@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "7b18a809-cb92-4899-9521-3e5c6da30661",
+  "title": "Specification Balance Creation Trigger",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "d43adebc-8c8d-446a-b581-26de5fb81ecd",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "77138cf0-1a9f-43bb-9060-ba4c2806d02d"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "triggers": [
+        {
+          "id": "228fcfa0-1757-4365-8c85-2ecf4f0ccd1e",
+          "name": "Specification Balance Creation",
+          "entityRefs": [
+            {
+              "id": "5c35d26b-ab78-4d37-975a-bc6a78713a87"
+            }
+          ],
+          "systemEvent": "onMoveOutOfEditable",
+          "appliesToEntityKinds": "INSTANCE"
+        }
+      ],
+      "scriptCode": "SPEC_BALANCE_TEMPLATE_ID = \"c7578235-5bee-49a1-adb4-622b60e762d4\"\n\nSPEC_BALANCE_SPEC_REFERENCE_FIELD_NAME = \"Specification Reference\"\nSPEC_BALANCE_QUANTITY_FIELD_NAME = \"Quantity In Stock\"\n\nSPEC_BALANCE_QUERY_CONFIG = {\n  \"searchType\": \"LIVE\",\n  \"filters\": {\n    \"and\": [\n      {\n        \"or\": [\n          {\n            \"operator\": \"in\",\n            \"filter\": \"template\",\n            \"value\": [\n              \"c7578235-5bee-49a1-adb4-622b60e762d4\"\n            ]\n          }\n        ]\n      }\n    ]\n  }\n}\n\n\n# --- Get trigger info ---\ntrigger_info = seal.get_trigger_info()\n\nprint(trigger_info)\n\ntrigger_entity_id = trigger_info.triggered_by_entity_id\ntrigger_entity = seal.get_entity(trigger_entity_id)\ntrigger_entity_ref = {'id':trigger_entity_id, 'version': trigger_entity['version'] or None}\n\n# --- Search for existing balance entities ---\nspec_balance_entities = seal.search_entities(SPEC_BALANCE_QUERY_CONFIG)\n\nspec_to_balance_map = {}\nfor entity in spec_balance_entities:\n    spec_reference = entity['fields'][SPEC_BALANCE_SPEC_REFERENCE_FIELD_NAME]['value'][0]\n    spec_to_balance_map[spec_reference['id']] = entity['id']\n\n# --- Create balance entity if not exists ---\nif trigger_entity_id not in spec_to_balance_map:\n\n    spec_balance_entity = seal.create_instance_from_template(\n        template_id = SPEC_BALANCE_TEMPLATE_ID,\n        field_values = {SPEC_BALANCE_SPEC_REFERENCE_FIELD_NAME: [trigger_entity_ref],\n                        SPEC_BALANCE_QUANTITY_FIELD_NAME: 0}\n        )\n    print(f\"Specification balance entity with UUID: {spec_balance_entity['id']} created for specification entity with UUID: {trigger_entity_id}\")\nelse:\n    print(\"Specification Balance entity already exists for this specification entity, updating reference to latest version.\")\n    spec_balance_entity = seal.update_field_value_in_entity(spec_to_balance_map[trigger_entity_id], SPEC_BALANCE_SPEC_REFERENCE_FIELD_NAME, [trigger_entity_ref])"
+    }
+  }
+}

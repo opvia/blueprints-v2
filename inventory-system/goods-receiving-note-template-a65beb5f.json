@@ -1,0 +1,321 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a65beb5f-d634-4c26-8430-5a330989691f",
+  "title": "Goods Receiving Note template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Supplier": {
+      "id": "a3d4e424-1b12-41c1-8c6b-0e9cd79faac0",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "PO Number": {
+      "id": "e4925e78-bfc2-462e-8254-f02a95e59430",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Document ID": {
+      "id": "62ae44fd-4b39-4b88-a7a5-1c7e0f836a31",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Received By": {
+      "id": "76199894-01b6-4b19-a5c1-6de830d2f3a2",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Date Received": {
+      "id": "52d12b74-a16d-4e1f-924f-36e08f314517",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Received Goods": {
+      "id": "cc9af399-f0b2-41d3-9323-8547fd0c77b5",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "88ea85fe-e65c-4616-8ede-af9a95afd44d",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Create Components": {
+      "id": "379dd996-e075-49ce-aca3-0966fbccbcdf",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "508ded91-ba62-46fe-aa76-be2d8e92c336",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "cube",
+          "label": "Create Components"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Inventory Additions": {
+      "id": "7bbbd6ea-dfba-4ce0-969a-f68a4edcbd2b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "805a5f5b-6bbd-424a-a1d3-307ded6b8c7c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "15319dec-8509-4e2e-bc52-4ea3660cd69a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ecc8bc5e-7d5b-455b-9f6a-126df7c15b19",
+          "type": "field",
+          "fieldId": "62ae44fd-4b39-4b88-a7a5-1c7e0f836a31",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "eb14a607-384c-474c-9734-c14f7f45272e",
+          "type": "field",
+          "fieldId": "52d12b74-a16d-4e1f-924f-36e08f314517",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ac1cdf3e-2f52-41da-8783-ba43a6c212c2",
+          "type": "field",
+          "fieldId": "76199894-01b6-4b19-a5c1-6de830d2f3a2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7adc5515-71ba-4a22-ae68-b8173c5e79e9",
+          "type": "h3",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9868c332-43e6-43c8-b3ca-557a4304e03e",
+          "type": "h2",
+          "children": [
+            {
+              "bold": true,
+              "text": "Supplier Information"
+            }
+          ]
+        },
+        {
+          "id": "cef16240-e379-4840-850b-855b1d0978bc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ba12d8bf-b63a-4aa7-b89d-1af626203805",
+          "type": "field",
+          "fieldId": "a3d4e424-1b12-41c1-8c6b-0e9cd79faac0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7cc7490e-a9d8-409e-989f-7e61227bd2bd",
+          "type": "field",
+          "fieldId": "e4925e78-bfc2-462e-8254-f02a95e59430",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "080c3f4c-9663-48d5-a7bc-31a72ff54822",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "60756d0c-75e3-441d-b85f-0b2d5a87a4b5",
+          "type": "h3",
+          "children": [
+            {
+              "bold": true,
+              "text": "Received Goods"
+            }
+          ]
+        },
+        {
+          "id": "3349fc30-13a5-44d1-a6c3-f6a69d5052a5",
+          "type": "field",
+          "fieldId": "cc9af399-f0b2-41d3-9323-8547fd0c77b5",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Specification Reference",
+                "name": "Specification Reference",
+                "isHidden": false
+              },
+              {
+                "id": "Tracking Category",
+                "name": "Tracking Category",
+                "isHidden": false
+              },
+              {
+                "id": "Batch ID",
+                "name": "Batch ID",
+                "isHidden": false
+              },
+              {
+                "id": "Quantity",
+                "name": "Quantity",
+                "isHidden": false
+              },
+              {
+                "id": "Component Reference",
+                "name": "Component Reference",
+                "isHidden": false
+              },
+              {
+                "id": "Component Title",
+                "name": "Component Title",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "b34c47e6-5972-4aef-8c0a-fee050992f13",
+          "type": "field",
+          "fieldId": "379dd996-e075-49ce-aca3-0966fbccbcdf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7481c027-6969-43dd-8e24-9c498e58daab",
+          "type": "field",
+          "fieldId": "7bbbd6ea-dfba-4ce0-969a-f68a4edcbd2b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "315e8174-038c-4862-8d4a-c4186f38343e",
+          "type": "h3",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "05ac33c1-a4e3-4521-8d3f-03af1c01b86d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ee7f4ef2-9344-4c6a-8d09-8833aa4b9b79",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Goods Receiving Note - @62ae44fd-4b39-4b88-a7a5-1c7e0f836a31"
+  }
+}
