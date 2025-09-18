@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "9c99c60b-0118-4f0b-974a-31ebc21a0a7d",
+  "title": "Specification Balance Trigger Script",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "d43adebc-8c8d-446a-b581-26de5fb81ecd",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "77138cf0-1a9f-43bb-9060-ba4c2806d02d"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "triggers": [
+        {
+          "id": "81bd0e5e-4d1d-44ad-a74d-0693428dd626",
+          "name": "Inventory Updates",
+          "schedule": "*/5 * * * *",
+          "systemEvent": "onSchedule"
+        }
+      ],
+      "scriptCode": "from concurrent.futures import ThreadPoolExecutor, as_completed\nimport os\n\n# ------------------------------\n# Config\n# ------------------------------\nSPEC_BAL_TEMPLATE_ID = \"c7578235-5bee-49a1-adb4-622b60e762d4\"  # Specification Balance template\nMAX_WORKERS = int(os.getenv(\"SPEC_BAL_CONCURRENCY\", \"8\"))       # tune for your API limits\n\nSPEC_BALANCE_QUERY_CONFIG = {\n    \"searchType\": \"LIVE\",\n    \"filters\": {\n        \"and\": [\n            {\n                \"or\": [{\n                    \"operator\": \"in\",\n                    \"filter\": \"template\",\n                    \"value\": [SPEC_BAL_TEMPLATE_ID],\n                }]\n            },\n            {\n                \"or\": [{\n                    \"operator\": \"in\",\n                    \"filter\": \"kind\",\n                    \"value\": [\"INSTANCE\"],\n                }]\n            }\n        ]\n    }\n}\n\n# ------------------------------\n# Worker (blocking)\n# ------------------------------\ndef refresh_spec_balance_blocking(spec_bal):\n    sb_id = spec_bal[\"id\"]\n    try:\n        print(f\"[INFO] [{sb_id}] Running embedded scripts...\")\n        seal.run_embedded_scripts(sb_id)\n\n        updated = seal.get_entity(sb_id)\n        ver = updated.get(\"version\")\n        print(f\"[OK]   [{sb_id}] Refreshed → version={ver}\")\n        return {\"id\": sb_id, \"version\": ver}\n    except Exception as e:\n        msg = f\"[WARN] [{sb_id}] Refresh failed: {e}\"\n        print(msg)\n        return {\"id\": sb_id, \"error\": str(e)}\n\n# ------------------------------\n# Main\n# ------------------------------\nprint(\"[INFO] Fetching all Specification Balance entities...\")\nspec_balances = seal.search_entities(SPEC_BALANCE_QUERY_CONFIG)\ntotal = len(spec_balances)\nprint(f\"[INFO] Retrieved {total} Specification Balances.\")\n\nresults = []\nsuccess = 0\nfailed = 0\n\nif total == 0:\n    print(\"[INFO] Nothing to do.\")\nelse:\n    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:\n        futures = {pool.submit(refresh_spec_balance_blocking, sb): sb[\"id\"] for sb in spec_balances}\n        for i, fut in enumerate(as_completed(futures), 1):\n            res = fut.result()  # exceptions handled inside worker\n            results.append(res)\n            if \"error\" in res:\n                failed += 1\n                print(f\"[ERR]  [{i}/{total}] {res['id']} → {res['error']}\")\n            else:\n                success += 1\n                print(f\"[DONE] [{i}/{total}] {res['id']}\")\n\nprint(f\"[INFO] Completed. Success={success}, Failed={failed}\")\n"
+    }
+  }
+}

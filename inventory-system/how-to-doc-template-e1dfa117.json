@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "e1dfa117-0d2d-4349-b39b-e4b0bdc98fb9",
+  "title": "How to doc template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Quantity Used": {
+      "id": "8417891a-d7cf-4e0f-904c-f9d2cc1dae68",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Inventory Usages": {
+      "id": "b49361b1-1e8d-4d1b-9810-95508eccb0c8",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Quantity In Stock": {
+      "id": "0bed78d7-90d1-47af-9274-70d4c2df91e4",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Calculate Inventory": {
+      "id": "7b341025-ec8a-40e0-a37d-c172636f1aca",
+      "type": "SCRIPT",
+      "value": null,
+      "config": {},
+      "dataType": "SCRIPT"
+    },
+    "Inventory Additions": {
+      "id": "03412d80-395e-42c7-ae2b-c80e35975a3b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Specification Reference": {
+      "id": "f84e90d1-285d-433a-90c0-2c1e050e04a6",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "4e5fa71e-df75-4967-a591-765477f53c7e"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "ea39eb4e-5612-48f5-b531-fd3b1d13c96d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

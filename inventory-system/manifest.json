@@ -1,0 +1,363 @@
+{
+  "id": "inventory-system",
+  "version": 1,
+  "name": "Inventory System",
+  "description": "",
+  "entities": [
+    {
+      "id": "51aff22c-6a06-436e-b20c-02b87811c41a",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Component Balance Script",
+      "icon": "code",
+      "sourceVersion": "3",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "77138cf0-1a9f-43bb-9060-ba4c2806d02d",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Inventory Management Scripts",
+      "icon": "code",
+      "sourceVersion": "3",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "d43adebc-8c8d-446a-b581-26de5fb81ecd",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Empty Inventory Management Script",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "984ba139-ab1a-47cc-9b4d-52cafcf524ad",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Component Balance template",
+      "icon": "document",
+      "sourceVersion": "6",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "4e5fa71e-df75-4967-a591-765477f53c7e",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory",
+      "icon": "document",
+      "sourceVersion": "5",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "88ea85fe-e65c-4616-8ede-af9a95afd44d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Component Creation Stage template",
+      "icon": "box",
+      "sourceVersion": "9",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "2e508547-c650-4c8c-b9b5-9791b5de7199",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory Creation Helper",
+      "icon": "box",
+      "sourceVersion": "5",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "0ed4f5b8-1ded-418a-895a-f7b3485ad5be",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Components",
+      "icon": "cube",
+      "sourceVersion": "5",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "bac260ff-7db9-4460-94a2-c3a2c1e5dc4f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Component template",
+      "icon": "cube",
+      "sourceVersion": "3",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "c4dcdd80-bde7-4150-bbd0-0ea833cdb432",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default Inventory Addition template",
+      "icon": "document",
+      "sourceVersion": "7",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "ed5079fc-4cfc-440a-bb8e-93320ad79211",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory Addition",
+      "icon": "document",
+      "sourceVersion": "4",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "035fb4d2-9e36-4d79-9b96-d7fb75fed630",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default Inventory Usage template",
+      "icon": "diagram-tree",
+      "sourceVersion": "5",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "e6773c5f-e0b2-4961-a24b-6148ff9352fc",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory Usage",
+      "icon": "diagram-tree",
+      "sourceVersion": "4",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "a9e80dc3-2274-4b4d-bfb1-82cf0d436316",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default template for Processes",
+      "icon": "clipboard",
+      "sourceVersion": "2",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "805a5f5b-6bbd-424a-a1d3-307ded6b8c7c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Processes",
+      "icon": "clipboard",
+      "sourceVersion": "3",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "da2e8dda-6886-47c1-87c4-07c42f58c123",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory Usage template with Required Quantity",
+      "icon": "diagram-tree",
+      "sourceVersion": "5",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "9d52f665-9b3b-451f-9ead-fd0d5738e867",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Process Script",
+      "icon": "code",
+      "sourceVersion": "5",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "a65beb5f-d634-4c26-8430-5a330989691f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Goods Receiving Note template",
+      "icon": "clipboard",
+      "sourceVersion": "5",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "8ec12f13-cffb-4dea-9c50-e6a44239f6f3",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Receiving Script",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c7578235-5bee-49a1-adb4-622b60e762d4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Specification Balance template",
+      "icon": "document",
+      "sourceVersion": "5",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "2c390ddb-e70f-4c30-92f9-9b66c1ad49f8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory How To",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e1dfa117-0d2d-4349-b39b-e4b0bdc98fb9",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "How to doc template",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "52ef63f7-8c5b-4059-856e-a83e32c63e4b",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory Addition of Expected Spec template",
+      "icon": "document",
+      "sourceVersion": "3",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "f2234e55-5caa-43fb-8ca3-2d8240836d59",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory Usage template - Spec defined by component",
+      "icon": "diagram-tree",
+      "sourceVersion": "4",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "afab5ddb-0911-4db4-a52f-2075576f82c2",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Material/Component Specification",
+      "icon": "settings",
+      "sourceVersion": "3",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "5c35d26b-ab78-4d37-975a-bc6a78713a87",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Material Specification",
+      "icon": "settings",
+      "sourceVersion": "3",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "17e00573-7133-45a7-b5b1-01714c90a8c3",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Default Empty Script template",
+      "icon": "code",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "7f0a7852-e36f-4d77-ac1c-617d26124f20",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Scripts",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "508ded91-ba62-46fe-aa76-be2d8e92c336",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Receiving Script",
+      "icon": "code",
+      "sourceVersion": "11",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "7b18a809-cb92-4899-9521-3e5c6da30661",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Specification Balance Creation Trigger",
+      "icon": "code",
+      "sourceVersion": "12",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "0ec9bebc-8e42-4900-aa20-66ba5c8de9be",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Specification Balance Script",
+      "icon": "code",
+      "sourceVersion": "4",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "9c99c60b-0118-4f0b-974a-31ebc21a0a7d",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Specification Balance Trigger Script",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "fe156912-8773-4c64-86a6-55bcb0c92970",
+      "entityId": "2c390ddb-e70f-4c30-92f9-9b66c1ad49f8",
+      "filename": "Screenshot 2025-09-17 at 16.45.34.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "431ad000-9662-44ac-8a68-9bf11b447cde",
+      "entityId": "2c390ddb-e70f-4c30-92f9-9b66c1ad49f8",
+      "filename": "Screenshot 2025-09-17 at 11.13.25.png",
+      "contentType": "image/png"
+    }
+  ],
+  "tags": [
+    {
+      "id": "3568b96b-c5a9-4084-bbd4-224ca79003ce",
+      "text": "Inventory System",
+      "hexCode": "#1d84ab"
+    }
+  ]
+}

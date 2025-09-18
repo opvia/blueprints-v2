@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f2234e55-5caa-43fb-8ca3-2d8240836d59",
+  "title": "Inventory Usage template - Spec defined by component",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Quantity": {
+      "id": "caf83c58-8eb2-4eba-9eee-93f47526e10d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Formula 1": {
+      "id": "fe9b0627-9fba-4b22-b39e-3737fb143261",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    },
+    "Component Reference": {
+      "id": "585dd64c-08ed-4273-8800-0942aba35b03",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Components"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  },
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Specification Reference": {
+      "id": "53595a85-d8a5-40ca-b3d1-64fbcf62fd69",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Component Reference\") , 'Specification')"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "e6773c5f-e0b2-4961-a24b-6148ff9352fc"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "5987a34a-b920-4427-97b1-e83b780b551e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d78f34b1-8d8f-48d3-934d-a1bd2abbdd19",
+          "type": "field",
+          "fieldId": "585dd64c-08ed-4273-8800-0942aba35b03",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "4a6d91a8-3755-4a68-a041-540c6d71af75",
+          "type": "field",
+          "fieldId": "53595a85-d8a5-40ca-b3d1-64fbcf62fd69",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e143a583-6d59-4b22-a7bf-29b90088c86a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0f16f517-89b2-4478-bc25-3d74e2f4db8e",
+          "type": "field",
+          "fieldId": "caf83c58-8eb2-4eba-9eee-93f47526e10d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "90dfff35-4e21-47d2-9154-b273dbc67967",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
