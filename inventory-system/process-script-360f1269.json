@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "9d52f665-9b3b-451f-9ead-fd0d5738e867",
+  "id": "360f1269-1835-4334-9822-de3cca85fb2c",
   "title": "Process Script",
   "status": "EDITABLE",
   "version": null,
@@ -16,19 +16,11 @@
   },
   "sourceInfo": {
     "template": {
-      "id": "17e00573-7133-45a7-b5b1-01714c90a8c3",
-      "version": "2"
+      "id": "d43adebc-8c8d-446a-b581-26de5fb81ecd",
+      "version": "1"
     }
   },
-  "fields": {
-    "Formula": {
-      "id": "acc7fb9a-945b-46ed-832b-823fe4602eec",
-      "type": "FORMULA",
-      "value": null,
-      "config": {},
-      "dataType": null
-    }
-  },
+  "fields": {},
   "kind": "INSTANCE",
   "type": {
     "ref": {

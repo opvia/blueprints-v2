@@ -32,7 +32,10 @@
       "contentType": "SCRIPT_CODE",
       "title": "Empty Inventory Management Script",
       "icon": "code",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
     },
     {
       "id": "984ba139-ab1a-47cc-9b4d-52cafcf524ad",
@@ -150,7 +153,7 @@
       "contentType": "PAGE_CONTENT",
       "title": "Default template for Processes",
       "icon": "clipboard",
-      "sourceVersion": "2",
+      "sourceVersion": "3",
       "tagIds": [
         "3568b96b-c5a9-4084-bbd4-224ca79003ce"
       ]
@@ -178,12 +181,12 @@
       ]
     },
     {
-      "id": "9d52f665-9b3b-451f-9ead-fd0d5738e867",
+      "id": "360f1269-1835-4334-9822-de3cca85fb2c",
       "kind": "INSTANCE",
       "contentType": "SCRIPT_CODE",
       "title": "Process Script",
       "icon": "code",
-      "sourceVersion": "5",
+      "sourceVersion": "1",
       "tagIds": [
         "3568b96b-c5a9-4084-bbd4-224ca79003ce"
       ]
@@ -205,7 +208,21 @@
       "contentType": "SCRIPT_CODE",
       "title": "Receiving Script",
       "icon": "code",
-      "sourceVersion": "1"
+      "sourceVersion": "1",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "e1dfa117-0d2d-4349-b39b-e4b0bdc98fb9",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "How to doc template",
+      "icon": "document",
+      "sourceVersion": "2",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
     },
     {
       "id": "c7578235-5bee-49a1-adb4-622b60e762d4",
@@ -219,22 +236,6 @@
       ]
     },
     {
-      "id": "2c390ddb-e70f-4c30-92f9-9b66c1ad49f8",
-      "kind": "INSTANCE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Inventory How To",
-      "icon": "document",
-      "sourceVersion": "1"
-    },
-    {
-      "id": "e1dfa117-0d2d-4349-b39b-e4b0bdc98fb9",
-      "kind": "TEMPLATE",
-      "contentType": "PAGE_CONTENT",
-      "title": "How to doc template",
-      "icon": "document",
-      "sourceVersion": "1"
-    },
-    {
       "id": "52ef63f7-8c5b-4059-856e-a83e32c63e4b",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
@@ -244,6 +245,14 @@
       "tagIds": [
         "3568b96b-c5a9-4084-bbd4-224ca79003ce"
       ]
+    },
+    {
+      "id": "2c390ddb-e70f-4c30-92f9-9b66c1ad49f8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory How To",
+      "icon": "document",
+      "sourceVersion": "1"
     },
     {
       "id": "f2234e55-5caa-43fb-8ca3-2d8240836d59",
@@ -279,28 +288,12 @@
       ]
     },
     {
-      "id": "17e00573-7133-45a7-b5b1-01714c90a8c3",
-      "kind": "TEMPLATE",
-      "contentType": "SCRIPT_CODE",
-      "title": "Default Empty Script template",
-      "icon": "code",
-      "sourceVersion": "2"
-    },
-    {
-      "id": "7f0a7852-e36f-4d77-ac1c-617d26124f20",
-      "kind": "TYPE",
-      "contentType": "SCRIPT_CODE",
-      "title": "Scripts",
-      "icon": "code",
-      "sourceVersion": "1"
-    },
-    {
-      "id": "508ded91-ba62-46fe-aa76-be2d8e92c336",
+      "id": "0ec9bebc-8e42-4900-aa20-66ba5c8de9be",
       "kind": "INSTANCE",
       "contentType": "SCRIPT_CODE",
-      "title": "Receiving Script",
+      "title": "Specification Balance Script",
       "icon": "code",
-      "sourceVersion": "11",
+      "sourceVersion": "4",
       "tagIds": [
         "3568b96b-c5a9-4084-bbd4-224ca79003ce"
       ]
@@ -312,17 +305,6 @@
       "title": "Specification Balance Creation Trigger",
       "icon": "code",
       "sourceVersion": "12",
-      "tagIds": [
-        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
-      ]
-    },
-    {
-      "id": "0ec9bebc-8e42-4900-aa20-66ba5c8de9be",
-      "kind": "INSTANCE",
-      "contentType": "SCRIPT_CODE",
-      "title": "Specification Balance Script",
-      "icon": "code",
-      "sourceVersion": "4",
       "tagIds": [
         "3568b96b-c5a9-4084-bbd4-224ca79003ce"
       ]
