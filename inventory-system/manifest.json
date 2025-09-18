@@ -247,14 +247,6 @@
       ]
     },
     {
-      "id": "2c390ddb-e70f-4c30-92f9-9b66c1ad49f8",
-      "kind": "INSTANCE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Inventory How To",
-      "icon": "document",
-      "sourceVersion": "1"
-    },
-    {
       "id": "f2234e55-5caa-43fb-8ca3-2d8240836d59",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
@@ -315,6 +307,17 @@
       "contentType": "SCRIPT_CODE",
       "title": "Specification Balance Trigger Script",
       "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "3568b96b-c5a9-4084-bbd4-224ca79003ce"
+      ]
+    },
+    {
+      "id": "2c390ddb-e70f-4c30-92f9-9b66c1ad49f8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory How To",
+      "icon": "document",
       "sourceVersion": "1",
       "tagIds": [
         "3568b96b-c5a9-4084-bbd4-224ca79003ce"
