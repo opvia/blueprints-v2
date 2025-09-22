@@ -1,0 +1,48 @@
+{
+  "id": "variants-test",
+  "version": 1,
+  "name": "Variants Test",
+  "description": "",
+  "entities": [
+    {
+      "id": "a5251c71-f5c0-4390-a46e-606308618997",
+      "kind": "VARIANT",
+      "contentType": "PAGE_CONTENT",
+      "title": "Variant Template Excluded - Variant 1",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "d4e8ce38-0f21-41ed-b4db-7227c7499905",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "document",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "4a1d7f8f-4356-456e-970e-3e05375aa368",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Variant Template Excluded",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9cf5dae1-99fa-4448-b91f-b2395a45c305",
+      "kind": "VARIANT",
+      "contentType": "PAGE_CONTENT",
+      "title": "Variant Template Included - Variant 1",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fb1caa17-7c8f-42c7-af3d-1ef019f90c8f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Variant Template Included",
+      "icon": "document",
+      "sourceVersion": "1"
+    }
+  ]
+}
