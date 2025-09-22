@@ -46,5 +46,6 @@
   "computedTitle": "Variant Template Included - Variant @VARIANT_INDEX",
   "status": "EDITABLE",
   "version": null,
-  "previousVersion": null
+  "previousVersion": null,
+  "schemaVersion": "2.0.0"
 }
