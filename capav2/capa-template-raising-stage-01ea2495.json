@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "01ea2495-ce25-47fe-9e23-eba1173d3411",
+  "title": "CAPA Template - Raising Stage",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "CAPA": {
+      "id": "d22e2b5c-f61e-41e6-8844-6a8456755e56",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Source": {
+      "id": "31a7e8ed-6ebb-4c66-b309-8bd5a90897f9",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Audit",
+          "Complaint",
+          "Deviation"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Impacts": {
+      "id": "beeba00a-2fae-4617-b3fc-13f9376763b0",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Root Cause": {
+      "id": "b54e7da0-892b-435b-a796-663f7b6385ad",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Problem Statement": {
+      "id": "0869f021-7bc5-40a4-ad34-39553108b3b0",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Source References": {
+      "id": "db284032-0028-450e-b1c7-33e07378bff3",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Affected Departments": {
+      "id": "6a2611f9-0215-48fb-b8e6-fdcf0c5d874e",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Root Cause References": {
+      "id": "22e41b58-9d1b-4c00-8654-54d9a6ef06d7",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "cf257a1c-fdf2-4091-b8da-bd82c5888347"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "bce388e9-1a06-4a52-94b1-e0591870603c",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Issue description"
+            }
+          ]
+        },
+        {
+          "id": "3816fa25-46f7-4d19-a209-041feb8936fd",
+          "type": "p",
+          "children": [
+            {
+              "text": "Describe the problem and complete the fields to clarify its impacts. Include the original source that led to raising this CAPA. "
+            }
+          ]
+        },
+        {
+          "id": "924ab0ed-222a-414b-a0d6-22d8e34e1c49",
+          "type": "field",
+          "fieldId": "0869f021-7bc5-40a4-ad34-39553108b3b0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1e751cae-ce88-4234-9ef5-8ac269ee1b5a",
+          "type": "field",
+          "fieldId": "beeba00a-2fae-4617-b3fc-13f9376763b0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0011af39-9840-4525-ae73-bddab14b1ca2",
+          "type": "field",
+          "fieldId": "6a2611f9-0215-48fb-b8e6-fdcf0c5d874e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9d2a5589-4c9d-4ad1-9df8-136fb600ec86",
+          "type": "field",
+          "fieldId": "31a7e8ed-6ebb-4c66-b309-8bd5a90897f9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d440f3df-70c9-4965-89fe-2eb5f5c52d39",
+          "type": "field",
+          "fieldId": "db284032-0028-450e-b1c7-33e07378bff3",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "3058b035-b66b-4bbe-816e-f8b345413854",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c3c0c77b-3bc4-4ba7-98eb-fc6662109af0",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Root Cause Analysis"
+            }
+          ]
+        },
+        {
+          "id": "0f3a45de-e476-4efe-a9d1-9d626f91d3af",
+          "type": "p",
+          "children": [
+            {
+              "text": "Summarise the investigation summary and the direct root causes of the problem. Add any supporting references."
+            }
+          ]
+        },
+        {
+          "id": "ee540aa1-0b57-4394-89f2-7e1091418133",
+          "type": "field",
+          "fieldId": "b54e7da0-892b-435b-a796-663f7b6385ad",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e6938221-ec02-49fe-86fd-2c160de0a62a",
+          "type": "field",
+          "fieldId": "22e41b58-9d1b-4c00-8654-54d9a6ef06d7",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "b4a9760c-ceb3-4b1c-aa84-139b68c69e12",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "161a5d9d-2017-4370-9099-53181658d489",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Approval"
+            }
+          ]
+        },
+        {
+          "id": "8ec83ea2-79e7-4b75-bbab-2a4617e7285e",
+          "type": "p",
+          "children": [
+            {
+              "text": "Once complete, send this raising stage instance for approval. Make sure to remove the CAPA instance from the change set before requesting review.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "c76319fc-6321-4877-8dea-3edddc097c56",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "58a94576-9c97-4ef8-b303-ef398d7a37a8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Raising"
+  }
+}
