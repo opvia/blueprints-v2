@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "92aa6311-e042-464d-8eb3-933f951e3d34",
+  "title": "Preventative Action Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Status": {
+      "id": "5ade5fd3-47e0-4cc9-8510-00fc81a1cd83",
+      "type": "SELECT",
+      "value": [
+        "Open"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Open",
+          "Closed"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Due Date": {
+      "id": "d25b7f9f-e8f8-4619-bc7c-8cad374d6114",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Attachments": {
+      "id": "86e29a2d-1e69-4aa5-a5ce-a5765d158fc1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Date Completed": {
+      "id": "70cace84-55fc-45c5-999c-08a57eebcb5a",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Responsible Person": {
+      "id": "664c19ad-7310-4664-9ddb-78880fa04204",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Implementation plan": {
+      "id": "11b6fc87-decc-48bb-8b42-4dd583e345d1",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Evidence of Completion": {
+      "id": "b32292dc-c8d3-4c43-8d80-ef7b3a65a67b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Preventative Action Plan": {
+      "id": "fd6f52c6-398d-47b8-a6cb-4fd681eee0dd",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Evidence of Effectiveness": {
+      "id": "168d5dfe-e3a4-4b29-b7c6-c4276d9b4e98",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Has Action Been Effective?": {
+      "id": "7f91fc02-65a1-4a10-a50d-373778632864",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "154d9038-1a72-4cdd-82e8-da41d67a9d83"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "42a59bb0-27fe-47e3-ba50-e90c00657b62",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6423f604-a014-4052-b7d4-0c5b48a7adab",
+          "type": "field",
+          "fieldId": "fd6f52c6-398d-47b8-a6cb-4fd681eee0dd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "850de880-061f-4838-92c4-dd6156206612",
+          "type": "field",
+          "fieldId": "11b6fc87-decc-48bb-8b42-4dd583e345d1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "61dc7aa8-b136-4d22-8464-22c9e06b7a15",
+          "type": "field",
+          "fieldId": "664c19ad-7310-4664-9ddb-78880fa04204",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "880a1b52-48b8-4a75-b552-b69003f03828",
+          "type": "field",
+          "fieldId": "d25b7f9f-e8f8-4619-bc7c-8cad374d6114",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b76e1888-f726-47ee-9837-56e994838c62",
+          "type": "field",
+          "fieldId": "86e29a2d-1e69-4aa5-a5ce-a5765d158fc1",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "7b5d5e4b-639b-475d-9183-eb207fcf485a",
+          "type": "field",
+          "fieldId": "5ade5fd3-47e0-4cc9-8510-00fc81a1cd83",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "94c45bb7-868c-4000-955d-7d015efce905",
+          "type": "field",
+          "fieldId": "70cace84-55fc-45c5-999c-08a57eebcb5a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1ac5b707-cdff-4169-b345-35ff6151ba7d",
+          "type": "field",
+          "fieldId": "b32292dc-c8d3-4c43-8d80-ef7b3a65a67b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "d7a836e2-aaf6-4f4c-89ba-000a8e210a4d",
+          "type": "field",
+          "fieldId": "7f91fc02-65a1-4a10-a50d-373778632864",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "08c10bce-0a5e-468c-ac0e-d05359a91b1b",
+          "type": "field",
+          "fieldId": "168d5dfe-e3a4-4b29-b7c6-c4276d9b4e98",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "d0412088-d607-4503-b83f-0b9e75d8adeb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "PA-@TEMPLATE_INDEX - @SUBMITTED_FROM "
+  }
+}

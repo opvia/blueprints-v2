@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "cf257a1c-fdf2-4091-b8da-bd82c5888347",
+  "title": "CAPA",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "application",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": null,
+    "defaultTemplate": {
+      "id": "15929480-c64d-40ea-ac72-284a0330a88c",
+      "placeholderValue": "activeVersion"
+    },
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Open",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Open"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "Closed",
+            "intent": "success"
+          },
+          {
+            "text": "Rejected",
+            "intent": "danger"
+          }
+        ],
+        "defaultStatus": "Closed"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Open",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Open"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Closed",
+            "intent": "success"
+          },
+          {
+            "text": "Rejected",
+            "intent": "danger"
+          }
+        ],
+        "defaultStatus": "Closed"
+      }
+    },
+    "hideVersionNumber": true,
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": false
+    },
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": false
+  }
+}
