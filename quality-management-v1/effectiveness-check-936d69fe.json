@@ -1,0 +1,538 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "936d69fe-a56f-42a1-a72f-d2747922c0d8",
+  "title": "Effectiveness Check",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "SOP": {
+      "id": "ebfa99cd-b643-44fd-a5fe-f3478914717f",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "cf5d3f2f-f273-40a8-98bb-6e15dfca1f1e",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Author": {
+      "id": "3ae83902-3ba3-4c0a-b729-f4572091a5c3",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Source": {
+      "id": "8f517d03-7925-4453-89a2-ccbd2e24c746",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Attachments": {
+      "id": "7969cfcd-880e-4baa-a79e-8a6d085c73e7",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Source type": {
+      "id": "df111db5-6b48-410b-87a3-5fc3da9a95b4",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Corrective Action",
+          "Preventive Action",
+          "Change Control",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Completed By": {
+      "id": "e5fb10fc-8042-4f76-acd8-3b5187ccb961",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Describe why": {
+      "id": "74059af5-7f08-49ae-953c-a25792176354",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "New Deviation": {
+      "id": "6b5cf8ef-c2ce-4b9b-a794-331077008842",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "3fcc4362-d883-4e34-bdd7-7b5546c72737"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "SOP",
+              "config": "SOP"
+            },
+            {
+              "name": "Source",
+              "config": "Source"
+            },
+            {
+              "name": "Reportable",
+              "config": "Reportable"
+            },
+            {
+              "name": "Criticality",
+              "config": "Criticality"
+            },
+            {
+              "name": "Source type",
+              "config": "Source type"
+            },
+            {
+              "name": "Identified By",
+              "config": "Identified By"
+            },
+            {
+              "name": "Justification",
+              "config": "Justification"
+            },
+            {
+              "name": "Reportable To",
+              "config": "Reportable To"
+            },
+            {
+              "name": "Date Identified",
+              "config": "Date Identified"
+            },
+            {
+              "name": "Deviation Title",
+              "config": "Deviation Title"
+            },
+            {
+              "name": "Date of Decision",
+              "config": "Date of Decision"
+            },
+            {
+              "name": "Decision Made By",
+              "config": "Decision Made By"
+            },
+            {
+              "name": "Deviation Details",
+              "config": "Deviation Details"
+            },
+            {
+              "name": "Root Cause Analysis",
+              "config": "Root Cause Analysis"
+            },
+            {
+              "name": "Investigation Required",
+              "config": "Investigation Required"
+            },
+            {
+              "name": "Assessment Completed By",
+              "config": "Assessment Completed By"
+            },
+            {
+              "name": "Correction/ Containment Action",
+              "config": "Correction/ Containment Action"
+            },
+            {
+              "name": "Severity Rating and Justification",
+              "config": "Severity Rating and Justification"
+            },
+            {
+              "name": "Detection Rating and Justification",
+              "config": "Detection Rating and Justification"
+            },
+            {
+              "name": "Occurrence Rating and Justification",
+              "config": "Occurrence Rating and Justification"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Date completed": {
+      "id": "3eadbe99-ec10-4e0b-b395-c40a33ce32cf",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Actions Completed": {
+      "id": "61a1e072-4ca3-4220-8c12-fd1a54cb33ee",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Effectiveness Check Title": {
+      "id": "9162d147-ffe6-48bd-a382-eed778be6901",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Additional Action Required": {
+      "id": "87804d55-af09-4600-87fa-5480611750d7",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Effectiveness Check Agreed": {
+      "id": "b21bb9ae-9cb2-496e-a772-93c8a243ce69",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Has action been effective?": {
+      "id": "de95a676-ddeb-484c-a231-14cd7010dee8",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Attach evidence of completion, and outcome": {
+      "id": "6526ac83-029f-476f-8386-42508c800af9",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "99bf68ec-6b72-414a-ba51-8c2a92852567"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "ecfeb155-c8d5-437c-aadd-038b09820ab2",
+          "type": "p",
+          "children": [
+            {
+              "text": "For detailed instructions see:"
+            }
+          ]
+        },
+        {
+          "id": "67a885bd-f980-41a9-b055-02c1f349990c",
+          "type": "field",
+          "fieldId": "ebfa99cd-b643-44fd-a5fe-f3478914717f",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "13252852-b1a9-4817-b2e0-986fdbb87a17",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c1000d9e-e20b-40a5-a566-f4552df2026d",
+          "type": "field",
+          "fieldId": "9162d147-ffe6-48bd-a382-eed778be6901",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a3d8a09-fda7-4430-a8c6-285579334105",
+          "type": "field",
+          "fieldId": "df111db5-6b48-410b-87a3-5fc3da9a95b4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "660c6474-35e1-4669-99f3-fb81b7a6d686",
+          "type": "field",
+          "fieldId": "8f517d03-7925-4453-89a2-ccbd2e24c746",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a53bc60-000a-4fbe-882a-c9d76c560dec",
+          "type": "field",
+          "fieldId": "b21bb9ae-9cb2-496e-a772-93c8a243ce69",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6f56e068-f8b9-4cfc-bc63-e855bb0d3cb4",
+          "type": "field",
+          "fieldId": "7969cfcd-880e-4baa-a79e-8a6d085c73e7",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "9fa1c547-d626-46c7-a095-cfb20f55415c",
+          "type": "field",
+          "fieldId": "3ae83902-3ba3-4c0a-b729-f4572091a5c3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "328803ff-f183-437e-9384-1e370040038a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "db4cdfcc-71d5-43e0-9a53-5fe6384dcfa6",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Completion"
+            }
+          ]
+        },
+        {
+          "id": "87f33aad-56a2-4878-a2cd-f4e981ad733d",
+          "type": "field",
+          "fieldId": "61a1e072-4ca3-4220-8c12-fd1a54cb33ee",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "85218ca3-7e02-4a49-8740-e3114ba8064a",
+          "type": "field",
+          "fieldId": "e5fb10fc-8042-4f76-acd8-3b5187ccb961",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bfa41735-0a7a-4d28-a45a-ac169734b388",
+          "type": "field",
+          "fieldId": "3eadbe99-ec10-4e0b-b395-c40a33ce32cf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "156dba31-0d35-4fa4-a7d4-9254ac5cba1d",
+          "type": "field",
+          "fieldId": "6526ac83-029f-476f-8386-42508c800af9",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "9ac56a2e-e876-44a3-9871-c0fed1c5237d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3a4c380e-d588-445c-9a63-88415c74236c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6dfb7c3d-20bc-4c85-a264-92d3f53174cc",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Closure - QA to complete"
+            }
+          ]
+        },
+        {
+          "id": "77f9b937-37b7-4dae-86d3-4371027a242f",
+          "type": "field",
+          "fieldId": "de95a676-ddeb-484c-a231-14cd7010dee8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ec117d4a-773c-4362-a6f4-0f18160a104e",
+          "type": "field",
+          "fieldId": "74059af5-7f08-49ae-953c-a25792176354",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b45598c8-d233-4fac-91bb-ed3370be7757",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2c4ec723-a073-450a-8f09-7399c87904c0",
+          "type": "p",
+          "children": [
+            {
+              "text": "If action has not been effective, raise a new deviation with the source 'failed effectiveness check' and record the deviation reference below. Otherwise, confirm Effectiveness Check can be closed."
+            }
+          ]
+        },
+        {
+          "id": "b25b905a-48f7-4809-9e0f-086c0c1c652e",
+          "type": "field",
+          "fieldId": "6b5cf8ef-c2ce-4b9b-a794-331077008842",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "207b51a8-e225-40a6-b809-5b7e32908bd9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b585bb4b-7bd8-412b-9568-5e3ee00b1b85",
+          "type": "field",
+          "fieldId": "87804d55-af09-4600-87fa-5480611750d7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9683cd5e-0bf8-4fd5-9987-549f11e61ee9",
+          "type": "task",
+          "children": [
+            {
+              "text": "Confirm Effectiveness Check closure"
+            }
+          ]
+        },
+        {
+          "id": "89b9f9a9-f8b9-43bf-9a43-0ab25510a49a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "EC-@TEMPLATE_INDEX - @9162d147-ffe6-48bd-a382-eed778be6901 "
+  }
+}

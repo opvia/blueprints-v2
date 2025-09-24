@@ -1,0 +1,433 @@
+{
+  "id": "quality-management-v1",
+  "version": 1,
+  "name": "quality-management-v1",
+  "description": "",
+  "entities": [
+    {
+      "id": "ad907005-df91-4a39-a48d-381a9c2fd04b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "3c95d26e-0a7f-4545-9ba6-f3b53548c50d",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "document",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "f273cc0c-f268-4711-aa31-cdc3d3f36fe6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QMS SOP",
+      "icon": "document",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "ecc1d9d0-cb97-4992-9dd4-e7b8dbf1de72",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "a9742a74-6e3b-4024-affb-e915df7f5c3c",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control",
+      "icon": "console",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "760e45c7-b821-426c-86a5-6c1713db4d2f",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control",
+      "icon": "console",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "936d69fe-a56f-42a1-a72f-d2747922c0d8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Effectiveness Check",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "99bf68ec-6b72-414a-ba51-8c2a92852567",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Effectiveness Check",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "e6ab2f9c-f017-4f88-8ae3-89388efb500e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Complaint SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "6d9dba45-0e38-403b-9ae1-c90f0d5d9cc8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Complaint",
+      "icon": "application",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "3ce18d80-9a6f-4843-bd57-c798b8a1dcfe",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Complaint",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "4ed01e96-4a3a-410a-ac16-727463645b0f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "6d4ebd1a-3344-4e66-b8de-77e1e4a42959",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "63d9204d-0315-428e-8659-2e6cd57fcc60",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Corrective Action",
+      "icon": "comparison",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "f7b0a5d7-063a-4cdd-9b8c-84da967b6d7a",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA",
+      "icon": "comparison",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "0096f50b-2aeb-4d1a-bf5a-2e7d7e178390",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Customer",
+      "icon": "office",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "eccc8e93-d006-4d8a-8b93-b682c9984455",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Customer",
+      "icon": "office",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "7fa5ccd6-0398-4562-b85b-600be9e31213",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Deviation SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "ce00c1ab-5802-4152-ba2f-ce5d82f43a20",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document Change Request SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "63036264-73e5-406e-84cb-6e5fe77e1053",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document Change Request",
+      "icon": "console",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "13eacee6-2497-470b-a1d2-7d82e900c739",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document Change Request",
+      "icon": "console",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "cf5d3f2f-f273-40a8-98bb-6e15dfca1f1e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Effectiveness Check SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "3fcc4362-d883-4e34-bdd7-7b5546c72737",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Deviation",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "5d16b9e2-2369-43af-a44d-6bcf26651071",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Deviation",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "4948e0ef-a021-4e14-9463-1948b24669c9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Non-Conformance Report SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "8c46a64a-5662-4047-922d-dc3e83d20739",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Non-Conformance Report",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "f4b78bf9-0b8f-433f-851a-adcd053581ea",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Non-Conformance Report",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "f8d5b446-24f6-4228-870a-14f37cb01304",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Human",
+      "icon": "application",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "4e7a7afe-c7bd-431e-bffc-b0e66e5ce58b",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Out of Specification",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "4daa5f9e-f4b8-41da-aa7f-f7d8993f4ea3",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Machine",
+      "icon": "application",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "5c0e1c5f-0a39-4b4c-82a5-6872a09dca05",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Material",
+      "icon": "application",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "d796cae6-de98-4c4a-9211-f989b56bd158",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Measurement and Environment",
+      "icon": "application",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "1f9f312a-cf5e-4e23-924c-0ed3c56a79c9",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Method",
+      "icon": "application",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "48686c85-9ade-44c9-a874-72b30d5033b8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Out of Specification",
+      "icon": "application",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "5aba8c54-46ee-4d30-b62e-1f9a6e2eb996",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Out of Specification SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "a03dcf7e-ba19-43a3-81fd-6d3dd71d0a50",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Preventive Action",
+      "icon": "comparison",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "66e14764-73d7-485a-8a5f-ce7c6e4e2bcc",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QMS Blueprint Instructions",
+      "icon": "document",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    },
+    {
+      "id": "13fb2cd9-1db4-442b-9cc3-336d79a061d5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "26b8d2f5-48cb-4ad4-9040-2785ecb6f14e",
+      "text": "QMS Blueprint",
+      "hexCode": "#8173ea"
+    }
+  ]
+}

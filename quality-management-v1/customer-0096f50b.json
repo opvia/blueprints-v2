@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0096f50b-2aeb-4d1a-bf5a-2e7d7e178390",
+  "title": "Customer",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Complaints": {
+      "id": "bcedf736-d91e-401a-b8f0-fa822b2189c0",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "6d9dba45-0e38-403b-9ae1-c90f0d5d9cc8"
+                  ],
+                  "filter": "template",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Customer",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "SOP",
+            "config": "SOP"
+          },
+          {
+            "name": "Reportable",
+            "config": "Reportable"
+          },
+          {
+            "name": "Attachments",
+            "config": "Attachments"
+          },
+          {
+            "name": "Criticality",
+            "config": "Criticality"
+          },
+          {
+            "name": "Issue Title",
+            "config": "Issue Title"
+          },
+          {
+            "name": "Justification",
+            "config": "Justification"
+          },
+          {
+            "name": "Reportable to",
+            "config": "Reportable to"
+          },
+          {
+            "name": "Closure Decision",
+            "config": "Closure Decision"
+          },
+          {
+            "name": "Corrective Action",
+            "config": "Corrective Action"
+          },
+          {
+            "name": "Preventive Action",
+            "config": "Preventive Action"
+          },
+          {
+            "name": "Reporting Response",
+            "config": "Reporting Response"
+          },
+          {
+            "name": "Root Cause Analysis",
+            "config": "Root Cause Analysis"
+          },
+          {
+            "name": "Decision Attachments",
+            "config": "Decision Attachments"
+          },
+          {
+            "name": "Details of Complaint",
+            "config": "Details of Complaint"
+          },
+          {
+            "name": "Material Disposition",
+            "config": "Material Disposition"
+          },
+          {
+            "name": "Reporting Attachments",
+            "config": "Reporting Attachments"
+          },
+          {
+            "name": "Assessment Attachments",
+            "config": "Assessment Attachments"
+          },
+          {
+            "name": "Investigation Required",
+            "config": "Investigation Required"
+          },
+          {
+            "name": "Correction/Containment Action",
+            "config": "Correction/Containment Action"
+          },
+          {
+            "name": "Severity Rating and Justification",
+            "config": "Severity Rating and Justification"
+          },
+          {
+            "name": "Detection Rating and Justification",
+            "config": "Detection Rating and Justification"
+          },
+          {
+            "name": "Occurrence Rating and Justification",
+            "config": "Occurrence Rating and Justification"
+          },
+          {
+            "name": "Additional Actions Required / Raised",
+            "config": "Additional Actions Required / Raised"
+          },
+          {
+            "name": "Customer",
+            "config": "Customer"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Phone Number": {
+      "id": "b55b7363-6c07-423f-a839-bd0c0e7cb30b",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Delivery Address": {
+      "id": "320eebd3-8dce-4251-9282-ecd63ac8f5a9",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Main Contact's Name": {
+      "id": "f15df111-2618-4b33-9574-9049c5c61dc0",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Main Contact's Email": {
+      "id": "2f4f49f2-efa4-4f13-b715-c28491c8db1e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "eccc8e93-d006-4d8a-8b93-b682c9984455"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8a32a153-230e-4d90-828f-1215c1b1f04c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "24260826-321d-44d0-9b8c-57f209e8d265",
+          "type": "field",
+          "fieldId": "320eebd3-8dce-4251-9282-ecd63ac8f5a9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a5471a56-b5d9-49a4-9bc0-ba491744bd12",
+          "type": "field",
+          "fieldId": "b55b7363-6c07-423f-a839-bd0c0e7cb30b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dbb67647-8595-404c-827d-fad31759ee4c",
+          "type": "field",
+          "fieldId": "f15df111-2618-4b33-9574-9049c5c61dc0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e86ffed6-56d7-4632-af65-d2bfb0559544",
+          "type": "field",
+          "fieldId": "2f4f49f2-efa4-4f13-b715-c28491c8db1e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9f9a48f6-f792-4e67-8630-05adde232831",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a2201834-59b7-4026-ba54-c02e5013b735",
+          "type": "field",
+          "fieldId": "bcedf736-d91e-401a-b8f0-fa822b2189c0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bc65da5b-18cd-4fd4-a071-8bec11b392ac",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

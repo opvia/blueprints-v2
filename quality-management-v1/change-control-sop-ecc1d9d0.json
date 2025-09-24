@@ -1,0 +1,944 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ecc1d9d0-cb97-4992-9dd4-e7b8dbf1de72",
+  "title": "Change Control SOP",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "f273cc0c-f268-4711-aa31-cdc3d3f36fe6",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Author(s)": {
+      "id": "f8b01cb3-9fab-4be0-880f-d83cc4608f74",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Approver(s)": {
+      "id": "dd4d801e-98f8-492a-865b-32c4002805ef",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Effective Date": {
+      "id": "7f3132c7-5141-4157-866d-bf6fe8549c90",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Next Review Date": {
+      "id": "876bb10f-7417-484e-83b5-f94ae0a14e04",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3c95d26e-0a7f-4545-9ba6-f3b53548c50d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b3c1d769-a271-4d8e-9f47-0b6d8f0d8e3f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "976786ac-f3af-41cd-aaa6-044e1b62e05c",
+          "type": "field",
+          "fieldId": "7f3132c7-5141-4157-866d-bf6fe8549c90",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f19c40cd-65c5-48fa-9619-41f737b41cf7",
+          "type": "field",
+          "fieldId": "876bb10f-7417-484e-83b5-f94ae0a14e04",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7640648c-d861-447a-8a10-d016d8a1e224",
+          "type": "field",
+          "fieldId": "f8b01cb3-9fab-4be0-880f-d83cc4608f74",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "74e86d8a-5858-4cee-bdf9-9946a873f35e",
+          "type": "field",
+          "fieldId": "dd4d801e-98f8-492a-865b-32c4002805ef",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3a312a24-b16d-40d7-8e7a-3c8f8a0a3b73",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0208e173-56d5-4dc8-9cc8-b4c0a7909e02",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Purpose"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "43443e73-d59b-4049-9f00-bd0657f915e1",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The purpose of this SOP is to define the process for initiating, assessing, approving, implementing, and closing changes that may affect processes, equipment, systems, documentation, or quality management compliance. This ensures all changes are controlled, evaluated for risk, validated where necessary, and implemented in a way that maintains product quality, patient safety, and regulatory compliance. "
+            }
+          ]
+        },
+        {
+          "id": "f7541624-62da-41cc-aee5-3a827913d9cb",
+          "type": "h2",
+          "children": [
+            {
+              "text": " "
+            }
+          ]
+        },
+        {
+          "id": "a1a8b078-c0f0-4aa9-97d4-ba45e2f6daf6",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Scope"
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "f4ed7db3-41f5-4cb3-8d52-976828abb46f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This SOP applies to all changes within [Company Name] that may affect: "
+            }
+          ]
+        },
+        {
+          "id": "f4423b39-9cbc-43a8-9096-9db4a75579fd",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Quality management system processes "
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "031a693a-e945-41c4-92bc-7bd0c3c96207",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "GMP-related equipment, facilities, and utilities "
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a22c7478-5aee-4b8a-a44d-582bb990c347",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Computerized systems "
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "2a20bffb-3822-467f-9332-58045d4c8662",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Materials and components "
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b8e438f0-fb54-4cc0-943b-efa7e2e38d35",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Manufacturing and testing procedures "
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "10ed1464-3bf9-4439-b61f-8453a07a1f2e",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Quality and regulatory documentation "
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "5080cdb1-9f59-4166-a659-4dd20c4f8ac6",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This SOP covers all phases of change control: proposal, approval, risk and impact assessment, validation, training, document updates, implementation, quality verification, and closure."
+            }
+          ]
+        },
+        {
+          "id": "a991251d-40c1-4bba-a916-0dfc2691db27",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "276b796d-b29f-4acc-8750-e7518afa3a41",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Responsibilities"
+            }
+          ],
+          "listRestart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "07ab4afd-9eaa-439b-9167-d7125d6e21c8",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Initiator"
+            }
+          ]
+        },
+        {
+          "id": "ff989c12-32c6-4363-b7a5-729a782578e1",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Completes the Change Proposed section, describing current state, proposed change, rationale, and potential impact if the change is not implemented. Attaches supporting documentation. "
+            }
+          ]
+        },
+        {
+          "id": "4a07db37-5db8-4bd3-a495-eb00c4794c9a",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Subject Matter Experts (SMEs)"
+            }
+          ]
+        },
+        {
+          "id": "85e79187-7760-4fd1-96f7-6998247681a4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Review proposed change for departmental impact. Approve or reject proceeding to assessment phase."
+            }
+          ]
+        },
+        {
+          "id": "3ce38dee-fc61-423d-8ea3-8584f4cbdc95",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Quality Assurance (QA)"
+            }
+          ]
+        },
+        {
+          "id": "1664821e-d6a1-4c9b-9979-2dc1cc8f6581",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Ensures completeness of change control records. Coordinates risk assessment, validation requirements, and ensures regulatory alignment. Approves closure."
+            }
+          ]
+        },
+        {
+          "id": "7d515571-0fdf-4270-8ac9-36717ae1bd39",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Change Owner"
+            }
+          ]
+        },
+        {
+          "id": "6a648b10-23f4-459c-acf8-8f8552a9bdd3",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Oversees implementation of approved change, including validation, training, and document updates."
+            }
+          ]
+        },
+        {
+          "id": "13e5e986-ec57-43cb-9f39-d2d771fb8c34",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c1282aa4-d7c1-4700-8ab0-4ab3b2299bcc",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Definitions"
+            }
+          ],
+          "listRestart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "f3f4ac44-be87-41f2-a205-7471aaadd840",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Change Control: A formal process for managing changes to prevent unintended consequences. "
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e7371b16-0c51-4671-92fd-6b5cdd6b73dd",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Risk Analysis: Assessment of the potential impact of a change on quality, safety, or compliance."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "70b7109c-b60c-4518-85ce-07bd5886cad7",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Impact Assessment: Evaluation of the change’s effect on other processes, departments, or projects."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "c7d20cdf-3b00-439b-bb29-ad513ab87718",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Validation: Confirmation that the change achieves its intended purpose without adverse effects."
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "d4cf32cf-0a64-42d0-908c-1b3502193c8f",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Effectiveness Check: Verification that the change has been successfully implemented and sustained. "
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4d42844b-701e-40aa-b9a2-9f5e9f652e12",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ac2accca-5b2e-4a86-9ff7-330a65711b49",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Procedure"
+            }
+          ],
+          "listRestart": 5,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "f11748e1-770f-4ad5-95b3-e3454fbb18fe",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "5.1 Change Proposed"
+            }
+          ]
+        },
+        {
+          "id": "5a19dd5b-93f9-4fa5-89b1-80b200a3340f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Describe current process or state, proposed change, rationale, and consequences of non-implementation.\nIdentify if change results from CAPA or other quality events.\nAttach relevant documents.\nAssign SMEs from impacted departments."
+            }
+          ]
+        },
+        {
+          "id": "566c9b05-edf9-4308-be23-e16f0ffbe544",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "404684d1-1ef1-4c31-9ce3-ba7c104673ea",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "5.2 Approval to Proceed"
+            }
+          ]
+        },
+        {
+          "id": "4a626b34-cb94-4534-af98-39126628c908",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "SMEs review for departmental impact and provide decision with justification.\nIf no impact, QA marks as N/A."
+            }
+          ]
+        },
+        {
+          "id": "f4193fcb-b259-4709-840e-924d2ef35523",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "31c81a48-e48a-402f-94e1-ee63e8b0f7be",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "5.3 Assessment"
+            }
+          ]
+        },
+        {
+          "id": "b5932b99-d553-407c-98e6-0152bdaa1c23",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "bold": true,
+              "text": "5.3.1 Risk Analysis & Impact Assessment"
+            }
+          ]
+        },
+        {
+          "id": "0852749a-5044-4f05-a63b-71940fd741e7",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Evaluate risk to product quality, patient safety, and compliance. Consider cross-departmental effects, ongoing projects, and existing products. Attach RA/IA documentation.\n"
+            },
+            {
+              "bold": true,
+              "text": "5.3.2 Validation Required"
+            }
+          ]
+        },
+        {
+          "id": "87837ddb-3dfb-4e94-83da-2ceaa1f28996",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Determine validation activities (e.g., IQ/OQ/PQ, process validation). Justify if not required.\n"
+            },
+            {
+              "bold": true,
+              "text": "5.3.3 Training Required"
+            }
+          ]
+        },
+        {
+          "id": "33c9cf1e-9800-4525-96d8-3c586f4d1893",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Identify personnel or departments requiring training. Specify type (read & acknowledge, in-person, external). Justify if none required.\n"
+            },
+            {
+              "bold": true,
+              "text": "5.3.4 Document Updates Required"
+            }
+          ]
+        },
+        {
+          "id": "046129fa-c299-4089-8bd6-24ccb6fc567c",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "List impacted documents (procedures, forms, work instructions). Ensure process linkages are updated. Justify if none required.\n"
+            },
+            {
+              "bold": true,
+              "text": "5.3.5 Additional Actions"
+            }
+          ]
+        },
+        {
+          "id": "f8112699-7b95-42cf-8c37-40cbfe1758f0",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Identify any required customer or regulatory notifications, supplier communications, or other tasks."
+            }
+          ]
+        },
+        {
+          "id": "07f5c8c6-30d3-4068-8dee-4d991f163999",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "58004df7-d095-4ae6-abe9-64f25a47a5f4",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "5.4 Implementation"
+            }
+          ]
+        },
+        {
+          "id": "ae037f26-e27f-4d9e-ae75-5819a4674b02",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "bold": true,
+              "text": "5.4.1 Validation Completed"
+            },
+            {
+              "text": " – Document results; if unsuccessful, halt change.\n"
+            },
+            {
+              "bold": true,
+              "text": "5.4.2 Training Completed"
+            },
+            {
+              "text": " – Record completion; reference any corrective action raised.\n"
+            },
+            {
+              "bold": true,
+              "text": "5.4.3 Document Updates Completed"
+            },
+            {
+              "text": " – Record changes; documents are not issued at this stage.\n"
+            },
+            {
+              "bold": true,
+              "text": "5.4.4 Additional Actions Completed"
+            },
+            {
+              "text": " – Attach evidence of communications or approvals."
+            }
+          ]
+        },
+        {
+          "id": "ece35895-085c-4bfb-8c86-74bf7fb1adc4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "afb77e08-a6b3-4f5a-aab2-e51d9d5f6b26",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "5.5 Quality"
+            }
+          ]
+        },
+        {
+          "id": "279d0af5-772a-41b6-967a-40d8f7ea4fb0",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "bold": true,
+              "text": "5.5.1 Document Issuing"
+            },
+            {
+              "text": " – List issued documents with version numbers.\n"
+            },
+            {
+              "bold": true,
+              "text": "5.5.2 Effectiveness Check"
+            },
+            {
+              "text": " – Define criteria, timeline, and responsible party.\n"
+            },
+            {
+              "bold": true,
+              "text": "5.5.3 Closure"
+            },
+            {
+              "text": " – QA reviews evidence, confirms completion, and records closure decision."
+            }
+          ]
+        },
+        {
+          "id": "74a06058-0c18-4a8b-b60d-05f990f5581b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d259c93b-cfbf-465c-b3c3-44cb68eedc07",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Records"
+            }
+          ],
+          "listRestart": 6,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "f7af5dae-41b2-4dc7-a809-013394594f7f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The following records must be maintained: "
+            }
+          ]
+        },
+        {
+          "id": "0f29afe6-ddd6-4c31-b3bd-4137b844e5d4",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Change Control form (all sections completed) "
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "63cc8fd5-1455-4873-a758-b0259acddb43",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Supporting documents "
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "99b8a32a-c645-4727-9679-992e947b24f0",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Risk and impact assessments "
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "3dc41c79-daf3-4e22-9b13-a88c488beee8",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Validation protocols and reports "
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "9c96d427-f846-4f0c-a224-51c77092f6f7",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Training records "
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "3b36af9f-2d9d-4bc5-b02a-b8606ffb0008",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Updated controlled documents "
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "757faa4c-e43a-4e5d-a949-321b57c2193f",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Effectiveness check results "
+            }
+          ],
+          "listStart": 7,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "249e70c7-4367-4760-9458-da59b6d0d5ea",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Retention: Minimum [X years] or per regulatory requirements."
+            }
+          ]
+        },
+        {
+          "id": "73f2f3e9-a820-4539-878f-ec4922dcfd61",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8be5a068-0574-409e-aad6-e6846fefc5ce",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Training"
+            }
+          ],
+          "listRestart": 7,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "8f52534e-448d-4ec3-9664-e1e712f67265",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "All personnel involved in change control must be trained on this SOP."
+            }
+          ]
+        },
+        {
+          "id": "0d0f890d-dd07-4f96-85b1-dca05274a1e4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "98630099-4259-4adb-925f-c1836c3d8753",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "References"
+            }
+          ],
+          "listRestart": 8,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "d46a23b5-d938-4312-9a63-75b3e3ba10c6",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Section to link to/reference any associated forms, procedures, supporting documentation, etc. utilised in this procedure"
+            }
+          ]
+        },
+        {
+          "id": "43125468-a246-4dfb-ab3d-5e59541a4350",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "616085d4-7483-4a8e-9137-944e602b8ac7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "{Change control template}"
+            }
+          ]
+        },
+        {
+          "id": "5e909f01-d57b-4810-93a4-c7f15f137723",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "{Effectiveness check template}"
+            }
+          ]
+        },
+        {
+          "id": "005094a6-4d0c-4588-b93e-4f1ee302a80e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "1f9f312a-cf5e-4e23-924c-0ed3c56a79c9",
+  "title": "OOS - Method",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "OOS": {
+      "id": "f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Attach supporting documents": {
+      "id": "6f825b26-acdf-4852-a373-5d817c9d3047",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "4e7a7afe-c7bd-431e-bffc-b0e66e5ce58b"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "7321d0a9-6dd8-4c1a-b238-822ebf5e9835",
+          "type": "field",
+          "fieldId": "f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f6781b63-a4bc-46b5-84bb-00b27830d980",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c281284d-74ba-409a-b7c7-5c0839091042",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Describe the method used, with SOP revision, and confirm this is the appropriate method:"
+            }
+          ]
+        },
+        {
+          "id": "3e4546ab-39ba-4fb2-b35a-a9594568972d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "80e9868b-6ece-49b9-b448-cdda047ead9d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "070966c9-d90e-47c3-8fc3-30e49950f76f",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Have any change controls or CAPAs been implemented in the last 12 months? Give details of changes and dates of implementation:"
+            }
+          ]
+        },
+        {
+          "id": "db5d2d28-b14a-4f78-8c78-fd4bc4a25d92",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dcf978dd-3fed-4439-9c74-77b5c0cd44e9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ccced993-18f3-48d4-b23e-2180dfaa559d",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Is the method clear, straightforward and easy to follow?"
+            }
+          ]
+        },
+        {
+          "id": "169355dc-3fe8-4597-8190-0e34098ab6ee",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1fa9c1de-a7a3-4a8d-bb2e-0a3404ef6ef9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6d8b0022-a48a-4556-bdf3-c962c9e90ed4",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Has all the data been recorded correctly? (e.g. are there transcription errors, or incorrect fields used?)"
+            }
+          ]
+        },
+        {
+          "id": "a45c7d64-2a77-40e7-af49-11f755f80d79",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2825b43d-37c5-467d-a6a1-bb5ce9da9f8a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c41b9625-faaf-4091-a288-7433d1232b68",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Describe any trends related to this method (e.g. review previous OOS results):"
+            }
+          ]
+        },
+        {
+          "id": "ec46f1c9-2e37-4be5-b705-0ccc3d3b00b5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "18c6bc0a-4bf6-4c0e-ad18-2b51d61fbe1c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2dd168b4-2575-4e14-b8f3-9b719eb4e312",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Record any other information pertinent to the method:"
+            }
+          ]
+        },
+        {
+          "id": "63939dce-c02e-45e7-bba2-52f6cf8a296a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e9f0bb23-8708-46a3-abb5-09d3fd252075",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4b65e486-d509-4648-bc94-05e244e77715",
+          "type": "field",
+          "fieldId": "6f825b26-acdf-4852-a373-5d817c9d3047",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "bd7a0d75-5363-47c1-8f4e-306bb5b4f4fc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Method"
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "e6ab2f9c-f017-4f88-8ae3-89388efb500e",
+  "title": "Complaint SOP",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "f273cc0c-f268-4711-aa31-cdc3d3f36fe6",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Author(s)": {
+      "id": "f8b01cb3-9fab-4be0-880f-d83cc4608f74",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Approver(s)": {
+      "id": "dd4d801e-98f8-492a-865b-32c4002805ef",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Effective Date": {
+      "id": "7f3132c7-5141-4157-866d-bf6fe8549c90",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Next Review Date": {
+      "id": "876bb10f-7417-484e-83b5-f94ae0a14e04",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3c95d26e-0a7f-4545-9ba6-f3b53548c50d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b3c1d769-a271-4d8e-9f47-0b6d8f0d8e3f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "976786ac-f3af-41cd-aaa6-044e1b62e05c",
+          "type": "field",
+          "fieldId": "7f3132c7-5141-4157-866d-bf6fe8549c90",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f19c40cd-65c5-48fa-9619-41f737b41cf7",
+          "type": "field",
+          "fieldId": "876bb10f-7417-484e-83b5-f94ae0a14e04",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7640648c-d861-447a-8a10-d016d8a1e224",
+          "type": "field",
+          "fieldId": "f8b01cb3-9fab-4be0-880f-d83cc4608f74",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "74e86d8a-5858-4cee-bdf9-9946a873f35e",
+          "type": "field",
+          "fieldId": "dd4d801e-98f8-492a-865b-32c4002805ef",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3a312a24-b16d-40d7-8e7a-3c8f8a0a3b73",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0208e173-56d5-4dc8-9cc8-b4c0a7909e02",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Purpose"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "4b809e66-aa4c-4466-8869-0818ec34cd36",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "What is the purpose of the policy? What are we trying to accomplish with this procedure?"
+            }
+          ]
+        },
+        {
+          "id": "f7541624-62da-41cc-aee5-3a827913d9cb",
+          "type": "h2",
+          "children": [
+            {
+              "text": " "
+            }
+          ]
+        },
+        {
+          "id": "a1a8b078-c0f0-4aa9-97d4-ba45e2f6daf6",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Scope"
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "c9988cfc-e6bc-4b6f-bbc7-54852ee9b6a7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Who is this policy applicable to?"
+            }
+          ]
+        },
+        {
+          "id": "bfc50468-b21c-47e9-be02-d51e0b6e04a4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Who owns responsibility for parts of this process?"
+            }
+          ]
+        },
+        {
+          "id": "a991251d-40c1-4bba-a916-0dfc2691db27",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "276b796d-b29f-4acc-8750-e7518afa3a41",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Responsibilities"
+            }
+          ],
+          "listRestart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "9cdedac5-6ab3-4792-ba4e-b42e3811704b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Who does what? (Can be bulleted by role: QA, Operator, etc.)"
+            }
+          ]
+        },
+        {
+          "id": "13e5e986-ec57-43cb-9f39-d2d771fb8c34",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c1282aa4-d7c1-4700-8ab0-4ab3b2299bcc",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Definitions"
+            }
+          ],
+          "listRestart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "512a0e3e-adae-4e0f-a036-61108a1aa2b7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Clarify any technical terms, acronyms, or abbreviations."
+            }
+          ]
+        },
+        {
+          "id": "4d42844b-701e-40aa-b9a2-9f5e9f652e12",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ac2accca-5b2e-4a86-9ff7-330a65711b49",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Procedure"
+            }
+          ],
+          "listRestart": 5,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "f751435d-fa76-4003-aad7-e41134b8d752",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Procedure Step 1 (name steps as appropriate for procedure)"
+            }
+          ]
+        },
+        {
+          "id": "b233ebf4-19d1-445c-bd00-6e01f0ef7dfd",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Detailed description of the procedure step"
+            }
+          ],
+          "listStyleType": "disc",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "64599fb0-4334-4d75-a076-2b6dce8a5e1f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Procedure Step 2 "
+            }
+          ]
+        },
+        {
+          "id": "103cee28-ca9a-44d1-9732-848693abbe74",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Detailed description of procedure step, etc. "
+            }
+          ],
+          "listStyleType": "disc",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "74a06058-0c18-4a8b-b60d-05f990f5581b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d259c93b-cfbf-465c-b3c3-44cb68eedc07",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Records"
+            }
+          ],
+          "listRestart": 6,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "77e8ffc3-df89-4611-b4da-aaf8c1892fe7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The following records must be maintained:"
+            }
+          ]
+        },
+        {
+          "id": "e98b0de5-685c-4f0f-b7dc-1ca67f843843",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "…"
+            }
+          ]
+        },
+        {
+          "id": "249e70c7-4367-4760-9458-da59b6d0d5ea",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Retention: Minimum [X years] or per regulatory requirements."
+            }
+          ]
+        },
+        {
+          "id": "73f2f3e9-a820-4539-878f-ec4922dcfd61",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8be5a068-0574-409e-aad6-e6846fefc5ce",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Training"
+            }
+          ],
+          "listRestart": 7,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "8f52534e-448d-4ec3-9664-e1e712f67265",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "All personnel involved in change control must be trained on this SOP."
+            }
+          ]
+        },
+        {
+          "id": "0d0f890d-dd07-4f96-85b1-dca05274a1e4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "98630099-4259-4adb-925f-c1836c3d8753",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "References"
+            }
+          ],
+          "listRestart": 8,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "d46a23b5-d938-4312-9a63-75b3e3ba10c6",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Section to link to/reference any associated forms, procedures, supporting documentation, etc. utilised in this procedure"
+            }
+          ]
+        },
+        {
+          "id": "005094a6-4d0c-4588-b93e-4f1ee302a80e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

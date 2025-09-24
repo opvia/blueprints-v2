@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "eccc8e93-d006-4d8a-8b93-b682c9984455",
+  "title": "Customer",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "office",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "hideVersionNumber": true,
+    "createFromTemplate": null,
+    "reviewRequirements": {
+      "requireResponsesForAllPhases": true
+    },
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": false
+  },
+  "templateConfig": {
+    "reviewRequirements": {
+      "requireResponsesForAllPhases": true
+    }
+  }
+}
