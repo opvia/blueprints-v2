@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f1dd2a39-4b04-4b8c-82a2-abf610094da9",
+  "title": "Attachment",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Course Name": {
+      "id": "dab2e73b-4277-4c08-8670-a40e367ffb07",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Module Attempt\") , 'Course Name')"
+      },
+      "dataType": null
+    },
+    "Module Attempt": {
+      "id": "06e08f13-8632-468c-b1ca-2b4f4df418d5",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9b4098cc-64bd-4355-8968-db1f5138b71c"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": null
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@dab2e73b-4277-4c08-8670-a40e367ffb07 Attachment #@TEMPLATE_INDEX"
+  }
+}

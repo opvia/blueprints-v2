@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "1969becb-2934-4fe0-81f8-3a10b38b9f9e",
+  "title": "Long Answer Question",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Course": {
+      "id": "da9035f9-a0f0-49ec-b81b-2163fb7ede6c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Question": {
+      "id": "3623db4a-f066-4d99-b205-170ae5d2f3c8",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Course Name": {
+      "id": "d72874bb-6aa3-4c05-bc60-3b1743686626",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course\") , 'Course Name')"
+      },
+      "dataType": null
+    },
+    "Module Type": {
+      "id": "444aaa0f-1011-450a-b7d6-4f21849a39e5",
+      "type": "STRING",
+      "value": "Long Answer Question",
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "b5250871-2203-4381-ba84-4f1023ee45db"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "6fb05737-a5c5-469b-b2c3-e142fc4ba3ad",
+          "type": "field",
+          "fieldId": "3623db4a-f066-4d99-b205-170ae5d2f3c8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "19283f90-f3ed-4c4e-99bd-24b7dfcfa7a3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@d72874bb-6aa3-4c05-bc60-3b1743686626 - LAQ#@TEMPLATE_INDEX"
+  }
+}

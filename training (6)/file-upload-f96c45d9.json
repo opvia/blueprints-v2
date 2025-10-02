@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f96c45d9-5b8e-49a7-9fdf-60db926207df",
+  "title": "File Upload",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Course": {
+      "id": "0f9e0e49-23c8-43a2-9d2c-30c185b32362",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Course Name": {
+      "id": "c376af1c-6f39-4e62-99ae-5d96f963dd8f",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course\") , 'Course Name')"
+      },
+      "dataType": null
+    },
+    "Description": {
+      "id": "42df0468-3ab5-476e-a420-6a1e45996d49",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Module Type": {
+      "id": "c69b9d78-89d8-4af3-b264-3b28afb8c213",
+      "type": "STRING",
+      "value": "File Upload",
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "b5250871-2203-4381-ba84-4f1023ee45db"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "c63750e6-e3d9-4b4f-8c28-3facef9706bd",
+          "type": "field",
+          "fieldId": "42df0468-3ab5-476e-a420-6a1e45996d49",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e5c1e5a7-0c90-42e0-8867-d8588c948cfc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@c376af1c-6f39-4e62-99ae-5d96f963dd8f - File#@TEMPLATE_INDEX"
+  }
+}

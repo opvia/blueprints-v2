@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b5250871-2203-4381-ba84-4f1023ee45db",
+  "title": "Course Module",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Course": {
+      "id": "84967bee-0dbf-4229-bedf-499530c5763d",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    },
+    "Course Name": {
+      "id": "ec54bb9e-2787-4b1b-b419-296a07f85f6d",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    },
+    "Module Type": {
+      "id": "0fc165a9-04d7-454e-be4c-204d3efc2122",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "grid-view",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "1d2029be-f200-4a08-af0c-ef46c1c875a9",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": true
+    },
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": true
+  }
+}

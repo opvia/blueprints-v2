@@ -1,0 +1,358 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4abd8319-a372-455f-af32-335487dc70df",
+  "title": "Training Course",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Course Name": {
+      "id": "8a493e08-79c3-4fcd-88e0-52dcbaedb5ab",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Course Modules": {
+      "id": "fa883a4c-f96d-41cc-b67d-4a62bb912941",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "ref": {
+            "id": "b5250871-2203-4381-ba84-4f1023ee45db"
+          }
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Passing Score %": {
+      "id": "94d5e2a7-aa16-44f3-b55b-dca114af4a07",
+      "type": "NUMBER",
+      "value": 100,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"Passing Score %\") > 100 or lookup(__self, \"Passing Score %\")  < 0"
+      },
+      "dataType": "NUMBER"
+    },
+    "Course Enrollments": {
+      "id": "04f2989a-3aa3-4d32-a6df-5f0a9427c660",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "Training Course Enrollment"
+                  ],
+                  "filter": "type",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Course",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Course",
+            "config": "Course"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Requires Sign off?": {
+      "id": "6b0fff0e-7d1f-4681-9734-e59c5abaa150",
+      "type": "BOOLEAN",
+      "value": true,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Controlled Procedures": {
+      "id": "676cde56-d852-40c3-9d84-236853f8737a",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "TEMPLATE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fead241e-7006-4cf9-ba4c-a4122dcf1a28"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f1d2322e-e7ca-4788-b397-2bdc1f1c85f5",
+          "type": "h3",
+          "children": [
+            {
+              "text": "1. Describe the procedures or users this training is for:"
+            }
+          ]
+        },
+        {
+          "id": "51d12195-583e-4aca-b192-d6612760e264",
+          "type": "field",
+          "fieldId": "8a493e08-79c3-4fcd-88e0-52dcbaedb5ab",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ed09d761-a067-4ca3-b653-d0648451d850",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1217d5b9-46e1-43d0-9343-6b9878905fcc",
+          "type": "h3",
+          "children": [
+            {
+              "text": "2. (Optional) Select controlled procedures. After completing the course, trainees will be able to execute these procedures."
+            }
+          ]
+        },
+        {
+          "id": "a5bad6c1-f226-4123-b3c4-061a7a5aa441",
+          "type": "field",
+          "fieldId": "676cde56-d852-40c3-9d84-236853f8737a",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "ba16c9ea-3a30-4300-85d4-47260745c0d2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e4d103b5-3254-4e1e-9ce8-198db8fdac1e",
+          "type": "h3",
+          "children": [
+            {
+              "text": "3. Set the course modules and approval requirements"
+            }
+          ],
+          "listRestart": 3
+        },
+        {
+          "id": "bb93a781-2857-4248-8f72-2481d97d8e37",
+          "type": "p",
+          "children": [
+            {
+              "text": "Any responses lower than this score will be recorded but "
+            },
+            {
+              "bold": true,
+              "text": "not"
+            },
+            {
+              "text": " sent for approval:"
+            }
+          ],
+          "listRestart": 3
+        },
+        {
+          "id": "07c602fd-c469-42e2-87a5-c3b0f986f0c9",
+          "type": "field",
+          "fieldId": "94d5e2a7-aa16-44f3-b55b-dca114af4a07",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "311825a4-7772-4d01-bd4d-4331ec0f2bb8",
+          "type": "p",
+          "children": [
+            {
+              "text": "Passing responses will be sent for review by the trainers before being approved:"
+            }
+          ]
+        },
+        {
+          "id": "95bf3470-866d-46ac-ac14-f0f5419ebcbe",
+          "type": "field",
+          "fieldId": "6b0fff0e-7d1f-4681-9734-e59c5abaa150",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ec2166bc-7f08-41cd-aea4-43c605903da1",
+          "type": "field",
+          "fieldId": "fa883a4c-f96d-41cc-b67d-4a62bb912941",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Course",
+                "name": "Course",
+                "isHidden": true
+              },
+              {
+                "id": "Course Name",
+                "name": "Course Name",
+                "isHidden": true
+              },
+              {
+                "id": "Module Type",
+                "name": "Module Type",
+                "isHidden": true
+              },
+              {
+                "id": "Question",
+                "name": "Question",
+                "isHidden": false
+              },
+              {
+                "id": "Correct Answer",
+                "name": "Correct Answer",
+                "isHidden": false
+              },
+              {
+                "id": "Incorrect Options",
+                "name": "Incorrect Options",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "a6273e17-6f3f-4be3-ab49-1a4e20dcb85b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ddcda802-b8c8-4a45-bb57-fa993573bbc1",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Enrollments"
+            }
+          ]
+        },
+        {
+          "id": "cb039fe3-3f87-4824-a1c6-a9f7c071fdde",
+          "type": "field",
+          "fieldId": "04f2989a-3aa3-4d32-a6df-5f0a9427c660",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a867305a-9bf4-4122-be1d-6e90f3394392",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ca38f998-b9bc-4508-be0b-45dee1daedf0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@8a493e08-79c3-4fcd-88e0-52dcbaedb5ab Training Course"
+  }
+}

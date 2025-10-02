@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4f97d3d7-9dcc-4a18-81f4-ff0c20e57d18",
+  "title": "Training Instructions",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Setup Training": {
+      "id": "d5bbf2a0-084d-458b-8fd5-3ecbf87b6c81",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "71dbc4ea-1731-4c6c-9913-c21f08bc7d95",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "build",
+          "label": "Setup Training"
+        }
+      },
+      "dataType": "SCRIPT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fead241e-7006-4cf9-ba4c-a4122dcf1a28"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f462b5e3-2f56-4401-a20d-4c8f26bce0e7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e2379795-0fbf-4731-88b1-150da39ceca8",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Setup"
+            }
+          ]
+        },
+        {
+          "id": "9f9c0c4f-c9b9-47b0-b234-f2d38bb12d6b",
+          "type": "p",
+          "children": [
+            {
+              "text": "1. Run the setup script. This will give your training quiz entity access to this system"
+            }
+          ]
+        },
+        {
+          "id": "534fade4-add6-458b-8dab-f68c6cc38e0c",
+          "type": "field",
+          "fieldId": "d5bbf2a0-084d-458b-8fd5-3ecbf87b6c81",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "d237ce2d-a52e-424c-946c-40041f79bb1a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a173f4b9-0417-4efe-a362-83c1a21b3abf",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

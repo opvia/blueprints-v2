@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "eb53bc65-5f71-4b51-9f3a-aba831f1dda5",
+  "title": "Training Plan",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "document",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "b711d9a7-dcb9-4802-998f-adbb59404a46",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": false
+    },
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": true
+  }
+}
