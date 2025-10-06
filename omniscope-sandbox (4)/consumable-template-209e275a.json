@@ -1,0 +1,326 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "209e275a-a454-4efd-a143-8c67f1eabf2e",
+  "title": "Consumable Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Category": {
+      "id": "5b739fd7-9d37-4fd4-ac2e-e63631f02cde",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Consumables",
+          "General Lab supply"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Location": {
+      "id": "27d09e23-d092-476c-a83a-d0cf822656a7",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "C1_a",
+          "C1_b"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Supplier": {
+      "id": "d78a9887-52b0-418b-b347-bea8da66b662",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "8dd6f84a-2e14-4fa2-8646-b36c0aafc4b0"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Role",
+              "config": "Role"
+            },
+            {
+              "name": "Notes",
+              "config": "Notes"
+            },
+            {
+              "name": "Phone",
+              "config": "Phone"
+            },
+            {
+              "name": "Active",
+              "config": "Active"
+            },
+            {
+              "name": "Address",
+              "config": "Address"
+            },
+            {
+              "name": "Contact",
+              "config": "Contact"
+            },
+            {
+              "name": "Category",
+              "config": "Category"
+            },
+            {
+              "name": "Mobile Phone",
+              "config": "Mobile Phone"
+            },
+            {
+              "name": "Email Address",
+              "config": "Email Address"
+            },
+            {
+              "name": "OS España user",
+              "config": "OS España user"
+            },
+            {
+              "name": "OS Limited User",
+              "config": "OS Limited User"
+            },
+            {
+              "name": "OS España password",
+              "config": "OS España password"
+            },
+            {
+              "name": "OS Limited password",
+              "config": "OS Limited password"
+            },
+            {
+              "name": "OS España account Nº",
+              "config": "OS España account Nº"
+            },
+            {
+              "name": "OS Limited account Nº",
+              "config": "OS Limited account Nº"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Unit size": {
+      "id": "fbff008a-9e78-4f98-b46a-48e13f28e169",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Laboratory": {
+      "id": "9a019408-82e0-4fb9-9331-4f3f45921eff",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "OS Lab",
+          "OS Office"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Reference brand": {
+      "id": "f72f85f1-25fb-474c-abb3-f46f2e3b65ac",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Manufacturer brand": {
+      "id": "172893e7-71fb-449a-8c22-ba2c00f90b40",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Reference supplier": {
+      "id": "db398d85-1a16-4d09-8364-6e5cf89f7523",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Storage temperature": {
+      "id": "4881b096-c0af-4465-b122-c276b72de1e2",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "-20ºC",
+          "-80ºC",
+          "4ºC",
+          "LN",
+          "RT"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "URL Link to product web": {
+      "id": "b2cf2f4e-8e35-4efa-9183-814fb1889900",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "dbfa9eaf-3a7b-4acc-afb5-ee1153394c47"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8149bc3c-fbac-4a82-bac8-3f92415e88ce",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a2ddec3-ee60-4019-b5ba-c2d666059da6",
+          "type": "field",
+          "fieldId": "d78a9887-52b0-418b-b347-bea8da66b662",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "abd1c8c6-178a-40d7-b5a2-86f51266355c",
+          "type": "field",
+          "fieldId": "db398d85-1a16-4d09-8364-6e5cf89f7523",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6cee5285-e49b-441d-841b-826777fc4579",
+          "type": "field",
+          "fieldId": "172893e7-71fb-449a-8c22-ba2c00f90b40",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dddfa696-dab7-4d11-b8d9-fea1e214efd4",
+          "type": "field",
+          "fieldId": "f72f85f1-25fb-474c-abb3-f46f2e3b65ac",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2b74086f-0e29-4494-98b7-c2e0ee15ab98",
+          "type": "field",
+          "fieldId": "5b739fd7-9d37-4fd4-ac2e-e63631f02cde",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "016ec6e2-8a50-4d62-bf29-30682773e435",
+          "type": "field",
+          "fieldId": "fbff008a-9e78-4f98-b46a-48e13f28e169",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "deac318a-f09e-46ac-8f52-02ab169e7be8",
+          "type": "field",
+          "fieldId": "4881b096-c0af-4465-b122-c276b72de1e2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a14bc51f-2ac4-41b7-953d-930a62594230",
+          "type": "field",
+          "fieldId": "9a019408-82e0-4fb9-9331-4f3f45921eff",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "debec041-46a8-4665-a6e7-3ab3f1497cb8",
+          "type": "field",
+          "fieldId": "27d09e23-d092-476c-a83a-d0cf822656a7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b50b4831-1be8-4096-9de3-5d95f1e8de92",
+          "type": "field",
+          "fieldId": "b2cf2f4e-8e35-4efa-9183-814fb1889900",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b3dcf17c-7729-4812-9be6-3a23de18c3f0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

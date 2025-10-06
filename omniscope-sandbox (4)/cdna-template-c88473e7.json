@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c88473e7-4942-4555-a37c-6381d3febc20",
+  "title": "cDNA Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Lego": {
+      "id": "5590cb22-a514-4f44-bd12-0ecc091251d6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Assay": {
+      "id": "50701359-d43b-411c-b482-7eff9002c70e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lego\") , \"Assay\")"
+      },
+      "dataType": null
+    },
+    "Sample": {
+      "id": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Sample"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "RT RNA input": {
+      "id": "12e06fbf-83b6-4b01-89ba-24285727530c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Volume for 3000ng\") < 9.5 ? 3000 : (9.5 * lookup(__self, \"Volume for 3000ng\"))"
+      },
+      "dataType": null
+    },
+    "RT Water volume": {
+      "id": "9c256d64-65ef-4abc-b032-ecaebe3292e1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "9.5 - lookup(__self, \"RT sample volume\")"
+      },
+      "dataType": null
+    },
+    "Thermocycler RT": {
+      "id": "5738d1e5-2070-4cf3-bc47-0980dacf6e43",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Equipment"
+            ],
+            "fieldValue": [
+              {
+                "name": "Equipment Name",
+                "value": "Thermocycler Veriti",
+                "operator": "="
+              }
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Equipment Name",
+              "config": "Equipment Name"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "RT sample volume": {
+      "id": "04160b18-10b9-43b1-bc8e-e00aa456644f",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Volume for 3000ng\") < 9.5 ? lookup(__self, \"Volume for 3000ng\") : 9.5"
+      },
+      "dataType": null
+    },
+    "Volume for 3000ng": {
+      "id": "bbac1c17-bcfe-45ab-a608-e8a66f228f1e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "3000 / lookup(__self, \"Real volume (uL) - Sample\")"
+      },
+      "dataType": null
+    },
+    "Thermocycler 72ºC": {
+      "id": "02da9c1f-50ce-4f20-b6f0-ddc238f71b2e",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Equipment"
+            ],
+            "fieldValue": [
+              {
+                "name": "Equipment Name",
+                "value": "Thermocycler Veriti",
+                "operator": "="
+              }
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Equipment Name",
+              "config": "Equipment Name"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Total RNA/DNA - Sample": {
+      "id": "0511e993-3bb6-47e0-a2f5-6687b30fc384",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Sample\") , \"Total RNA/DNA\")"
+      },
+      "dataType": null
+    },
+    "Volume left after os-TCR": {
+      "id": "04a20f25-6f80-406c-b713-31b6de291a8b",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Real volume (uL) - Sample\") - lookup(__self, \"RT sample volume\")"
+      },
+      "dataType": null
+    },
+    "Real volume (uL) - Sample": {
+      "id": "c3af8b0b-9f02-4b48-91cd-0e2c244acbb8",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Sample\") , \"Real volume (uL)\")"
+      },
+      "dataType": null
+    },
+    "Concentration without dilution factor (ng/uL) - Sample": {
+      "id": "b48f371c-08a0-4570-bf4c-9c6ee0800128",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Sample\") , \"Concentration without dilution factor (ng/uL)\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9d712df2-d818-4f16-83bd-4c614749b556"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "0c13882e-1d8d-49d8-af74-532d47fa491e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ff33f0b2-7801-4dc5-9245-ef81edc9099b",
+          "type": "field",
+          "fieldId": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "2d65953a-e25b-44b7-8568-4bd2e5943d95",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c37b3b77-6235-4012-999b-e92d91e42b59",
+          "type": "field",
+          "fieldId": "c3af8b0b-9f02-4b48-91cd-0e2c244acbb8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e126f46c-2250-4876-b281-728356cdf2b2",
+          "type": "field",
+          "fieldId": "b48f371c-08a0-4570-bf4c-9c6ee0800128",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c4876571-4feb-4270-ab85-995f80da12b7",
+          "type": "field",
+          "fieldId": "0511e993-3bb6-47e0-a2f5-6687b30fc384",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9c8f8f18-4631-4947-b98c-3abdf184c28e",
+          "type": "field",
+          "fieldId": "bbac1c17-bcfe-45ab-a608-e8a66f228f1e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6c46a20f-6d15-4798-a443-9332ba11ef7c",
+          "type": "field",
+          "fieldId": "04160b18-10b9-43b1-bc8e-e00aa456644f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2197df6e-c044-4ea1-80df-cdc8ec021da5",
+          "type": "field",
+          "fieldId": "12e06fbf-83b6-4b01-89ba-24285727530c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c73bdc6a-afa7-400e-bac8-dd6dc126cc4c",
+          "type": "field",
+          "fieldId": "9c256d64-65ef-4abc-b032-ecaebe3292e1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "eac1574f-1671-4fb9-9a20-3edac8690e12",
+          "type": "field",
+          "fieldId": "04a20f25-6f80-406c-b713-31b6de291a8b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e02e6c57-2854-479a-95ce-375d45ed697f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "57054eb0-563b-4139-abdb-074f461d2cb7",
+          "type": "field",
+          "fieldId": "02da9c1f-50ce-4f20-b6f0-ddc238f71b2e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "46114b9e-4e56-4f84-be20-0cf8abc67b2a",
+          "type": "field",
+          "fieldId": "5738d1e5-2070-4cf3-bc47-0980dacf6e43",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "67188f55-1dcf-43f7-a571-e64fe84244e5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - cDNA - @cda3eb29-8fcd-4513-a3ae-d440c3a41ea2 "
+  }
+}

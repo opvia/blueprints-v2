@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "66c231d6-4769-4be1-b9e6-e8f48638a2bf",
+  "title": "Inbound Sample Batch Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Inbound Samples": {
+      "id": "2da138ec-8a4b-4e2e-b1ef-35509c3bc228",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "f6696889-e077-4b8b-951e-842b5bd8991a"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Age",
+              "config": "Age"
+            },
+            {
+              "name": "Box",
+              "config": "Box"
+            },
+            {
+              "name": "Assays",
+              "config": "Assays"
+            },
+            {
+              "name": "Gender",
+              "config": "Gender"
+            },
+            {
+              "name": "Species",
+              "config": "Species"
+            },
+            {
+              "name": "Donor ID",
+              "config": "Donor ID"
+            },
+            {
+              "name": "Position",
+              "config": "Position"
+            },
+            {
+              "name": "Timepoint",
+              "config": "Timepoint"
+            },
+            {
+              "name": "Treatment",
+              "config": "Treatment"
+            },
+            {
+              "name": "Timepoint ID",
+              "config": "Timepoint ID"
+            },
+            {
+              "name": "Sampling date",
+              "config": "Sampling date"
+            },
+            {
+              "name": "Full Cohort ID",
+              "config": "Full Cohort ID"
+            },
+            {
+              "name": "Notes/Comments",
+              "config": "Notes/Comments"
+            },
+            {
+              "name": "Type of Sample",
+              "config": "Type of Sample"
+            },
+            {
+              "name": "Disease present",
+              "config": "Disease present"
+            },
+            {
+              "name": "Sample condition",
+              "config": "Sample condition"
+            },
+            {
+              "name": "External Donor ID",
+              "config": "External Donor ID"
+            },
+            {
+              "name": "External Sample ID",
+              "config": "External Sample ID"
+            },
+            {
+              "name": "Sample reception date",
+              "config": "Sample reception date"
+            },
+            {
+              "name": "Blood collection consent",
+              "config": "Blood collection consent"
+            },
+            {
+              "name": "Diseases with negative test",
+              "config": "Diseases with negative test"
+            },
+            {
+              "name": "Patiente consent information",
+              "config": "Patiente consent information"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Date Samples Added": {
+      "id": "da49da3d-36a4-41f6-85f3-3afd4c4948bb",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "7f0b331d-e279-440c-8348-1b6f5e8c7561"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "571bb5e4-b9e7-4ad5-856e-fe002b1ea6fd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9d61d36e-ce5f-41e3-8e2e-a359be058682",
+          "type": "field",
+          "fieldId": "da49da3d-36a4-41f6-85f3-3afd4c4948bb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3cb71979-c590-47d1-940f-9b35ea8602a1",
+          "type": "field",
+          "fieldId": "2da138ec-8a4b-4e2e-b1ef-35509c3bc228",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "c0548112-f978-41a2-ae5d-31cd68761a6f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

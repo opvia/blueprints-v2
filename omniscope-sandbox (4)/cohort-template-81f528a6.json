@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "81f528a6-569f-49dd-a138-72e7cfc0592d",
+  "title": "Cohort Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Origin": {
+      "id": "1bd2844b-f815-45d5-9f12-f36dafee485e",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Blue Gene",
+          "Omniscope",
+          "VHIO"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Disease": {
+      "id": "ec8f56aa-0c76-4234-82df-03254b024a46",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "AIM",
+          "B2C",
+          "CVD",
+          "INF",
+          "MET",
+          "NEU",
+          "ONC"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Cohort ID": {
+      "id": "8f13e87e-9549-48c8-b5a7-60abec1e0e11",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Saved search": {
+      "id": "1b95e830-1bf1-4732-b852-cd33a80da02b",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "template": [
+            "f6696889-e077-4b8b-951e-842b5bd8991a"
+          ],
+          "fieldValue": [
+            {
+              "name": "Full Cohort ID",
+              "value": "ref(lookup(__self, \"ID\"))",
+              "operator": "="
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Age",
+            "config": "Age"
+          },
+          {
+            "name": "Box",
+            "config": "Box"
+          },
+          {
+            "name": "Assays",
+            "config": "Assays"
+          },
+          {
+            "name": "Gender",
+            "config": "Gender"
+          },
+          {
+            "name": "Species",
+            "config": "Species"
+          },
+          {
+            "name": "Donor ID",
+            "config": "Donor ID"
+          },
+          {
+            "name": "Position",
+            "config": "Position"
+          },
+          {
+            "name": "Timepoint",
+            "config": "Timepoint"
+          },
+          {
+            "name": "Treatment",
+            "config": "Treatment"
+          },
+          {
+            "name": "Timepoint ID",
+            "config": "Timepoint ID"
+          },
+          {
+            "name": "Sampling date",
+            "config": "Sampling date"
+          },
+          {
+            "name": "Full Cohort ID",
+            "config": "Full Cohort ID"
+          },
+          {
+            "name": "Notes/Comments",
+            "config": "Notes/Comments"
+          },
+          {
+            "name": "Type of Sample",
+            "config": "Type of Sample"
+          },
+          {
+            "name": "Disease present",
+            "config": "Disease present"
+          },
+          {
+            "name": "Sample condition",
+            "config": "Sample condition"
+          },
+          {
+            "name": "External Donor ID",
+            "config": "External Donor ID"
+          },
+          {
+            "name": "External Sample ID",
+            "config": "External Sample ID"
+          },
+          {
+            "name": "Sample reception date",
+            "config": "Sample reception date"
+          },
+          {
+            "name": "Blood collection consent",
+            "config": "Blood collection consent"
+          },
+          {
+            "name": "Diseases with negative test",
+            "config": "Diseases with negative test"
+          },
+          {
+            "name": "Patiente consent information",
+            "config": "Patiente consent information"
+          }
+        ],
+        "hiddenDefaultColumns": [
+          "WORK_INSTRUCTIONS_PROGRESS",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Full Cohort ID": {
+      "id": "7befb7d2-8e60-48d4-ac63-7bd88686359f",
+      "type": "FORMULA",
+      "value": "null_null",
+      "config": {
+        "formulaExpression": "concat( string(lookup(__self, \"Disease\")), \"_\" ,string( lookup(__self, \"Cohort ID\") ))"
+      },
+      "dataType": "STRING"
+    },
+    "Principal Investigator": {
+      "id": "6572914c-2f8b-46b0-939f-6c6811f2e590",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Holger Heyn",
+          "Juan Nieto"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "ba68f0db-d13f-41a0-a5e8-7050b47e6cd3"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "5ace47e9-2f50-4330-ac14-69841300d1a3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "30a168d3-6736-4efa-b31d-2331796554a7",
+          "type": "field",
+          "fieldId": "8f13e87e-9549-48c8-b5a7-60abec1e0e11",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c6ff40ef-96ec-4a41-bffa-a83a83672f20",
+          "type": "field",
+          "fieldId": "6572914c-2f8b-46b0-939f-6c6811f2e590",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4e2fffbe-7147-40cc-b961-6cd810086270",
+          "type": "field",
+          "fieldId": "1bd2844b-f815-45d5-9f12-f36dafee485e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c2357f1f-d1cb-444f-a198-61f873eb36be",
+          "type": "field",
+          "fieldId": "ec8f56aa-0c76-4234-82df-03254b024a46",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "36a3d569-3173-4688-897b-3eb5c4c72608",
+          "type": "field",
+          "fieldId": "7befb7d2-8e60-48d4-ac63-7bd88686359f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f82b56b0-eac5-4f0e-bf3b-f48dc0136d54",
+          "type": "field",
+          "fieldId": "1b95e830-1bf1-4732-b852-cd33a80da02b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7b2d8aa7-d3ef-490f-997c-3f86b1696859",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@8f13e87e-9549-48c8-b5a7-60abec1e0e11 "
+  }
+}
