@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "6f727b79-ae46-4a89-8128-55a9e83b6b88",
+  "title": "PBMC - Create Legos",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "5cb172f2-a2c9-48ae-9ebe-dbcb9e285e8d",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "c2f4f21c-8260-461f-b29a-9f387cf13c01"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "import pandas as pd\n\n# Get the containing entity (the Assay Template)\ncontaining_entity = seal.get_containing_entity()\nassay_template_title = containing_entity[\"title\"]\n\n# Define the reference fields to process\nreference_fields_to_create_instances_for = [\n    \"Plasma Collection\",\n    \"Blood Processing\",\n    \"RBCL\",\n    \"Cell QC\",\n    \"Cell Cryopreservation\"\n]\n\nfor field_name in reference_fields_to_create_instances_for:\n    print(f\"Attempting to create instance for reference field: '{field_name}'\")\n\n    try:\n        # Create the new instance using create_from_reference_field.\n        # It will automatically determine the template from the reference field's configuration.\n        # We specify number_of_empty_entities=1 to create one instance, as templates have computed titles.\n        # No initial field values are provided, allowing the template's computed title to take effect.\n        new_instances = seal.create_from_reference_field(\n            field_name,\n            field_values_df=pd.DataFrame([]),\n            number_of_empty_entities=1\n        )\n        \n        # Ensure new_instances is a list and contains at least one entity before processing.\n        if isinstance(new_instances, list) and len(new_instances) > 0:\n            first_new_instance = new_instances[0]\n            print(f\"Successfully created and linked instance '{first_new_instance.get('title', 'Untitled')}' (ID: {first_new_instance['id']}) to '{field_name}'.\")\n        else:\n            print(f\"Warning: No instance was created for field '{field_name}'. This might indicate an issue with the field configuration (e.g., 'allowEntitiesFrom' setting) or that no suitable template was found.\")\n    except Exception as e:\n        print(f\"Error creating instance for field '{field_name}': {e}\")\n\nprint(\"Script finished.\")"
+    }
+  }
+}

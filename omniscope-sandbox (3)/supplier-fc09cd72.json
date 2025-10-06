@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "fc09cd72-99b8-41e8-869f-4581cfd194c1",
+  "title": "Supplier",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Role": {
+      "id": "6bda4286-064e-463e-b069-cb20de6fe0ed",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Notes": {
+      "id": "2be48010-843c-4d21-9d93-7ab2e76f798a",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Phone": {
+      "id": "0bac9cfe-ce5c-4ac0-83c4-f84ed3cb4b7e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Active": {
+      "id": "87dc4a33-c991-4c60-89b8-d9fe2404d8d0",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Address": {
+      "id": "00e506e4-3b24-4795-80cf-add1ce24daa1",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Contact": {
+      "id": "1f6300d8-cd41-41cd-b6da-8d52d4fb9d49",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Category": {
+      "id": "8db4c791-ecf3-4761-9ea2-37aee96157d3",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Mobile Phone": {
+      "id": "fce015bb-5cd2-46e2-9a5f-d06de1b7cf3f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Email Address": {
+      "id": "b3e2324a-4edb-43eb-b036-3395933a12a6",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS España user": {
+      "id": "cbe999be-19a2-4d4b-b7fe-e73c4f7cae70",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS Limited User": {
+      "id": "1cdada2f-f4aa-47ad-ac94-c664d72ed34a",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS España password": {
+      "id": "6438fe71-a13e-4703-92f3-7937b099baf5",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS Limited password": {
+      "id": "2f32b299-5a05-47c7-aa78-241856c02df2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS España account Nº": {
+      "id": "582bf9d2-f430-4333-989e-abc9dea0fc18",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS Limited account Nº": {
+      "id": "214f6bd9-4cfa-4455-bbb5-bfab2fdb38f7",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "tag",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": {
+      "can": true
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": false
+    },
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": false
+  }
+}

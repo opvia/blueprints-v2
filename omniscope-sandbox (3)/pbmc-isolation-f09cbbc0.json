@@ -1,0 +1,649 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f09cbbc0-3e90-4fe2-9f18-90d555ea3a8a",
+  "title": "PBMC Isolation",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "RBCL": {
+      "id": "112bb6a0-8a1c-48a5-a5c3-f66ea944daa7",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "e2258150-99df-45f4-b2f3-a360286f8e82"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "RBCL performed",
+              "config": "RBCL performed"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Cell QC": {
+      "id": "22dc35a8-0e53-42e1-8b01-8f86b6be208c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "dc385cb2-9d9c-475c-964a-097aed054be8"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Samples": {
+      "id": "f4e6bc1d-7211-45b4-9c87-824f0294f659",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Sample"
+            ],
+            "fieldValue": [
+              {
+                "name": "Add to Queue?",
+                "value": "true",
+                "operator": "="
+              }
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Add to Queue?",
+              "config": "Add to Queue?"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Create Legos": {
+      "id": "84b38c63-8253-4243-b357-ee88c4976cc4",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "6f727b79-ae46-4a89-8128-55a9e83b6b88",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "cog",
+          "label": "Create Legos"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Processed By": {
+      "id": "4bfbb3b7-bd7f-4eaa-b833-12b0ecce21bf",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Populate Legos": {
+      "id": "0d1ef881-76e9-4a53-b770-8987692a8cc0",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "777a27c8-728e-439b-83d8-4fd60e76603d",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Populate legos with samples"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Processed Date": {
+      "id": "b80a2fcd-2ddc-4c5b-863b-5c63df5f7ea5",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Samples To Add": {
+      "id": "18b22508-bc4b-40fd-9f8b-aca146e61ab4",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "Sample"
+                  ],
+                  "filter": "type",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Add to Queue?",
+                      "value": "true",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    "INSTANCE"
+                  ],
+                  "filter": "kind",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Assay performed",
+                      "value": "PBMC Isolation",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Add to Queue?",
+            "config": "Add to Queue?"
+          },
+          {
+            "name": "Assay performed",
+            "config": "Assay performed"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Blood Processing": {
+      "id": "88c51c68-9b4f-4479-9886-f21c3f4e99ca",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "31174647-c8a4-44c0-8aef-db8bb6b09261"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Lab-book (pages)": {
+      "id": "02fd6a63-8180-4a53-ae2a-432a2a6c68aa",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Plasma Collection": {
+      "id": "debc95ad-e9d1-46f1-a20f-a818b1938fd2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "0014d77d-8e6d-4381-b55c-44f55b6d12d2"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Plasma collection performed?",
+              "config": "Plasma collection performed?"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Cell Cryopreservation": {
+      "id": "c2011150-96f7-44da-8e2e-6c87900479ec",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "3e6c06ea-2877-44cc-9a40-f83467e89796"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Add Samples from above to the reference field below": {
+      "id": "a37574ab-c921-4d11-9712-b258ddc60ae7",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "113934bd-0d48-4050-baa3-576d2c7fef9f",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Add Samples"
+        }
+      },
+      "dataType": "SCRIPT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "4c2933af-f12d-4689-825e-9324fb9a678c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "d8a727b3-70de-424f-ba49-41e5feed887d",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Input Information"
+            }
+          ]
+        },
+        {
+          "id": "5a1b4e33-a489-4020-acdc-1fe4e8cf7ed7",
+          "type": "field",
+          "fieldId": "4bfbb3b7-bd7f-4eaa-b833-12b0ecce21bf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "857eaec6-49fa-49f4-9bf5-21880e3a2af7",
+          "type": "field",
+          "fieldId": "b80a2fcd-2ddc-4c5b-863b-5c63df5f7ea5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3282266c-0ed7-424a-903d-2841f24bd673",
+          "type": "field",
+          "fieldId": "02fd6a63-8180-4a53-ae2a-432a2a6c68aa",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8f5f923c-1373-463b-a67b-74fd09941e08",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ba40f8bd-10fc-43a8-bf53-30c47ba0fc62",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Filter the saved search below to include only the samples that will be ran in this assay.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "98711715-49b9-47ec-8f4f-ef45108505a1",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Then run the script below to ad them to the reference field.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "aeef85cb-8ba1-44e8-9014-a11b9f7fdc9c",
+          "type": "field",
+          "fieldId": "18b22508-bc4b-40fd-9f8b-aca146e61ab4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c6f59b3b-7657-4fa6-8dd5-75008765db89",
+          "type": "field",
+          "fieldId": "a37574ab-c921-4d11-9712-b258ddc60ae7",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "1d1eb913-1b64-4cb2-ae71-e66eea5fa1f3",
+          "type": "field",
+          "fieldId": "f4e6bc1d-7211-45b4-9c87-824f0294f659",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e1d397a1-3c5f-479d-b892-c66f2257fdea",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "15d8aa64-3e43-4030-9ffc-e10174217262",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Run the scripts below to:",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "ec650bf7-348f-4cd3-8b16-a9e146b9dfce",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Create the Legos",
+              "italic": true
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "88ea4672-68e9-4736-82f4-eb133bc3297e",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "bold": true,
+              "text": "Populate the legos with the sample being tested",
+              "italic": true
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "d0a28111-1d3a-49f4-9a89-6b4cd6ff72d2",
+          "type": "field",
+          "fieldId": "84b38c63-8253-4243-b357-ee88c4976cc4",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "7a1065d1-92bc-4e38-bbba-f7307e2b1b37",
+          "type": "field",
+          "fieldId": "0d1ef881-76e9-4a53-b770-8987692a8cc0",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "46cb23c3-457f-402b-9f74-7bbc6858d8bb",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2a0b978b-e3c3-418a-aa36-0532fdcf1214",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0cc51f1c-9d91-467e-9188-76e827cdba1e",
+          "type": "field",
+          "fieldId": "debc95ad-e9d1-46f1-a20f-a818b1938fd2",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "6d754b99-c137-4278-bde3-672586a75a6c",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "27de306d-9062-4345-acaa-e23ed2846001",
+          "type": "field",
+          "fieldId": "88c51c68-9b4f-4479-9886-f21c3f4e99ca",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "b3d31762-8bf0-4831-ab63-e93dcb579d7d",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7ee39a21-1f71-4ba9-b960-d4010453b2a3",
+          "type": "field",
+          "fieldId": "112bb6a0-8a1c-48a5-a5c3-f66ea944daa7",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "98411489-3665-4de6-acec-35257eb9aacb",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9a03243c-4a6a-47cb-bfc5-1309e2b69b70",
+          "type": "field",
+          "fieldId": "22dc35a8-0e53-42e1-8b01-8f86b6be208c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "73fcba24-2d4d-46cb-87c1-80a7d364b967",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "480f0cca-78f0-40f5-a33a-24867d1bad99",
+          "type": "field",
+          "fieldId": "c2011150-96f7-44da-8e2e-6c87900479ec",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "9a22c33f-423b-4f97-ac39-aa2f604bc409",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "OS-EG-00008/@TEMPLATE_INDEX "
+  }
+}

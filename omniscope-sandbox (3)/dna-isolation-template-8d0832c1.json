@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "8d0832c1-8675-414e-bb3b-6a24a2946701",
+  "title": "DNA Isolation Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Assay": {
+      "id": "fd81248e-b5ab-4a64-acd1-2fc9241fdd78",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Method": {
+      "id": "f5a7a6e8-2d9b-48d6-8a83-21ff5861d53f",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Manual",
+          "QIAcube"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Source": {
+      "id": "64ea0e99-19fd-48ab-aab7-6e6830ce7c20",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "CD3",
+          "PBMC"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Elution volume": {
+      "id": "69bd8ee3-72d2-4862-9f40-4251cc70ff9f",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6d0aaf5a-d3d0-40ce-9032-e83dc0c56d20"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "2690b300-02fe-4edc-8f47-c82495360e2b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bf4ab432-5a55-4cad-b0dd-341c43f3381d",
+          "type": "field",
+          "fieldId": "f5a7a6e8-2d9b-48d6-8a83-21ff5861d53f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a309596a-0b92-4737-a051-976a3a32d558",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "828ff183-d5b3-409b-a986-08f5f5be6683",
+          "type": "field",
+          "fieldId": "64ea0e99-19fd-48ab-aab7-6e6830ce7c20",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "65cc2075-792d-4f80-9590-1e5355d2ecf7",
+          "type": "field",
+          "fieldId": "69bd8ee3-72d2-4862-9f40-4251cc70ff9f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "785b22aa-c9a2-4102-b212-b2bfdf5a1c6c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - DNA Isolation"
+  }
+}

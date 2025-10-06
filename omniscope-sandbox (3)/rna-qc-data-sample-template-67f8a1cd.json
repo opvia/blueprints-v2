@@ -1,0 +1,845 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "67f8a1cd-e3d8-4562-b2fb-253bf3e10a93",
+  "title": "RNA QC Data Sample Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Box": {
+      "id": "8601b7e3-1ccf-42d3-938e-9490dbc4e85b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "f3b8ced1-732d-49f6-af2d-12b2d8fc2600"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Positions",
+              "config": "Positions"
+            },
+            {
+              "name": "Rack/Shelf/Drawer",
+              "config": "Rack/Shelf/Drawer"
+            },
+            {
+              "name": "Samples",
+              "config": "Samples"
+            },
+            {
+              "name": "Temperature",
+              "config": "Temperature"
+            },
+            {
+              "name": "Tank/Freezer/Fridge",
+              "config": "Tank/Freezer/Fridge"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Lego": {
+      "id": "2d299316-17a4-4b67-9717-ca788134a098",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Assay": {
+      "id": "6af7f2cf-1bfe-490a-99ca-c8a7cbd0c0da",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lego\") , \"Assay\")"
+      },
+      "dataType": null
+    },
+    "Tube ID": {
+      "id": "ea2b9cc8-5948-485e-b68f-657734236b05",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Position": {
+      "id": "9a9caa67-4f94-45ee-9dca-0b31476315db",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      {
+                        "name": "Status",
+                        "value": "Available",
+                        "operator": "="
+                      }
+                    ],
+                    "filter": "fieldValue",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "df857ff8-1003-43a7-bc06-335903bb250d"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Box",
+              "config": "Box"
+            },
+            {
+              "name": "Position",
+              "config": "Position"
+            },
+            {
+              "name": "Status",
+              "config": "Status"
+            },
+            {
+              "name": "Room",
+              "config": "Room"
+            },
+            {
+              "name": "Temperature",
+              "config": "Temperature"
+            },
+            {
+              "name": "Rack/Shelf/Drawer",
+              "config": "Rack/Shelf/Drawer"
+            },
+            {
+              "name": "Tank/Freezer/Fridge",
+              "config": "Tank/Freezer/Fridge"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "COHORT ID": {
+      "id": "942ae948-0b8f-4347-a657-79f8a669f9b9",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Inbound Sample\") , \"Full Cohort ID\")"
+      },
+      "dataType": null
+    },
+    "Volume (mL)": {
+      "id": "7a8cb888-8c7c-4c92-87a0-5ae8f2362244",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    },
+    "Add to Queue?": {
+      "id": "00747a25-ef94-4bc4-8c37-45af3c2ae572",
+      "type": "BOOLEAN",
+      "value": false,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Sampling date": {
+      "id": "80fec41b-44a4-4acc-963c-76d16be23d28",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Inbound Sample\") , \"Sampling Date\")"
+      },
+      "dataType": null
+    },
+    "Inbound Sample": {
+      "id": "abfe5637-d644-4951-a060-def767ed7279",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "f6696889-e077-4b8b-951e-842b5bd8991a"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Age",
+              "config": "Age"
+            },
+            {
+              "name": "Box",
+              "config": "Box"
+            },
+            {
+              "name": "Assays",
+              "config": "Assays"
+            },
+            {
+              "name": "Gender",
+              "config": "Gender"
+            },
+            {
+              "name": "Species",
+              "config": "Species"
+            },
+            {
+              "name": "Donor ID",
+              "config": "Donor ID"
+            },
+            {
+              "name": "Position",
+              "config": "Position"
+            },
+            {
+              "name": "Timepoint",
+              "config": "Timepoint"
+            },
+            {
+              "name": "Treatment",
+              "config": "Treatment"
+            },
+            {
+              "name": "Timepoint ID",
+              "config": "Timepoint ID"
+            },
+            {
+              "name": "Sampling date",
+              "config": "Sampling date"
+            },
+            {
+              "name": "Full Cohort ID",
+              "config": "Full Cohort ID"
+            },
+            {
+              "name": "Notes/Comments",
+              "config": "Notes/Comments"
+            },
+            {
+              "name": "Type of Sample",
+              "config": "Type of Sample"
+            },
+            {
+              "name": "Disease present",
+              "config": "Disease present"
+            },
+            {
+              "name": "Sample condition",
+              "config": "Sample condition"
+            },
+            {
+              "name": "External Donor ID",
+              "config": "External Donor ID"
+            },
+            {
+              "name": "External Sample ID",
+              "config": "External Sample ID"
+            },
+            {
+              "name": "Sample reception date",
+              "config": "Sample reception date"
+            },
+            {
+              "name": "Blood collection consent",
+              "config": "Blood collection consent"
+            },
+            {
+              "name": "Diseases with negative test",
+              "config": "Diseases with negative test"
+            },
+            {
+              "name": "Patiente consent information",
+              "config": "Patiente consent information"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Total RNA (ng)": {
+      "id": "a7be4fcc-cc68-478e-883c-4354d2671bfa",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Concentration without dilution factor (ng/uL)\") * lookup(__self, \"Real volume (uL)\")"
+      },
+      "dataType": null
+    },
+    "Type of Sample": {
+      "id": "cc3bee81-6d38-4a20-9f8c-606ca5a9826f",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "be0b40a1-50bb-4c7d-8927-e645bb7238bf"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Storage Temperature",
+              "config": "Storage Temperature"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Assay performed": {
+      "id": "88ee4868-c0b2-4271-b8da-3839d93d1236",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "Biobanking",
+          "Bulk RNAseq",
+          "DNA & RNA Isolation",
+          "PBMC Isolation",
+          "os-TCR"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Dilution factor": {
+      "id": "93644579-7e58-457e-a976-522fbbadfd57",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "Rounded"
+      },
+      "dataType": "NUMBER"
+    },
+    "Assays requested": {
+      "id": "ca1147d7-ba55-4654-980c-1ed08092db2c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Inbound Sample\") , \"Assays\")"
+      },
+      "dataType": null
+    },
+    "Real volume (uL)": {
+      "id": "130cabd5-148c-4ba5-88a4-8a42c66921b2",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    },
+    "Sample Unique ID": {
+      "id": "87f4fa28-e098-462a-9473-1a39a4b43513",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Inbound Sample\") , \"Title\")"
+      },
+      "dataType": null
+    },
+    "External Donor ID": {
+      "id": "945d6f0e-fbc3-46d7-a866-fdad0806bb1c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Inbound Sample\") , \"External Donor ID\")"
+      },
+      "dataType": null
+    },
+    "Cell viability (%)": {
+      "id": "83c0332b-497e-4720-8710-820b798a02d5",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    },
+    "External Sample ID": {
+      "id": "c45d50f9-0b02-4d4c-ad13-d6a0b84d91d7",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Inbound Sample\") , \"External Sample ID\")"
+      },
+      "dataType": null
+    },
+    "Storage Temperature": {
+      "id": "85d64378-6547-4f82-adfa-3ea7b2730bd0",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Type of Sample\") , \"Storage Temperature\")"
+      },
+      "dataType": null
+    },
+    "Storage temperature": {
+      "id": "3ea328b0-88c6-4c85-942e-5604977aac34",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "-20ºC",
+          "-80ºC",
+          "4ºC",
+          "LN2",
+          "RT"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Concentration (ng/uL)": {
+      "id": "e6b73899-fc16-4625-b32a-d75026ba806d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    },
+    "Cryopreservation media": {
+      "id": "b42a11bc-4668-4c38-b2d9-dd330b14c07d",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Position Status Updater": {
+      "id": "9e0cfcea-0cfc-4057-97c7-d2021f822dea",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "b289ce3d-0a8b-4c5d-8fe3-24e44f873ad4",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "cog",
+          "label": "Update"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Expected cell count (mln)": {
+      "id": "4fe36859-fa37-40ee-8934-54a33aa77f31",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.000"
+      },
+      "dataType": "NUMBER"
+    },
+    "Position Status Updated to Full?": {
+      "id": "5754371d-14fb-4afc-961d-961c111a2e2e",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Cell concentration (mln cells/mL)": {
+      "id": "2514bd88-a56b-4a1e-bacd-417457842aaf",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.000"
+      },
+      "dataType": "NUMBER"
+    },
+    "Concentration without dilution factor (ng/uL)": {
+      "id": "85e61116-9257-4efb-aad0-03d1ca079f40",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Concentration (ng/uL)\") * lookup(__self, \"Dilution factor\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "19d43f2e-497b-4dd0-ab9e-f9f2d960ae3e"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "00184066-5d75-411c-b6a5-88c7a6340fe7",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Sample Info"
+            }
+          ]
+        },
+        {
+          "id": "fbc82f98-7b60-4fcb-a4fc-877c14d48992",
+          "type": "field",
+          "fieldId": "cc3bee81-6d38-4a20-9f8c-606ca5a9826f",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "9f9edc1e-1cae-45ea-8c52-c213a5b49735",
+          "type": "field",
+          "fieldId": "abfe5637-d644-4951-a060-def767ed7279",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "59e0ea2f-de21-4399-bfe6-9b4f3ae3ee44",
+          "type": "field",
+          "fieldId": "ea2b9cc8-5948-485e-b68f-657734236b05",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dd526163-dadc-4fd2-b152-42e25fc809e0",
+          "type": "field",
+          "fieldId": "85d64378-6547-4f82-adfa-3ea7b2730bd0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "130ab467-1ee8-4242-bbb5-0fb3086b8095",
+          "type": "field",
+          "fieldId": "e6b73899-fc16-4625-b32a-d75026ba806d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6ce97187-8c30-402c-84cb-ae1dc531a68f",
+          "type": "field",
+          "fieldId": "93644579-7e58-457e-a976-522fbbadfd57",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bb47968d-ed13-47f0-b152-7e26dbaedaf7",
+          "type": "field",
+          "fieldId": "85e61116-9257-4efb-aad0-03d1ca079f40",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7e7c55b6-faef-4571-82dc-2fc1de261361",
+          "type": "field",
+          "fieldId": "130cabd5-148c-4ba5-88a4-8a42c66921b2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "62b1269a-fff5-4b26-9ff3-de45bfc9c9a8",
+          "type": "field",
+          "fieldId": "a7be4fcc-cc68-478e-883c-4354d2671bfa",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3be9e3f9-017b-456d-9811-9e501883736b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8ccf5d63-1a6d-432a-8e9d-abd2f6da3dd9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a97782e-cc75-48ff-a7f3-6a3d1b4771be",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a72db7db-03b5-4af9-9251-624444c90432",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Inbound Sample Info"
+            }
+          ]
+        },
+        {
+          "id": "14c0ff4f-238f-42a2-bb40-9d076c9678e2",
+          "type": "field",
+          "fieldId": "942ae948-0b8f-4347-a657-79f8a669f9b9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "653c7754-6465-47b3-8915-9c6871b93d26",
+          "type": "field",
+          "fieldId": "87f4fa28-e098-462a-9473-1a39a4b43513",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "472cecd2-ad97-42bf-bd0d-d0bcc5e514d2",
+          "type": "field",
+          "fieldId": "945d6f0e-fbc3-46d7-a866-fdad0806bb1c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "50653a25-3d88-4614-8179-3ad744bb83d1",
+          "type": "field",
+          "fieldId": "c45d50f9-0b02-4d4c-ad13-d6a0b84d91d7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "47265712-8e44-4062-9ca6-133727c7e754",
+          "type": "field",
+          "fieldId": "80fec41b-44a4-4acc-963c-76d16be23d28",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d29b2ee8-1bc2-42a9-82b9-13a0f7de134f",
+          "type": "field",
+          "fieldId": "ca1147d7-ba55-4654-980c-1ed08092db2c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4cd54dc1-b6d2-4962-8952-5951fb048ec5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "752cb6c3-b19e-4c1e-974e-30fa83fce289",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Sample Queue Info"
+            }
+          ]
+        },
+        {
+          "id": "2565c77f-9ca1-4268-9742-a41ad2e8d5bc",
+          "type": "field",
+          "fieldId": "88ee4868-c0b2-4271-b8da-3839d93d1236",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b151db50-85be-4d39-b1a8-785c7d9e68c6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "272096cc-d614-451f-95d1-5b87dfda934b",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Storage Location"
+            }
+          ]
+        },
+        {
+          "id": "66f5b111-bcd3-46b8-94f2-c5a795b37363",
+          "type": "field",
+          "fieldId": "8601b7e3-1ccf-42d3-938e-9490dbc4e85b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "5f048b3f-22f6-4394-ab16-61c8fe89d47f",
+          "type": "field",
+          "fieldId": "9a9caa67-4f94-45ee-9dca-0b31476315db",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f7afd0b9-8b17-47a0-aa74-1df746f4518e",
+          "type": "field",
+          "fieldId": "9e0cfcea-0cfc-4057-97c7-d2021f822dea",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4428da5f-cfec-45ad-836a-fd5b2728f84f",
+          "type": "field",
+          "fieldId": "5754371d-14fb-4afc-961d-961c111a2e2e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "65f86d07-a5b1-4302-9a6f-8dccbf0e5ec8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

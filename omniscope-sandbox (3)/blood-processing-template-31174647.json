@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "31174647-c8a4-44c0-8aef-db8bb6b09261",
+  "title": "Blood Processing Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Assay": {
+      "id": "fd81248e-b5ab-4a64-acd1-2fc9241fdd78",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Blood Volume": {
+      "id": "6e1b3841-ab7f-4450-aa80-a9acfa07ae7b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "1a3cecc2-9e32-4e82-af49-c5801eed17e3"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Lego",
+              "config": "Lego"
+            },
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Sample",
+              "config": "Sample"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Blood was processed in": {
+      "id": "fb2933ac-4ca7-4efb-b8d5-e5888225c0c6",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "15mL Falcon",
+          "15mL SepMate",
+          "50mL Falcon",
+          "50mL SepMate",
+          "Others"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6d0aaf5a-d3d0-40ce-9032-e83dc0c56d20"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "ae9b140f-8eb8-44ea-8007-3a0ec2118fc2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8d2adafa-d6b2-4347-a140-d6c3c23cf204",
+          "type": "field",
+          "fieldId": "fb2933ac-4ca7-4efb-b8d5-e5888225c0c6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3bb386c1-eaa4-4d5f-b973-9ae62ad12d3d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "43c3fa3d-3f52-4036-9696-c865ef5350e2",
+          "type": "field",
+          "fieldId": "6e1b3841-ab7f-4450-aa80-a9acfa07ae7b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "7742c70a-4a3f-490d-98ea-27cb9585e7f0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Blood Processing"
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "13b721cd-b7ad-4dc7-92b0-18fbd13c0779",
+  "title": "Cell QC Data Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Lego": {
+      "id": "5590cb22-a514-4f44-bd12-0ecc091251d6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Assay": {
+      "id": "50701359-d43b-411c-b482-7eff9002c70e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lego\"), \"Assay\")"
+      },
+      "dataType": null
+    },
+    "Sample": {
+      "id": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Sample"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Comments": {
+      "id": "338f60eb-9a8d-42b8-bf89-3c5f3f492b24",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Volume (mL)": {
+      "id": "9307e838-a5f4-484b-81dc-66f8a4618f5e",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    },
+    "Viability (%)": {
+      "id": "a5b87af2-d131-4ac3-86d0-63e33df41b1f",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    },
+    "Total nº cells (M)": {
+      "id": "4cd6da7c-affa-439c-ba1f-9ef347442241",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Volume (mL)\") * lookup(__self, \"Total cell concentration (M cells/mL)\")"
+      },
+      "dataType": null
+    },
+    "Live cell concentration (M cells/mL)": {
+      "id": "f4aa9e56-2965-45c0-90f1-4ebd90b8e7aa",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Total cell concentration (M cells/mL)": {
+      "id": "145045b6-8b43-4416-a72b-bb99368aadfc",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9d712df2-d818-4f16-83bd-4c614749b556"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f003f1ef-9d50-4f56-bd3c-d121d37e7fe1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0d6b3e38-4e0c-481d-9953-a091dbc0a7fa",
+          "type": "field",
+          "fieldId": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "81e67388-b868-4c2c-b32f-c04737f723dd",
+          "type": "field",
+          "fieldId": "9307e838-a5f4-484b-81dc-66f8a4618f5e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ee9883fb-b467-41dc-bc7e-a7552a99b119",
+          "type": "field",
+          "fieldId": "145045b6-8b43-4416-a72b-bb99368aadfc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9c795ca8-2dd1-4f88-9944-779198513f3f",
+          "type": "field",
+          "fieldId": "f4aa9e56-2965-45c0-90f1-4ebd90b8e7aa",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "207173b4-8ccc-425b-bcb1-210409d5b7b4",
+          "type": "field",
+          "fieldId": "a5b87af2-d131-4ac3-86d0-63e33df41b1f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dcbbabc3-b00c-4d33-9eaf-655688af4f05",
+          "type": "field",
+          "fieldId": "4cd6da7c-affa-439c-ba1f-9ef347442241",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bd545dc6-9a2b-4b77-9aa6-24563217eda5",
+          "type": "field",
+          "fieldId": "338f60eb-9a8d-42b8-bf89-3c5f3f492b24",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c5c36f43-93cc-49d9-83c9-3644f6614c22",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1a7b634e-c6cf-4999-bade-80bcc45bb4fe",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Data - @cda3eb29-8fcd-4513-a3ae-d440c3a41ea2 "
+  }
+}

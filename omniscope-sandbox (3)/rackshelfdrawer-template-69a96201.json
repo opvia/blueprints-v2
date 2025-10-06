@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "69a96201-b95f-4ec0-877a-a4766c70103f",
+  "title": "Rack/Shelf/Drawer Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Room": {
+      "id": "fbcfad64-973d-4992-8edf-5a2b334dc1f3",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Tank/Fridge/Freezer\") , \"Room\")"
+      },
+      "dataType": null
+    },
+    "Boxes": {
+      "id": "9ec521f9-82a8-45bc-a13b-a4bde20f3910",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "type": [
+            "Box"
+          ],
+          "fieldValue": [
+            {
+              "name": "Rack/Shelf/Drawer",
+              "value": "ref(lookup(__self, \"ID\"))",
+              "operator": "="
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Rack/Shelf/Drawer",
+            "config": "Rack/Shelf/Drawer"
+          }
+        ],
+        "hiddenDefaultColumns": [
+          "WORK_INSTRUCTIONS_PROGRESS",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Tank/Fridge/Freezer": {
+      "id": "c8b833a3-f843-4db7-a90b-d8f8b97aa067",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "3377ce58-13b4-41c4-808a-759a85f8c3dd"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Room",
+              "config": "Room"
+            },
+            {
+              "name": "Racks/Shelfs/Drawers",
+              "config": "Racks/Shelfs/Drawers"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6171a1e1-d775-43c5-8fd6-4ace3a3396ab"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "215d8f23-3f9b-4ece-a391-486d79acb841",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "22f40e22-b2e1-4dd0-bf04-cdcaab90ec21",
+          "type": "field",
+          "fieldId": "c8b833a3-f843-4db7-a90b-d8f8b97aa067",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e2d91ec8-f265-4c93-a7b5-2acc69b282e3",
+          "type": "field",
+          "fieldId": "9ec521f9-82a8-45bc-a13b-a4bde20f3910",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bb52da0f-d2ba-4ac3-9cff-ff3b87ddd60e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "777a27c8-728e-439b-83d8-4fd60e76603d",
+  "title": "PBMC - Populate Legos With Sample",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "5cb172f2-a2c9-48ae-9ebe-dbcb9e285e8d",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "c2f4f21c-8260-461f-b29a-9f387cf13c01"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "import pandas as pd\n\n# Define the processing steps configuration\n# Each dictionary specifies:\n# - 'parent_field_name': The name of the reference field in the current PBMC Isolation instance\n# - 'child_ref_field_name': The name of the reference field within the parent entity where new instances will be created\n# - 'child_template_sample_link_field': The name of the reference field within the *newly created child instance template*\n#                                       that will link back to the original sample.\nprocessing_steps = [\n    {\n        \"parent_field_name\": \"Plasma Collection\",\n        \"child_ref_field_name\": \"Plasma Generation\",\n        \"child_template_sample_link_field\": \"Sample\"\n    },\n    {\n        \"parent_field_name\": \"Blood Processing\",\n        \"child_ref_field_name\": \"Blood Volume\",\n        \"child_template_sample_link_field\": \"Sample\"\n    },\n    {\n        \"parent_field_name\": \"Cell QC\",\n        \"child_ref_field_name\": \"Cell QC Data\",\n        \"child_template_sample_link_field\": \"Sample\"\n    },\n    {\n        \"parent_field_name\": \"Cell Cryopreservation\",\n        \"child_ref_field_name\": \"Cell Cryopreservation Data\",\n        \"child_template_sample_link_field\": \"Sample\"\n    },\n    {\n        \"parent_field_name\": \"Cell Cryopreservation\",\n        \"child_ref_field_name\": \"Amount of cryopreservation media needed\",\n        \"child_template_sample_link_field\": \"Sample\"\n    },\n]\n\n# Get the current \"PBMC Isolation\" instance where the script is running\npbmc_isolation_entity = seal.get_containing_entity()\n\n# 1. Read the \"Samples\" reference field from the PBMC Isolation instance\nsamples_refs = pbmc_isolation_entity[\"fields\"].get(\"Samples\", {}).get(\"value\", [])\nif not samples_refs:\n    print(\"No samples found in the 'Samples' field of the PBMC Isolation instance. Exiting.\")\n    exit()\n\n# Iterate through each defined processing step\nfor step_config in processing_steps:\n    parent_field_name = step_config[\"parent_field_name\"]\n    child_ref_field_name = step_config[\"child_ref_field_name\"]\n    child_template_sample_link_field = step_config[\"child_template_sample_link_field\"]\n\n    print(f\"\\n--- Processing step: '{parent_field_name}' -> '{child_ref_field_name}' ---\")\n\n    # 2. Get the entity referenced in the parent_field_name (e.g., 'Plasma Collection')\n    parent_field_value = pbmc_isolation_entity[\"fields\"].get(parent_field_name, {}).get(\"value\", [])\n    if not parent_field_value:\n        print(f\"No entity found in the '{parent_field_name}' field. Skipping this step.\")\n        continue # Skip to the next processing step\n\n    # Assuming parent_field_name is a single-value reference field\n    parent_entity_id = parent_field_value[0][\"id\"]\n\n    # Make the parent entity editable so we can update its fields\n    parent_editable_entity = seal.make_entity_editable(parent_entity_id)\n\n    # 3. Get the configuration for the child_ref_field_name within the parent entity\n    child_ref_field_info = parent_editable_entity[\"fields\"].get(child_ref_field_name, {})\n    child_ref_field_config = child_ref_field_info.get(\"config\", {})\n    child_ref_search_config = child_ref_field_config.get(\"searchConfig\", {})\n\n    # Extract the template reference that the child_ref_field_name is configured to use\n    child_template_ref = None\n    if \"filters\" in child_ref_search_config and \"template\" in child_ref_search_config[\"filters\"]:\n        template_ids = child_ref_search_config[\"filters\"][\"template\"]\n        if template_ids:\n            template_id = template_ids[0]\n            try:\n                # Fetch the *active published version* of the template\n                template_entity = seal.get_entity_active_version(template_id)\n                template_version = template_entity[\"version\"]\n                child_template_ref = {\"id\": template_id, \"version\": template_version}\n            except Exception as e:\n                print(f\"Error: Could not get active version for template ID '{template_id}' (for '{child_ref_field_name}'). It might not be published. Details: {e}. Skipping this step.\")\n                continue # Skip to the next processing step\n        else:\n            print(f\"The '{child_ref_field_name}' field's configuration does not specify a template. Skipping this step.\")\n            continue # Skip to the next processing step\n    else:\n        print(f\"Could not find template configuration in the '{child_ref_field_name}' field. Skipping this step.\")\n        continue # Skip to the next processing step\n\n    if not child_template_ref:\n        print(f\"Failed to determine the template for creating '{child_ref_field_name}' instances. Skipping this step.\")\n        continue # Skip to the next processing step\n\n    # Prepare data for new instances to be created in the child_ref_field_name\n    # Each new instance will reference one of the samples from the original \"Samples\" field\n    field_values_for_new_instances = []\n    for sample_ref in samples_refs:\n        # Reference fields in Seal expect an array of references, even if configured as single-select.\n        field_values_for_new_instances.append({\n            child_template_sample_link_field: [sample_ref] # Link the original sample in the child instance\n        })\n\n    df_new_instances = pd.DataFrame(field_values_for_new_instances)\n\n    # Create the new instances in the child_ref_field_name of the parent entity\n    print(f\"Creating {len(samples_refs)} new '{child_ref_field_name}' instances in '{parent_editable_entity['title']}'...\")\n    seal.create_from_reference_field_in_entity(\n        entity_id=parent_entity_id,\n        field_name=child_ref_field_name,\n        field_values_df=df_new_instances,\n        type_or_template_ref=child_template_ref\n    )\n    print(f\"Successfully created and linked new '{child_ref_field_name}' instances.\")\n\nprint(\"\\nAll specified processing steps completed.\")"
+    }
+  }
+}
