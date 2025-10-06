@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "becd89a6-550b-4217-a868-859226d0ecb0",
+  "title": "Index",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "clean",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": null,
+    "defaultTemplate": {
+      "id": "48d5fee3-13c0-4e7f-9264-08ed3b6909c2",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": true,
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": false
+    },
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": false
+  }
+}

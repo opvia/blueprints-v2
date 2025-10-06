@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2081ef93-69d5-4f23-8529-955c96bfb6d4",
+  "title": "Index Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Index Number": {
+      "id": "772473af-b982-4eb9-a2d6-e1499e64521a",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"TEMPLATE_INDEX\")"
+      },
+      "dataType": "STRING"
+    },
+    "Index name OS": {
+      "id": "f08584de-a1ed-4d1f-9f51-48415f136997",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Unique Dual Index": {
+      "id": "a230c98e-b90a-4510-ac80-ee6e41ed9ae7",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Index plate number": {
+      "id": "6da56de2-05fe-4dab-a6eb-a835f21923cc",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Index plate position": {
+      "id": "11a98941-5458-422b-a7f6-382393bf88c6",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "becd89a6-550b-4217-a868-859226d0ecb0"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "6656df5b-5b0f-4888-86b1-11d2df92049f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ff32350c-c0f1-45de-9ed6-5270f5500a8b",
+          "type": "field",
+          "fieldId": "772473af-b982-4eb9-a2d6-e1499e64521a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "08f9bff9-f25d-4280-8ba8-eb1ae1daaee2",
+          "type": "field",
+          "fieldId": "6da56de2-05fe-4dab-a6eb-a835f21923cc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "913c5bdf-e72c-46b5-ba8f-c0268b459215",
+          "type": "field",
+          "fieldId": "11a98941-5458-422b-a7f6-382393bf88c6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6c325953-2273-4d55-bf77-67e39ca4e65f",
+          "type": "field",
+          "fieldId": "a230c98e-b90a-4510-ac80-ee6e41ed9ae7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3fb50cce-972e-41ee-81e8-c86c4e57c64b",
+          "type": "field",
+          "fieldId": "f08584de-a1ed-4d1f-9f51-48415f136997",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a77ce322-0fe7-45ff-897a-3adbda888737",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@6da56de2-05fe-4dab-a6eb-a835f21923cc_@11a98941-5458-422b-a7f6-382393bf88c6 "
+  }
+}

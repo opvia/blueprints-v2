@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "755269b3-f867-4900-8efc-3e95e6a1ed6f",
+  "title": "PBMC Sample Generator",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "5cb172f2-a2c9-48ae-9ebe-dbcb9e285e8d",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "c2f4f21c-8260-461f-b29a-9f387cf13c01"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "import pandas as pd\n\n# Get the entity where this script is embedded (the containing entity)\ncontaining_entity = seal.get_containing_entity()\ncontaining_entity_id = containing_entity[\"id\"]\nprint(f\"Processing containing entity: {containing_entity.get('title')} (ID: {containing_entity_id})\")\n\n# 1. Get the number of PBMC vials from the 'Nº of vials' field\nnum_vials_field = containing_entity[\"fields\"].get(\"Nº of vials\")\nnum_vials = num_vials_field.get(\"value\") if num_vials_field else None\n\n# Validate the number of vials\nif not isinstance(num_vials, (int, float)) or num_vials <= 0:\n    print(f\"Invalid or zero value for 'Nº of vials': {num_vials}. No instances will be created.\")\n    exit()\n\nnum_vials = int(num_vials)\nprint(f\"Number of PBMC vials to create: {num_vials}\")\n\n# 2. Get the 'Inbound Sample' reference from the entity referenced by the containing entity's 'Sample' field\ninbound_sample_ref_value_for_new_instances = None\nsample_ref_from_containing_entity = containing_entity[\"fields\"].get(\"Sample\", {}).get(\"value\")\n\nif sample_ref_from_containing_entity and isinstance(sample_ref_from_containing_entity, list) and sample_ref_from_containing_entity:\n    referenced_sample_entity_ref = sample_ref_from_containing_entity[0]\n    print(f\"Retrieving entity referenced in 'Sample' field: {referenced_sample_entity_ref.get('id')}\")\n\n    referenced_sample_entity = seal.get_entity(ref=referenced_sample_entity_ref)\n    if referenced_sample_entity:\n        inbound_sample_field_in_referenced_entity = referenced_sample_entity[\"fields\"].get(\"Inbound Sample\")\n        if inbound_sample_field_in_referenced_entity and inbound_sample_field_in_referenced_entity.get(\"value\"):\n            inbound_sample_ref_value_for_new_instances = inbound_sample_field_in_referenced_entity[\"value\"]\n            print(f\"Found 'Inbound Sample' reference from the referenced entity.\")\n        else:\n            print(\"Warning: 'Inbound Sample' field is empty in the entity referenced by 'Sample'.\")\n    else:\n        print(f\"Warning: Could not retrieve entity for reference ID {referenced_sample_entity_ref.get('id')}.\")\nelse:\n    print(\"Warning: 'Sample' field is empty or invalid in the containing entity.\")\n\n# If inbound_sample_ref_value_for_new_instances is an empty list, treat it as None.\n# This ensures that if the 'Inbound Sample' field is truly empty, we don't try to pass an empty list\n# as a field value, which caused the previous error.\nif isinstance(inbound_sample_ref_value_for_new_instances, list) and not inbound_sample_ref_value_for_new_instances:\n    inbound_sample_ref_value_for_new_instances = None\n    print(\"Note: 'Inbound Sample' reference is an empty list, treating as None for new instances.\")\n\n# Ensure the containing entity is editable before making any changes\nif containing_entity[\"status\"] != \"EDITABLE\":\n    print(f\"Making containing entity {containing_entity_id} editable...\")\n    seal.make_entity_editable(containing_entity_id)\n    containing_entity = seal.get_containing_entity()\n    print(\"Containing entity is now editable.\")\n\n# Create the specified number of 'PBMC Sample' instances and add them to the 'PBMC Samples' reference field\nprint(f\"Creating {num_vials} new PBMC Sample instances and adding to 'PBMC Samples' field...\")\n\nif inbound_sample_ref_value_for_new_instances is not None:\n    # If 'Inbound Sample' reference is available, create instances with this field value\n    PBMC_sample_field_values_list = []\n    for _ in range(num_vials):\n        instance_fields = {} # No explicit title set\n        instance_fields[\"Inbound Sample\"] = inbound_sample_ref_value_for_new_instances\n        PBMC_sample_field_values_list.append(instance_fields)\n    \n    PBMC_sample_field_values_df = pd.DataFrame(PBMC_sample_field_values_list)\n\n    seal.create_from_reference_field(\n        \"PBMC Samples\",\n        field_values_df=PBMC_sample_field_values_df,\n        number_of_empty_entities=0\n    )\nelse:\n    # If no 'Inbound Sample' reference, create empty instances directly from the template\n    print(\"No 'Inbound Sample' reference found. Creating instances without initial field values.\")\n    seal.create_from_reference_field(\n        \"PBMC Samples\",\n        number_of_empty_entities=num_vials\n    )\n\nprint(\"Script finished successfully.\")"
+    }
+  }
+}

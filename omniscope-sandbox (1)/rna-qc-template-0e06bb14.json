@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0e06bb14-d811-4abb-9adf-f47fcd8e9927",
+  "title": "RNA QC Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Assay": {
+      "id": "fd81248e-b5ab-4a64-acd1-2fc9241fdd78",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "QC Data Samples": {
+      "id": "959c8ab3-b2f8-413e-a062-984ac2228270",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "67f8a1cd-e3d8-4562-b2fb-253bf3e10a93"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Box",
+              "config": "Box"
+            },
+            {
+              "name": "Lego",
+              "config": "Lego"
+            },
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Tube ID",
+              "config": "Tube ID"
+            },
+            {
+              "name": "Position",
+              "config": "Position"
+            },
+            {
+              "name": "COHORT ID",
+              "config": "COHORT ID"
+            },
+            {
+              "name": "Volume (mL)",
+              "config": "Volume (mL)"
+            },
+            {
+              "name": "Add to Queue?",
+              "config": "Add to Queue?"
+            },
+            {
+              "name": "Sampling date",
+              "config": "Sampling date"
+            },
+            {
+              "name": "Total RNA/DNA",
+              "config": "Total RNA/DNA"
+            },
+            {
+              "name": "Inbound Sample",
+              "config": "Inbound Sample"
+            },
+            {
+              "name": "Type of Sample",
+              "config": "Type of Sample"
+            },
+            {
+              "name": "Assay performed",
+              "config": "Assay performed"
+            },
+            {
+              "name": "Dilution factor",
+              "config": "Dilution factor"
+            },
+            {
+              "name": "Assays requested",
+              "config": "Assays requested"
+            },
+            {
+              "name": "Real volume (uL)",
+              "config": "Real volume (uL)"
+            },
+            {
+              "name": "Sample Unique ID",
+              "config": "Sample Unique ID"
+            },
+            {
+              "name": "External Donor ID",
+              "config": "External Donor ID"
+            },
+            {
+              "name": "Cell viability (%)",
+              "config": "Cell viability (%)"
+            },
+            {
+              "name": "External Sample ID",
+              "config": "External Sample ID"
+            },
+            {
+              "name": "Storage temperature",
+              "config": "Storage temperature"
+            },
+            {
+              "name": "Concentration (ng/uL)",
+              "config": "Concentration (ng/uL)"
+            },
+            {
+              "name": "Cryopreservation media",
+              "config": "Cryopreservation media"
+            },
+            {
+              "name": "Position Status Updater",
+              "config": "Position Status Updater"
+            },
+            {
+              "name": "Expected cell count (mln)",
+              "config": "Expected cell count (mln)"
+            },
+            {
+              "name": "Position Status Updated to Full?",
+              "config": "Position Status Updated to Full?"
+            },
+            {
+              "name": "Cell concentration (mln cells/mL)",
+              "config": "Cell concentration (mln cells/mL)"
+            },
+            {
+              "name": "Concentration without dilution factor (ng/uL)",
+              "config": "Concentration without dilution factor (ng/uL)"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6d0aaf5a-d3d0-40ce-9032-e83dc0c56d20"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "c1050c6f-676a-48a0-a657-210e432f634b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e67c91d3-cd76-4e88-abff-7ba8be8af8e3",
+          "type": "field",
+          "fieldId": "959c8ab3-b2f8-413e-a062-984ac2228270",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "1a6e934b-8bf8-465b-9007-3718af811a3b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - RNA QC"
+  }
+}

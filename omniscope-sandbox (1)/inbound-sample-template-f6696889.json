@@ -1,0 +1,598 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f6696889-e077-4b8b-951e-842b5bd8991a",
+  "title": "Inbound Sample Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Age": {
+      "id": "000122da-f605-4a06-a2ce-617e93f04fc7",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Box": {
+      "id": "ceff6b7c-2454-4899-b7c8-9e60fbd92774",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "f3b8ced1-732d-49f6-af2d-12b2d8fc2600"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Samples",
+              "config": "Samples"
+            },
+            {
+              "name": "Positions",
+              "config": "Positions"
+            },
+            {
+              "name": "Rack/Shelf/Drawer",
+              "config": "Rack/Shelf/Drawer"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Assays": {
+      "id": "4a399e60-83dc-4269-b325-b53dfe0d96ba",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "Bulk RNA sequencing",
+          "DNA & RNA Isolation",
+          "PBMC Isolation",
+          "os-TCR"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Gender": {
+      "id": "28e09f6b-5522-485d-b0b9-6da48c598529",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Male",
+          "Female",
+          "Unknown"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Species": {
+      "id": "b1304300-39e2-4e1b-92dd-1141edb19e19",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Homo Sapiens"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Donor ID": {
+      "id": "cad522d9-bd8d-463f-af51-c62b5e1ff0a2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Position": {
+      "id": "4799e899-2c9f-430d-8c5d-86049f138400",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "df857ff8-1003-43a7-bc06-335903bb250d"
+            ],
+            "fieldValue": [
+              {
+                "name": "Status",
+                "value": "Available",
+                "operator": "="
+              }
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Box",
+              "config": "Box"
+            },
+            {
+              "name": "Status",
+              "config": "Status"
+            },
+            {
+              "name": "Position",
+              "config": "Position"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Timepoint": {
+      "id": "1f2cdbae-6b46-420e-9601-89d5091b5338",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "t0",
+          "t1",
+          "t2"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Treatment": {
+      "id": "e6e0719e-2488-4dfc-8402-fa91ef3afdf9",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "A",
+          "Untreated",
+          "TNFi"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Timepoint ID": {
+      "id": "bfb07ff9-3e63-45ff-8e8d-051139c70de8",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Sampling date": {
+      "id": "8addb03c-681c-4fd4-a537-4879d6b8c811",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Full Cohort ID": {
+      "id": "a5dc8ed8-ea03-4561-a18c-836947fa4fc6",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Cohort"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Notes/Comments": {
+      "id": "0a329c16-cf25-4fa6-b898-33b8d61d1966",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Type of Sample": {
+      "id": "558555e1-19e4-45b7-bbee-09c7ccb15fe1",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Blood",
+          "DNA",
+          "PBMC",
+          "RNA",
+          "Tissue"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Disease present": {
+      "id": "46ab2bc4-d145-4d14-9a40-aa9d082e6bd4",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Asthma",
+          "Colorrectal cancer",
+          "Healthy control"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Sample condition": {
+      "id": "6a5e2e9d-c0ba-4437-82b2-d4a22ed3f9c8",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Control",
+          "Cured",
+          "Non-responder",
+          "Responder"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "External Donor ID": {
+      "id": "4023aa05-4e7c-4fd9-9e7b-d807bdb309f3",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "External Sample ID": {
+      "id": "d96f475a-7bcb-401a-b078-3a12e0d7a61e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Sample reception date": {
+      "id": "20f16df2-ebe6-4b74-a6cb-d40d0aff6d37",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Blood collection consent": {
+      "id": "49bcb84f-658c-424e-ba3b-fe47ef8b3087",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Diseases with negative test": {
+      "id": "a65de9c0-03c2-4bbc-a46d-91cdcb6b987a",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Patient consent information": {
+      "id": "b68f539c-480c-4f83-b824-1a7d3b141675",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6ecbd671-ed47-44a8-92fb-56a876328130"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "bf710250-ce32-42bd-8e85-83829a010eb6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8519a961-2f31-474c-bc5f-39f7e3c169e6",
+          "type": "field",
+          "fieldId": "a5dc8ed8-ea03-4561-a18c-836947fa4fc6",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e5847888-6918-4285-8439-62fa95e629ce",
+          "type": "field",
+          "fieldId": "4023aa05-4e7c-4fd9-9e7b-d807bdb309f3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a293429f-f5ab-4be4-b879-6c8bafa110ae",
+          "type": "field",
+          "fieldId": "d96f475a-7bcb-401a-b078-3a12e0d7a61e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b7834294-5550-42e8-b571-5b68c7742aad",
+          "type": "field",
+          "fieldId": "cad522d9-bd8d-463f-af51-c62b5e1ff0a2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "847659f7-362b-4e53-b22e-8bc2e4568453",
+          "type": "field",
+          "fieldId": "bfb07ff9-3e63-45ff-8e8d-051139c70de8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7b032ea0-a848-4232-9b44-d8a167fe5677",
+          "type": "field",
+          "fieldId": "558555e1-19e4-45b7-bbee-09c7ccb15fe1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8a4e7d10-35f9-4cd2-8af0-d0916f02aa20",
+          "type": "field",
+          "fieldId": "49bcb84f-658c-424e-ba3b-fe47ef8b3087",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "19640f67-e8fe-4d41-a22e-df32ea4ddd76",
+          "type": "field",
+          "fieldId": "b68f539c-480c-4f83-b824-1a7d3b141675",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8d2d4d8f-d7ca-4e88-a175-d6da675bf083",
+          "type": "field",
+          "fieldId": "a65de9c0-03c2-4bbc-a46d-91cdcb6b987a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6273b69d-7492-4efb-a061-ae27f107b78e",
+          "type": "field",
+          "fieldId": "000122da-f605-4a06-a2ce-617e93f04fc7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "12ba270d-11ed-440f-a1c7-7dfaa16050d6",
+          "type": "field",
+          "fieldId": "28e09f6b-5522-485d-b0b9-6da48c598529",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "537464d7-4206-481b-8a7f-4342a93f2e66",
+          "type": "field",
+          "fieldId": "b1304300-39e2-4e1b-92dd-1141edb19e19",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d794ab57-651a-46db-a25e-fa1b4657b4ce",
+          "type": "field",
+          "fieldId": "20f16df2-ebe6-4b74-a6cb-d40d0aff6d37",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c82f48d4-4479-4945-a608-25a82f7c86c8",
+          "type": "field",
+          "fieldId": "8addb03c-681c-4fd4-a537-4879d6b8c811",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0ad282ca-121b-450b-85e6-23271ee7a175",
+          "type": "field",
+          "fieldId": "1f2cdbae-6b46-420e-9601-89d5091b5338",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "010f96ad-eb73-4fed-972f-bddd439a464f",
+          "type": "field",
+          "fieldId": "46ab2bc4-d145-4d14-9a40-aa9d082e6bd4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "52aedf02-aac6-492a-9226-41904634f2a4",
+          "type": "field",
+          "fieldId": "6a5e2e9d-c0ba-4437-82b2-d4a22ed3f9c8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0c08b6d2-77bf-4aeb-9553-000750fd142f",
+          "type": "field",
+          "fieldId": "e6e0719e-2488-4dfc-8402-fa91ef3afdf9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cc6d3dee-ec01-4ea7-abc2-87c6e51642c5",
+          "type": "field",
+          "fieldId": "4a399e60-83dc-4269-b325-b53dfe0d96ba",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5eeb0778-c50c-4d36-a2d2-a1f9a7028a7d",
+          "type": "field",
+          "fieldId": "0a329c16-cf25-4fa6-b898-33b8d61d1966",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "29b92473-9559-41e4-abb0-4430c2a6fa14",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cdc7e13b-9446-4607-bccb-ff390152a81e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d2554fb0-7839-411b-a026-35a1f0e419a2",
+          "type": "field",
+          "fieldId": "ceff6b7c-2454-4899-b7c8-9e60fbd92774",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "18e00692-60e7-4f16-a61b-679269771ca7",
+          "type": "field",
+          "fieldId": "4799e899-2c9f-430d-8c5d-86049f138400",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e1aa326a-2c02-44ac-88da-ded67db3d2b4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8ba35824-4508-45fb-8714-653eb4b3f4e0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@bfb07ff9-3e63-45ff-8e8d-051139c70de8_@558555e1-19e4-45b7-bbee-09c7ccb15fe1 "
+  }
+}

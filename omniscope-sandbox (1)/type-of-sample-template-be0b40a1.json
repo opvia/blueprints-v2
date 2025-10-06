@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "be0b40a1-50bb-4c7d-8927-e645bb7238bf",
+  "title": "Type of Sample Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Storage Temperature": {
+      "id": "d2c3e942-1380-4ebc-bf86-314294939c54",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "selectOptions": [
+          "LN",
+          "-80ºC",
+          "-20ºC",
+          "4ºC",
+          "RT"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "538a25d1-fb2c-4b49-847d-b93d4141e1fe"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f33126b0-7f3f-483b-bb2f-65f3f97e0b81",
+          "type": "field",
+          "fieldId": "d2c3e942-1380-4ebc-bf86-314294939c54",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7cb19785-dfd3-40c1-959e-f83f652d1bbe",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

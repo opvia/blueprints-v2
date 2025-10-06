@@ -1,0 +1,832 @@
+{
+  "id": "omniscope-sandbox",
+  "version": 1,
+  "name": "Omniscope-sandbox",
+  "description": "",
+  "entities": [
+    {
+      "id": "66c231d6-4769-4be1-b9e6-e8f48638a2bf",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inbound Sample Batch Template",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7f0b331d-e279-440c-8348-1b6f5e8c7561",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inbound Sample Batch",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f6696889-e077-4b8b-951e-842b5bd8991a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inbound Sample Template",
+      "icon": "tag",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6ecbd671-ed47-44a8-92fb-56a876328130",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inbound Sample",
+      "icon": "tag",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f3b8ced1-732d-49f6-af2d-12b2d8fc2600",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template",
+      "icon": "box",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "b7d4fcd0-89dd-4eae-aaa2-c50ccf27b434",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box",
+      "icon": "box",
+      "sourceVersion": "1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "df857ff8-1003-43a7-bc06-335903bb250d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Position Template",
+      "icon": "grid-view",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "e9665359-b5b3-4741-89ce-6b1fd20ce446",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Position",
+      "icon": "grid-view",
+      "sourceVersion": "1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "681ef68b-aa8e-4947-8ff5-a8a336f95d41",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Amount of cryopreservation media needed Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "9d712df2-d818-4f16-83bd-4c614749b556",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Lego Data",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "31174647-c8a4-44c0-8aef-db8bb6b09261",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Blood Processing Template",
+      "icon": "shapes",
+      "sourceVersion": "1.3"
+    },
+    {
+      "id": "6d0aaf5a-d3d0-40ce-9032-e83dc0c56d20",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Lego",
+      "icon": "shapes",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "1a3cecc2-9e32-4e82-af49-c5801eed17e3",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Blood Volume Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "69a96201-b95f-4ec0-877a-a4766c70103f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Rack/Shelf/Drawer Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "6",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "6171a1e1-d775-43c5-8fd6-4ace3a3396ab",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Rack/Shelf/Drawer",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "3",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "3377ce58-13b4-41c4-808a-759a85f8c3dd",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tank/Freezer/Fridge Template",
+      "icon": "cube",
+      "sourceVersion": "5",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "d063628d-e14d-492d-9cf0-56b7bf31d7a7",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tank/Freezer/Fridge",
+      "icon": "cube",
+      "sourceVersion": "2",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "c88473e7-4942-4555-a37c-6381d3febc20",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "cDNA Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "67c61185-3956-4e1b-9de2-3889bcb90724",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell cryopreservation data Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.3"
+    },
+    {
+      "id": "755269b3-f867-4900-8efc-3e95e6a1ed6f",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "PBMC Sample Generator",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c2f4f21c-8260-461f-b29a-9f387cf13c01",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code",
+      "sourceVersion": "1.3",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "5cb172f2-a2c9-48ae-9ebe-dbcb9e285e8d",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script Template",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4a43b7ba-772a-4ef4-a8f3-2aa4ba77a1d3",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "PBMC Sample Template",
+      "icon": "lab-test",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "19d43f2e-497b-4dd0-ab9e-f9f2d960ae3e",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample",
+      "icon": "lab-test",
+      "sourceVersion": "1.3",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "3e6c06ea-2877-44cc-9a40-f83467e89796",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Cryopreservation Template",
+      "icon": "shapes",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "13b721cd-b7ad-4dc7-92b0-18fbd13c0779",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell QC Data Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "dc385cb2-9d9c-475c-964a-097aed054be8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell QC Template",
+      "icon": "shapes",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "81f528a6-569f-49dd-a138-72e7cfc0592d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cohort Template",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ba68f0db-d13f-41a0-a5e8-7050b47e6cd3",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cohort",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "209e275a-a454-4efd-a143-8c67f1eabf2e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Consumable Template",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "dbfa9eaf-3a7b-4acc-afb5-ee1153394c47",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Consumable",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8dd6f84a-2e14-4fa2-8646-b36c0aafc4b0",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supplier Template",
+      "icon": "tag",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fc09cd72-99b8-41e8-869f-4581cfd194c1",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supplier",
+      "icon": "tag",
+      "sourceVersion": "1.3"
+    },
+    {
+      "id": "a536f7cb-7cda-4bd0-9dea-0336896942de",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default template",
+      "icon": "build",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "73630fb5-2e56-4314-ac15-908adb8fea1e",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment Action",
+      "icon": "build",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c42bd147-d0ce-41a6-a1d9-e6d8e05ab1d2",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default template",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5a65b7b9-55c4-45e8-8928-7f4f24989323",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Running Scripts",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5c128a9b-77e3-4041-9721-bd190d515f4b",
+      "kind": "TEMPLATE",
+      "contentType": "FILE",
+      "title": "Default template",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7e5150da-f492-4e70-9484-020d1616bf9b",
+      "kind": "TYPE",
+      "contentType": "FILE",
+      "title": "File",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8d0832c1-8675-414e-bb3b-6a24a2946701",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "DNA Isolation Template",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3d6fcda9-2090-4022-b24e-891d7595dbf1",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "DNA QC Data Sample Template",
+      "icon": "lab-test",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "b289ce3d-0a8b-4c5d-8fe3-24e44f873ad4",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Position Updater Script - On Being Referenced",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "61972b7c-c2f3-45fc-82fc-7652cfa4efda",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template",
+      "icon": "box",
+      "sourceVersion": "5",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "3a4d7c2b-eea6-4357-b4e2-bb8f6dabc30b",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box",
+      "icon": "box",
+      "sourceVersion": "4",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "a7470169-3d2e-4d91-8514-404992e0757d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Position Template",
+      "icon": "grid-view",
+      "sourceVersion": "4",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "dce70466-0bbe-4542-bdcc-415aa8517d00",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Position",
+      "icon": "grid-view",
+      "sourceVersion": "3",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "be0b40a1-50bb-4c7d-8927-e645bb7238bf",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Type of Sample Template",
+      "icon": "virus",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "538a25d1-fb2c-4b49-847d-b93d4141e1fe",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Type of Sample",
+      "icon": "virus",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9760d27c-669c-4686-8977-629f478460f0",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "DNA QC Template",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "51964617-3514-4a0f-b731-f548664b4dfe",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment Template",
+      "icon": "build",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "483c9ce5-610e-4352-81d7-33d07dd002f7"
+      ]
+    },
+    {
+      "id": "6eb6864d-dfe4-442e-a5fb-4cdbcc37b392",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment",
+      "icon": "build",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "483c9ce5-610e-4352-81d7-33d07dd002f7"
+      ]
+    },
+    {
+      "id": "2081ef93-69d5-4f23-8529-955c96bfb6d4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Index Template",
+      "icon": "clean",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "becd89a6-550b-4217-a868-859226d0ecb0",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Index",
+      "icon": "clean",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "62d27371-20af-4178-b0b7-69d269972d77",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Libraries QC - os-TCR Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "967e578c-3e4a-4eb6-adfe-83ce6f8e042e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "os-TCR Template",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "dffa089f-5a7a-46ab-ac21-d608ed06a214",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "TCRb Amplification and Library generation Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "726086c5-6356-4fac-92cb-a63632bd9925",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "PBMC",
+      "icon": "virus",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0014d77d-8e6d-4381-b55c-44f55b6d12d2",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Plasma Collection Template",
+      "icon": "shapes",
+      "sourceVersion": "1.3"
+    },
+    {
+      "id": "05d1f797-af8a-4276-8d82-f884e1f125db",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Plasma Generation Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.6"
+    },
+    {
+      "id": "4a55570b-4909-4d90-92d6-3c904bd92e7b",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Plasma Sample Generator",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6a273c2d-f4e4-4993-a924-2f5861afbb29",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Plasma Sample Template",
+      "icon": "lab-test",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "3c4b51d2-02b8-46ff-8395-d3152c833b73",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Plasma",
+      "icon": "virus",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b2943516-6280-4eed-94cf-2a4ee80e6a1b",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Rack/Shelf/Drawer Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "7dcaf9c6-d03b-49b9-aa56-e32e00ee4ae9",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Rack/Shelf/Drawer",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "b2472df9-fab8-40a0-90fc-e53109386f9b",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Room Template",
+      "icon": "office",
+      "sourceVersion": "5",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "a74cc113-b69c-4640-ab03-5a4c0b124646",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Room",
+      "icon": "office",
+      "sourceVersion": "2",
+      "tagIds": [
+        "c103a65e-1eb2-4c69-bc83-1855587f5a16"
+      ]
+    },
+    {
+      "id": "e2258150-99df-45f4-b2f3-a360286f8e82",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "RBCL Template",
+      "icon": "shapes",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "1b09875b-0d3d-4aac-add9-ddfdbc0eeb70",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent Lot template",
+      "icon": "tint",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "dac20f18-1f69-47f8-9a59-a099d9f72f67",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent Lot",
+      "icon": "tint",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1ca185af-6ed1-4485-bb29-9218e4b55b19",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent Template",
+      "icon": "tint",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b776b4ab-fa4b-4909-bfa0-c91e5d723df8",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent",
+      "icon": "tint",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1c263c95-1482-4d65-afa1-4074ab40d04e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent Usage Template",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6e1ab6db-43eb-455b-b5bd-70d0ff6f7983",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent Usage",
+      "icon": "application",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "73cb04b7-0789-410c-897d-821c3e400217",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "RNA Concentration Template",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "190787dd-6b56-4643-9c8b-811eefd3c8f4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "RNA Isolation Template",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "62859c16-4be2-4ddb-bd73-c511ce01a8ec",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample Template",
+      "icon": "lab-test",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "4a6f9501-9716-4886-8569-cbd867210b89",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Room Template",
+      "icon": "office",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "745da075-771b-4ccc-946c-e7a5ef63648d",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Room",
+      "icon": "office",
+      "sourceVersion": "1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "ce81bc4f-f0d9-477a-bf10-b45269af51c9",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tank/Freezer/Fridge Template",
+      "icon": "cube",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "98e65a2d-b1d3-45ce-9d02-4dd503cd3ffd",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tank/Freezer/Fridge",
+      "icon": "cube",
+      "sourceVersion": "1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "0e06bb14-d811-4abb-9adf-f47fcd8e9927",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "RNA QC Template",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "67f8a1cd-e3d8-4562-b2fb-253bf3e10a93",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "RNA QC Data Sample Template",
+      "icon": "lab-test",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "793facb9-922d-4572-bd94-9bcf302dbd94"
+      ]
+    },
+    {
+      "id": "321ed8ea-aadd-456d-8829-e4b43ceaaa8e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Thawing Data Template",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "4bcc0070-c3ee-47a4-ab48-150d7561066c",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Thawing Template",
+      "icon": "shapes",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "46544bb7-3fc0-4c17-9de8-7f8caea5efc9",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "DNA & RNA Isolation",
+      "icon": "clipboard",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4c2933af-f12d-4689-825e-9324fb9a678c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Assay",
+      "icon": "clipboard",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "f09cbbc0-3e90-4fe2-9f18-90d555ea3a8a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "PBMC Isolation",
+      "icon": "clipboard",
+      "sourceVersion": "1.4"
+    },
+    {
+      "id": "6f727b79-ae46-4a89-8128-55a9e83b6b88",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "PBMC - Create Legos",
+      "icon": "code",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "777a27c8-728e-439b-83d8-4fd60e76603d",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "PBMC - Populate Legos With Sample",
+      "icon": "code",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "113934bd-0d48-4050-baa3-576d2c7fef9f",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Add Samples from Saved Search to Reference Field",
+      "icon": "code",
+      "sourceVersion": "1"
+    }
+  ],
+  "tags": [
+    {
+      "id": "793facb9-922d-4572-bd94-9bcf302dbd94",
+      "text": "Sample Location Management",
+      "hexCode": "#0cd991"
+    },
+    {
+      "id": "c103a65e-1eb2-4c69-bc83-1855587f5a16",
+      "text": "Sample Location Management",
+      "hexCode": "#0cd991"
+    },
+    {
+      "id": "483c9ce5-610e-4352-81d7-33d07dd002f7",
+      "text": "Equipment",
+      "hexCode": "#ddbd8b"
+    }
+  ]
+}

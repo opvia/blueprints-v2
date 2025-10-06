@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "3e6c06ea-2877-44cc-9a40-f83467e89796",
+  "title": "Cell Cryopreservation Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Assay": {
+      "id": "fd81248e-b5ab-4a64-acd1-2fc9241fdd78",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Cell Cryopreservation Data": {
+      "id": "cfa3c130-0821-4ea8-8a8c-c368aa090839",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "67c61185-3956-4e1b-9de2-3889bcb90724"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Lego",
+              "config": "Lego"
+            },
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Sample",
+              "config": "Sample"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Amount of cryopreservation media needed": {
+      "id": "4fdc49b1-24f3-43a1-9f7f-cac43d8721fc",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "681ef68b-aa8e-4947-8ff5-a8a336f95d41"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "FBS",
+              "config": "FBS"
+            },
+            {
+              "name": "DMSO",
+              "config": "DMSO"
+            },
+            {
+              "name": "Lego",
+              "config": "Lego"
+            },
+            {
+              "name": "RPMI",
+              "config": "RPMI"
+            },
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Sample",
+              "config": "Sample"
+            },
+            {
+              "name": "Amount of reagent X needed",
+              "config": "Amount of reagent X needed"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6d0aaf5a-d3d0-40ce-9032-e83dc0c56d20"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "7c83713a-1d23-4970-b601-681e4316e7e5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d540ffea-3b40-42c3-a510-6a54d3c45ada",
+          "type": "field",
+          "fieldId": "4fdc49b1-24f3-43a1-9f7f-cac43d8721fc",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "1ab37514-1b09-4bab-925e-267f72f29186",
+          "type": "field",
+          "fieldId": "cfa3c130-0821-4ea8-8a8c-c368aa090839",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "2190e856-52a7-4c8b-865d-37ff5db20a16",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Cell Cryopreservation"
+  }
+}

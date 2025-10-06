@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b2943516-6280-4eed-94cf-2a4ee80e6a1b",
+  "title": "Rack/Shelf/Drawer Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Room": {
+      "id": "551a19a8-2e78-41c7-9faa-7410797b2846",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Tank/Fridge/Freezer\") , \"Room\")"
+      },
+      "dataType": null
+    },
+    "Boxes": {
+      "id": "9ec521f9-82a8-45bc-a13b-a4bde20f3910",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "type": [
+            "Box"
+          ],
+          "fieldValue": [
+            {
+              "name": "Rack/Shelf/Drawer",
+              "value": "ref(lookup(__self, \"ID\"))",
+              "operator": "="
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Rack/Shelf/Drawer",
+            "config": "Rack/Shelf/Drawer"
+          }
+        ],
+        "hiddenDefaultColumns": [
+          "WORK_INSTRUCTIONS_PROGRESS",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Temperature": {
+      "id": "044a7cd9-6a51-4afb-9efc-19849050ec8d",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Tank/Fridge/Freezer\") , \"Temperature\")"
+      },
+      "dataType": null
+    },
+    "Tank/Fridge/Freezer": {
+      "id": "c8b833a3-f843-4db7-a90b-d8f8b97aa067",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "3377ce58-13b4-41c4-808a-759a85f8c3dd"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Room",
+              "config": "Room"
+            },
+            {
+              "name": "Racks/Shelfs/Drawers",
+              "config": "Racks/Shelfs/Drawers"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "7dcaf9c6-d03b-49b9-aa56-e32e00ee4ae9"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "215d8f23-3f9b-4ece-a391-486d79acb841",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "22f40e22-b2e1-4dd0-bf04-cdcaab90ec21",
+          "type": "field",
+          "fieldId": "c8b833a3-f843-4db7-a90b-d8f8b97aa067",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "87b0e153-4a4c-4261-9e01-9adfd93e9aab",
+          "type": "field",
+          "fieldId": "044a7cd9-6a51-4afb-9efc-19849050ec8d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e2d91ec8-f265-4c93-a7b5-2acc69b282e3",
+          "type": "field",
+          "fieldId": "9ec521f9-82a8-45bc-a13b-a4bde20f3910",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bb52da0f-d2ba-4ac3-9cff-ff3b87ddd60e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

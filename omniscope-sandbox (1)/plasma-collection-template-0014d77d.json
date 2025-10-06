@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0014d77d-8e6d-4381-b55c-44f55b6d12d2",
+  "title": "Plasma Collection Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Assay": {
+      "id": "fd81248e-b5ab-4a64-acd1-2fc9241fdd78",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Plasma Generation": {
+      "id": "da95f309-4b1a-4c54-8ae4-d8bb1cd821f3",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "05d1f797-af8a-4276-8d82-f884e1f125db"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Lego",
+              "config": "Lego"
+            },
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Sample",
+              "config": "Sample"
+            },
+            {
+              "name": "Total Volume (mL)",
+              "config": "Total Volume (mL)"
+            },
+            {
+              "name": "Nº of plasma aliquots",
+              "config": "Nº of plasma aliquots"
+            },
+            {
+              "name": "Volume of plasma aliquots (mL)",
+              "config": "Volume of plasma aliquots (mL)"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Plasma collection performed?": {
+      "id": "15c009a9-c4e3-40d8-bbc5-b575a0370842",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "No",
+          "Yes"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6d0aaf5a-d3d0-40ce-9032-e83dc0c56d20"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "59a528a1-2019-4897-95df-08ad92b24eae",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e2090907-f4a3-4396-b116-acb6b644b255",
+          "type": "field",
+          "fieldId": "15c009a9-c4e3-40d8-bbc5-b575a0370842",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9b8f2ad3-61df-45ce-bebe-d7500454a1d8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "da6169f3-96fa-454b-b810-90dd2c0c0f73",
+          "type": "field",
+          "fieldId": "da95f309-4b1a-4c54-8ae4-d8bb1cd821f3",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "7ef3376b-7b6e-444a-bc27-4a67db216155",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Plasma Collection"
+  }
+}

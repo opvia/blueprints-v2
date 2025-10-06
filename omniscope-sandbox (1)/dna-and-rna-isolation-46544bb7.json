@@ -1,0 +1,664 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "46544bb7-3fc0-4c17-9de8-7f8caea5efc9",
+  "title": "DNA & RNA Isolation",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "RBCL": {
+      "id": "112bb6a0-8a1c-48a5-a5c3-f66ea944daa7",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "e2258150-99df-45f4-b2f3-a360286f8e82"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "RBCL performed",
+              "config": "RBCL performed"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "DNA QC": {
+      "id": "f7742b03-a7cf-426a-990d-a1e00b92ea6b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "9760d27c-669c-4686-8977-629f478460f0"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "QC Data Samples",
+              "config": "QC Data Samples"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Cell QC": {
+      "id": "22dc35a8-0e53-42e1-8b01-8f86b6be208c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "dc385cb2-9d9c-475c-964a-097aed054be8"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Samples": {
+      "id": "f4e6bc1d-7211-45b4-9c87-824f0294f659",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Sample"
+            ],
+            "fieldValue": [
+              {
+                "name": "Add to Queue?",
+                "value": "true",
+                "operator": "="
+              }
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Add to Queue?",
+              "config": "Add to Queue?"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Thawing": {
+      "id": "debc95ad-e9d1-46f1-a20f-a818b1938fd2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "4bcc0070-c3ee-47a4-ab48-150d7561066c"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Plasma collection performed?",
+              "config": "Plasma collection performed?"
+            },
+            {
+              "name": "Thawing Data",
+              "config": "Thawing Data"
+            },
+            {
+              "name": "Samples thawed at OS",
+              "config": "Samples thawed at OS"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "RNA QC - 1": {
+      "id": "88c51c68-9b4f-4479-9886-f21c3f4e99ca",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "0e06bb14-d811-4abb-9adf-f47fcd8e9927"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "QC Data Samples",
+              "config": "QC Data Samples"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "RNA QC - 2": {
+      "id": "252c6339-1f7c-4057-81d7-d81acdca2da6",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "0e06bb14-d811-4abb-9adf-f47fcd8e9927"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "QC Data Samples",
+              "config": "QC Data Samples"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Processed By": {
+      "id": "4bfbb3b7-bd7f-4eaa-b833-12b0ecce21bf",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "DNA Isolation": {
+      "id": "913963f5-d51b-432d-9b33-f7b224d08e12",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "8d0832c1-8675-414e-bb3b-6a24a2946701"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Method",
+              "config": "Method"
+            },
+            {
+              "name": "Source",
+              "config": "Source"
+            },
+            {
+              "name": "Elution volume",
+              "config": "Elution volume"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "RNA Isolation": {
+      "id": "c2011150-96f7-44da-8e2e-6c87900479ec",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "190787dd-6b56-4643-9c8b-811eefd3c8f4"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Method",
+              "config": "Method"
+            },
+            {
+              "name": "Source",
+              "config": "Source"
+            },
+            {
+              "name": "Elution volume",
+              "config": "Elution volume"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Processed Date": {
+      "id": "b80a2fcd-2ddc-4c5b-863b-5c63df5f7ea5",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Lab-book (pages)": {
+      "id": "02fd6a63-8180-4a53-ae2a-432a2a6c68aa",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "RNA Concentration": {
+      "id": "3fa69adb-fc93-46bb-b2ea-1cac4f8f14a4",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "73cb04b7-0789-410c-897d-821c3e400217"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Method",
+              "config": "Method"
+            },
+            {
+              "name": "Source",
+              "config": "Source"
+            },
+            {
+              "name": "Elution volume",
+              "config": "Elution volume"
+            },
+            {
+              "name": "RNA Concentration performed?",
+              "config": "RNA Concentration performed?"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "4c2933af-f12d-4689-825e-9324fb9a678c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "d8a727b3-70de-424f-ba49-41e5feed887d",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Input Information"
+            }
+          ]
+        },
+        {
+          "id": "5a1b4e33-a489-4020-acdc-1fe4e8cf7ed7",
+          "type": "field",
+          "fieldId": "4bfbb3b7-bd7f-4eaa-b833-12b0ecce21bf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "857eaec6-49fa-49f4-9bf5-21880e3a2af7",
+          "type": "field",
+          "fieldId": "b80a2fcd-2ddc-4c5b-863b-5c63df5f7ea5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3282266c-0ed7-424a-903d-2841f24bd673",
+          "type": "field",
+          "fieldId": "02fd6a63-8180-4a53-ae2a-432a2a6c68aa",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8f5f923c-1373-463b-a67b-74fd09941e08",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1d1eb913-1b64-4cb2-ae71-e66eea5fa1f3",
+          "type": "field",
+          "fieldId": "f4e6bc1d-7211-45b4-9c87-824f0294f659",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e1d397a1-3c5f-479d-b892-c66f2257fdea",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "46cb23c3-457f-402b-9f74-7bbc6858d8bb",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2a0b978b-e3c3-418a-aa36-0532fdcf1214",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0cc51f1c-9d91-467e-9188-76e827cdba1e",
+          "type": "field",
+          "fieldId": "debc95ad-e9d1-46f1-a20f-a818b1938fd2",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "2a3aa1af-df43-4edc-8b29-a3aadef56d40",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9a03243c-4a6a-47cb-bfc5-1309e2b69b70",
+          "type": "field",
+          "fieldId": "22dc35a8-0e53-42e1-8b01-8f86b6be208c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "c3748a56-aea7-4b2a-8855-3caf9c6ca6ee",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7ee39a21-1f71-4ba9-b960-d4010453b2a3",
+          "type": "field",
+          "fieldId": "112bb6a0-8a1c-48a5-a5c3-f66ea944daa7",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "da33dc02-5a69-4c2b-a7d2-3ed39729cc99",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "480f0cca-78f0-40f5-a33a-24867d1bad99",
+          "type": "field",
+          "fieldId": "c2011150-96f7-44da-8e2e-6c87900479ec",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "cb01ee43-a530-493e-ab73-f218e0176add",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "27de306d-9062-4345-acaa-e23ed2846001",
+          "type": "field",
+          "fieldId": "88c51c68-9b4f-4479-9886-f21c3f4e99ca",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "42806f83-98fd-4798-80c8-cf61177085ed",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c150916d-fe45-4cc4-a086-b86a32c53661",
+          "type": "field",
+          "fieldId": "3fa69adb-fc93-46bb-b2ea-1cac4f8f14a4",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "b258d4ac-4e29-47d2-97d8-446ced3ef55e",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6edaaf80-a7ad-46c5-a091-9c1e0f3f5cd4",
+          "type": "field",
+          "fieldId": "252c6339-1f7c-4057-81d7-d81acdca2da6",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "be847d4b-0eed-44f6-85a0-9494abecc29c",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "857fd7cf-de21-4a9c-9b7c-b8c374ec2178",
+          "type": "field",
+          "fieldId": "913963f5-d51b-432d-9b33-f7b224d08e12",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "270082e8-475f-4f03-9e49-20194dd64bc0",
+          "type": "page_break",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "00f06c3d-8d57-4a7e-991e-50208eb4abf1",
+          "type": "field",
+          "fieldId": "f7742b03-a7cf-426a-990d-a1e00b92ea6b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "9a22c33f-423b-4f97-ac39-aa2f604bc409",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "OS-EG-0000X/@TEMPLATE_INDEX"
+  }
+}
