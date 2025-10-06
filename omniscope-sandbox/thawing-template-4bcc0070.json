@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4bcc0070-c3ee-47a4-ab48-150d7561066c",
+  "title": "Thawing Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Assay": {
+      "id": "fd81248e-b5ab-4a64-acd1-2fc9241fdd78",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Thawing Data": {
+      "id": "b97f8345-cb78-4e35-b3ba-e31dede518a3",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "321ed8ea-aadd-456d-8829-e4b43ceaaa8e"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Lego",
+              "config": "Lego"
+            },
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Sample",
+              "config": "Sample"
+            },
+            {
+              "name": "Nº vials to thaw",
+              "config": "Nº vials to thaw"
+            },
+            {
+              "name": "Nº of cells/vial (M)",
+              "config": "Nº of cells/vial (M)"
+            },
+            {
+              "name": "Volume of RPMI + 10% FBS (mL)",
+              "config": "Volume of RPMI + 10% FBS (mL)"
+            },
+            {
+              "name": "Expected nº cells (all vials)",
+              "config": "Expected nº cells (all vials)"
+            },
+            {
+              "name": "Cryopreserved sample volume (mL)",
+              "config": "Cryopreserved sample volume (mL)"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Samples thawed at OS": {
+      "id": "00871cea-5628-4683-9756-60b5b9977872",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "No",
+          "Yes",
+          "Partially"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6d0aaf5a-d3d0-40ce-9032-e83dc0c56d20"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "3baf3b74-90d5-48fb-8400-fedfdf2c6fb5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "65fd320f-76a2-41e5-8846-4b7b0e5c598a",
+          "type": "field",
+          "fieldId": "00871cea-5628-4683-9756-60b5b9977872",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "23cbb330-d51d-4a58-b61d-c53ac58cf518",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1aa9d114-2292-4050-bbe3-d65ad81a80a3",
+          "type": "field",
+          "fieldId": "b97f8345-cb78-4e35-b3ba-e31dede518a3",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "983cef57-3d54-497f-84d4-8a960e5b8bb2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Thawing"
+  }
+}

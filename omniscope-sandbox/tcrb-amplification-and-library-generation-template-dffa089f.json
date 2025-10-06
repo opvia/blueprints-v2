@@ -1,0 +1,333 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "dffa089f-5a7a-46ab-ac21-d608ed06a214",
+  "title": "TCRb Amplification and Library generation Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Lego": {
+      "id": "5590cb22-a514-4f44-bd12-0ecc091251d6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Assay": {
+      "id": "50701359-d43b-411c-b482-7eff9002c70e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lego\") , \"Assay\")"
+      },
+      "dataType": null
+    },
+    "Sample": {
+      "id": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Sample"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Index Reference": {
+      "id": "cd9c3e42-78be-4224-8872-39a8b8753213",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "2081ef93-69d5-4f23-8529-955c96bfb6d4"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Index Number",
+              "config": "Index Number"
+            },
+            {
+              "name": "Index name OS",
+              "config": "Index name OS"
+            },
+            {
+              "name": "Unique Dual Index",
+              "config": "Unique Dual Index"
+            },
+            {
+              "name": "Index plate number",
+              "config": "Index plate number"
+            },
+            {
+              "name": "Index plate position",
+              "config": "Index plate position"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Nº cycles PCR1": {
+      "id": "4a748bb9-1d56-417c-8ba3-d79f039e3dc3",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "Rounded"
+      },
+      "dataType": "NUMBER"
+    },
+    "Nº cycles PCR2": {
+      "id": "765e1fed-841e-48ce-b2bd-c179e3f84c26",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "Rounded"
+      },
+      "dataType": "NUMBER"
+    },
+    "Thermocycler PCR1": {
+      "id": "c27e0632-80bd-4608-b143-1c58561e01bb",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Equipment"
+            ],
+            "fieldValue": [
+              {
+                "name": "Equipment Name",
+                "value": "Thermocycler Veriti",
+                "operator": "="
+              }
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Equipment Name",
+              "config": "Equipment Name"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Thermocycler PCR2": {
+      "id": "42ef86ea-496a-4bc4-beac-e91f2960cf86",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Equipment"
+            ],
+            "fieldValue": [
+              {
+                "name": "Equipment Name",
+                "value": "Thermocycler Veriti",
+                "operator": "="
+              }
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Equipment Name",
+              "config": "Equipment Name"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Index plate number": {
+      "id": "db05ce7d-aecf-4af0-a2aa-7ea44b6426f0",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Index Reference\") , \"Index plate number\")"
+      },
+      "dataType": null
+    },
+    "Index plate position": {
+      "id": "d2a82dbb-d9e1-4121-99df-c22d808f4ba5",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Index Reference\") , \"Index plate position\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9d712df2-d818-4f16-83bd-4c614749b556"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "bd092066-339d-4a5d-9bb9-1d04b94a8cde",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5d1632ae-4412-4439-b59c-1f76d3a634db",
+          "type": "field",
+          "fieldId": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f854974f-bc50-476b-b74f-7145a6544ba9",
+          "type": "field",
+          "fieldId": "4a748bb9-1d56-417c-8ba3-d79f039e3dc3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "58deb99e-ff9b-4958-b9c8-073effb588c8",
+          "type": "field",
+          "fieldId": "765e1fed-841e-48ce-b2bd-c179e3f84c26",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d98b83e3-ede2-4198-91db-c65572fbca77",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ff8d8c74-043c-4396-9e2d-3e3ec5175cac",
+          "type": "field",
+          "fieldId": "c27e0632-80bd-4608-b143-1c58561e01bb",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "c4e4c462-bec8-47b1-99a3-0bdaeaa9aaa2",
+          "type": "field",
+          "fieldId": "42ef86ea-496a-4bc4-beac-e91f2960cf86",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "62ed9c9b-e765-4606-8bd2-227170872d24",
+          "type": "field",
+          "fieldId": "cd9c3e42-78be-4224-8872-39a8b8753213",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "292bac0d-be39-4045-bdf8-61812bb35fdd",
+          "type": "field",
+          "fieldId": "db05ce7d-aecf-4af0-a2aa-7ea44b6426f0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "95e6c958-85db-4ff6-8d65-9c7fdbf5d831",
+          "type": "field",
+          "fieldId": "d2a82dbb-d9e1-4121-99df-c22d808f4ba5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a417507d-5eff-4b1a-813b-f1c7bfd53f38",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - TCRb Amplification and Library generation - @cda3eb29-8fcd-4513-a3ae-d440c3a41ea2 "
+  }
+}

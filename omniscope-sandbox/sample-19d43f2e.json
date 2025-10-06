@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "19d43f2e-497b-4dd0-ab9e-f9f2d960ae3e",
+  "title": "Sample",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Box": {
+      "id": "3e493211-5f4a-4e37-9a2a-d6a3d2b612d3",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Position": {
+      "id": "f349643f-6bb0-4e42-b642-49fc886032e6",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Add to Queue?": {
+      "id": "e56ae396-c6e9-4750-bbb3-2067d1edbb97",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Type of Sample": {
+      "id": "d3702493-87d1-4b53-ac89-790a9940f4c5",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Position Status Updater": {
+      "id": "19f6a8da-ecc5-4f39-9476-bc26392b4f05",
+      "type": "SCRIPT",
+      "value": null,
+      "config": {},
+      "dataType": "SCRIPT"
+    },
+    "Position Status Updated to Full?": {
+      "id": "6010a62c-cdf5-4565-9dd4-79efc57fdb08",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "lab-test",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": false
+    },
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": false
+  }
+}

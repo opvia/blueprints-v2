@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "113934bd-0d48-4050-baa3-576d2c7fef9f",
+  "title": "Add Samples from Saved Search to Reference Field",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "5cb172f2-a2c9-48ae-9ebe-dbcb9e285e8d",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "c2f4f21c-8260-461f-b29a-9f387cf13c01"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the entity where this script is embedded\ncontaining_entity = seal.get_containing_entity()\n\n# Define the names of the fields\nSAVED_SEARCH_FIELD_NAME = \"Samples To Add\"\nREFERENCE_FIELD_NAME = \"Samples\"\n\n# Get the query configuration from the 'Samples To Add' saved search field\n# The value of a 'Saved Search' field is expected to be the queryConfig dictionary\nquery_config = containing_entity[\"fields\"][SAVED_SEARCH_FIELD_NAME][\"value\"]\nprint(f\"Retrieved query config from '{SAVED_SEARCH_FIELD_NAME}': {query_config}\")\n\n# Execute the saved search query to get the entities\nsearch_results = seal.search_entities(query_config)\nprint(f\"Found {len(search_results)} entities from the saved search.\")\n\n# Prepare the references for the 'Samples' field\n# For reference fields, the value is a list of {\"id\": \"...\", \"version\": \"...\"} objects.\n# Setting version to None means it will reference the latest published version or draft.\nsample_references = [{\"id\": entity[\"id\"], \"version\": None} for entity in search_results]\n\n# Update the 'Samples' reference field in the containing entity\nseal.update_field_value(REFERENCE_FIELD_NAME, sample_references)\nprint(f\"Successfully updated '{REFERENCE_FIELD_NAME}' with {len(sample_references)} references.\")"
+    }
+  }
+}

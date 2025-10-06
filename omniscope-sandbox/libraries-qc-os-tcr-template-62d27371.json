@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "62d27371-20af-4178-b0b7-69d269972d77",
+  "title": "Libraries QC - os-TCR Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Lego": {
+      "id": "11888001-50d7-4b81-8fad-e7e12c65ee65",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Assay": {
+      "id": "fd81248e-b5ab-4a64-acd1-2fc9241fdd78",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lego\") , \"Assay\")"
+      },
+      "dataType": null
+    },
+    "Sample": {
+      "id": "c28ac892-985b-46cd-94a7-08c668e9b4a9",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Sample"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Dilution factor": {
+      "id": "0656c881-e40f-4e0d-8e48-073b638378ef",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "Rounded"
+      },
+      "dataType": "NUMBER"
+    },
+    "BioAnalyzer final library (pM)": {
+      "id": "7faa890e-8042-4d34-bd57-581337d02eb2",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    },
+    "Final library with dilution (nM)": {
+      "id": "6895e0b7-f36f-4691-baca-fa329d76fc71",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"BioAnalyzer final library (pM)\") / (1000 * lookup(__self, \"Dilution factor\") )"
+      },
+      "dataType": null
+    },
+    "Final library with dilution (ng/uL)": {
+      "id": "8f562586-acab-45c4-9342-f4bdc429c3aa",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"BioAnalyzer final library 200-2000bp (pg/uL)\") /(1000 * lookup(__self, \"Dilution factor\") )"
+      },
+      "dataType": null
+    },
+    "Library average size in 200-2000bp (bp)": {
+      "id": "244e46be-d579-497e-9a86-0b52270c7868",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "Rounded"
+      },
+      "dataType": "NUMBER"
+    },
+    "BioAnalyzer final library 200-2000bp (pg/uL)": {
+      "id": "a7fee41b-7e75-4549-a751-ab6442a3d175",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9d712df2-d818-4f16-83bd-4c614749b556"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "7df8811d-8653-485c-a9d8-d9917f54ee0f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a7cc7381-5b36-49e3-a644-1360a345488f",
+          "type": "field",
+          "fieldId": "c28ac892-985b-46cd-94a7-08c668e9b4a9",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "91b530fa-0ba8-47d7-ae2f-f964b7ca7c2a",
+          "type": "field",
+          "fieldId": "a7fee41b-7e75-4549-a751-ab6442a3d175",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d8c8c135-70d2-44ce-964a-e9ac2779d10f",
+          "type": "field",
+          "fieldId": "0656c881-e40f-4e0d-8e48-073b638378ef",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b20e7a8c-4589-47e7-a402-84f6bf864986",
+          "type": "field",
+          "fieldId": "8f562586-acab-45c4-9342-f4bdc429c3aa",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9a6c4687-817e-4405-a6eb-81bfd123c63e",
+          "type": "field",
+          "fieldId": "7faa890e-8042-4d34-bd57-581337d02eb2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9ac33d43-6769-4fab-9e33-73cf4af458d4",
+          "type": "field",
+          "fieldId": "6895e0b7-f36f-4691-baca-fa329d76fc71",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5896a9c5-39ad-4748-981b-01e229bf0734",
+          "type": "field",
+          "fieldId": "244e46be-d579-497e-9a86-0b52270c7868",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "10ac0e02-5f9f-4883-b368-d9f6e3bb75b6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Libraries QC - @c28ac892-985b-46cd-94a7-08c668e9b4a9 "
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "98e65a2d-b1d3-45ce-9d02-4dd503cd3ffd",
+  "title": "Tank/Freezer/Fridge",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Room": {
+      "id": "fc93cfc8-f111-4b82-8b9f-e736ed7a5500",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Racks/Shelfs/Drawers": {
+      "id": "ef867948-7937-4cdb-9ed9-51cf0901bc75",
+      "type": "SEARCH",
+      "value": null,
+      "config": {},
+      "dataType": "SEARCH"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "cube",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "createFromType": {
+      "can": true
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "can": true,
+      "onlyCreateFromActiveVersion": false
+    },
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": false
+  }
+}

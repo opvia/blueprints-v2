@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "967e578c-3e4a-4eb6-adfe-83ce6f8e042e",
+  "title": "os-TCR Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "cDNA": {
+      "id": "d62ce053-d42a-4ced-ab83-ae017915eb1c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "c88473e7-4942-4555-a37c-6381d3febc20"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Lego",
+              "config": "Lego"
+            },
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Sample",
+              "config": "Sample"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Assay": {
+      "id": "fd81248e-b5ab-4a64-acd1-2fc9241fdd78",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    },
+    "Stopping point": {
+      "id": "ccdf4d76-b3b5-4aa0-9e2a-af44e28885cc",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Directly proceed to PCR1",
+          "Fridge (4ºC) overnight",
+          "Other",
+          "Thermocycler overnight"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Libraries QC - os-TCR": {
+      "id": "5076937c-e8c2-44e3-b239-036e3bc92bb8",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "62d27371-20af-4178-b0b7-69d269972d77"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Lego",
+              "config": "Lego"
+            },
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Sample",
+              "config": "Sample"
+            },
+            {
+              "name": "Dilution factor",
+              "config": "Dilution factor"
+            },
+            {
+              "name": "BioAnalyzer final library (pM)",
+              "config": "BioAnalyzer final library (pM)"
+            },
+            {
+              "name": "Final library with dilution (nM)",
+              "config": "Final library with dilution (nM)"
+            },
+            {
+              "name": "Final library with dilution (ng/uL)",
+              "config": "Final library with dilution (ng/uL)"
+            },
+            {
+              "name": "Library average size in 200-2000bp (bp)",
+              "config": "Library average size in 200-2000bp (bp)"
+            },
+            {
+              "name": "BioAnalyzer final library 200-2000bp (pg/uL)",
+              "config": "BioAnalyzer final library 200-2000bp (pg/uL)"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "TCRb Amplification and Library generation": {
+      "id": "bf3a9298-faf7-439e-96e7-9ead6e304e02",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "dffa089f-5a7a-46ab-ac21-d608ed06a214"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Lego",
+              "config": "Lego"
+            },
+            {
+              "name": "Assay",
+              "config": "Assay"
+            },
+            {
+              "name": "Sample",
+              "config": "Sample"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6d0aaf5a-d3d0-40ce-9032-e83dc0c56d20"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b7753241-38ed-44c0-8084-da2bbeec6a99",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d3965432-1613-48a2-a637-94770b00f05a",
+          "type": "field",
+          "fieldId": "d62ce053-d42a-4ced-ab83-ae017915eb1c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "be75c17d-c628-4385-9741-0badbdf34b86",
+          "type": "field",
+          "fieldId": "ccdf4d76-b3b5-4aa0-9e2a-af44e28885cc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7c85d1ed-7c23-4ea9-b2c3-9418e276ee3d",
+          "type": "field",
+          "fieldId": "bf3a9298-faf7-439e-96e7-9ead6e304e02",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "98a5eff5-5031-4bb7-879d-50d09ee4926c",
+          "type": "field",
+          "fieldId": "5076937c-e8c2-44e3-b239-036e3bc92bb8",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "dc628013-dbc8-421d-975c-8daa6609cf2a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - os-TCR"
+  }
+}
