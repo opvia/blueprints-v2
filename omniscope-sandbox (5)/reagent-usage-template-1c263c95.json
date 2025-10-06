@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "1c263c95-1482-4d65-afa1-4074ab40d04e",
+  "title": "Reagent Usage Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Units": {
+      "id": "4879233c-4330-423d-9ab2-5e46840893bc",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Reagent Lot\") , \"Units\")"
+      },
+      "dataType": null
+    },
+    "Reagent Lot": {
+      "id": "1a5a0f83-6f34-4c0a-8571-a999bf8c9898",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Reagent Lot"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Quantity Used": {
+      "id": "1221e4be-5de6-43ae-a203-8694ac587333",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6e1ab6db-43eb-455b-b5bd-70d0ff6f7983"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "4fd8d8c4-947e-4711-bef6-7b0b4b5012fe",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5852dbeb-d3c1-4c69-8bb9-aacfbc8ea995",
+          "type": "field",
+          "fieldId": "1a5a0f83-6f34-4c0a-8571-a999bf8c9898",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "22f089d4-d02a-4142-a24f-e3310290d9b7",
+          "type": "field",
+          "fieldId": "1221e4be-5de6-43ae-a203-8694ac587333",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "958c85a1-a15b-4df3-8b41-43bc9332ee93",
+          "type": "field",
+          "fieldId": "4879233c-4330-423d-9ab2-5e46840893bc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ebeea6b7-26b7-4f16-86a5-770a824ee043",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Usage - @TEMPLATE_INDEX - @1a5a0f83-6f34-4c0a-8571-a999bf8c9898"
+  }
+}

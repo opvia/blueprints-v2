@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f3b8ced1-732d-49f6-af2d-12b2d8fc2600",
+  "title": "Box Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Samples": {
+      "id": "a25425bd-8f47-437c-84e6-fc517692f1f1",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "type": [
+            "Sample"
+          ],
+          "fieldValue": [
+            {
+              "name": "Box",
+              "value": "ref(lookup(__self, \"ID\"))",
+              "operator": "="
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Box",
+            "config": "Box"
+          }
+        ],
+        "hiddenDefaultColumns": [
+          "WORK_INSTRUCTIONS_PROGRESS",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Positions": {
+      "id": "3d1386df-82b6-4ebb-bbdb-2770446fa704",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "df857ff8-1003-43a7-bc06-335903bb250d",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Temperature": {
+      "id": "00717bdb-4fea-499a-8758-a6c5af630a46",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Rack/Shelf/Drawer\") , \"Temperature\")"
+      },
+      "dataType": null
+    },
+    "Rack/Shelf/Drawer": {
+      "id": "bf7b8ca2-02c2-44e2-a0b0-076c2e799d0b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "b2943516-6280-4eed-94cf-2a4ee80e6a1b"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Boxes",
+              "config": "Boxes"
+            },
+            {
+              "name": "tank/Fridge/Freezer",
+              "config": "tank/Fridge/Freezer"
+            },
+            {
+              "name": "Room",
+              "config": "Room"
+            },
+            {
+              "name": "Temperature",
+              "config": "Temperature"
+            },
+            {
+              "name": "Tank/Fridge/Freezer",
+              "config": "Tank/Fridge/Freezer"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Tank/Freezer/Fridge": {
+      "id": "e00ff89c-ad18-451f-ab61-93b560de4941",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Rack/Shelf/Drawer\") , \"Tank/Freezer/Fridge\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "b7d4fcd0-89dd-4eae-aaa2-c50ccf27b434"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8bb284ac-d713-49e6-a6d3-b26439f1bfb2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a44a0ea5-fcbd-4273-b1c7-8d03f3f069d2",
+          "type": "field",
+          "fieldId": "bf7b8ca2-02c2-44e2-a0b0-076c2e799d0b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "98dedcba-d843-4f09-8d3f-7fc919a3e62b",
+          "type": "field",
+          "fieldId": "00717bdb-4fea-499a-8758-a6c5af630a46",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7bbcc5b8-b97a-481b-92c2-6d115b825759",
+          "type": "field",
+          "fieldId": "a25425bd-8f47-437c-84e6-fc517692f1f1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8082a7da-ac78-41d7-a4e1-9bc081d661c3",
+          "type": "field",
+          "fieldId": "3d1386df-82b6-4ebb-bbdb-2770446fa704",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2b44b14f-689b-4880-a143-ce05e08c9032",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

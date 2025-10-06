@@ -1,0 +1,301 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "1b09875b-0d3d-4aac-add9-ddfdbc0eeb70",
+  "title": "Reagent Lot template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Units": {
+      "id": "455d8b5c-7e8f-4897-9f1c-c4986eda7334",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Reagent\") , \"Unit size\")"
+      },
+      "dataType": null
+    },
+    "Usages": {
+      "id": "fd99195e-525a-488f-b443-3d04d532abf5",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "kind": [
+            "INSTANCE"
+          ],
+          "type": [
+            "Reagent Usage"
+          ],
+          "fieldValue": [
+            {
+              "name": "Reagent Lot",
+              "value": "ref(lookup(__self, \"ID\"))",
+              "operator": "="
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Reagent Lot",
+            "config": "Reagent Lot"
+          }
+        ],
+        "hiddenDefaultColumns": [
+          "WORK_INSTRUCTIONS_PROGRESS",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Reagent": {
+      "id": "39f4a8ae-eeec-4fbf-bb71-27bf755e916b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Reagent"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Lot Number": {
+      "id": "c6c63a99-cca7-4ad2-9b80-975c5200789a",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Expiry Date": {
+      "id": "cbe6b991-6883-47b4-80ad-ba1b7dac5b5d",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Date Delivered": {
+      "id": "f06c8bef-4ed1-4d15-b168-4b5a9ccf3db8",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Quantity Delivered": {
+      "id": "a9314ebe-8166-4e1a-bf25-c9d7a1b4bd8a",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Quantity Remaining": {
+      "id": "4295f014-7761-4eba-8783-9e70cadfa50a",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Quantity Delivered\") - lookup(__self, \"Total Quantity Used\")"
+      },
+      "dataType": null
+    },
+    "Total Quantity Used": {
+      "id": "62b0b059-7d6b-4a86-a61b-00867c5a0c9d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "dac20f18-1f69-47f8-9a59-a099d9f72f67"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "3b934e80-80e6-4549-ae62-adee4e3a6e2a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a142d21d-a82d-4cc6-b42c-d818e781e0c3",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "4fa2172b-5791-4579-b8c4-5e50d256c848",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "057daa47-682c-4981-a765-64ea62d379c9",
+                  "type": "field",
+                  "fieldId": "39f4a8ae-eeec-4fbf-bb71-27bf755e916b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "b3348762-e0e2-4832-b966-dc053cadd1f4",
+                  "type": "field",
+                  "fieldId": "c6c63a99-cca7-4ad2-9b80-975c5200789a",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2f5682b6-0a54-480f-b84f-28530c5a333f",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "52ac9f3e-9f92-443d-9c3c-168cc3a540d1",
+                  "type": "field",
+                  "fieldId": "f06c8bef-4ed1-4d15-b168-4b5a9ccf3db8",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ae5e33a5-8ed5-4801-aab5-f1f6df8b4e37",
+                  "type": "field",
+                  "fieldId": "cbe6b991-6883-47b4-80ad-ba1b7dac5b5d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8e5f906-8075-4b9c-a016-f89a0bef829a",
+          "type": "field",
+          "fieldId": "a9314ebe-8166-4e1a-bf25-c9d7a1b4bd8a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a5f3eb2a-d943-4f75-9740-2896b0b0e926",
+          "type": "field",
+          "fieldId": "455d8b5c-7e8f-4897-9f1c-c4986eda7334",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ab60b445-7e1b-4101-bbea-b94a68e9ed35",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d2b13680-9e6d-4552-b188-694aa4ee8141",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Stock & Usages"
+            }
+          ]
+        },
+        {
+          "id": "bc71464f-41d0-414e-8f3d-e33b16db52dc",
+          "type": "field",
+          "fieldId": "62b0b059-7d6b-4a86-a61b-00867c5a0c9d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d246b876-a064-4b24-b4bd-2463e0324dbf",
+          "type": "field",
+          "fieldId": "4295f014-7761-4eba-8783-9e70cadfa50a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "19108c54-95f8-462d-ba4a-463f5db05b70",
+          "type": "field",
+          "fieldId": "fd99195e-525a-488f-b443-3d04d532abf5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "df0965fe-fd7f-4eba-9609-e6d3ab5e64ac",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
