@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "c3ce6a64-0fb7-43cd-b1c4-00144faa290b",
-  "title": "Script",
+  "id": "9ac036e3-d1d3-45f8-aa75-93873ad8796e",
+  "title": "Training",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -17,16 +17,18 @@
   "sourceInfo": {},
   "fields": {},
   "kind": "TYPE",
-  "icon": "code",
-  "contentType": "SCRIPT_CODE",
+  "icon": "document",
+  "contentType": "PAGE_CONTENT",
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "177fc573-4fe8-404d-a6ec-5cb78d7db096",
+      "id": "c12d1596-c33c-4f6e-845f-5ef0f1e423d2",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,
-    "createFromTemplate": null,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": true
+    },
     "enforceUniqueTitles": false,
     "canChooseActiveVersion": true
   }

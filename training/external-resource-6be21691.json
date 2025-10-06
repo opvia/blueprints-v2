@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "1969becb-2934-4fe0-81f8-3a10b38b9f9e",
-  "title": "Long Answer Question",
+  "id": "6be21691-8f5b-4fff-9b08-411da8c54760",
+  "title": "External Resource",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -16,6 +16,13 @@
   },
   "sourceInfo": {},
   "fields": {
+    "Link": {
+      "id": "09ef4004-45a8-4f35-82da-7706f5174148",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
     "Course": {
       "id": "da9035f9-a0f0-49ec-b81b-2163fb7ede6c",
       "type": "FORMULA",
@@ -24,13 +31,6 @@
         "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
       },
       "dataType": null
-    },
-    "Question": {
-      "id": "3623db4a-f066-4d99-b205-170ae5d2f3c8",
-      "type": "STRING",
-      "value": null,
-      "config": {},
-      "dataType": "STRING"
     },
     "Course Name": {
       "id": "d72874bb-6aa3-4c05-bc60-3b1743686626",
@@ -42,9 +42,9 @@
       "dataType": null
     },
     "Module Type": {
-      "id": "444aaa0f-1011-450a-b7d6-4f21849a39e5",
+      "id": "0225d398-6122-4004-baf7-541074164a12",
       "type": "STRING",
-      "value": "Long Answer Question",
+      "value": "External Resource",
       "config": {},
       "dataType": "STRING"
     }
@@ -52,7 +52,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "b5250871-2203-4381-ba84-4f1023ee45db"
+      "id": "9768f58e-f0f5-44d4-8e4e-b21c13a3d841"
     }
   },
   "content": {
@@ -60,9 +60,9 @@
     "value": {
       "pageContent": [
         {
-          "id": "6fb05737-a5c5-469b-b2c3-e142fc4ba3ad",
+          "id": "f7c3e362-20ab-4740-bb55-84efb2744947",
           "type": "field",
-          "fieldId": "3623db4a-f066-4d99-b205-170ae5d2f3c8",
+          "fieldId": "09ef4004-45a8-4f35-82da-7706f5174148",
           "children": [
             {
               "text": ""
@@ -70,7 +70,7 @@
           ]
         },
         {
-          "id": "19283f90-f3ed-4c4e-99bd-24b7dfcfa7a3",
+          "id": "b810427f-58be-4935-bae6-0b1084b351ef",
           "type": "p",
           "children": [
             {
@@ -83,6 +83,6 @@
   },
   "instanceConfig": {
     "strictMode": false,
-    "computedTitle": "@d72874bb-6aa3-4c05-bc60-3b1743686626 - LAQ#@TEMPLATE_INDEX"
+    "computedTitle": "@d72874bb-6aa3-4c05-bc60-3b1743686626 - ERR#@TEMPLATE_INDEX"
   }
 }

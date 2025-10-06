@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "71dbc4ea-1731-4c6c-9913-c21f08bc7d95",
+  "id": "68de7686-dd30-416a-845e-9bdef33a8f96",
   "title": "Setup Training",
   "status": "EDITABLE",
   "version": null,
@@ -16,7 +16,7 @@
   },
   "sourceInfo": {
     "template": {
-      "id": "177fc573-4fe8-404d-a6ec-5cb78d7db096",
+      "id": "ad8d3c88-6bf6-42d4-99cf-70c9b386460b",
       "version": "1"
     }
   },
@@ -24,7 +24,7 @@
   "kind": "INSTANCE",
   "type": {
     "ref": {
-      "id": "c3ce6a64-0fb7-43cd-b1c4-00144faa290b"
+      "id": "ccc7430d-a28c-44d8-8ec9-59c63ac74ec6"
     }
   },
   "content": {

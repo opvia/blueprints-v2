@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "4abd8319-a372-455f-af32-335487dc70df",
+  "id": "69df6470-22e5-4f1f-b31a-e2daa0e8e0d2",
   "title": "Training Course",
   "status": "EDITABLE",
   "version": null,
@@ -30,7 +30,7 @@
       "config": {
         "typeOrTemplateRef": {
           "ref": {
-            "id": "b5250871-2203-4381-ba84-4f1023ee45db"
+            "id": "9768f58e-f0f5-44d4-8e4e-b21c13a3d841"
           }
         }
       },
@@ -94,9 +94,18 @@
     "Requires Sign off?": {
       "id": "6b0fff0e-7d1f-4681-9734-e59c5abaa150",
       "type": "BOOLEAN",
-      "value": true,
+      "value": false,
       "config": {},
       "dataType": "BOOLEAN"
+    },
+    "Training Documents": {
+      "id": "d52ee87b-cf64-4312-ac28-020c8ae69725",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
     },
     "Controlled Procedures": {
       "id": "676cde56-d852-40c3-9d84-236853f8737a",
@@ -131,7 +140,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "fead241e-7006-4cf9-ba4c-a4122dcf1a28"
+      "id": "9ac036e3-d1d3-45f8-aa75-93873ad8796e"
     }
   },
   "content": {
@@ -143,7 +152,7 @@
           "type": "h3",
           "children": [
             {
-              "text": "1. Describe the procedures or users this training is for:"
+              "text": "1. Describe the procedures or users this course is for:"
             }
           ]
         },
@@ -156,6 +165,38 @@
               "text": ""
             }
           ]
+        },
+        {
+          "id": "8826f9df-d3dd-472c-aefe-bb7a0379ab74",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2c97e1c6-bb49-4373-8949-303edc27a68f",
+          "type": "h3",
+          "children": [
+            {
+              "text": "2. (Optional) Select the documents to read before completing the course:"
+            }
+          ],
+          "listRestart": 2
+        },
+        {
+          "id": "6c3323c7-a44b-4132-b401-b75f599267b9",
+          "type": "field",
+          "fieldId": "d52ee87b-cf64-4312-ac28-020c8ae69725",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
         },
         {
           "id": "ed09d761-a067-4ca3-b653-d0648451d850",
@@ -171,7 +212,7 @@
           "type": "h3",
           "children": [
             {
-              "text": "2. (Optional) Select controlled procedures. After completing the course, trainees will be able to execute these procedures."
+              "text": "3. (Optional) Select controlled procedures. After completing the course, trainees will be able to execute these procedures:"
             }
           ]
         },
@@ -202,7 +243,7 @@
           "type": "h3",
           "children": [
             {
-              "text": "3. Set the course modules and approval requirements"
+              "text": "4. Set the course modules and approval requirements"
             }
           ],
           "listRestart": 3

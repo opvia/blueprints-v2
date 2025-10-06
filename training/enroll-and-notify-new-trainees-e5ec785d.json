@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "32c80dbf-3c4b-43b7-b923-6801599995f1",
+  "id": "e5ec785d-554e-42b0-ac18-12df3a388170",
   "title": "Enroll and notify new trainees",
   "status": "EDITABLE",
   "version": null,
@@ -16,7 +16,7 @@
   },
   "sourceInfo": {
     "template": {
-      "id": "177fc573-4fe8-404d-a6ec-5cb78d7db096",
+      "id": "ad8d3c88-6bf6-42d4-99cf-70c9b386460b",
       "version": "1"
     }
   },
@@ -24,7 +24,7 @@
   "kind": "INSTANCE",
   "type": {
     "ref": {
-      "id": "c3ce6a64-0fb7-43cd-b1c4-00144faa290b"
+      "id": "ccc7430d-a28c-44d8-8ec9-59c63ac74ec6"
     }
   },
   "content": {

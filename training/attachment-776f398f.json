@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "f1dd2a39-4b04-4b8c-82a2-abf610094da9",
+  "id": "776f398f-8dbe-45c9-a2ae-887e9c0d36e6",
   "title": "Attachment",
   "status": "EDITABLE",
   "version": null,
@@ -38,7 +38,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "9b4098cc-64bd-4355-8968-db1f5138b71c"
+      "id": "b4405e5a-fcfe-4eeb-bee9-f300381e12f3"
     }
   },
   "content": {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "b711d9a7-dcb9-4802-998f-adbb59404a46",
+  "id": "fb3f886d-082f-4b95-aa85-82f3571f7cc7",
   "title": "Training Plan",
   "status": "EDITABLE",
   "version": null,
@@ -21,8 +21,8 @@
       "type": "SCRIPT",
       "value": [
         {
-          "id": "32c80dbf-3c4b-43b7-b923-6801599995f1",
-          "version": "1.6"
+          "id": "e5ec785d-554e-42b0-ac18-12df3a388170",
+          "version": "1"
         }
       ],
       "config": {
@@ -85,7 +85,7 @@
                 "or": [
                   {
                     "value": [
-                      "4abd8319-a372-455f-af32-335487dc70df"
+                      "69df6470-22e5-4f1f-b31a-e2daa0e8e0d2"
                     ],
                     "filter": "template",
                     "operator": "in"
@@ -142,6 +142,16 @@
       "type": "USER",
       "value": null,
       "config": {
+        "allowMultiple": true,
+        "allowAllOrgUsers": true
+      },
+      "dataType": "ROLE"
+    },
+    "Trainers": {
+      "id": "6f424443-cb99-40c6-bf7d-22b4dca92490",
+      "type": "USER",
+      "value": null,
+      "config": {
         "allowMultiple": true
       },
       "dataType": "ROLE"
@@ -159,7 +169,7 @@
       "value": null,
       "config": {
         "typeOrTemplateRef": {
-          "id": "d69f9d72-b133-40d8-9515-265c3d977acf",
+          "id": "c96c8a23-a128-4235-a3d0-72e5833e1f84",
           "placeholderValue": "activeVersion"
         }
       },
@@ -179,7 +189,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "eb53bc65-5f71-4b51-9f3a-aba831f1dda5"
+      "id": "b360a309-95d5-4e8d-8552-31c4e16dcecd"
     }
   },
   "content": {
@@ -209,6 +219,15 @@
           "id": "12da144f-c303-4cb9-84d6-c106422c131f",
           "type": "field",
           "fieldId": "e54904db-fa90-4a5b-afb0-a2906b06d8e5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1cb03d3d-391a-4710-a84a-59baedf19b02",
+          "type": "p",
           "children": [
             {
               "text": ""
@@ -279,6 +298,26 @@
           "id": "6c2c4613-3ec0-4c7f-a476-2b9d33044d0b",
           "type": "field",
           "fieldId": "07a6309b-2999-4d39-b6d5-00f8b01490a8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2317ecaf-dee4-4e91-a856-993bd1904566",
+          "type": "p",
+          "children": [
+            {
+              "text": "(optional) Select the trainers to notify and review passing course enrollments (if empty, all training managers can approve):"
+            }
+          ],
+          "listRestart": 3
+        },
+        {
+          "id": "0f37ba12-c665-4bd4-a389-accabe94240a",
+          "type": "field",
+          "fieldId": "6f424443-cb99-40c6-bf7d-22b4dca92490",
           "children": [
             {
               "text": ""

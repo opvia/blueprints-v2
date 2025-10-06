@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "08170440-46d7-4213-9d2c-1d2b4e8d75d2",
-  "title": "Course Attempt",
+  "id": "52dbd7e0-e56f-4b57-853f-aa5c39fc0d3e",
+  "title": "Module Attempt",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -17,12 +17,12 @@
   "sourceInfo": {},
   "fields": {},
   "kind": "TYPE",
-  "icon": "build",
+  "icon": "grid-view",
   "contentType": "PAGE_CONTENT",
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "c440ac4f-30e3-4a2a-b58a-618f86d4596b",
+      "id": "83e88e34-aedd-4247-9ed3-fc953ee2491a",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,

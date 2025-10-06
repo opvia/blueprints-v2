@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "4f97d3d7-9dcc-4a18-81f4-ff0c20e57d18",
+  "id": "c12d1596-c33c-4f6e-845f-5ef0f1e423d2",
   "title": "Training Instructions",
   "status": "EDITABLE",
   "version": null,
@@ -21,8 +21,8 @@
       "type": "SCRIPT",
       "value": [
         {
-          "id": "71dbc4ea-1731-4c6c-9913-c21f08bc7d95",
-          "version": "1.1"
+          "id": "68de7686-dd30-416a-845e-9bdef33a8f96",
+          "version": "1"
         }
       ],
       "config": {
@@ -37,7 +37,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "fead241e-7006-4cf9-ba4c-a4122dcf1a28"
+      "id": "9ac036e3-d1d3-45f8-aa75-93873ad8796e"
     }
   },
   "content": {
@@ -67,7 +67,7 @@
           "type": "p",
           "children": [
             {
-              "text": "1. Run the setup script. This will give your training quiz entity access to this system"
+              "text": "1. Run the setup script. This will give your training app access to this system and migrate existing Seal training data."
             }
           ]
         },

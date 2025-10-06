@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "1d2029be-f200-4a08-af0c-ef46c1c875a9",
+  "id": "d2c58c36-91b4-4094-bb75-11ea7157eef2",
   "title": "Multiple Choice Question",
   "status": "EDITABLE",
   "version": null,
@@ -69,7 +69,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "b5250871-2203-4381-ba84-4f1023ee45db"
+      "id": "9768f58e-f0f5-44d4-8e4e-b21c13a3d841"
     }
   },
   "content": {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "03824d7d-512e-47f0-950d-e71a50fc31db",
-  "title": "Seal Required Reading",
+  "id": "60b1f2c6-79cf-4b1e-a01a-beffadf7d8e8",
+  "title": "Long Answer Question",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -25,6 +25,13 @@
       },
       "dataType": null
     },
+    "Question": {
+      "id": "3623db4a-f066-4d99-b205-170ae5d2f3c8",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
     "Course Name": {
       "id": "d72874bb-6aa3-4c05-bc60-3b1743686626",
       "type": "FORMULA",
@@ -35,46 +42,17 @@
       "dataType": null
     },
     "Module Type": {
-      "id": "e93cbddf-96de-475e-94b0-f4074a9d256f",
+      "id": "444aaa0f-1011-450a-b7d6-4f21849a39e5",
       "type": "STRING",
-      "value": "Seal Required Reading",
+      "value": "Long Answer Question",
       "config": {},
       "dataType": "STRING"
-    },
-    "Required Reading": {
-      "id": "213ac9a8-b56d-4d8b-82ab-5f6216fc7b9d",
-      "type": "REFERENCE",
-      "value": null,
-      "config": {
-        "displayMode": "filePreview",
-        "searchConfig": {
-          "filters": {
-            "and": [
-              {
-                "or": [
-                  {
-                    "value": [
-                      "TEMPLATE",
-                      "INSTANCE"
-                    ],
-                    "filter": "kind",
-                    "operator": "in"
-                  }
-                ]
-              }
-            ]
-          },
-          "searchType": "LIVE"
-        },
-        "allowMultiple": false
-      },
-      "dataType": "ENTITY"
     }
   },
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "b5250871-2203-4381-ba84-4f1023ee45db"
+      "id": "9768f58e-f0f5-44d4-8e4e-b21c13a3d841"
     }
   },
   "content": {
@@ -82,20 +60,17 @@
     "value": {
       "pageContent": [
         {
-          "id": "e47645f7-bbce-4e3f-9ff7-eb65d2bc03c4",
+          "id": "6fb05737-a5c5-469b-b2c3-e142fc4ba3ad",
           "type": "field",
-          "fieldId": "213ac9a8-b56d-4d8b-82ab-5f6216fc7b9d",
+          "fieldId": "3623db4a-f066-4d99-b205-170ae5d2f3c8",
           "children": [
             {
               "text": ""
             }
-          ],
-          "entityPreview": {
-            "isPreview": false
-          }
+          ]
         },
         {
-          "id": "b7a618af-1991-4ca8-8b91-8b465299c758",
+          "id": "19283f90-f3ed-4c4e-99bd-24b7dfcfa7a3",
           "type": "p",
           "children": [
             {
@@ -108,6 +83,6 @@
   },
   "instanceConfig": {
     "strictMode": false,
-    "computedTitle": "@d72874bb-6aa3-4c05-bc60-3b1743686626 - SRR#@TEMPLATE_INDEX"
+    "computedTitle": "@d72874bb-6aa3-4c05-bc60-3b1743686626 - LAQ#@TEMPLATE_INDEX"
   }
 }

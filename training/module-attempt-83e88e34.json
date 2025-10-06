@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "f5f25ba2-7456-4560-aacc-74b00f247b5e",
+  "id": "83e88e34-aedd-4247-9ed3-fc953ee2491a",
   "title": "Module Attempt",
   "status": "EDITABLE",
   "version": null,
@@ -94,7 +94,7 @@
       "value": null,
       "config": {
         "typeOrTemplateRef": {
-          "id": "f1dd2a39-4b04-4b8c-82a2-abf610094da9",
+          "id": "776f398f-8dbe-45c9-a2ae-887e9c0d36e6",
           "placeholderValue": "activeVersion"
         }
       },
@@ -131,7 +131,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "53a29dd3-cbd5-44e3-95d2-00937729b678"
+      "id": "52dbd7e0-e56f-4b57-853f-aa5c39fc0d3e"
     }
   },
   "content": {

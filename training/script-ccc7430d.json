@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "eb53bc65-5f71-4b51-9f3a-aba831f1dda5",
-  "title": "Training Plan",
+  "id": "ccc7430d-a28c-44d8-8ec9-59c63ac74ec6",
+  "title": "Script",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -17,18 +17,16 @@
   "sourceInfo": {},
   "fields": {},
   "kind": "TYPE",
-  "icon": "document",
-  "contentType": "PAGE_CONTENT",
+  "icon": "code",
+  "contentType": "SCRIPT_CODE",
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "b711d9a7-dcb9-4802-998f-adbb59404a46",
+      "id": "ad8d3c88-6bf6-42d4-99cf-70c9b386460b",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,
-    "createFromTemplate": {
-      "onlyCreateFromActiveVersion": false
-    },
+    "createFromTemplate": null,
     "enforceUniqueTitles": false,
     "canChooseActiveVersion": true
   }

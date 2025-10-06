@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "c440ac4f-30e3-4a2a-b58a-618f86d4596b",
+  "id": "70ec9a77-d91a-44c3-a141-4e3dd208a11a",
   "title": "Course Attempt",
   "status": "EDITABLE",
   "version": null,
@@ -66,7 +66,7 @@
       "value": null,
       "config": {
         "typeOrTemplateRef": {
-          "id": "f5f25ba2-7456-4560-aacc-74b00f247b5e",
+          "id": "83e88e34-aedd-4247-9ed3-fc953ee2491a",
           "placeholderValue": "activeVersion"
         }
       },
@@ -85,7 +85,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "08170440-46d7-4213-9d2c-1d2b4e8d75d2"
+      "id": "1f6d2eda-5394-41a4-905b-0bc1eb3236ea"
     }
   },
   "content": {
