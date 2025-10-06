@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "1a3cecc2-9e32-4e82-af49-c5801eed17e3",
+  "title": "Blood Volume Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Lego": {
+      "id": "5590cb22-a514-4f44-bd12-0ecc091251d6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Assay": {
+      "id": "50701359-d43b-411c-b482-7eff9002c70e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lego\"), \"Assay\")"
+      },
+      "dataType": null
+    },
+    "Sample": {
+      "id": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Sample"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Total Volume": {
+      "id": "bf421c89-8433-4615-81b3-9b64fb8f299d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "PBS volume (mL)": {
+      "id": "e6e6f738-f5f6-45f4-9e25-9242d192bc92",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Blood volume (mL)": {
+      "id": "a88146d6-5089-40ca-b435-040eac0a6a2b",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Lymphoprep volume (mL)": {
+      "id": "0df1ac1f-81dd-4fc1-9a5a-dea38e9dff14",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Total nº of Lymphoprep tubes": {
+      "id": "5337aad5-938d-41cb-b3e7-7d15aa328caf",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9d712df2-d818-4f16-83bd-4c614749b556"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "30d20720-7d03-4da0-8cdc-e4fdf3c59286",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "680a8791-0484-4c91-9543-3c946cf33ce5",
+          "type": "field",
+          "fieldId": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "b161ee11-806a-4672-8637-eac5cf744c46",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7aa3d70c-8bf7-4be2-a4c8-d65e49b6f2e4",
+          "type": "field",
+          "fieldId": "bf421c89-8433-4615-81b3-9b64fb8f299d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "160fecc4-e1e2-40f7-9568-d44b89815baa",
+          "type": "field",
+          "fieldId": "a88146d6-5089-40ca-b435-040eac0a6a2b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "91c30cba-18ed-4619-acb9-58d6fec23238",
+          "type": "field",
+          "fieldId": "e6e6f738-f5f6-45f4-9e25-9242d192bc92",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a1f7d029-557d-41b4-853b-6673653dd115",
+          "type": "field",
+          "fieldId": "0df1ac1f-81dd-4fc1-9a5a-dea38e9dff14",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a49537e6-6019-4293-ad8b-3e1fae7b6389",
+          "type": "field",
+          "fieldId": "5337aad5-938d-41cb-b3e7-7d15aa328caf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ca1a84b4-05cc-4b0d-9d20-c616907aaa8e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Blood Volume - @cda3eb29-8fcd-4513-a3ae-d440c3a41ea2 "
+  }
+}

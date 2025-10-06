@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "05d1f797-af8a-4276-8d82-f884e1f125db",
+  "title": "Plasma Generation Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Lego": {
+      "id": "5590cb22-a514-4f44-bd12-0ecc091251d6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Assay": {
+      "id": "50701359-d43b-411c-b482-7eff9002c70e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lego\"), \"Assay\")"
+      },
+      "dataType": null
+    },
+    "Sample": {
+      "id": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Sample"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Plasma Samples": {
+      "id": "ff1f84a0-3442-49ed-8f87-30cd7516ec46",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "6a273c2d-f4e4-4993-a924-2f5861afbb29"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Box",
+              "config": "Box"
+            },
+            {
+              "name": "Tube ID",
+              "config": "Tube ID"
+            },
+            {
+              "name": "Position",
+              "config": "Position"
+            },
+            {
+              "name": "COHORT ID",
+              "config": "COHORT ID"
+            },
+            {
+              "name": "Volume (mL)",
+              "config": "Volume (mL)"
+            },
+            {
+              "name": "Add to Queue?",
+              "config": "Add to Queue?"
+            },
+            {
+              "name": "Sampling date",
+              "config": "Sampling date"
+            },
+            {
+              "name": "Inbound Sample",
+              "config": "Inbound Sample"
+            },
+            {
+              "name": "Type of Sample",
+              "config": "Type of Sample"
+            },
+            {
+              "name": "Assay performed",
+              "config": "Assay performed"
+            },
+            {
+              "name": "Assays requested",
+              "config": "Assays requested"
+            },
+            {
+              "name": "Sample Unique ID",
+              "config": "Sample Unique ID"
+            },
+            {
+              "name": "External Donor ID",
+              "config": "External Donor ID"
+            },
+            {
+              "name": "Cell viability (%)",
+              "config": "Cell viability (%)"
+            },
+            {
+              "name": "External Sample ID",
+              "config": "External Sample ID"
+            },
+            {
+              "name": "Storage temperature",
+              "config": "Storage temperature"
+            },
+            {
+              "name": "Cryopreservation media",
+              "config": "Cryopreservation media"
+            },
+            {
+              "name": "Position Status Updater",
+              "config": "Position Status Updater"
+            },
+            {
+              "name": "Expected cell count (mln)",
+              "config": "Expected cell count (mln)"
+            },
+            {
+              "name": "Position Status Updated to Full?",
+              "config": "Position Status Updated to Full?"
+            },
+            {
+              "name": "Cell concentration (mln cells/mL)",
+              "config": "Cell concentration (mln cells/mL)"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Total Volume (mL)": {
+      "id": "2de21cbc-85fc-4df0-a42b-978d44205486",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Nº of plasma aliquots\") * lookup(__self, \"Volume of plasma aliquots (mL)\")"
+      },
+      "dataType": null
+    },
+    "Nº of plasma aliquots": {
+      "id": "79a315d6-741b-4b6d-ba53-cdc5605fa1cd",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Plasma Sample Generator": {
+      "id": "8fb38e94-aead-4889-94b0-8b5d5bd2331d",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "4a55570b-4909-4d90-92d6-3c904bd92e7b",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Generate Plasma Samples"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Volume of plasma aliquots (mL)": {
+      "id": "f9dd72ff-f72a-4f6b-a2d9-2f2d212b1996",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9d712df2-d818-4f16-83bd-4c614749b556"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "e8feed4d-95bc-4e19-98c7-0193cbc0aeee",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e5038ab3-b0b7-4021-93c5-7f8cc1c20ea4",
+          "type": "field",
+          "fieldId": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f44d3763-d7f8-48fe-a843-34ec6a403001",
+          "type": "field",
+          "fieldId": "79a315d6-741b-4b6d-ba53-cdc5605fa1cd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ab855185-e8a2-4d74-97ef-396c72f2302b",
+          "type": "field",
+          "fieldId": "f9dd72ff-f72a-4f6b-a2d9-2f2d212b1996",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a69ad739-54fe-4319-b35b-76184c6afc51",
+          "type": "field",
+          "fieldId": "2de21cbc-85fc-4df0-a42b-978d44205486",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8d32c3fe-27ff-421e-908c-52330c5aad14",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "921afc58-330b-472d-a7e9-f138496fbef1",
+          "type": "field",
+          "fieldId": "8fb38e94-aead-4889-94b0-8b5d5bd2331d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "705c5d82-06ad-4ba7-af7f-7aff6a33c096",
+          "type": "field",
+          "fieldId": "ff1f84a0-3442-49ed-8f87-30cd7516ec46",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "08443147-ac9b-4c8b-8616-332e7ef88151",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Plasma Generation - @cda3eb29-8fcd-4513-a3ae-d440c3a41ea2 "
+  }
+}

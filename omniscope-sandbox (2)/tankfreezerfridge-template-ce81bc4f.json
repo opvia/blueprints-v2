@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ce81bc4f-f0d9-477a-bf10-b45269af51c9",
+  "title": "Tank/Freezer/Fridge Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Room": {
+      "id": "fc93cfc8-f111-4b82-8b9f-e736ed7a5500",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "template": [
+              "b2472df9-fab8-40a0-90fc-e53109386f9b"
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "Tank/Freezer/Fridges",
+              "config": "Tank/Freezer/Fridges"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Temperature": {
+      "id": "c4701bef-6507-412f-b4aa-375c79b9045b",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "LN",
+          "-80ºC",
+          "-20ºC",
+          "4ºC",
+          "RT"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Racks/Shelfs/Drawers": {
+      "id": "b92e8f19-576b-4524-8fd9-82f00d6bfc09",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "type": [
+            "Rack/Shelf/Drawer"
+          ],
+          "fieldValue": [
+            {
+              "name": "Tank/Fridge/Freezer",
+              "value": "ref(lookup(__self, \"ID\"))",
+              "operator": "="
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Tank/Fridge/Freezer",
+            "config": "Tank/Fridge/Freezer"
+          }
+        ],
+        "hiddenDefaultColumns": [
+          "WORK_INSTRUCTIONS_PROGRESS",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "98e65a2d-b1d3-45ce-9d02-4dd503cd3ffd"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "4b1876c6-9465-4f72-ae97-e3c0bdf2374c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "45386b0c-5b5c-4ccc-b2c4-a0fc0dd4414c",
+          "type": "field",
+          "fieldId": "fc93cfc8-f111-4b82-8b9f-e736ed7a5500",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "89ba3655-49db-41c3-aa82-f53d6cdd0fe0",
+          "type": "field",
+          "fieldId": "c4701bef-6507-412f-b4aa-375c79b9045b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "adb6f13e-9103-400b-935f-ae3ef01c14f8",
+          "type": "field",
+          "fieldId": "b92e8f19-576b-4524-8fd9-82f00d6bfc09",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1edca965-9e50-4f79-843c-408d0765dac0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

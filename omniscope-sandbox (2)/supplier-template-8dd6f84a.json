@@ -1,0 +1,367 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "8dd6f84a-2e14-4fa2-8646-b36c0aafc4b0",
+  "title": "Supplier Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Role": {
+      "id": "bbd9b96c-23c4-47d6-943b-dfda1e79f3ce",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Notes": {
+      "id": "79129266-160d-494c-8e9e-5db845b1e8d0",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Phone": {
+      "id": "678344bc-7148-4501-8011-a11b44856ada",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Active": {
+      "id": "aaf0b6c2-68b8-4802-89d5-ece5ea21db52",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Address": {
+      "id": "44c61c64-5172-47ec-910d-c519acbd2267",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Contact": {
+      "id": "4ac3a3bc-9d01-4752-b780-f350dc98129f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Category": {
+      "id": "f69b7645-b8b8-432d-96f7-1527ef3f4ac9",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Mobile Phone": {
+      "id": "1f3350e5-dddc-4c77-a6d6-fdda2fb1e63b",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Email Address": {
+      "id": "5e949c21-c401-496b-b7cf-aa88a292e2ae",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS España user": {
+      "id": "a00702dc-d955-4e8f-942f-a127e8c18f07",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS Limited User": {
+      "id": "8aa079d5-2939-44dc-97fa-b42668123399",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS España password": {
+      "id": "3f2d3df1-389d-439f-b909-24951df1ab17",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS Limited password": {
+      "id": "33d0e3dc-c9c1-493d-8741-cd3fc859d87c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS España account Nº": {
+      "id": "295725bc-3c59-4789-b6a6-3733a2b16c69",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "OS Limited account Nº": {
+      "id": "635f7c60-3df6-4512-9d68-e5afa50b8815",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fc09cd72-99b8-41e8-869f-4581cfd194c1"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "47ac3c3b-4574-437d-9eb1-adf5139e93bd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ffd6cacd-ae67-4270-a2b2-66e8c47458b1",
+          "type": "field",
+          "fieldId": "f69b7645-b8b8-432d-96f7-1527ef3f4ac9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a4a99a95-b4f4-4c68-a7fb-a7c6657300ae",
+          "type": "field",
+          "fieldId": "44c61c64-5172-47ec-910d-c519acbd2267",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "96363c51-da27-461b-93e6-9c6e83c41e10",
+          "type": "field",
+          "fieldId": "aaf0b6c2-68b8-4802-89d5-ece5ea21db52",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b2cd4e70-5fa4-490f-bd8f-f6ea193df3f8",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "e65a7b83-2bf5-4f3e-ad42-0a684ff319e0",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "1af64040-593b-4f18-bc5a-44ca6fb11770",
+                  "type": "h3",
+                  "children": [
+                    {
+                      "text": "Contact Details"
+                    }
+                  ]
+                },
+                {
+                  "id": "7ca28a24-b4c1-49e4-8dbf-4e6766f7ad77",
+                  "type": "field",
+                  "fieldId": "4ac3a3bc-9d01-4752-b780-f350dc98129f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ef81d972-28c7-4104-90b9-dffb26e6506a",
+                  "type": "field",
+                  "fieldId": "bbd9b96c-23c4-47d6-943b-dfda1e79f3ce",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "492d4d6f-9dba-4d8c-96df-b94bce2d91de",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4d142a48-0d97-4322-a1d1-424ff2ebdefb",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "e724b220-4252-48e7-a045-269e691e193c",
+                  "type": "field",
+                  "fieldId": "5e949c21-c401-496b-b7cf-aa88a292e2ae",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "7d05b452-d37e-4ce2-a3e9-b9d8ea635058",
+                  "type": "field",
+                  "fieldId": "678344bc-7148-4501-8011-a11b44856ada",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "b739ef88-9e0d-4003-b5b6-3a16091bc138",
+                  "type": "field",
+                  "fieldId": "1f3350e5-dddc-4c77-a6d6-fdda2fb1e63b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a206cfca-39bf-46ff-8d83-c4c7d42be65e",
+          "type": "field",
+          "fieldId": "79129266-160d-494c-8e9e-5db845b1e8d0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d548d6e7-4b3c-441a-8e4b-e432e6d25d60",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "4a19068f-a817-497c-ad34-184d8ba29455",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "211444ae-b1b6-4b8e-bc67-d9252cfb92be",
+                  "type": "field",
+                  "fieldId": "635f7c60-3df6-4512-9d68-e5afa50b8815",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "044ce8f0-082c-4f40-b7f3-c7d2301596a9",
+                  "type": "field",
+                  "fieldId": "8aa079d5-2939-44dc-97fa-b42668123399",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "078f6733-7dd1-4ee8-b2f4-5f879e57994b",
+                  "type": "field",
+                  "fieldId": "33d0e3dc-c9c1-493d-8741-cd3fc859d87c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "efa1a81b-f493-43c1-a438-4169469d55ba",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "fbae02e0-2e06-4d1e-828d-0a68e33076d0",
+                  "type": "field",
+                  "fieldId": "295725bc-3c59-4789-b6a6-3733a2b16c69",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "75bad75c-833c-4130-b960-26273a89e609",
+                  "type": "field",
+                  "fieldId": "a00702dc-d955-4e8f-942f-a127e8c18f07",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d29281d7-b4c7-4d87-880e-9543b7390b89",
+                  "type": "field",
+                  "fieldId": "3f2d3df1-389d-439f-b909-24951df1ab17",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d4fe26a9-4c74-410f-bd47-8ac7ffa1f16a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

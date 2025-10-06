@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "321ed8ea-aadd-456d-8829-e4b43ceaaa8e",
+  "title": "Thawing Data Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Lego": {
+      "id": "5590cb22-a514-4f44-bd12-0ecc091251d6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Assay": {
+      "id": "50701359-d43b-411c-b482-7eff9002c70e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lego\") , \"Assay\")"
+      },
+      "dataType": null
+    },
+    "Sample": {
+      "id": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "kind": [
+              "INSTANCE"
+            ],
+            "type": [
+              "Sample"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Nº vials to thaw": {
+      "id": "db3c8d2a-047d-474e-85ac-c2a25186de77",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "Rounded"
+      },
+      "dataType": "NUMBER"
+    },
+    "Nº of cells/vial (M)": {
+      "id": "dbaa058b-6185-45d4-bc15-14c5b86a91ae",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    },
+    "Volume of RPMI + 10% FBS (mL)": {
+      "id": "2fed5732-30e8-4bf8-b4c2-a60cf44c9631",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    },
+    "Expected nº cells (all vials)": {
+      "id": "6984fac7-5518-4428-b66e-7e32d67d0b6e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Nº of cells/vial (M)\") * lookup(__self, \"Nº vials to thaw\")"
+      },
+      "dataType": null
+    },
+    "Cryopreserved sample volume (mL)": {
+      "id": "43edeb5d-dc9e-4dd1-a375-bd46485567a9",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.00"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9d712df2-d818-4f16-83bd-4c614749b556"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "dad41543-7c7c-4a3a-81d5-bb812a4bfc31",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b1f84281-abf0-4dd9-ac2e-514602e6a912",
+          "type": "field",
+          "fieldId": "cda3eb29-8fcd-4513-a3ae-d440c3a41ea2",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "5abacaf9-1a01-4f04-b6a8-ddfd3cac88ff",
+          "type": "field",
+          "fieldId": "dbaa058b-6185-45d4-bc15-14c5b86a91ae",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "000928b2-0062-4f86-b0b4-5e7210e37508",
+          "type": "field",
+          "fieldId": "43edeb5d-dc9e-4dd1-a375-bd46485567a9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f141bddf-b293-470a-92e5-54524a883d29",
+          "type": "field",
+          "fieldId": "db3c8d2a-047d-474e-85ac-c2a25186de77",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "04000c1e-bda6-4246-b6ee-c22d24b61bd5",
+          "type": "field",
+          "fieldId": "6984fac7-5518-4428-b66e-7e32d67d0b6e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bdb22dd4-7102-4098-b117-b18dee62bd61",
+          "type": "field",
+          "fieldId": "2fed5732-30e8-4bf8-b4c2-a60cf44c9631",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "10d6c2fd-8e59-4a48-8f36-61ac54a8abd8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@CREATED_FROM - Data - @cda3eb29-8fcd-4513-a3ae-d440c3a41ea2 "
+  }
+}
