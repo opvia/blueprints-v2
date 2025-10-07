@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "52dbd7e0-e56f-4b57-853f-aa5c39fc0d3e",
-  "title": "Module Attempt",
+  "id": "966505b7-ecc4-46b0-aa69-a1ac08515958",
+  "title": "Question Attempt",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -22,12 +22,12 @@
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "83e88e34-aedd-4247-9ed3-fc953ee2491a",
+      "id": "f0127159-ef52-4b35-b05b-0e08fce07c61",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,
     "createFromTemplate": {
-      "onlyCreateFromActiveVersion": true
+      "onlyCreateFromActiveVersion": false
     },
     "enforceUniqueTitles": false,
     "canChooseActiveVersion": true

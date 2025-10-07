@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "776f398f-8dbe-45c9-a2ae-887e9c0d36e6",
-  "title": "Attachment",
+  "id": "68742751-01c7-4e75-b070-b8e0acef8d78",
+  "title": "Training File",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -21,16 +21,16 @@
       "type": "FORMULA",
       "value": null,
       "config": {
-        "formulaExpression": "lookup( lookup(__self, \"Module Attempt\") , 'Course Name')"
+        "formulaExpression": "lookup( lookup(__self, \"Question Attempt\") , 'Course Name')"
       },
       "dataType": null
     },
-    "Module Attempt": {
+    "Question Attempt": {
       "id": "06e08f13-8632-468c-b1ca-2b4f4df418d5",
       "type": "FORMULA",
       "value": null,
       "config": {
-        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
       },
       "dataType": null
     }
@@ -38,7 +38,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "b4405e5a-fcfe-4eeb-bee9-f300381e12f3"
+      "id": "0da7ad00-2342-4d88-a57b-fe9fdb2865aa"
     }
   },
   "content": {
@@ -49,6 +49,6 @@
   },
   "instanceConfig": {
     "strictMode": false,
-    "computedTitle": "@dab2e73b-4277-4c08-8670-a40e367ffb07 Attachment #@TEMPLATE_INDEX"
+    "computedTitle": "@dab2e73b-4277-4c08-8670-a40e367ffb07 File #@TEMPLATE_INDEX"
   }
 }

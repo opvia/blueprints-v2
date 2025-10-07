@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "9ac036e3-d1d3-45f8-aa75-93873ad8796e",
-  "title": "Training",
+  "id": "ee85b9ba-3e35-4043-a38f-80b216b9ec1b",
+  "title": "Course Question",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -15,19 +15,41 @@
     "typeIndex": "0"
   },
   "sourceInfo": {},
-  "fields": {},
+  "fields": {
+    "Course": {
+      "id": "83804cd6-b972-4c6d-a731-40258985a36f",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    },
+    "Course Name": {
+      "id": "c252ac4d-a39b-47b5-9056-8f76d43e7c36",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    },
+    "Question Type": {
+      "id": "8c278cd1-75c3-468a-a079-651dd9b2f1f8",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
   "kind": "TYPE",
-  "icon": "document",
+  "icon": "grid-view",
   "contentType": "PAGE_CONTENT",
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "c12d1596-c33c-4f6e-845f-5ef0f1e423d2",
+      "id": "cf6e2cc2-7e1b-4aad-b5c5-b99ffddb81ca",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,
     "createFromTemplate": {
-      "onlyCreateFromActiveVersion": true
+      "onlyCreateFromActiveVersion": false
     },
     "enforceUniqueTitles": false,
     "canChooseActiveVersion": true

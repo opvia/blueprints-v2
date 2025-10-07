@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "b2a8743b-b160-48c4-bd0b-44f5ca899809",
-  "title": "File Upload",
+  "id": "536692db-053c-4cf9-a578-b89393525035",
+  "title": "Task",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -17,7 +17,7 @@
   "sourceInfo": {},
   "fields": {
     "Course": {
-      "id": "0f9e0e49-23c8-43a2-9d2c-30c185b32362",
+      "id": "da9035f9-a0f0-49ec-b81b-2163fb7ede6c",
       "type": "FORMULA",
       "value": null,
       "config": {
@@ -26,7 +26,7 @@
       "dataType": null
     },
     "Course Name": {
-      "id": "c376af1c-6f39-4e62-99ae-5d96f963dd8f",
+      "id": "d72874bb-6aa3-4c05-bc60-3b1743686626",
       "type": "FORMULA",
       "value": null,
       "config": {
@@ -34,17 +34,17 @@
       },
       "dataType": null
     },
-    "Description": {
-      "id": "42df0468-3ab5-476e-a420-6a1e45996d49",
+    "Instruction": {
+      "id": "09ef4004-45a8-4f35-82da-7706f5174148",
       "type": "STRING",
       "value": null,
       "config": {},
       "dataType": "STRING"
     },
-    "Module Type": {
-      "id": "c69b9d78-89d8-4af3-b264-3b28afb8c213",
+    "Question Type": {
+      "id": "759044ef-35a2-4101-ac7d-11aadd92c9da",
       "type": "STRING",
-      "value": "File Upload",
+      "value": "Task",
       "config": {},
       "dataType": "STRING"
     }
@@ -52,7 +52,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "9768f58e-f0f5-44d4-8e4e-b21c13a3d841"
+      "id": "ee85b9ba-3e35-4043-a38f-80b216b9ec1b"
     }
   },
   "content": {
@@ -60,9 +60,9 @@
     "value": {
       "pageContent": [
         {
-          "id": "c63750e6-e3d9-4b4f-8c28-3facef9706bd",
+          "id": "f7c3e362-20ab-4740-bb55-84efb2744947",
           "type": "field",
-          "fieldId": "42df0468-3ab5-476e-a420-6a1e45996d49",
+          "fieldId": "09ef4004-45a8-4f35-82da-7706f5174148",
           "children": [
             {
               "text": ""
@@ -70,7 +70,7 @@
           ]
         },
         {
-          "id": "e5c1e5a7-0c90-42e0-8867-d8588c948cfc",
+          "id": "b810427f-58be-4935-bae6-0b1084b351ef",
           "type": "p",
           "children": [
             {
@@ -83,6 +83,6 @@
   },
   "instanceConfig": {
     "strictMode": false,
-    "computedTitle": "@c376af1c-6f39-4e62-99ae-5d96f963dd8f - File#@TEMPLATE_INDEX"
+    "computedTitle": "@d72874bb-6aa3-4c05-bc60-3b1743686626 - TASK#@TEMPLATE_INDEX"
   }
 }

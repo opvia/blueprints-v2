@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "b4405e5a-fcfe-4eeb-bee9-f300381e12f3",
-  "title": "Attachment",
+  "id": "0da7ad00-2342-4d88-a57b-fe9fdb2865aa",
+  "title": "Training File",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -22,7 +22,7 @@
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "776f398f-8dbe-45c9-a2ae-887e9c0d36e6",
+      "id": "68742751-01c7-4e75-b070-b8e0acef8d78",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,

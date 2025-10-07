@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "c96c8a23-a128-4235-a3d0-72e5833e1f84",
+  "id": "a81d359b-c6d8-4d97-9a0b-6259825ed397",
   "title": "Course Enrollment",
   "status": "EDITABLE",
   "version": null,
@@ -29,7 +29,7 @@
                 "or": [
                   {
                     "value": [
-                      "69df6470-22e5-4f1f-b31a-e2daa0e8e0d2"
+                      "f24dba8b-d676-476a-bf18-d47a5dbf15e5"
                     ],
                     "filter": "template",
                     "operator": "in"
@@ -130,7 +130,7 @@
       "value": null,
       "config": {
         "typeOrTemplateRef": {
-          "id": "70ec9a77-d91a-44c3-a141-4e3dd208a11a",
+          "id": "5203b26b-a460-4361-a3b4-194ed4436d68",
           "placeholderValue": "activeVersion"
         }
       },
@@ -149,7 +149,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "b0bc339e-8697-4409-9982-f6d1006daf04"
+      "id": "a087413c-014c-4fdf-96c8-098ca2150b05"
     }
   },
   "content": {

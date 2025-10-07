@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "60b1f2c6-79cf-4b1e-a01a-beffadf7d8e8",
+  "id": "db1f3210-52e0-4d18-b142-e83611fcde1f",
   "title": "Long Answer Question",
   "status": "EDITABLE",
   "version": null,
@@ -41,8 +41,8 @@
       },
       "dataType": null
     },
-    "Module Type": {
-      "id": "444aaa0f-1011-450a-b7d6-4f21849a39e5",
+    "Question Type": {
+      "id": "23e80a24-1a25-4ea0-a83b-fee3806c9d0b",
       "type": "STRING",
       "value": "Long Answer Question",
       "config": {},
@@ -52,7 +52,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "9768f58e-f0f5-44d4-8e4e-b21c13a3d841"
+      "id": "ee85b9ba-3e35-4043-a38f-80b216b9ec1b"
     }
   },
   "content": {

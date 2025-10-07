@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "6be21691-8f5b-4fff-9b08-411da8c54760",
-  "title": "External Resource",
+  "id": "d55ce09e-2bde-485d-87ea-0c19ced27dcb",
+  "title": "Upload File",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -16,15 +16,8 @@
   },
   "sourceInfo": {},
   "fields": {
-    "Link": {
-      "id": "09ef4004-45a8-4f35-82da-7706f5174148",
-      "type": "STRING",
-      "value": null,
-      "config": {},
-      "dataType": "STRING"
-    },
     "Course": {
-      "id": "da9035f9-a0f0-49ec-b81b-2163fb7ede6c",
+      "id": "0f9e0e49-23c8-43a2-9d2c-30c185b32362",
       "type": "FORMULA",
       "value": null,
       "config": {
@@ -33,7 +26,7 @@
       "dataType": null
     },
     "Course Name": {
-      "id": "d72874bb-6aa3-4c05-bc60-3b1743686626",
+      "id": "c376af1c-6f39-4e62-99ae-5d96f963dd8f",
       "type": "FORMULA",
       "value": null,
       "config": {
@@ -41,10 +34,17 @@
       },
       "dataType": null
     },
-    "Module Type": {
-      "id": "0225d398-6122-4004-baf7-541074164a12",
+    "Instruction": {
+      "id": "42df0468-3ab5-476e-a420-6a1e45996d49",
       "type": "STRING",
-      "value": "External Resource",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Question Type": {
+      "id": "df2659b8-141b-4fab-a3a5-4d8a660137ea",
+      "type": "STRING",
+      "value": "Upload File",
       "config": {},
       "dataType": "STRING"
     }
@@ -52,7 +52,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "9768f58e-f0f5-44d4-8e4e-b21c13a3d841"
+      "id": "ee85b9ba-3e35-4043-a38f-80b216b9ec1b"
     }
   },
   "content": {
@@ -60,9 +60,9 @@
     "value": {
       "pageContent": [
         {
-          "id": "f7c3e362-20ab-4740-bb55-84efb2744947",
+          "id": "c63750e6-e3d9-4b4f-8c28-3facef9706bd",
           "type": "field",
-          "fieldId": "09ef4004-45a8-4f35-82da-7706f5174148",
+          "fieldId": "42df0468-3ab5-476e-a420-6a1e45996d49",
           "children": [
             {
               "text": ""
@@ -70,7 +70,7 @@
           ]
         },
         {
-          "id": "b810427f-58be-4935-bae6-0b1084b351ef",
+          "id": "e5c1e5a7-0c90-42e0-8867-d8588c948cfc",
           "type": "p",
           "children": [
             {
@@ -83,6 +83,6 @@
   },
   "instanceConfig": {
     "strictMode": false,
-    "computedTitle": "@d72874bb-6aa3-4c05-bc60-3b1743686626 - ERR#@TEMPLATE_INDEX"
+    "computedTitle": "@c376af1c-6f39-4e62-99ae-5d96f963dd8f - FILE#@TEMPLATE_INDEX"
   }
 }

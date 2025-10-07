@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "1f6d2eda-5394-41a4-905b-0bc1eb3236ea",
+  "id": "4389589a-eafe-47b3-845d-c399ee5c699a",
   "title": "Course Attempt",
   "status": "EDITABLE",
   "version": null,
@@ -22,12 +22,12 @@
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "70ec9a77-d91a-44c3-a141-4e3dd208a11a",
+      "id": "5203b26b-a460-4361-a3b4-194ed4436d68",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,
     "createFromTemplate": {
-      "onlyCreateFromActiveVersion": true
+      "onlyCreateFromActiveVersion": false
     },
     "enforceUniqueTitles": false,
     "canChooseActiveVersion": true

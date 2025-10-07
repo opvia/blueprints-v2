@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "d2c58c36-91b4-4094-bb75-11ea7157eef2",
+  "id": "cf6e2cc2-7e1b-4aad-b5c5-b99ffddb81ca",
   "title": "Multiple Choice Question",
   "status": "EDITABLE",
   "version": null,
@@ -41,8 +41,8 @@
       },
       "dataType": null
     },
-    "Module Type": {
-      "id": "753a6b8a-48de-4610-9156-84b1961117b3",
+    "Question Type": {
+      "id": "d93f7533-0ed4-4938-a226-c8b0b1cfe502",
       "type": "STRING",
       "value": "Multiple Choice Question",
       "config": {},
@@ -69,7 +69,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "9768f58e-f0f5-44d4-8e4e-b21c13a3d841"
+      "id": "ee85b9ba-3e35-4043-a38f-80b216b9ec1b"
     }
   },
   "content": {

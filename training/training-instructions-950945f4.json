@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "c12d1596-c33c-4f6e-845f-5ef0f1e423d2",
+  "id": "950945f4-c69d-4e88-bd17-674bb9dffdc9",
   "title": "Training Instructions",
   "status": "EDITABLE",
   "version": null,
@@ -21,8 +21,8 @@
       "type": "SCRIPT",
       "value": [
         {
-          "id": "68de7686-dd30-416a-845e-9bdef33a8f96",
-          "version": "1"
+          "id": "7dfe26d1-9afe-4d5b-acd3-ee1d621f056c",
+          "version": "1.2"
         }
       ],
       "config": {
@@ -32,12 +32,19 @@
         }
       },
       "dataType": "SCRIPT"
+    },
+    "Main System Slug": {
+      "id": "dd477326-9810-4e48-908e-4c17b51740e8",
+      "type": "STRING",
+      "value": "default",
+      "config": {},
+      "dataType": "STRING"
     }
   },
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "9ac036e3-d1d3-45f8-aa75-93873ad8796e"
+      "id": "7405aaf8-b45d-41ce-b4e3-16a8249d2337"
     }
   },
   "content": {

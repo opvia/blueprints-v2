@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "b0bc339e-8697-4409-9982-f6d1006daf04",
+  "id": "a087413c-014c-4fdf-96c8-098ca2150b05",
   "title": "Training Course Enrollment",
   "status": "EDITABLE",
   "version": null,
@@ -22,7 +22,7 @@
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "c96c8a23-a128-4235-a3d0-72e5833e1f84",
+      "id": "a81d359b-c6d8-4d97-9a0b-6259825ed397",
       "placeholderValue": "activeVersion"
     },
     "customStatusGroup": {

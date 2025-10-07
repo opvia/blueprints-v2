@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "83e88e34-aedd-4247-9ed3-fc953ee2491a",
-  "title": "Module Attempt",
+  "id": "f0127159-ef52-4b35-b05b-0e08fce07c61",
+  "title": "Question Attempt",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -16,6 +16,66 @@
   },
   "sourceInfo": {},
   "fields": {
+    "Files": {
+      "id": "191e2ea5-c12f-4068-912e-57ddc09724f5",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Training File"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "68742751-01c7-4e75-b070-b8e0acef8d78"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Course Name",
+              "config": "Course Name"
+            },
+            {
+              "name": "Module Attempt",
+              "config": "Module Attempt"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
     "Answer": {
       "id": "f221b1b8-3e38-4768-b9f3-ee48554eca24",
       "type": "STRING",
@@ -32,7 +92,23 @@
       },
       "dataType": null
     },
-    "Module": {
+    "Passed": {
+      "id": "361b08b5-6f2b-4cd2-bfa6-ac1537279609",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Trainee": {
+      "id": "bd12ecae-1c03-4f8f-8c7c-f84e477b7729",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course Attempt\")  , 'Trainee')"
+      },
+      "dataType": null
+    },
+    "Question": {
       "id": "438f6803-ef80-4b12-8568-8939c2df9dbf",
       "type": "REFERENCE",
       "value": null,
@@ -45,7 +121,7 @@
                 "or": [
                   {
                     "value": [
-                      "Course Module"
+                      "Course Question"
                     ],
                     "filter": "type",
                     "operator": "in"
@@ -72,34 +148,6 @@
       },
       "dataType": "ENTITY"
     },
-    "Passed": {
-      "id": "361b08b5-6f2b-4cd2-bfa6-ac1537279609",
-      "type": "BOOLEAN",
-      "value": null,
-      "config": {},
-      "dataType": "BOOLEAN"
-    },
-    "Trainee": {
-      "id": "bd12ecae-1c03-4f8f-8c7c-f84e477b7729",
-      "type": "FORMULA",
-      "value": null,
-      "config": {
-        "formulaExpression": "lookup( lookup(__self, \"Course Attempt\")  , 'Trainee')"
-      },
-      "dataType": null
-    },
-    "Attachments": {
-      "id": "b5b00744-21e9-41f5-95d4-dc5df647401a",
-      "type": "INSTANCE_SUBMISSION",
-      "value": null,
-      "config": {
-        "typeOrTemplateRef": {
-          "id": "776f398f-8dbe-45c9-a2ae-887e9c0d36e6",
-          "placeholderValue": "activeVersion"
-        }
-      },
-      "dataType": "INSTANCE_SUBMISSION"
-    },
     "Course Name": {
       "id": "8954235d-785c-44f0-ae6c-4b284d691549",
       "type": "FORMULA",
@@ -109,12 +157,12 @@
       },
       "dataType": null
     },
-    "Module Title": {
-      "id": "c245d20f-c47d-4434-a9b6-9089808cb7af",
+    "Question Type": {
+      "id": "caaeb250-2e5f-425a-b6a2-dbdc319d6151",
       "type": "FORMULA",
       "value": null,
       "config": {
-        "formulaExpression": "lookup( lookup(__self, \"Module\") , 'TITLE')"
+        "formulaExpression": "lookup( lookup(__self, \"Question\") , 'Question Type')"
       },
       "dataType": null
     },
@@ -126,12 +174,21 @@
         "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
       },
       "dataType": null
+    },
+    "Question Title": {
+      "id": "c245d20f-c47d-4434-a9b6-9089808cb7af",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Question\") , 'TITLE')"
+      },
+      "dataType": null
     }
   },
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "52dbd7e0-e56f-4b57-853f-aa5c39fc0d3e"
+      "id": "966505b7-ecc4-46b0-aa69-a1ac08515958"
     }
   },
   "content": {
@@ -169,14 +226,17 @@
           ]
         },
         {
-          "id": "932ac05e-dd6c-4c7d-b38a-492a0b1efc56",
+          "id": "e9723d37-b64e-4851-b012-34dd98dc5e74",
           "type": "field",
-          "fieldId": "b5b00744-21e9-41f5-95d4-dc5df647401a",
+          "fieldId": "191e2ea5-c12f-4068-912e-57ddc09724f5",
           "children": [
             {
               "text": ""
             }
-          ]
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
         },
         {
           "id": "71c2f594-142b-44b9-bc72-dc9a54b30631",
@@ -205,6 +265,6 @@
   },
   "instanceConfig": {
     "strictMode": false,
-    "computedTitle": "Course: @8954235d-785c-44f0-ae6c-4b284d691549 - Module: @c245d20f-c47d-4434-a9b6-9089808cb7af - Attempt #@TEMPLATE_INDEX"
+    "computedTitle": "Course: @8954235d-785c-44f0-ae6c-4b284d691549 - Question: @c245d20f-c47d-4434-a9b6-9089808cb7af - Attempt #@TEMPLATE_INDEX"
   }
 }

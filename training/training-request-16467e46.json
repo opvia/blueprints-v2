@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "fb3f886d-082f-4b95-aa85-82f3571f7cc7",
-  "title": "Training Plan",
+  "id": "16467e46-5600-48f4-9619-64eb4cecdb23",
+  "title": "Training Request",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -21,7 +21,7 @@
       "type": "SCRIPT",
       "value": [
         {
-          "id": "e5ec785d-554e-42b0-ac18-12df3a388170",
+          "id": "c47df8af-7318-422a-990c-5f32e6cce60e",
           "version": "1"
         }
       ],
@@ -38,7 +38,7 @@
       "type": "REFERENCE",
       "value": null,
       "config": {
-        "displayMode": "table",
+        "displayMode": "filePreview",
         "tableConfig": {
           "properties": [
             {
@@ -85,7 +85,7 @@
                 "or": [
                   {
                     "value": [
-                      "69df6470-22e5-4f1f-b31a-e2daa0e8e0d2"
+                      "f24dba8b-d676-476a-bf18-d47a5dbf15e5"
                     ],
                     "filter": "template",
                     "operator": "in"
@@ -156,20 +156,13 @@
       },
       "dataType": "ROLE"
     },
-    "Plan Name": {
-      "id": "e54904db-fa90-4a5b-afb0-a2906b06d8e5",
-      "type": "STRING",
-      "value": null,
-      "config": {},
-      "dataType": "STRING"
-    },
     "Course Enrollments": {
       "id": "b5747c6c-5368-4276-9b00-daae6d090a7d",
       "type": "INSTANCE_SUBMISSION",
       "value": null,
       "config": {
         "typeOrTemplateRef": {
-          "id": "c96c8a23-a128-4235-a3d0-72e5833e1f84",
+          "id": "a81d359b-c6d8-4d97-9a0b-6259825ed397",
           "placeholderValue": "activeVersion"
         }
       },
@@ -189,7 +182,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "b360a309-95d5-4e8d-8552-31c4e16dcecd"
+      "id": "38ed79fa-b75f-4eea-b663-c6393fc6bbed"
     }
   },
   "content": {
@@ -201,36 +194,18 @@
           "type": "p",
           "children": [
             {
-              "text": "Make a new instance of this template to create a training plan.",
+              "text": "Make a new instance of this template to create a training request.",
               "italic": true
             }
           ]
         },
         {
-          "id": "1e88c84d-b23f-4f0a-a834-c3f55b1fce78",
+          "id": "713ec81e-9a9d-4d7d-92d4-e843da7096e9",
           "type": "p",
           "children": [
             {
-              "text": "Describe the role or project this is for eg. “New Hire Manufacturing”"
-            }
-          ]
-        },
-        {
-          "id": "12da144f-c303-4cb9-84d6-c106422c131f",
-          "type": "field",
-          "fieldId": "e54904db-fa90-4a5b-afb0-a2906b06d8e5",
-          "children": [
-            {
-              "text": ""
-            }
-          ]
-        },
-        {
-          "id": "1cb03d3d-391a-4710-a84a-59baedf19b02",
-          "type": "p",
-          "children": [
-            {
-              "text": ""
+              "text": "Tip: Name your training request to make it reusable eg. ‘Manufacturing Onboarding’.",
+              "italic": true
             }
           ]
         },
@@ -426,6 +401,6 @@
   },
   "instanceConfig": {
     "strictMode": false,
-    "computedTitle": "@e54904db-fa90-4a5b-afb0-a2906b06d8e5 Training Plan"
+    "computedTitle": "Training Request #@TEMPLATE_INDEX"
   }
 }

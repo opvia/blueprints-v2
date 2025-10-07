@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "69df6470-22e5-4f1f-b31a-e2daa0e8e0d2",
+  "id": "f24dba8b-d676-476a-bf18-d47a5dbf15e5",
   "title": "Training Course",
   "status": "EDITABLE",
   "version": null,
@@ -16,25 +16,25 @@
   },
   "sourceInfo": {},
   "fields": {
-    "Course Name": {
-      "id": "8a493e08-79c3-4fcd-88e0-52dcbaedb5ab",
-      "type": "STRING",
-      "value": null,
-      "config": {},
-      "dataType": "STRING"
-    },
-    "Course Modules": {
+    "Questions": {
       "id": "fa883a4c-f96d-41cc-b67d-4a62bb912941",
       "type": "INSTANCE_SUBMISSION",
       "value": null,
       "config": {
         "typeOrTemplateRef": {
           "ref": {
-            "id": "9768f58e-f0f5-44d4-8e4e-b21c13a3d841"
+            "id": "ee85b9ba-3e35-4043-a38f-80b216b9ec1b"
           }
         }
       },
       "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Course Name": {
+      "id": "8a493e08-79c3-4fcd-88e0-52dcbaedb5ab",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
     },
     "Passing Score %": {
       "id": "94d5e2a7-aa16-44f3-b55b-dca114af4a07",
@@ -103,7 +103,27 @@
       "type": "REFERENCE",
       "value": null,
       "config": {
-        "allowMultiple": true
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "FINISHED"
+                    ],
+                    "filter": "status",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
       },
       "dataType": "ENTITY"
     },
@@ -126,6 +146,17 @@
                     "operator": "in"
                   }
                 ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "FINISHED"
+                    ],
+                    "filter": "status",
+                    "operator": "in"
+                  }
+                ]
               }
             ]
           },
@@ -140,7 +171,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "9ac036e3-d1d3-45f8-aa75-93873ad8796e"
+      "id": "7405aaf8-b45d-41ce-b4e3-16a8249d2337"
     }
   },
   "content": {
@@ -152,7 +183,7 @@
           "type": "h3",
           "children": [
             {
-              "text": "1. Describe the procedures or users this course is for:"
+              "text": "1. Describe the documents or procedures this course is for eg. Non-conformance Reporting:"
             }
           ]
         },
@@ -217,6 +248,15 @@
           ]
         },
         {
+          "id": "d45ddffa-8233-4d78-af20-2020885cd83e",
+          "type": "p",
+          "children": [
+            {
+              "text": "(Trainee execute permission are applied to all current and future versions)"
+            }
+          ]
+        },
+        {
           "id": "a5bad6c1-f226-4123-b3c4-061a7a5aa441",
           "type": "field",
           "fieldId": "676cde56-d852-40c3-9d84-236853f8737a",
@@ -243,7 +283,7 @@
           "type": "h3",
           "children": [
             {
-              "text": "4. Set the course modules and approval requirements"
+              "text": "4. Set the course question and approval requirements"
             }
           ],
           "listRestart": 3
@@ -295,6 +335,16 @@
           ]
         },
         {
+          "id": "4430583d-37cb-4663-a5ec-69e8c4747fdc",
+          "type": "p",
+          "children": [
+            {
+              "text": "(Tip: 'Task' can be used for linking external content eg. Watch this video ‘https://video.com’)",
+              "italic": true
+            }
+          ]
+        },
+        {
           "id": "ec2166bc-7f08-41cd-aea4-43c605903da1",
           "type": "field",
           "fieldId": "fa883a4c-f96d-41cc-b67d-4a62bb912941",
@@ -321,30 +371,49 @@
                 "isHidden": true
               },
               {
-                "id": "Module Type",
-                "name": "Module Type",
-                "isHidden": true
-              },
-              {
-                "id": "Question",
-                "name": "Question",
+                "id": "Question Type",
+                "name": "Question Type",
                 "isHidden": false
               },
               {
-                "id": "Correct Answer",
-                "name": "Correct Answer",
-                "isHidden": false
-              },
-              {
-                "id": "Incorrect Options",
-                "name": "Incorrect Options",
+                "id": "Instruction",
+                "name": "Instruction",
                 "isHidden": false
               }
             ]
           }
         },
         {
-          "id": "a6273e17-6f3f-4be3-ab49-1a4e20dcb85b",
+          "id": "522592ca-9ae2-4453-b75a-3cd07682b54e",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "3d1ca31e-d5c2-4084-8289-ff22401e19cd",
+          "type": "p",
+          "children": [
+            {
+              "text": "End of course creation",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "29031426-884e-4a49-a6ad-6648a6b16b58",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "991a0cfd-25af-4e5a-a1ba-a0611b923c59",
           "type": "p",
           "children": [
             {

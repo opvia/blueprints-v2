@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "ccc7430d-a28c-44d8-8ec9-59c63ac74ec6",
+  "id": "e1055cf8-3b0c-4ea4-89ee-0743d7f2aecf",
   "title": "Script",
   "status": "EDITABLE",
   "version": null,
@@ -22,7 +22,7 @@
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "ad8d3c88-6bf6-42d4-99cf-70c9b386460b",
+      "id": "409eb700-5474-4553-b886-5e4f84f2877d",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,

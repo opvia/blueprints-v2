@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "70ec9a77-d91a-44c3-a141-4e3dd208a11a",
+  "id": "5203b26b-a460-4361-a3b4-194ed4436d68",
   "title": "Course Attempt",
   "status": "EDITABLE",
   "version": null,
@@ -60,18 +60,6 @@
       },
       "dataType": null
     },
-    "Module Attempts": {
-      "id": "10ecf6e2-6e98-4c14-9e91-3b49a947006c",
-      "type": "INSTANCE_SUBMISSION",
-      "value": null,
-      "config": {
-        "typeOrTemplateRef": {
-          "id": "83e88e34-aedd-4247-9ed3-fc953ee2491a",
-          "placeholderValue": "activeVersion"
-        }
-      },
-      "dataType": "INSTANCE_SUBMISSION"
-    },
     "Course Enrollment": {
       "id": "c32956e0-c0c2-4049-90cc-e2b7bc228b36",
       "type": "FORMULA",
@@ -80,12 +68,24 @@
         "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
       },
       "dataType": null
+    },
+    "Question Attempts": {
+      "id": "10ecf6e2-6e98-4c14-9e91-3b49a947006c",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "f0127159-ef52-4b35-b05b-0e08fce07c61",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
     }
   },
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "1f6d2eda-5394-41a4-905b-0bc1eb3236ea"
+      "id": "4389589a-eafe-47b3-845d-c399ee5c699a"
     }
   },
   "content": {
@@ -181,8 +181,8 @@
                 "isHidden": true
               },
               {
-                "id": "Module Title",
-                "name": "Module Title",
+                "id": "Question Type",
+                "name": "Question Type",
                 "isHidden": false
               },
               {
@@ -191,8 +191,18 @@
                 "isHidden": false
               },
               {
-                "id": "Module",
-                "name": "Module",
+                "id": "Answer",
+                "name": "Answer",
+                "isHidden": false
+              },
+              {
+                "id": "Files",
+                "name": "Files",
+                "isHidden": false
+              },
+              {
+                "id": "Question",
+                "name": "Question",
                 "isHidden": false
               },
               {
@@ -208,6 +218,11 @@
               {
                 "id": "Course Name",
                 "name": "Course Name",
+                "isHidden": true
+              },
+              {
+                "id": "Question Title",
+                "name": "Question Title",
                 "isHidden": true
               }
             ]

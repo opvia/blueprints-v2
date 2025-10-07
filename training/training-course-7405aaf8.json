@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "b360a309-95d5-4e8d-8552-31c4e16dcecd",
-  "title": "Training Plan",
+  "id": "7405aaf8-b45d-41ce-b4e3-16a8249d2337",
+  "title": "Training Course",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -22,12 +22,12 @@
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "fb3f886d-082f-4b95-aa85-82f3571f7cc7",
+      "id": "950945f4-c69d-4e88-bd17-674bb9dffdc9",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,
     "createFromTemplate": {
-      "onlyCreateFromActiveVersion": false
+      "onlyCreateFromActiveVersion": true
     },
     "enforceUniqueTitles": false,
     "canChooseActiveVersion": true
