@@ -1,0 +1,33 @@
+{
+  "id": "testing-electrode",
+  "version": 1,
+  "name": "testing",
+  "description": "",
+  "entities": [
+    {
+      "id": "4ca27248-8ac4-4e8a-97f3-c1ab335d04b2",
+      "kind": "TYPE",
+      "contentType": "CUSTOM",
+      "title": "Electrode map",
+      "icon": "shapes",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "90c56012-88c6-4f5b-b37a-e6a66b134287",
+      "kind": "TEMPLATE",
+      "contentType": "CUSTOM",
+      "title": "Default template",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    }
+  ],
+  "assets": [
+    {
+      "id": "92cdcab2-f8f1-4897-a73d-b970e438b04b",
+      "entityId": "4ca27248-8ac4-4e8a-97f3-c1ab335d04b2",
+      "filename": "electrode_map.zip",
+      "contentType": "application/zip",
+      "uploadFolder": "custom-entities"
+    }
+  ]
+}
