@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4ca27248-8ac4-4e8a-97f3-c1ab335d04b2",
+  "title": "Electrode map",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "shapes",
+  "contentType": "CUSTOM",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "90c56012-88c6-4f5b-b37a-e6a66b134287",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": null,
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": true
+  },
+  "customContentUploadId": "92cdcab2-f8f1-4897-a73d-b970e438b04b"
+}
