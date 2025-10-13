@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "a81d359b-c6d8-4d97-9a0b-6259825ed397",
+  "id": "71d4d67c-a7cc-4c2d-8e7a-c5f347cc32df",
   "title": "Course Enrollment",
   "status": "EDITABLE",
   "version": null,
@@ -9,8 +9,8 @@
     "index": "0",
     "createdAt": "1970-01-01T00:00:00.000Z",
     "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
-    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
-    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
     "editors": [],
     "typeIndex": "0"
   },
@@ -29,7 +29,7 @@
                 "or": [
                   {
                     "value": [
-                      "f24dba8b-d676-476a-bf18-d47a5dbf15e5"
+                      "4c419ec0-cfa3-4051-bc01-d43cf7167604"
                     ],
                     "filter": "template",
                     "operator": "in"
@@ -115,22 +115,13 @@
       },
       "dataType": "NUMBER"
     },
-    "Training Plan": {
-      "id": "6815ba37-8daa-46e3-b30f-edec5204f166",
-      "type": "FORMULA",
-      "value": null,
-      "config": {
-        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
-      },
-      "dataType": null
-    },
     "Course Attempts": {
       "id": "7a5022db-3a78-4d4c-b009-c6e47e581c45",
       "type": "INSTANCE_SUBMISSION",
       "value": null,
       "config": {
         "typeOrTemplateRef": {
-          "id": "5203b26b-a460-4361-a3b4-194ed4436d68",
+          "id": "2903aa8d-a0a3-4830-823b-dc628d6e9ab3",
           "placeholderValue": "activeVersion"
         }
       },
@@ -144,12 +135,21 @@
         "formulaExpression": "lookup( lookup(__self, \"Course\")  , \"Passing Score %\")"
       },
       "dataType": null
+    },
+    "Training Request": {
+      "id": "6815ba37-8daa-46e3-b30f-edec5204f166",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
     }
   },
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "a087413c-014c-4fdf-96c8-098ca2150b05"
+      "id": "54fa46eb-23f0-4541-80ec-01ff96b8696a"
     }
   },
   "content": {

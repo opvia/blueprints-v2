@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "950945f4-c69d-4e88-bd17-674bb9dffdc9",
+  "id": "f9fd94d0-7d73-42b2-b9db-c59424519bf1",
   "title": "Training Instructions",
   "status": "EDITABLE",
   "version": null,
@@ -9,8 +9,8 @@
     "index": "0",
     "createdAt": "1970-01-01T00:00:00.000Z",
     "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
-    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
-    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
     "editors": [],
     "typeIndex": "0"
   },
@@ -21,8 +21,8 @@
       "type": "SCRIPT",
       "value": [
         {
-          "id": "7dfe26d1-9afe-4d5b-acd3-ee1d621f056c",
-          "version": "1.2"
+          "id": "81bd1cb1-f961-4d6a-8b50-28328f04121e",
+          "version": "1"
         }
       ],
       "config": {
@@ -44,7 +44,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "7405aaf8-b45d-41ce-b4e3-16a8249d2337"
+      "id": "8bbfc1f6-a804-4dc5-ac2a-1ba9e23616a3"
     }
   },
   "content": {

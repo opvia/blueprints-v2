@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "4389589a-eafe-47b3-845d-c399ee5c699a",
-  "title": "Course Attempt",
+  "id": "66e5dce2-cfbf-4ce6-8fdf-45ee82417035",
+  "title": "Script",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -9,26 +9,24 @@
     "index": "0",
     "createdAt": "1970-01-01T00:00:00.000Z",
     "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
-    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
-    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
     "editors": [],
     "typeIndex": "0"
   },
   "sourceInfo": {},
   "fields": {},
   "kind": "TYPE",
-  "icon": "build",
-  "contentType": "PAGE_CONTENT",
+  "icon": "code",
+  "contentType": "SCRIPT_CODE",
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "5203b26b-a460-4361-a3b4-194ed4436d68",
+      "id": "c4e8a12f-dbe4-4b3e-b054-3f895ab64d0c",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,
-    "createFromTemplate": {
-      "onlyCreateFromActiveVersion": false
-    },
+    "createFromTemplate": null,
     "enforceUniqueTitles": false,
     "canChooseActiveVersion": true
   }

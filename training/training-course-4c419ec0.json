@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "f24dba8b-d676-476a-bf18-d47a5dbf15e5",
+  "id": "4c419ec0-cfa3-4051-bc01-d43cf7167604",
   "title": "Training Course",
   "status": "EDITABLE",
   "version": null,
@@ -9,8 +9,8 @@
     "index": "0",
     "createdAt": "1970-01-01T00:00:00.000Z",
     "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
-    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
-    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
     "editors": [],
     "typeIndex": "0"
   },
@@ -23,7 +23,7 @@
       "config": {
         "typeOrTemplateRef": {
           "ref": {
-            "id": "ee85b9ba-3e35-4043-a38f-80b216b9ec1b"
+            "id": "3605e53e-2d34-43ee-8378-72b32c59c47b"
           }
         }
       },
@@ -90,13 +90,6 @@
       },
       "config": {},
       "dataType": "SEARCH"
-    },
-    "Requires Sign off?": {
-      "id": "6b0fff0e-7d1f-4681-9734-e59c5abaa150",
-      "type": "BOOLEAN",
-      "value": false,
-      "config": {},
-      "dataType": "BOOLEAN"
     },
     "Training Documents": {
       "id": "d52ee87b-cf64-4312-ac28-020c8ae69725",
@@ -171,7 +164,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "7405aaf8-b45d-41ce-b4e3-16a8249d2337"
+      "id": "8bbfc1f6-a804-4dc5-ac2a-1ba9e23616a3"
     }
   },
   "content": {
@@ -309,25 +302,6 @@
           "id": "07c602fd-c469-42e2-87a5-c3b0f986f0c9",
           "type": "field",
           "fieldId": "94d5e2a7-aa16-44f3-b55b-dca114af4a07",
-          "children": [
-            {
-              "text": ""
-            }
-          ]
-        },
-        {
-          "id": "311825a4-7772-4d01-bd4d-4331ec0f2bb8",
-          "type": "p",
-          "children": [
-            {
-              "text": "Passing responses will be sent for review by the trainers before being approved:"
-            }
-          ]
-        },
-        {
-          "id": "95bf3470-866d-46ac-ac14-f0f5419ebcbe",
-          "type": "field",
-          "fieldId": "6b0fff0e-7d1f-4681-9734-e59c5abaa150",
           "children": [
             {
               "text": ""

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "7405aaf8-b45d-41ce-b4e3-16a8249d2337",
-  "title": "Training Course",
+  "id": "0fa54119-291b-4abf-9a1b-049f320822d8",
+  "title": "Training File",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -9,27 +9,25 @@
     "index": "0",
     "createdAt": "1970-01-01T00:00:00.000Z",
     "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
-    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
-    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
     "editors": [],
     "typeIndex": "0"
   },
   "sourceInfo": {},
   "fields": {},
   "kind": "TYPE",
-  "icon": "document",
-  "contentType": "PAGE_CONTENT",
+  "icon": "paperclip",
+  "contentType": "FILE",
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "950945f4-c69d-4e88-bd17-674bb9dffdc9",
+      "id": "20e7f842-b13c-44a1-a236-4bf81eba5756",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,
-    "createFromTemplate": {
-      "onlyCreateFromActiveVersion": true
-    },
-    "enforceUniqueTitles": false,
+    "createFromTemplate": null,
+    "enforceUniqueTitles": true,
     "canChooseActiveVersion": true
   }
 }

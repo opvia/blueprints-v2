@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "cf6e2cc2-7e1b-4aad-b5c5-b99ffddb81ca",
+  "id": "369a79f7-b703-44e2-9826-e1d33cf6fa35",
   "title": "Multiple Choice Question",
   "status": "EDITABLE",
   "version": null,
@@ -9,8 +9,8 @@
     "index": "0",
     "createdAt": "1970-01-01T00:00:00.000Z",
     "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
-    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
-    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
     "editors": [],
     "typeIndex": "0"
   },
@@ -69,7 +69,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "ee85b9ba-3e35-4043-a38f-80b216b9ec1b"
+      "id": "3605e53e-2d34-43ee-8378-72b32c59c47b"
     }
   },
   "content": {

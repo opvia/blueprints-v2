@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "5203b26b-a460-4361-a3b4-194ed4436d68",
+  "id": "2903aa8d-a0a3-4830-823b-dc628d6e9ab3",
   "title": "Course Attempt",
   "status": "EDITABLE",
   "version": null,
@@ -9,8 +9,8 @@
     "index": "0",
     "createdAt": "1970-01-01T00:00:00.000Z",
     "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
-    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
-    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
     "editors": [],
     "typeIndex": "0"
   },
@@ -75,7 +75,7 @@
       "value": null,
       "config": {
         "typeOrTemplateRef": {
-          "id": "f0127159-ef52-4b35-b05b-0e08fce07c61",
+          "id": "5d138965-39b4-40f8-ab9a-69b519669b04",
           "placeholderValue": "activeVersion"
         }
       },
@@ -85,7 +85,7 @@
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "4389589a-eafe-47b3-845d-c399ee5c699a"
+      "id": "b0298d78-39de-4c89-a24b-30ace1bf3afb"
     }
   },
   "content": {

@@ -5,103 +5,103 @@
   "description": "",
   "entities": [
     {
-      "id": "3ebabcf3-f4d2-47ea-a461-86b0931eeb07",
-      "kind": "TEMPLATE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Confirm Reading Task",
-      "icon": "grid-view",
-      "sourceVersion": "1.1"
-    },
-    {
-      "id": "ee85b9ba-3e35-4043-a38f-80b216b9ec1b",
-      "kind": "TYPE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Course Question",
-      "icon": "grid-view",
-      "sourceVersion": "1.2"
-    },
-    {
-      "id": "4389589a-eafe-47b3-845d-c399ee5c699a",
+      "id": "b0298d78-39de-4c89-a24b-30ace1bf3afb",
       "kind": "TYPE",
       "contentType": "PAGE_CONTENT",
       "title": "Course Attempt",
       "icon": "build",
-      "sourceVersion": "1.1"
+      "sourceVersion": "1"
     },
     {
-      "id": "5203b26b-a460-4361-a3b4-194ed4436d68",
+      "id": "2903aa8d-a0a3-4830-823b-dc628d6e9ab3",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Course Attempt",
       "icon": "build",
-      "sourceVersion": "1.3"
+      "sourceVersion": "1"
     },
     {
-      "id": "f0127159-ef52-4b35-b05b-0e08fce07c61",
+      "id": "5d138965-39b4-40f8-ab9a-69b519669b04",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Question Attempt",
       "icon": "grid-view",
-      "sourceVersion": "1.2"
+      "sourceVersion": "1"
     },
     {
-      "id": "966505b7-ecc4-46b0-aa69-a1ac08515958",
+      "id": "4e06748d-d824-42ad-a694-9baf06ea6613",
       "kind": "TYPE",
       "contentType": "PAGE_CONTENT",
       "title": "Question Attempt",
       "icon": "grid-view",
-      "sourceVersion": "1.2"
+      "sourceVersion": "1"
     },
     {
-      "id": "a81d359b-c6d8-4d97-9a0b-6259825ed397",
+      "id": "71d4d67c-a7cc-4c2d-8e7a-c5f347cc32df",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Course Enrollment",
       "icon": "git-repo",
-      "sourceVersion": "1"
+      "sourceVersion": "1.1"
     },
     {
-      "id": "a087413c-014c-4fdf-96c8-098ca2150b05",
+      "id": "54fa46eb-23f0-4541-80ec-01ff96b8696a",
       "kind": "TYPE",
       "contentType": "PAGE_CONTENT",
       "title": "Training Course Enrollment",
       "icon": "git-repo",
-      "sourceVersion": "1"
+      "sourceVersion": "1.1"
     },
     {
-      "id": "f24dba8b-d676-476a-bf18-d47a5dbf15e5",
+      "id": "4c419ec0-cfa3-4051-bc01-d43cf7167604",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Training Course",
       "icon": "document",
-      "sourceVersion": "1.6"
+      "sourceVersion": "1.1"
     },
     {
-      "id": "7405aaf8-b45d-41ce-b4e3-16a8249d2337",
+      "id": "8bbfc1f6-a804-4dc5-ac2a-1ba9e23616a3",
       "kind": "TYPE",
       "contentType": "PAGE_CONTENT",
       "title": "Training Course",
       "icon": "document",
-      "sourceVersion": "1.1"
+      "sourceVersion": "1"
     },
     {
-      "id": "cf6e2cc2-7e1b-4aad-b5c5-b99ffddb81ca",
+      "id": "3605e53e-2d34-43ee-8378-72b32c59c47b",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Course Question",
+      "icon": "grid-view",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "369a79f7-b703-44e2-9826-e1d33cf6fa35",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Multiple Choice Question",
       "icon": "grid-view",
-      "sourceVersion": "1.1"
+      "sourceVersion": "1"
     },
     {
-      "id": "409eb700-5474-4553-b886-5e4f84f2877d",
+      "id": "f9fd94d0-7d73-42b2-b9db-c59424519bf1",
       "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Training Instructions",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "81bd1cb1-f961-4d6a-8b50-28328f04121e",
+      "kind": "INSTANCE",
       "contentType": "SCRIPT_CODE",
-      "title": "Default template",
+      "title": "Setup Training",
       "icon": "code",
       "sourceVersion": "1"
     },
     {
-      "id": "e1055cf8-3b0c-4ea4-89ee-0743d7f2aecf",
+      "id": "66e5dce2-cfbf-4ce6-8fdf-45ee82417035",
       "kind": "TYPE",
       "contentType": "SCRIPT_CODE",
       "title": "Script",
@@ -109,7 +109,47 @@
       "sourceVersion": "1"
     },
     {
-      "id": "c47df8af-7318-422a-990c-5f32e6cce60e",
+      "id": "c4e8a12f-dbe4-4b3e-b054-3f895ab64d0c",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Default template",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0fa54119-291b-4abf-9a1b-049f320822d8",
+      "kind": "TYPE",
+      "contentType": "FILE",
+      "title": "Training File",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "20e7f842-b13c-44a1-a236-4bf81eba5756",
+      "kind": "TEMPLATE",
+      "contentType": "FILE",
+      "title": "Training File",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6cafd5d9-906f-4f7b-be8e-7e3340b06638",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Training Request",
+      "icon": "box",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0ed31d14-ee43-4b80-9d9a-01c0a7e10e44",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Training Request",
+      "icon": "box",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "d8818516-8ecd-4681-8d78-0540239b18ca",
       "kind": "INSTANCE",
       "contentType": "SCRIPT_CODE",
       "title": "Enroll and notify new trainees",
@@ -117,76 +157,20 @@
       "sourceVersion": "1"
     },
     {
-      "id": "db1f3210-52e0-4d18-b142-e83611fcde1f",
+      "id": "17d5bb14-f666-4850-9021-b61669dd2ce7",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Long Answer Question",
       "icon": "grid-view",
-      "sourceVersion": "1.1"
+      "sourceVersion": "1"
     },
     {
-      "id": "68742751-01c7-4e75-b070-b8e0acef8d78",
-      "kind": "TEMPLATE",
-      "contentType": "FILE",
-      "title": "Training File",
-      "icon": "paperclip",
-      "sourceVersion": "1.3"
-    },
-    {
-      "id": "0da7ad00-2342-4d88-a57b-fe9fdb2865aa",
-      "kind": "TYPE",
-      "contentType": "FILE",
-      "title": "Training File",
-      "icon": "paperclip",
-      "sourceVersion": "1.1"
-    },
-    {
-      "id": "950945f4-c69d-4e88-bd17-674bb9dffdc9",
-      "kind": "TEMPLATE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Training Instructions",
-      "icon": "document",
-      "sourceVersion": "1.2"
-    },
-    {
-      "id": "7dfe26d1-9afe-4d5b-acd3-ee1d621f056c",
-      "kind": "INSTANCE",
-      "contentType": "SCRIPT_CODE",
-      "title": "Setup Training",
-      "icon": "code",
-      "sourceVersion": "1.2"
-    },
-    {
-      "id": "536692db-053c-4cf9-a578-b89393525035",
+      "id": "92cd4412-73e2-464b-9694-9a47becdf174",
       "kind": "TEMPLATE",
       "contentType": "PAGE_CONTENT",
       "title": "Task",
       "icon": "grid-view",
-      "sourceVersion": "1.2"
-    },
-    {
-      "id": "38ed79fa-b75f-4eea-b663-c6393fc6bbed",
-      "kind": "TYPE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Training Request",
-      "icon": "box",
-      "sourceVersion": "1.1"
-    },
-    {
-      "id": "16467e46-5600-48f4-9619-64eb4cecdb23",
-      "kind": "TEMPLATE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Training Request",
-      "icon": "box",
-      "sourceVersion": "1.2"
-    },
-    {
-      "id": "d55ce09e-2bde-485d-87ea-0c19ced27dcb",
-      "kind": "TEMPLATE",
-      "contentType": "PAGE_CONTENT",
-      "title": "Upload File",
-      "icon": "grid-view",
-      "sourceVersion": "1.3"
+      "sourceVersion": "1"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "16467e46-5600-48f4-9619-64eb4cecdb23",
+  "id": "0ed31d14-ee43-4b80-9d9a-01c0a7e10e44",
   "title": "Training Request",
   "status": "EDITABLE",
   "version": null,
@@ -9,8 +9,8 @@
     "index": "0",
     "createdAt": "1970-01-01T00:00:00.000Z",
     "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
-    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
-    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
     "editors": [],
     "typeIndex": "0"
   },
@@ -21,7 +21,7 @@
       "type": "SCRIPT",
       "value": [
         {
-          "id": "c47df8af-7318-422a-990c-5f32e6cce60e",
+          "id": "d8818516-8ecd-4681-8d78-0540239b18ca",
           "version": "1"
         }
       ],
@@ -85,7 +85,7 @@
                 "or": [
                   {
                     "value": [
-                      "f24dba8b-d676-476a-bf18-d47a5dbf15e5"
+                      "4c419ec0-cfa3-4051-bc01-d43cf7167604"
                     ],
                     "filter": "template",
                     "operator": "in"
@@ -162,11 +162,18 @@
       "value": null,
       "config": {
         "typeOrTemplateRef": {
-          "id": "a81d359b-c6d8-4d97-9a0b-6259825ed397",
+          "id": "71d4d67c-a7cc-4c2d-8e7a-c5f347cc32df",
           "placeholderValue": "activeVersion"
         }
       },
       "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Requires Sign off?": {
+      "id": "b3f116d4-5d1a-4599-9ff8-07088ff12c4f",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
     },
     "Completion Deadline (Days)": {
       "id": "07a6309b-2999-4d39-b6d5-00f8b01490a8",
@@ -177,12 +184,21 @@
         "outOfSpecExpression": "lookup(__self, \"Completion Deadline (Days)\") < 0"
       },
       "dataType": "NUMBER"
+    },
+    "Retraining Interval (Days)": {
+      "id": "9aaeac8c-1d88-41ad-875e-0ea65308e190",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
     }
   },
   "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "38ed79fa-b75f-4eea-b663-c6393fc6bbed"
+      "id": "6cafd5d9-906f-4f7b-be8e-7e3340b06638"
     }
   },
   "content": {
@@ -204,7 +220,7 @@
           "type": "p",
           "children": [
             {
-              "text": "Tip: Name your training request to make it reusable eg. ‘Manufacturing Onboarding’.",
+              "text": "Tip: Rename your training request to make it reusable eg. ‘Manufacturing Onboarding’.",
               "italic": true
             }
           ]
@@ -280,22 +296,68 @@
           ]
         },
         {
-          "id": "2317ecaf-dee4-4e91-a856-993bd1904566",
+          "id": "0fa0852b-671d-4e1f-baa8-adee1e9e9410",
           "type": "p",
           "children": [
             {
-              "text": "(optional) Select the trainers to notify and review passing course enrollments (if empty, all training managers can approve):"
+              "text": "(Optional) Automatically create a new enrollment due ‘x’ days after completion:"
             }
-          ],
-          "listRestart": 3
+          ]
         },
         {
-          "id": "0f37ba12-c665-4bd4-a389-accabe94240a",
+          "id": "a809f85a-5f3f-48f3-bd60-0950db08546d",
           "type": "field",
-          "fieldId": "6f424443-cb99-40c6-bf7d-22b4dca92490",
+          "fieldId": "9aaeac8c-1d88-41ad-875e-0ea65308e190",
           "children": [
             {
               "text": ""
+            }
+          ]
+        },
+        {
+          "id": "79c658c1-7058-4888-9eda-b1239790113d",
+          "type": "p",
+          "children": [
+            {
+              "text": "(Optional) Require passing responses to be review before course completion. Select the trainers to notify and review passing course enrollments (if empty, all training managers can approve)"
+            }
+          ]
+        },
+        {
+          "id": "cdb2fbad-ccf4-4724-8a6a-ced3add73a26",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "b77dbd26-5801-4621-96ba-9a19d8ec0092",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "ba6a55f1-1642-4791-9a42-cb8fa9793c7a",
+                  "type": "field",
+                  "fieldId": "b3f116d4-5d1a-4599-9ff8-07088ff12c4f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9958ba46-3198-48ef-83b9-0ef4782231c8",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "0f37ba12-c665-4bd4-a389-accabe94240a",
+                  "type": "field",
+                  "fieldId": "6f424443-cb99-40c6-bf7d-22b4dca92490",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
