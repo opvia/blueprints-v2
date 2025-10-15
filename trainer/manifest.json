@@ -203,6 +203,14 @@
       "title": "Training Management",
       "icon": "predictive-analysis",
       "sourceVersion": "1.2"
+    },
+    {
+      "id": "53b10ef1-4d06-4494-b56e-2e1ec3223bac",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "On Course Enrollment Publish",
+      "icon": "code",
+      "sourceVersion": "1.1"
     }
   ],
   "assets": [
