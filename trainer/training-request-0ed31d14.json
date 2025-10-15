@@ -1,0 +1,468 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0ed31d14-ee43-4b80-9d9a-01c0a7e10e44",
+  "title": "Training Request",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Script": {
+      "id": "52e66ca3-2d43-4e26-93af-6d18e629169d",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "d8818516-8ecd-4681-8d78-0540239b18ca",
+          "version": "1.3"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "user",
+          "label": "Enroll and notify new trainees"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Courses": {
+      "id": "f9d1fc2a-eb23-4c28-88ed-6540abeba977",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "tableConfig": {
+          "properties": [
+            {
+              "id": "TITLE",
+              "name": "Title",
+              "isHidden": true
+            },
+            {
+              "id": "Course Name",
+              "name": "Course Name",
+              "isHidden": false
+            },
+            {
+              "id": "Controlled Procedures",
+              "name": "Controlled Procedures",
+              "isHidden": false
+            },
+            {
+              "id": "Passing Score %",
+              "name": "Passing Score %",
+              "isHidden": false
+            },
+            {
+              "id": "Requires Sign off?",
+              "name": "Requires Sign off?",
+              "isHidden": false
+            },
+            {
+              "id": "Course Modules",
+              "name": "Course Modules",
+              "isHidden": false
+            },
+            {
+              "id": "All Course Responses",
+              "name": "All Course Responses",
+              "isHidden": true
+            }
+          ]
+        },
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "4c419ec0-cfa3-4051-bc01-d43cf7167604"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Course Name",
+              "config": "Course Name"
+            },
+            {
+              "name": "Course Modules",
+              "config": "Course Modules"
+            },
+            {
+              "name": "Passing Score %",
+              "config": "Passing Score %"
+            },
+            {
+              "name": "Requires Sign off?",
+              "config": "Requires Sign off?"
+            },
+            {
+              "name": "All Course Responses",
+              "config": "All Course Responses"
+            },
+            {
+              "name": "Controlled Procedures",
+              "config": "Controlled Procedures"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Trainees": {
+      "id": "083f3b99-e9fb-4d53-afa2-c3115c1afad7",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true,
+        "allowRoleGroups": true
+      },
+      "dataType": "ROLE"
+    },
+    "Trainers": {
+      "id": "6f424443-cb99-40c6-bf7d-22b4dca92490",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ROLE"
+    },
+    "Course Enrollments": {
+      "id": "b5747c6c-5368-4276-9b00-daae6d090a7d",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "71d4d67c-a7cc-4c2d-8e7a-c5f347cc32df",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Requires Sign off?": {
+      "id": "b3f116d4-5d1a-4599-9ff8-07088ff12c4f",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Completion Deadline (Days)": {
+      "id": "07a6309b-2999-4d39-b6d5-00f8b01490a8",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"Completion Deadline (Days)\") < 0"
+      },
+      "dataType": "NUMBER"
+    },
+    "Retraining Interval (Days)": {
+      "id": "9aaeac8c-1d88-41ad-875e-0ea65308e190",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "6cafd5d9-906f-4f7b-be8e-7e3340b06638"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "ebc8311d-6845-476d-9be0-1124bc9f617a",
+          "type": "p",
+          "children": [
+            {
+              "text": "Make a new instance of this template to create a training request.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "713ec81e-9a9d-4d7d-92d4-e843da7096e9",
+          "type": "p",
+          "children": [
+            {
+              "text": "Tip: Remove the computed title and name your training request to make it reusable eg. ‘Manufacturing Onboarding’.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "eefb5594-43cd-47eb-b3f3-85f624bf05f2",
+          "type": "h3",
+          "children": [
+            {
+              "text": "1. Select courses or create new ones. Courses must be published before enrollment."
+            }
+          ]
+        },
+        {
+          "id": "ff8a30a4-2799-4e08-a833-e4b4ea17b88d",
+          "type": "field",
+          "fieldId": "f9d1fc2a-eb23-4c28-88ed-6540abeba977",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "c9a9174d-dfd5-49a3-9f77-f1904b1d5b53",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7913eb2f-917a-4248-958a-c8382659ed2c",
+          "type": "h3",
+          "children": [
+            {
+              "text": "2. Select trainees and click the button to enroll and notify them. "
+            }
+          ],
+          "listRestart": 2
+        },
+        {
+          "id": "96ef0d8c-23b3-41dc-8453-8d6b914379e0",
+          "type": "field",
+          "fieldId": "083f3b99-e9fb-4d53-afa2-c3115c1afad7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "eae5469f-8749-48a7-afcb-dd93ed733a78",
+          "type": "p",
+          "children": [
+            {
+              "text": "(Optional) How long after enrollment training is due:"
+            }
+          ]
+        },
+        {
+          "id": "6c2c4613-3ec0-4c7f-a476-2b9d33044d0b",
+          "type": "field",
+          "fieldId": "07a6309b-2999-4d39-b6d5-00f8b01490a8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0fa0852b-671d-4e1f-baa8-adee1e9e9410",
+          "type": "p",
+          "children": [
+            {
+              "text": "(Optional) Automatically create a new enrollment due ‘x’ days after completion:"
+            }
+          ]
+        },
+        {
+          "id": "a809f85a-5f3f-48f3-bd60-0950db08546d",
+          "type": "field",
+          "fieldId": "9aaeac8c-1d88-41ad-875e-0ea65308e190",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "79c658c1-7058-4888-9eda-b1239790113d",
+          "type": "p",
+          "children": [
+            {
+              "text": "(Optional) Require passing responses to be reviewed before course completion. Select the trainers to notify and review passing course enrollments (if empty, all training managers can approve)"
+            }
+          ]
+        },
+        {
+          "id": "cdb2fbad-ccf4-4724-8a6a-ced3add73a26",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "b77dbd26-5801-4621-96ba-9a19d8ec0092",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "ba6a55f1-1642-4791-9a42-cb8fa9793c7a",
+                  "type": "field",
+                  "fieldId": "b3f116d4-5d1a-4599-9ff8-07088ff12c4f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9958ba46-3198-48ef-83b9-0ef4782231c8",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "0f37ba12-c665-4bd4-a389-accabe94240a",
+                  "type": "field",
+                  "fieldId": "6f424443-cb99-40c6-bf7d-22b4dca92490",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8d1aae0e-9ba2-4a7d-9391-ceb3ef7aacd7",
+          "type": "field",
+          "fieldId": "52e66ca3-2d43-4e26-93af-6d18e629169d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "827d137c-d51c-419b-8ee9-8f80ed6022fc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a3a47c6e-389d-4992-a554-794c219a4d95",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Course Enrollments"
+            }
+          ]
+        },
+        {
+          "id": "216b7f04-4569-41db-8df4-46de9fea01c3",
+          "type": "field",
+          "fieldId": "b5747c6c-5368-4276-9b00-daae6d090a7d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Trainee",
+                "name": "Trainee",
+                "isHidden": false
+              },
+              {
+                "id": "Training Request",
+                "name": "Training Request",
+                "isHidden": true
+              },
+              {
+                "id": "Course",
+                "name": "Course",
+                "isHidden": false
+              },
+              {
+                "id": "Passed",
+                "name": "Passed",
+                "isHidden": false
+              },
+              {
+                "id": "Best Score %",
+                "name": "Best Score %",
+                "isHidden": false
+              },
+              {
+                "id": "Due Date",
+                "name": "Due Date",
+                "isHidden": false
+              },
+              {
+                "id": "Course Attempts",
+                "name": "Course Attempts",
+                "isHidden": false
+              },
+              {
+                "id": "Course Name",
+                "name": "Course Name",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "ca80c496-21b8-4f25-8f28-e4a8d554ffe7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Training Request #@TEMPLATE_INDEX"
+  }
+}

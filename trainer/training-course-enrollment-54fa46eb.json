@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "54fa46eb-23f0-4541-80ec-01ff96b8696a",
+  "title": "Training Course Enrollment",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "git-repo",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "71d4d67c-a7cc-4c2d-8e7a-c5f347cc32df",
+      "placeholderValue": "activeVersion"
+    },
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Not Started",
+            "intent": "none"
+          },
+          {
+            "text": "In Progress",
+            "intent": "primary"
+          }
+        ],
+        "defaultStatus": "Not Started"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "Completed",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Completed"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "In Review",
+            "intent": "warning"
+          }
+        ],
+        "defaultStatus": "In Review"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Completed",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Completed"
+      }
+    },
+    "hideVersionNumber": true,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": true
+    },
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": true
+  }
+}

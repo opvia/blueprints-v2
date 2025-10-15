@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "369a79f7-b703-44e2-9826-e1d33cf6fa35",
+  "title": "Multiple Choice Question",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Course": {
+      "id": "a5c149b6-70fb-4cb7-802d-e240010b17d0",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Question": {
+      "id": "6e8bdf52-b278-4769-be44-3f4dd6f6601b",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Course Name": {
+      "id": "105c6ef4-b333-4292-823d-23adcf1577d9",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course\") , 'Course Name')"
+      },
+      "dataType": null
+    },
+    "Question Type": {
+      "id": "d93f7533-0ed4-4938-a226-c8b0b1cfe502",
+      "type": "STRING",
+      "value": "Multiple Choice Question",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Correct Answer": {
+      "id": "54eb7eaf-49cd-4a43-a081-b3c433b8fcdc",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Incorrect Options": {
+      "id": "514d2217-af01-430f-8f7c-e32acac70ac7",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "3605e53e-2d34-43ee-8378-72b32c59c47b"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "162f18d7-ba5e-4265-b3c9-9bf6d50f2885",
+          "type": "field",
+          "fieldId": "6e8bdf52-b278-4769-be44-3f4dd6f6601b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "37e5124f-f375-49e9-8295-25fe8aa87d22",
+          "type": "field",
+          "fieldId": "54eb7eaf-49cd-4a43-a081-b3c433b8fcdc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "133dd936-d3af-48e7-bf4e-0284ab53f735",
+          "type": "field",
+          "fieldId": "514d2217-af01-430f-8f7c-e32acac70ac7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d9c63e3f-4db1-43bb-b004-391451b0885b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@105c6ef4-b333-4292-823d-23adcf1577d9 MCQ#@TEMPLATE_INDEX"
+  }
+}

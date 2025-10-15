@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "1c153e1c-d17a-4f85-942d-a8af7ef87ad1",
+  "title": "Training Management",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Key": {
+      "id": "7972f8bb-da0e-41d8-ba0c-8ed8a22f60c8",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "aa100abf-516a-441f-aa3f-2ad465eda280"
+    }
+  },
+  "content": {
+    "type": "CUSTOM"
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

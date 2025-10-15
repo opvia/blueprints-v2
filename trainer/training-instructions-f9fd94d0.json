@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f9fd94d0-7d73-42b2-b9db-c59424519bf1",
+  "title": "Training Instructions",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Setup Training": {
+      "id": "d5bbf2a0-084d-458b-8fd5-3ecbf87b6c81",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "81bd1cb1-f961-4d6a-8b50-28328f04121e",
+          "version": "1.2"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "build",
+          "label": "Setup Training"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Main System Slug": {
+      "id": "dd477326-9810-4e48-908e-4c17b51740e8",
+      "type": "STRING",
+      "value": "default",
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "8bbfc1f6-a804-4dc5-ac2a-1ba9e23616a3"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f462b5e3-2f56-4401-a20d-4c8f26bce0e7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e2379795-0fbf-4731-88b1-150da39ceca8",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Setup"
+            }
+          ]
+        },
+        {
+          "id": "9f9c0c4f-c9b9-47b0-b234-f2d38bb12d6b",
+          "type": "p",
+          "children": [
+            {
+              "text": "1. Run the setup script. Ensure you have first installed the "
+            },
+            {
+              "code": true,
+              "text": "trainer"
+            },
+            {
+              "text": " blueprint in your global system."
+            }
+          ]
+        },
+        {
+          "id": "534fade4-add6-458b-8dab-f68c6cc38e0c",
+          "type": "field",
+          "fieldId": "d5bbf2a0-084d-458b-8fd5-3ecbf87b6c81",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "d237ce2d-a52e-424c-946c-40041f79bb1a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a173f4b9-0417-4efe-a362-83c1a21b3abf",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

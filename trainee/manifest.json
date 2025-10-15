@@ -1,0 +1,41 @@
+{
+  "id": "trainee",
+  "version": 1,
+  "name": "trainee",
+  "description": "",
+  "entities": [
+    {
+      "id": "d0acc101-7b79-4b35-bfd9-8742cf8f8ec5",
+      "kind": "INSTANCE",
+      "contentType": "CUSTOM",
+      "title": "Training",
+      "icon": "predictive-analysis",
+      "sourceVersion": "1.4"
+    },
+    {
+      "id": "1c8616f5-30c9-4496-a42b-a11a88957a14",
+      "kind": "TYPE",
+      "contentType": "CUSTOM",
+      "title": "Training App",
+      "icon": "predictive-analysis",
+      "sourceVersion": "1.15"
+    },
+    {
+      "id": "536056dc-079f-4b64-8042-551ae45a8bab",
+      "kind": "TEMPLATE",
+      "contentType": "CUSTOM",
+      "title": "Training App Template",
+      "icon": "predictive-analysis",
+      "sourceVersion": "1.1"
+    }
+  ],
+  "assets": [
+    {
+      "id": "ad9ee072-194a-4011-b395-e75b38e0cd2c",
+      "entityId": "1c8616f5-30c9-4496-a42b-a11a88957a14",
+      "filename": "Archive.zip",
+      "contentType": "application/zip",
+      "uploadFolder": "custom-entities"
+    }
+  ]
+}

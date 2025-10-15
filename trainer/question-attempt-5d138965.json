@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "5d138965-39b4-40f8-ab9a-69b519669b04",
+  "title": "Question Attempt",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Files": {
+      "id": "191e2ea5-c12f-4068-912e-57ddc09724f5",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Training File"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "20e7f842-b13c-44a1-a236-4bf81eba5756"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Course Name",
+              "config": "Course Name"
+            },
+            {
+              "name": "Module Attempt",
+              "config": "Module Attempt"
+            }
+          ]
+        },
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Answer": {
+      "id": "f221b1b8-3e38-4768-b9f3-ee48554eca24",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Course": {
+      "id": "4c81fa4e-4b61-49ee-9451-26e736b237e1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course Attempt\")  , 'Course')"
+      },
+      "dataType": null
+    },
+    "Passed": {
+      "id": "361b08b5-6f2b-4cd2-bfa6-ac1537279609",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Trainee": {
+      "id": "bd12ecae-1c03-4f8f-8c7c-f84e477b7729",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course Attempt\")  , 'Trainee')"
+      },
+      "dataType": null
+    },
+    "Question": {
+      "id": "438f6803-ef80-4b12-8568-8939c2df9dbf",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Course Question"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Course Name": {
+      "id": "8954235d-785c-44f0-ae6c-4b284d691549",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course\") , 'Course Name')"
+      },
+      "dataType": null
+    },
+    "Question Type": {
+      "id": "caaeb250-2e5f-425a-b6a2-dbdc319d6151",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Question\") , 'Question Type')"
+      },
+      "dataType": null
+    },
+    "Course Attempt": {
+      "id": "bf3b0eee-df41-4fc1-ba6f-61b691a715f6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Question Title": {
+      "id": "c245d20f-c47d-4434-a9b6-9089808cb7af",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Question\") , 'TITLE')"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "4e06748d-d824-42ad-a694-9baf06ea6613"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "1e34e783-ae30-4a07-863a-e7d48df34da7",
+          "type": "field",
+          "fieldId": "bd12ecae-1c03-4f8f-8c7c-f84e477b7729",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1ab0a3f8-9499-472c-84bb-ad002068ab2a",
+          "type": "field",
+          "fieldId": "361b08b5-6f2b-4cd2-bfa6-ac1537279609",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c6c62d40-9b25-452d-b7e1-0d492707bf25",
+          "type": "field",
+          "fieldId": "f221b1b8-3e38-4768-b9f3-ee48554eca24",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e9723d37-b64e-4851-b012-34dd98dc5e74",
+          "type": "field",
+          "fieldId": "191e2ea5-c12f-4068-912e-57ddc09724f5",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "71c2f594-142b-44b9-bc72-dc9a54b30631",
+          "type": "field",
+          "fieldId": "438f6803-ef80-4b12-8568-8939c2df9dbf",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "c9799d2f-5a3b-4d89-ad29-7ef4878ee28f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Course: @8954235d-785c-44f0-ae6c-4b284d691549 - Question: @c245d20f-c47d-4434-a9b6-9089808cb7af - Attempt #@TEMPLATE_INDEX"
+  }
+}

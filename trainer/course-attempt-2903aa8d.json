@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2903aa8d-a0a3-4830-823b-dc628d6e9ab3",
+  "title": "Course Attempt",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Course": {
+      "id": "f89870d1-1dad-418a-a469-56e13e026bce",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course Enrollment\") , 'Course')"
+      },
+      "dataType": null
+    },
+    "Passed": {
+      "id": "a08eab1c-d177-4663-bdc2-99acca06cf2a",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Score %": {
+      "id": "bad74bbd-f13f-4ef3-8573-34e8ce5bfc97",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"Score %\") > 100 or lookup(__self, \"Score %\") < 0"
+      },
+      "dataType": "NUMBER"
+    },
+    "Trainee": {
+      "id": "b129e179-1cd9-40c6-815e-df2f1e493dbf",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course Enrollment\")  , 'Trainee')"
+      },
+      "dataType": null
+    },
+    "Course Name": {
+      "id": "a77db9c0-b475-4e3a-b6bf-b64e3b9b05ae",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course\") , 'Course Name')"
+      },
+      "dataType": null
+    },
+    "Course Enrollment": {
+      "id": "c32956e0-c0c2-4049-90cc-e2b7bc228b36",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Question Attempts": {
+      "id": "10ecf6e2-6e98-4c14-9e91-3b49a947006c",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "5d138965-39b4-40f8-ab9a-69b519669b04",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "b0298d78-39de-4c89-a24b-30ace1bf3afb"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "97355f85-ba36-4927-a1bf-85f6ea1b5350",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "a4f4cbc3-cbb8-4569-bbf4-a754eabcd799",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "ad3b2b71-e7d9-4c49-8c75-fb1549b94ec0",
+                  "type": "field",
+                  "fieldId": "b129e179-1cd9-40c6-815e-df2f1e493dbf",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4d2d413f-8117-4ad8-b709-1456cbd8b520",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "a918ac85-8387-40a1-95d1-65d37061e509",
+                  "type": "field",
+                  "fieldId": "f89870d1-1dad-418a-a469-56e13e026bce",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3237e842-0295-488d-ae62-c417cbee6a30",
+          "type": "field",
+          "fieldId": "a08eab1c-d177-4663-bdc2-99acca06cf2a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5861bb3f-97da-4c2f-ac53-78481c175621",
+          "type": "field",
+          "fieldId": "bad74bbd-f13f-4ef3-8573-34e8ce5bfc97",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f579982f-b3ce-42c0-8dc4-7b85bc821af6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7097a92e-bb70-4b74-b4f1-8cba2809008a",
+          "type": "field",
+          "fieldId": "10ecf6e2-6e98-4c14-9e91-3b49a947006c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Trainee",
+                "name": "Trainee",
+                "isHidden": true
+              },
+              {
+                "id": "Question Type",
+                "name": "Question Type",
+                "isHidden": false
+              },
+              {
+                "id": "Passed",
+                "name": "Passed",
+                "isHidden": false
+              },
+              {
+                "id": "Answer",
+                "name": "Answer",
+                "isHidden": false
+              },
+              {
+                "id": "Files",
+                "name": "Files",
+                "isHidden": false
+              },
+              {
+                "id": "Question",
+                "name": "Question",
+                "isHidden": false
+              },
+              {
+                "id": "Course",
+                "name": "Course",
+                "isHidden": true
+              },
+              {
+                "id": "Course Attempt",
+                "name": "Course Attempt",
+                "isHidden": true
+              },
+              {
+                "id": "Course Name",
+                "name": "Course Name",
+                "isHidden": true
+              },
+              {
+                "id": "Question Title",
+                "name": "Question Title",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "21f3cacf-67e7-4218-86b8-99902a5aec0f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Course: @a77db9c0-b475-4e3a-b6bf-b64e3b9b05ae - Attempt #@TEMPLATE_INDEX"
+  }
+}

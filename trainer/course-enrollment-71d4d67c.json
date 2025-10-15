@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "71d4d67c-a7cc-4c2d-8e7a-c5f347cc32df",
+  "title": "Course Enrollment",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Course": {
+      "id": "29ae0ee1-d03e-454c-bdc3-bec16f14c8ca",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "4c419ec0-cfa3-4051-bc01-d43cf7167604"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Course Name",
+              "config": "Course Name"
+            },
+            {
+              "name": "Course Modules",
+              "config": "Course Modules"
+            },
+            {
+              "name": "Passing Score %",
+              "config": "Passing Score %"
+            },
+            {
+              "name": "Requires Sign off?",
+              "config": "Requires Sign off?"
+            },
+            {
+              "name": "All Course Responses",
+              "config": "All Course Responses"
+            },
+            {
+              "name": "Controlled Procedures",
+              "config": "Controlled Procedures"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Trainee": {
+      "id": "b4a68838-ea69-4a8a-8b69-b7b4323b1c64",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Due Date": {
+      "id": "84d36480-5b7d-4ea4-8b13-51d3041126fa",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Course Name": {
+      "id": "5a062a2f-5e91-4950-a445-bf3c84e69ba5",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course\") , 'Course Name')"
+      },
+      "dataType": null
+    },
+    "Best Score %": {
+      "id": "d4f0731c-6148-4ad5-8eb6-ad0c7a6cd9e2",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Course Attempts": {
+      "id": "7a5022db-3a78-4d4c-b009-c6e47e581c45",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "2903aa8d-a0a3-4830-823b-dc628d6e9ab3",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Passing Score %": {
+      "id": "f2960aab-f552-4aa8-841e-b31e238b7690",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Course\")  , \"Passing Score %\")"
+      },
+      "dataType": null
+    },
+    "Training Request": {
+      "id": "6815ba37-8daa-46e3-b30f-edec5204f166",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "54fa46eb-23f0-4541-80ec-01ff96b8696a"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "1c9a4d07-9f0e-4cea-8cb1-fd8479a696f4",
+          "type": "field",
+          "fieldId": "b4a68838-ea69-4a8a-8b69-b7b4323b1c64",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "295f9e5b-53a6-4659-b6c6-1e8d1e7d82f3",
+          "type": "field",
+          "fieldId": "29ae0ee1-d03e-454c-bdc3-bec16f14c8ca",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "4497aebe-f29d-4c6a-86e6-359689c21785",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "b9616b63-103f-487e-8ebf-57428b0c0216",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "c8939b15-d5be-43b5-bc92-836f63801323",
+                  "type": "field",
+                  "fieldId": "d4f0731c-6148-4ad5-8eb6-ad0c7a6cd9e2",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e3943c33-34e9-4333-830f-2666c6cb8130",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "93a28d26-a170-4191-8a55-22e08a4ae4f1",
+                  "type": "field",
+                  "fieldId": "f2960aab-f552-4aa8-841e-b31e238b7690",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9faf0ff5-25c7-4255-a9a5-8a093f336c9c",
+          "type": "field",
+          "fieldId": "84d36480-5b7d-4ea4-8b13-51d3041126fa",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "69ba07aa-c896-4d6a-aed3-582f1231441a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8332e3cf-b010-4897-82be-40d8326db2a5",
+          "type": "field",
+          "fieldId": "7a5022db-3a78-4d4c-b009-c6e47e581c45",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Trainee",
+                "name": "Trainee",
+                "isHidden": true
+              },
+              {
+                "id": "Course",
+                "name": "Course",
+                "isHidden": false
+              },
+              {
+                "id": "Passed",
+                "name": "Passed",
+                "isHidden": false
+              },
+              {
+                "id": "Score %",
+                "name": "Score %",
+                "isHidden": false
+              },
+              {
+                "id": "Modules",
+                "name": "Modules",
+                "isHidden": false
+              },
+              {
+                "id": "Course Enrollment",
+                "name": "Course Enrollment",
+                "isHidden": true
+              },
+              {
+                "id": "Course Name",
+                "name": "Course Name",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "e2613feb-a969-4be1-9d92-49bfad3eaacf",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Course: @5a062a2f-5e91-4950-a445-bf3c84e69ba5 - Enrollment #@TEMPLATE_INDEX"
+  }
+}
