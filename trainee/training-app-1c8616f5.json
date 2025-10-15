@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "aa100abf-516a-441f-aa3f-2ad465eda280",
-  "title": "Training Management",
+  "id": "1c8616f5-30c9-4496-a42b-a11a88957a14",
+  "title": "Training App",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -15,22 +15,14 @@
     "typeIndex": "0"
   },
   "sourceInfo": {},
-  "fields": {
-    "Key": {
-      "id": "e801c51c-8f16-4b60-b09e-eb82c29c120c",
-      "type": "STRING",
-      "value": null,
-      "config": {},
-      "dataType": "STRING"
-    }
-  },
+  "fields": {},
   "kind": "TYPE",
-  "icon": "user",
+  "icon": "predictive-analysis",
   "contentType": "CUSTOM",
   "instanceConfig": {
     "strictMode": false,
     "defaultTemplate": {
-      "id": "1c153e1c-d17a-4f85-942d-a8af7ef87ad1",
+      "id": "536056dc-079f-4b64-8042-551ae45a8bab",
       "placeholderValue": "activeVersion"
     },
     "hideVersionNumber": false,
@@ -38,5 +30,5 @@
     "enforceUniqueTitles": false,
     "canChooseActiveVersion": true
   },
-  "customContentUploadId": "5f297a73-87bd-43a6-9b14-b4af6cbc9b9a"
+  "customContentUploadId": "ad9ee072-194a-4011-b395-e75b38e0cd2c"
 }

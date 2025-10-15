@@ -22,7 +22,7 @@
       "value": [
         {
           "id": "d8818516-8ecd-4681-8d78-0540239b18ca",
-          "version": "1"
+          "version": "1.3"
         }
       ],
       "config": {
@@ -143,7 +143,7 @@
       "value": null,
       "config": {
         "allowMultiple": true,
-        "allowAllOrgUsers": true
+        "allowRoleGroups": true
       },
       "dataType": "ROLE"
     },
@@ -220,7 +220,7 @@
           "type": "p",
           "children": [
             {
-              "text": "Tip: Rename your training request to make it reusable eg. ‘Manufacturing Onboarding’.",
+              "text": "Tip: Remove the computed title and name your training request to make it reusable eg. ‘Manufacturing Onboarding’.",
               "italic": true
             }
           ]
@@ -319,7 +319,7 @@
           "type": "p",
           "children": [
             {
-              "text": "(Optional) Require passing responses to be review before course completion. Select the trainers to notify and review passing course enrollments (if empty, all training managers can approve)"
+              "text": "(Optional) Require passing responses to be reviewed before course completion. Select the trainers to notify and review passing course enrollments (if empty, all training managers can approve)"
             }
           ]
         },

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "1011e800-e9de-479b-98fe-0c2c347c0076",
-  "title": "Training Management",
+  "id": "536056dc-079f-4b64-8042-551ae45a8bab",
+  "title": "Training App Template",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -14,29 +14,26 @@
     "editors": [],
     "typeIndex": "0"
   },
-  "sourceInfo": {
-    "template": {
-      "id": "1c153e1c-d17a-4f85-942d-a8af7ef87ad1",
-      "version": "1"
-    }
-  },
+  "sourceInfo": {},
   "fields": {
     "Key": {
-      "id": "7972f8bb-da0e-41d8-ba0c-8ed8a22f60c8",
+      "id": "0cc07f36-cfe2-4cd4-ae31-29cd27f90759",
       "type": "STRING",
-      "value": null,
+      "value": "RlAAWmlTXFsOB1ADDFZRUgEAUAQCBVIOVQlQBQEDUFFWVAJUDg5TXVUBDFAAAQ4BUVYEVFEGBlwDBFBTBQBVVQVRVwcDAQYKBgADVAgBVVMBU1UICAFUWgBYAwFQVwUNAQhSUwlTAgZXBQoHC15SDQwFBlJXAFQGVFQBAgEAWgYDAgQPAwMHDAcEVQQO",
       "config": {},
       "dataType": "STRING"
     }
   },
-  "kind": "INSTANCE",
+  "kind": "TEMPLATE",
   "type": {
     "ref": {
-      "id": "aa100abf-516a-441f-aa3f-2ad465eda280"
+      "id": "1c8616f5-30c9-4496-a42b-a11a88957a14"
     }
   },
   "content": {
-    "type": "CUSTOM",
-    "initialCustomContentUploadId": "5f297a73-87bd-43a6-9b14-b4af6cbc9b9a"
+    "type": "CUSTOM"
+  },
+  "instanceConfig": {
+    "strictMode": false
   }
 }

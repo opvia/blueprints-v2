@@ -22,7 +22,7 @@
       "value": [
         {
           "id": "81bd1cb1-f961-4d6a-8b50-28328f04121e",
-          "version": "1.1"
+          "version": "1.2"
         }
       ],
       "config": {
@@ -74,7 +74,14 @@
           "type": "p",
           "children": [
             {
-              "text": "1. Run the setup script. This will give your training app access to this system and migrate existing Seal training data."
+              "text": "1. Run the setup script. Ensure you have first installed the "
+            },
+            {
+              "code": true,
+              "text": "trainer"
+            },
+            {
+              "text": " blueprint in your global system."
             }
           ]
         },
@@ -87,7 +94,7 @@
               "text": ""
             }
           ],
-          "showScriptFieldCode": true
+          "showScriptFieldCode": false
         },
         {
           "id": "d237ce2d-a52e-424c-946c-40041f79bb1a",
