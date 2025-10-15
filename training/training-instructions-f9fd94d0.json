@@ -22,7 +22,7 @@
       "value": [
         {
           "id": "81bd1cb1-f961-4d6a-8b50-28328f04121e",
-          "version": "1"
+          "version": "1.1"
         }
       ],
       "config": {
@@ -87,7 +87,7 @@
               "text": ""
             }
           ],
-          "showScriptFieldCode": false
+          "showScriptFieldCode": true
         },
         {
           "id": "d237ce2d-a52e-424c-946c-40041f79bb1a",
