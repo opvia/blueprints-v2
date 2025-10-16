@@ -1,0 +1,51 @@
+{
+  "kind": "VARIANT",
+  "title": "Variant Template Excluded - Variant 1",
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0",
+    "variantIndex": "0"
+  },
+  "type": {
+    "ref": {
+      "id": "d4e8ce38-0f21-41ed-b4db-7227c7499905"
+    }
+  },
+  "fields": {},
+  "instanceConfig": {
+    "strictMode": false
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "295567e3-03fe-452d-9a08-509928b0d351",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "id": "a5251c71-f5c0-4390-a46e-606308618997",
+  "sourceInfo": {
+    "variantOrigin": {
+      "id": "4a1d7f8f-4356-456e-970e-3e05375aa368",
+      "version": "1"
+    }
+  },
+  "computedTitle": "Variant Template Excluded - Variant @VARIANT_INDEX",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "schemaVersion": "2.0.0"
+}

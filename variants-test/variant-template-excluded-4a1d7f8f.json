@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4a1d7f8f-4356-456e-970e-3e05375aa368",
+  "title": "Variant Template Excluded",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d4e8ce38-0f21-41ed-b4db-7227c7499905"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "295567e3-03fe-452d-9a08-509928b0d351",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
