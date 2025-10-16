@@ -1,0 +1,1263 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "23483da2-67a3-4b93-a216-4e832c8303ac",
+  "title": "Mastermix Preparation",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Date": {
+      "id": "91550975-c203-413a-98cd-ca1373560b06",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Subpart 1": {
+      "id": "77c71b38-2157-494a-b2a1-e0b8f7305f83",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "f4c7e06f-5314-4530-9a4a-1024d4fbeb20"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Panel",
+              "config": "Panel"
+            },
+            {
+              "name": "Reagent 1",
+              "config": "Reagent 1"
+            },
+            {
+              "name": "Reagent 2",
+              "config": "Reagent 2"
+            },
+            {
+              "name": "Antibodies",
+              "config": "Antibodies"
+            },
+            {
+              "name": "Volume of reagent 1 per panel (uL)",
+              "config": "Volume of reagent 1 per panel (uL)"
+            },
+            {
+              "name": "Volume of reagent 2 per panel (uL)",
+              "config": "Volume of reagent 2 per panel (uL)"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Subpart 2": {
+      "id": "c7dd43b8-d518-4027-8d24-370603837c43",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "f4c7e06f-5314-4530-9a4a-1024d4fbeb20"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Panel",
+              "config": "Panel"
+            },
+            {
+              "name": "Reagent 1",
+              "config": "Reagent 1"
+            },
+            {
+              "name": "Reagent 2",
+              "config": "Reagent 2"
+            },
+            {
+              "name": "Antibodies",
+              "config": "Antibodies"
+            },
+            {
+              "name": "Volume of reagent 1 per panel (uL)",
+              "config": "Volume of reagent 1 per panel (uL)"
+            },
+            {
+              "name": "Volume of reagent 2 per panel (uL)",
+              "config": "Volume of reagent 2 per panel (uL)"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "1. Reagents": {
+      "id": "9cad76ec-ea06-4e82-8d66-da9cee1cbab4",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "c36842f2-b513-4a15-bcd4-2ef45e8066e9",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "2. Reagents": {
+      "id": "20fca9e9-05f4-452b-bd8d-19344dfc52db",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "c36842f2-b513-4a15-bcd4-2ef45e8066e9",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Operator ID": {
+      "id": "e1652eb3-93e2-48e6-8020-a8dbacc0c974",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "00a661cc-94fa-4afd-a36c-0c30fc502489"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "CV",
+              "config": "CV"
+            },
+            {
+              "name": "JD",
+              "config": "JD"
+            },
+            {
+              "name": "HTA",
+              "config": "HTA"
+            },
+            {
+              "name": "GCLP",
+              "config": "GCLP"
+            },
+            {
+              "name": "Team",
+              "config": "Team"
+            },
+            {
+              "name": "Initials",
+              "config": "Initials"
+            },
+            {
+              "name": "Line Manager(s)",
+              "config": "Line Manager(s)"
+            },
+            {
+              "name": "Date of Last HTA",
+              "config": "Date of Last HTA"
+            },
+            {
+              "name": "Current Job Title",
+              "config": "Current Job Title"
+            },
+            {
+              "name": "Date of Last GCLP",
+              "config": "Date of Last GCLP"
+            },
+            {
+              "name": "Employment Status",
+              "config": "Employment Status"
+            },
+            {
+              "name": "Other Job Role(s)",
+              "config": "Other Job Role(s)"
+            },
+            {
+              "name": "Employment End Date",
+              "config": "Employment End Date"
+            },
+            {
+              "name": "Employment Start Date",
+              "config": "Employment Start Date"
+            },
+            {
+              "name": "Date of Last CV Updated",
+              "config": "Date of Last CV Updated"
+            },
+            {
+              "name": "Date of Next HTA Refresher",
+              "config": "Date of Next HTA Refresher"
+            },
+            {
+              "name": "Health and Safety Induction",
+              "config": "Health and Safety Induction"
+            },
+            {
+              "name": "Date of Next CV Update (2 yrs)",
+              "config": "Date of Next CV Update (2 yrs)"
+            },
+            {
+              "name": "Date of Most Recent Title Change",
+              "config": "Date of Most Recent Title Change"
+            },
+            {
+              "name": "Date of Next GCLP Refresher (2yrs)",
+              "config": "Date of Next GCLP Refresher (2yrs)"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "1. QC Result": {
+      "id": "4099afe0-9cee-4e98-bd9f-4cda032679d8",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "2. QC Result": {
+      "id": "33896023-b5ee-469c-95da-6c22bf812f8f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "1. No of samples": {
+      "id": "07b85de6-39ff-4f09-b50f-ebc6a49980c3",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"1. No of samples\") < 4"
+      },
+      "dataType": "NUMBER"
+    },
+    "2. No. of samples": {
+      "id": "43951c33-21f4-4e9a-b1ff-a9594cc08a13",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Finalise Subparts": {
+      "id": "decee9c9-0a44-4b01-9b65-96a8a66c3323",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "6ea7b8b0-0668-4544-a4fb-50837ef998e2",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "fork",
+          "label": "Finalise"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Operator ID string": {
+      "id": "9cfc27c9-be7e-4407-bd84-d6e2c81d5270",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Operator ID\") , \"TITLE\")"
+      },
+      "dataType": null
+    },
+    "Formatted date string": {
+      "id": "9b3a5205-27e5-4e84-9281-c10f3f0334a3",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "formatDatetime( lookup(__self, \"Date\"), \"yyyyMMdd\")"
+      },
+      "dataType": null
+    },
+    "Subpart 1 preparation": {
+      "id": "7aab0eb8-387d-4050-b01f-d529bdfa80b1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Subpart 2 preparation": {
+      "id": "532c54c8-ffd9-46b9-8066-35e573a38372",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Subpart 1 title string": {
+      "id": "435e6d10-2586-458b-8117-09060afa35a1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Subpart 1\") , \"TITLE\")"
+      },
+      "dataType": null
+    },
+    "Subpart 2 title string": {
+      "id": "8b67279d-c107-4956-afeb-76f5d72f1190",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Subpart 2\")  , \"TITLE\")"
+      },
+      "dataType": null
+    },
+    "1. Total MM Volume (uL)": {
+      "id": "45480110-7f69-4984-954e-3acd1c11e942",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "1. Volume per well (uL)": {
+      "id": "9a28a399-dbe7-46be-a56e-7e1409f0979c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"1. Total MM Volume (uL)\") / lookup(__self, \"1. No of samples\")"
+      },
+      "dataType": null
+    },
+    "2. Total MM Volume (uL)": {
+      "id": "7d4fdf15-2a60-4798-a003-d4e79c0094d6",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "2. Volume per well (uL)": {
+      "id": "f1a5736e-06f0-43c9-98c3-840ddde5804d",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"2. Total MM Volume (uL)\")  / lookup(__self, \"2. No. of samples\")"
+      },
+      "dataType": null
+    },
+    "1. Calculate Total Volume": {
+      "id": "f88f72f2-49a7-4003-b7b6-432b717275b4",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "ac2758bb-7acc-4c72-a33c-2a90e7d9ff07",
+          "version": "4"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Calculate Total Volume"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "2. Calculate Total Volume": {
+      "id": "7ae1e953-ae2a-4070-9363-424b34323479",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "3c96ed23-e622-484c-bf35-44d0cd20b97c",
+          "version": "4"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Calculate Total Volume"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Daily subpart 1 MM number": {
+      "id": "f8391f3d-a357-4038-83cf-9c0f9a83ffcf",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Daily subpart 2 MM number": {
+      "id": "52787c67-8cb6-40f8-84b7-c3f52d3d8079",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Subpart 1 preparation name": {
+      "id": "69c4bf88-a053-434e-bd79-b13a426cc803",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Formatted date string\")_lookup(__self, \"Operator ID string\")_lookup(__self, \"Subpart 1 title string\")lookup(__self, \"Daily subpart 1 MM number\")"
+      },
+      "dataType": null
+    },
+    "Subpart 2 preparation name": {
+      "id": "072015cf-7777-4376-8a09-50b849c88574",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Formatted date string\")_lookup(__self, \"Operator ID string\")_lookup(__self, \"Subpart 2 title string\")lookup(__self, \"Daily subpart 2 MM number\")"
+      },
+      "dataType": null
+    },
+    "Pull antibodies from subparts": {
+      "id": "7543b6a9-6137-4611-bb9b-b584fb8a945e",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "c4e3ff57-1fe9-4170-8fb0-3e7cc0bbe436",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "diagram-tree",
+          "label": "Use antibodies from subpart lists"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "1. No of samples (inc. excess)": {
+      "id": "4ea4c190-9237-4bc6-963e-7513ea4b4dd4",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "2. No of samples (inc. excess)": {
+      "id": "d3a16a20-7b51-4d81-931a-ae553e479f93",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "1. QC check - number of reagents": {
+      "id": "8e1382bb-888f-44d5-8a9e-f7de1d3185c4",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "2211897e-d855-40e3-8e94-334c3fb44646",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "comparison",
+          "label": "Check"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "2. QC check - number of reagents": {
+      "id": "13e26881-9ced-4d78-8ddb-354830a5ed99",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "59142911-00ac-4fb3-8a2b-9397e4b7a724",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "comparison",
+          "label": "Check"
+        }
+      },
+      "dataType": "SCRIPT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "9b73daa5-bbfb-4fa2-b47d-48126cc98e26"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "12d55ae2-c0d1-4b6b-9e42-9cf35222dcc6",
+          "type": "p",
+          "children": [
+            {
+              "text": "ALL SUBPARTS WILL BE CREATED FROM THIS TEMPLATE"
+            }
+          ]
+        },
+        {
+          "id": "fc9b8edc-24a3-40ce-a6c5-e059e2faef50",
+          "type": "field",
+          "fieldId": "e1652eb3-93e2-48e6-8020-a8dbacc0c974",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "40f96f0d-a3f5-462c-9080-1bb367537732",
+          "type": "field",
+          "fieldId": "91550975-c203-413a-98cd-ca1373560b06",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "877c739f-6e40-476c-af4d-e3ef7a0aab1d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a4f12e71-f221-4ffc-8a98-a5ba9d3c9bb9",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Components"
+            }
+          ]
+        },
+        {
+          "id": "7cec17de-4fd3-4175-8fb1-4732d4595318",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "c048cf7b-2d45-49c9-b3d0-d485232d1019",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "94965428-31f9-4f9c-9f1b-5e38e656c674",
+                  "type": "p",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Always put T, NK1, GD1, TIC as Subpart 1"
+                    }
+                  ]
+                },
+                {
+                  "id": "83fa22a7-d415-4989-b9d1-831934db0982",
+                  "type": "field",
+                  "fieldId": "77c71b38-2157-494a-b2a1-e0b8f7305f83",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "39495a00-6cfb-4833-95de-4d56f5378685",
+                  "type": "field",
+                  "fieldId": "f8391f3d-a357-4038-83cf-9c0f9a83ffcf",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "79e162a7-0ebf-4931-903d-1a4144dde458",
+                  "type": "field",
+                  "fieldId": "69c4bf88-a053-434e-bd79-b13a426cc803",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "86e3e3d1-651a-414f-8eb9-e31ac34baa6a",
+                  "type": "field",
+                  "fieldId": "07b85de6-39ff-4f09-b50f-ebc6a49980c3",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "b5702c4b-e67c-49ed-8bef-e7c3267d6d11",
+                  "type": "field",
+                  "fieldId": "4ea4c190-9237-4bc6-963e-7513ea4b4dd4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "be2cd122-5dba-4302-8159-4d20528b594b",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "9390461f-2a05-46bd-8dc9-70e5128c2577",
+                  "type": "p",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Always put A, NK2, GD2 as Subpart 2"
+                    }
+                  ]
+                },
+                {
+                  "id": "4ae78fd6-0eea-48fb-8d3f-067bb0d67722",
+                  "type": "field",
+                  "fieldId": "c7dd43b8-d518-4027-8d24-370603837c43",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "7975ffb8-b895-4ead-93b9-2f0ed1a7d967",
+                  "type": "field",
+                  "fieldId": "52787c67-8cb6-40f8-84b7-c3f52d3d8079",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "89a9996e-a03b-42da-aa12-83511ab76995",
+                  "type": "field",
+                  "fieldId": "072015cf-7777-4376-8a09-50b849c88574",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "41b8d650-322c-4f41-b4a3-66dc8ed60e3f",
+                  "type": "field",
+                  "fieldId": "43951c33-21f4-4e9a-b1ff-a9594cc08a13",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0c5e6e04-0e3c-4e10-a67c-e8b809d7ac9a",
+                  "type": "field",
+                  "fieldId": "d3a16a20-7b51-4d81-931a-ae553e479f93",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "15dc7c91-4664-4ebc-85df-c28a71409d86",
+          "type": "field",
+          "fieldId": "7543b6a9-6137-4611-bb9b-b584fb8a945e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "61c74818-e382-46f3-a049-d78143c32fe2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "79653243-db8a-493e-9e03-fafefab2f40a",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "bbceefd0-2e33-4386-9300-068d68bc9347",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "db6ad2ca-1202-4c89-943b-6b69cc6642d7",
+                  "type": "field",
+                  "fieldId": "9cad76ec-ea06-4e82-8d66-da9cee1cbab4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "submissionTableConfig": {
+                    "properties": [
+                      {
+                        "id": "TITLE",
+                        "name": "Title",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Antibody",
+                        "name": "Antibody",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Antigen",
+                        "name": "Antigen",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Fluorophore",
+                        "name": "Fluorophore",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Lot Number",
+                        "name": "Lot Number",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Manufacturer",
+                        "name": "Manufacturer",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Stock Unit",
+                        "name": "Stock Unit",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Volume per panel (uL)",
+                        "name": "Volume per panel (uL)",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "T - Amount to add to MM (uL)",
+                        "name": "T - Amount to add to MM (uL)",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "APC - Amount to add to MM (uL)",
+                        "name": "APC - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "NK1 - Amount to add to MM (uL)",
+                        "name": "NK1 - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "NK2 - Amount to add to MM (uL)",
+                        "name": "NK2 - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "GD1 - Amount to add to MM (uL)",
+                        "name": "GD1 - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "GD2 - Amount to add to MM (uL)",
+                        "name": "GD2 - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "TIC - Amount to add to MM (uL)",
+                        "name": "TIC - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Actual Amount added to MM (uL)",
+                        "name": "Actual Amount added to MM (uL)",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Decrement Reagent",
+                        "name": "Decrement Reagent",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Volume decremented",
+                        "name": "Volume decremented",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Undo Drecrement",
+                        "name": "Undo Drecrement",
+                        "isHidden": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "89c52daa-ce2d-47fd-adc3-44e2100f052f",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "046effac-0199-4409-bcfe-9f8b2ee1fb68",
+                  "type": "field",
+                  "fieldId": "f88f72f2-49a7-4003-b7b6-432b717275b4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "showScriptFieldCode": false
+                },
+                {
+                  "id": "9b054355-74b9-43eb-935c-ce939d81f600",
+                  "type": "field",
+                  "fieldId": "45480110-7f69-4984-954e-3acd1c11e942",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "dfe7b88d-68f7-457a-8e2f-f6af008a4c78",
+                  "type": "field",
+                  "fieldId": "9a28a399-dbe7-46be-a56e-7e1409f0979c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "6e6fc7c9-c137-4acc-b078-5754921921ae",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "7a49447d-c355-4a99-90b8-2ed38b98cf31",
+                  "type": "field",
+                  "fieldId": "8e1382bb-888f-44d5-8a9e-f7de1d3185c4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "showScriptFieldCode": false
+                },
+                {
+                  "id": "d4c78084-eaef-44ed-9aa0-c954fc0ada57",
+                  "type": "field",
+                  "fieldId": "4099afe0-9cee-4e98-bd9f-4cda032679d8",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "cce72df5-3df6-4e75-9543-8a1d71e75208",
+                  "type": "task",
+                  "children": [
+                    {
+                      "text": "Subpart 1 Completed"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d0a4e6b1-1bf5-46eb-9e57-687f0b585246",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "62f7ee5d-4b05-4255-bbdc-69ad892da78f",
+                  "type": "field",
+                  "fieldId": "20fca9e9-05f4-452b-bd8d-19344dfc52db",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "submissionTableConfig": {
+                    "properties": [
+                      {
+                        "id": "TITLE",
+                        "name": "Title",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Antibody",
+                        "name": "Antibody",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Antigen",
+                        "name": "Antigen",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Fluorophore",
+                        "name": "Fluorophore",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Lot Number",
+                        "name": "Lot Number",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Stock Unit",
+                        "name": "Stock Unit",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Manufacturer",
+                        "name": "Manufacturer",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Volume per panel (uL)",
+                        "name": "Volume per panel (uL)",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "T - Amount to add to MM (uL)",
+                        "name": "T - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "APC - Amount to add to MM (uL)",
+                        "name": "APC - Amount to add to MM (uL)",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "NK1 - Amount to add to MM (uL)",
+                        "name": "NK1 - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "NK2 - Amount to add to MM (uL)",
+                        "name": "NK2 - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "GD1 - Amount to add to MM (uL)",
+                        "name": "GD1 - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "GD2 - Amount to add to MM (uL)",
+                        "name": "GD2 - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "TIC - Amount to add to MM (uL)",
+                        "name": "TIC - Amount to add to MM (uL)",
+                        "isHidden": true
+                      },
+                      {
+                        "id": "Actual Amount added to MM (uL)",
+                        "name": "Actual Amount added to MM (uL)",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Decrement Reagent",
+                        "name": "Decrement Reagent",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Volume decremented",
+                        "name": "Volume decremented",
+                        "isHidden": false
+                      },
+                      {
+                        "id": "Undo Drecrement",
+                        "name": "Undo Drecrement",
+                        "isHidden": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "cc940504-8a4f-463e-afab-2d46619103fd",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0885b3d4-eba0-493c-8fbb-857f6ff0f3a6",
+                  "type": "field",
+                  "fieldId": "7ae1e953-ae2a-4070-9363-424b34323479",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "showScriptFieldCode": false
+                },
+                {
+                  "id": "e6457642-cc4b-4088-8e19-6ce276fdf47b",
+                  "type": "field",
+                  "fieldId": "7d4fdf15-2a60-4798-a003-d4e79c0094d6",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d2c61d89-f038-476d-bfc8-2ab0d7cd51c1",
+                  "type": "field",
+                  "fieldId": "f1a5736e-06f0-43c9-98c3-840ddde5804d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "cfe7960b-6768-4fe0-b211-67f5382d4883",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "7b5606cd-f4fe-4869-9ac4-438f81aa6409",
+                  "type": "field",
+                  "fieldId": "13e26881-9ced-4d78-8ddb-354830a5ed99",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "showScriptFieldCode": false
+                },
+                {
+                  "id": "982e8cfd-3af7-4617-9b55-655c652cd204",
+                  "type": "field",
+                  "fieldId": "33896023-b5ee-469c-95da-6c22bf812f8f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d09ba53a-3fa4-47aa-85ac-75fd3e233ff2",
+                  "type": "task",
+                  "children": [
+                    {
+                      "text": "Subpart 2 Completed"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "05696316-8eb5-46cb-a0b2-fc20720b1b61",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "68a84784-b323-453c-a90e-d60179b868a9",
+          "type": "p",
+          "children": [
+            {
+              "text": "Once complete, this step allows each subpart preparation to be used independently and enforces uniformity of field names across all preparations:"
+            }
+          ]
+        },
+        {
+          "id": "52e9eece-d0d4-46c9-b20e-4040115c8ec7",
+          "type": "field",
+          "fieldId": "decee9c9-0a44-4b01-9b65-96a8a66c3323",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "00e9bff8-9a2b-4a93-9967-79e51faf9874",
+          "type": "p",
+          "children": [
+            {
+              "text": "The following subparts will be added to the “MM individual instances” reference field in the worksheet instance:"
+            }
+          ]
+        },
+        {
+          "id": "c7f1b21f-f14b-4f28-9228-2dbad8202456",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "b272f0d6-1a0a-4882-9383-3afea8d660e6",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "f565674b-8a1a-4d79-9d03-c4a60ac20f05",
+                  "type": "field",
+                  "fieldId": "7aab0eb8-387d-4050-b01f-d529bdfa80b1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "9f50dd07-778a-4d20-9629-efbe78f5cbb4",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "31f6d1d8-2ec6-4b19-b517-d800237f117b",
+                  "type": "field",
+                  "fieldId": "532c54c8-ffd9-46b9-8066-35e573a38372",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1aa0ea8d-6333-4402-a697-fd72a8ed0ff2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "MM preparation @69c4bf88-a053-434e-bd79-b13a426cc803/@072015cf-7777-4376-8a09-50b849c88574"
+  }
+}

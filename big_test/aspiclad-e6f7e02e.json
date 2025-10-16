@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "e6f7e02e-396d-41df-9380-d129096e4f72",
+  "title": "AspiCLAD",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "a94c29fd-7a24-440c-8353-21d804062128",
+      "version": "6"
+    }
+  },
+  "fields": {
+    "Projects": {
+      "id": "585e6e0f-0363-462b-b503-85b6871f28f6",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "fieldValue": [
+            {
+              "name": "Client",
+              "value": "ref(lookup(__self, \"ID\"))",
+              "operator": "="
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Client",
+            "config": "Client"
+          },
+          {
+            "name": "Project Description",
+            "config": "Project Description"
+          },
+          {
+            "name": "Project ID",
+            "config": "Project ID"
+          }
+        ],
+        "defaultColumnOrder": [
+          "TITLE",
+          "TYPE",
+          "STATUS",
+          "TAGS",
+          "CREATED_AT",
+          "LAST_UPDATED_AT",
+          "CREATED_BY",
+          "LAST_UPDATED_BY",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "WORK_INSTRUCTIONS_PROGRESS"
+        ],
+        "hiddenDefaultColumns": [
+          "TYPE",
+          "TAGS",
+          "CREATED_AT",
+          "LAST_UPDATED_AT",
+          "CREATED_BY",
+          "LAST_UPDATED_BY",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "WORK_INSTRUCTIONS_PROGRESS"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Client Name": {
+      "id": "c6017fbe-bb21-4d7b-9b37-518e00f4228a",
+      "type": "STRING",
+      "value": "AspiCLAD",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Client Drive Folder": {
+      "id": "ad532eb0-56be-42d4-ac85-16d4a1d98c32",
+      "type": "STRING",
+      "value": "https://drive.google.com/drive/folders/1Ilca6tgSNm1W8ZQe9Fafz3We2T-9tjK-",
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "@c6017fbe-bb21-4d7b-9b37-518e00f4228a ",
+  "type": {
+    "ref": {
+      "id": "a3d6f79f-6a5a-415a-957b-ca1e93b5ccf2"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "10ea176a-0f29-4f1b-b1d1-30d483cfa5d6",
+          "type": "field",
+          "fieldId": "c6017fbe-bb21-4d7b-9b37-518e00f4228a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d10a6641-5546-42e2-a6ac-a3bd9fcc4d66",
+          "type": "field",
+          "fieldId": "ad532eb0-56be-42d4-ac85-16d4a1d98c32",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8d139f53-b3fc-4705-b665-3cb7976796d5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "313d9c45-d609-4550-8034-396e0e894e61",
+          "type": "field",
+          "fieldId": "585e6e0f-0363-462b-b503-85b6871f28f6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4874e68d-8211-4ff5-96d1-686f3e2a17e0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cf0ea3b5-e9f2-440f-b4e1-dfff0098e61b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

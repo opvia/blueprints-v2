@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2211897e-d855-40e3-8e94-334c3fb44646",
+  "title": "QC check - number of reagents (Subpart 1)",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "version": "2"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the containing entity (the Mastermix template)\ncontaining_entity = seal.get_containing_entity()\n\n# Initialize a variable to store the QC result message\nqc_result_message = \"\"\n\n# Get the list of references from the \"1. Reagents\" submission field\n# This field contains the actual reagents for Subpart 1.\nsubpart_1_reagents_refs = containing_entity[\"fields\"][\"1. Reagents\"][\"value\"]\nnum_subpart_1_reagents_actual = len(subpart_1_reagents_refs)\n\n# Get the reference to the entity in \"Subpart 1\" field\n# Assuming Subpart 1 is a single reference field based on its config\nsubpart_1_ref_value = containing_entity[\"fields\"][\"Subpart 1\"][\"value\"]\n\n# Ensure a Subpart 1 entity is actually referenced\nif not subpart_1_ref_value:\n    qc_result_message = \"QC Failed: 'Subpart 1' reference field is empty. Cannot determine expected number of reagents.\"\n    print(qc_result_message)\nelse:\n    subpart_1_ref = subpart_1_ref_value[0]\n    # Get the actual entity referenced by \"Subpart 1\"\n    subpart_1_entity = seal.get_entity(ref=subpart_1_ref)\n\n    # Get the title and ID of the Subpart 1 entity for use in messages and search query\n    subpart_1_title = subpart_1_entity.get(\"title\", \"Untitled Subpart 1 Entity\")\n    subpart_1_entity_id = subpart_1_entity[\"id\"]\n\n    # Calculate expected number of reagents based on new rules\n    expected_reagents_count_from_subpart = 0\n\n    # 1. Add reagents with non-zero volume from the Subpart 1 entity\n    reagent_1_field_value = subpart_1_entity[\"fields\"].get(\"Reagent 1\", {}).get(\"value\")\n    volume_reagent_1 = subpart_1_entity[\"fields\"].get(\"Volume of reagent 1 per panel (uL)\", {}).get(\"value\", 0)\n    if reagent_1_field_value and isinstance(reagent_1_field_value, list) and len(reagent_1_field_value) > 0 and volume_reagent_1 != 0:\n        expected_reagents_count_from_subpart += 1\n\n    reagent_2_field_value = subpart_1_entity[\"fields\"].get(\"Reagent 2\", {}).get(\"value\")\n    volume_reagent_2 = subpart_1_entity[\"fields\"].get(\"Volume of reagent 2 per panel (uL)\", {}).get(\"value\", 0)\n    if reagent_2_field_value and isinstance(reagent_2_field_value, list) and len(reagent_2_field_value) > 0 and volume_reagent_2 != 0:\n        expected_reagents_count_from_subpart += 1\n\n    # 2. Add the number of rows present when searching for antibodies\n    # The search query is \"template: 65097f3f-acef-445e-9cda-1ec0b4e11a6f field:\"Used in Panel Subparts:\"=ref(@\"Subpart 1\")\"\n    antibodies_template_id = \"65097f3f-acef-445e-9cda-1ec0b4e11a6f\" # Template ID for Antibody entities\n\n    search_query_config = {\n        \"filters\": {\n            \"template\": [antibodies_template_id],\n            \"fieldValue\": [\n                {\n                    \"name\": \"Used in Panel Subparts:\", # Field name in the antibody entities that references the Subpart\n                    \"operator\": \"=\",\n                    \"value\": f\"ref({subpart_1_entity_id})\" # Dynamically insert Subpart 1 entity ID\n                }\n            ]\n        }\n    }\n\n    antibodies_search_results = seal.search_entities(search_query_config)\n    num_antibodies_from_search = len(antibodies_search_results)\n    \n    expected_total_reagents_count = expected_reagents_count_from_subpart + num_antibodies_from_search\n\n    # Perform comparison\n    if num_subpart_1_reagents_actual != expected_total_reagents_count:\n        qc_result_message = (\n            f\"QC Failed: Expected {expected_reagents_count_from_subpart} reagents and {num_antibodies_from_search} antibodies \"\n            f\"(Total {expected_total_reagents_count}). \"\n            f\"Actual: {num_subpart_1_reagents_actual} reagents found in '1. Reagents' submission field. Mismatch for Subpart 1 (Title: {subpart_1_title}).\"\n        )\n        print(qc_result_message)\n    else:\n        qc_result_message = (\n            f\"QC Passed: Expected {expected_reagents_count_from_subpart} reagents and {num_antibodies_from_search} antibodies \"\n            f\"(Total {expected_total_reagents_count}). \"\n            f\"Actual: {num_subpart_1_reagents_actual} reagents found in '1. Reagents' submission field. All matched for Subpart 1 (Title: {subpart_1_title}).\"\n        )\n        print(qc_result_message)\n\n# Update the \"1. QC Result\" field in the containing entity\nseal.update_field_value(\"1. QC Result\", qc_result_message)"
+    }
+  }
+}

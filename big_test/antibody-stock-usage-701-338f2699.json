@@ -1,0 +1,1272 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "338f2699-2e4c-4d99-b3f1-2054fb5c3647",
+  "title": "Antibody Stock Usage - 701",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "c36842f2-b513-4a15-bcd4-2ef45e8066e9",
+      "version": "20"
+    },
+    "submissionField": {
+      "fieldId": "9cad76ec-ea06-4e82-8d66-da9cee1cbab4",
+      "fieldName": "1. Reagents",
+      "parentEntityId": "3ce29e27-a582-413c-92c4-21079361db23"
+    }
+  },
+  "fields": {
+    "Antigen": {
+      "id": "97241bd9-1ff3-456a-87a9-2ddedeb29b14",
+      "type": "FORMULA",
+      "value": "CD27",
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Reagent\") , \"Antigen\")"
+      },
+      "dataType": "STRING"
+    },
+    "Reagent": {
+      "id": "79ef1b43-200c-4978-8361-4879ca691e22",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "e95f8c29-fa4f-4d93-86b5-f69246a3e841",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "65097f3f-acef-445e-9cda-1ec0b4e11a6f"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Name",
+              "config": "Name"
+            },
+            {
+              "name": "Clone",
+              "config": "Clone"
+            },
+            {
+              "name": "Antigen",
+              "config": "Antigen"
+            },
+            {
+              "name": "Isotype",
+              "config": "Isotype"
+            },
+            {
+              "name": "Clonality",
+              "config": "Clonality"
+            },
+            {
+              "name": "Vial size",
+              "config": "Vial size"
+            },
+            {
+              "name": "Submission",
+              "config": "Submission"
+            },
+            {
+              "name": "Fluorophore",
+              "config": "Fluorophore"
+            },
+            {
+              "name": "Host species",
+              "config": "Host species"
+            },
+            {
+              "name": "Inventory ID",
+              "config": "Inventory ID"
+            },
+            {
+              "name": "Manufacturer",
+              "config": "Manufacturer"
+            },
+            {
+              "name": "Catalog Number",
+              "config": "Catalog Number"
+            },
+            {
+              "name": "Labelling on SONY",
+              "config": "Labelling on SONY"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Lot Number": {
+      "id": "882b8ed7-b067-4322-9dd7-1c7a07730f2b",
+      "type": "FORMULA",
+      "value": [
+        {
+          "id": "4a806875-8eca-45fa-923f-958ca4130226",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Stock Unit\") , \"Lot Number\")"
+      },
+      "dataType": "ENTITY"
+    },
+    "Stock Unit": {
+      "id": "76f25af0-65da-4b30-aa1f-3488e8f3a26a",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "8f595c6b-3396-4fdb-a406-0376caeea5e4",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "9a595b4a-2fe8-4e96-93a1-d86652585cf4"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Lot Number",
+              "config": "Lot Number"
+            },
+            {
+              "name": "Antibody",
+              "config": "Antibody"
+            },
+            {
+              "name": "Remaining volume (uL)",
+              "config": "Remaining volume (uL)"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Fluorophore": {
+      "id": "2fa773e7-c3e5-4ca7-b286-1d909aa56623",
+      "type": "FORMULA",
+      "value": "PE/Fire 810",
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Reagent\") , \"Fluorophore\")"
+      },
+      "dataType": "STRING"
+    },
+    "Manufacturer": {
+      "id": "66f0eb05-5a30-4003-8345-7e16229f98b7",
+      "type": "FORMULA",
+      "value": "BioLegend",
+      "config": {
+        "formulaExpression": "lookup( lookup( lookup(__self, \"Reagent\") , \"Manufacturer\") , \"TITLE\" )"
+      },
+      "dataType": "STRING"
+    },
+    "Undo consume": {
+      "id": "8d1dfdd2-543e-4546-a9b4-594b8a2ea50b",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "072a8142-0a9a-4be7-8f14-1c625b194a46",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "chart",
+          "label": "Undo consume"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Undo decrement": {
+      "id": "2758b359-7548-477f-bcec-4043790976cd",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "a6f61d99-651c-4d4b-b211-6f6452a8c732",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "chart",
+          "label": "Undo Decrement"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Reagent consumed": {
+      "id": "3e10e542-3658-4d90-827d-0f10260cdf2d",
+      "type": "BOOLEAN",
+      "value": false,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Decrement Reagent": {
+      "id": "d4586cc5-a53f-48a5-9a6f-1754dc44cead",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "2db1b069-b9be-4c7f-b9a8-8a5e71857939",
+          "version": "4"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "lab-test",
+          "label": "Decrement Reagent"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Volume decremented": {
+      "id": "15648bb4-e086-4ed8-ac16-21cc87f78ee8",
+      "type": "BOOLEAN",
+      "value": false,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Remaining volume (uL)": {
+      "id": "70b5a596-1118-41ee-8056-85eee46ba4c1",
+      "type": "FORMULA",
+      "value": 100,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Stock Unit\") , \"Remaining volume (uL)\")"
+      },
+      "dataType": "NUMBER"
+    },
+    "Mark reagent as consumed": {
+      "id": "1d62f72c-4a79-425b-bbad-2d1870257a2d",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "b0291686-edff-4d4b-bb59-c23710b9c0ff",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "layer",
+          "label": "Consumed"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Av1 - Volume per panel (uL)": {
+      "id": "f40ec79f-d25a-4fdb-9b81-8688ab300613",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"Av1 (uL)\")"
+      },
+      "dataType": null
+    },
+    "Av2 - Volume per panel (uL)": {
+      "id": "a28592a8-5d3a-4d63-b36e-7c22d32e5caf",
+      "type": "FORMULA",
+      "value": 1.25,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\")  , \"Av2 (uL)\")"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av3 - Volume per panel (uL)": {
+      "id": "f025e3aa-bc5f-42a2-b17b-e5a2a9112fc1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"Av3 (uL)\")"
+      },
+      "dataType": null
+    },
+    "Av4 - Volume per panel (uL)": {
+      "id": "c61ee8be-b764-42cf-a89f-27836a278aef",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"Av4 (uL)\")"
+      },
+      "dataType": null
+    },
+    "Av5 - Volume per panel (uL)": {
+      "id": "15360189-1211-4f56-ab55-dd367da58171",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"Av5 (uL)\")"
+      },
+      "dataType": null
+    },
+    "Tv1 - Volume per panel (uL)": {
+      "id": "9a1a838d-c5af-48a3-97d8-2b978bfeca15",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"Tv1 (uL)\")"
+      },
+      "dataType": null
+    },
+    "Tv2 - Volume per panel (uL)": {
+      "id": "4779397f-e069-41c9-8b13-b05122fc66be",
+      "type": "FORMULA",
+      "value": 2,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"Tv2 (uL)\")"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv3 - Volume per panel (uL)": {
+      "id": "ac8ca02d-83ab-4e04-bc4a-080ebaec913b",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"Tv3 (uL)\")"
+      },
+      "dataType": null
+    },
+    "Tv4 - Volume per panel (uL)": {
+      "id": "1adadee6-05a1-40e5-a2c0-2372cca6ba92",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"Tv4 (uL)\")"
+      },
+      "dataType": null
+    },
+    "Tv5 - Volume per panel (uL)": {
+      "id": "2fc7e004-dc3c-4f3d-8bd6-22b563bf047d",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"Tv5 (uL)\")"
+      },
+      "dataType": null
+    },
+    "GD1v1 - Volume per panel (uL)": {
+      "id": "683ad657-d17f-4f88-a63e-469755f6e5ce",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"GD1v1 (uL)\")"
+      },
+      "dataType": null
+    },
+    "GD2v1 - Volume per panel (uL)": {
+      "id": "b2890410-255e-473a-b2b9-66da638ffd74",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"GD2v1 (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK1v1 - Volume per panel (uL)": {
+      "id": "6d6189e5-3893-4495-8393-6d15c6bfcd7b",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"NK1v1 (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK1v2 - Volume per panel (uL)": {
+      "id": "e5731b70-42bd-47d1-b30e-a6eed99d36d7",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"NK1v2 (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK1v3 - Volume per panel (uL)": {
+      "id": "05cc9907-a9e2-4262-b01f-0fd77f5f07cd",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\"), \"NK1v3 (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK2v1 - Volume per panel (uL)": {
+      "id": "412b6d65-0ee2-4f71-9eb2-5e01bf1a0175",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\"), \"NK2v1 (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK2v2 - Volume per panel (uL)": {
+      "id": "eaaae086-6abd-428b-abd4-2d9c7838a094",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"NK2v2 (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK2v3 - Volume per panel (uL)": {
+      "id": "57230a3f-79bf-4ad1-b461-c09204b6e8c0",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"NK2v3 (uL)\")"
+      },
+      "dataType": null
+    },
+    "TICv1 - Volume per panel (uL)": {
+      "id": "a4ebe50e-a4a2-48a6-852d-52483f554d73",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Lot Number\") , \"TICv1 (uL)\")"
+      },
+      "dataType": null
+    },
+    "Actual Amount added to MM (uL)": {
+      "id": "5b58c34f-2098-460a-99b7-66272c967490",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av1 - Amount to add to MM (uL)": {
+      "id": "5c6c15bf-84d1-42f3-ad4b-6c1e037a68af",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"2. No of samples (inc. excess)\") * lookup(__self, \"Av1 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "Av2 - Amount to add to MM (uL)": {
+      "id": "1c9377ab-50cf-41dd-932e-b4a89bbb6d77",
+      "type": "FORMULA",
+      "value": 15,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"2. No of samples (inc. excess)\") * lookup(__self, \"Av2 - Volume per panel (uL)\")"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av3 - Amount to add to MM (uL)": {
+      "id": "588ee0ac-0e55-4437-89e0-6b3e1ddb80c6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"2. No of samples (inc. excess)\") * lookup(__self, \"Av3 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "Av4 - Amount to add to MM (uL)": {
+      "id": "4a665646-3cad-4177-98ca-fdc4eed970ee",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"2. No of samples (inc. excess)\") * lookup(__self, \"Av4 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "Av5 - Amount to add to MM (uL)": {
+      "id": "ac3b946f-fc1d-4a54-8376-241d920876c4",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"2. No of samples (inc. excess)\") * lookup(__self, \"Av5 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "Tv1 - Amount to add to MM (uL)": {
+      "id": "6fe86b76-d24e-42a3-8111-9ac0814deef7",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"Tv1 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "Tv2 - Amount to add to MM (uL)": {
+      "id": "26ad3d36-539a-4c65-8fad-f4ac1fbcdd84",
+      "type": "FORMULA",
+      "value": 12,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"Tv2 - Volume per panel (uL)\")"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv3 - Amount to add to MM (uL)": {
+      "id": "42cf93b3-dc68-413f-ac31-194ee8e8a05b",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"Tv3 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "Tv4 - Amount to add to MM (uL)": {
+      "id": "abb4caeb-85ea-46f7-9905-32e3bd96036d",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"Tv4 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "Tv5 - Amount to add to MM (uL)": {
+      "id": "b697aa97-8784-4e42-b65d-ecc0644bb60a",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"Tv5 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "GD1v1 - Amount to add to MM (uL)": {
+      "id": "e4f6b55e-1415-433a-9e77-0a8886536535",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"GD1v1 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "GD2v1 - Amount to add to MM (uL)": {
+      "id": "e49b9452-3b6e-4fc9-966a-4aac020ca113",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"2. No of samples (inc. excess)\") * lookup(__self, \"GD2v1 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK1v1 - Amount to add to MM (uL)": {
+      "id": "496d54b6-ef6e-466d-bb5e-4b11a5fe2cfd",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"NK1v1 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK1v2 - Amount to add to MM (uL)": {
+      "id": "cfcea190-6bad-4fdf-8143-4ffdde22a3cf",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"NK1v2 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK1v3 - Amount to add to MM (uL)": {
+      "id": "7a06daab-7d8e-46cf-ab72-50262a356d0e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"NK1v3 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK2v1 - Amount to add to MM (uL)": {
+      "id": "2e35df9f-f645-4b8b-87b7-328a6e5e81ac",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"2. No of samples (inc. excess)\") * lookup(__self, \"NK2v1 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK2v2 - Amount to add to MM (uL)": {
+      "id": "3c6ba870-2137-4eb0-82d5-1e93b8667998",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"2. No of samples (inc. excess)\") * lookup(__self, \"NK2v2 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "NK2v3 - Amount to add to MM (uL)": {
+      "id": "d6de9182-3456-426e-9350-1eb68958096f",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"2. No of samples (inc. excess)\") * lookup(__self, \"NK2v3 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    },
+    "TICv1 - Amount to add to MM (uL)": {
+      "id": "8916c471-ae87-4957-8937-52f17a5fe612",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , \"1. No of samples (inc. excess)\") * lookup(__self, \"TICv1 - Volume per panel (uL)\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "Antibody Stock Usage - @TEMPLATE_INDEX",
+  "type": {
+    "ref": {
+      "id": "c9af129a-1fa5-40ac-a45b-7bb17129c44d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "bd61c402-6093-4d1b-bd45-fc806bdfef0f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e3a67ca5-80c8-42bc-8618-4355a19c6cc8",
+          "type": "field",
+          "fieldId": "79ef1b43-200c-4978-8361-4879ca691e22",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "5e0ecf27-0f25-4399-afce-a809f6bdac88",
+          "type": "field",
+          "fieldId": "97241bd9-1ff3-456a-87a9-2ddedeb29b14",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d1d8aae3-6cc9-4856-bb3e-91a3f06e929a",
+          "type": "field",
+          "fieldId": "2fa773e7-c3e5-4ca7-b286-1d909aa56623",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ddec9977-bad2-456e-aefd-98057dba7f8d",
+          "type": "field",
+          "fieldId": "76f25af0-65da-4b30-aa1f-3488e8f3a26a",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "8f5c33ee-18f3-4c4e-a05f-b82ec6ea2598",
+          "type": "field",
+          "fieldId": "882b8ed7-b067-4322-9dd7-1c7a07730f2b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "150c040d-adbd-4c49-8962-a0d1887aa444",
+          "type": "field",
+          "fieldId": "66f0eb05-5a30-4003-8345-7e16229f98b7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ccc1d2b5-87c0-4f40-b480-42f463804ac6",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "de09563c-d3f2-4a5c-a49c-946639c2f62d",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "5fe018fe-4a3b-4d12-95e5-e9625cbc5d40",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "Values derived from the Lot Number:"
+                    }
+                  ]
+                },
+                {
+                  "id": "0d49c9b7-0b83-41e4-9fad-0befdcaebef3",
+                  "type": "field",
+                  "fieldId": "9a1a838d-c5af-48a3-97d8-2b978bfeca15",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "02a4f3bd-a1b0-428d-8b8e-bda7cb328c87",
+                  "type": "field",
+                  "fieldId": "f40ec79f-d25a-4fdb-9b81-8688ab300613",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "eaf02f51-22d0-44ff-9ff3-763b260d34b8",
+                  "type": "field",
+                  "fieldId": "4779397f-e069-41c9-8b13-b05122fc66be",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "5c89b365-a41c-4f49-85b1-d79d479b5b77",
+                  "type": "field",
+                  "fieldId": "a28592a8-5d3a-4d63-b36e-7c22d32e5caf",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c8decc39-ca38-4aa2-a5ad-67089194570d",
+                  "type": "field",
+                  "fieldId": "ac8ca02d-83ab-4e04-bc4a-080ebaec913b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "5b2bb624-1973-4031-ac1e-572709928ba5",
+                  "type": "field",
+                  "fieldId": "f025e3aa-bc5f-42a2-b17b-e5a2a9112fc1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "4e938c5d-700e-4e5f-9c5c-9aabbf873e7d",
+                  "type": "field",
+                  "fieldId": "1adadee6-05a1-40e5-a2c0-2372cca6ba92",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c82e8dda-d16c-4f71-9c59-8382a5eed945",
+                  "type": "field",
+                  "fieldId": "c61ee8be-b764-42cf-a89f-27836a278aef",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "9786119a-95d3-49a0-a0d6-30a85deb4cd5",
+                  "type": "field",
+                  "fieldId": "2fc7e004-dc3c-4f3d-8bd6-22b563bf047d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "98057933-8c94-4281-b1c4-62e3c41a2b7a",
+                  "type": "field",
+                  "fieldId": "15360189-1211-4f56-ab55-dd367da58171",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "67fa99dd-bfa9-47d2-ae4b-1a8947b7ccf6",
+                  "type": "field",
+                  "fieldId": "6d6189e5-3893-4495-8393-6d15c6bfcd7b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "e7c4915e-799a-4307-8ff3-176fa61e5884",
+                  "type": "field",
+                  "fieldId": "412b6d65-0ee2-4f71-9eb2-5e01bf1a0175",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "345324fa-6ec7-4c36-8d3d-3c513436696c",
+                  "type": "field",
+                  "fieldId": "e5731b70-42bd-47d1-b30e-a6eed99d36d7",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "335b6be4-2e33-4548-80ac-09c58a2a7ee2",
+                  "type": "field",
+                  "fieldId": "eaaae086-6abd-428b-abd4-2d9c7838a094",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "cf23d756-5c24-4b28-915f-ca69be6b9945",
+                  "type": "field",
+                  "fieldId": "05cc9907-a9e2-4262-b01f-0fd77f5f07cd",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "066f4d4d-8af1-4f4b-b9a2-6bbc5f450e86",
+                  "type": "field",
+                  "fieldId": "57230a3f-79bf-4ad1-b461-c09204b6e8c0",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "73558b01-59a6-4b46-a28e-2bd66daf09da",
+                  "type": "field",
+                  "fieldId": "683ad657-d17f-4f88-a63e-469755f6e5ce",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "123572c7-c0b8-4857-aa97-89139b1441a8",
+                  "type": "field",
+                  "fieldId": "b2890410-255e-473a-b2b9-66da638ffd74",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "4700d53a-9d5e-4ec4-949c-53ed4d89e89d",
+                  "type": "field",
+                  "fieldId": "a4ebe50e-a4a2-48a6-852d-52483f554d73",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "292d1f21-de61-4072-80ea-f369a77efc89",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "6aa53b32-c504-416a-83cf-fdba2acb39ae",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "MM value based on number of samples in containing entity:"
+                    }
+                  ]
+                },
+                {
+                  "id": "c8e61f38-b91f-48b2-9d19-8dab6df45ee5",
+                  "type": "field",
+                  "fieldId": "6fe86b76-d24e-42a3-8111-9ac0814deef7",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "771575db-2501-46bd-a2f7-5f30b7a3e071",
+                  "type": "field",
+                  "fieldId": "5c6c15bf-84d1-42f3-ad4b-6c1e037a68af",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "47085ced-1582-46d2-80e7-0abb0aef0c8d",
+                  "type": "field",
+                  "fieldId": "26ad3d36-539a-4c65-8fad-f4ac1fbcdd84",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "2e1aa6ae-03e9-4ea0-aad2-b7871b91be02",
+                  "type": "field",
+                  "fieldId": "1c9377ab-50cf-41dd-932e-b4a89bbb6d77",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "a4031aaa-f681-4e41-93eb-8bbba218d3d1",
+                  "type": "field",
+                  "fieldId": "42cf93b3-dc68-413f-ac31-194ee8e8a05b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "f9ba7cf8-98bf-4811-b972-3898639a1992",
+                  "type": "field",
+                  "fieldId": "588ee0ac-0e55-4437-89e0-6b3e1ddb80c6",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "80700335-548d-495d-9902-b9401f251f1c",
+                  "type": "field",
+                  "fieldId": "abb4caeb-85ea-46f7-9905-32e3bd96036d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "71dcf6cc-28da-4114-8f55-9017dcd9a352",
+                  "type": "field",
+                  "fieldId": "4a665646-3cad-4177-98ca-fdc4eed970ee",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "7be6a37e-416a-4f50-98bf-cdeec47a3c8d",
+                  "type": "field",
+                  "fieldId": "b697aa97-8784-4e42-b65d-ecc0644bb60a",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "5479ec74-07a6-47f1-a0b0-d136a55a4e07",
+                  "type": "field",
+                  "fieldId": "ac3b946f-fc1d-4a54-8376-241d920876c4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "e12b7fe5-4b66-4b96-ba46-80fb6e0867a0",
+                  "type": "field",
+                  "fieldId": "496d54b6-ef6e-466d-bb5e-4b11a5fe2cfd",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "e2e141b7-125e-446b-a383-ee864dc549bb",
+                  "type": "field",
+                  "fieldId": "2e35df9f-f645-4b8b-87b7-328a6e5e81ac",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "f8a20d53-284b-4cbd-b263-5198c7a282b4",
+                  "type": "field",
+                  "fieldId": "cfcea190-6bad-4fdf-8143-4ffdde22a3cf",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d0e4aee0-ec1f-4fa6-9f0f-e988962eeaee",
+                  "type": "field",
+                  "fieldId": "3c6ba870-2137-4eb0-82d5-1e93b8667998",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "733439dc-9390-4ef0-963f-56bc43b3de53",
+                  "type": "field",
+                  "fieldId": "7a06daab-7d8e-46cf-ab72-50262a356d0e",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "8dadd649-3472-458c-b99a-363147380c3b",
+                  "type": "field",
+                  "fieldId": "d6de9182-3456-426e-9350-1eb68958096f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "3a5ab153-c566-425e-a082-d4382d8dd722",
+                  "type": "field",
+                  "fieldId": "e4f6b55e-1415-433a-9e77-0a8886536535",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "e97ecdf0-87cd-42d3-9526-9c497c24899e",
+                  "type": "field",
+                  "fieldId": "e49b9452-3b6e-4fc9-966a-4aac020ca113",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "8d6284eb-8bb1-4647-a3ff-f87404efdb83",
+                  "type": "field",
+                  "fieldId": "8916c471-ae87-4957-8937-52f17a5fe612",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4635517-0580-478c-9a8f-bf603a977090",
+          "type": "p",
+          "children": [
+            {
+              "text": "Operator specifies actual amount used:"
+            }
+          ]
+        },
+        {
+          "id": "d5cba600-e18d-4652-9013-7d5d138b134f",
+          "type": "field",
+          "fieldId": "5b58c34f-2098-460a-99b7-66272c967490",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1e4af597-af5d-4e45-97e1-f4b47bdf881b",
+          "type": "field",
+          "fieldId": "d4586cc5-a53f-48a5-9a6f-1754dc44cead",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "635c95fb-1d48-437e-bff2-e76bbfc22593",
+          "type": "field",
+          "fieldId": "15648bb4-e086-4ed8-ac16-21cc87f78ee8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b6b42e4f-d514-4aab-9c4f-449739b59f3c",
+          "type": "field",
+          "fieldId": "70b5a596-1118-41ee-8056-85eee46ba4c1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "001f2189-7415-4e43-abb1-61c5d4bdc760",
+          "type": "field",
+          "fieldId": "2758b359-7548-477f-bcec-4043790976cd",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "66c924cd-9381-4337-9235-d90a7a90493f",
+          "type": "field",
+          "fieldId": "1d62f72c-4a79-425b-bbad-2d1870257a2d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "c6f5b1dd-62b5-430d-ae81-851a3c53e54b",
+          "type": "field",
+          "fieldId": "3e10e542-3658-4d90-827d-0f10260cdf2d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3a702947-8473-47eb-9bba-0d11b1e72b83",
+          "type": "field",
+          "fieldId": "8d1dfdd2-543e-4546-a9b4-594b8a2ea50b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "c74da339-d262-4df3-b498-8bb4deeede82",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6ac429da-d5fb-4b26-a88c-e94046a282fa",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f2b47d0c-55d3-4f08-98dd-87e6b1629e75",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

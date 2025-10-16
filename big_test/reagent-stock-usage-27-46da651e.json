@@ -1,0 +1,768 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "46da651e-4638-47c1-8f5f-ed6a914bac8f",
+  "title": "Reagent Stock Usage - 27",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "c764850f-a6ed-4c91-a489-2a62e44d6040",
+      "version": "4"
+    },
+    "submissionField": {
+      "fieldId": "9cad76ec-ea06-4e82-8d66-da9cee1cbab4",
+      "fieldName": "1. Reagents",
+      "parentEntityId": "3ce29e27-a582-413c-92c4-21079361db23"
+    }
+  },
+  "fields": {
+    "Reagent": {
+      "id": "eb39625b-c88b-4c3f-a2f7-63b87ba9af55",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "218b6b97-efcb-4867-92cf-40e558f8d208",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "45eb4ecc-a562-411a-b247-91456e64c55f"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Stocks",
+              "config": "Stocks"
+            },
+            {
+              "name": "Inventory ID",
+              "config": "Inventory ID"
+            },
+            {
+              "name": "Manufacturer",
+              "config": "Manufacturer"
+            },
+            {
+              "name": "Catalog Number",
+              "config": "Catalog Number"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Lot Number": {
+      "id": "34395aa5-86e0-4034-8769-e7341a1d3ea4",
+      "type": "FORMULA",
+      "value": [
+        {
+          "id": "44f3b943-acdf-47a5-9d39-e20683fd6d6f",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Stock Unit\") , \"Lot Number\")"
+      },
+      "dataType": "ENTITY"
+    },
+    "Stock Unit": {
+      "id": "67322d03-8396-4018-80ad-6842bc4882e6",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "b2dfb411-1b70-4f4a-801a-a90c4b8f030c",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "4f4ca25b-9dac-492c-b42e-5419b38372b4"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Reagent",
+              "config": "Reagent"
+            },
+            {
+              "name": "Lot Number",
+              "config": "Lot Number"
+            },
+            {
+              "name": "Inventory ID",
+              "config": "Inventory ID"
+            },
+            {
+              "name": "Remaining volume (uL)",
+              "config": "Remaining volume (uL)"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Manufacturer": {
+      "id": "cd9874a5-7b1b-46b7-a545-521ee820c1cc",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup( lookup(__self, \"Reagent\") , \"Manufacturer\") , \"TITLE\" )"
+      },
+      "dataType": null
+    },
+    "Undo consume": {
+      "id": "135c23bb-38f7-454c-97c4-bcdd9e55d57e",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "072a8142-0a9a-4be7-8f14-1c625b194a46",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "chart",
+          "label": "Undo consume"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Undo decrement": {
+      "id": "41aee810-0ad6-4858-a4a3-adeda0b450a9",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "a6f61d99-651c-4d4b-b211-6f6452a8c732",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "chart",
+          "label": "Undo Decrement"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Reagent consumed": {
+      "id": "df38da51-c6c4-41f7-9bd2-f8df9349487a",
+      "type": "BOOLEAN",
+      "value": false,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Decrement Reagent": {
+      "id": "297ed900-7b4d-4ca9-bad0-2d4a1c0d5e08",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "2db1b069-b9be-4c7f-b9a8-8a5e71857939",
+          "version": "4"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "lab-test",
+          "label": "Decrement Reagent"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Volume decremented": {
+      "id": "e0fbe264-0520-4d0a-b3d5-bd271d15de35",
+      "type": "BOOLEAN",
+      "value": false,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Remaining volume (uL)": {
+      "id": "80d238f8-862c-4bb2-83d4-d23f27c729a0",
+      "type": "FORMULA",
+      "value": 400,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Stock Unit\") , \"Remaining volume (uL)\")"
+      },
+      "dataType": "NUMBER"
+    },
+    "Mark reagent as consumed": {
+      "id": "51efad85-bac3-4ff1-abc5-7de3126ce3da",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "b0291686-edff-4d4b-bb59-c23710b9c0ff",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "layer",
+          "label": "Consumed"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Av1 - Volume per panel (uL)": {
+      "id": "e277f08e-2a38-46f3-a67a-6a0d241c0925",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av2 - Volume per panel (uL)": {
+      "id": "ed4ab855-7185-4ef6-bd3f-162356f494de",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av3 - Volume per panel (uL)": {
+      "id": "a0663156-a77e-47c8-91d6-71c11556e8b0",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av4 - Volume per panel (uL)": {
+      "id": "d4470bf4-68b1-4bc0-819c-3d4db6d10edd",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av5 - Volume per panel (uL)": {
+      "id": "00742396-3ff4-43fc-81cc-5c34ba794ff9",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv1 - Volume per panel (uL)": {
+      "id": "67383f5d-9cc7-4768-ad20-f69ff2171a24",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv2 - Volume per panel (uL)": {
+      "id": "3fc895ef-a0df-4938-9f7a-4cec5356ce55",
+      "type": "NUMBER",
+      "value": 2,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv3 - Volume per panel (uL)": {
+      "id": "256f0db4-fc13-424a-89d6-971630e9c3df",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv4 - Volume per panel (uL)": {
+      "id": "a7d971d5-c7dc-492e-b3b1-da0aad4a0e72",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv5 - Volume per panel (uL)": {
+      "id": "548d76bd-ef4b-434d-8f84-dbe6339628f0",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "GD1v1 - Volume per panel (uL)": {
+      "id": "b6840449-dbe8-4a82-8018-4873adb4824d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "GD2v1 - Volume per panel (uL)": {
+      "id": "5f5b865f-e123-4b2c-978b-b473844230fd",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK1v1 - Volume per panel (uL)": {
+      "id": "78efb216-1128-4988-bc28-93a2265c3ec5",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK1v2 - Volume per panel (uL)": {
+      "id": "38e93b2e-0973-40aa-ac3d-6eece19620e8",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK1v3 - Volume per panel (uL)": {
+      "id": "d731d671-e87d-4a40-9b3d-5c9146d2ec57",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK2v1 - Volume per panel (uL)": {
+      "id": "5ac5ad79-8920-4a2f-9069-e459719fb200",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK2v2 - Volume per panel (uL)": {
+      "id": "8edcf8ab-c7ca-42cc-b5eb-1bbf423a519a",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK2v3 - Volume per panel (uL)": {
+      "id": "60c16fe3-d5b1-4770-a7aa-6b5528e81805",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "TICv1 - Volume per panel (uL)": {
+      "id": "8272899c-480f-44f8-a09c-381d1c4a61aa",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Actual Amount added to MM (uL)": {
+      "id": "fc998927-f938-4ed0-9e63-7c76317c9ed4",
+      "type": "NUMBER",
+      "value": 46,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av1 - Amount to add to MM (uL)": {
+      "id": "31ed0f63-9408-46ca-8414-94b78f6c89e9",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av2 - Amount to add to MM (uL)": {
+      "id": "4726f6df-f98d-4e32-b842-6857b3fb3383",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av3 - Amount to add to MM (uL)": {
+      "id": "df03e09b-847c-47d3-a834-4bb5b34e3300",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av4 - Amount to add to MM (uL)": {
+      "id": "cedd73fd-8ca9-463b-a63f-e4a731f84b2c",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av5 - Amount to add to MM (uL)": {
+      "id": "8344ccb4-0e6b-4de5-af4a-6a933ccd406c",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv1 - Amount to add to MM (uL)": {
+      "id": "fe18e400-632f-4cf9-b51c-74da267040eb",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv2 - Amount to add to MM (uL)": {
+      "id": "0cb20e80-a42c-4a91-9150-f2bdc5bccdef",
+      "type": "NUMBER",
+      "value": 12,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv3 - Amount to add to MM (uL)": {
+      "id": "8c8f0178-4f28-4ca2-8f38-3875d926c94a",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv4 - Amount to add to MM (uL)": {
+      "id": "666e133e-629c-4993-a0fe-8a5632ca2551",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv5 - Amount to add to MM (uL)": {
+      "id": "386c3b0b-b7f7-4ee6-838c-fcc473d57d89",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "GD1v1 - Amount to add to MM (uL)": {
+      "id": "3c2abae8-6eaa-4782-bd52-a4f561e79418",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "GD2v1 - Amount to add to MM (uL)": {
+      "id": "9687f6b3-439d-4bdc-881f-5507479c30a7",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK1v1 - Amount to add to MM (uL)": {
+      "id": "d16ba90b-2da6-472b-9c43-c1990a6d733a",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK1v2 - Amount to add to MM (uL)": {
+      "id": "1d6b1773-1d78-4e68-a31f-e62b4c9c5397",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK1v3 - Amount to add to MM (uL)": {
+      "id": "365f9054-956b-41c6-ba8b-e9980e497053",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK2v1 - Amount to add to MM (uL)": {
+      "id": "ee02882c-1144-40e7-b3be-18a2f5ba7038",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK2v2 - Amount to add to MM (uL)": {
+      "id": "528ef82d-3916-428b-b34a-ea93812dfee6",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK2v3 - Amount to add to MM (uL)": {
+      "id": "c0b6a60a-03b3-4de5-bc49-2f1a2392e55d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "TICv1 - Amount to add to MM (uL)": {
+      "id": "7ee29b7b-97c3-47b6-bc68-e492183ca485",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "Reagent Stock Usage - @TEMPLATE_INDEX",
+  "type": {
+    "ref": {
+      "id": "c9af129a-1fa5-40ac-a45b-7bb17129c44d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8f5637c5-f753-4644-9410-7755e87ecce8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8cd664af-a26b-4810-b69c-e81ea8e1191e",
+          "type": "field",
+          "fieldId": "eb39625b-c88b-4c3f-a2f7-63b87ba9af55",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "a1f3547d-a416-4901-be7a-adda776e1308",
+          "type": "field",
+          "fieldId": "cd9874a5-7b1b-46b7-a545-521ee820c1cc",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "915876bd-1816-4faf-851a-38fa16374ef0",
+          "type": "field",
+          "fieldId": "67322d03-8396-4018-80ad-6842bc4882e6",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "19fb2dbf-5e28-4c33-ad65-52c9e7848836",
+          "type": "field",
+          "fieldId": "34395aa5-86e0-4034-8769-e7341a1d3ea4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "503de83a-7bfb-4c41-b77f-699bf63bd154",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "84c7520c-f94d-465f-8a60-eac3c911223a",
+          "type": "field",
+          "fieldId": "fc998927-f938-4ed0-9e63-7c76317c9ed4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "97f60fb6-5d8f-4cdf-9e4e-19e79fd9145d",
+          "type": "field",
+          "fieldId": "297ed900-7b4d-4ca9-bad0-2d4a1c0d5e08",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": true
+        },
+        {
+          "id": "13a44141-bcbc-45ae-8157-aa7607680914",
+          "type": "field",
+          "fieldId": "e0fbe264-0520-4d0a-b3d5-bd271d15de35",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "71b92ac7-a48c-44a9-be34-61f35e57828f",
+          "type": "field",
+          "fieldId": "80d238f8-862c-4bb2-83d4-d23f27c729a0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bf064cae-38ab-491c-b0f3-1ca7828afe1c",
+          "type": "field",
+          "fieldId": "41aee810-0ad6-4858-a4a3-adeda0b450a9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7c45c576-d36d-46df-acaa-802aa94e70cc",
+          "type": "field",
+          "fieldId": "51efad85-bac3-4ff1-abc5-7de3126ce3da",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "fbf6cc5e-57ce-4b0c-99cd-db5b84277b1d",
+          "type": "field",
+          "fieldId": "df38da51-c6c4-41f7-9bd2-f8df9349487a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "273c6859-be0b-4cff-91bb-0473556ae4fa",
+          "type": "field",
+          "fieldId": "135c23bb-38f7-454c-97c4-bcdd9e55d57e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "47f843c2-ad87-44d2-954c-7001b748fac1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "fcfb9e44-21e0-41dd-8b32-2dfaee23f3c4",
+  "title": "Employee",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "array",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "hideVersionNumber": true,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": false
+    },
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": false
+  }
+}

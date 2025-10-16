@@ -1,0 +1,394 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "9d403247-ac0c-4528-88a5-78d90841928e",
+  "title": "Antibodies",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "6525d217-4caf-44a9-a94c-6398780eff7a",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Lots": {
+      "id": "dba27968-79ca-4365-8856-b9b3921550d9",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "bfeff202-5aeb-4422-90ce-4b0a1b96ad4d"
+                  ],
+                  "filter": "template",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Inventory ID",
+            "config": "Inventory ID"
+          },
+          {
+            "name": "Stocks",
+            "config": "Stocks"
+          },
+          {
+            "name": "Antibody",
+            "config": "Antibody"
+          },
+          {
+            "name": "Tv2 (uL)",
+            "config": "Tv2 (uL)"
+          },
+          {
+            "name": "Av2 (uL)",
+            "config": "Av2 (uL)"
+          },
+          {
+            "name": "Tv3 (uL)",
+            "config": "Tv3 (uL)"
+          },
+          {
+            "name": "Av3 (uL)",
+            "config": "Av3 (uL)"
+          },
+          {
+            "name": "Tv4 (uL)",
+            "config": "Tv4 (uL)"
+          },
+          {
+            "name": "Av4 (uL)",
+            "config": "Av4 (uL)"
+          },
+          {
+            "name": "Tv5 (uL)",
+            "config": "Tv5 (uL)"
+          },
+          {
+            "name": "Av5 (uL)",
+            "config": "Av5 (uL)"
+          },
+          {
+            "name": "GD1v1 (uL)",
+            "config": "GD1v1 (uL)"
+          },
+          {
+            "name": "GD2v1 (uL)",
+            "config": "GD2v1 (uL)"
+          },
+          {
+            "name": "NK1v1 (uL)",
+            "config": "NK1v1 (uL)"
+          },
+          {
+            "name": "NK2v1 (uL)",
+            "config": "NK2v1 (uL)"
+          },
+          {
+            "name": "NK1v2 (uL)",
+            "config": "NK1v2 (uL)"
+          },
+          {
+            "name": "NK2v2 (uL)",
+            "config": "NK2v2 (uL)"
+          },
+          {
+            "name": "NK1v3 (uL)",
+            "config": "NK1v3 (uL)"
+          },
+          {
+            "name": "NK2v3 (uL)",
+            "config": "NK2v3 (uL)"
+          },
+          {
+            "name": "TICv1 (uL)",
+            "config": "TICv1 (uL)"
+          }
+        ],
+        "defaultColumnOrder": [
+          "TITLE",
+          "SYSTEM",
+          "TYPE",
+          "STATUS",
+          "TAGS",
+          "CREATED_AT",
+          "LAST_UPDATED_AT",
+          "CREATED_BY",
+          "LAST_UPDATED_BY",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "WORK_INSTRUCTIONS_PROGRESS"
+        ],
+        "hiddenDefaultColumns": [
+          "SYSTEM",
+          "TYPE",
+          "TAGS",
+          "CREATED_AT",
+          "LAST_UPDATED_AT",
+          "CREATED_BY",
+          "LAST_UPDATED_BY",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "WORK_INSTRUCTIONS_PROGRESS"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Stocks": {
+      "id": "f1b91947-8862-4d63-81bd-17705b69db7f",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "9a595b4a-2fe8-4e96-93a1-d86652585cf4"
+                  ],
+                  "filter": "template",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Antibody",
+            "config": "Antibody"
+          },
+          {
+            "name": "Lot Number",
+            "config": "Lot Number"
+          },
+          {
+            "name": "Remaining volume (uL)",
+            "config": "Remaining volume (uL)"
+          }
+        ],
+        "defaultColumnOrder": [
+          "TITLE",
+          "SYSTEM",
+          "TYPE",
+          "STATUS",
+          "TAGS",
+          "CREATED_AT",
+          "LAST_UPDATED_AT",
+          "CREATED_BY",
+          "LAST_UPDATED_BY",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "WORK_INSTRUCTIONS_PROGRESS"
+        ],
+        "hiddenDefaultColumns": [
+          "SYSTEM",
+          "TYPE",
+          "TAGS",
+          "CREATED_AT",
+          "LAST_UPDATED_AT",
+          "CREATED_BY",
+          "LAST_UPDATED_BY",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "WORK_INSTRUCTIONS_PROGRESS"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Antibodies": {
+      "id": "f7f89dee-d3b3-4bb2-a7d8-0d9932ce9bbd",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "65097f3f-acef-445e-9cda-1ec0b4e11a6f"
+                  ],
+                  "filter": "template",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "orderBy": [
+          {
+            "name": "CREATED_AT",
+            "type": "metadata",
+            "direction": "DESC"
+          }
+        ],
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Inventory ID",
+            "config": "Inventory ID"
+          },
+          {
+            "name": "Stocks",
+            "config": "Stocks"
+          },
+          {
+            "name": "Isotype",
+            "config": "Isotype"
+          },
+          {
+            "name": "Vial size",
+            "config": "Vial size"
+          },
+          {
+            "name": "Manufacturer",
+            "config": "Manufacturer"
+          },
+          {
+            "name": "Catalog Number",
+            "config": "Catalog Number"
+          },
+          {
+            "name": "Vial volume (uL)",
+            "config": "Vial volume (uL)"
+          },
+          {
+            "name": "Used in Panel Subparts:",
+            "config": "Used in Panel Subparts:"
+          }
+        ],
+        "defaultColumnOrder": [
+          "TITLE",
+          "SYSTEM",
+          "TYPE",
+          "STATUS",
+          "TAGS",
+          "CREATED_AT",
+          "LAST_UPDATED_AT",
+          "CREATED_BY",
+          "LAST_UPDATED_BY",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "WORK_INSTRUCTIONS_PROGRESS"
+        ],
+        "hiddenDefaultColumns": [
+          "SYSTEM",
+          "TYPE",
+          "TAGS",
+          "CREATED_AT",
+          "LAST_UPDATED_AT",
+          "CREATED_BY",
+          "LAST_UPDATED_BY",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "WORK_INSTRUCTIONS_PROGRESS"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "53263ee4-bec7-4b67-85f0-5a09b3ae5530"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "2e0b1f44-96d7-4128-b23c-814151701738",
+          "type": "field",
+          "fieldId": "f1b91947-8862-4d63-81bd-17705b69db7f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "604101d0-9515-49db-80fe-357ee8ae37ed",
+          "type": "field",
+          "fieldId": "dba27968-79ca-4365-8856-b9b3921550d9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9a06b628-223f-48d5-a83a-3252a2664c42",
+          "type": "field",
+          "fieldId": "f7f89dee-d3b3-4bb2-a7d8-0d9932ce9bbd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "48cd7e03-e838-47a4-96d1-c56f497e9a15",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

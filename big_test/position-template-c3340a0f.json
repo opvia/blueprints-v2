@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c3340a0f-8e87-4675-8d1a-6bad14c394c5",
+  "title": "Position Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Box": {
+      "id": "79a40152-014b-47e2-b86a-67abfcff7efd",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Status": {
+      "id": "43deb25f-2bbd-4199-8a05-44bd42b7d3d2",
+      "type": "SELECT",
+      "value": [
+        "Available"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Available",
+          "Full"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Position": {
+      "id": "aa9da5d0-828e-4572-8e31-a835226ec430",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Stock unit": {
+      "id": "2cf63e21-49d2-43f6-bf23-c8077987d548",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Position",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Position",
+            "config": "Position"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Outer Location": {
+      "id": "f1c88543-3b90-4ca5-8f91-8d052f5b6746",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(lookup( lookup(__self, \"Box\")  , \"Location\") , \"Location\")"
+      },
+      "dataType": null
+    },
+    "Location of Box": {
+      "id": "a9e18457-4cbb-49fe-ac06-af65d8ccf974",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Box\") , \"Location\")"
+      },
+      "dataType": null
+    },
+    "Position number": {
+      "id": "8e7cb760-873e-49e0-9d41-baec1d75d968",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "dffd72d3-783b-41a0-9e7d-40bb7dbcee5c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b5d51261-b728-4270-bb6b-274035da1425",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8e5bd710-5c2f-49a5-a255-7543a0a308ac",
+          "type": "field",
+          "fieldId": "aa9da5d0-828e-4572-8e31-a835226ec430",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "72dd9e8e-9c59-4ef2-a9f4-c4455b2432cf",
+          "type": "field",
+          "fieldId": "8e7cb760-873e-49e0-9d41-baec1d75d968",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0b1a9335-ee00-45a4-9aaf-7d22486d2305",
+          "type": "field",
+          "fieldId": "79a40152-014b-47e2-b86a-67abfcff7efd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "79d99103-aaea-4cca-86fb-477cfe798be2",
+          "type": "field",
+          "fieldId": "43deb25f-2bbd-4199-8a05-44bd42b7d3d2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d55ae67d-f8d0-4033-96d0-244db8d24a4a",
+          "type": "field",
+          "fieldId": "2cf63e21-49d2-43f6-bf23-c8077987d548",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fcb665be-4cf0-46cb-9a92-147c5301bfe7",
+          "type": "p",
+          "children": [
+            {
+              "text": " "
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@aa9da5d0-828e-4572-8e31-a835226ec430 - @SUBMITTED_FROM"
+  }
+}

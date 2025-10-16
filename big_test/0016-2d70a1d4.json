@@ -1,0 +1,921 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2d70a1d4-588b-404c-9c8f-d146556330e1",
+  "title": "0016",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "00a661cc-94fa-4afd-a36c-0c30fc502489",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "CV": {
+      "id": "fb16338c-e2fd-41e0-bfd8-5606fc67e9fa",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "File"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "JD": {
+      "id": "d81366b6-641f-4984-b2f5-5ff8942e67ca",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "File"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "HTA": {
+      "id": "5b4cbb3a-3221-4571-9e1a-d5f37dd0057c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "GCLP": {
+      "id": "c5c7dfb5-9389-4ec4-8fa5-5f80de960b9b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Team": {
+      "id": "05eb21e1-06da-49bf-a8de-3f675197f41b",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Initials": {
+      "id": "3aff502a-571c-43bf-8bff-295c8ad943da",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Line Manager(s)": {
+      "id": "6556c157-915c-42c4-8db3-3427b7656223",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Date of Last HTA": {
+      "id": "3aeabf9e-26dc-47e8-892a-114bf5ab3270",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Current Job Title": {
+      "id": "bb095d59-cf63-4f2c-bc39-caa879f8815f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Date of Last GCLP": {
+      "id": "57727b02-0e28-4bef-b2df-bd5f397fadc8",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Employment Status": {
+      "id": "5c458841-9803-4e16-9505-37125ce887bc",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Other Job Role(s)": {
+      "id": "ee2c8bfb-609d-4842-94c9-15d653bf3956",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    },
+    "Employment End Date": {
+      "id": "b783f73e-2ca9-4b8e-97fe-420ba019d1cd",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Employment Start Date": {
+      "id": "0347688d-2fb4-4c64-a28a-04d88d6425d0",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Date of Last CV Updated": {
+      "id": "82b7d6d8-0251-46d7-ad0c-ca2276c79ef3",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Date of Next HTA Refresher": {
+      "id": "10496615-b869-4c1e-9114-38cd9dae3fca",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Health and Safety Induction": {
+      "id": "971f725d-116c-434a-af17-2d69f31a5b37",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Date of Next CV Update (2 yrs)": {
+      "id": "a45c61eb-c39c-4b39-a07f-8186977ca34c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Date of Last CV Updated\") , 2, \"years\")"
+      },
+      "dataType": null
+    },
+    "Date of Most Recent Title Change": {
+      "id": "18116801-6ab4-47a2-bad6-f10728d3d80a",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Date of Next GCLP Refresher (2yrs)": {
+      "id": "efdf0217-077f-4080-abd8-51e7e42cfa03",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Date of Last GCLP\") , 2, \"years\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "fcfb9e44-21e0-41dd-8b32-2dfaee23f3c4"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "62e8404b-94fc-42da-965d-4d3ee1bb4132",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9a7f2ee6-5678-4c78-80bd-067b4c2e3179",
+          "type": "task",
+          "children": [
+            {
+              "text": "Update Delegation Log Below"
+            }
+          ]
+        },
+        {
+          "id": "cb65ba5c-9bf2-43af-abd6-7c2731b5b970",
+          "type": "task",
+          "children": [
+            {
+              "text": "Provide Job Description (JD)"
+            }
+          ]
+        },
+        {
+          "id": "8dde5a18-2cad-4145-b3b4-fbc0c25fcb08",
+          "type": "task",
+          "children": [
+            {
+              "text": "Provide Signed and Dated CV"
+            }
+          ]
+        },
+        {
+          "id": "2656dbfb-e0e3-45bf-9b7b-e2ae5babf018",
+          "type": "task",
+          "children": [
+            {
+              "text": "Attend Health & Safety Induction"
+            }
+          ]
+        },
+        {
+          "id": "103f4c72-9c77-4b44-a209-b5adc10fb5b7",
+          "type": "task",
+          "children": [
+            {
+              "text": "Attend GCLP course (only introduction for non-lab members)"
+            }
+          ]
+        },
+        {
+          "id": "199f12db-d69f-4120-9405-98180197eb02",
+          "type": "task",
+          "children": [
+            {
+              "text": "For lab members only: attend HTA course"
+            }
+          ]
+        },
+        {
+          "id": "c4d95673-8b47-4979-80c6-5f823e6c9d47",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b56544d6-642e-4b42-98bc-acbfd16a95d8",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "22d572df-e84b-4b4d-977b-a72c5950e28a",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "bfa4b9e3-2fd8-4d9c-b9a9-c355554baffb",
+                  "type": "field",
+                  "fieldId": "3aff502a-571c-43bf-8bff-295c8ad943da",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ed6ac74c-b275-4982-8a57-e75cef68d05e",
+                  "type": "field",
+                  "fieldId": "0347688d-2fb4-4c64-a28a-04d88d6425d0",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "200a7064-1986-4b8d-b023-399ebd2b0d9a",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "2c7af7d4-828c-461f-94c2-59ad16338de5",
+                  "type": "field",
+                  "fieldId": "5c458841-9803-4e16-9505-37125ce887bc",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d6025d7a-130c-40a9-9742-44b82a0d6ae9",
+                  "type": "field",
+                  "fieldId": "b783f73e-2ca9-4b8e-97fe-420ba019d1cd",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cadf8d7a-b36b-46ce-bcef-763442610b67",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "068d8126-84ae-49a6-a726-451dc0f32644",
+          "type": "p",
+          "children": [
+            {
+              "text": "Below lists any previous job titles (during title change, transfer info into table below):"
+            }
+          ]
+        },
+        {
+          "id": "2f59c6f3-24a7-461d-885b-102b2caf5492",
+          "type": "table",
+          "children": [
+            {
+              "id": "97ac6642-ea8e-4552-bac0-376e7b1d28ef",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "9a562ca2-f65b-4e2f-9dc0-3e311a06fd24",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "7f16cb14-a9e9-416f-9a0c-190660d44149",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Number"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "30516682-2e3e-47d7-995f-e2a8bd8dea5a",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "a5cc5850-57bb-4b3a-84bb-8d2d21371b1c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Date"
+                        },
+                        {
+                          "text": " (YYYY-MM-DD)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "06029725-9265-4d8c-b591-fe55653e769b",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "b2671ea6-ffd6-4452-a16a-81aead15853c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Previous job title(s)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4b0dbcc4-9151-40b4-88e7-98e4587ca386",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "b274a0ee-3dba-49bd-ad55-db8cf9979883",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "84b92760-781c-43f1-9f5c-95853bcda9a4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5ac10fa5-9149-49db-985d-832b1c307ed6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "25c075ce-2322-4aaa-9d80-dbd0e9b69814",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f93e3bb2-05c2-4cb2-9393-c488e040d615",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b46977f3-2826-4c06-8328-21b981e6da21",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "colSizes": [
+            200,
+            200,
+            200
+          ]
+        },
+        {
+          "id": "ea5bef41-1bbe-4d85-9560-915eb2fae7b4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "841d7bc8-6bd3-491d-8f78-043888139993",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "73caed6a-9891-463e-b860-f28bf4efa4a0",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "21d0d4d1-a885-48e6-9ec9-fec9dfe777d0",
+                  "type": "field",
+                  "fieldId": "18116801-6ab4-47a2-bad6-f10728d3d80a",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "38c7058a-7c2e-4140-b9b7-3ee785da4ab5",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "cf96e7e8-358f-4d3a-8091-795ba3880829",
+                  "type": "field",
+                  "fieldId": "bb095d59-cf63-4f2c-bc39-caa879f8815f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "071475fc-6014-4aab-8ae5-b50633e6d5cf",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c1160b75-8e28-477c-8507-b22e8716a70d",
+          "type": "field",
+          "fieldId": "ee2c8bfb-609d-4842-94c9-15d653bf3956",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1133d745-7ce5-4446-9f8a-c1749e836b5f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Such as First aider, Fire marshal, QA personnel, Backup QA personnel, Archivist, My Green Lab Ambassador etc"
+            }
+          ]
+        },
+        {
+          "id": "1554e2e5-a0ea-4d6e-a41c-f800cedae0b5",
+          "type": "p",
+          "children": [
+            {
+              "text": "(if not on the list, ask Admin to add it to the list)"
+            }
+          ]
+        },
+        {
+          "id": "7907bdd7-ebb9-4799-86b3-2b0ac234b48e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ef3176f2-bf95-4255-ad75-3e7caba3083d",
+          "type": "field",
+          "fieldId": "05eb21e1-06da-49bf-a8de-3f675197f41b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f539fe61-914b-49a9-b752-9819d6fc5276",
+          "type": "field",
+          "fieldId": "6556c157-915c-42c4-8db3-3427b7656223",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cd8f2ea0-2b19-45fd-add0-67d7101ce81a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d9eda3a8-af5e-4860-8a26-82cf2fe197d2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d9886d6c-a64f-46aa-adec-dd8139d6b4d8",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Job Description"
+            }
+          ]
+        },
+        {
+          "id": "6901fe23-ede9-4bc0-a4f6-06ea2a0e5f20",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1fb5764f-1f97-4504-a3f1-d5eb340f871d",
+          "type": "field",
+          "fieldId": "d81366b6-641f-4984-b2f5-5ff8942e67ca",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "a229d2aa-7c15-4dc6-8e04-c67b16902af1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "792884a3-f05b-4f6e-8f2a-43977d055017",
+          "type": "h2",
+          "children": [
+            {
+              "text": "CV"
+            }
+          ]
+        },
+        {
+          "id": "e2daeba2-8dc3-4f12-8ce9-a14c1d1ce4ff",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c31b66a4-5289-49e6-bbab-be2bddbcb8ef",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "959e24b3-e2d7-4ac4-9ed0-df9d19f828ef",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "55518883-d842-4fba-8a04-c722d70f879f",
+                  "type": "field",
+                  "fieldId": "fb16338c-e2fd-41e0-bfd8-5606fc67e9fa",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "937c4cce-0176-4e33-829e-8ab419743e28",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0549f2a8-34c7-4bac-a5c5-56f33a1b3d7f",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "a7ce6db6-677b-4115-a17d-d16d115649b5",
+                  "type": "field",
+                  "fieldId": "82b7d6d8-0251-46d7-ad0c-ca2276c79ef3",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "9913391a-17e4-47c7-a6fd-4f933517eff7",
+                  "type": "field",
+                  "fieldId": "a45c61eb-c39c-4b39-a07f-8186977ca34c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "b93fdbcc-eb08-4e2a-b32c-00b39450aebd",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b7a32d73-3d07-4685-9ef9-444e5672e006",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a41cf36e-1d42-4212-9ae0-98a5e77f9b1e",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Health and Safety Induction"
+            }
+          ]
+        },
+        {
+          "id": "d35645d3-c83f-459f-b936-e31fc5add78f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0797d6ad-629e-4a3e-aa94-944e0cdc4a1c",
+          "type": "field",
+          "fieldId": "971f725d-116c-434a-af17-2d69f31a5b37",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "2d037ada-4652-4e36-89ed-c87306e41aad",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "542a50a0-ee86-44b7-94ad-1ce4020f70f5",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Good Clinical Laboratory Practice"
+            }
+          ]
+        },
+        {
+          "id": "0d49556d-ae5c-477e-bfb6-f07152ec467c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "139465bc-3fd2-4cff-84a4-9264622443c1",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "cdc37dd8-f83c-454e-9b63-3ce52071b0e5",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "ea5b6b85-6032-47b3-998b-715e221f48fd",
+                  "type": "field",
+                  "fieldId": "c5c7dfb5-9389-4ec4-8fa5-5f80de960b9b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "851dd4c4-4a1f-4d08-ad76-d659960e96da",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "Obtain an account using this site:"
+                    }
+                  ]
+                },
+                {
+                  "id": "1915e8db-bb1e-4509-894f-b429f6f311ae",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "id": "1698036c-38a2-45b1-9733-9936c33d07bb",
+                      "type": "a",
+                      "children": [
+                        {
+                          "text": "https://globalhealthtrainingcentre.tghn.org/good-clinical-laboratory-practice-course/"
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "05102d3b-6532-4b7c-8938-ffb427bf60b1",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "Attend GCLP course and take the survey. Require >80% to pass."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cd298988-0c68-4228-b962-ded06ee761c8",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "7bac2535-ffe2-4f22-bd6b-b61073f7bbea",
+                  "type": "field",
+                  "fieldId": "57727b02-0e28-4bef-b2df-bd5f397fadc8",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "04841d13-c035-41d7-8f0b-65c0d767de3b",
+                  "type": "field",
+                  "fieldId": "efdf0217-077f-4080-abd8-51e7e42cfa03",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "945a3515-daf3-430d-b5b9-a035b4d8b712",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d36a2730-878b-4719-b941-e8ab0892ef32",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

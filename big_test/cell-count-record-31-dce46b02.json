@@ -1,0 +1,612 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "dce46b02-61a3-4510-83af-00648c0403c7",
+  "title": "Cell Count Record 31",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "58815f01-5e08-4f2c-a3fe-1bf3cba96d83",
+      "version": "10"
+    },
+    "submissionField": {
+      "fieldId": "816f6db5-07b7-462d-8b4c-964a86f240a4",
+      "fieldName": "Submission",
+      "parentEntityId": "3be310a3-ad89-4362-a880-ea7b7d675f7c"
+    }
+  },
+  "fields": {
+    "Cells/mL": {
+      "id": "aff76d1c-a0e1-420b-bbbf-ed077d9d12a5",
+      "type": "FORMULA",
+      "value": 5888000,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Live Cells (cells/ml)\") + lookup(__self, \"Dead Cells (cells/ml)\")"
+      },
+      "dataType": "NUMBER"
+    },
+    "Comments": {
+      "id": "ac85f60e-4fb7-42a3-8b11-22100a8a68f2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Image ID": {
+      "id": "2008b0ac-956d-4a1e-ae8a-68d1d250f389",
+      "type": "STRING",
+      "value": "20250730-0001-1-1",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Operator": {
+      "id": "cdd2dd47-79a0-4a39-9fb9-e43fbfbf595e",
+      "type": "STRING",
+      "value": "PJR",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Sample ID": {
+      "id": "b13bd179-8eac-4c6b-8a93-32153a60cb89",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Donor Type"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Viability (%)": {
+      "id": "605e9ba3-8206-4044-b071-a73833402c4f",
+      "type": "NUMBER",
+      "value": 88.5,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"Viability (%)\") <50"
+      },
+      "dataType": "NUMBER"
+    },
+    "Cell Counter ID": {
+      "id": "f199f91a-ed02-4810-9a5d-e55fa56d79d5",
+      "type": "FORMULA",
+      "value": [
+        {
+          "id": "88baabf6-a6bd-40a4-99af-9a4008bbbecb",
+          "version": null
+        }
+      ],
+      "config": {
+        "formulaExpression": "lookup ( lookup(__self, \"SUBMITTED_FROM\") , \"Cell Counter ID\" )"
+      },
+      "dataType": "ENTITY"
+    },
+    "Live/dead tests": {
+      "id": "10d58302-1223-465e-bc2c-261029a835a1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 15 ? 1 :\nlookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 25 ? 2 :\nlookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 35 ? 3 :\nlookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 45 ? 4 :\nlookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 55 ? 5 :\nlookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 65 ? 6 :\nlookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 75 ? 7 :\nlookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 85 ? 8 :\nlookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 95 ? 9 :\nlookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") < 105 ? 10 : null"
+      },
+      "dataType": null
+    },
+    "Panels to stain": {
+      "id": "1a525a4c-58e6-4228-94e2-75ff45775b33",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "FACS buffer (mL)": {
+      "id": "ffdb3e58-36e0-4610-b5ca-7c358fdac1dd",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Test volume (uL)": {
+      "id": "3ce282ae-a0da-4bb4-a0d3-6f56d2897a99",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Dilution factor (DF)": {
+      "id": "6166bdf8-350f-4ea8-909c-81709559cf78",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Residual Volume (mL)": {
+      "id": "bc86e88a-9f5a-40df-a8c3-243352b90b84",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Dead Cells (cells/ml)": {
+      "id": "36e3b0fe-95bc-4547-b177-6e91f8ad4271",
+      "type": "NUMBER",
+      "value": 678000,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Live Cells (cells/ml)": {
+      "id": "74af13ec-a03f-447b-a444-265dfd8d84a6",
+      "type": "NUMBER",
+      "value": 5210000,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Expected panels to stain": {
+      "id": "83c3d4db-c6da-4029-bf36-5dfd753aed95",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Resuspension Volume (mL)": {
+      "id": "c084876f-dbc1-4d2d-8281-313ed6edbad0",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Used in Final Experiment?": {
+      "id": "89068906-f78a-47f5-ab41-60dedca26f8a",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Total Number of Cells (10^6)": {
+      "id": "3af0b455-3522-42ad-a5b8-6cca159c36ed",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Cells/mL\") * lookup(__self, \"Resuspension Volume (mL)\") / 1000000"
+      },
+      "dataType": null
+    },
+    "Expected Number of Cells (10^6)": {
+      "id": "50c7c718-abe2-4569-9bd6-506388b57937",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Sample ID\") , \"  \")"
+      },
+      "dataType": null
+    },
+    "Total Number of Live Cells (10^6)": {
+      "id": "5f868fdb-a51d-4df3-98bb-42f6293d856c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Live Cells (cells/ml)\") * lookup(__self, \"Resuspension Volume (mL)\") / 1000000"
+      },
+      "dataType": null
+    },
+    "Cells for live/dead (TOTAL) (x10^6)": {
+      "id": "68716477-dc77-40cb-96e5-dcae677063b0",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Total Number of Cells (10^6)\") - ( lookup(__self, \"Cells used for other processes (LIVE) (x10^6)\") / ( lookup(__self, \"Viability (%)\") / 100 ) )"
+      },
+      "dataType": null
+    },
+    "Volume taken for other processes (mL)": {
+      "id": "93f02e60-7b3f-44e3-990a-1aa0ade8be5f",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Resuspension Volume (mL)\") * lookup(__self, \"Cells used for other processes (LIVE) (x10^6)\") / lookup(__self, \"Total Number of Live Cells (10^6)\")"
+      },
+      "dataType": null
+    },
+    "Number of Live cells per 100uL (x10^6)": {
+      "id": "6c33969a-ba5a-461d-a103-735fd0f73bb9",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Cells Used in Flow (LIVE) (x10^6) (amend the counts here if taking out cells before live/dead)\") * 0.01 / ( lookup(__self, \"Residual Volume (mL)\") + lookup(__self, \"FACS buffer (mL)\") )",
+        "outOfSpecExpression": "lookup(__self, \"Number of Live cells per 100uL (x10^6)\") < 1"
+      },
+      "dataType": null
+    },
+    "Number of total cells per 100uL (x10^6)": {
+      "id": "4d216d02-fa69-461f-8508-ef923436b8e1",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Cells for live/dead (TOTAL) (x10^6)\") * 0.01 / ( lookup(__self, \"Residual Volume (mL)\") + lookup(__self, \"FACS buffer (mL)\") )",
+        "outOfSpecExpression": "lookup(__self, \"Number of total cells per 100uL (x10^6)\") > 5"
+      },
+      "dataType": null
+    },
+    "Assessing cell conc range measured (cells/mL)": {
+      "id": "5bdf1c4f-93be-40a2-b2aa-10cb8ee9ce42",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Cells/mL\") / lookup(__self, \"Dilution factor (DF)\")"
+      },
+      "dataType": null
+    },
+    "Cells used for other processes (LIVE) (x10^6)": {
+      "id": "7e4d5cae-5212-4871-8b08-5b066e5aec7a",
+      "type": "NUMBER",
+      "value": 0,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Cells Used in Flow (LIVE) (x10^6) (amend the counts here if taking out cells before live/dead)": {
+      "id": "cb43fce4-97cb-4d3f-a151-003f6d76ac7b",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Total Number of Live Cells (10^6)\") - lookup(__self, \"Cells used for other processes (LIVE) (x10^6)\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "Cell Count Record @TEMPLATE_INDEX",
+  "type": {
+    "ref": {
+      "id": "11acbd65-9042-4514-875e-8af069789da5"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "4520b9e5-045b-47b7-a400-45af927e1fa0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "52c6e2fb-a19c-4ad2-96ac-723653b72cfb",
+          "type": "field",
+          "fieldId": "b13bd179-8eac-4c6b-8a93-32153a60cb89",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "6e3f3bab-43f9-4690-a5d6-6445017c7ada",
+          "type": "field",
+          "fieldId": "89068906-f78a-47f5-ab41-60dedca26f8a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fbb37af1-e68d-4128-a1a6-ba1db894c971",
+          "type": "field",
+          "fieldId": "c084876f-dbc1-4d2d-8281-313ed6edbad0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cde5dc03-2a90-4763-af38-e5e8ef830503",
+          "type": "field",
+          "fieldId": "3ce282ae-a0da-4bb4-a0d3-6f56d2897a99",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8e6561ff-ce97-4063-bf4d-365bf87f0ee8",
+          "type": "field",
+          "fieldId": "6166bdf8-350f-4ea8-909c-81709559cf78",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ac8f7069-44d2-48f3-8a26-561bdd1771c5",
+          "type": "field",
+          "fieldId": "f199f91a-ed02-4810-9a5d-e55fa56d79d5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "43caff52-bb18-4568-abfa-69a2e899b7f7",
+          "type": "field",
+          "fieldId": "2008b0ac-956d-4a1e-ae8a-68d1d250f389",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2390b77b-2902-4887-ba04-73640bb82b3c",
+          "type": "field",
+          "fieldId": "cdd2dd47-79a0-4a39-9fb9-e43fbfbf595e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f68dd979-8cc9-41c4-bd90-c1d381dedd01",
+          "type": "field",
+          "fieldId": "605e9ba3-8206-4044-b071-a73833402c4f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "64260161-af2f-4c2f-a50c-3ccdec6c34c0",
+          "type": "field",
+          "fieldId": "74af13ec-a03f-447b-a444-265dfd8d84a6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "50bcb953-a8a0-41f4-8341-926129e2610e",
+          "type": "field",
+          "fieldId": "36e3b0fe-95bc-4547-b177-6e91f8ad4271",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6c35dcc2-3f94-4681-a4ad-586aeaf8e9e7",
+          "type": "field",
+          "fieldId": "aff76d1c-a0e1-420b-bbbf-ed077d9d12a5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "24aefeb9-84a0-4625-911c-130e65163e21",
+          "type": "field",
+          "fieldId": "5bdf1c4f-93be-40a2-b2aa-10cb8ee9ce42",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "956b7f1e-8588-4f99-bcb0-399b79d61578",
+          "type": "field",
+          "fieldId": "3af0b455-3522-42ad-a5b8-6cca159c36ed",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "74252fd7-7e11-4ed7-9b64-b5aa8b3c703e",
+          "type": "field",
+          "fieldId": "5f868fdb-a51d-4df3-98bb-42f6293d856c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "19228c20-ea13-43b2-a182-51b5a950954d",
+          "type": "field",
+          "fieldId": "50c7c718-abe2-4569-9bd6-506388b57937",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "582be1b2-41ea-4a6a-b642-40be25ee1d1f",
+          "type": "field",
+          "fieldId": "7e4d5cae-5212-4871-8b08-5b066e5aec7a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7e801ab7-01c2-4d4e-a73d-2c6c8c8e2907",
+          "type": "field",
+          "fieldId": "93f02e60-7b3f-44e3-990a-1aa0ade8be5f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dffbc7b7-0afd-481a-aa2d-3b57ea2eaf5e",
+          "type": "field",
+          "fieldId": "68716477-dc77-40cb-96e5-dcae677063b0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ad19a549-a1fa-4341-b88b-4c7d75f27af7",
+          "type": "field",
+          "fieldId": "10d58302-1223-465e-bc2c-261029a835a1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5ceafc8a-887a-4fab-ac46-31d360b6b3c2",
+          "type": "field",
+          "fieldId": "cb43fce4-97cb-4d3f-a151-003f6d76ac7b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "368fb99a-8167-4eae-a895-cdb06764b07b",
+          "type": "field",
+          "fieldId": "bc86e88a-9f5a-40df-a8c3-243352b90b84",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7daeb3ca-d2e2-4946-9b92-a0e574d58195",
+          "type": "field",
+          "fieldId": "ffdb3e58-36e0-4610-b5ca-7c358fdac1dd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fb73f01f-dcd9-4816-a7fe-bdca8173ac86",
+          "type": "field",
+          "fieldId": "6c33969a-ba5a-461d-a103-735fd0f73bb9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ec1aaef0-d00b-4eb4-b693-f36a80ab6477",
+          "type": "field",
+          "fieldId": "4d216d02-fa69-461f-8508-ef923436b8e1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f4196e90-82ff-47e2-b4aa-c31112c2b871",
+          "type": "field",
+          "fieldId": "83c3d4db-c6da-4029-bf36-5dfd753aed95",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "cf79fe2a-7e67-48f2-9e4b-4fd52af21d24",
+          "type": "field",
+          "fieldId": "1a525a4c-58e6-4228-94e2-75ff45775b33",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "fa41286b-5fd4-4d70-b8b9-6036f31872c0",
+          "type": "field",
+          "fieldId": "ac85f60e-4fb7-42a3-8b11-22100a8a68f2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e6347430-9be0-49d8-80cf-e19835ececba",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

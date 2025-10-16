@@ -1,0 +1,1827 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a5d356fd-abda-4910-abee-2ed9cce8a582",
+  "title": "TIGIT BUV395 (741182)",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "65097f3f-acef-445e-9cda-1ec0b4e11a6f",
+      "version": "12"
+    }
+  },
+  "fields": {
+    "Av1": {
+      "id": "e132264e-4d7a-4c39-b1ff-94419f56da5e",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av2": {
+      "id": "78c4637e-a3e8-4442-a635-25382faa11b1",
+      "type": "NUMBER",
+      "value": 2,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av3": {
+      "id": "b8777411-2371-468d-9244-9cfbd167dc5b",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av4": {
+      "id": "8a7717b2-fbcd-4f7a-ae85-d634263b72f6",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Av5": {
+      "id": "ca51df1a-6227-4f04-ba57-abd2ddf75e61",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv1": {
+      "id": "47938e50-27c4-4c0c-9c07-24cccab58d2c",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv2": {
+      "id": "06bd5e72-949d-4d7d-9541-52a9a7a37576",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv3": {
+      "id": "11cce213-4208-47ad-84ce-6c44f3b7019f",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv4": {
+      "id": "e9027f19-dc8e-45bb-a71c-2b6d9e179f52",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Tv5": {
+      "id": "9e9fa939-cde6-4845-9004-53b72713caf4",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Clone": {
+      "id": "d449cb6d-ba8c-4b88-8871-7b9b73009dc2",
+      "type": "SELECT",
+      "value": [
+        "741182"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "3G8",
+          "L243",
+          "B159",
+          "SK3",
+          "HCD14",
+          "11F2",
+          "OKT3",
+          "QA18A37",
+          "H130",
+          "HB7",
+          "EH12.1",
+          "UCHT2",
+          "HIB19",
+          "162.1",
+          "MI15",
+          "HI10a",
+          "BM16",
+          "201A",
+          "G20-127",
+          "IA6-2",
+          "p30-15",
+          "ML5",
+          "5C3",
+          "1A4",
+          "1A1",
+          "FN50",
+          "O232",
+          "B-ly6",
+          "MIH1",
+          "2331 (FUN-1)",
+          "9E2/NKp46",
+          "1G10",
+          "DREG-56",
+          "7G3",
+          "L161",
+          "DX29",
+          "2A3",
+          "M-A251",
+          "T47-530",
+          "HP-3G10",
+          "Mik-β3",
+          "REA179",
+          "6B11",
+          "UCHL1",
+          "DX2",
+          "eBioRDR5",
+          "7D3",
+          "SA231A2",
+          "OA17A18",
+          "CD28.2",
+          "HI100",
+          "WM59",
+          "HNK-1",
+          "TU66",
+          "741182",
+          "Ber-ACT8",
+          "REA771",
+          "REA173",
+          "1G1",
+          "1C6/CXCR3",
+          "2-L1-A",
+          "11A9",
+          "1B5",
+          "RF8B2",
+          "IP26",
+          "LT19",
+          "5.1H11",
+          "TÜK4",
+          "7A12",
+          "401901",
+          "RIK-2",
+          "TUGh4",
+          "9E2",
+          "134591",
+          "621",
+          "131411",
+          "H44",
+          "DX11",
+          "A1",
+          "1D11",
+          "p44-8",
+          "UM7F8",
+          "QA17A04",
+          "S5.2",
+          "RPA-T8",
+          "2ST8.5H7",
+          "4B4-1",
+          "12G5",
+          "LS132.1D9",
+          "2A9-1",
+          "6D3",
+          "NAN448B",
+          "S39-1060",
+          "S33-966",
+          "O4-46",
+          "3E4",
+          "ILCID2",
+          "WD1928",
+          "EPR2029Y",
+          "S30-778",
+          "923328",
+          "IMMUNO510",
+          "CD28.2",
+          "DREG-56",
+          "FN50",
+          "7G3",
+          "HIL-7R-M21",
+          "2D3/B7-H2",
+          "DX29",
+          "G18-145",
+          "CD25-3G10",
+          "REA978",
+          "L161",
+          "OKT3",
+          "63D3",
+          "HI98",
+          "ML5",
+          "OA17A18",
+          "WM59",
+          "UCHL1",
+          "104D2",
+          "M80",
+          "J252D4",
+          "G034E3",
+          "G043H7",
+          "EH12.2H7",
+          "p30-15",
+          "SA231A2",
+          "B1",
+          "2D1",
+          "5H9",
+          "RF8B2",
+          "1A1-K21-M22",
+          "L203.rMab",
+          "Tu39",
+          "OF-5A12",
+          "3B5",
+          "1048",
+          "B-ly4",
+          "9F5",
+          "D53-1473",
+          "Ber-ACT8",
+          "MIH5",
+          "MHM-88",
+          "DX12",
+          "NCAM16.2",
+          "F38-2E2",
+          "EBIORDR5",
+          "ISA-3",
+          "W18195C",
+          "15-2",
+          "REA824",
+          "UCHT1",
+          "SJ25C1",
+          "3A9",
+          "2D7/CCR5",
+          "UP-R1",
+          "L303.1",
+          "RPA-2.10",
+          "NK-1",
+          "HP-3E4",
+          "235614",
+          "CH-L",
+          "GHI/75",
+          "179315",
+          "L01.1",
+          "M-A712",
+          "A8",
+          "MIH18",
+          "IPI683.rMab",
+          "B56",
+          "6F9",
+          "NK92.39.rMAb",
+          "HIT2",
+          "DX26",
+          "GB11",
+          "202915",
+          "REA845",
+          "SK7",
+          "ICRF44",
+          "W17055E",
+          "S18014C1",
+          "DX9",
+          "NK92.39",
+          "HI111",
+          "QA16A02",
+          "QA18A28",
+          "29E.2A3",
+          "6-434",
+          "DX27",
+          "HB-7",
+          "dG9",
+          "GM26E7",
+          "BY55",
+          "61D3",
+          "eBioC1.7 (C1.7)",
+          "CR3M",
+          "WD1928",
+          "M5E2",
+          "IT2.2",
+          "REA257",
+          "E11",
+          "9H3",
+          "BJ40",
+          "10.1",
+          "CY1G4",
+          "BB27",
+          "MEM-166",
+          "5E8/CXCR2",
+          "12C2",
+          "WM53",
+          "581",
+          "9F10",
+          "HA58",
+          "H4A3",
+          "NP4D6",
+          "REA918",
+          "REA306",
+          "REA958",
+          "REA1054",
+          "6588-5",
+          "S-HCL-3",
+          "TU27",
+          "6H6",
+          "A019D5",
+          "G025H7",
+          "L291H4",
+          "11C3C65",
+          "BC96",
+          "CD43-10G7",
+          "SK1",
+          "3C10",
+          "B6",
+          "A15153G",
+          "C398.4A",
+          "REA517",
+          "BB7.2",
+          "17A10",
+          "22E1",
+          "MQ2-13A5",
+          "G17-4",
+          "JDC-14",
+          "REA274",
+          "REA143",
+          "HP6023",
+          "S39-1060",
+          "TUGh4",
+          "2G1-K12",
+          "W18100A",
+          "REA233",
+          "HCD56",
+          "2ST8.5H7",
+          "IRF4.3E4",
+          "REA1095",
+          "EP2030Y",
+          "Mags.21F7",
+          "REA102",
+          "IP26",
+          "NAN448B",
+          "296-580",
+          "563",
+          "8G12",
+          "MIH4",
+          "LT8",
+          "REA201",
+          "259D/C7",
+          "L50-823",
+          "HP6001",
+          "BNI3",
+          "R17-809",
+          "TgMab-2",
+          "SolA15",
+          "REA426",
+          "CB9",
+          "QA17A16",
+          "M-T701",
+          "E7O2V",
+          "MU5UBEE",
+          "M1/70",
+          "2H7",
+          "W18340F",
+          "_9E2",
+          "GHI/61",
+          "AER-37 (CRA-1)",
+          "NCAM 16.2",
+          "2331 FUN-1",
+          "HI30",
+          "V24-785",
+          "SA-DA4",
+          "OKT8",
+          "SN3",
+          "S5.5",
+          "NCAM-1",
+          "108-17",
+          "3.9",
+          "QA17A18",
+          "L128"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "GD1v1": {
+      "id": "160a41b8-0969-4874-8e51-14fb5124f415",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "GD2v1": {
+      "id": "4de04465-ff1f-4634-8a16-7a4fa8222d3a",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK1v1": {
+      "id": "4222efd0-c4b9-4bd8-9a4f-0575cd0fa8bd",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK1v2": {
+      "id": "7bb14ce3-9228-447f-b131-16a47702504c",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK1v3": {
+      "id": "35ff2640-c002-4396-8cff-9740f7792ded",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK2v1": {
+      "id": "19a90680-14d9-48f6-baca-b4519100242f",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK2v2": {
+      "id": "aa0a2de0-020b-45b2-a045-2b66411d1bae",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "NK2v3": {
+      "id": "5d7afc76-628f-4910-ae4c-8e1dd78e5909",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "TICv1": {
+      "id": "5828131a-8e9a-4468-b37b-e3e3920f15f2",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Stocks": {
+      "id": "fa681208-0980-4171-a142-811ba47fd23d",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Antibody",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    "9a595b4a-2fe8-4e96-93a1-d86652585cf4"
+                  ],
+                  "filter": "template",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Antibody",
+            "config": "Antibody"
+          },
+          {
+            "name": "Remaining volume (uL)",
+            "config": "Remaining volume (uL)"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Antigen": {
+      "id": "db61fef5-9246-4a81-9291-d3cd427d2fc7",
+      "type": "SELECT",
+      "value": [
+        "TIGIT"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Amine",
+          "Anti-Human IgG",
+          "BATF",
+          "BLIMP-1",
+          "BTLA",
+          "CCL3 (MIP-1α)",
+          "CCR10",
+          "CCR2 (CD192)",
+          "CCR4",
+          "CCR4 (CD194)",
+          "CCR4/CD194",
+          "CCR5 (CD195)",
+          "CCR6",
+          "CCR6/CD196",
+          "CCR7",
+          "CCR7/CD197",
+          "CD10",
+          "CD100",
+          "CD101",
+          "CD103",
+          "CD103/ITGAE",
+          "CD107a",
+          "CD117",
+          "CD11a",
+          "CD11b",
+          "CD11c",
+          "CD122",
+          "CD122/IL2RB",
+          "CD122/IL2RB (DF)",
+          "CD123",
+          "CD127",
+          "CD132",
+          "CD137",
+          "CD137/4-1BB",
+          "CD138",
+          "CD14",
+          "CD141",
+          "CD15",
+          "CD159c (NKG2C)",
+          "CD16",
+          "CD160",
+          "CD161",
+          "CD161/KLRB1",
+          "CD163",
+          "CD177",
+          "CD183",
+          "CD183/CXCR3",
+          "CD184 (CXCR4)",
+          "CD185 (CXCR5)",
+          "CD185/CXCR5",
+          "CD19",
+          "CD192 (CCR2)",
+          "CD194",
+          "CD194/CCR4",
+          "CD196",
+          "CD196 (CCR6)",
+          "CD196/CCR6",
+          "CD197/CCR7",
+          "CD1c",
+          "CD2",
+          "CD20",
+          "CD203c",
+          "CD206",
+          "CD21",
+          "CD223",
+          "CD223/LAG-3",
+          "CD226",
+          "CD226 (DNAM-1)",
+          "CD226 (DNAM1)",
+          "CD24",
+          "CD244 (2B4)",
+          "CD25",
+          "CD25 (clone 2A3)",
+          "CD25 (clone M-A251)",
+          "CD253 (TRAIL)",
+          "CD267/TACI",
+          "CD27",
+          "CD274",
+          "CD274/PD-L1",
+          "CD275/ICOS-LG/B7RP1",
+          "CD278",
+          "CD278/ICOS",
+          "CD279/PD-1",
+          "CD294/CRTH2",
+          "CD3",
+          "CD303",
+          "CD303/BDCA-2/CLEC4C",
+          "CD304/(Neuropilin-1)",
+          "CD31",
+          "CD314 (NKG2D)",
+          "CD319",
+          "CD319 (CRACC)",
+          "CD33",
+          "CD335",
+          "CD335/NKp46",
+          "CD336 (NKp44)",
+          "CD337",
+          "CD337/NKp30",
+          "CD34",
+          "CD35",
+          "CD357 (GITR)",
+          "CD360 (IL-21R)",
+          "CD366",
+          "CD366 (TIM-3)",
+          "CD366/TIM-3",
+          "CD38",
+          "CD39",
+          "CD4",
+          "CD40",
+          "CD43",
+          "CD45",
+          "CD45RA",
+          "CD45RO",
+          "CD48",
+          "CD49d",
+          "CD5",
+          "CD54",
+          "CD56",
+          "CD57",
+          "CD62L",
+          "CD64",
+          "CD66b",
+          "CD69",
+          "CD7",
+          "CD71",
+          "CD8",
+          "CD86",
+          "CD88",
+          "CD8a",
+          "CD8b",
+          "CD95",
+          "CD96",
+          "CD96 (TACTILE)",
+          "CD98",
+          "CD98 (LAT-1)",
+          "CD3ε",
+          "CTLA-4",
+          "CX3CR1",
+          "CXCR1/(CD181)",
+          "CXCR2/(CD182)",
+          "CXCR3",
+          "CXCR3/CD183",
+          "CXCR4/(CD184)",
+          "CXCR4/CD184",
+          "CXCR5",
+          "CXCR5/CD185",
+          "DNAM-1 CD226",
+          "DP",
+          "DQ",
+          "EOMES",
+          "FcεRIα",
+          "FoxP3",
+          "G4S",
+          "GATA3",
+          "GITR",
+          "GITR (CD357)",
+          "GLUT-1",
+          "Granzyme A",
+          "Granzyme B",
+          "Granzyme K",
+          "HI30",
+          "HLA-A2",
+          "HLA-A24",
+          "HLA-Bw4",
+          "HLA-DR",
+          "ICOS",
+          "ICOS/CD278",
+          "ID2",
+          "ID3",
+          "IFR4",
+          "IgD",
+          "IgG",
+          "IgG1",
+          "IgG4",
+          "IgM",
+          "IL-18Ra (CD218a)",
+          "IL-21R (CD360)",
+          "IL-6",
+          "ILT2 (LILRB1) (CD85j)",
+          "IRF-4",
+          "IRF4",
+          "JAML",
+          "Ki67",
+          "KIR2DL1 (CD158a)",
+          "KIR2DL2 (CD158b)",
+          "KIR2DL2 (CD158b/j)/2DL3/S2",
+          "KIR2DL5 (CD158f)",
+          "KIR2DS4 (CD158i)",
+          "KIR3DL1 (CD158e1)",
+          "KLRG1",
+          "LAG-3 (CD223)",
+          "LAG-3/CD223",
+          "LAIR1 (CD305)",
+          "LEF1",
+          "LFA-1 (CD11a)",
+          "Ly-49A",
+          "Mesothelin",
+          "MIP1A",
+          "NKG2A / CD159a",
+          "NKG2A (CD159a)",
+          "NKG2C / CD159c",
+          "NKG2C (CD159c)",
+          "NKG2D / CD314",
+          "NKp30/CD337",
+          "NKp44 / CD336",
+          "NKp46/CD335",
+          "NKp80",
+          "PD-1",
+          "PD-1/CD279",
+          "PD-L1",
+          "PD-L1/CD274",
+          "PDL1 (CD274)",
+          "PDL2 (CD273)",
+          "Perforin",
+          "PLZF",
+          "RB613",
+          "Siglec-7 (CD328)",
+          "SLAMF7 (CD319/CRACC)",
+          "Streptavidin",
+          "T-bet",
+          "TACI/CD267",
+          "TCF1",
+          "TCR Vα24-Jα18",
+          "TCR Vα7.2",
+          "TCR Vδ1",
+          "TCR Vδ2",
+          "TCR γ/δ",
+          "TCRab",
+          "TCRgd",
+          "TCRVA24-JA18",
+          "TCRVa24-Ja18 (iNKT TCR)",
+          "TCRVd2",
+          "TCRαβ",
+          "TCRγδ",
+          "TGFBRii",
+          "TIGIT",
+          "TIM-3",
+          "TIM-3/CD366",
+          "TOX",
+          "TRAIL",
+          "TRAIL (CD253)",
+          "ZEB2",
+          "CD28"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Isotype": {
+      "id": "372dab54-e67a-47de-b7ab-b9a4ee432eea",
+      "type": "SELECT",
+      "value": [
+        "Mouse IgG2b, kappa"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Mouse IgG1, kappa",
+          "Mouse IgG2a, kappa",
+          "Mouse IgG2b, kappa",
+          "Mouse BALB/c IgG1, kappa",
+          "Rat IgG2a, kappa",
+          "Rat IgG2b, kappa",
+          "Mouse IgM, kappa",
+          "Recombinant human IgG1"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Clonality": {
+      "id": "624a3424-f646-4b4b-a9db-fbf3e1351f84",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "None",
+          "Monoclonal"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Vial size": {
+      "id": "a4c64c22-1cb3-4899-8b9c-34913bb14259",
+      "type": "SELECT",
+      "value": [
+        "50 ug"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "25 tests",
+          "30 tests",
+          "50 tests",
+          "100 tests",
+          "50 ug",
+          "100 ug",
+          "100 tests in 1mL",
+          "100 tests in 200uL",
+          "100 tests in 2mL",
+          "0.5 mL",
+          "0.1 mg"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Fluorophore": {
+      "id": "0c9bf0aa-1e84-4c32-ab0c-c809327b92c1",
+      "type": "SELECT",
+      "value": [
+        "BUV395"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "PE-Cy7",
+          "BB700",
+          "BUV496",
+          "BV480",
+          "V500",
+          "BUV563",
+          "BUV808",
+          "BUV661",
+          "APC-R700",
+          "BV750",
+          "PE-Cy5",
+          "BV650",
+          "BB515",
+          "BUV615",
+          "BUV737",
+          "BUV395",
+          "Alexa Fluor 532",
+          "PE-Af700",
+          "PerCP-eFluor 710",
+          "PE-Vio 770",
+          "PerCP-Vio700",
+          "VioBlue",
+          "Alexa Fluor 488",
+          "BV510",
+          "Spark Violet 538",
+          "Spark Blue 550",
+          "APC",
+          "PerCP-Cy5.5",
+          "BV605",
+          "APC/Fire 810",
+          "PerCP",
+          "APC/Fire 750",
+          "Spark NIR 685",
+          "FITC",
+          "Alexa Fluor 647",
+          "BV785",
+          "BV711",
+          "PE",
+          "BV421",
+          "PE-Dazzle594",
+          "BV570",
+          "PE/Dazzle 594",
+          "APC-H7",
+          "BV786",
+          "R718",
+          "BB755-P",
+          "Pacific Orange",
+          "Alexa Fluor 594",
+          "BB660",
+          "BB790",
+          "BB630-P2",
+          "BB630-P",
+          "Live dead blue",
+          "RY586",
+          "PECYN5.5",
+          "NB 585",
+          "PE-CYN5.5",
+          "NY 700",
+          "APC-Fire 810",
+          "PE-Fire 810",
+          "Ghost dye UV450",
+          "Spark YG 581",
+          "BUV805",
+          "PE-CF594",
+          "Spark Violet 500",
+          "PE/Dazzle594",
+          "PE/Fire 810",
+          "Spark red 718",
+          "PE-Cy5.5",
+          "RB545",
+          "PerCP/Fire 806",
+          "RB780",
+          "AlexaFluor532",
+          "Sparkviolet538",
+          "APC/Fire810",
+          "VioBrightR720",
+          "APC-Vio770",
+          "BB630",
+          "PE-Vio615",
+          "Biotin",
+          "PE-Texas Red",
+          "PE-Vio770",
+          "PE-Dazzle 594",
+          "PerCP-Fire 806",
+          "Spark Blue 574",
+          "RB705",
+          "AF647",
+          "Vio Bright 423",
+          "APC-Fire 750",
+          "RB744",
+          "PE/Fire™ 700",
+          "StarBright Blue 580",
+          "StarBright UltraViolet 510",
+          "StarBright Violet 760",
+          "Brilliant Violet 605",
+          "Brilliant Violet 750",
+          "Alexa Fluor® 488",
+          "Vio® B515",
+          "RB613",
+          "V450",
+          "StarBright Yellow 720",
+          "SB Y720",
+          "SB V515",
+          "PerCP-eFluor710",
+          "PE/Fire 806",
+          "PerCP/Fire™ 806",
+          "PE-Dazzle 59",
+          "cFluor B548",
+          "Super Bright 645",
+          "Spark YG 593",
+          "Spark UV 387",
+          "Brilliant Violet 570",
+          "Pacific Blue",
+          "APC/Cyanine7",
+          "Brilliant Violet 711",
+          "AmCyan",
+          "Alexa Fluor® 647",
+          "PE/Fire 640",
+          "Brilliant Violet 510",
+          "Super Bright 436",
+          "NovaFluor Blue 585",
+          "NovaFluor Blue 555",
+          "PE-Alexa Fluor 700",
+          "PE-Alexa Fluor 610",
+          "Qdot 605",
+          "Qdot 625",
+          "RB670",
+          "cFluor®V450",
+          "cFluor®V547",
+          "cFluor®B515",
+          "cFluor®B532",
+          "cFluor® B548",
+          "cFluor®B690",
+          "cFluor®BYG575",
+          "cFluor®BYG610",
+          "cFluor®BYG667",
+          "cFluor®BYG710",
+          "cFluor®BYG781",
+          "cFluor®R659",
+          "cFluor®R668",
+          "cFluor®R685",
+          "cFluor®R720",
+          "cFluor®R780",
+          "cFluor®R840",
+          "BV580",
+          "BB660-P2",
+          "BB790-P"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Host species": {
+      "id": "002fec05-9266-4f0b-9fd1-42e1918b0a33",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Rat",
+          "Mouse",
+          "REA",
+          "Armenian hamster",
+          "Rabbit"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Inventory ID": {
+      "id": "3a3de760-fe1c-4d7d-91dd-af1252e24b40",
+      "type": "FORMULA",
+      "value": "716",
+      "config": {
+        "formulaExpression": "lookup(__self, \"TYPE_INDEX\")"
+      },
+      "dataType": "STRING"
+    },
+    "Manufacturer": {
+      "id": "396c44c0-be58-4cfe-ab8c-3eb3a30595b4",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "08ab64a7-aec9-463f-ac8d-fdaa05f397f1",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "5850a6ee-2ba3-4ce5-af6b-14ba872b6f48"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Type",
+              "config": "Type"
+            },
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Risk Level",
+              "config": "Risk Level"
+            },
+            {
+              "name": "Approved By",
+              "config": "Approved By"
+            },
+            {
+              "name": "Website URL",
+              "config": "Website URL"
+            },
+            {
+              "name": "Impact Level",
+              "config": "Impact Level"
+            },
+            {
+              "name": "Submission 1",
+              "config": "Submission 1"
+            },
+            {
+              "name": "Vendor Status",
+              "config": "Vendor Status"
+            },
+            {
+              "name": "Payment Method",
+              "config": "Payment Method"
+            },
+            {
+              "name": "Purpose of Use",
+              "config": "Purpose of Use"
+            },
+            {
+              "name": "Account No/Info",
+              "config": "Account No/Info"
+            },
+            {
+              "name": "Vendor Email(s)",
+              "config": "Vendor Email(s)"
+            },
+            {
+              "name": "Date of Next Audit",
+              "config": "Date of Next Audit"
+            },
+            {
+              "name": "Likelihood of Risk",
+              "config": "Likelihood of Risk"
+            },
+            {
+              "name": "Date Last Published",
+              "config": "Date Last Published"
+            },
+            {
+              "name": "Main Team(s) of Use",
+              "config": "Main Team(s) of Use"
+            },
+            {
+              "name": "Main Staff Responsible",
+              "config": "Main Staff Responsible"
+            },
+            {
+              "name": "Vendor Phone Number(s)",
+              "config": "Vendor Phone Number(s)"
+            },
+            {
+              "name": "Vendor IMU Questionnaire",
+              "config": "Vendor IMU Questionnaire"
+            },
+            {
+              "name": "Justification of Risk Rating",
+              "config": "Justification of Risk Rating"
+            },
+            {
+              "name": "Frequency of Purchase/Subscription Renewal",
+              "config": "Frequency of Purchase/Subscription Renewal"
+            },
+            {
+              "name": "Average Frequency of Use (of service/reagents)",
+              "config": "Average Frequency of Use (of service/reagents)"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Antibody Name": {
+      "id": "e472807d-91da-4a9d-9b63-54e1ac28b734",
+      "type": "FORMULA",
+      "value": "TIGIT BUV395 (741182)",
+      "config": {
+        "formulaExpression": "concat(lookup(__self, \"Antigen\"),\" \",lookup(__self, \"Fluorophore\"),\" \",\"(\", lookup(__self, \"Clone\"),\")\" )"
+      },
+      "dataType": "STRING"
+    },
+    "Catalog Number": {
+      "id": "2685d171-4f69-4e6a-b6c1-c59b3f7c98c3",
+      "type": "STRING",
+      "value": "747845",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Vial volume (uL)": {
+      "id": "570307ae-4c99-4346-b474-3d802f90f3da",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "125",
+          "200",
+          "250",
+          "500",
+          "1000",
+          "2000"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Labelling on SONY": {
+      "id": "d49539f4-5dad-4ae3-b4c3-612b05a2d44a",
+      "type": "SELECT",
+      "value": [
+        "TIGIT"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "CD16",
+          "HLADR",
+          "CD56",
+          "CD4",
+          "CD14",
+          "TCRGD",
+          "CD3",
+          "CD8",
+          "CD45",
+          "CD38",
+          "PD1",
+          "CD5",
+          "CD19",
+          "CD319",
+          "CD138",
+          "CD10",
+          "CD294",
+          "CD303",
+          "IGM",
+          "IGD",
+          "CD337",
+          "CD24",
+          "CD40",
+          "CD141",
+          "TACI",
+          "CD69",
+          "CD27",
+          "CD11C",
+          "PDL1",
+          "CD86",
+          "CD335",
+          "CD43",
+          "CD62L",
+          "CD123",
+          "CD1C",
+          "ICOS",
+          "CD25",
+          "LAG3",
+          "CD161",
+          "CD122",
+          "TCRVA7_2",
+          "TCRVA24_JA18",
+          "CD45RO",
+          "CD95",
+          "CD127",
+          "TIM3",
+          "KLRG1",
+          "CD28",
+          "CD45RA",
+          "CD31",
+          "CD57",
+          "CD39",
+          "TIGIT",
+          "CD103",
+          "TCRVD2",
+          "TCRVD1",
+          "CCR4",
+          "CXCR3",
+          "CCR7",
+          "CCR6",
+          "CCR10",
+          "CXCR5",
+          "MESOTHELIN",
+          "TCRΑΒ",
+          "IL21R",
+          "JAML",
+          "TRAIL",
+          "CD132",
+          "NKG2C",
+          "GITR",
+          "NKG2A",
+          "IL18RA",
+          "CD226",
+          "NKG2D",
+          "CD336",
+          "CD98",
+          "CD2",
+          "CD8A",
+          "CD8B",
+          "CD137",
+          "CXCR4",
+          "CCR2",
+          "CX3CR1",
+          "BLIMP1",
+          "TOX",
+          "BATF",
+          "TCF1",
+          "TBET",
+          "IRF4",
+          "ID2",
+          "EOMES",
+          "LEF1",
+          "ID3",
+          "ZEB2"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Used in Panel Subparts:": {
+      "id": "de2f3c98-09b6-43e7-a753-7757d2bf1576",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "e4b30adf-8fc8-4866-855b-918249c992a2",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "f4c7e06f-5314-4530-9a4a-1024d4fbeb20"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Panel",
+              "config": "Panel"
+            },
+            {
+              "name": "Reagent 1",
+              "config": "Reagent 1"
+            },
+            {
+              "name": "Reagent 2",
+              "config": "Reagent 2"
+            },
+            {
+              "name": "Antibodies",
+              "config": "Antibodies"
+            },
+            {
+              "name": "Volume of reagent 1 (uL)",
+              "config": "Volume of reagent 1 (uL)"
+            },
+            {
+              "name": "Volume of reagent 2 (uL)",
+              "config": "Volume of reagent 2 (uL)"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "@e472807d-91da-4a9d-9b63-54e1ac28b734",
+  "type": {
+    "ref": {
+      "id": "8c425aad-6237-4109-97aa-0be6e27426bf"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "bf6117be-a6c8-4c33-b681-2c58a88d6338",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "e574669a-89d9-4c7a-bd45-1c6920f6e096",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "f36977b9-0237-43dd-a7d1-e6c6c2b1a258",
+                  "type": "field",
+                  "fieldId": "db61fef5-9246-4a81-9291-d3cd427d2fc7",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ae0443ba-2721-4626-9701-203de7491554",
+                  "type": "field",
+                  "fieldId": "d49539f4-5dad-4ae3-b4c3-612b05a2d44a",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ddc79684-17c4-4a44-97a4-0c23204447ba",
+                  "type": "field",
+                  "fieldId": "0c9bf0aa-1e84-4c32-ab0c-c809327b92c1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "b88a1656-83c7-4db1-bd6c-40d78d2b30c6",
+                  "type": "field",
+                  "fieldId": "d449cb6d-ba8c-4b88-8871-7b9b73009dc2",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0a75d9d8-602b-4508-ad3b-99bdc79adb69",
+                  "type": "field",
+                  "fieldId": "002fec05-9266-4f0b-9fd1-42e1918b0a33",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "8a4a7236-c542-4f3a-9456-cbb1f682d5a4",
+                  "type": "field",
+                  "fieldId": "624a3424-f646-4b4b-a9db-fbf3e1351f84",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "150fcf06-0d3e-4844-b8cf-8bf0dc28b278",
+                  "type": "field",
+                  "fieldId": "372dab54-e67a-47de-b7ab-b9a4ee432eea",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "678e49fd-983c-443b-88ea-3f3c71d1abaa",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "e1dbb831-db62-4b46-96d3-5edba08f1d7e",
+                  "type": "field",
+                  "fieldId": "3a3de760-fe1c-4d7d-91dd-af1252e24b40",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "7fd04e51-4258-4123-beed-7aa55ef29a62",
+                  "type": "field",
+                  "fieldId": "e472807d-91da-4a9d-9b63-54e1ac28b734",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "99e58013-836e-41d6-b1a2-4d3e8a21b8a7",
+                  "type": "field",
+                  "fieldId": "396c44c0-be58-4cfe-ab8c-3eb3a30595b4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "460a0dd2-5271-48f0-ab64-e423874cfc7e",
+                  "type": "field",
+                  "fieldId": "2685d171-4f69-4e6a-b6c1-c59b3f7c98c3",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "21fb0aa7-930f-494a-ba68-2529413e1b91",
+                  "type": "field",
+                  "fieldId": "a4c64c22-1cb3-4899-8b9c-34913bb14259",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "aab1d67b-f326-482f-adb0-d8b37bf0cd07",
+                  "type": "field",
+                  "fieldId": "570307ae-4c99-4346-b474-3d802f90f3da",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ecacfd79-ffb4-4c14-8d12-f5f147f4e2f7",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e1005410-1ec9-4a1e-86e2-b7b49a4cba08",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ce67dc7d-bbb8-492e-8754-3c2b836a3643",
+          "type": "field",
+          "fieldId": "de2f3c98-09b6-43e7-a753-7757d2bf1576",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "a6673565-86ef-4e16-aa78-b418408a5a88",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "567cb442-5af9-43fc-b126-a38e49f98a8c",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Recommended volumes per Panel (uL):"
+            }
+          ]
+        },
+        {
+          "id": "534c6158-17da-43d6-874c-c62a71808cd0",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "44084c57-a7c3-4314-82a2-546662765fe7",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "bf8c2564-be39-4572-95b8-9db0b549d524",
+                  "type": "field",
+                  "fieldId": "47938e50-27c4-4c0c-9c07-24cccab58d2c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "f5a7c302-2aa5-4292-bce8-f6513327d825",
+                  "type": "field",
+                  "fieldId": "e132264e-4d7a-4c39-b1ff-94419f56da5e",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "107a73d1-87a9-4dc4-8027-917485befeea",
+                  "type": "field",
+                  "fieldId": "06bd5e72-949d-4d7d-9541-52a9a7a37576",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0b3bacfc-532d-4d63-a8e4-fd842150e255",
+                  "type": "field",
+                  "fieldId": "78c4637e-a3e8-4442-a635-25382faa11b1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "da3937e7-ee87-4d33-9ce9-3a04e5d9bccf",
+                  "type": "field",
+                  "fieldId": "11cce213-4208-47ad-84ce-6c44f3b7019f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "9c75555f-7734-4422-8f87-a072e4db1d8b",
+                  "type": "field",
+                  "fieldId": "b8777411-2371-468d-9244-9cfbd167dc5b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "5618d705-2f92-4c42-a2ef-90a46effd547",
+                  "type": "field",
+                  "fieldId": "e9027f19-dc8e-45bb-a71c-2b6d9e179f52",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "13e3a02e-0f3d-45b2-8614-eb279f07c806",
+                  "type": "field",
+                  "fieldId": "8a7717b2-fbcd-4f7a-ae85-d634263b72f6",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0dffb967-eeb7-42cc-98dc-a68f2bf6abff",
+                  "type": "field",
+                  "fieldId": "9e9fa939-cde6-4845-9004-53b72713caf4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d1fa6f6e-8da1-4400-903c-5cad42c9132e",
+                  "type": "field",
+                  "fieldId": "ca51df1a-6227-4f04-ba57-abd2ddf75e61",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d89c7ec9-3286-45f9-a798-22bab7f33b3b",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "88b871c5-62c6-49e4-849c-f204a55fc0e7",
+                  "type": "field",
+                  "fieldId": "4222efd0-c4b9-4bd8-9a4f-0575cd0fa8bd",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "a12623f0-8374-4c85-8dda-947424a3469d",
+                  "type": "field",
+                  "fieldId": "19a90680-14d9-48f6-baca-b4519100242f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d3e5af19-6bfc-4a8e-b81a-480ee90269b6",
+                  "type": "field",
+                  "fieldId": "7bb14ce3-9228-447f-b131-16a47702504c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "edc31b09-ae75-4288-8ab0-83f038418594",
+                  "type": "field",
+                  "fieldId": "aa0a2de0-020b-45b2-a045-2b66411d1bae",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "5f9b94be-5026-4989-b3ed-d8f5c1587246",
+                  "type": "field",
+                  "fieldId": "35ff2640-c002-4396-8cff-9740f7792ded",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "8cbe6af1-8fc8-48a0-a897-9b013aa38337",
+                  "type": "field",
+                  "fieldId": "5d7afc76-628f-4910-ae4c-8e1dd78e5909",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "6da0a94c-7753-4fd2-9721-394192fb4327",
+                  "type": "field",
+                  "fieldId": "160a41b8-0969-4874-8e51-14fb5124f415",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "97bf4e2c-61c9-4ab7-a7cb-ba8fdb31169d",
+                  "type": "field",
+                  "fieldId": "4de04465-ff1f-4634-8a16-7a4fa8222d3a",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ab2f86fc-6a40-48e1-b306-86f29f6a24dd",
+                  "type": "field",
+                  "fieldId": "5828131a-8e9a-4468-b37b-e3e3920f15f2",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8be4dd3f-6e8e-4f95-bf69-6533ffba5080",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3e096591-f031-49dd-907f-c89c0429220d",
+          "type": "field",
+          "fieldId": "fa681208-0980-4171-a142-811ba47fd23d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6528266e-5daf-4904-a549-1ef92d04e251",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

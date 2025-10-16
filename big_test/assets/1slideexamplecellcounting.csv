@@ -1,0 +1,11 @@
+1;Viability and Cell Count Assay;Image;Operator;Viability (%);Live (cells/ml);Dead (cells/ml);Total (cells/ml);;Estimated cell diameter (um);Cell diameter standard deviation (um);(%) of cells in aggregates with five or more cells
+2;;20250730-0001-1-1;PJR;88.5;5.21E6;6.78E5;5.89E6;;8.8;4.3;0
+3;;20250730-0001-2-2;PJR;83.0;2.24E6;4.58E5;2.70E6;;9.4;5.5;1
+4;;20250730-0001-3-3;PJR;89.4;6.07E6;7.21E5;6.79E6;;8.7;4.1;0
+5;;20250730-0001-4-4;PJR;92.5;2.36E6;1.91E5;2.55E6;;8.8;4.0;0
+6;;20250730-0001-5-5;PJR;87.9;3.33E6;4.56E5;3.78E6;;8.9;4.6;0
+7;;20250730-0001-6-6;PJR;92.4;2.91E6;2.39E5;3.15E6;;8.7;3.8;0
+8;;20250730-0001-7-7;PJR;85.7;3.51E6;5.85E5;4.10E6;;8.9;4.9;0
+9;;20250730-0001-8-8;PJR;76.9;2.11E6;6.35E5;2.75E6;;8.9;4.6;0
+
+//[645D40B2]

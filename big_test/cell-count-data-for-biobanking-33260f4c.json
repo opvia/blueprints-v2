@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "33260f4c-40f2-4e47-85bd-1da957297cf5",
+  "title": "Cell Count Data for Biobanking",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Cells/mL": {
+      "id": "aff76d1c-a0e1-420b-bbbf-ed077d9d12a5",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Live Cells (cells/ml)\") + lookup(__self, \"Dead Cells (cells/ml)\")"
+      },
+      "dataType": null
+    },
+    "Comments": {
+      "id": "ac85f60e-4fb7-42a3-8b11-22100a8a68f2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Image ID": {
+      "id": "2008b0ac-956d-4a1e-ae8a-68d1d250f389",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Operator": {
+      "id": "cdd2dd47-79a0-4a39-9fb9-e43fbfbf595e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Sample ID": {
+      "id": "b13bd179-8eac-4c6b-8a93-32153a60cb89",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Donor Type"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Viability (%)": {
+      "id": "605e9ba3-8206-4044-b071-a73833402c4f",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"Viability (%)\") <50"
+      },
+      "dataType": "NUMBER"
+    },
+    "Cell Counter ID": {
+      "id": "f199f91a-ed02-4810-9a5d-e55fa56d79d5",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup ( lookup(__self, \"SUBMITTED_FROM\") , \"Cell Counter ID\" )"
+      },
+      "dataType": null
+    },
+    "Test volume (uL)": {
+      "id": "3ce282ae-a0da-4bb4-a0d3-6f56d2897a99",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Dilution factor (DF)": {
+      "id": "6166bdf8-350f-4ea8-909c-81709559cf78",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Dead Cells (cells/ml)": {
+      "id": "36e3b0fe-95bc-4547-b177-6e91f8ad4271",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Live Cells (cells/ml)": {
+      "id": "74af13ec-a03f-447b-a444-265dfd8d84a6",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Resuspension Volume (mL)": {
+      "id": "c084876f-dbc1-4d2d-8281-313ed6edbad0",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Used in Final Experiment?": {
+      "id": "89068906-f78a-47f5-ab41-60dedca26f8a",
+      "type": "BOOLEAN",
+      "value": true,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Total Number of Cells (10^6)": {
+      "id": "3af0b455-3522-42ad-a5b8-6cca159c36ed",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Cells/mL\") * lookup(__self, \"Resuspension Volume (mL)\") / 1000000"
+      },
+      "dataType": null
+    },
+    "Volume of Cryostor to add (mL)": {
+      "id": "7ae7b34a-a08f-4b31-84c7-eb15eb079e3a",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Total Number of Live Cells (10^6)": {
+      "id": "5f868fdb-a51d-4df3-98bb-42f6293d856c",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Live Cells (cells/ml)\") * lookup(__self, \"Resuspension Volume (mL)\") / 1000000"
+      },
+      "dataType": null
+    },
+    "Assessing cell conc range measured (cells/mL)": {
+      "id": "5bdf1c4f-93be-40a2-b2aa-10cb8ee9ce42",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Cells/mL\") / lookup(__self, \"Dilution factor (DF)\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "11acbd65-9042-4514-875e-8af069789da5"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "4520b9e5-045b-47b7-a400-45af927e1fa0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "52c6e2fb-a19c-4ad2-96ac-723653b72cfb",
+          "type": "field",
+          "fieldId": "b13bd179-8eac-4c6b-8a93-32153a60cb89",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "6e3f3bab-43f9-4690-a5d6-6445017c7ada",
+          "type": "field",
+          "fieldId": "89068906-f78a-47f5-ab41-60dedca26f8a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fbb37af1-e68d-4128-a1a6-ba1db894c971",
+          "type": "field",
+          "fieldId": "c084876f-dbc1-4d2d-8281-313ed6edbad0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cde5dc03-2a90-4763-af38-e5e8ef830503",
+          "type": "field",
+          "fieldId": "3ce282ae-a0da-4bb4-a0d3-6f56d2897a99",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8e6561ff-ce97-4063-bf4d-365bf87f0ee8",
+          "type": "field",
+          "fieldId": "6166bdf8-350f-4ea8-909c-81709559cf78",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ac8f7069-44d2-48f3-8a26-561bdd1771c5",
+          "type": "field",
+          "fieldId": "f199f91a-ed02-4810-9a5d-e55fa56d79d5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "43caff52-bb18-4568-abfa-69a2e899b7f7",
+          "type": "field",
+          "fieldId": "2008b0ac-956d-4a1e-ae8a-68d1d250f389",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2390b77b-2902-4887-ba04-73640bb82b3c",
+          "type": "field",
+          "fieldId": "cdd2dd47-79a0-4a39-9fb9-e43fbfbf595e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f68dd979-8cc9-41c4-bd90-c1d381dedd01",
+          "type": "field",
+          "fieldId": "605e9ba3-8206-4044-b071-a73833402c4f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "64260161-af2f-4c2f-a50c-3ccdec6c34c0",
+          "type": "field",
+          "fieldId": "74af13ec-a03f-447b-a444-265dfd8d84a6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "50bcb953-a8a0-41f4-8341-926129e2610e",
+          "type": "field",
+          "fieldId": "36e3b0fe-95bc-4547-b177-6e91f8ad4271",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6c35dcc2-3f94-4681-a4ad-586aeaf8e9e7",
+          "type": "field",
+          "fieldId": "aff76d1c-a0e1-420b-bbbf-ed077d9d12a5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "24aefeb9-84a0-4625-911c-130e65163e21",
+          "type": "field",
+          "fieldId": "5bdf1c4f-93be-40a2-b2aa-10cb8ee9ce42",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "956b7f1e-8588-4f99-bcb0-399b79d61578",
+          "type": "field",
+          "fieldId": "3af0b455-3522-42ad-a5b8-6cca159c36ed",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "74252fd7-7e11-4ed7-9b64-b5aa8b3c703e",
+          "type": "field",
+          "fieldId": "5f868fdb-a51d-4df3-98bb-42f6293d856c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1b3a28a1-9361-4e4b-afb8-80d1f758517a",
+          "type": "field",
+          "fieldId": "7ae7b34a-a08f-4b31-84c7-eb15eb079e3a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fa41286b-5fd4-4d70-b8b9-6036f31872c0",
+          "type": "field",
+          "fieldId": "ac85f60e-4fb7-42a3-8b11-22100a8a68f2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e6347430-9be0-49d8-80cf-e19835ececba",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Cell Count Record @TEMPLATE_INDEX"
+  }
+}

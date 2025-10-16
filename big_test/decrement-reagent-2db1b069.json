@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2db1b069-b9be-4c7f-b9a8-8a5e71857939",
+  "title": "Decrement Reagent",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "version": "2"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the entity where this script is embedded\ncontaining_entity = seal.get_containing_entity()\nprint(f\"Script running in context of entity: {containing_entity.get('title', containing_entity['id'])}\")\n\n# Check the \"Volume decremented\" checkbox status\nvolume_decremented_checkbox_field = containing_entity[\"fields\"].get(\"Volume decremented\")\nif volume_decremented_checkbox_field and volume_decremented_checkbox_field[\"value\"] is True:\n    print(\"Info: 'Volume decremented' checkbox is already ticked. Skipping deduction.\")\n    exit() # Exit the script if already ticked\n\nprint(\"Info: 'Volume decremented' checkbox is not ticked. Proceeding with deduction.\")\n\n# Get the value from \"Actual Amount added to MM (uL)\" field\nactual_amount_field = containing_entity[\"fields\"].get(\"Actual Amount added to MM (uL)\")\nif not actual_amount_field or actual_amount_field[\"value\"] is None:\n    print(\"Error: 'Actual Amount added to MM (uL)' field is missing or has no value.\")\n    raise ValueError(\"Missing 'Actual Amount added to MM (uL)' value for deduction.\")\n\nactual_amount_added = actual_amount_field[\"value\"]\nprint(f\"Actual Amount added to MM (uL): {actual_amount_added}\")\n\n# Get the reference from \"Stock Unit\" field\nstock_unit_ref_field = containing_entity[\"fields\"].get(\"Stock Unit\")\nif not stock_unit_ref_field or not stock_unit_ref_field[\"value\"]:\n    print(\"Error: 'Stock Unit' reference field is missing or has no value.\")\n    raise ValueError(\"Missing 'Stock Unit' reference for deduction.\")\n\n# Assuming 'Stock Unit' is a single-value reference field\nstock_unit_ref = stock_unit_ref_field[\"value\"][0]\nstock_unit_id = stock_unit_ref[\"id\"]\nprint(f\"Stock Unit entity ID referenced: {stock_unit_id}\")\n\n# Get the Stock Unit entity\nstock_unit_entity = seal.get_entity(ref=stock_unit_ref)\nprint(f\"Retrieved Stock Unit entity: {stock_unit_entity.get('title', stock_unit_entity['id'])}\")\n\n# Make the Stock Unit entity editable to update its field\neditable_stock_unit = seal.make_entity_editable(stock_unit_id)\nprint(f\"Made Stock Unit entity editable (draft ID: {editable_stock_unit['id']})\")\n\n# Get the current \"Remaining volume (uL)\" from the Stock Unit entity\nremaining_volume_field = editable_stock_unit[\"fields\"].get(\"Remaining volume (uL)\")\nif not remaining_volume_field or remaining_volume_field[\"value\"] is None:\n    print(\"Error: 'Remaining volume (uL)' field in Stock Unit entity is missing or has no value.\")\n    raise ValueError(\"Missing 'Remaining volume (uL)' value in Stock Unit for deduction.\")\n\ncurrent_remaining_volume = remaining_volume_field[\"value\"]\nprint(f\"Current 'Remaining volume (uL)' in Stock Unit: {current_remaining_volume}\")\n\n# Perform the deduction\nnew_remaining_volume = current_remaining_volume - actual_amount_added\nprint(f\"New 'Remaining volume (uL)' after deduction: {new_remaining_volume}\")\n\n# Update the \"Remaining volume (uL)\" field in the Stock Unit entity\n# This updates the draft created by make_entity_editable\nseal.update_field_value_in_entity(editable_stock_unit[\"id\"], \"Remaining volume (uL)\", new_remaining_volume)\nprint(f\"Successfully updated 'Remaining volume (uL)' in Stock Unit (ID: {editable_stock_unit['id']}) to {new_remaining_volume}\")\n\n# Make the containing entity editable to update its checkbox field and Stock Unit reference\neditable_containing_entity = seal.make_entity_editable(containing_entity[\"id\"])\nprint(f\"Made containing entity editable (draft ID: {editable_containing_entity['id']})\")\n\n# Tick the \"Volume decremented\" checkbox in the containing entity\nseal.update_field_value_in_entity(editable_containing_entity[\"id\"], \"Volume decremented\", True)\nprint(\"Successfully ticked the 'Volume decremented' checkbox in the containing entity.\")\n\n# Update the \"Stock Unit\" reference in the containing entity to the new draft of the Stock Unit\nnew_stock_unit_reference = [{\"id\": editable_stock_unit[\"id\"], \"version\": None}]\nseal.update_field_value_in_entity(editable_containing_entity[\"id\"], \"Stock Unit\", new_stock_unit_reference)\nprint(f\"Successfully updated 'Stock Unit' reference in containing entity to point to new draft (ID: {editable_stock_unit['id']}).\")"
+    }
+  }
+}

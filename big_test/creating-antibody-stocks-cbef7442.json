@@ -1,0 +1,235 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "cbef7442-bed4-49b4-9b32-f3e6ec5002aa",
+  "title": "creating antibody stocks",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "6525d217-4caf-44a9-a94c-6398780eff7a",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Submission": {
+      "id": "1d28c23c-b2af-4f08-8f86-2309a47845f3",
+      "type": "INSTANCE_SUBMISSION",
+      "value": [
+        {
+          "id": "6d0bdd38-8086-4b93-8f78-899788a5d84e",
+          "version": "1"
+        },
+        {
+          "id": "46d2074a-3671-4f89-946d-6520776b16aa",
+          "version": "1"
+        },
+        {
+          "id": "8fb51ddf-0825-4573-8a8a-78889df7473c",
+          "version": "1"
+        },
+        {
+          "id": "bc005564-e924-4c5e-9ebb-c70d7280e619",
+          "version": "1"
+        },
+        {
+          "id": "569c756c-55a6-4ea2-bd53-ccda6ec37712",
+          "version": "1"
+        },
+        {
+          "id": "d8a13ce7-2905-4abb-b705-ae26d65c2fea",
+          "version": "1"
+        },
+        {
+          "id": "e22d4b86-286c-440f-bc98-51a31157e996",
+          "version": "1"
+        },
+        {
+          "id": "160a688a-20b8-4d59-98f1-5c5a7fcae399",
+          "version": "1"
+        },
+        {
+          "id": "93bff11a-3ed1-45f6-b51e-a228e9954465",
+          "version": "1"
+        },
+        {
+          "id": "532cf5ff-f098-4fb5-bb72-994e1a8ea57e",
+          "version": "1"
+        },
+        {
+          "id": "bee2fb0d-2d2f-4e40-b04b-fc7b5d5a5e05",
+          "version": "1"
+        },
+        {
+          "id": "ba371844-d831-457a-bc61-4b5eeb5bc9d0",
+          "version": "1"
+        },
+        {
+          "id": "8f595c6b-3396-4fdb-a406-0376caeea5e4",
+          "version": "1"
+        },
+        {
+          "id": "8d8d1c6b-fca6-4f8c-a812-fa32ce44f4c5",
+          "version": "1"
+        },
+        {
+          "id": "b69bbb6b-1aeb-4cfc-a32b-5f1c2c2fe3dd",
+          "version": "1"
+        },
+        {
+          "id": "cc70e40a-f366-4f22-9150-e0ac1e76e072",
+          "version": "1"
+        },
+        {
+          "id": "9be6815e-4b1d-4681-a10e-24572a717f63",
+          "version": "1"
+        },
+        {
+          "id": "65423002-870a-4c5a-a21d-01908ee176a0",
+          "version": "1"
+        },
+        {
+          "id": "6dfb2d3d-22d8-4cb6-bc65-e4b7420b9f09",
+          "version": "1"
+        },
+        {
+          "id": "0cdb2cb6-6389-404c-abad-02cef7afb880",
+          "version": "1"
+        },
+        {
+          "id": "fef03c70-9223-4c7e-a0c7-6021a5e9d372",
+          "version": "1"
+        },
+        {
+          "id": "524c5e1a-643f-49c7-86f4-7ee8eb46397a",
+          "version": "1"
+        },
+        {
+          "id": "c1bbd03f-a04b-4c0c-bf5f-563b2e49ac62",
+          "version": "1"
+        },
+        {
+          "id": "a2c49032-3c0c-4511-94a7-ab5af29a7fa4",
+          "version": "1"
+        },
+        {
+          "id": "0607042b-7614-4b08-aade-7c5a334f30ed",
+          "version": "1"
+        },
+        {
+          "id": "bddd6fd2-cc85-4f86-a9fe-769d84cd3940",
+          "version": "1"
+        },
+        {
+          "id": "c2e68a20-84ca-498f-a47c-3201c805fa39",
+          "version": "1"
+        },
+        {
+          "id": "1d36af73-9b62-4893-ade6-ad5462eae76b",
+          "version": "1"
+        },
+        {
+          "id": "e771e665-3db0-439b-9f17-0752450713ae",
+          "version": "1"
+        },
+        {
+          "id": "d5524939-63a8-4fec-b0a1-b391bc4f20d5",
+          "version": "1"
+        },
+        {
+          "id": "e99001b8-08e7-4896-9572-d698b54df42b",
+          "version": "1"
+        },
+        {
+          "id": "78ee84a8-2cbb-40e5-a203-e9f9916bdaf5",
+          "version": "1"
+        },
+        {
+          "id": "fc100fc1-b6eb-438d-8295-ef84e2e65132",
+          "version": "1"
+        },
+        {
+          "id": "9861522e-9236-475d-8016-05a14d38bf84",
+          "version": "1"
+        },
+        {
+          "id": "ce974e55-6a40-430b-8037-fbead17cf8e7",
+          "version": "1"
+        },
+        {
+          "id": "10aceee4-c523-4300-8843-82cc3be49cbf",
+          "version": "1"
+        },
+        {
+          "id": "b46aa419-d2bf-4b2f-92ae-d7f27ca4ed83",
+          "version": "1"
+        },
+        {
+          "id": "17d2061c-a97f-45a6-9ec0-efe704580441",
+          "version": "1"
+        },
+        {
+          "id": "9026adce-1d93-494a-af70-0f2349c3473f",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "9a595b4a-2fe8-4e96-93a1-d86652585cf4",
+          "version": "5"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "53263ee4-bec7-4b67-85f0-5a09b3ae5530"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f5c857d1-162a-4dac-9f64-40cdb13ded16",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c917e4ee-abfe-4fec-8abd-12cb1eb0b0dc",
+          "type": "field",
+          "fieldId": "1d28c23c-b2af-4f08-8f86-2309a47845f3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "64f3ec62-2d86-47bc-bb7c-9672422c3611",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

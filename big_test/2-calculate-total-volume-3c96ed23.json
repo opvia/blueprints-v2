@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "3c96ed23-e622-484c-bf35-44d0cd20b97c",
+  "title": "2. Calculate Total Volume",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "version": "2"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the entity where this script is embedded (the Mastermix Preparation template/instance)\ncontaining_entity = seal.get_containing_entity()\n\n# Get the '1. Reagents' submission field\n# This field contains references to the individual reagent entities\nreagents_submission_field = containing_entity[\"fields\"].get(\"2. Reagents\")\n\ntotal_mm_volume = 0.0\n\nif reagents_submission_field and reagents_submission_field.get(\"value\"):\n    reagent_refs = reagents_submission_field[\"value\"]\n\n    # Iterate through each referenced reagent entity in the submission table\n    for reagent_ref in reagent_refs:\n        # Get the full reagent entity data\n        reagent_entity = seal.get_entity(ref=reagent_ref)\n\n        # Get the 'Actual Amount added to MM (uL)' field value from the reagent entity\n        # Default to 0.0 if the field is not found or its value is None\n        actual_amount = reagent_entity[\"fields\"].get(\"Actual Amount added to MM (uL)\", {}).get(\"value\", 0.0)\n\n        # Ensure value is a number before adding\n        if isinstance(actual_amount, (int, float)):\n            total_mm_volume += actual_amount\n        else:\n            print(f\"Warning: 'Actual Amount added to MM (uL)' value '{actual_amount}' for reagent {reagent_ref['id']} is not a number. Skipping.\")\n\n# Update the '1. Total MM Volume (uL)' field in the containing entity\nseal.update_field_value(\"2. Total MM Volume (uL)\", total_mm_volume)\n\nprint(f\"Calculated 2. Total MM Volume (uL): {total_mm_volume}\")"
+    }
+  }
+}

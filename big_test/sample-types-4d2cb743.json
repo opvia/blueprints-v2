@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "4d2cb743-2c65-4612-86f5-59518258d21c",
+  "title": "Sample Types",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "array",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "487bfb56-78e5-4e06-9c4d-ebf148a25537",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": true,
+    "createFromTemplate": null,
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": false
+  }
+}

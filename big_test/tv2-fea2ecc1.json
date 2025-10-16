@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "fea2ecc1-deb1-4f02-85d6-423ecbf2cdb2",
+  "title": "Tv2",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "6babbbb6-8fdd-482c-9f82-2c9939635f66",
+      "version": "2"
+    }
+  },
+  "fields": {
+    "Status": {
+      "id": "3bbb7acb-02cf-4e33-b91e-0d842c3b3c04",
+      "type": "SELECT",
+      "value": [
+        "Active"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Archive",
+          "Active"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Comments": {
+      "id": "22da259f-600f-4a0a-8ee3-8df6ffcfd012",
+      "type": "STRING",
+      "value": "Primary IMU-Core T panel",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Panel Collection Name": {
+      "id": "2a09859d-e00f-49ab-85be-bd7b2d8b8164",
+      "type": "STRING",
+      "value": "IMUv2",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Subparts for mastermixes": {
+      "id": "5594a0bc-734f-4187-9cd8-fb59dd5c0a3e",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "178e6ec6-e359-49d5-81ea-0c8174b801f0",
+          "version": "3"
+        },
+        {
+          "id": "02ca4e2c-a764-41c2-9757-6b637513419e",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Reasons for change/new version": {
+      "id": "35d705c3-f626-4df5-a63f-98d5e0397df2",
+      "type": "STRING",
+      "value": "To improve marker staining performance of IMUv1 especially when using frozen samples",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Fresh sample fluorochrome number": {
+      "id": "5db44270-89f5-4060-9a24-68e4b82bb5ca",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Frozen sample fluorochrome number": {
+      "id": "eba5b300-ea42-4ff2-9fb0-52d83a335d89",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Major differences from previous version": {
+      "id": "458620ae-1c86-487f-99a8-e91b26cc21c0",
+      "type": "STRING",
+      "value": "Changed colour for CD56, CD25, CD127, TIM3, KLRG1, ICOS and CD57",
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "cdd8b443-ed35-46f7-9417-9e40cbaf0bc6"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "dfb6ace5-a21e-4cb8-ba43-398fed985975",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a5f5b91b-368c-4ba8-ab65-8b0fbe167a5e",
+          "type": "field",
+          "fieldId": "2a09859d-e00f-49ab-85be-bd7b2d8b8164",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ee2334df-ccc0-43d8-89e9-83f1223a7808",
+          "type": "field",
+          "fieldId": "3bbb7acb-02cf-4e33-b91e-0d842c3b3c04",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3d1dc628-c32c-434a-a9e5-f27e715b1dcf",
+          "type": "field",
+          "fieldId": "5594a0bc-734f-4187-9cd8-fb59dd5c0a3e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "d11cc868-f1ac-459b-b249-63f574510c11",
+          "type": "field",
+          "fieldId": "458620ae-1c86-487f-99a8-e91b26cc21c0",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c34d444a-0390-46e3-b002-86e30d0e2c93",
+          "type": "field",
+          "fieldId": "35d705c3-f626-4df5-a63f-98d5e0397df2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "26f07832-dd32-46a6-aed0-49914c9cd1ec",
+          "type": "field",
+          "fieldId": "22da259f-600f-4a0a-8ee3-8df6ffcfd012",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3dd07d40-d55b-4047-a831-fb73fb0a1cb9",
+          "type": "field",
+          "fieldId": "5db44270-89f5-4060-9a24-68e4b82bb5ca",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3c383f0f-24c2-46b3-bcab-ed1e4a13d54a",
+          "type": "field",
+          "fieldId": "eba5b300-ea42-4ff2-9fb0-52d83a335d89",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "df9712d6-9020-4fcf-af9e-8ef0fd1f9f36",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

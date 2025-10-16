@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0607042b-7614-4b08-aade-7c5a334f30ed",
+  "title": "Vial25",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "9a595b4a-2fe8-4e96-93a1-d86652585cf4",
+      "version": "5"
+    },
+    "submissionField": {
+      "fieldId": "1d28c23c-b2af-4f08-8f86-2309a47845f3",
+      "fieldName": "Submission",
+      "parentEntityId": "cbef7442-bed4-49b4-9b32-f3e6ec5002aa"
+    }
+  },
+  "fields": {
+    "Antibody": {
+      "id": "5e61e5ca-ec6c-40e3-947c-f09868c4daf3",
+      "type": "FORMULA",
+      "value": [
+        {
+          "id": "59703300-3e64-4a9c-bd9f-9708286d7ae7",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "formulaExpression": "lookup ( lookup(__self, \"Lot Number\") , \"Antibody\" )"
+      },
+      "dataType": "ENTITY"
+    },
+    "Lot Number": {
+      "id": "c9b8bc6e-5ce0-4c04-87a3-5c15d3fa32bc",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "f95588e7-4949-4848-9688-5553600c5732",
+          "version": "2"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "bfeff202-5aeb-4422-90ce-4b0a1b96ad4d"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Antibody",
+              "config": "Antibody"
+            },
+            {
+              "name": "Lot Number",
+              "config": "Lot Number"
+            },
+            {
+              "name": "Remaining volume (uL)",
+              "config": "Remaining volume (uL)"
+            },
+            {
+              "name": "Stocks",
+              "config": "Stocks"
+            },
+            {
+              "name": "Av1 (uL)",
+              "config": "Av1 (uL)"
+            },
+            {
+              "name": "Av2 (uL)",
+              "config": "Av2 (uL)"
+            },
+            {
+              "name": "Av3 (uL)",
+              "config": "Av3 (uL)"
+            },
+            {
+              "name": "Av4 (uL)",
+              "config": "Av4 (uL)"
+            },
+            {
+              "name": "Av5 (uL)",
+              "config": "Av5 (uL)"
+            },
+            {
+              "name": "Tv1 (uL)",
+              "config": "Tv1 (uL)"
+            },
+            {
+              "name": "Tv2 (uL)",
+              "config": "Tv2 (uL)"
+            },
+            {
+              "name": "Tv3 (uL)",
+              "config": "Tv3 (uL)"
+            },
+            {
+              "name": "Tv4 (uL)",
+              "config": "Tv4 (uL)"
+            },
+            {
+              "name": "Tv5 (uL)",
+              "config": "Tv5 (uL)"
+            },
+            {
+              "name": "GD1v1 (uL)",
+              "config": "GD1v1 (uL)"
+            },
+            {
+              "name": "GD2v1 (uL)",
+              "config": "GD2v1 (uL)"
+            },
+            {
+              "name": "NK1v1 (uL)",
+              "config": "NK1v1 (uL)"
+            },
+            {
+              "name": "NK1v2 (uL)",
+              "config": "NK1v2 (uL)"
+            },
+            {
+              "name": "NK1v3 (uL)",
+              "config": "NK1v3 (uL)"
+            },
+            {
+              "name": "NK2v1 (uL)",
+              "config": "NK2v1 (uL)"
+            },
+            {
+              "name": "NK2v2 (uL)",
+              "config": "NK2v2 (uL)"
+            },
+            {
+              "name": "NK2v3 (uL)",
+              "config": "NK2v3 (uL)"
+            },
+            {
+              "name": "TICv1 (uL)",
+              "config": "TICv1 (uL)"
+            },
+            {
+              "name": "Inventory ID",
+              "config": "Inventory ID"
+            },
+            {
+              "name": "Av1 (uL) AUTO",
+              "config": "Av1 (uL) AUTO"
+            },
+            {
+              "name": "Av2 (uL) AUTO",
+              "config": "Av2 (uL) AUTO"
+            },
+            {
+              "name": "Av3 (uL) AUTO",
+              "config": "Av3 (uL) AUTO"
+            },
+            {
+              "name": "Av4 (uL) AUTO",
+              "config": "Av4 (uL) AUTO"
+            },
+            {
+              "name": "Av5 (uL) AUTO",
+              "config": "Av5 (uL) AUTO"
+            },
+            {
+              "name": "Tv1 (uL) AUTO",
+              "config": "Tv1 (uL) AUTO"
+            },
+            {
+              "name": "Tv2 (uL) AUTO",
+              "config": "Tv2 (uL) AUTO"
+            },
+            {
+              "name": "Tv3 (uL) AUTO",
+              "config": "Tv3 (uL) AUTO"
+            },
+            {
+              "name": "Tv4 (uL) AUTO",
+              "config": "Tv4 (uL) AUTO"
+            },
+            {
+              "name": "Tv5 (uL) AUTO",
+              "config": "Tv5 (uL) AUTO"
+            },
+            {
+              "name": "GD1v1 (uL) AUTO",
+              "config": "GD1v1 (uL) AUTO"
+            },
+            {
+              "name": "GD2v1 (uL) AUTO",
+              "config": "GD2v1 (uL) AUTO"
+            },
+            {
+              "name": "NK1v1 (uL) AUTO",
+              "config": "NK1v1 (uL) AUTO"
+            },
+            {
+              "name": "NK1v2 (uL) AUTO",
+              "config": "NK1v2 (uL) AUTO"
+            },
+            {
+              "name": "NK1v3 (uL) AUTO",
+              "config": "NK1v3 (uL) AUTO"
+            },
+            {
+              "name": "NK2v1 (uL) AUTO",
+              "config": "NK2v1 (uL) AUTO"
+            },
+            {
+              "name": "NK2v2 (uL) AUTO",
+              "config": "NK2v2 (uL) AUTO"
+            },
+            {
+              "name": "NK2v3 (uL) AUTO",
+              "config": "NK2v3 (uL) AUTO"
+            },
+            {
+              "name": "TICv1 (uL) AUTO",
+              "config": "TICv1 (uL) AUTO"
+            },
+            {
+              "name": "Accept antibody default volumes",
+              "config": "Accept antibody default volumes"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Remaining volume (uL)": {
+      "id": "7b20ce14-2d1b-4e89-b98c-769d543db488",
+      "type": "NUMBER",
+      "value": 100,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "8c425aad-6237-4109-97aa-0be6e27426bf"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "966f9a04-7ca8-4f99-9b69-7a5d4ddd8ff3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cfcedade-0d45-4990-8c66-af7fa1576bfa",
+          "type": "field",
+          "fieldId": "c9b8bc6e-5ce0-4c04-87a3-5c15d3fa32bc",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "a8bece00-739c-427d-9d51-cb54755753d9",
+          "type": "field",
+          "fieldId": "5e61e5ca-ec6c-40e3-947c-f09868c4daf3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c7db1362-3a84-4d5b-bd61-2f33907b9386",
+          "type": "field",
+          "fieldId": "7b20ce14-2d1b-4e89-b98c-769d543db488",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b1d8264b-0732-4766-b9b0-e50038c56196",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

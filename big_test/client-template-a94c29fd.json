@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a94c29fd-7a24-440c-8353-21d804062128",
+  "title": "Client Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Projects": {
+      "id": "585e6e0f-0363-462b-b503-85b6871f28f6",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "fieldValue": [
+            {
+              "name": "Client",
+              "value": "ref(lookup(__self, \"ID\"))",
+              "operator": "="
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Client",
+            "config": "Client"
+          }
+        ],
+        "hiddenDefaultColumns": [
+          "WORK_INSTRUCTIONS_PROGRESS",
+          "CHANGE_SET",
+          "TEMPLATED_FROM",
+          "SUBMITTED_FROM",
+          "CREATED_FROM",
+          "ASSIGNEES",
+          "REVIEWED_BY",
+          "TRAINED_ON_BY"
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Project ID": {
+      "id": "d4a81c98-9d51-46af-ad9c-b5a843d7e713",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Client Name": {
+      "id": "c6017fbe-bb21-4d7b-9b37-518e00f4228a",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Client Drive Folder": {
+      "id": "6d16f1f1-bfbe-47c5-a689-5d5a43334e63",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Description of Project": {
+      "id": "1bf11d2f-0f98-42ac-b2d5-e2841ff3842c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "a3d6f79f-6a5a-415a-957b-ca1e93b5ccf2"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "10ea176a-0f29-4f1b-b1d1-30d483cfa5d6",
+          "type": "field",
+          "fieldId": "c6017fbe-bb21-4d7b-9b37-518e00f4228a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8d139f53-b3fc-4705-b665-3cb7976796d5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "313d9c45-d609-4550-8034-396e0e894e61",
+          "type": "field",
+          "fieldId": "585e6e0f-0363-462b-b503-85b6871f28f6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4874e68d-8211-4ff5-96d1-686f3e2a17e0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cf0ea3b5-e9f2-440f-b4e1-dfff0098e61b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@c6017fbe-bb21-4d7b-9b37-518e00f4228a "
+  }
+}

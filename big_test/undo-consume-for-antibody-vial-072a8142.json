@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "072a8142-0a9a-4be7-8f14-1c625b194a46",
+  "title": "Undo consume for antibody vial",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "version": "2"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the entity the script is embedded in (an instance of \"MM List Item\")\ncontaining_entity = seal.get_containing_entity()\ncontaining_entity_id = containing_entity[\"id\"]\n\n# --- 1. Check the 'Vial consumed' status on the containing entity ---\nvial_consumed_field_name = \"Reagent consumed\"\nvial_consumed_value = containing_entity[\"fields\"].get(vial_consumed_field_name, {}).get(\"value\")\n\n# Only proceed if \"Vial consumed\" is ticked (True)\nif vial_consumed_value:\n    print(f\"'{vial_consumed_field_name}' is ticked. Proceeding to undo consume.\")\n\n    # --- 2. Get the referenced 'Stock Unit' entity ---\n    stock_unit_field_name = \"Stock Unit\"\n    stock_unit_refs = containing_entity[\"fields\"].get(stock_unit_field_name, {}).get(\"value\")\n\n    if not stock_unit_refs:\n        seal.throw_error(f\"No entity referenced in the '{stock_unit_field_name}' field. Cannot undo consume.\")\n\n    # Assuming 'Stock Unit' is a single-value reference field\n    stock_unit_id = stock_unit_refs[0][\"id\"]\n    print(f\"Found Stock Unit entity ID: {stock_unit_id}\")\n\n    # --- 3. Make entities editable ---\n    # Make the containing entity editable to update its fields later\n    seal.make_entity_editable(containing_entity_id)\n    print(f\"Containing entity '{containing_entity_id}' made editable.\")\n\n    # Make the Stock Unit entity editable to update its status tag\n    seal.make_entity_editable(stock_unit_id)\n    print(f\"Stock Unit entity '{stock_unit_id}' made editable.\")\n\n    # --- 4. Revert the status tag of the 'Stock Unit' entity ---\n    # The status tag for the stock unit is set to \"In stock\".\n    new_status_tag_for_stock_unit = \"In stock\" # Corrected to \"In stock\"\n    seal.update_entity_status_tag(stock_unit_id, new_status_tag_for_stock_unit)\n    print(f\"Stock Unit entity '{stock_unit_id}' status tag updated to '{new_status_tag_for_stock_unit}'.\")\n\n    seal.update_field_value(vial_consumed_field_name, False)\n    print(f\"'{vial_consumed_field_name}' on containing entity set to False.\")\n\n    print(\"Undo consume process completed successfully.\")\nelse:\n    print(f\"'{vial_consumed_field_name}' is not ticked. No action taken.\")"
+    }
+  }
+}

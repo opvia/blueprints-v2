@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "3db747b8-c061-4ddb-bd29-83b23ee0037c",
+  "title": "YYYYMMDD_StaffID_Tv2_S1",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "6658398e-3c3f-4ddf-ac2e-eeae03e684cf",
+      "version": "3"
+    }
+  },
+  "fields": {
+    "Panel": {
+      "id": "9eb0c656-d1db-4e2a-84e4-856177d4a24c",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "fea2ecc1-deb1-4f02-85d6-423ecbf2cdb2",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "6babbbb6-8fdd-482c-9f82-2c9939635f66"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Status",
+              "config": "Status"
+            },
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Panel Collection Name",
+              "config": "Panel Collection Name"
+            },
+            {
+              "name": "Subparts for mastermixes",
+              "config": "Subparts for mastermixes"
+            },
+            {
+              "name": "Reasons for change/new version",
+              "config": "Reasons for change/new version"
+            },
+            {
+              "name": "Major differences from previous version",
+              "config": "Major differences from previous version"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Antibodies": {
+      "id": "f9200ea9-1da5-4c98-83f8-43f4663e35d6",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Panel Subpart",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Panel Subpart",
+            "config": "Panel Subpart"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "5efe7166-6c3b-430b-9a8f-84e2e5e0d3ff"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "034f4b5c-65d6-47fc-9a86-07177ae49e34",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "811f088e-e659-4db4-9d9a-591f3f617571",
+          "type": "field",
+          "fieldId": "9eb0c656-d1db-4e2a-84e4-856177d4a24c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "696d6f26-fc81-4248-9d1d-fac0ce88a9c0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6985c124-87d3-46aa-a86c-cdc5bcf6d64b",
+          "type": "field",
+          "fieldId": "f9200ea9-1da5-4c98-83f8-43f4663e35d6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ce1f0f88-48b4-4b80-98ba-a5ad8590d60f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

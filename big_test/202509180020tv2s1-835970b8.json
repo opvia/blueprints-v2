@@ -1,0 +1,655 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "835970b8-ecbd-40c6-9d5e-7e87e2de8c0b",
+  "title": "20250918_0020_Tv2_S1",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "ed12f60e-a06b-4c15-8339-d79ee13f178a",
+      "version": "4"
+    }
+  },
+  "fields": {
+    "Date": {
+      "id": "91550975-c203-413a-98cd-ca1373560b06",
+      "type": "DATE",
+      "value": "2025-09-18",
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Subpart": {
+      "id": "77c71b38-2157-494a-b2a1-e0b8f7305f83",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "178e6ec6-e359-49d5-81ea-0c8174b801f0",
+          "version": "3"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "f4c7e06f-5314-4530-9a4a-1024d4fbeb20"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Panel",
+              "config": "Panel"
+            },
+            {
+              "name": "Reagent 1",
+              "config": "Reagent 1"
+            },
+            {
+              "name": "Reagent 2",
+              "config": "Reagent 2"
+            },
+            {
+              "name": "Antibodies",
+              "config": "Antibodies"
+            },
+            {
+              "name": "Volume of reagent 1 per panel (uL)",
+              "config": "Volume of reagent 1 per panel (uL)"
+            },
+            {
+              "name": "Volume of reagent 2 per panel (uL)",
+              "config": "Volume of reagent 2 per panel (uL)"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Reagents": {
+      "id": "2713dd7e-5f15-4b58-b368-11e359a3be2e",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "46da651e-4638-47c1-8f5f-ed6a914bac8f",
+          "version": "1"
+        },
+        {
+          "id": "89ce2c0d-0af6-42a9-a249-94f821d4bba5",
+          "version": "1"
+        },
+        {
+          "id": "8726c9db-38a6-40bf-8004-5131b4db35c8",
+          "version": "1"
+        },
+        {
+          "id": "2b9ce2a5-eac1-4ba6-bef8-efc93e58a448",
+          "version": "1"
+        },
+        {
+          "id": "202cefb5-89f9-41a2-bc35-a1b5e28427fe",
+          "version": "1"
+        },
+        {
+          "id": "0d5e5c14-e090-4ccc-9f87-0fa26ff79ca7",
+          "version": "1"
+        },
+        {
+          "id": "6ac29bb4-5e26-4ed6-9958-5ebbaf2de523",
+          "version": "1"
+        },
+        {
+          "id": "d60fd0df-6bc7-46f9-979b-e437141d4550",
+          "version": "1"
+        },
+        {
+          "id": "c5dab5ef-448e-4c32-9e9c-822cf9c8e1f5",
+          "version": "1"
+        },
+        {
+          "id": "64fc4b14-b7af-4067-adf1-7b811c397ecf",
+          "version": "1"
+        },
+        {
+          "id": "f01db56a-ceae-42b2-af98-0235ec4a9b57",
+          "version": "1"
+        },
+        {
+          "id": "045e2fb5-9cd7-4603-b135-34e45db77d6c",
+          "version": "1"
+        },
+        {
+          "id": "08713958-fd7c-41e7-ab3e-9ab60a60d915",
+          "version": "1"
+        },
+        {
+          "id": "338f2699-2e4c-4d99-b3f1-2054fb5c3647",
+          "version": "1"
+        },
+        {
+          "id": "7d734151-c65d-4ea8-8756-b63144219105",
+          "version": "1"
+        },
+        {
+          "id": "6815ca2e-0b02-441f-af7e-8e75ac59d2b8",
+          "version": "1"
+        },
+        {
+          "id": "8becd87f-8e57-483d-a2ba-6f3f0e00f8e3",
+          "version": "1"
+        },
+        {
+          "id": "8bca3780-66d8-4588-a7bf-7965b683ffde",
+          "version": "1"
+        },
+        {
+          "id": "f9279fd5-f5e6-43e6-9c2a-0950f18ad54d",
+          "version": "1"
+        },
+        {
+          "id": "fb5e6492-ad82-4733-a8c3-caa7c7bf8f3a",
+          "version": "1"
+        },
+        {
+          "id": "34edf233-1ffd-4e77-b817-ed0c1b5554d3",
+          "version": "1"
+        },
+        {
+          "id": "02a6b02e-de85-4e3d-869d-d168e109c12d",
+          "version": "1"
+        },
+        {
+          "id": "b3eece10-f077-4734-bc08-5cdc169a6f23",
+          "version": "1"
+        },
+        {
+          "id": "99b3be8f-554c-4284-a4c2-4fc3b7ffc3fc",
+          "version": "1"
+        },
+        {
+          "id": "e728c49d-27e8-4202-a8fe-06384c74f4ed",
+          "version": "1"
+        },
+        {
+          "id": "b847bc65-20e4-44a9-b927-cdc19ab58fb4",
+          "version": "1"
+        },
+        {
+          "id": "01d1f2e3-fa07-49c2-ab3f-168b615c38fe",
+          "version": "1"
+        },
+        {
+          "id": "ab0df1f1-c727-42d3-9170-0d94276b1efe",
+          "version": "1"
+        },
+        {
+          "id": "7b84a249-834a-4ee1-a017-eaec2f43c02a",
+          "version": "1"
+        },
+        {
+          "id": "fd6d7e1b-f9df-4013-93c4-1a97cf27a323",
+          "version": "1"
+        },
+        {
+          "id": "276e4d4b-30e9-450d-b04b-c6ed49cb463d",
+          "version": "1"
+        },
+        {
+          "id": "6663a246-ad60-4b8a-b758-5fd5aad874fc",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "table",
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "QC Result": {
+      "id": "7ef0abdc-b976-4a62-b542-428f341b8a25",
+      "type": "STRING",
+      "value": "QC Passed: Expected 2 reagents and 30 antibodies (Total 32). Actual: 32 reagents found in '1. Reagents' submission field. All matched for Subpart 1 (Title: Tv2_S).",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Operator ID": {
+      "id": "e1652eb3-93e2-48e6-8020-a8dbacc0c974",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "eeec577d-1f60-4ddc-b974-2e426ccb2824",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "00a661cc-94fa-4afd-a36c-0c30fc502489"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "CV",
+              "config": "CV"
+            },
+            {
+              "name": "JD",
+              "config": "JD"
+            },
+            {
+              "name": "HTA",
+              "config": "HTA"
+            },
+            {
+              "name": "GCLP",
+              "config": "GCLP"
+            },
+            {
+              "name": "Team",
+              "config": "Team"
+            },
+            {
+              "name": "Initials",
+              "config": "Initials"
+            },
+            {
+              "name": "Line Manager(s)",
+              "config": "Line Manager(s)"
+            },
+            {
+              "name": "Date of Last HTA",
+              "config": "Date of Last HTA"
+            },
+            {
+              "name": "Current Job Title",
+              "config": "Current Job Title"
+            },
+            {
+              "name": "Date of Last GCLP",
+              "config": "Date of Last GCLP"
+            },
+            {
+              "name": "Employment Status",
+              "config": "Employment Status"
+            },
+            {
+              "name": "Other Job Role(s)",
+              "config": "Other Job Role(s)"
+            },
+            {
+              "name": "Employment End Date",
+              "config": "Employment End Date"
+            },
+            {
+              "name": "Employment Start Date",
+              "config": "Employment Start Date"
+            },
+            {
+              "name": "Date of Last CV Updated",
+              "config": "Date of Last CV Updated"
+            },
+            {
+              "name": "Date of Next HTA Refresher",
+              "config": "Date of Next HTA Refresher"
+            },
+            {
+              "name": "Health and Safety Induction",
+              "config": "Health and Safety Induction"
+            },
+            {
+              "name": "Date of Next CV Update (2 yrs)",
+              "config": "Date of Next CV Update (2 yrs)"
+            },
+            {
+              "name": "Date of Most Recent Title Change",
+              "config": "Date of Most Recent Title Change"
+            },
+            {
+              "name": "Date of Next GCLP Refresher (2yrs)",
+              "config": "Date of Next GCLP Refresher (2yrs)"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "No of Samples": {
+      "id": "07b85de6-39ff-4f09-b50f-ebc6a49980c3",
+      "type": "NUMBER",
+      "value": 5,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"No of Samples\") < 4"
+      },
+      "dataType": "NUMBER"
+    },
+    "Total MM Volume": {
+      "id": "45480110-7f69-4984-954e-3acd1c11e942",
+      "type": "NUMBER",
+      "value": 165,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Volume per well": {
+      "id": "9a28a399-dbe7-46be-a56e-7e1409f0979c",
+      "type": "FORMULA",
+      "value": 33,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Total MM Volume\") / lookup(__self, \"No of Samples\")"
+      },
+      "dataType": "NUMBER"
+    },
+    "Used in Final MM?": {
+      "id": "089131fe-0409-4297-a7ea-e9325693800c",
+      "type": "SELECT",
+      "value": [
+        "Yes"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No, missing marker(s)",
+          "No, reagent loss"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Operator ID string": {
+      "id": "9cfc27c9-be7e-4407-bd84-d6e2c81d5270",
+      "type": "FORMULA",
+      "value": "0020",
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Operator ID\") , \"TITLE\")"
+      },
+      "dataType": "STRING"
+    },
+    "Subpart title string": {
+      "id": "435e6d10-2586-458b-8117-09060afa35a1",
+      "type": "FORMULA",
+      "value": "Tv2_S",
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Subpart\") , \"TITLE\")"
+      },
+      "dataType": "STRING"
+    },
+    "Formatted date string": {
+      "id": "9b3a5205-27e5-4e84-9281-c10f3f0334a3",
+      "type": "FORMULA",
+      "value": "20250918",
+      "config": {
+        "formulaExpression": "formatDatetime( lookup(__self, \"Date\") , \"yyyyMMdd\")"
+      },
+      "dataType": "STRING"
+    },
+    "Daily subpart MM Number": {
+      "id": "f8391f3d-a357-4038-83cf-9c0f9a83ffcf",
+      "type": "STRING",
+      "value": "1",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "No of Samples (inc. excess)": {
+      "id": "52fb081a-adff-4a76-85b6-3cedbd0b3a01",
+      "type": "NUMBER",
+      "value": 6,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "@9b3a5205-27e5-4e84-9281-c10f3f0334a3_@9cfc27c9-be7e-4407-bd84-d6e2c81d5270_@435e6d10-2586-458b-8117-09060afa35a1@f8391f3d-a357-4038-83cf-9c0f9a83ffcf",
+  "type": {
+    "ref": {
+      "id": "9b73daa5-bbfb-4fa2-b47d-48126cc98e26"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "12d55ae2-c0d1-4b6b-9e42-9cf35222dcc6",
+          "type": "p",
+          "children": [
+            {
+              "text": "ALL SUBPARTS PREPARED FROM “Mastermix Preparation” BECOME INSTANCES OF THIS TEMPLATE"
+            }
+          ]
+        },
+        {
+          "id": "fc9b8edc-24a3-40ce-a6c5-e059e2faef50",
+          "type": "field",
+          "fieldId": "e1652eb3-93e2-48e6-8020-a8dbacc0c974",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "40f96f0d-a3f5-462c-9080-1bb367537732",
+          "type": "field",
+          "fieldId": "91550975-c203-413a-98cd-ca1373560b06",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "18dc6407-36b2-45aa-9758-48648f0454b7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "83fa22a7-d415-4989-b9d1-831934db0982",
+          "type": "field",
+          "fieldId": "77c71b38-2157-494a-b2a1-e0b8f7305f83",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "39495a00-6cfb-4833-95de-4d56f5378685",
+          "type": "field",
+          "fieldId": "f8391f3d-a357-4038-83cf-9c0f9a83ffcf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "86e3e3d1-651a-414f-8eb9-e31ac34baa6a",
+          "type": "field",
+          "fieldId": "07b85de6-39ff-4f09-b50f-ebc6a49980c3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6b836f81-ef2b-414b-b233-dcbba3c863de",
+          "type": "field",
+          "fieldId": "52fb081a-adff-4a76-85b6-3cedbd0b3a01",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "877c739f-6e40-476c-af4d-e3ef7a0aab1d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a4f12e71-f221-4ffc-8a98-a5ba9d3c9bb9",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Components"
+            }
+          ]
+        },
+        {
+          "id": "2fc9da8d-319a-4860-9149-1dacd1b8c0c9",
+          "type": "field",
+          "fieldId": "2713dd7e-5f15-4b58-b368-11e359a3be2e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "577bb0ef-3ce3-41d9-ada6-bb5706073649",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9b054355-74b9-43eb-935c-ce939d81f600",
+          "type": "field",
+          "fieldId": "45480110-7f69-4984-954e-3acd1c11e942",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dfe7b88d-68f7-457a-8e2f-f6af008a4c78",
+          "type": "field",
+          "fieldId": "9a28a399-dbe7-46be-a56e-7e1409f0979c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7b4ac663-b120-45aa-8bf2-b4d81b7922e1",
+          "type": "field",
+          "fieldId": "7ef0abdc-b976-4a62-b542-428f341b8a25",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "484e5769-ec9e-4d16-90f1-cfcdb051d2a5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "573c3121-e9b4-4406-99d3-253003b08d8f",
+          "type": "task",
+          "children": [
+            {
+              "text": "Completed"
+            }
+          ]
+        },
+        {
+          "id": "05696316-8eb5-46cb-a0b2-fc20720b1b61",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5ad1171b-9de8-42f9-9dc6-f4d7387ddf0a",
+          "type": "field",
+          "fieldId": "089131fe-0409-4297-a7ea-e9325693800c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2665fecc-936b-4632-af41-46cd50c2d0e2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

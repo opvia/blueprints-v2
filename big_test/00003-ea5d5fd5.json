@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ea5d5fd5-4908-4da7-af4b-ac8f3c5e5e7e",
+  "title": "00003",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "ae758993-5af3-4b65-992f-c1ac5a6c920b",
+      "version": "2"
+    }
+  },
+  "fields": {
+    "Antibody": {
+      "id": "82379a50-e7ad-47a3-b16c-e0879181dee4",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "4399b373-c3de-44b5-9c91-0dbc06ba809b",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "type": [
+              "Antibody"
+            ]
+          }
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "8c425aad-6237-4109-97aa-0be6e27426bf"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "96d3b4e1-6bb4-440d-88c4-b60c9b9adba1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "83c8d339-dfd3-48d2-8a0a-583d854802cc",
+          "type": "field",
+          "fieldId": "82379a50-e7ad-47a3-b16c-e0879181dee4",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "da99d2e8-f768-4a42-bdf4-9b7ea2d98c65",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

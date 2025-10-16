@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "487bfb56-78e5-4e06-9c4d-ebf148a25537",
+  "title": "Sample Type",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Suffix": {
+      "id": "7de0890e-5a69-425b-b092-1c9cc856d73c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "4d2cb743-2c65-4612-86f5-59518258d21c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "3a762d91-5bbd-42f1-9916-82055e9759e8",
+          "type": "field",
+          "fieldId": "7de0890e-5a69-425b-b092-1c9cc856d73c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "72058ee5-3d6e-4c21-9f2a-29e21c47e910",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

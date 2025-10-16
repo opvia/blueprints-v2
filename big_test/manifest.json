@@ -1,0 +1,3196 @@
+{
+  "id": "test",
+  "version": 1,
+  "name": "test",
+  "description": "",
+  "entities": [
+    {
+      "id": "9d403247-ac0c-4528-88a5-78d90841928e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibodies",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "53263ee4-bec7-4b67-85f0-5a09b3ae5530",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "View",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6525d217-4caf-44a9-a94c-6398780eff7a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "View template",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "bfeff202-5aeb-4422-90ce-4b0a1b96ad4d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Lot Number",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "8c425aad-6237-4109-97aa-0be6e27426bf",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory Type",
+      "icon": "array",
+      "sourceVersion": "6"
+    },
+    {
+      "id": "9a595b4a-2fe8-4e96-93a1-d86652585cf4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Unique Antibody Stock",
+      "icon": "array",
+      "sourceVersion": "7"
+    },
+    {
+      "id": "65097f3f-acef-445e-9cda-1ec0b4e11a6f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody",
+      "icon": "array",
+      "sourceVersion": "18"
+    },
+    {
+      "id": "d525720c-19fe-44e2-90d0-6eb7b6e1d656",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Position Updater Script - On Being Referenced",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "35e9ffa4-f5fe-46eb-aaab-e7742f951b8b",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Positions Script",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9e7e8e1d-5577-4a49-b30f-e1f0dec3b8e8",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Positions Script template",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c4e94b9c-48f6-435f-b22d-8d871e54f6a5",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 10x10",
+      "icon": "grid-view",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "b65517f2-5349-45ee-b18b-0d217d4dc839",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box",
+      "icon": "grid-view",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e11aaa67-3e1a-4b02-b726-6c50c853ad40",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 10x20",
+      "icon": "grid-view",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "25047b3b-59a7-4dfa-a4fc-98010f8030bb",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 15x15",
+      "icon": "grid-view",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "c3e343ec-de39-4200-89cc-f9a3fc47c8bb",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 5x6",
+      "icon": "grid-view",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "9f05ed95-f15e-443b-b23f-4a61470a8708",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 6x6",
+      "icon": "grid-view",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "97f7726a-c686-4153-a951-71bdf325aa68",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 9x9",
+      "icon": "grid-view",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "c3340a0f-8e87-4675-8d1a-6bad14c394c5",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Position Template",
+      "icon": "box",
+      "sourceVersion": "7"
+    },
+    {
+      "id": "dffd72d3-783b-41a0-9e7d-40bb7dbcee5c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Location",
+      "icon": "box",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "5850a6ee-2ba3-4ce5-af6b-14ba872b6f48",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor Template",
+      "icon": "array",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "d8aa02a0-2ff3-45a6-bfab-ba00dd6c1db1",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor Record",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "93dadba0-35e7-489d-8b35-bff53b4cb721",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor Risk Change Log",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "c8c5a3ab-6105-43c3-9f04-e7ac6f9fb4a9",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Update Vendor",
+      "icon": "code",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script Template",
+      "icon": "code",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "f4c7e06f-5314-4530-9a4a-1024d4fbeb20",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Panel Subpart template",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "5efe7166-6c3b-430b-9a8f-84e2e5e0d3ff",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Panel Subpart",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "6babbbb6-8fdd-482c-9f82-2c9939635f66",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Panel",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "cdd8b443-ed35-46f7-9417-9e40cbaf0bc6",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Panel",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "45eb4ecc-a562-411a-b247-91456e64c55f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "d60fd0df-6bc7-46f9-979b-e437141d4550",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 695",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c9af129a-1fa5-40ac-a45b-7bb17129c44d",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory Usage Record",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8733ea85-3a85-443b-ac97-fb0a1f0a4903",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "ICOS/CD278 BV750 (DX29)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "08ab64a7-aec9-463f-ac8d-fdaa05f397f1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Benson Dickinson",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "178e6ec6-e359-49d5-81ea-0c8174b801f0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tv2_S",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "e4b30adf-8fc8-4866-855b-918249c992a2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Av2_S",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "524c5e1a-643f-49c7-86f4-7ee8eb46397a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial22",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b8bef83b-91bf-44c9-ba04-4ec33e4654d7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT22",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "81f8fbc6-0a41-4b89-b1e6-ad8b6c5f8f24",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Duplicate volumes from antibody to lot",
+      "icon": "code",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "cbef7442-bed4-49b4-9b32-f3e6ec5002aa",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "creating antibody stocks",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6d0bdd38-8086-4b93-8f78-899788a5d84e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial1",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "46d2074a-3671-4f89-946d-6520776b16aa",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial2",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8fb51ddf-0825-4573-8a8a-78889df7473c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial3",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "bc005564-e924-4c5e-9ebb-c70d7280e619",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial4",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "569c756c-55a6-4ea2-bd53-ccda6ec37712",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial5",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "d8a13ce7-2905-4abb-b705-ae26d65c2fea",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial6",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e22d4b86-286c-440f-bc98-51a31157e996",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial7",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "160a688a-20b8-4d59-98f1-5c5a7fcae399",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial8",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "93bff11a-3ed1-45f6-b51e-a228e9954465",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial9",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "532cf5ff-f098-4fb5-bb72-994e1a8ea57e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial10",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "bee2fb0d-2d2f-4e40-b04b-fc7b5d5a5e05",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial11",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ba371844-d831-457a-bc61-4b5eeb5bc9d0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial12",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8f595c6b-3396-4fdb-a406-0376caeea5e4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial13",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8d8d1c6b-fca6-4f8c-a812-fa32ce44f4c5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial14",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b69bbb6b-1aeb-4cfc-a32b-5f1c2c2fe3dd",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial15",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "cc70e40a-f366-4f22-9150-e0ac1e76e072",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial16",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9be6815e-4b1d-4681-a10e-24572a717f63",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial17",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "65423002-870a-4c5a-a21d-01908ee176a0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial18",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6dfb2d3d-22d8-4cb6-bc65-e4b7420b9f09",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial19",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0cdb2cb6-6389-404c-abad-02cef7afb880",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial20",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fef03c70-9223-4c7e-a0c7-6021a5e9d372",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial21",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c1bbd03f-a04b-4c0c-bf5f-563b2e49ac62",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial23",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a2c49032-3c0c-4511-94a7-ab5af29a7fa4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial24",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0607042b-7614-4b08-aade-7c5a334f30ed",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial25",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "bddd6fd2-cc85-4f86-a9fe-769d84cd3940",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial26",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c2e68a20-84ca-498f-a47c-3201c805fa39",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial27",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1d36af73-9b62-4893-ade6-ad5462eae76b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial28",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e771e665-3db0-439b-9f17-0752450713ae",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial29",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "d5524939-63a8-4fec-b0a1-b391bc4f20d5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial30",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e99001b8-08e7-4896-9572-d698b54df42b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial31",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "78ee84a8-2cbb-40e5-a203-e9f9916bdaf5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial32",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fc100fc1-b6eb-438d-8295-ef84e2e65132",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial33",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9861522e-9236-475d-8016-05a14d38bf84",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial34",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ce974e55-6a40-430b-8037-fbead17cf8e7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial35",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "10aceee4-c523-4300-8843-82cc3be49cbf",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial36",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b46aa419-d2bf-4b2f-92ae-d7f27ca4ed83",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial37",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "17d2061c-a97f-45a6-9ec0-efe704580441",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial38",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9026adce-1d93-494a-af70-0f2349c3473f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vial39",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "072a8142-0a9a-4be7-8f14-1c625b194a46",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Undo consume for antibody vial",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a6f61d99-651c-4d4b-b211-6f6452a8c732",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Undo Decrement",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2db1b069-b9be-4c7f-b9a8-8a5e71857939",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Decrement Reagent",
+      "icon": "code",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "b0291686-edff-4d4b-bb59-c23710b9c0ff",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Reagent consumed",
+      "icon": "code",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "c36842f2-b513-4a15-bcd4-2ef45e8066e9",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "MM antibody usage",
+      "icon": "application",
+      "sourceVersion": "20"
+    },
+    {
+      "id": "3ce29e27-a582-413c-92c4-21079361db23",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "MM preparation 20250918_0020_Tv2_S1/20250918_0020_Av2_S1",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9b73daa5-bbfb-4fa2-b47d-48126cc98e26",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Mastermix",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "fea2ecc1-deb1-4f02-85d6-423ecbf2cdb2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tv2",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "02ca4e2c-a764-41c2-9757-6b637513419e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Tv2_CXR",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "218b6b97-efcb-4867-92cf-40e558f8d208",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Brilliant Stain",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "192da302-15fb-4f61-a6c1-f9a226e9dafb",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "TruStain",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "cf364721-01fe-482d-ad3d-82f21c59c907",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Av2",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "46da651e-4638-47c1-8f5f-ed6a914bac8f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent Stock Usage - 27",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b2dfb411-1b70-4f4a-801a-a90c4b8f030c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "RS002",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "44f3b943-acdf-47a5-9d39-e20683fd6d6f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "R.LOT002",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "18821efe-2866-4eb9-b0d3-393047fe4077",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Lot Number",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4f4ca25b-9dac-492c-b42e-5419b38372b4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Unique Stock",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c764850f-a6ed-4c91-a489-2a62e44d6040",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent usage",
+      "icon": "application",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "89ce2c0d-0af6-42a9-a249-94f821d4bba5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent Stock Usage - 28",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "869ea955-2ab1-4e5d-9b22-4ff83882bf07",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "RS001",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c060d815-1f08-4ad9-85a9-0f8753412cb6",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "R.LOT001",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8726c9db-38a6-40bf-8004-5131b4db35c8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 690",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2b9ce2a5-eac1-4ba6-bef8-efc93e58a448",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 691",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "202cefb5-89f9-41a2-bc35-a1b5e28427fe",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 692",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0d5e5c14-e090-4ccc-9f87-0fa26ff79ca7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 693",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6ac29bb4-5e26-4ed6-9958-5ebbaf2de523",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 694",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c5dab5ef-448e-4c32-9e9c-822cf9c8e1f5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 696",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "64fc4b14-b7af-4067-adf1-7b811c397ecf",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 697",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f01db56a-ceae-42b2-af98-0235ec4a9b57",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 698",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "045e2fb5-9cd7-4603-b135-34e45db77d6c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 699",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "08713958-fd7c-41e7-ab3e-9ab60a60d915",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 700",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "338f2699-2e4c-4d99-b3f1-2054fb5c3647",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 701",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7d734151-c65d-4ea8-8756-b63144219105",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 702",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6815ca2e-0b02-441f-af7e-8e75ac59d2b8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 703",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8becd87f-8e57-483d-a2ba-6f3f0e00f8e3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 704",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8bca3780-66d8-4588-a7bf-7965b683ffde",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 705",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f9279fd5-f5e6-43e6-9c2a-0950f18ad54d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 706",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fb5e6492-ad82-4733-a8c3-caa7c7bf8f3a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 707",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "34edf233-1ffd-4e77-b817-ed0c1b5554d3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 708",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "02a6b02e-de85-4e3d-869d-d168e109c12d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 709",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b3eece10-f077-4734-bc08-5cdc169a6f23",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 710",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "99b3be8f-554c-4284-a4c2-4fc3b7ffc3fc",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 711",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e728c49d-27e8-4202-a8fe-06384c74f4ed",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 712",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b847bc65-20e4-44a9-b927-cdc19ab58fb4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 713",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "01d1f2e3-fa07-49c2-ab3f-168b615c38fe",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 714",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ab0df1f1-c727-42d3-9170-0d94276b1efe",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 715",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7b84a249-834a-4ee1-a017-eaec2f43c02a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 716",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fd6d7e1b-f9df-4013-93c4-1a97cf27a323",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 717",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "276e4d4b-30e9-450d-b04b-c6ed49cb463d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 718",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6663a246-ad60-4b8a-b758-5fd5aad874fc",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 719",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ce646984-1360-4f82-bc60-4a47776d0782",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent Stock Usage - 29",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2ad9ae1e-f29f-4dde-9596-b1de61030b2f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent Stock Usage - 30",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1c9b6e10-1479-4b1f-94cd-649b13aadd1f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 720",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "662d7593-7cbe-41d3-bdfc-b3bfac5d78e2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 721",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6ac75cd8-41c9-444d-b1ad-f49d3a29d291",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 722",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "dc9e814f-9864-4dac-86cf-367a29096f52",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 723",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8568996b-5d6e-4fdc-829c-9e887023cd84",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 724",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "817f4ec0-df70-4bd3-a51a-49cd73a1362f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 725",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "39531b09-237d-4201-aaf8-f41110af78b9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 726",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c3681546-91d0-4fdc-ac96-29f3a4af5dcd",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 727",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "64160b2b-874c-40b3-a06d-b4ab85fdfb03",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 728",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8cb9d3dd-b78e-4e21-a84f-0b80062ff72b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 729",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2a41c3ca-305c-4692-a178-98bcc1884e14",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 730",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b4454c9f-f6d3-4c7c-acbf-f324ed9488b5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 731",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5bfbe55c-5a7e-45ab-8ebe-588c1892262c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 732",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4cc1090f-0379-4799-b9fb-101d80ed9eee",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 733",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2e37086d-92d5-4333-9eed-4d8beff910c0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 734",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5c627b2f-1c18-4928-a254-13be1771ea55",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 735",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "41497614-19b5-40a8-bc13-5823c35593b7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 736",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ea213318-d6f0-4679-87b2-9d6f293d8783",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 737",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "d5028f4f-d1e0-473c-aa06-ff3c8161e0c6",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 738",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1962c000-05bc-40df-9f86-108380df6846",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 739",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f6b4e745-cba6-4e6a-9225-5496ea891178",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 740",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "dfd3274f-bda3-4db3-b130-a6e20219f67a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 741",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2bbef1e5-1aa7-4581-84d9-b055c86a946f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 742",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9bf60684-2f8f-4862-aa18-96d2d4cc313d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 743",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "03048f3b-3da0-43ec-b9ff-77a0df741b9f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Stock Usage - 744",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "eeec577d-1f60-4ddc-b974-2e426ccb2824",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "0020",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fcfb9e44-21e0-41dd-8b32-2dfaee23f3c4",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Employee",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6ea7b8b0-0668-4544-a4fb-50837ef998e2",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Diverge Panel Subparts from Preparation template",
+      "icon": "code",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "835970b8-ecbd-40c6-9d5e-7e87e2de8c0b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "20250918_0020_Tv2_S1",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ed12f60e-a06b-4c15-8339-d79ee13f178a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Mastermix Product",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "00a661cc-94fa-4afd-a36c-0c30fc502489",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Employee Template",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "066cd231-abf0-40ac-abe8-b8226e59dae7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "20250918_0020_Av2_S1",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ac2758bb-7acc-4c72-a33c-2a90e7d9ff07",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "1. Calculate Total Volume",
+      "icon": "code",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "3c96ed23-e622-484c-bf35-44d0cd20b97c",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "2. Calculate Total Volume",
+      "icon": "code",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "c4e3ff57-1fe9-4170-8fb0-3e7cc0bbe436",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Pull antibodies from subparts into preparation instance",
+      "icon": "code",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "2211897e-d855-40e3-8e94-334c3fb44646",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "QC check - number of reagents (Subpart 1)",
+      "icon": "code",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "59142911-00ac-4fb3-8a2b-9397e4b7a724",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "QC check - number of reagents (Subpart 2)",
+      "icon": "code",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "23483da2-67a3-4b93-a216-4e832c8303ac",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Mastermix Preparation",
+      "icon": "array",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "eb234271-b2a8-4e60-a68c-4e57f4d4cb03",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Border",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "d7733bcd-1532-4ee3-ae8e-ec03e6e93d49"
+      ]
+    },
+    {
+      "id": "723e477e-3a8f-4936-828b-8e007d392bab",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Label Element",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "d7733bcd-1532-4ee3-ae8e-ec03e6e93d49"
+      ]
+    },
+    {
+      "id": "a24643fe-00d7-4512-a432-5d0bda046806",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Location Template",
+      "icon": "box",
+      "sourceVersion": "11"
+    },
+    {
+      "id": "3f004734-848b-4396-8701-17d7bb64c855",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Barcode Code39",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "d7733bcd-1532-4ee3-ae8e-ec03e6e93d49"
+      ]
+    },
+    {
+      "id": "17eaabeb-79ff-488b-8587-a4d3e9af8dfc",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Barcode Code128",
+      "icon": "media",
+      "sourceVersion": "1",
+      "tagIds": [
+        "d7733bcd-1532-4ee3-ae8e-ec03e6e93d49"
+      ]
+    },
+    {
+      "id": "33260f4c-40f2-4e47-85bd-1da957297cf5",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Data for Biobanking",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "11acbd65-9042-4514-875e-8af069789da5",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Data Reading",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "58815f01-5e08-4f2c-a3fe-1bf3cba96d83",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Data for Flow",
+      "icon": "application",
+      "sourceVersion": "14"
+    },
+    {
+      "id": "6658398e-3c3f-4ddf-ac2e-eeae03e684cf",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Panel Subpart",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "dce46b02-61a3-4510-83af-00648c0403c7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Record 31",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3be310a3-ad89-4362-a880-ea7b7d675f7c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Counting Worksheet 6",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5ae06f88-ec69-41b4-9365-45168d12ded3",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Worksheet",
+      "icon": "application",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "7b4587b5-ac1c-4d18-a609-882f45866a0e",
+      "kind": "INSTANCE",
+      "contentType": "FILE",
+      "title": "1slideexamplecellcounting.csv",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "bba5f7bf-ea37-4b4b-8a56-a7b9dd4d89e7",
+      "kind": "TYPE",
+      "contentType": "FILE",
+      "title": "File",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a7d44e5e-4990-4a09-847b-ffa65fc95e4e",
+      "kind": "TEMPLATE",
+      "contentType": "FILE",
+      "title": "Default template",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a57c29de-5b28-4135-b710-30bbb30141e3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Record 32",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1e76d7f5-c80e-4a80-b8ce-4043219a13f2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Record 33",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9a34d5b2-57bf-4a98-94ec-ac7bc80b4c45",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Record 34",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fc39fbd6-0e28-4f62-8282-80c1adecb058",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Record 35",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6e57f51c-becf-4d91-99b7-f31465774bcd",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Record 36",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3cbe05c5-1614-405b-8910-c816bf457779",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Record 37",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6b49c900-8b5e-4f51-a6cf-1c39c5288e2c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Count Record 38",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "88baabf6-a6bd-40a4-99af-9a4008bbbecb",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CC001",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1ab3fd2e-19ae-4664-a053-0606c96baea7",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Asset",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "485f8b8e-7cf2-47c2-94e1-9e36f130c8ea",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Maintenance Schedule",
+      "icon": "build",
+      "sourceVersion": "9"
+    },
+    {
+      "id": "daa89cb8-4829-46c7-8564-31811b9f9499",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Asset Maintenance",
+      "icon": "build",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "a3bbe51a-592a-41d9-8a8e-873daf402c47",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Asset",
+      "icon": "array",
+      "sourceVersion": "8"
+    },
+    {
+      "id": "764792c5-22e5-430e-af91-2fa7f7b21b88",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Room Template",
+      "icon": "box",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "11df42b7-0a95-48dc-b15e-b54198fe5078",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Asset Maintenance",
+      "icon": "build",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "cbf18aa3-07ff-4750-9e35-82d4a4e8127a",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Equipment - Update last maintenance date",
+      "icon": "code",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "77e28773-a10d-4be8-bd4a-e9f77cc7288b",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script template",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "001f91d4-8e85-4e1f-ac2c-7c5921e727c7",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9722d21e-1495-4325-9c6c-368b21bf2aa9",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Import Cell Count Data",
+      "icon": "code",
+      "sourceVersion": "6"
+    },
+    {
+      "id": "cbcf0e52-e146-437a-b2cb-33dc880f0c69",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Cell Counting Worksheet",
+      "icon": "application",
+      "sourceVersion": "6"
+    },
+    {
+      "id": "316a83d6-8a8c-407f-85cd-4f2bc5418209",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU047",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f0a872b2-3244-4af3-b899-b784ecbc43f1",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Donor",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "eba52cf3-86a2-47d6-bd1e-efd8cb333779",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Donor template",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "4085b49b-ab76-4330-90fb-a7a069a09574",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Creating Donor IDs",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "413d11e0-11d6-492e-88b3-7b87c8b9b15e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU001",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7e449d1e-199d-41d7-af40-d224488d4c59",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU002",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "59e43735-c528-4b17-bd16-d067b718d0fe",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU003",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f774c8ae-fbd0-40b7-a991-1eccfbafd669",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU004",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f3a7ddcc-d9d4-417e-921a-53d4e8c255bd",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU005",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2558e7dd-8ab7-477f-926a-3e7699e77789",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU006",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a46a2716-80a1-4f80-82af-3b278ae841fa",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU007",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5d3b4b8f-ed79-414d-8c5c-d83d0194ba4d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU008",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "dfa9f642-0544-406f-b4cf-5ff12ed50b03",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU009",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b6c02d30-2ea2-424e-89cc-e9fdf18bc849",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU010",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3a8fbfe8-a474-4fe8-957b-1f23ce8f0a58",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU011",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1de32273-4ade-400f-b4cd-faa817bda133",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU012",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "163a0ad0-50e7-4d02-9b01-7ed6bebdf3f9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU013",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1d477624-ada7-489a-81d1-8fa23c27b355",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU014",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "cf25db79-6c42-41d5-b215-f5c8f08005f3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU015",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "150baa0e-0549-438e-b425-c52f2ef2555d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU016",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8628c26c-8b69-4877-a7f9-d26840656d86",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU017",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8e03e442-0985-466f-be3e-cecca823cea4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU018",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "65cdfe12-f9a6-4550-8e37-010786049d65",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU019",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4b3d7ab8-3d9c-452f-b446-6f2ac5e490fc",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU020",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7eaff3ae-74c2-421f-8f3e-1f12a990c32b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU021",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "23893039-e93c-43f8-b927-1ac4bba4926c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU022",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "803f1fe7-6b7b-455f-a523-0b90eb7db265",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU023",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "cbf88d30-2969-4c6a-990d-31d21839cb1e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU024",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "37ba6eef-3383-4217-992e-40b8bb57b1e2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU025",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fa2e83ed-9c89-4102-ac1f-4e68ab286328",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU026",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5afe3438-d229-43ad-97b1-3e8d3fdb6af1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU027",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b794bf9b-4952-43cb-8dda-dbb4860837b9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU028",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "82ac43fe-f581-4f64-b4fe-b96fd388f528",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU029",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8ab2ce82-f775-431f-a213-82862b1b4880",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU030",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "27f119eb-4518-4d99-9dde-3514681bf2b1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU031",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9ef16362-f833-48ec-8c69-e9969549dbd3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU032",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b5fe9792-ba0d-4ff9-a9e3-85bc5e88248b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU033",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3d994e40-cb7e-4c25-b9d2-c76c9ec187bd",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU034",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "30a67417-f282-4fdc-9db3-04971e1b4b33",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU035",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "590894aa-973d-4c35-9cbe-c0cd08c1fd6f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU036",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8e3d0165-b781-4b25-b245-82d4b74a7453",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU037",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5ef2c255-3123-4175-a953-752988fd17fc",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU038",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c4a5905a-b0b6-4e3e-b5ca-cf3ba93ca2c2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU039",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b774ee07-3a56-4d16-b9fb-73da4ee7205a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU040",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4ea00adf-fd9a-4297-9e8f-2771d202c792",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU041",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f0a2e9fd-30b9-43f6-8c0a-b1efe279f31d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU042",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6fb47366-f836-4fc7-a008-22b0755a97a5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU043",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "081006c6-e2ba-419b-8979-fb948a41ab5e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU044",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9e4037e9-803c-43ee-b88b-3b27de696a86",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU045",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e626a0e1-fe70-4aff-afb5-1fba0007c43d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU046",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5129ead0-8ecc-4d48-aca1-6cd34afe82e0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU048",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8a62b8a7-f2a6-4b92-9bd5-dc890aad3823",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU049",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "76e534cf-1f71-4ce0-a0a8-b21f46f23cd8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU050",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ad912806-b38a-46f2-93e5-6f2916f08d50",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU051",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "bb1707df-080c-4ad0-9faf-246d35099185",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU052",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a7535a55-0fa6-4181-a23b-bf6d7bb11402",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU053",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "efabe552-949a-4845-907f-0b6e7a457a3b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU054",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0e00f253-1235-432e-98c2-459666eecc3e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU055",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4653de89-efab-4be8-b59f-56425b8f9b43",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU056",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7f304958-f91e-4d0d-9b7b-3d665884b625",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU057",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "326768c4-804d-4f44-9ec7-b5c518874a59",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU058",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a34acd01-4a44-4a53-992f-b958865615e2",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU059",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0dec8ec3-d04e-4a6b-9729-75616e9ef8ff",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU060",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f8d0d7c7-acb0-45a6-ae57-ba9a7f537b3b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU061",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ac9d3590-af79-4d96-a8f7-25787832760e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU062",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ff17edaf-2a10-40f2-90f0-24027ebc6030",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU063",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8834bae0-f637-4ed8-9634-641ca3bc71ec",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU064",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ed5eccc8-e6d0-4cb2-97ab-86556e753aae",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU065",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "d75952c8-6271-4298-824b-6ebaed77a993",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU066",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f6687ff5-1e6d-4255-a975-ba38ebb1370e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU067",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f1462092-55cc-4079-9462-f8ea75c1b40c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU068",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0024169f-5e82-475c-a247-9f3fa50a5f0a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU069",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f84c4f41-158b-4e6d-8e51-85ea8295ce46",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU070",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9f4f8a6a-a495-45d9-981e-48fb8382a992",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU071",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3aca7d60-e703-4df9-9196-2d40019dff19",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU072",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ab7bdfdb-1706-4ec3-a481-922acd759be1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU073",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "48a4d6e2-44f6-4b68-930b-1f60631a6f52",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU074",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "67b3be38-689b-40f2-84d9-7246d22dd830",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU075",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e9ee58c3-cce7-4759-b69a-0ec3ba4fab7e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU076",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9f5793bc-5eda-472d-b8f7-6f534b643ef7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU077",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f53bb447-ae26-44d4-a355-e61353517066",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU078",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5d5fa25a-4a7a-422c-a233-2328db4cabe0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU079",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2f58ca25-39dc-4325-a8fb-bc7c7a05eadd",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU080",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fb0a32ac-5ce9-4c10-acda-2b76bae3799c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU081",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ad65ca57-8d6a-41d8-b105-34ea59562fc0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU082",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c1ece1ca-2d00-4dc3-a9f3-dcd59e26a50c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU083",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "689b7114-3dd8-42f2-8529-ef189edfce7b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU084",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "928a492e-ce9f-440a-8615-cadc77fe0761",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IMU085",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b0e50036-740b-4604-bc62-3b75468f8180",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "0001",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "434e0511-6217-42bd-a5a9-764b3d0248e6",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Brilliant Stain",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a49ad4e0-ab08-4c76-baba-37101af18bb0",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "eb6ffcee-0ea5-410a-940c-e20cc0fbbf78",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ae758993-5af3-4b65-992f-c1ac5a6c920b",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Lot Number",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "9b4f420f-f3a8-4af8-bf05-b874020d7358",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "0002",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "bfc9e17a-feb5-426a-abeb-9c0bf7c99483",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "TruStain",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9b3a5a19-bf83-47d6-a32a-9559fae25e5b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "0006",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "5326d466-e4c1-4201-ac61-6be1d4ff293e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "0011",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2d70a1d4-588b-404c-9c8f-d146556330e1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "0016",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0c474ea1-85c1-4e6f-aece-97fcb11c6fed",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "0031",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "390d9143-7ea7-42e8-aa53-b59bcc00d29d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "0032",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "ea5d5fd5-4908-4da7-af4b-ac8f3c5e5e7e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "00003",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4399b373-c3de-44b5-9c91-0dbc06ba809b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD56 RY586 (B159)",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "5e80dd71-7fd5-4d25-b5be-4ebf7166c74f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "00002",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8ee38ce3-5ae9-4c69-b6f1-305a9f510d5b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "HLA-DR BV570 (L243)",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "70da5f19-7834-40be-bd8a-5c4ffae1bf0c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SONY",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6ed094c6-7d2e-42e8-b9b5-defdeb9c5f50",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD141 BV786 (1A4)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "e05e7702-ef26-4a3d-8c9c-05bd06b096be",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT10",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "22ba8bf1-5bfa-4dc4-8fca-3028b6b82934",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "KLRG1 PE-Fire 810 (SA231A2)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "bd89fd9d-c9fb-4463-90d3-20c717a6e176",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "BioLegend",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4afdd90d-6dd5-42c0-a528-e5e43fd221ce",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT29",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "4871de25-84d3-4789-9b3a-6e995a48b323",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD40 BV650 (5C3)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "29b3002c-8f8d-4c4a-97c5-b5817eefe48c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT9",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "e95f8c29-fa4f-4d93-86b5-f69246a3e841",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD27 PE/Fire 810 (O232)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "4a806875-8eca-45fa-923f-958ca4130226",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT13",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "571f8d10-faa1-4f25-816f-e10c5110905d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD27 APC/Fire 810 (OA17A18)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "de72e64e-26e9-4e0e-9c2e-6a8417a90244",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT30",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "998629c4-eabf-4198-8494-c24d09be7104",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD103/ITGAE BB660-P2 (Ber-ACT8)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "48eab3cf-336b-4055-bf73-a22645862f6e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT37",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "f6372298-dc0c-4f65-af25-2eefc0b53d16",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD31 BV605 (WM59)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "0cc635bd-9b51-49b5-a1d5-598693e9af56",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT33",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a471f2f1-8633-4da7-89df-5d2615df9051",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD11c BV480 (B-ly6)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "646b4f82-ef6a-42b0-a836-351f6ad8f779",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT14",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "75ace2a8-a2d4-4577-a90a-814f0a016bc9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD335/NKp46 BB630-P2 (9E2/NKp46)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "92c76462-75a3-4908-8c96-9be306cfd177",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT17",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "3a3d4b87-cd1c-4f99-8c6d-8e1353af49f0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD1c Alexa Fluor 488 (L161)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "c9b5f6e8-5545-46d9-ac95-83f2c8622ae0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT21",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "59703300-3e64-4a9c-bd9f-9708286d7ae7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD122/IL2RB BB630-P2 (Mik-β3)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "f95588e7-4949-4848-9688-5553600c5732",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT25",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "199def95-9655-4487-8d86-73d35ce5a110",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD127 PE-Cy5.5 (EBIORDR5)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "b85ca85d-b4a8-4aec-bb27-2f29efd1cb49",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT27",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a1c86dac-9b11-4577-a75d-621439107925",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD95 BV480 (DX2)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "5d545fea-3321-4699-a045-b31db442256d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT26",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "194b19c7-b5a6-4403-a8c3-1ba1504d294d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD28 BUV563 (CD28.2)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "5e0d19e9-0157-4ec8-9c2c-08d11537bb78",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT31",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "89abc6ce-e269-405a-a325-b531075f51c4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD45RA APC/Fire 750 (HI100)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "cfaf4dee-e88d-41f4-b805-9fb3f703c7c5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT32",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "29cd4572-63c5-423e-a46b-f5f005c53083",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD57 FITC (HNK-1)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "72d3b37e-6b40-4872-b4cd-480eeba19d27",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT34",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "824441fd-9f6f-4232-90f3-5e6cddc0e6a5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "TCR Vδ1 VioBlue (REA173)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "1a282a87-ea3c-4e99-91c6-66de024aea91",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Miltenyi",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "7c30e719-232d-43c3-acc1-4c151cc2f13a",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT39",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "41be4afa-3742-4cf8-99c6-ec1d9105e52d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD138 Alexa Fluor 647 (MI15)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "cd326912-0bc2-4db4-bcb6-bc2f525a74ce",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT2",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "78db3518-abf8-4df4-9815-ed9fb6d03e7b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD294/CRTH2 BUV615 (BM16)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "653b46bf-9fe8-4bed-b940-bf659746b22f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT3",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "18badfca-26ac-4799-b7c2-d3df7077c3b6",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD123 BV750 (7G3)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "81767e28-91b8-4b59-8240-dbedd4de87a4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT20",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "6db7721a-2463-4376-9ec6-f525a082cd6b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD303/BDCA-2/CLEC4C APC/Fire 750 (201A)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "c6d23062-0531-4c40-a843-20a6c306e458",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT4",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "8734f14a-49dc-4c48-a8d2-7f67fa11854d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD319 PE-Dazzle594 (162.1)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "f52fcea8-e2b1-4587-b274-2386968d78a7",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT1",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "c993deb6-c2cb-4e6d-95f6-765edce1df66",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IgM BUV395 (G20-127)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a4368674-1ee7-4e59-bc60-148fe6281b61",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT5",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "64ee4ea6-459d-4f04-985e-a2b2c9d78ed4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "PD-L1/CD274 BB660-P2 (MIH1)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "7f824a36-3da0-44ba-b395-9af4dbbdbba0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT15",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "fa54e7e3-aa19-485c-845b-484a7aedcfd4",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD86 APC-R700 (2331 (FUN-1))",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "def4211a-1f24-4777-a072-362f8a2fe5ab",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT16",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "b40622da-beb4-4b62-8e97-ea287656d20b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD43 BB790-P (1G10)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "afdb4ddb-37d8-4d1e-8e6e-96d72f3a4ab5",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT18",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "3f96823e-9c97-461e-9917-a2b97f407031",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "TCR Vδ2 PerCP-Vio700 (REA771)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "8cfbc94e-f090-4b71-ae8e-28c45077f151",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT38",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "4ea60cb5-9e84-4a62-970a-36b3d3d31d10",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LAG-3/CD223 BB790-P (T47-530)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "085c78d3-d75e-4e0e-80a6-1078b965e881",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT23",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "2feaca76-011b-4c99-8d3c-d654b2ac3395",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD62L BUV563 (DREG-56)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "e3955474-1a18-4dec-9a81-cd28ba41ab18",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT19",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "73f5c572-69aa-4209-b40b-a2b336b4ffa6",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "TIM-3/CD366 R718 (7D3)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "fbb72e36-545f-4fcf-81b9-2219ab704ca6",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT28",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "90092aca-cbbb-466b-a105-a75801b91ca3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD69 VioBlue (FN50)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "3a40211c-6db3-4dee-8413-55873755d6b9",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT12",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "ca4e7b33-9c1c-45d3-ad2d-74849f93a789",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD161/KLRB1 BB755-P (HP-3G10)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "75f3d295-2b9a-46c2-b499-5536346419f1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT24",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "8901d7e6-3277-4bb5-9fa4-56c4d1970ab0",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD39 BUV661 (TU66)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "b82b6b20-0a77-4bdf-bfc9-7c8df3041bd8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT35",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a5d356fd-abda-4910-abee-2ed9cce8a582",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "TIGIT BUV395 (741182)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "acd6af18-404d-4d06-91da-0df1e121df41",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT36",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "64b4a583-4fcc-4ea6-993e-23ea4b65da94",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD24 BV605 (ML5)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "ebc286e8-3447-4d3f-883a-2480bd8f048d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT8",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "3e2e1991-f56a-432b-8b35-dc9498526622",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CD337/NKp30 BV711 (p30-15)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "0fbefa88-ebdb-40a5-a855-c280b16f603c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT7",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "50974fa6-e3ae-4acd-ab86-5c48717a5b6e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "IgD PerCP-eFluor 710 (IA6-2)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "98838c90-b273-4063-b8b4-7680f6e5dfca",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Thermo",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f88a1ea3-d890-4c34-8c65-3ca28ef469b3",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT6",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "fcc0d53b-9826-49d7-bb88-d5dbf7e9c0d8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "TACI/CD267 PE (1A1)",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "271f0000-9fbb-4053-9aba-e0b603dfc869",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "LOT11",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "e6f7e02e-396d-41df-9380-d129096e4f72",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "AspiCLAD",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a3d6f79f-6a5a-415a-957b-ca1e93b5ccf2",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Client",
+      "icon": "array",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a94c29fd-7a24-440c-8353-21d804062128",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Client Template",
+      "icon": "array",
+      "sourceVersion": "6"
+    },
+    {
+      "id": "ae4230cc-0154-45b9-9a3a-0dcf32c0930f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "YYYYMMDD_StaffID_Av2_S1",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3db747b8-c061-4ddb-bd29-83b23ee0037c",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "YYYYMMDD_StaffID_Tv2_S1",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fbb46035-b00c-41dc-bbf8-31e6b3841d27",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "YYYYMMDD_StaffID_Tv2_CXR1",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "da3e7a97-e4dc-4dfe-9bac-e455aec16f31",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CB_FROZEN",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4d2cb743-2c65-4612-86f5-59518258d21c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample Types",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "487bfb56-78e5-4e06-9c4d-ebf148a25537",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample Type",
+      "icon": "array",
+      "sourceVersion": "1"
+    }
+  ],
+  "assets": [
+    {
+      "id": "53da3bd6-4b1b-43aa-8eee-bec4d32c5cba",
+      "entityId": "7b4587b5-ac1c-4d18-a609-882f45866a0e",
+      "filename": "1slideexamplecellcounting.csv",
+      "contentType": "text/csv",
+      "uploadFolder": "uploads"
+    }
+  ],
+  "tags": [
+    {
+      "id": "d7733bcd-1532-4ee3-ae8e-ec03e6e93d49",
+      "text": "Label Blueprint",
+      "hexCode": "#61a0e1"
+    }
+  ]
+}

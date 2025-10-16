@@ -1,0 +1,1258 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "bd89fd9d-c9fb-4463-90d3-20c717a6e176",
+  "title": "BioLegend",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "5850a6ee-2ba3-4ce5-af6b-14ba872b6f48",
+      "version": "5"
+    }
+  },
+  "fields": {
+    "Type": {
+      "id": "1785da4a-4c77-4f0f-8e9f-13cf153e8a62",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Equipment/Materials",
+          "Finance",
+          "Infrastructure/Facility Services",
+          "Logistics",
+          "Marketing",
+          "Samples",
+          "Servicing/Maintenance",
+          "Software/System",
+          "Sub-Contractors/Out-Sourcing"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Comments": {
+      "id": "20bf19e9-f9a3-4e6f-a847-18a0a2d86462",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Risk Level": {
+      "id": "08428e58-7486-4071-b488-967802f17a02",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Approved By": {
+      "id": "d9e65bf1-2653-4f7c-bbcd-700dc03b0f6d",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Website URL": {
+      "id": "b73bce3e-ae58-4abd-a227-3f1873d68d36",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Impact Level": {
+      "id": "432b398a-d92b-4fa0-8bb0-d0bb486b8851",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Submission 1": {
+      "id": "04918263-a430-41a1-86ea-177a46a537f5",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "93dadba0-35e7-489d-8b35-bff53b4cb721",
+          "version": "4"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Vendor Status": {
+      "id": "62dea621-eb29-476b-a781-5c5b4ea12c2b",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved and In Use",
+          "Approved and in Use with Exceptions",
+          "No Longer in Use",
+          "Rejected and Not in Use",
+          "Under Review/Not Used"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Payment Method": {
+      "id": "5711a1c1-7a68-48da-81ae-54b7e622e787",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Purpose of Use": {
+      "id": "7f177fd2-0ba8-4648-b59c-50db9ee7d739",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Account No/Info": {
+      "id": "47b71f95-8809-4212-bd69-226e308280d4",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Vendor Email(s)": {
+      "id": "701df783-82ea-4c72-86c9-4566e2858936",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Date of Next Audit": {
+      "id": "cfd809e4-a84f-411c-b293-daa296fdb49e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "equalText( lookup(__self, \"Risk Level\")  , \"Low\") ? dateAdd( lookup(__self, \"Date Last Published\")  , 2, \"years\") : dateAdd( lookup(__self, \"Date Last Published\") , 1, \"years\")"
+      },
+      "dataType": null
+    },
+    "Likelihood of Risk": {
+      "id": "462915c9-0cdc-4225-989e-6ec534563dd4",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Date Last Published": {
+      "id": "f06742e2-e6a4-49ae-8a53-2c2740fce4d0",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Main Team(s) of Use": {
+      "id": "b51e6d97-506f-4cc8-864f-72503b8a1e4f",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "All",
+          "Business Operations",
+          "Data Science",
+          "Discovery",
+          "Engineering",
+          "Lab Operations",
+          "Molecular Biology"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Main Staff Responsible": {
+      "id": "307a355f-98d7-46c5-9d14-f1516905cefd",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Vendor Phone Number(s)": {
+      "id": "455fbf95-e01f-4a7d-b6b5-9c67ad064033",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Vendor IMU Questionnaire": {
+      "id": "209fce8a-10a8-47dc-8d21-5cf250447938",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Justification of Risk Rating": {
+      "id": "b05f2353-47e0-4b01-a126-9a5b744c9c1e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Frequency of Purchase/Subscription Renewal": {
+      "id": "708e98f0-1b22-4a0b-83a0-788706fafe8f",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "2 monthly",
+          "4 monthly",
+          "6 monthly",
+          "> 1 year",
+          "Free",
+          "Monthly",
+          "One Off",
+          "Yearly"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Average Frequency of Use (of service/reagents)": {
+      "id": "c1e2209d-33eb-49aa-8e11-3deea290c8e8",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Every 2 months",
+          "Every 4 months",
+          "Every 6 months",
+          "Every month",
+          "Every week",
+          "Every year",
+          "Everyday",
+          "Less than once a year"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "d8aa02a0-2ff3-45a6-bfab-ba00dd6c1db1"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "918b4305-3440-445a-9cef-cc4ccf1b27fd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a85f231d-fc68-4e88-b773-3f90f4723862",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "34524ad2-a065-42b3-bcc1-e1580ef28132",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "b5fb9883-4f7f-4c84-82bd-7cc2b26ef3a9",
+                  "type": "field",
+                  "fieldId": "62dea621-eb29-476b-a781-5c5b4ea12c2b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d43f25ce-f4d4-4286-84e4-49756bfc51ec",
+                  "type": "field",
+                  "fieldId": "1785da4a-4c77-4f0f-8e9f-13cf153e8a62",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7cb2fa4d-0981-46ea-9247-6ab8ac31432a",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "88dc1735-3e97-45b1-9677-da3bf1e5ecfa",
+                  "type": "field",
+                  "fieldId": "d9e65bf1-2653-4f7c-bbcd-700dc03b0f6d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "32bd9cd3-b7a7-4fb9-8389-64eb0d749620",
+                  "type": "field",
+                  "fieldId": "f06742e2-e6a4-49ae-8a53-2c2740fce4d0",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "7a8f937e-6c94-4874-ba31-630ed7d3c477",
+                  "type": "field",
+                  "fieldId": "cfd809e4-a84f-411c-b293-daa296fdb49e",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ec6dbed1-176b-41a0-87c8-ed7bb1808cce",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a0f4bb41-b5c8-48e4-9998-e4dc32376085",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "52864a62-9ff7-4a69-b32b-44155cebf7a1",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Purpose of use"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "ed2679ff-3746-4e24-a6dd-54c3294a09b9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3d4a2aa1-c39b-4883-86b5-9470a4527334",
+          "type": "field",
+          "fieldId": "b51e6d97-506f-4cc8-864f-72503b8a1e4f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2317dc19-4d69-4c0b-bd89-8f161d27f27b",
+          "type": "field",
+          "fieldId": "307a355f-98d7-46c5-9d14-f1516905cefd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "57fa3f51-b000-4247-8aaf-a0f8b4d285ca",
+          "type": "field",
+          "fieldId": "7f177fd2-0ba8-4648-b59c-50db9ee7d739",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "09d2dc24-10e1-44f9-aca5-094a901a3e56",
+          "type": "field",
+          "fieldId": "708e98f0-1b22-4a0b-83a0-788706fafe8f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f14c3d1f-4a9c-43d6-8e63-552631f05eb4",
+          "type": "field",
+          "fieldId": "c1e2209d-33eb-49aa-8e11-3deea290c8e8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c431ca9d-48a9-498a-b20d-4d0bb41e4ce0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "572972b8-5c1e-4453-98af-8e1fe07376a0",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Risk assessment "
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "f87ec832-0b3f-467e-b6cf-78b3e73ad5e8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "73824dc0-cc7c-4c30-b8a6-583086d68981",
+          "type": "p",
+          "children": [
+            {
+              "text": "Link G-drive folder if "
+            },
+            {
+              "id": "ee4e326c-27e7-4855-9bed-89b452d46e5d",
+              "type": "a",
+              "children": [
+                {
+                  "text": "vendor questionnaire"
+                }
+              ]
+            },
+            {
+              "text": " had been sent out and completed by the vendor as our subcontractor for, e.g. sample processing service:"
+            }
+          ]
+        },
+        {
+          "id": "3f835807-06c0-45de-8fbc-f18c04e50a61",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "01b5c83e-936a-4e72-8743-30a9e1cce3c4",
+          "type": "field",
+          "fieldId": "209fce8a-10a8-47dc-8d21-5cf250447938",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "14d53c1e-59d5-4c88-b385-dc1cb7198710",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f8590550-4c57-4227-8393-9994bc5f88c9",
+          "type": "p",
+          "children": [
+            {
+              "text": "Create a new record using the table below for each risk assessment by first selecting the vendor, then update date of the assessment, assessor name, assign impact level, likelihood and overall risk level plus justification of the risk."
+            }
+          ]
+        },
+        {
+          "id": "32615199-f429-442c-b536-e4d2ce28c40f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "67f4be71-4bfa-4a54-8f52-0cecb3fb6eb9",
+          "type": "table",
+          "children": [
+            {
+              "id": "64c6f2b1-6711-417a-ab21-81513fcc3e4d",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "aa9a5e9b-44e4-4d30-8444-b07b98c15ed6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6d4ee1f7-7075-4eba-862f-cef6a657f1ae",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Impact",
+                          "underline": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ef571313-ea08-42a4-849f-587ba5f2e95a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b4327d7c-3197-46d5-953e-ac7c2402174c",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "High"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c43268bc-c33b-4b78-962f-9d5f0e7e3b08",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "fd025f51-cf73-4aac-9c9c-c01eb474ce64",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Medium"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0bc765bc-8f3e-41db-b560-a99e36e74790",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "9228b9da-f465-4d09-9b87-93e352f39b1a",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "High"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5e29bcf0-5387-4945-9257-3214e1df1db9",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "f1d776f1-59f4-4850-a20f-444a254efc1a",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "High"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b2812c11-ea0d-48ec-bd2d-368ba6359703",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "da49abd3-e99e-4ec6-a0e1-f66d97bb6d84",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "28188d22-736e-4e0c-8a9f-5f5b4beaebee",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "cabb035c-ebee-4a5f-980a-d0ccecfefe27",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "96a65df2-f420-4590-a0cd-133b0709e693",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Medium"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9b0a3b93-e878-4ae9-bc16-2ffa7f701236",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7f22164e-3b50-4956-9ab3-bf0eef6cdf77",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Low"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "70b7c50a-f79c-43ef-8172-67e685a9ae38",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2adfb445-bbfd-459e-bbc5-9cac285b2152",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Medium"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b562cab0-403e-49e5-a280-ab84462416e2",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4ecc723e-2874-4a55-8b4f-2c8e1b19e9a0",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "High"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c7b80680-f32e-4afa-a4ed-68b84cc1fffe",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "56e7cf73-686a-4903-a730-42f00f6f54b1",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "937fc5f8-1906-4e31-9382-72faca35d79c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "3d5f3308-11f9-40db-a79d-11e083260321",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a63fb69a-b0ce-4169-ba4e-39147e60e213",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Low"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4030816b-4a86-4504-9f24-b6cb9098d791",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "754b7fda-f55a-4a96-8118-2103c2787df3",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Low"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "3211e7cf-d860-4a56-b5f6-2e19ce04f145",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "8d8ab47a-63ed-4abf-8bec-f77994c52db9",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Low"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "57bfd5cd-e2a1-4929-bf40-ee86e72c8911",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6d3149d7-2d9a-419a-9200-c785282c25a0",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Medium"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f4b5e527-8f91-4a31-a040-f11d3d13da22",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "0269d400-0c64-4e3e-8c9d-fdf3736c18bb",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "f2c2afb3-07bc-4761-881b-7aaa7d381963",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8d028be0-9858-46fa-9374-dcc1feed1b4c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2bf76a0d-89f2-4f79-99ec-58125c23c482",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f85cd466-74e8-4d42-bb29-965970cd4d37",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "d63013bb-18d3-4222-973f-eae45566ea00",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Low"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6679a556-7197-4488-9f89-771a5667778c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "9592bb26-f66e-4958-8f68-cb420f451366",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Medium"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b2302562-2ebe-4d36-92d8-692be78f4446",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "da916780-f01f-4ccb-8b5a-c5555e654a5e",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "High"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a712abd5-38e6-4dac-a465-c34ae6692f27",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "9fa917bc-77fb-4741-a000-fd81bc56358f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "09f86875-694d-4157-b3ae-d61958e045fd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "51c566d7-d35c-4135-abb4-b3b5940f5f8d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "156d0669-2c67-4d90-aff8-27d96b94f77a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1cd499a6-a453-4304-be05-7fa8c43fee87",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e4d35faf-02a5-4968-8338-189b3aa0dfa5",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "3f221da0-b012-4ca6-9fc0-4fc8ba89acb0",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "40682c96-cecd-4327-bc20-9c9e96ed898d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "401182cf-97b4-40dc-8870-089269e56a26",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "0121a0dd-d0f2-4f92-b18f-df639db44afd",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Likelihood",
+                          "underline": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "colSizes": [
+            95,
+            75,
+            97,
+            107,
+            113
+          ]
+        },
+        {
+          "id": "4842ab66-c5e8-4a66-a8c6-cfe28c31eae0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3775eb72-3066-48fa-b9e4-91c1247fe479",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Vendor Risk Change Log"
+            }
+          ]
+        },
+        {
+          "id": "56ba1a4e-ddbb-410d-ba04-bef2b29a4f5d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "56817738-0c6b-4858-9ae4-f1759a5fe368",
+          "type": "field",
+          "fieldId": "04918263-a430-41a1-86ea-177a46a537f5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3568b8b4-d17a-4932-ab93-f12de781ad71",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0b5dea28-bf9b-4028-a9d1-bb2817f42d9f",
+          "type": "field",
+          "fieldId": "432b398a-d92b-4fa0-8bb0-d0bb486b8851",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7a65d62e-e707-416d-b3be-f7ed26ea727c",
+          "type": "field",
+          "fieldId": "462915c9-0cdc-4225-989e-6ec534563dd4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c0589aaf-51dc-44ab-b19f-a1e5173c0dde",
+          "type": "field",
+          "fieldId": "08428e58-7486-4071-b488-967802f17a02",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a83c09d1-6ad5-4ff3-974f-be8be68bf17d",
+          "type": "field",
+          "fieldId": "b05f2353-47e0-4b01-a126-9a5b744c9c1e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "32520998-3639-4a82-939f-3a3adf0d031a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0b67073b-e7a8-4bd4-be04-4c37f8efa473",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Vendor contact information, account number and payment method"
+            }
+          ],
+          "listRestart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "16981570-fdb1-4e73-98ce-1b7da5e24144",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ed8f2d7d-14f6-4082-970b-7e4f4677fe29",
+          "type": "field",
+          "fieldId": "b73bce3e-ae58-4abd-a227-3f1873d68d36",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "578e9cdc-1181-4408-a617-ec5b4e5d3926",
+          "type": "field",
+          "fieldId": "47b71f95-8809-4212-bd69-226e308280d4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f1b5c2c3-18e0-4c2d-924c-b6ac70b70620",
+          "type": "field",
+          "fieldId": "5711a1c1-7a68-48da-81ae-54b7e622e787",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e8e18edb-3dbe-4a79-88a0-f11be13c4052",
+          "type": "field",
+          "fieldId": "701df783-82ea-4c72-86c9-4566e2858936",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fa9e072a-76d0-4cc2-b57f-4c13ecc206ac",
+          "type": "field",
+          "fieldId": "455fbf95-e01f-4a7d-b6b5-9c67ad064033",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8f366882-5320-4492-baa3-0d49ee47e0f2",
+          "type": "field",
+          "fieldId": "20bf19e9-f9a3-4e6f-a847-18a0a2d86462",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5bbb2ebf-9dcf-4763-ab6b-32fc5754552e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ffdfb968-7c28-4368-b772-85fcda4f4ce9",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Other related databases"
+            }
+          ],
+          "listRestart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "5b4bfd59-34da-44e4-b2c2-33440aa7981d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b913eebd-c1e4-411b-8620-589426977f2b",
+          "type": "p",
+          "children": [
+            {
+              "text": "View ‘Referenced By’ in the Properties tab for traceability to the following:"
+            }
+          ]
+        },
+        {
+          "id": "9d99932a-73fa-43d2-a7aa-7010723ba005",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Vendor Issue Log"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "56823151-f0c6-4f61-9d1c-ab37f4983473",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Asset Database"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "9d72c856-24af-4c23-9e5f-f6bb79f44ac0",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Reagent Database"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e8752989-531e-4fdb-9d46-428314a8d8b8",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Recycling Scheme"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "deb31d64-254a-4f24-a66b-4e1b12551b0b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Computerised System Assurance and Validation Log"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e29aeba2-1ea1-4924-8fce-20c02781c446",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

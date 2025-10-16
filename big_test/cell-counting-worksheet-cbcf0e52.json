@@ -1,0 +1,316 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "cbcf0e52-e146-437a-b2cb-33dc880f0c69",
+  "title": "Cell Counting Worksheet",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Formula": {
+      "id": "dd7e9926-3239-4542-a9f9-98d23bb32b98",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Submission\")"
+      },
+      "dataType": null
+    },
+    "Reference": {
+      "id": "71aadaa0-b196-4329-96f9-bd98b67cdc56",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Submission": {
+      "id": "816f6db5-07b7-462d-8b4c-964a86f240a4",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "58815f01-5e08-4f2c-a3fe-1bf3cba96d83",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Cell Counter ID": {
+      "id": "f176dcc2-4a39-4e6d-8df3-97217b342691",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "a3bbe51a-592a-41d9-8a8e-873daf402c47"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Room",
+              "config": "Room"
+            },
+            {
+              "name": "Supplier",
+              "config": "Supplier"
+            },
+            {
+              "name": "Asset name",
+              "config": "Asset name"
+            },
+            {
+              "name": "Cat number",
+              "config": "Cat number"
+            },
+            {
+              "name": "Description",
+              "config": "Description"
+            },
+            {
+              "name": "Manufacturer",
+              "config": "Manufacturer"
+            },
+            {
+              "name": "Model number",
+              "config": "Model number"
+            },
+            {
+              "name": "Purchase date",
+              "config": "Purchase date"
+            },
+            {
+              "name": "Serial number",
+              "config": "Serial number"
+            },
+            {
+              "name": "Equipment type",
+              "config": "Equipment type"
+            },
+            {
+              "name": "Installed date",
+              "config": "Installed date"
+            },
+            {
+              "name": "Validation date",
+              "config": "Validation date"
+            },
+            {
+              "name": "Equipment Manual",
+              "config": "Equipment Manual"
+            },
+            {
+              "name": "Maintenance Logs",
+              "config": "Maintenance Logs"
+            },
+            {
+              "name": "Other relevant docs",
+              "config": "Other relevant docs"
+            },
+            {
+              "name": "Maintenance Schedule",
+              "config": "Maintenance Schedule"
+            },
+            {
+              "name": "Warranty expiration date",
+              "config": "Warranty expiration date"
+            },
+            {
+              "name": "Equipment owner (labguru)",
+              "config": "Equipment owner (labguru)"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Import Cell Count Data Script": {
+      "id": "5b633652-fbc2-428d-89c8-68b6397ddebb",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "9722d21e-1495-4325-9c6c-368b21bf2aa9",
+          "version": "4"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Import Data"
+        }
+      },
+      "dataType": "SCRIPT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "5ae06f88-ec69-41b4-9365-45168d12ded3"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "eec825cb-86de-4095-8bb4-2cf3117a852c",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Attach CSV file of cell count data"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "51150ff0-3f4b-449c-9e9a-bb5c2fc91f92",
+          "type": "field",
+          "fieldId": "71aadaa0-b196-4329-96f9-bd98b67cdc56",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "c344bacb-ece4-445c-b141-60f34b8598a3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bbada41e-e912-4660-86de-a33d52ecae6e",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Select Cell Counter ID used"
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "674110bc-dff4-4ea6-b492-8e8780082b50",
+          "type": "field",
+          "fieldId": "f176dcc2-4a39-4e6d-8df3-97217b342691",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "17c790b1-a9dd-4d86-81c4-3bb546d034a0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cc7c5d45-dfe9-4adc-807f-33aeeef95f0c",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Click Import Data"
+            }
+          ],
+          "listRestart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "68c746cd-cdbc-44fa-80e6-c3d7e91a63e2",
+          "type": "field",
+          "fieldId": "5b633652-fbc2-428d-89c8-68b6397ddebb",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": true
+        },
+        {
+          "id": "9cda1000-217f-42b2-a8fb-959b47eeb5d3",
+          "type": "field",
+          "fieldId": "816f6db5-07b7-462d-8b4c-964a86f240a4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7275a0e1-e91b-4891-a1a1-852113abbbd7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c14182e7-d2cd-41df-916b-7ec884e992af",
+          "type": "field",
+          "fieldId": "dd7e9926-3239-4542-a9f9-98d23bb32b98",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9289e48e-fdc5-4393-906d-c711be9821aa",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Cell Counting Worksheet @TEMPLATE_INDEX "
+  }
+}

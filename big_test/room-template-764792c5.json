@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "764792c5-22e5-430e-af91-2fa7f7b21b88",
+  "title": "Room Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Tank/Freezer/Fridges": {
+      "id": "f517cf68-d859-445c-9781-bfb2d0be4e8e",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Room",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Room",
+            "config": "Room"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "dffd72d3-783b-41a0-9e7d-40bb7dbcee5c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "548191ab-fa0f-4cfa-8111-ec265ae3e575",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0fbd662f-bcbd-444e-b3c4-8acf155fe5cd",
+          "type": "field",
+          "fieldId": "f517cf68-d859-445c-9781-bfb2d0be4e8e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a3cf744b-9224-4e07-92ca-a87723850b6b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

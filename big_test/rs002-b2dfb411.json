@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b2dfb411-1b70-4f4a-801a-a90c4b8f030c",
+  "title": "RS002",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "4f4ca25b-9dac-492c-b42e-5419b38372b4",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Reagent": {
+      "id": "5e61e5ca-ec6c-40e3-947c-f09868c4daf3",
+      "type": "FORMULA",
+      "value": [
+        {
+          "id": "218b6b97-efcb-4867-92cf-40e558f8d208",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "formulaExpression": "lookup ( lookup(__self, \"Lot Number\") , \"Reagent\" )"
+      },
+      "dataType": "ENTITY"
+    },
+    "Lot Number": {
+      "id": "c9b8bc6e-5ce0-4c04-87a3-5c15d3fa32bc",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "44f3b943-acdf-47a5-9d39-e20683fd6d6f",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "18821efe-2866-4eb9-b0d3-393047fe4077"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Antibody",
+              "config": "Antibody"
+            },
+            {
+              "name": "Stocks",
+              "config": "Stocks"
+            },
+            {
+              "name": "Reagent",
+              "config": "Reagent"
+            },
+            {
+              "name": "Inventory ID",
+              "config": "Inventory ID"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Inventory ID": {
+      "id": "f7bc8bfa-64be-4547-b7d5-4e623b281965",
+      "type": "FORMULA",
+      "value": "991",
+      "config": {
+        "formulaExpression": "lookup(__self, \"TYPE_INDEX\")"
+      },
+      "dataType": "STRING"
+    },
+    "Remaining volume (uL)": {
+      "id": "7b20ce14-2d1b-4e89-b98c-769d543db488",
+      "type": "NUMBER",
+      "value": 400,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "8c425aad-6237-4109-97aa-0be6e27426bf"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "966f9a04-7ca8-4f99-9b69-7a5d4ddd8ff3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cfcedade-0d45-4990-8c66-af7fa1576bfa",
+          "type": "field",
+          "fieldId": "c9b8bc6e-5ce0-4c04-87a3-5c15d3fa32bc",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "a8bece00-739c-427d-9d51-cb54755753d9",
+          "type": "field",
+          "fieldId": "5e61e5ca-ec6c-40e3-947c-f09868c4daf3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c7db1362-3a84-4d5b-bd61-2f33907b9386",
+          "type": "field",
+          "fieldId": "7b20ce14-2d1b-4e89-b98c-769d543db488",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b1d8264b-0732-4766-b9b0-e50038c56196",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
