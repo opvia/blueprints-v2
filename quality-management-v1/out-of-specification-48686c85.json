@@ -21,11 +21,12 @@
       "type": "REFERENCE",
       "value": [
         {
-          "id": "48686c85-9ade-44c9-a874-72b30d5033b8",
+          "id": "5aba8c54-46ee-4d30-b62e-1f9a6e2eb996",
           "placeholderValue": "activeVersion"
         }
       ],
       "config": {
+        "displayMode": "pills",
         "allowMultiple": false
       },
       "dataType": "ENTITY"

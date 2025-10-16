@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "id": "7516513a-e254-4f43-aa7b-27f50ffda1c2",
+  "id": "13fb2cd9-1db4-442b-9cc3-336d79a061d5",
   "title": "Root Cause Analysis SOP",
   "status": "EDITABLE",
   "version": null,
@@ -14,10 +14,15 @@
     "editors": [],
     "typeIndex": "0"
   },
-  "sourceInfo": {},
+  "sourceInfo": {
+    "template": {
+      "id": "f273cc0c-f268-4711-aa31-cdc3d3f36fe6",
+      "version": "1"
+    }
+  },
   "fields": {
-    "Author": {
-      "id": "c86ffeb6-31bc-47e4-8983-9062531a72a0",
+    "Author(s)": {
+      "id": "f8b01cb3-9fab-4be0-880f-d83cc4608f74",
       "type": "USER",
       "value": null,
       "config": {
@@ -25,46 +30,31 @@
       },
       "dataType": "ROLE"
     },
-    "Document Title": {
-      "id": "2ae27612-b54a-4240-b139-13177ad589c2",
-      "type": "STRING",
+    "Approver(s)": {
+      "id": "dd4d801e-98f8-492a-865b-32c4002805ef",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Effective Date": {
+      "id": "7f3132c7-5141-4157-866d-bf6fe8549c90",
+      "type": "DATE",
       "value": null,
       "config": {},
-      "dataType": "STRING"
+      "dataType": "DATE"
     },
-    "Functional Area": {
-      "id": "2362c999-cd7f-4362-8580-d7b22c57fa82",
-      "type": "SELECT",
-      "value": [
-        "Quality Management"
-      ],
-      "config": {
-        "allowMultiple": false,
-        "selectOptions": [
-          "Operations",
-          "Business Development",
-          "Community",
-          "Medical",
-          "Tech",
-          "Product",
-          "Customer Success",
-          "Marketing",
-          "Quality Management"
-        ]
-      },
-      "dataType": "SELECT"
-    },
-    "References/Forms": {
-      "id": "9464fa5c-aa5d-4b41-8e77-9e5c3e9eb539",
-      "type": "REFERENCE",
+    "Next Review Date": {
+      "id": "876bb10f-7417-484e-83b5-f94ae0a14e04",
+      "type": "DATE",
       "value": null,
-      "config": {
-        "allowMultiple": true
-      },
-      "dataType": "ENTITY"
+      "config": {},
+      "dataType": "DATE"
     }
   },
-  "kind": "TEMPLATE",
+  "kind": "INSTANCE",
   "type": {
     "ref": {
       "id": "3c95d26e-0a7f-4545-9ba6-f3b53548c50d"
@@ -84,9 +74,9 @@
           ]
         },
         {
-          "id": "35bad7b4-f9cd-4830-9fc8-2c1a5dc12846",
+          "id": "976786ac-f3af-41cd-aaa6-044e1b62e05c",
           "type": "field",
-          "fieldId": "2362c999-cd7f-4362-8580-d7b22c57fa82",
+          "fieldId": "7f3132c7-5141-4157-866d-bf6fe8549c90",
           "children": [
             {
               "text": ""
@@ -94,9 +84,29 @@
           ]
         },
         {
-          "id": "40beaf29-e2a3-4189-a372-314725b9ec83",
+          "id": "f19c40cd-65c5-48fa-9619-41f737b41cf7",
           "type": "field",
-          "fieldId": "c86ffeb6-31bc-47e4-8983-9062531a72a0",
+          "fieldId": "876bb10f-7417-484e-83b5-f94ae0a14e04",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7640648c-d861-447a-8a10-d016d8a1e224",
+          "type": "field",
+          "fieldId": "f8b01cb3-9fab-4be0-880f-d83cc4608f74",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "74e86d8a-5858-4cee-bdf9-9946a873f35e",
+          "type": "field",
+          "fieldId": "dd4d801e-98f8-492a-865b-32c4002805ef",
           "children": [
             {
               "text": ""
@@ -115,11 +125,13 @@
         {
           "id": "0208e173-56d5-4dc8-9cc8-b4c0a7909e02",
           "type": "h2",
+          "indent": 1,
           "children": [
             {
-              "text": "1. PURPOSE:"
+              "text": "Purpose"
             }
-          ]
+          ],
+          "listStyleType": "decimal"
         },
         {
           "id": "4b809e66-aa4c-4466-8869-0818ec34cd36",
@@ -129,8 +141,7 @@
             {
               "text": "What is the purpose of the policy? What are we trying to accomplish with this procedure?"
             }
-          ],
-          "listStyleType": "disc"
+          ]
         },
         {
           "id": "f7541624-62da-41cc-aee5-3a827913d9cb",
@@ -144,11 +155,14 @@
         {
           "id": "a1a8b078-c0f0-4aa9-97d4-ba45e2f6daf6",
           "type": "h2",
+          "indent": 1,
           "children": [
             {
-              "text": "2. SCOPE:"
+              "text": "Scope"
             }
-          ]
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
         },
         {
           "id": "c9988cfc-e6bc-4b6f-bbc7-54852ee9b6a7",
@@ -158,8 +172,7 @@
             {
               "text": "Who is this policy applicable to?"
             }
-          ],
-          "listStyleType": "disc"
+          ]
         },
         {
           "id": "bfc50468-b21c-47e9-be02-d51e0b6e04a4",
@@ -169,9 +182,7 @@
             {
               "text": "Who owns responsibility for parts of this process?"
             }
-          ],
-          "listStart": 2,
-          "listStyleType": "disc"
+          ]
         },
         {
           "id": "a991251d-40c1-4bba-a916-0dfc2691db27",
@@ -185,11 +196,14 @@
         {
           "id": "276b796d-b29f-4acc-8750-e7518afa3a41",
           "type": "h2",
+          "indent": 1,
           "children": [
             {
-              "text": "3. RESPONSIBILITIES"
+              "text": "Responsibilities"
             }
-          ]
+          ],
+          "listRestart": 3,
+          "listStyleType": "decimal"
         },
         {
           "id": "9cdedac5-6ab3-4792-ba4e-b42e3811704b",
@@ -199,8 +213,7 @@
             {
               "text": "Who does what? (Can be bulleted by role: QA, Operator, etc.)"
             }
-          ],
-          "listStyleType": "disc"
+          ]
         },
         {
           "id": "13e5e986-ec57-43cb-9f39-d2d771fb8c34",
@@ -214,11 +227,14 @@
         {
           "id": "c1282aa4-d7c1-4700-8ab0-4ab3b2299bcc",
           "type": "h2",
+          "indent": 1,
           "children": [
             {
-              "text": "4. DEFINITIONS"
+              "text": "Definitions"
             }
-          ]
+          ],
+          "listRestart": 4,
+          "listStyleType": "decimal"
         },
         {
           "id": "512a0e3e-adae-4e0f-a036-61108a1aa2b7",
@@ -228,8 +244,7 @@
             {
               "text": "Clarify any technical terms, acronyms, or abbreviations."
             }
-          ],
-          "listStyleType": "disc"
+          ]
         },
         {
           "id": "4d42844b-701e-40aa-b9a2-9f5e9f652e12",
@@ -243,53 +258,14 @@
         {
           "id": "ac2accca-5b2e-4a86-9ff7-330a65711b49",
           "type": "h2",
-          "children": [
-            {
-              "text": "5. REFERENCES/FORMS:"
-            }
-          ]
-        },
-        {
-          "id": "ed70b945-5604-42f6-967a-15f48c485361",
-          "type": "p",
           "indent": 1,
           "children": [
             {
-              "text": "Section to link to/reference any associated forms, procedures, supporting documentation, etc. utilised in this procedure"
+              "text": "Procedure"
             }
           ],
-          "listStyleType": "disc"
-        },
-        {
-          "id": "e8604fbb-dc7b-46b6-820b-36441f7e0cf2",
-          "type": "field",
-          "fieldId": "9464fa5c-aa5d-4b41-8e77-9e5c3e9eb539",
-          "children": [
-            {
-              "text": ""
-            }
-          ],
-          "entityPreview": {
-            "isPreview": true
-          }
-        },
-        {
-          "id": "74a06058-0c18-4a8b-b60d-05f990f5581b",
-          "type": "p",
-          "children": [
-            {
-              "text": ""
-            }
-          ]
-        },
-        {
-          "id": "d259c93b-cfbf-465c-b3c3-44cb68eedc07",
-          "type": "h2",
-          "children": [
-            {
-              "text": "6. PROCEDURE:"
-            }
-          ]
+          "listRestart": 5,
+          "listStyleType": "decimal"
         },
         {
           "id": "f751435d-fa76-4003-aad7-e41134b8d752",
@@ -299,8 +275,7 @@
             {
               "text": "Procedure Step 1 (name steps as appropriate for procedure)"
             }
-          ],
-          "listStyleType": "disc"
+          ]
         },
         {
           "id": "b233ebf4-19d1-445c-bd00-6e01f0ef7dfd",
@@ -322,12 +297,10 @@
             {
               "text": "Procedure Step 2 "
             }
-          ],
-          "listStart": 2,
-          "listStyleType": "disc"
+          ]
         },
         {
-          "id": "e2620737-d636-4f10-bf0e-18cc66f4982c",
+          "id": "103cee28-ca9a-44d1-9732-848693abbe74",
           "type": "p",
           "indent": 2,
           "children": [
@@ -337,12 +310,132 @@
           ],
           "listStyleType": "disc",
           "listParentIndex": "2."
+        },
+        {
+          "id": "74a06058-0c18-4a8b-b60d-05f990f5581b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d259c93b-cfbf-465c-b3c3-44cb68eedc07",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Records"
+            }
+          ],
+          "listRestart": 6,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "77e8ffc3-df89-4611-b4da-aaf8c1892fe7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The following records must be maintained:"
+            }
+          ]
+        },
+        {
+          "id": "e98b0de5-685c-4f0f-b7dc-1ca67f843843",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "…"
+            }
+          ]
+        },
+        {
+          "id": "249e70c7-4367-4760-9458-da59b6d0d5ea",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Retention: Minimum [X years] or per regulatory requirements."
+            }
+          ]
+        },
+        {
+          "id": "73f2f3e9-a820-4539-878f-ec4922dcfd61",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8be5a068-0574-409e-aad6-e6846fefc5ce",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Training"
+            }
+          ],
+          "listRestart": 7,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "8f52534e-448d-4ec3-9664-e1e712f67265",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "All personnel involved in change control must be trained on this SOP."
+            }
+          ]
+        },
+        {
+          "id": "0d0f890d-dd07-4f96-85b1-dca05274a1e4",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "98630099-4259-4adb-925f-c1836c3d8753",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "References"
+            }
+          ],
+          "listRestart": 8,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "d46a23b5-d938-4312-9a63-75b3e3ba10c6",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Section to link to/reference any associated forms, procedures, supporting documentation, etc. utilised in this procedure"
+            }
+          ]
+        },
+        {
+          "id": "005094a6-4d0c-4588-b93e-4f1ee302a80e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
         }
       ]
     }
-  },
-  "instanceConfig": {
-    "strictMode": false,
-    "computedTitle": null
   }
 }

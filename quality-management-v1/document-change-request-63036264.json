@@ -21,19 +21,12 @@
       "type": "REFERENCE",
       "value": [
         {
-          "id": "49166738-db95-4589-b12c-9ffe8412ce97",
+          "id": "ce00c1ab-5802-4152-ba2f-ce5d82f43a20",
           "placeholderValue": "activeVersion"
         }
       ],
       "config": {
         "displayMode": "pills",
-        "searchConfig": {
-          "filters": {
-            "type": [
-              "QMS SOP"
-            ]
-          }
-        },
         "allowMultiple": false
       },
       "dataType": "ENTITY"

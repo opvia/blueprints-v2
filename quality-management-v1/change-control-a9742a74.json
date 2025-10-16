@@ -21,19 +21,12 @@
       "type": "REFERENCE",
       "value": [
         {
-          "id": "faa7a393-2076-439a-807a-1b34f59f4eed",
+          "id": "ecc1d9d0-cb97-4992-9dd4-e7b8dbf1de72",
           "placeholderValue": "activeVersion"
         }
       ],
       "config": {
         "displayMode": "pills",
-        "searchConfig": {
-          "filters": {
-            "type": [
-              "QMS SOP"
-            ]
-          }
-        },
         "allowMultiple": false
       },
       "dataType": "ENTITY"
@@ -43,7 +36,7 @@
       "type": "FORMULA",
       "value": null,
       "config": {
-        "formulaExpression": "lookup( lookup(__self, \"CREATED_FROM\") , 'Issue')"
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
       },
       "dataType": null
     },
@@ -1061,24 +1054,6 @@
           "entityPreview": {
             "isPreview": false
           }
-        },
-        {
-          "id": "edd1f40f-2b4f-4892-8836-0f2e1d981656",
-          "type": "task",
-          "children": [
-            {
-              "text": "Confirm Change Control Closure"
-            }
-          ]
-        },
-        {
-          "id": "6b4a2d8d-e2c2-4f10-82e8-f98859800100",
-          "type": "p",
-          "children": [
-            {
-              "text": ""
-            }
-          ]
         },
         {
           "id": "54d4db74-4501-4e76-877c-05a5e7c097a7",

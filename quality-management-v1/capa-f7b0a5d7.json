@@ -83,11 +83,11 @@
       "finishedFirst": {
         "statuses": [
           {
-            "text": "New Blueprint",
-            "intent": "primary"
+            "text": "Published",
+            "intent": "success"
           }
         ],
-        "defaultStatus": "New Blueprint"
+        "defaultStatus": "Published"
       },
       "editableSubsequent": {
         "statuses": [

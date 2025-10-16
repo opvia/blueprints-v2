@@ -103,7 +103,7 @@
           "indent": 2,
           "children": [
             {
-              "text": "Click the edit icon to chnage the view group name, icon and position in side panel, suggested name “QMS”"
+              "text": "Click the edit icon to change the view group name, icon and position in side panel, suggested name “QMS”"
             }
           ],
           "listStart": 2,
@@ -180,8 +180,9 @@
               "text": "Deviations, search for template:Deviation"
             }
           ],
+          "listStart": 2,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "3d0404ba-6487-41fa-990d-8f72ce235df6",
@@ -192,9 +193,9 @@
               "text": "NCR, search for template:Non-Conformance Report"
             }
           ],
-          "listStart": 2,
+          "listStart": 3,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "d4bf9494-dcbd-4f9b-a60f-4b5f079963f6",
@@ -205,9 +206,9 @@
               "text": "OOS, search for template:Out of Specification"
             }
           ],
-          "listStart": 3,
+          "listStart": 4,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "2d6bc83c-efbb-4426-9f37-bd5c4d489d59",
@@ -218,9 +219,9 @@
               "text": "Complaints, search for template:Complaint"
             }
           ],
-          "listStart": 4,
+          "listStart": 5,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "d9d883eb-46e6-4b54-b510-8fae9cc6c1fa",
@@ -231,9 +232,9 @@
               "text": "RCA, search for template:Root Cause Analysis"
             }
           ],
-          "listStart": 5,
+          "listStart": 6,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "60ab6fb1-c925-4ff8-b963-85139dfd36a2",
@@ -244,9 +245,9 @@
               "text": "CC, search for template:Change Control"
             }
           ],
-          "listStart": 6,
+          "listStart": 7,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "dab6f476-a936-41ff-be0c-bdfc1a57bbff",
@@ -257,9 +258,9 @@
               "text": "DCR, search for template:Document Change Request"
             }
           ],
-          "listStart": 7,
+          "listStart": 8,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "5fb54eca-f4ae-4e57-bf09-2b34454bcd64",
@@ -270,9 +271,9 @@
               "text": "CAPA, search for template:Corrective Action template:Preventive Action"
             }
           ],
-          "listStart": 8,
+          "listStart": 9,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "ac777b80-058c-4d1b-9df4-9afba020c00e",
@@ -283,9 +284,9 @@
               "text": "EC, search for template:Effectiveness Check"
             }
           ],
-          "listStart": 9,
+          "listStart": 10,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "772bac66-ea30-425b-b107-e54ff8b821fa",
@@ -296,9 +297,9 @@
               "text": "SOPs, search for template:QMS SOP"
             }
           ],
-          "listStart": 10,
+          "listStart": 11,
           "listStyleType": "decimal",
-          "listParentIndex": "2.2.2."
+          "listParentIndex": "2.2."
         },
         {
           "id": "f556cf10-80f5-4aa3-b195-5e86694a22e2",
@@ -306,7 +307,7 @@
           "indent": 1,
           "children": [
             {
-              "text": "QMS SOP Templates"
+              "text": "QMS SOPs"
             }
           ],
           "listStart": 3,
@@ -318,7 +319,7 @@
           "indent": 2,
           "children": [
             {
-              "text": "QMS SOP templates should all be completed to contain details specific to your company and its procedures."
+              "text": "QMS SOPs should all be completed to contain details specific to your company and its procedures."
             }
           ],
           "listStyleType": "decimal",
@@ -445,6 +446,21 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "7d3ab0e0-495b-4d53-83a4-02963cef5707",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "ee98e21e-7466-4156-8e1c-7a4889b770f9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -461,7 +477,7 @@
                       "type": "p",
                       "children": [
                         {
-                          "text": "QMS SOP"
+                          "text": "Document"
                         }
                       ]
                     }
@@ -481,7 +497,31 @@
                       ]
                     },
                     {
-                      "id": "8e198268-fd76-46ca-8657-48877633271f",
+                      "id": "9157e0ce-9c35-4f71-87d7-97593b158b8f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "QMS SOP"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "51625ae3-0d1f-41cc-bf74-57d8a928f7f3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7a6075e5-472a-4ddd-95e6-05adc3d7a512",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "b7d58a2d-0536-4af3-84c7-21db55c6cbc0",
                       "type": "p",
                       "children": [
                         {
@@ -490,7 +530,7 @@
                       ]
                     },
                     {
-                      "id": "1d15e2db-f905-46f5-8ac7-6f91a7956151",
+                      "id": "64e90f31-3b6a-43d5-9d0e-a755af4678ab",
                       "type": "p",
                       "children": [
                         {
@@ -499,7 +539,7 @@
                       ]
                     },
                     {
-                      "id": "fe7379d8-88da-4a8d-823f-a005480f4e9f",
+                      "id": "fc886957-241f-448d-96f9-0933a1114b59",
                       "type": "p",
                       "children": [
                         {
@@ -508,7 +548,7 @@
                       ]
                     },
                     {
-                      "id": "146c32ad-8f26-4448-8e1d-9f75ff8c80df",
+                      "id": "6de35a41-688a-4d49-8975-d588c5a888b4",
                       "type": "p",
                       "children": [
                         {
@@ -517,7 +557,7 @@
                       ]
                     },
                     {
-                      "id": "b05c8630-4d68-4016-8a03-ddc246944c9d",
+                      "id": "47a23c5c-6d3a-44bb-9e34-eaeeb0d28424",
                       "type": "p",
                       "children": [
                         {
@@ -526,7 +566,7 @@
                       ]
                     },
                     {
-                      "id": "16368029-a635-45bd-ab84-661b4776d39c",
+                      "id": "ecb5c215-f8e6-4956-b1fc-53e145218b76",
                       "type": "p",
                       "children": [
                         {
@@ -535,7 +575,7 @@
                       ]
                     },
                     {
-                      "id": "7790de2f-74f6-4542-ba97-695344d36800",
+                      "id": "bb891ed0-8a92-4657-927b-d71ae4328abc",
                       "type": "p",
                       "children": [
                         {
@@ -544,7 +584,7 @@
                       ]
                     },
                     {
-                      "id": "f074cc0c-1851-457b-a673-146d0b9b5eb2",
+                      "id": "75a5a50a-f229-45c3-ab07-6b30d7c95114",
                       "type": "p",
                       "children": [
                         {
@@ -553,7 +593,7 @@
                       ]
                     },
                     {
-                      "id": "9157e0ce-9c35-4f71-87d7-97593b158b8f",
+                      "id": "68f228bc-7f30-48fd-8243-ce5195c71641",
                       "type": "p",
                       "children": [
                         {
@@ -594,6 +634,21 @@
                       "children": [
                         {
                           "text": "Deviation"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fb683faa-cc39-4aba-8555-02e4ea950ca9",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "3239dd37-5b4d-4dd6-b353-3dfe8d4b2ebb",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
                         }
                       ]
                     }
@@ -679,6 +734,21 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "0709c9d2-099f-4c5d-bcfd-dcb0c4789909",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b1072642-8040-4ca8-8a24-ce1ab94d1baa",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -711,6 +781,21 @@
                       "children": [
                         {
                           "text": "Non-Conformance Report"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6085f972-c33c-4ab9-bace-b5bcdb45fee8",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "39f41d52-6827-4252-b9c0-15c50c05df40",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
                         }
                       ]
                     }
@@ -751,6 +836,21 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "e0df3b01-4776-41f2-9a80-046db4881a5b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "11b7bc9a-461b-47c3-a5dd-013fcceed5d3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -783,6 +883,21 @@
                       "children": [
                         {
                           "text": "Root Cause Analysis"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "51115fe6-78e6-4f3e-a526-695b885c7f1a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "eef9cb91-66a2-43e4-9eab-d29c3f10b702",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
                         }
                       ]
                     }
@@ -823,6 +938,21 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "ad354169-f32b-4956-8cf9-9b82755b4f68",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6aeb204f-5edd-4fbc-80cf-b39c1981ccc8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -859,6 +989,21 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "id": "d05431f6-2808-4886-88f1-e02e350cc2e1",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "86a45dd0-7b8a-4dc6-82c9-903dcd3370fe",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -886,20 +1031,26 @@
                   "type": "td",
                   "children": [
                     {
-                      "id": "9bf85c9f-554a-4cad-b8c3-884bad351c41",
-                      "type": "p",
-                      "children": [
-                        {
-                          "text": "Corrective Action"
-                        }
-                      ]
-                    },
-                    {
                       "id": "c87b8149-82c3-4179-8548-2aef8d946993",
                       "type": "p",
                       "children": [
                         {
-                          "text": "Preventive Action"
+                          "text": "CAPA"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6bbbcfb7-9c00-406a-bdb3-d6d1e75d2c45",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "043086d5-2d04-496b-94e7-1541ec33c835",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
                         }
                       ]
                     }
@@ -936,6 +1087,21 @@
                       "children": [
                         {
                           "text": "Effectiveness Check"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bae001d0-197b-4991-9a61-cc4c052db24b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b0d2c00e-fbdb-42f9-8e82-f7cd2be5a772",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
                         }
                       ]
                     }

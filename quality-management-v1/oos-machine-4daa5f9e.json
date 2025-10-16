@@ -19,11 +19,11 @@
     "OOS": {
       "id": "f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6",
       "type": "FORMULA",
-      "value": "null",
+      "value": null,
       "config": {
-        "formulaExpression": "string( lookup(__self, \"CREATED_FROM\"))"
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
       },
-      "dataType": "STRING"
+      "dataType": null
     },
     "Attach supporting documents": {
       "id": "6f825b26-acdf-4852-a373-5d817c9d3047",
@@ -226,6 +226,6 @@
   },
   "instanceConfig": {
     "strictMode": false,
-    "computedTitle": "@f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6 - Machine"
+    "computedTitle": "@CREATED_FROM - Machine"
   }
 }

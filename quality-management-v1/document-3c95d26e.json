@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
   "id": "3c95d26e-0a7f-4545-9ba6-f3b53548c50d",
-  "title": "QMS SOP",
+  "title": "Document",
   "status": "EDITABLE",
   "version": null,
   "previousVersion": null,
@@ -45,11 +45,11 @@
       "finishedFirst": {
         "statuses": [
           {
-            "text": "New Blueprint",
-            "intent": "primary"
+            "text": "Published",
+            "intent": "success"
           }
         ],
-        "defaultStatus": "New Blueprint"
+        "defaultStatus": "Published"
       },
       "editableSubsequent": {
         "statuses": [

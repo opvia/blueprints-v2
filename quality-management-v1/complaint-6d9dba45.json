@@ -21,24 +21,17 @@
       "type": "REFERENCE",
       "value": [
         {
-          "id": "c817a7ee-e0da-4f83-9494-3d1df417c41e",
+          "id": "e6ab2f9c-f017-4f88-8ae3-89388efb500e",
           "placeholderValue": "activeVersion"
         }
       ],
       "config": {
         "displayMode": "pills",
-        "searchConfig": {
-          "filters": {
-            "type": [
-              "QMS SOP"
-            ]
-          }
-        },
         "allowMultiple": false
       },
       "dataType": "ENTITY"
     },
-    "Source": {
+    "Customer": {
       "id": "bda5c002-7771-4501-abf3-b31316e49f3d",
       "type": "REFERENCE",
       "value": null,
@@ -56,6 +49,15 @@
         "selectOptions": []
       },
       "dataType": "SELECT"
+    },
+    "Attachments": {
+      "id": "37903474-0719-4b40-bc92-94bcf12e2323",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
     },
     "Criticality": {
       "id": "84e7fce8-cb47-4506-aafd-8c2a58cd0f65",
@@ -77,15 +79,6 @@
       "value": null,
       "config": {},
       "dataType": "STRING"
-    },
-    "Attachements": {
-      "id": "37903474-0719-4b40-bc92-94bcf12e2323",
-      "type": "REFERENCE",
-      "value": null,
-      "config": {
-        "allowMultiple": true
-      },
-      "dataType": "ENTITY"
     },
     "Justification": {
       "id": "42dd01fe-5f00-4150-803f-f58934198c7d",
