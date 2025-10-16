@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "5c35d26b-ab78-4d37-975a-bc6a78713a87",
+  "title": "Material Specification",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Name": {
+      "id": "8c849e81-3039-43e9-8b24-8241d593a4c1",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Data Sheet": {
+      "id": "5bb095a0-b379-4229-aca5-1180e6d0eff9",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Specification ID": {
+      "id": "0fb54953-3ac2-4e44-afc1-5f8398429580",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Approved Suppliers": {
+      "id": "296118dc-8a03-47b9-abb9-2bc33eacb299",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "afab5ddb-0911-4db4-a52f-2075576f82c2"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b792c918-0afd-4f48-97a7-5d493982d955",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fa776c82-8060-47a8-ba3b-0a252eddc1cd",
+          "type": "field",
+          "fieldId": "0fb54953-3ac2-4e44-afc1-5f8398429580",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9722f9ff-54ed-47ad-8e22-eb71a377368f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a8427d11-2cd7-4ac1-a394-7c01a35687ab",
+          "type": "field",
+          "fieldId": "8c849e81-3039-43e9-8b24-8241d593a4c1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "051b1d9f-4c16-4aac-9964-f808f5eaa4a0",
+          "type": "field",
+          "fieldId": "296118dc-8a03-47b9-abb9-2bc33eacb299",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d7409673-a115-4323-b8d9-74b01c2a0637",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b5390d97-3bb0-4bb7-9cb4-6b2ff8177b0d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "705dcbfb-2e18-4c54-90e6-8db760f02301",
+          "type": "field",
+          "fieldId": "5bb095a0-b379-4229-aca5-1180e6d0eff9",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "780b9486-450a-4d17-ac91-a42aadbd96f0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@0fb54953-3ac2-4e44-afc1-5f8398429580  - @8c849e81-3039-43e9-8b24-8241d593a4c1"
+  }
+}

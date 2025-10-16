@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "52ef63f7-8c5b-4059-856e-a83e32c63e4b",
+  "title": "Inventory Addition of Expected Spec template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Quantity": {
+      "id": "bc856923-5c57-4447-b365-5ca215f18100",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Component Title": {
+      "id": "96b30671-f795-4655-ad00-5f6078ac6ec3",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Component Reference\") , 'TITLE')"
+      },
+      "dataType": null
+    },
+    "Component Reference": {
+      "id": "6eaf29e6-b559-4b00-8b3e-3051d7b4cc5e",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Components"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  },
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Specification Reference": {
+      "id": "d3f9c81e-30a0-4604-9e65-93a3c7324970",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Material/Component Specification"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  },
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "ed5079fc-4cfc-440a-bb8e-93320ad79211"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "6f73b9bf-41dc-4d1a-b90a-7f65cf4a9138",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6f746452-1e7f-428e-befc-2a56f3ef615b",
+          "type": "field",
+          "fieldId": "d3f9c81e-30a0-4604-9e65-93a3c7324970",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "0ef8725b-b157-4ab9-8754-b0d28ff3a290",
+          "type": "field",
+          "fieldId": "6eaf29e6-b559-4b00-8b3e-3051d7b4cc5e",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e063326d-d175-4e1f-b7ac-a51f792300e4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b4487b96-d790-4bf6-99d1-0711ff40bdda",
+          "type": "field",
+          "fieldId": "bc856923-5c57-4447-b365-5ca215f18100",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4b846563-69fe-45f0-826d-7f203107cbe8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Inventory Addition - Qty @bc856923-5c57-4447-b365-5ca215f18100 - @96b30671-f795-4655-ad00-5f6078ac6ec3"
+  }
+}

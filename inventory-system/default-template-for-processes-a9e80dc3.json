@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a9e80dc3-2274-4b4d-bfb1-82cf0d436316",
+  "title": "Default template for Processes",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Production List": {
+      "id": "79fda7b9-e952-459e-b800-ded4954e21ed",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "88ea85fe-e65c-4616-8ede-af9a95afd44d",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Bill of Materials": {
+      "id": "2c9cb396-f4dd-406e-bb2f-45636e454392",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "da2e8dda-6886-47c1-87c4-07c42f58c123",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Create and add components": {
+      "id": "b9f98bfc-c690-49f3-b1a4-4479c625c454",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "360f1269-1835-4334-9822-de3cca85fb2c",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create and add components"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Output Inventory Additions": {
+      "id": "f7d8ad27-1b2a-4ccd-9f02-2314b6897aba",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "table",
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "805a5f5b-6bbd-424a-a1d3-307ded6b8c7c"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "d64534a1-caef-4c44-a0d8-11a6c492aa03",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "eb6da8fb-a69f-4b4a-a3f2-5a0ca3e7f83e",
+          "type": "field",
+          "fieldId": "2c9cb396-f4dd-406e-bb2f-45636e454392",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Specification Reference",
+                "name": "Specification Reference",
+                "isHidden": false
+              },
+              {
+                "id": "Component Reference",
+                "name": "Component Reference",
+                "isHidden": false
+              },
+              {
+                "id": "Required Quantity",
+                "name": "Required Quantity",
+                "isHidden": false
+              },
+              {
+                "id": "Quantity",
+                "name": "Quantity",
+                "isHidden": false
+              },
+              {
+                "id": "Component Title",
+                "name": "Component Title",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "b1d0ec89-2ec8-4970-b531-f83370f71954",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "667f6307-8ac8-4cdf-9d1f-ba1312098673",
+          "type": "field",
+          "fieldId": "79fda7b9-e952-459e-b800-ded4954e21ed",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Specification Reference",
+                "name": "Specification Reference",
+                "isHidden": false
+              },
+              {
+                "id": "Component Reference",
+                "name": "Component Reference",
+                "isHidden": false
+              },
+              {
+                "id": "Batch ID",
+                "name": "Batch ID",
+                "isHidden": false
+              },
+              {
+                "id": "Tracking Category",
+                "name": "Tracking Category",
+                "isHidden": false
+              },
+              {
+                "id": "Quantity",
+                "name": "Quantity",
+                "isHidden": false
+              },
+              {
+                "id": "Component Title",
+                "name": "Component Title",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "69670e7e-9cb2-41ec-a6fc-51b7f48a2c85",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3a2bec71-bb24-4018-95b7-612cc97f59b5",
+          "type": "field",
+          "fieldId": "b9f98bfc-c690-49f3-b1a4-4479c625c454",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2e13b87f-746f-4ff5-a715-27d1a498cdf5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0c335d6d-a643-45a9-bae8-c93b97cb7c05",
+          "type": "field",
+          "fieldId": "f7d8ad27-1b2a-4ccd-9f02-2314b6897aba",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "91bf6080-5950-44c0-9692-1621a1614454",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

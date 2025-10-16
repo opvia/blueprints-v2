@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0ed4f5b8-1ded-418a-895a-f7b3485ad5be",
+  "title": "Components",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Component ID": {
+      "id": "a143d8a4-d306-49cc-94be-ee522f534bd1",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Specification": {
+      "id": "96d81dbe-f711-4698-94b0-f50d8ced510b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Tracking Category": {
+      "id": "7ca2a9d8-6604-4310-b319-720c750085d7",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": []
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "cube",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "bac260ff-7db9-4460-94a2-c3a2c1e5dc4f",
+      "placeholderValue": "activeVersion"
+    },
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "In Stock",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "In Stock"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "In Stock",
+            "intent": "success"
+          },
+          {
+            "text": "Consumed",
+            "intent": "danger"
+          }
+        ],
+        "defaultStatus": "In Stock"
+      }
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": true
+    },
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": true
+  },
+  "templateConfig": {
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      }
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "da2e8dda-6886-47c1-87c4-07c42f58c123",
+  "title": "Inventory Usage template with Required Quantity",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Quantity": {
+      "id": "caf83c58-8eb2-4eba-9eee-93f47526e10d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Component Title": {
+      "id": "27a84d77-d6dc-49a5-83fd-c2e3f1da7cf3",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Component Reference\") , 'TITLE')"
+      },
+      "dataType": null
+    },
+    "Required Quantity": {
+      "id": "195ae932-a12e-413f-8ede-0c5517e724cd",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Component Reference": {
+      "id": "585dd64c-08ed-4273-8800-0942aba35b03",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Components"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Specification Reference": {
+      "id": "603fec0a-49c9-4fd6-9287-2bbfd3d58371",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Material/Component Specification"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "e6773c5f-e0b2-4961-a24b-6148ff9352fc"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "5987a34a-b920-4427-97b1-e83b780b551e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4e6ace09-54e5-4793-8e78-90ae6996053b",
+          "type": "field",
+          "fieldId": "603fec0a-49c9-4fd6-9287-2bbfd3d58371",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "d78f34b1-8d8f-48d3-934d-a1bd2abbdd19",
+          "type": "field",
+          "fieldId": "585dd64c-08ed-4273-8800-0942aba35b03",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e143a583-6d59-4b22-a7bf-29b90088c86a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "32c30ab0-cb84-4be2-a6da-56bc073dd6fb",
+          "type": "field",
+          "fieldId": "195ae932-a12e-413f-8ede-0c5517e724cd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0f16f517-89b2-4478-bc25-3d74e2f4db8e",
+          "type": "field",
+          "fieldId": "caf83c58-8eb2-4eba-9eee-93f47526e10d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "90dfff35-4e21-47d2-9154-b273dbc67967",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@27a84d77-d6dc-49a5-83fd-c2e3f1da7cf3 - Qty @caf83c58-8eb2-4eba-9eee-93f47526e10d Usage"
+  }
+}

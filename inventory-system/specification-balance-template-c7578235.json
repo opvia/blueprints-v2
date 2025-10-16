@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c7578235-5bee-49a1-adb4-622b60e762d4",
+  "title": "Specification Balance template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Quantity Used": {
+      "id": "46b8a1f7-583b-4227-9885-e5639049527c",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Inventory Usages": {
+      "id": "6d33e145-d2fc-4283-bb40-0c0f0121000d",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Quantity Created": {
+      "id": "a1d977a5-fdd7-454a-92a4-ea45a4de9bc2",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Quantity In Stock": {
+      "id": "500d1479-3abb-4125-8da9-7fdc56fa3a94",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Calculate Inventory": {
+      "id": "001e9ad0-2fc0-4686-a8c1-211c37215d05",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "0ec9bebc-8e42-4900-aa20-66ba5c8de9be",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Recalculate Inventory"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Inventory Additions": {
+      "id": "20eeee5a-a3b4-4d4a-90ab-390d8e1e901c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Spec Reference Title": {
+      "id": "98e07ee3-6dff-4d87-96df-0de01379a3bc",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Specification Reference\") , 'TITLE')"
+      },
+      "dataType": null
+    },
+    "Specification Reference": {
+      "id": "762805fd-3aaf-44f5-8b92-35348b721889",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Component Balance References": {
+      "id": "d652fd94-3e17-4ee0-9e8b-897c84a7a069",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "4e5fa71e-df75-4967-a591-765477f53c7e"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "578ea839-db93-4307-94c3-12d25c94b6b0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3b03cb6c-8d39-4b5e-82a1-76731e4d5db8",
+          "type": "field",
+          "fieldId": "762805fd-3aaf-44f5-8b92-35348b721889",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "45f79877-fcb9-45b6-9185-8e0d0855e34d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e41f1758-2030-44ec-bba0-bfe407b70fcf",
+          "type": "field",
+          "fieldId": "d652fd94-3e17-4ee0-9e8b-897c84a7a069",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "09fd3bf0-1325-4ad6-a6bf-790f653d9763",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3dd7d4ed-4284-4cbd-b0ea-db4d07440ace",
+          "type": "field",
+          "fieldId": "20eeee5a-a3b4-4d4a-90ab-390d8e1e901c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "2491ff62-1f61-416c-9d10-12baf5f16ecd",
+          "type": "field",
+          "fieldId": "a1d977a5-fdd7-454a-92a4-ea45a4de9bc2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4c5cdce4-8d73-49b2-bc22-6033df1c12f4",
+          "type": "field",
+          "fieldId": "6d33e145-d2fc-4283-bb40-0c0f0121000d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f5b5e064-b208-4a8b-a44a-38a5ab5183f4",
+          "type": "field",
+          "fieldId": "46b8a1f7-583b-4227-9885-e5639049527c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "da435146-22e8-40ec-8f5f-57c246bc1b33",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "913f077d-4f0a-4007-9f5e-036c3a1c5373",
+          "type": "field",
+          "fieldId": "500d1479-3abb-4125-8da9-7fdc56fa3a94",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e3c36edc-b876-4ca0-ac23-2aa3ef4053da",
+          "type": "field",
+          "fieldId": "001e9ad0-2fc0-4686-a8c1-211c37215d05",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "72057059-8eff-4dc4-b5f3-4821b2979f51",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Specification Balance - @98e07ee3-6dff-4d87-96df-0de01379a3bc"
+  }
+}

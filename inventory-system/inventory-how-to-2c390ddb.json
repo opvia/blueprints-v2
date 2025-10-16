@@ -1,0 +1,854 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2c390ddb-e70f-4c30-92f9-9b66c1ad49f8",
+  "title": "Inventory How To",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-4444-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-4444-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "e1dfa117-0d2d-4349-b39b-e4b0bdc98fb9",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Quantity Used": {
+      "id": "8417891a-d7cf-4e0f-904c-f9d2cc1dae68",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Inventory Usages": {
+      "id": "b49361b1-1e8d-4d1b-9810-95508eccb0c8",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Quantity In Stock": {
+      "id": "0bed78d7-90d1-47af-9274-70d4c2df91e4",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Calculate Inventory": {
+      "id": "7b341025-ec8a-40e0-a37d-c172636f1aca",
+      "type": "SCRIPT",
+      "value": null,
+      "config": {},
+      "dataType": "SCRIPT"
+    },
+    "Inventory Additions": {
+      "id": "03412d80-395e-42c7-ae2b-c80e35975a3b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Specification Reference": {
+      "id": "f84e90d1-285d-433a-90c0-2c1e050e04a6",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4e5fa71e-df75-4967-a591-765477f53c7e"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8c6f0028-06d1-4a88-9f9d-decfb6733bb1",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Inventory System Guide"
+            }
+          ]
+        },
+        {
+          "id": "21166d6e-3b62-4e14-b472-88a1fa863530",
+          "type": "p",
+          "children": [
+            {
+              "text": "The purpose of this guide is to understand how the inventory system is set up within Seal, and enable you to integrate it with your current inventory processes. This will run through the key building blocks of the system with guidance as to their implementation within Seal."
+            }
+          ]
+        },
+        {
+          "id": "6009e4ab-8531-4c82-af22-61b157958acd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9183ccea-0b79-488b-b71e-d681a18808fb",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Key Blocks in Seal"
+            }
+          ]
+        },
+        {
+          "id": "d1e6b7ea-90f1-479f-bd78-145c0e79500a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "19dda95e-89e7-4966-ae5d-1977987542f1",
+          "type": "img",
+          "width": 894,
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "uploadId": "fe156912-8773-4c64-86a6-55bcb0c92970",
+          "imageCaption": "List of templates that form the blueprint. Blue diamonds represent the types in each section or which type the template comes under. Green ovals are scripts contained within the blueprint."
+        },
+        {
+          "id": "b79e104a-dd9b-4171-b523-bc9693da4d50",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b9d1e590-a349-4f34-9453-dbed4b93b63e",
+          "type": "p",
+          "children": [
+            {
+              "text": "Material/Component Specification Type",
+              "color": "rgb(0, 0, 0)",
+              "underline": true,
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "3756a2b6-ef1c-40d6-8746-2af6cc63eeff",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This tells you how a component or material is made, and/or its properties."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "98647014-4124-4a2f-8d04-821d91edbd25",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This is version controlled and can have any fields to call out data sheets, accepted suppliers, chemical composition, etc."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "27749128-9ba2-4d32-8bbd-2867e6dd428d",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "These are the core entities for the inventory system as they represent SKU's."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "da259d5c-16d4-496c-a355-b645221c3070",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "There is no distinction between versions of the specification, if a large change to a specification is made and inventory of pre- and post-change wants to be tracked, a new ‘Specification’ entity should be created."
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "f80b75a4-0867-4b32-afad-06b758328bed",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a5864ae3-9094-44d2-bdbb-7528f1bd54db",
+          "type": "p",
+          "children": [
+            {
+              "text": "Component Type",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "81c212a9-7f90-47da-9cf0-2c7aa3110440",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "These represent individual items that will pass through your processes - these may be serialised (individual items used individually) or batch/lot tracked (a group of items that are used individually). This is called the ‘Tracking Category’ in the blueprint."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e135d139-a499-4fcb-9ec5-1ea0d0404eb1",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Example: A bottle of reagent tracked as a batch vs individual pipettes tracked as serials."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "3e2fc63b-d0a9-4ea5-af0d-90e85d341aed",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9f362053-02fa-4539-ad14-050a8ca028f5",
+          "type": "p",
+          "children": [
+            {
+              "text": "Inventory Usage Type",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "5fcf55df-2c77-4b7b-bf3d-77d0f9810e12",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "These are a record of which component has been used, when, and how many/much of it was used."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "228c59cd-f8bd-4a4e-bc0f-adbcf29a042d",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "As the quantity can be defined, partial usage of batches is possible."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "9590782d-dcd7-48d3-b45e-40c988f7bdbc",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "To be used anywhere a tracked component is consumed by a process, by scrapping, or any other method."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "fde4a913-799c-4722-b88b-0b1e26327c62",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "A process will contain a Bill of Materials (BoM) table that uses a template of the ‘Inventory Usage’ type. When published this will be added to the inventory system."
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "e2d14652-c385-4383-a8e8-e0fddc7fef46",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9a32c487-7b59-4600-879b-0c4d310cc9b2",
+          "type": "p",
+          "children": [
+            {
+              "text": "Inventory Addition Type",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "e800681f-24b1-48e6-afa4-cf65e9ec6ec2",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "These are a record of the addition of components: when, and how many/much are created."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "f5cbcc2e-26ac-4e28-b1c9-f336452af400",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "These will be created by scripts within a Receiving or Process template, or by any other method which may result in inventory being added to the system."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "8d0bf0b8-d3bb-4f67-933d-904d66e293d9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3a5ad9ed-9766-4f96-b96a-e17a5ae8c8ce",
+          "type": "p",
+          "children": [
+            {
+              "text": "Inventory Creation Helper Type",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "b9339f62-65ae-419b-af6d-29d7666ceade",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This is an intermediary entity that allows information to be processes by the Inventory Addition creation scripts such as Tracking Category and quantity."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "cb98c929-fd54-4039-8f0b-c740a3720854",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "For serialised items, the helper ensures one addition and component entity per unique unit; for batch items, single component and addition entities represents the whole batch. Without this, stock quantities  of each component could be inconsistent."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "7addab80-e61c-44a3-9636-93840fbb002b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "58c8cb91-046e-42fd-a706-0d3dd041b1ac",
+          "type": "p",
+          "children": [
+            {
+              "text": "Component Balance Entities (Inventory Type)",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "c2c6ba88-1368-4427-8cbd-33ff873b085d",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This entity acts to roll up all of the Usages and Additions associated with a single component entity and display the total created, total used, and therefore the remaining quantity in stock."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "bf39e1de-0665-4223-ad0b-a1f15b02154b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This is achieved using a Component Balance Script that searches for all relevant usages and creations, and adds them to the balance entity before calculating stock quantities."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "34ca41fc-3612-4efd-8393-09a779a3b528",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "These scripts can be manually triggered at any time, or are triggered frequently by the ‘Specification Balance Script’ to maintain up to date information."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "479519d6-184c-4011-b756-76c04c89c9bb",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "These components will stay in a Draft state, with the status tag ‘Live’ as the scripts will constantly be updating them. If desired, they can all be added to the same change set for cleanliness in the ‘Change Set’ tab."
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "47daf844-4ec0-4b3c-9362-0507b8a2997f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3abb9ba5-7f68-45ab-9c80-1de4dea77bac",
+          "type": "p",
+          "children": [
+            {
+              "text": "Specification Balance Entities (Inventory Type)",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "5b5c7b7e-c128-4ac9-8fdc-ff5ff7f28d17",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This entity acts to roll up all of the Usages and Additions associated with all of the component entities that reference a specific specification and display the total created, total used, and therefore the remaining quantity in stock."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "de7595ec-4d2f-4389-bddf-da9465a1ce6b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This is achieved using a Specification Balance Script that searches for all relevant usages and creations, and adds them to the balance entity before calculating stock quantities. This script also runs the Component Balance Scripts within each Component Balance to ensure they are kept up to date."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "0237894f-a191-4c82-bec8-4d5ea11e3788",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "A script can also be set up on a 1 hour or 5 minute trigger to update all of the Specification Balances continuously."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "c33007e7-a088-46b8-98e2-66826d6dd84c",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "These components will stay in a Draft state, with the status tag ‘Live’ as the scripts will constantly be updating them. If desired, they can all be added to the same change set for cleanliness in the ‘Change Set’ tab."
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4f9d87f8-b258-4f28-b76d-881158d9f82d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e4f4490f-3f1b-40f2-8972-3345237d6364",
+          "type": "p",
+          "children": [
+            {
+              "text": "Process Example Template",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "32439282-c036-48bb-9ab2-f32780bc71dc",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This templates acts as a framework for integrating a process into the inventory system."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "d954d282-36ba-4f96-a865-37f5588ec2b9",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "All of the fields present are required for the script to work and correctly process usages and additions."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "b5407074-cf8e-4fbb-9e40-eb2766a42d00",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e6a8c54a-92d7-471a-a93c-d67583c71eaa",
+          "type": "p",
+          "children": [
+            {
+              "text": "Goods Receiving Example Template",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "5488a182-851f-4726-aa87-aabf4044e3d2",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "This template contains the required fields under the ‘Received Goods’ section, along with an example of some of the other information you may want to capture on the receiving form."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "03442bbc-6a4a-45ed-9d01-137a7e514678",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ebae6d1e-fe86-4470-840c-c7d0c43bd85f",
+          "type": "h2",
+          "children": [
+            {
+              "text": "System Design"
+            }
+          ]
+        },
+        {
+          "id": "08b2f7a1-b612-4b08-9b4a-b14d72ebf328",
+          "type": "img",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "uploadId": "431ad000-9662-44ac-8a68-9bf11b447cde",
+          "imageCaption": "Diagram showing the flow of information through the manufacturing process and how this links to the inventory system."
+        },
+        {
+          "id": "26f42c12-9e9f-4860-ad3b-004083373f55",
+          "type": "p",
+          "width": 784,
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cbd0606b-8e7f-4f54-84ec-e358922d5bde",
+          "type": "h3",
+          "width": 784,
+          "children": [
+            {
+              "text": "System Flow"
+            }
+          ]
+        },
+        {
+          "id": "d59ac499-1ee1-4ca1-b594-8ea97b84ea96",
+          "type": "p",
+          "children": [
+            {
+              "text": "Manufacturing Process",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "11c694f7-65c7-47fc-877b-1eb520baa78f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "When goods are received, a ‘Goods Receiving Note’ instance is filled out - this records what specification of goods are comign in, their quantity, tracking category, Batch ID etc."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "ff1f20a0-a001-490f-9802-902ae546be47",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The 'Receipt Script' then creates the relevant ‘Component’ entity/entities, a ‘Component Balance’ for each of these ‘Components’, and an ‘Inventory Addition’ for each component."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "c0cd1c15-e438-43bb-a7b0-50d79ddf8f1f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The ‘Component’ entities can then be selected in Manufacturing processes in the ‘Bill of Materials’ table. This is simply a submission table utilising a template of the type ‘Inventory Usages’"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "3c8b4e2f-651d-47c4-bccb-6616e78db0a5",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The ‘Process Script’ can be run on any processes that use materials and create new components. Similarly to the ‘Receipt Script’ this will create new Components, Component Balances, and Inventory Additions."
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "ca191864-21ec-4bd8-9a47-f6286dfdf0e8",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "These new components can be used in further processes until completion."
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "550b0283-07cf-4e20-8bd2-9b02215de1b0",
+          "type": "p",
+          "children": [
+            {
+              "text": "Inventory System",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "b703ea3b-6b18-4718-a31b-f706616d468a",
+          "type": "p",
+          "children": [
+            {
+              "text": "In parallel to this the ‘Specification Balance’ and ‘Component Balance’ entities keep track of their associated stock"
+            }
+          ]
+        },
+        {
+          "id": "9e1ea90c-149d-4d4e-9682-5295537d7f7b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The ‘Component Balance’ entity contains a script that searches the Inventory system for all Inventory Additions and Usages for the referenced component and sums them to give a stock quantity"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "523bbe13-71fc-4c85-a61f-877afcf3f82e",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "The ‘Specification Balance’ does the same thing, but collates all of the information for all ‘Components' of the referenced specification, giving a total stock level across serials, or batches."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "c9260514-8777-417b-9724-bc98ec626e52",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2ae940de-bc92-4004-8ada-177433931a90",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Further Extensions"
+            }
+          ]
+        },
+        {
+          "id": "8d42286e-cc1b-43bc-829f-9ebb7c8ea4f1",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Orders",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "737d78bd-0303-4105-81dd-6d5f922fb13e",
+          "type": "p",
+          "children": [
+            {
+              "text": "The addition of another type within Seal can deal with orders"
+            }
+          ]
+        },
+        {
+          "id": "4ea1dbd8-ee04-4880-b4c0-40832b7ae940",
+          "type": "p",
+          "children": [
+            {
+              "text": "A ‘Purchase Request’ would create an ‘Open Order’. This can then be received against, allowint the ‘Specification Balance’ to show On Order quantity as well as what is received (Inventory Additions) and what is used."
+            }
+          ]
+        },
+        {
+          "id": "3f91e457-665e-48a0-9c96-ac5c2b3ec10b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b5f631ef-de91-4fa0-b8c7-5880ee11ffb7",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Adjustment Functionality",
+              "underline": true
+            }
+          ]
+        },
+        {
+          "id": "4c9b6d1a-6284-46d2-81f8-8b24a573d059",
+          "type": "p",
+          "children": [
+            {
+              "text": "Stock adjustments can be easily made by simply using a template of the type ‘Inventory Addition’ or ‘Inventory Usage’. This allows for user configuration and addition of fields and information that may be useful."
+            }
+          ]
+        },
+        {
+          "id": "00c576a5-519d-4629-86a9-f5ceede68d4c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
