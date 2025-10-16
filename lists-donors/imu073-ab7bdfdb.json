@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ab7bdfdb-1706-4ec3-a481-922acd759be1",
+  "title": "IMU073",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "eba52cf3-86a2-47d6-bd1e-efd8cb333779",
+      "version": "3"
+    },
+    "submissionField": {
+      "fieldId": "2a1662ea-46c4-4189-8695-c2e455309b76",
+      "fieldName": "Submission",
+      "parentEntityId": "4085b49b-ab76-4330-90fb-a7a069a09574"
+    }
+  },
+  "fields": {
+    "Donor ID": {
+      "id": "495e8687-05f1-4a79-847e-3b9069d5a966",
+      "type": "STRING",
+      "value": "IMU073",
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "computedTitle": "@495e8687-05f1-4a79-847e-3b9069d5a966",
+  "type": {
+    "ref": {
+      "id": "f0a872b2-3244-4af3-b899-b784ecbc43f1"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "a92e73d1-f0b7-4c8e-b246-c057a9460507",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "556ec808-fb3a-4520-9f93-21259b0ca219",
+          "type": "field",
+          "fieldId": "495e8687-05f1-4a79-847e-3b9069d5a966",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6f8af7ca-0405-4854-b0fe-df2dcb55dc7e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

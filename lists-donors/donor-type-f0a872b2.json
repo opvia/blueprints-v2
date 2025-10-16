@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f0a872b2-3244-4af3-b899-b784ecbc43f1",
+  "title": "Donor Type",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "array",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "eba52cf3-86a2-47d6-bd1e-efd8cb333779",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": true,
+    "createFromTemplate": null,
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": false
+  }
+}
