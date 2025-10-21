@@ -1,0 +1,821 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a3bbe51a-592a-41d9-8a8e-873daf402c47",
+  "title": "Asset",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Location": {
+      "id": "49496db5-6aee-4bb1-b607-bdfc234bfdf2",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "a24643fe-00d7-4512-a432-5d0bda046806"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Tank/Freezer/Fridges",
+              "config": "Tank/Freezer/Fridges"
+            },
+            {
+              "name": "Boxes",
+              "config": "Boxes"
+            },
+            {
+              "name": "Inside",
+              "config": "Inside"
+            },
+            {
+              "name": "Location",
+              "config": "Location"
+            },
+            {
+              "name": "Sub locations",
+              "config": "Sub locations"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Supplier": {
+      "id": "3328b877-19d5-4576-9484-8bc7a81fcff9",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "5850a6ee-2ba3-4ce5-af6b-14ba872b6f48"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Type",
+              "config": "Type"
+            },
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Risk Level",
+              "config": "Risk Level"
+            },
+            {
+              "name": "Approved By",
+              "config": "Approved By"
+            },
+            {
+              "name": "Website URL",
+              "config": "Website URL"
+            },
+            {
+              "name": "Impact Level",
+              "config": "Impact Level"
+            },
+            {
+              "name": "Submission 1",
+              "config": "Submission 1"
+            },
+            {
+              "name": "Vendor Status",
+              "config": "Vendor Status"
+            },
+            {
+              "name": "Payment Method",
+              "config": "Payment Method"
+            },
+            {
+              "name": "Purpose of Use",
+              "config": "Purpose of Use"
+            },
+            {
+              "name": "Account No/Info",
+              "config": "Account No/Info"
+            },
+            {
+              "name": "Vendor Email(s)",
+              "config": "Vendor Email(s)"
+            },
+            {
+              "name": "Date of Next Audit",
+              "config": "Date of Next Audit"
+            },
+            {
+              "name": "Likelihood of Risk",
+              "config": "Likelihood of Risk"
+            },
+            {
+              "name": "Date Last Published",
+              "config": "Date Last Published"
+            },
+            {
+              "name": "Main Team(s) of Use",
+              "config": "Main Team(s) of Use"
+            },
+            {
+              "name": "Main Staff Responsible",
+              "config": "Main Staff Responsible"
+            },
+            {
+              "name": "Vendor Phone Number(s)",
+              "config": "Vendor Phone Number(s)"
+            },
+            {
+              "name": "Vendor IMU Questionnaire",
+              "config": "Vendor IMU Questionnaire"
+            },
+            {
+              "name": "Justification of Risk Rating",
+              "config": "Justification of Risk Rating"
+            },
+            {
+              "name": "Frequency of Purchase/Subscription Renewal",
+              "config": "Frequency of Purchase/Subscription Renewal"
+            },
+            {
+              "name": "Average Frequency of Use (of service/reagents)",
+              "config": "Average Frequency of Use (of service/reagents)"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Cat number": {
+      "id": "6ed9d862-4628-41c9-b977-b5beaf15a044",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Description": {
+      "id": "463718c0-210f-4729-b756-10ec1a112bf8",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Manufacturer": {
+      "id": "52223685-21bf-4eb7-862c-ed548e0f96d5",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "5850a6ee-2ba3-4ce5-af6b-14ba872b6f48"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Type",
+              "config": "Type"
+            },
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Risk Level",
+              "config": "Risk Level"
+            },
+            {
+              "name": "Approved By",
+              "config": "Approved By"
+            },
+            {
+              "name": "Website URL",
+              "config": "Website URL"
+            },
+            {
+              "name": "Impact Level",
+              "config": "Impact Level"
+            },
+            {
+              "name": "Submission 1",
+              "config": "Submission 1"
+            },
+            {
+              "name": "Vendor Status",
+              "config": "Vendor Status"
+            },
+            {
+              "name": "Payment Method",
+              "config": "Payment Method"
+            },
+            {
+              "name": "Purpose of Use",
+              "config": "Purpose of Use"
+            },
+            {
+              "name": "Account No/Info",
+              "config": "Account No/Info"
+            },
+            {
+              "name": "Vendor Email(s)",
+              "config": "Vendor Email(s)"
+            },
+            {
+              "name": "Date of Next Audit",
+              "config": "Date of Next Audit"
+            },
+            {
+              "name": "Likelihood of Risk",
+              "config": "Likelihood of Risk"
+            },
+            {
+              "name": "Date Last Published",
+              "config": "Date Last Published"
+            },
+            {
+              "name": "Main Team(s) of Use",
+              "config": "Main Team(s) of Use"
+            },
+            {
+              "name": "Main Staff Responsible",
+              "config": "Main Staff Responsible"
+            },
+            {
+              "name": "Vendor Phone Number(s)",
+              "config": "Vendor Phone Number(s)"
+            },
+            {
+              "name": "Vendor IMU Questionnaire",
+              "config": "Vendor IMU Questionnaire"
+            },
+            {
+              "name": "Justification of Risk Rating",
+              "config": "Justification of Risk Rating"
+            },
+            {
+              "name": "Frequency of Purchase/Subscription Renewal",
+              "config": "Frequency of Purchase/Subscription Renewal"
+            },
+            {
+              "name": "Average Frequency of Use (of service/reagents)",
+              "config": "Average Frequency of Use (of service/reagents)"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Model number": {
+      "id": "48282140-a156-44de-a703-c5c944911857",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Purchase date": {
+      "id": "3234a36f-6560-47d7-be28-a40b5ec7af07",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Serial number": {
+      "id": "81e4ea24-0aad-48ad-9efc-562240b16bff",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Equipment type": {
+      "id": "58a0ceac-6af9-4960-bea2-e68c1042161e",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Spectral cytometer",
+          "Fumehood",
+          "Biosafety cat 2 hood",
+          "Centrifuge",
+          "Microcentrifuge",
+          "-80 freezer",
+          "-20 freezer",
+          "Water purification system",
+          "Water bath",
+          "Pipette",
+          "LIMS",
+          "Data Storage",
+          "Fridge",
+          "Blood rotator",
+          "Plate shaker",
+          "Air con",
+          "Waste",
+          "Environment monitoring",
+          "Chemical Cabinet",
+          "Oxygen Monitoring System",
+          "Sink Flush",
+          "Analytical Balance",
+          "Cell Separator",
+          "Cell Counter",
+          "LN2 tank",
+          "Liquid Handler",
+          "Thermal Cycler",
+          "PCR Cabiinet",
+          "Thermocycler",
+          "Plate Pipetting Workstation"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Installed date": {
+      "id": "2facffb4-7e7e-4ad4-996c-22cd525b9266",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Validation date": {
+      "id": "a603edea-05e8-43b7-a947-45c35f9e7ac0",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Equipment Manual": {
+      "id": "7cf05f5a-aae1-4c9d-8bb0-a28ae0d85179",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Maintenance Logs": {
+      "id": "f6252ab6-994d-451b-9a1c-7e4d8f135b77",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "11df42b7-0a95-48dc-b15e-b54198fe5078"
+                  ],
+                  "filter": "template",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Asset",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Comments",
+            "config": "Comments"
+          },
+          {
+            "name": "Equipment",
+            "config": "Equipment"
+          },
+          {
+            "name": "Equipment Status",
+            "config": "Equipment Status"
+          },
+          {
+            "name": "Maintenance Type",
+            "config": "Maintenance Type"
+          },
+          {
+            "name": "Date of Maintenance",
+            "config": "Date of Maintenance"
+          },
+          {
+            "name": "Next Maintenance Due Date",
+            "config": "Next Maintenance Due Date"
+          },
+          {
+            "name": "Update next maintenance date",
+            "config": "Update next maintenance date"
+          },
+          {
+            "name": "Maintenance Frequency (months)",
+            "config": "Maintenance Frequency (months)"
+          },
+          {
+            "name": "Maintenance Certificate (if applicable)",
+            "config": "Maintenance Certificate (if applicable)"
+          },
+          {
+            "name": "Asset",
+            "config": "Asset"
+          },
+          {
+            "name": "Planned?",
+            "config": "Planned?"
+          },
+          {
+            "name": "Maintenance Frequency",
+            "config": "Maintenance Frequency"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Other relevant docs": {
+      "id": "19fd9cbe-e37f-4974-9422-525b2b297565",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    },
+    "Maintenance Schedule": {
+      "id": "6d33db04-a3e5-41f7-b35d-101595d24357",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "485f8b8e-7cf2-47c2-94e1-9e36f130c8ea",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Warranty expiration date": {
+      "id": "0bc7cb8e-a2d1-4f97-9fd3-8d4218f2ca8b",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Equipment owner (labguru)": {
+      "id": "f1407b05-51c0-4415-ac79-9d408b348d77",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "IMU Laboratory Asset Number": {
+      "id": "c70f3411-5e6a-40bd-bf91-0693a42502b3",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "1ab3fd2e-19ae-4664-a053-0606c96baea7"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "07f3e1fb-7039-4747-9b69-88a48595eee7",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "02de54c2-6e24-4686-9e87-245bc577af17",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "351e5d04-5853-4f46-ae89-f6230c3286b5",
+                  "type": "field",
+                  "fieldId": "c70f3411-5e6a-40bd-bf91-0693a42502b3",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "7a2109d6-2555-41b9-bf6b-6ea05d076da2",
+                  "type": "field",
+                  "fieldId": "58a0ceac-6af9-4960-bea2-e68c1042161e",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "acbd4534-d38a-49ec-969f-85915be0b3e5",
+                  "type": "field",
+                  "fieldId": "52223685-21bf-4eb7-862c-ed548e0f96d5",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "3fef0bac-4116-44d5-9975-6ed179bb13ef",
+                  "type": "field",
+                  "fieldId": "48282140-a156-44de-a703-c5c944911857",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "b36e19ce-1aae-42d6-8579-1fdf7d3b358c",
+                  "type": "field",
+                  "fieldId": "81e4ea24-0aad-48ad-9efc-562240b16bff",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "bfdd1a7e-ea01-4ef3-9ac6-50fe691e4b7b",
+                  "type": "field",
+                  "fieldId": "6ed9d862-4628-41c9-b977-b5beaf15a044",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "e605f45b-9918-4c6a-a7b0-e2c551f78ace",
+                  "type": "field",
+                  "fieldId": "463718c0-210f-4729-b756-10ec1a112bf8",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "603235aa-05a5-4da3-9cb4-a1957d9a5f03",
+                  "type": "field",
+                  "fieldId": "3328b877-19d5-4576-9484-8bc7a81fcff9",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "42e4d3f5-329b-4896-a890-9877d514a2d7",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "f85fd8a4-d791-4d15-b219-2a0348194a38",
+                  "type": "field",
+                  "fieldId": "3234a36f-6560-47d7-be28-a40b5ec7af07",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "8e76bf36-f353-4f16-81db-821d016897ff",
+                  "type": "field",
+                  "fieldId": "0bc7cb8e-a2d1-4f97-9fd3-8d4218f2ca8b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "7a62ea95-58a1-42c6-8580-5f9a231bf2d4",
+                  "type": "field",
+                  "fieldId": "2facffb4-7e7e-4ad4-996c-22cd525b9266",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "3d86c636-d2b5-45ea-9c1b-7e9c4f81e06d",
+                  "type": "field",
+                  "fieldId": "a603edea-05e8-43b7-a947-45c35f9e7ac0",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "489da41b-f836-4729-985f-a2cf6faa5261",
+                  "type": "field",
+                  "fieldId": "49496db5-6aee-4bb1-b607-bdfc234bfdf2",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "fa5cb4bb-99c6-4b12-9600-6cd94d074f92",
+                  "type": "field",
+                  "fieldId": "7cf05f5a-aae1-4c9d-8bb0-a28ae0d85179",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "1e94253c-47ef-466a-87ac-db7dccd699be",
+                  "type": "field",
+                  "fieldId": "19fd9cbe-e37f-4974-9422-525b2b297565",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "04cb065d-46e8-452c-a901-0741aaaf7286",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Maintenance"
+            }
+          ]
+        },
+        {
+          "id": "0de2fbdf-16c2-41d0-b6a0-1e5fe85c5234",
+          "type": "field",
+          "fieldId": "6d33db04-a3e5-41f7-b35d-101595d24357",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Asset",
+                "name": "Asset",
+                "isHidden": true
+              },
+              {
+                "id": "Maintenance Type",
+                "name": "Maintenance Type",
+                "isHidden": false
+              },
+              {
+                "id": "Date of Last Maintenance",
+                "name": "Date of Last Maintenance",
+                "isHidden": false
+              },
+              {
+                "id": "Maintenance Frequency",
+                "name": "Maintenance Frequency",
+                "isHidden": false
+              },
+              {
+                "id": "Maintenance Frequency Units",
+                "name": "Maintenance Frequency Units",
+                "isHidden": false
+              },
+              {
+                "id": "Date of Next Maintenance",
+                "name": "Date of Next Maintenance",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "f7a8574b-30d4-4c43-a902-7383fff2ed32",
+          "type": "field",
+          "fieldId": "f6252ab6-994d-451b-9a1c-7e4d8f135b77",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d0904f16-6a5a-4989-83f0-47aa9482e990",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "607e15d6-d311-42bb-b860-2c1937f439ca",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
