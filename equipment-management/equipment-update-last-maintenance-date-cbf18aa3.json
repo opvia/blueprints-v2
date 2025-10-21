@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "cbf18aa3-07ff-4750-9e35-82d4a4e8127a",
+  "title": "Equipment - Update last maintenance date",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "77e28773-a10d-4be8-bd4a-e9f77cc7288b",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the current entity where the script is embedded\ncurrent_entity = seal.get_containing_entity()\n\n# Get the value of the 'Date of Maintenance' field from the current entity\ndate_of_maintenance_field = current_entity[\"fields\"].get(\"Date of Maintenance\")\ndate_of_maintenance_value = date_of_maintenance_field[\"value\"] if date_of_maintenance_field else None\n\n# Get the value of the 'Schedule information' reference field from the current entity\nschedule_info_ref_field = current_entity[\"fields\"].get(\"Schedule information\")\nschedule_info_ref_value = schedule_info_ref_field[\"value\"] if schedule_info_ref_field else None\n\n# Check if the 'Schedule information' reference is set and get the referenced entity ID\nif schedule_info_ref_value and isinstance(schedule_info_ref_value, list) and len(schedule_info_ref_value) > 0:\n    schedule_entity_id = schedule_info_ref_value[0][\"id\"]\n\n    # Make the referenced Schedule entity editable if it's not already\n    seal.make_entity_editable(schedule_entity_id)\n    print(f\"Made entity {schedule_entity_id} editable.\")\n\n    # Update the 'Date of Last Maintenance' field in the referenced Schedule entity\n    seal.update_field_value_in_entity(schedule_entity_id, \"Date of Last Maintenance\", date_of_maintenance_value)\n    print(f\"Updated 'Date of Last Maintenance' in entity {schedule_entity_id} to {date_of_maintenance_value}\")\n\n    # Get the change set information for the current entity\n    current_change_set = seal.get_change_set_for_containing_entity()\n\n    # Check if the current entity is in a change set and get its index\n    if current_change_set and current_change_set.get(\"index\") is not None:\n        change_set_index = current_change_set[\"index\"]\n\n        # Add the referenced Schedule entity to the same change set\n        seal.add_entity_to_change_set(schedule_entity_id, change_set_index)\n        print(f\"Added entity {schedule_entity_id} to change set {change_set_index}\")\n    else:\n        # Handle the case where the current entity is not in a change set\n        print(\"Current entity is not in a change set. Cannot add referenced entity to a change set.\")\nelse:\n    # Handle the case where the 'Schedule information' reference is not set in the current entity\n    print(\"The 'Schedule information' reference field is not set in the current entity.\")"
+    }
+  }
+}
