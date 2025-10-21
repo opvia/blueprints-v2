@@ -1,0 +1,120 @@
+{
+  "id": "equipment-management",
+  "version": 1,
+  "name": "equipment-management",
+  "description": "",
+  "entities": [
+    {
+      "id": "485f8b8e-7cf2-47c2-94e1-9e36f130c8ea",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Maintenance Schedule",
+      "icon": "build",
+      "sourceVersion": "9"
+    },
+    {
+      "id": "daa89cb8-4829-46c7-8564-31811b9f9499",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Asset Maintenance",
+      "icon": "build",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "a3bbe51a-592a-41d9-8a8e-873daf402c47",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Asset",
+      "icon": "array",
+      "sourceVersion": "9"
+    },
+    {
+      "id": "1ab3fd2e-19ae-4664-a053-0606c96baea7",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "a24643fe-00d7-4512-a432-5d0bda046806",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Location Template",
+      "icon": "box",
+      "sourceVersion": "11"
+    },
+    {
+      "id": "dffd72d3-783b-41a0-9e7d-40bb7dbcee5c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Location",
+      "icon": "box",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "5850a6ee-2ba3-4ce5-af6b-14ba872b6f48",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor Template",
+      "icon": "array",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "d8aa02a0-2ff3-45a6-bfab-ba00dd6c1db1",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "93dadba0-35e7-489d-8b35-bff53b4cb721",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor Risk Change Log",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "c8c5a3ab-6105-43c3-9f04-e7ac6f9fb4a9",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Update Vendor",
+      "icon": "code",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script Template",
+      "icon": "code",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "11df42b7-0a95-48dc-b15e-b54198fe5078",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Asset Maintenance",
+      "icon": "build",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "af5fc24b-3929-4a7a-8dde-72479c0a06e1",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Equipment - update last maintenance date",
+      "icon": "code",
+      "sourceVersion": "1"
+    }
+  ]
+}
