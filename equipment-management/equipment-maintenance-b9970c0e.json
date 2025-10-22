@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b9970c0e-7888-4bee-8f2a-0a08eef62024",
+  "title": "Equipment Maintenance",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "wrench",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "Draft",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "Draft"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "Published",
+            "intent": "success"
+          }
+        ],
+        "defaultStatus": "Published"
+      }
+    },
+    "hideVersionNumber": true,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": false
+    },
+    "reviewRequirements": {},
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": false
+  },
+  "templateConfig": {
+    "reviewRequirements": {}
+  }
+}

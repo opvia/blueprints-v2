@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2908cfc1-6af7-49e0-b6af-e6846251c561",
+  "title": "Equipment Management Blueprint Instructions",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "f640c323-16b8-4a68-94d5-f9ba00642b05",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Vendor": {
+      "id": "bde6e265-63bf-4c2c-a068-161451944293",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "2eb746d2-d4e6-4133-ab5e-056adb986256",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Location": {
+      "id": "74dfec7b-aa42-459c-98e9-85dcd09b1c5b",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "38a3e1d1-9c64-4c4b-8b76-1337bed43d34",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Reference": {
+      "id": "8a6f87c7-8922-44ed-a440-af7cac51441f",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "5593cca8-1399-4a71-9800-3ad6d09b00fa",
+          "version": "1.2"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Equipment template": {
+      "id": "f9ca3950-d06f-4b8b-b4d4-95b210e21bbb",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "e5154bee-a43a-4ed1-9a30-7a08bc418233",
+          "version": "1.2"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Maintenance Schedule": {
+      "id": "62ddc5d7-67ae-455e-8a68-2b6e9cc493e7",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "b2be7635-5c05-4f6b-9197-4a6736e39fdd",
+          "version": "1.3"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Script triggered on schedule": {
+      "id": "0e182fcd-d9bb-4443-96b1-5b1600db59f1",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "31fd1d0d-3ea5-480c-88cc-3e420703f4f8",
+          "version": "1.4"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Update last maintenance date": {
+      "id": "c1d38d80-4995-48e3-a207-5a3dc1c21ddf",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "d085c915-fd65-43bd-b48e-29b8045c1263",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3c95d26e-0a7f-4545-9ba6-f3b53548c50d"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b6815efe-0b22-48b9-af2d-20a1487c9d6b",
+          "type": "p",
+          "children": [
+            {
+              "text": "Create new Equipment entities from this template:"
+            }
+          ]
+        },
+        {
+          "id": "aed8483c-32c3-4c13-b75f-adb8a443d538",
+          "type": "field",
+          "fieldId": "f9ca3950-d06f-4b8b-b4d4-95b210e21bbb",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "8476345f-d20f-4b6c-8043-5349e6e1a4f9",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "d58e4a1d-a9e5-4b8b-9337-d34f860bd0f7",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "6b01c29c-c9d4-44bc-9c89-018e6b65c929",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "From an instance of the equipment template, add rows in the Maintenance Schedule submission table to indicate how frequently each type of maintenance takes place. You can edit the Maintenance Schedule template from here:"
+                    }
+                  ]
+                },
+                {
+                  "id": "ecb5b937-8596-4cdb-b4dd-a81d0b98279e",
+                  "type": "field",
+                  "fieldId": "62ddc5d7-67ae-455e-8a68-2b6e9cc493e7",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "6639b2dd-d730-461a-b811-d860699da21c",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "3e0930bf-485d-438d-b679-3b33b73a2520",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "There is a trigger on the following script, to check at regular intervals if any maintenance is due. Specifically this checks if any schedules indicate the date of next maintenance is any date up to and including tomorrow."
+                    }
+                  ]
+                },
+                {
+                  "id": "fd6e3e46-81b2-4de5-86f2-19b2544e0f7d",
+                  "type": "field",
+                  "fieldId": "0e182fcd-d9bb-4443-96b1-5b1600db59f1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "a8063130-af83-451c-a68d-5aba3e81a20a",
+                  "type": "p",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Tip - ask Neil to update this script to give a different warning period. For example, if you need to be alerted that maintenance is due 7 days before instead of 1 day before."
+                    }
+                  ]
+                },
+                {
+                  "id": "ca2f5caf-a927-40be-9ada-ae14a77d07b1",
+                  "type": "p",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "a063e9b5-eff9-4ecf-ae79-dc053bc542ef",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "This script will create a new instance of Equipment maintenance, if there is not already one in progress, referencing the Equipment and indicating the maintenance type."
+                    }
+                  ]
+                },
+                {
+                  "id": "e4cb7be2-9177-46a9-9aa2-82caad27c88b",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "2898256d-4571-4bdf-b3ca-9b881847f0a2",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "If “Responsible person(s)” were added to the maintenance schedule they will be assigned to the new maintenance instance that is created. This will go straight to their inbox and they will be sent an email alerting them that the Maintenance is due."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d2c8b1a7-3d64-4b5c-9826-3749d3a83a61",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9910cb44-b392-47aa-9253-c4a9d0129e4f",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "a8c4bcb0-7039-44ed-9714-dd10fc60890d",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "91fd7bdf-84d5-45a1-8345-18851428ccd6",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "Create a new Maintenance Log on the fly direct from this template:"
+                    }
+                  ]
+                },
+                {
+                  "id": "de3063fc-12a4-4a6d-bc74-91247a708bcd",
+                  "type": "field",
+                  "fieldId": "8a6f87c7-8922-44ed-a440-af7cac51441f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "352b4ba9-838b-46b6-b928-4a4e53fbcfad",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "d697192c-0a23-4814-851d-ca04c8fa5a2a",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "Every time an instance of this maintenance template is carried out the “Update” button in the page should be clicked, this runs this script:"
+                    }
+                  ]
+                },
+                {
+                  "id": "f2a37ecd-32c3-424f-8bc3-8e81586dde60",
+                  "type": "field",
+                  "fieldId": "c1d38d80-4995-48e3-a207-5a3dc1c21ddf",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "e77a5777-3d90-4b46-a86e-58fda40ba641",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": "This script updates the status of the piece of equipment and updates the schedule within that, to acknowledge the most recent maintenance action, so that future maintenance dates can be calculated automatically."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4057e80a-7013-4dda-8911-b282f384cf3e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "738eb609-6e2f-44e3-81eb-dd2fddcf9790",
+          "type": "p",
+          "children": [
+            {
+              "text": "Other templates used in this blueprint:"
+            }
+          ]
+        },
+        {
+          "id": "d7d51a82-b9aa-4a0d-a200-1011e29cd428",
+          "type": "field",
+          "fieldId": "74dfec7b-aa42-459c-98e9-85dcd09b1c5b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f0e5f4a2-8ebc-4c89-8681-4662de0ffcbc",
+          "type": "field",
+          "fieldId": "bde6e265-63bf-4c2c-a068-161451944293",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f2e57179-0b0e-4bef-a6b6-d45e14b1ef61",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8fa9bb02-d561-40b0-9762-3a45b887cf41",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d3cfbfcb-096f-40fc-b9f2-93190002c25a",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Saved views"
+            }
+          ]
+        },
+        {
+          "id": "ea345159-9d9e-4997-abcc-a99b4b96725b",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Maintenance Due"
+            },
+            {
+              "text": " - Insert \"template:\"Equipment Maintenance\" status:editable\" into the query to bring up outstanding maintenance requests."
+            }
+          ]
+        },
+        {
+          "id": "43af7a7f-ec12-4cf3-888b-df073f00d500",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Equipment"
+            },
+            {
+              "text": " - Insert “type:Equipment kind:instance template:Equipment” into the query to bring up all Equipment."
+            }
+          ]
+        },
+        {
+          "id": "04a8f4f7-e14e-48ff-b2d5-fd784013be93",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4d699423-8e17-4f7b-9bdf-35e2d828cf0f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ae23fa85-06dd-4759-bb0c-bcf73fcfd6de",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a506d5e7-3990-490f-8c7e-3b701421fd39",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4a7d2232-a88f-4af7-b35f-17760b958cdc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
