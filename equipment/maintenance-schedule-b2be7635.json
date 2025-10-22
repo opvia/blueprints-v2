@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b2be7635-5c05-4f6b-9197-4a6736e39fdd",
+  "title": "Maintenance Schedule",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Asset": {
+      "id": "d30ee1da-68d3-47ed-91a0-1508ddfd4daf",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Maintenance Type": {
+      "id": "823dd38e-d73b-47de-94b7-6ced6cec02a5",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Calibration",
+          "Cleaning",
+          "Servicing",
+          "De-ice",
+          "Back-up",
+          "UV lamp change",
+          "Air vent change",
+          "SmartPak change",
+          "BioPak change",
+          "Software update",
+          "Data cleanup"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Maintenance Frequency": {
+      "id": "3fea3160-cfa3-49b0-bca9-48f8a9018cc6",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Date of Last Maintenance": {
+      "id": "99c1708c-c1a8-4145-b565-b414f2901794",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Date of Next Maintenance": {
+      "id": "9703fbf4-04e8-4d28-bb1b-a5d39f9cd050",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Date of Last Maintenance\") , lookup(__self, \"Maintenance Frequency\") , lookup(__self, \"Maintenance Frequency Units\") )"
+      },
+      "dataType": null
+    },
+    "Maintenance Frequency Units": {
+      "id": "ee4ac0ad-8061-4cca-8d3e-310dff7c3c06",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "days",
+          "weeks",
+          "months",
+          "years"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "b9970c0e-7888-4bee-8f2a-0a08eef62024"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "26883448-2ace-4c03-8861-11d4f09c2295",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "55991dad-5c70-432e-b80f-b77ee5213ead",
+          "type": "field",
+          "fieldId": "d30ee1da-68d3-47ed-91a0-1508ddfd4daf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4ab72166-a04e-4ee0-863e-2dd0aada7f0c",
+          "type": "field",
+          "fieldId": "823dd38e-d73b-47de-94b7-6ced6cec02a5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "55ce560d-9813-47fa-a1e5-2aa3e68b6efa",
+          "type": "field",
+          "fieldId": "99c1708c-c1a8-4145-b565-b414f2901794",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "792860ee-cdaf-45fd-b73a-a8a558aaafa4",
+          "type": "field",
+          "fieldId": "3fea3160-cfa3-49b0-bca9-48f8a9018cc6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8478095b-235f-4e62-b12a-6375796c005c",
+          "type": "field",
+          "fieldId": "ee4ac0ad-8061-4cca-8d3e-310dff7c3c06",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ca78fa26-db92-4ff6-8186-6bbb52a32f7d",
+          "type": "field",
+          "fieldId": "9703fbf4-04e8-4d28-bb1b-a5d39f9cd050",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d6a3ae46-6dac-4b2b-a002-5d6630f4c839",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@SUBMITTED_FROM @823dd38e-d73b-47de-94b7-6ced6cec02a5 Schedule"
+  }
+}

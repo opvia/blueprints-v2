@@ -1,0 +1,502 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2eb746d2-d4e6-4133-ab5e-056adb986256",
+  "title": "Vendor Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Type": {
+      "id": "1785da4a-4c77-4f0f-8e9f-13cf153e8a62",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Equipment/Materials",
+          "Finance",
+          "Infrastructure/Facility Services",
+          "Logistics",
+          "Marketing",
+          "Samples",
+          "Servicing/Maintenance",
+          "Software/System",
+          "Sub-Contractors/Out-Sourcing"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Audits": {
+      "id": "b541d100-ee5c-4611-b5c3-c20e337e688a",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "Audit"
+                  ],
+                  "filter": "type",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Vendor",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Vendor",
+            "config": "Vendor"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Comments": {
+      "id": "20bf19e9-f9a3-4e6f-a847-18a0a2d86462",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Approved By": {
+      "id": "d9e65bf1-2653-4f7c-bbcd-700dc03b0f6d",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Website URL": {
+      "id": "b73bce3e-ae58-4abd-a227-3f1873d68d36",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Vendor Status": {
+      "id": "62dea621-eb29-476b-a781-5c5b4ea12c2b",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Approved and In Use",
+          "Approved and in Use with Exceptions",
+          "No Longer in Use",
+          "Rejected and Not in Use",
+          "Under Review/Not Used"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Payment Method": {
+      "id": "5711a1c1-7a68-48da-81ae-54b7e622e787",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Purpose of Use": {
+      "id": "7f177fd2-0ba8-4648-b59c-50db9ee7d739",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Account No/Info": {
+      "id": "47b71f95-8809-4212-bd69-226e308280d4",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Vendor Email(s)": {
+      "id": "701df783-82ea-4c72-86c9-4566e2858936",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Date of Approval": {
+      "id": "f06742e2-e6a4-49ae-8a53-2c2740fce4d0",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Date of Next Audit": {
+      "id": "cfd809e4-a84f-411c-b293-daa296fdb49e",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Date of Approval\") , 1, \"years\")"
+      },
+      "dataType": null
+    },
+    "Main Team(s) of Use": {
+      "id": "b51e6d97-506f-4cc8-864f-72503b8a1e4f",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "All",
+          "Business Operations",
+          "Data Science",
+          "Discovery",
+          "Engineering",
+          "Lab Operations",
+          "Molecular Biology"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Main Staff Responsible": {
+      "id": "307a355f-98d7-46c5-9d14-f1516905cefd",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Vendor Phone Number(s)": {
+      "id": "455fbf95-e01f-4a7d-b6b5-9c67ad064033",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Frequency of Purchase/Subscription Renewal": {
+      "id": "708e98f0-1b22-4a0b-83a0-788706fafe8f",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "2 monthly",
+          "4 monthly",
+          "6 monthly",
+          "> 1 year",
+          "Free",
+          "Monthly",
+          "One Off",
+          "Yearly"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Average Frequency of Use (of service/reagents)": {
+      "id": "c1e2209d-33eb-49aa-8e11-3deea290c8e8",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Every 2 months",
+          "Every 4 months",
+          "Every 6 months",
+          "Every month",
+          "Every week",
+          "Every year",
+          "Everyday",
+          "Less than once a year"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "ef18d2fc-b96f-4f5d-a40c-35beeba97387"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "a85f231d-fc68-4e88-b773-3f90f4723862",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "34524ad2-a065-42b3-bcc1-e1580ef28132",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "b5fb9883-4f7f-4c84-82bd-7cc2b26ef3a9",
+                  "type": "field",
+                  "fieldId": "62dea621-eb29-476b-a781-5c5b4ea12c2b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d43f25ce-f4d4-4286-84e4-49756bfc51ec",
+                  "type": "field",
+                  "fieldId": "1785da4a-4c77-4f0f-8e9f-13cf153e8a62",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "7cb2fa4d-0981-46ea-9247-6ab8ac31432a",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "88dc1735-3e97-45b1-9677-da3bf1e5ecfa",
+                  "type": "field",
+                  "fieldId": "d9e65bf1-2653-4f7c-bbcd-700dc03b0f6d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "32bd9cd3-b7a7-4fb9-8389-64eb0d749620",
+                  "type": "field",
+                  "fieldId": "f06742e2-e6a4-49ae-8a53-2c2740fce4d0",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "38179007-1caf-4400-967b-b2ad457c91be",
+                  "type": "field",
+                  "fieldId": "cfd809e4-a84f-411c-b293-daa296fdb49e",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "52864a62-9ff7-4a69-b32b-44155cebf7a1",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Purpose of use"
+            }
+          ]
+        },
+        {
+          "id": "3d4a2aa1-c39b-4883-86b5-9470a4527334",
+          "type": "field",
+          "fieldId": "b51e6d97-506f-4cc8-864f-72503b8a1e4f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2317dc19-4d69-4c0b-bd89-8f161d27f27b",
+          "type": "field",
+          "fieldId": "307a355f-98d7-46c5-9d14-f1516905cefd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "57fa3f51-b000-4247-8aaf-a0f8b4d285ca",
+          "type": "field",
+          "fieldId": "7f177fd2-0ba8-4648-b59c-50db9ee7d739",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "09d2dc24-10e1-44f9-aca5-094a901a3e56",
+          "type": "field",
+          "fieldId": "708e98f0-1b22-4a0b-83a0-788706fafe8f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f14c3d1f-4a9c-43d6-8e63-552631f05eb4",
+          "type": "field",
+          "fieldId": "c1e2209d-33eb-49aa-8e11-3deea290c8e8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "16981570-fdb1-4e73-98ce-1b7da5e24144",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0b67073b-e7a8-4bd4-be04-4c37f8efa473",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Vendor contact information, account number and payment method"
+            }
+          ]
+        },
+        {
+          "id": "ed8f2d7d-14f6-4082-970b-7e4f4677fe29",
+          "type": "field",
+          "fieldId": "b73bce3e-ae58-4abd-a227-3f1873d68d36",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "578e9cdc-1181-4408-a617-ec5b4e5d3926",
+          "type": "field",
+          "fieldId": "47b71f95-8809-4212-bd69-226e308280d4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f1b5c2c3-18e0-4c2d-924c-b6ac70b70620",
+          "type": "field",
+          "fieldId": "5711a1c1-7a68-48da-81ae-54b7e622e787",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e8e18edb-3dbe-4a79-88a0-f11be13c4052",
+          "type": "field",
+          "fieldId": "701df783-82ea-4c72-86c9-4566e2858936",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fa9e072a-76d0-4cc2-b57f-4c13ecc206ac",
+          "type": "field",
+          "fieldId": "455fbf95-e01f-4a7d-b6b5-9c67ad064033",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8f366882-5320-4492-baa3-0d49ee47e0f2",
+          "type": "field",
+          "fieldId": "20bf19e9-f9a3-4e6f-a847-18a0a2d86462",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e29aeba2-1ea1-4924-8fce-20c02781c446",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c05ad326-0aea-427a-95f9-c1a3c62a72f3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e5bc8034-f473-4390-809c-ab263d908d76",
+          "type": "field",
+          "fieldId": "b541d100-ee5c-4611-b5c3-c20e337e688a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "06864475-fa50-4124-b9c5-e8a544f396bb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
