@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "d085c915-fd65-43bd-b48e-29b8045c1263",
+  "title": "Equipment - update last maintenance date",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "911121f8-6c0f-47bf-89a0-a547488bcc94",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "281a04e0-f03e-4a43-8702-d86f1b6d0feb"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the current entity where the script is embedded\ncurrent_entity = seal.get_containing_entity()\n\n# Get the value of the 'Date of Maintenance' field from the current entity\ndate_of_maintenance_field = current_entity[\"fields\"].get(\"Date of Maintenance\")\ndate_of_maintenance_value = date_of_maintenance_field[\"value\"] if date_of_maintenance_field else None\n\n# Get the value of the 'Schedule information' reference field from the current entity\nschedule_info_ref_field = current_entity[\"fields\"].get(\"Schedule information\")\nschedule_info_ref_value = schedule_info_ref_field[\"value\"] if schedule_info_ref_field else None\n\n# Get the value of the 'Equipment' reference field from the current entity\nequipment_ref_field = current_entity[\"fields\"].get(\"Equipment\")\nequipment_ref_value = equipment_ref_field[\"value\"] if equipment_ref_field else None\n\n# Get the change set information for the current entity\ncurrent_change_set = seal.get_change_set_for_containing_entity()\nchange_set_index = current_change_set[\"index\"] if current_change_set and current_change_set.get(\"index\") is not None else None\n\n\n# Process 'Schedule information'\nif schedule_info_ref_value and isinstance(schedule_info_ref_value, list) and len(schedule_info_ref_value) > 0:\n    schedule_entity_id = schedule_info_ref_value[0][\"id\"]\n\n    # Make the referenced Schedule entity editable if it's not already\n    seal.make_entity_editable(schedule_entity_id)\n    print(f\"Made entity {schedule_entity_id} editable.\")\n\n    # Update the 'Date of Last Maintenance' field in the referenced Schedule entity\n    seal.update_field_value_in_entity(schedule_entity_id, \"Date of Last Maintenance\", date_of_maintenance_value)\n    print(f\"Updated 'Date of Last Maintenance' in entity {schedule_entity_id} to {date_of_maintenance_value}\")\n\n    # Add the referenced Schedule entity to the same change set\n    if change_set_index:\n        seal.add_entity_to_change_set(schedule_entity_id, change_set_index)\n        print(f\"Added entity {schedule_entity_id} to change set {change_set_index}\")\n    else:\n        print(f\"Current entity is not in a change set. Cannot add Schedule entity {schedule_entity_id} to a change set.\")\nelse:\n    print(\"The 'Schedule information' reference field is not set in the current entity.\")\n\n\n# Process 'Equipment'\nif equipment_ref_value and isinstance(equipment_ref_value, list) and len(equipment_ref_value) > 0:\n    equipment_entity_id = equipment_ref_value[0][\"id\"]\n\n    # Make the referenced Equipment entity editable to ensure it's the most recent draft\n    # This call returns the new draft entity, which we'll use to update the reference\n    new_equipment_draft = seal.make_entity_editable(equipment_entity_id)\n    print(f\"Made entity {equipment_entity_id} editable (ensuring it's the most recent draft).\")\n\n    # Update the 'Equipment' reference field in the containing entity to point to the new draft\n    new_equipment_ref = [{\"id\": new_equipment_draft[\"id\"], \"version\": None}] # version=None for the draft\n    seal.update_field_value(\"Equipment\", new_equipment_ref)\n    print(f\"Updated 'Equipment' field in containing entity to reference new draft {new_equipment_draft['id']}.\")\n\n    # Add the referenced Equipment entity to the same change set\n    if change_set_index:\n        seal.add_entity_to_change_set(equipment_entity_id, change_set_index)\n        print(f\"Added entity {equipment_entity_id} to change set {change_set_index}\")\n    else:\n        print(f\"Current entity is not in a change set. Cannot add Equipment entity {equipment_entity_id} to a change set.\")\nelse:\n    print(\"The 'Equipment' reference field is not set in the current entity.\")"
+    }
+  }
+}

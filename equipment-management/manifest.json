@@ -1,0 +1,191 @@
+{
+  "id": "equipment-management",
+  "version": 1,
+  "name": "equipment-management",
+  "description": "",
+  "entities": [
+    {
+      "id": "2908cfc1-6af7-49e0-b6af-e6846251c561",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment Management Blueprint Instructions",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "3c95d26e-0a7f-4545-9ba6-f3b53548c50d",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document",
+      "icon": "document",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "2eb746d2-d4e6-4133-ab5e-056adb986256",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor Template",
+      "icon": "array",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "ef18d2fc-b96f-4f5d-a40c-35beeba97387",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "38a3e1d1-9c64-4c4b-8b76-1337bed43d34",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Location Template",
+      "icon": "box",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "2aefe2de-11b5-4dec-9502-cb415d3e306f",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Location",
+      "icon": "box",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "5593cca8-1399-4a71-9800-3ad6d09b00fa",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment Maintenance",
+      "icon": "wrench",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "b9970c0e-7888-4bee-8f2a-0a08eef62024",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment Maintenance",
+      "icon": "wrench",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "d085c915-fd65-43bd-b48e-29b8045c1263",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Equipment - update last maintenance date",
+      "icon": "code",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "281a04e0-f03e-4a43-8702-d86f1b6d0feb",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code",
+      "sourceVersion": "1.5",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "e5154bee-a43a-4ed1-9a30-7a08bc418233",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment",
+      "icon": "cog",
+      "sourceVersion": "1.2",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "6170d57b-def7-47a4-9e71-5c4f97274fa5",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment",
+      "icon": "cog",
+      "sourceVersion": "1.3",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "b2be7635-5c05-4f6b-9197-4a6736e39fdd",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Maintenance Schedule",
+      "icon": "wrench",
+      "sourceVersion": "1.3",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "31fd1d0d-3ea5-480c-88cc-3e420703f4f8",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Maintenance Due - Schedule",
+      "icon": "code",
+      "sourceVersion": "1.4",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "911121f8-6c0f-47bf-89a0-a547488bcc94",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script Template",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    },
+    {
+      "id": "f640c323-16b8-4a68-94d5-f9ba00642b05",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Instructions",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "d1797c19-fdf3-4970-9def-637977a40476"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "d1797c19-fdf3-4970-9def-637977a40476",
+      "text": "Equipment Management",
+      "hexCode": "#43e14e"
+    }
+  ]
+}
