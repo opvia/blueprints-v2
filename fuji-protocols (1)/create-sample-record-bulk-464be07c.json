@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "464be07c-4c02-4dd5-9c22-f2cbc1fbdfe1",
+  "title": "Create sample record (bulk)",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "03e2070a-d229-4841-b09d-2e2b7c91406d",
+      "version": "1.1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3304d856-7127-4d7a-b333-14c24d451629"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the entity where the script is embedded\ncontaining_entity = seal.get_containing_entity()\n\n# Extract field values from the containing entity\nsample_details_refs = containing_entity[\"fields\"].get(\"Sample details\", {}).get(\"value\", [])\n\n# Define the template for the new entities\ntemplate_ref = {\"id\": \"f9888d1f-03da-4549-b13d-86e754cad198\",\"version\":\"1\"}\n\n# Iterate through each entity in 'Sample details'\nfor sample_ref in sample_details_refs:\n    # Ensure sample_ref is a valid entity reference\n    if not isinstance(sample_ref, dict) or \"id\" not in sample_ref:\n        print(f\"Skipping invalid sample reference: {sample_ref}\")\n        continue\n\n    sample_entity_id = sample_ref[\"id\"]\n    print(f\"Processing sample entity ID: {sample_entity_id}\")\n    sample_entity = seal.get_entity(sample_entity_id)\n    new_lot_ref_value = sample_entity[\"fields\"].get(\"New Lot Reference\", {}).get(\"value\", [])\n    # Create a new entity in the 'New record link' field of the current sample entity\n    # and fill its 'New Lot Reference' field\n    seal.create_from_reference_field_in_entity(\n        entity_id=sample_entity_id,\n        field_name=\"New record link\",\n        type_or_template_ref=template_ref,\n        field_values_df=pd.DataFrame([\n            {\"New Lot Reference\": new_lot_ref_value}\n        ])\n    )\n    print(f\"Created new entity in 'New record link' for sample {sample_entity_id}\")\n\nprint(\"Script execution complete.\")"
+    }
+  }
+}

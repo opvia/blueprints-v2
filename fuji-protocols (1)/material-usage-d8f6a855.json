@@ -1,0 +1,355 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "d8f6a855-e722-432f-aea7-8e27166d820c",
+  "title": "Material usage",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Type": {
+      "id": "3386180c-3d33-4ffa-8372-c1139aff0b9d",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Material\") , 'Record name')"
+      },
+      "dataType": null
+    },
+    "Material": {
+      "id": "bea71818-4c92-4ca1-af49-5635a45f025c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Material"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Record"
+                    ],
+                    "filter": "field",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Record",
+              "config": "Record"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Protocol": {
+      "id": "3b15d853-7d6c-466c-9bc5-d6aacee9f3f6",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Time used": {
+      "id": "d3228c32-72ce-400e-b26a-53558f8be4fd",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    },
+    "Expiry date": {
+      "id": "dd8eda72-c4d2-412a-a8f5-be4ddd5594d2",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Material\") , 'Expiry date')",
+        "outOfSpecExpression": "lookup(__self, \"Manufacturer's expiry date\") < now() or lookup(__self, \"Expiry date from opening (UNIX)\") < now()"
+      },
+      "dataType": null
+    },
+    "Experiment ID": {
+      "id": "8cec00fa-7de2-47b2-97dc-069abd9cff01",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , 'Experiment ID')"
+      },
+      "dataType": null
+    },
+    "Project number": {
+      "id": "c61fce5e-612c-4126-889c-3b2c91b90702",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , 'Project number')"
+      },
+      "dataType": null
+    },
+    "Quantity used: Unit": {
+      "id": "673b8064-b26d-4184-977a-f1e78505046a",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "mg",
+          "g",
+          "kg",
+          "mL",
+          "L"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Quantity used: Amount": {
+      "id": "3c2a09c1-cc8f-4fd7-9b61-4b041cdfbbc9",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Manufacturer's expiry date": {
+      "id": "708719e1-d571-4caf-8f88-bd4b3501a9ef",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Material\") , \"Manufacturer's expiry date\")"
+      },
+      "dataType": null
+    },
+    "Expiry date from opening (UNIX)": {
+      "id": "0890f2fd-d228-4d31-a27a-d29f3bbc076d",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Material\") , 'Expiry date from opening (UNIX)')"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "a1721769-24aa-4434-80e5-6dad0a274a66"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "a4823ba7-8410-4e66-807b-d8d7ce952cef",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7f539870-19cc-4b9b-b417-28f06d85f2e1",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "c7c20abf-fe8a-4699-9237-00f155a0e543",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "2958b1ef-3e8f-4063-aeba-39942564a27d",
+                  "type": "field",
+                  "fieldId": "3b15d853-7d6c-466c-9bc5-d6aacee9f3f6",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "8675b454-1cf4-4137-9da0-6145f5c0a41d",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2a9ca810-6ad7-46ed-a82f-ca6dc1553afc",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "ed2fbfcb-880f-4569-9948-89dcee2960d7",
+                  "type": "field",
+                  "fieldId": "8cec00fa-7de2-47b2-97dc-069abd9cff01",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "86bd8293-e4f8-4e8b-92f8-cf297bdff508",
+                  "type": "field",
+                  "fieldId": "c61fce5e-612c-4126-889c-3b2c91b90702",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "f74f1ba1-9ffd-4e71-8518-83c0e4c26fe7",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "67b17c55-2b5e-47b7-84e2-ede8220d459a",
+          "type": "field",
+          "fieldId": "bea71818-4c92-4ca1-af49-5635a45f025c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "69871bb6-beac-443c-a0dc-98dddb9e82c6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cb88a1d4-6dc9-4a3f-9ecf-bc1c2438bd9e",
+          "type": "field",
+          "fieldId": "3386180c-3d33-4ffa-8372-c1139aff0b9d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "42f6907a-7027-40f1-b1bd-5831b9ea683c",
+          "type": "field",
+          "fieldId": "dd8eda72-c4d2-412a-a8f5-be4ddd5594d2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "23b35601-1f55-4f92-82c3-a720676f0bb3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e2574ae1-20b6-42ec-bc4d-ab5fed932547",
+          "type": "field",
+          "fieldId": "d3228c32-72ce-400e-b26a-53558f8be4fd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "976a0416-6bf3-422c-9ee2-ae29c8af7278",
+          "type": "field",
+          "fieldId": "3c2a09c1-cc8f-4fd7-9b61-4b041cdfbbc9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2afc2166-be65-4ef6-88a0-c7913f1cc9ee",
+          "type": "field",
+          "fieldId": "673b8064-b26d-4184-977a-f1e78505046a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "51255abf-e714-49f2-8626-3aa686dc6c35",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "MA usage @TEMPLATE_INDEX "
+  }
+}

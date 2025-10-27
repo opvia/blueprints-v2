@@ -1,0 +1,345 @@
+{
+  "id": "fuji-protocols",
+  "version": 1,
+  "name": "Fuji protocols",
+  "description": "",
+  "entities": [
+    {
+      "id": "c0186ba4-35c8-4680-8e2a-428a41fba276",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "AD protocol 1",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "a00fa0e6-408c-414e-af48-ddf7314ae940"
+      ]
+    },
+    {
+      "id": "fe8a5f14-e916-49b2-984c-1614a3b5d292",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Protocol",
+      "icon": "clipboard",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9a0b7db6-6020-48c0-8138-518bf742f9fc",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "AD protocol 2",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "a00fa0e6-408c-414e-af48-ddf7314ae940"
+      ]
+    },
+    {
+      "id": "2db56cd9-7c41-4f6a-9d05-9a4de7500c42",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CEX Demo Run",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "8134ec28-ba67-48f5-a85d-328209f88e5d"
+      ]
+    },
+    {
+      "id": "d8f6a855-e722-432f-aea7-8e27166d820c",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Material usage",
+      "icon": "social-media",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "a1721769-24aa-4434-80e5-6dad0a274a66",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Usage Record",
+      "icon": "social-media",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "06fb5d0d-74a3-423f-b1e3-20006964c2f4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Equipment usage",
+      "icon": "social-media",
+      "sourceVersion": "1.4"
+    },
+    {
+      "id": "0c1ad068-f1aa-419b-8434-a7a15e796545",
+      "kind": "TEMPLATE",
+      "contentType": "NONE",
+      "title": "Supplier",
+      "icon": "segmented-control",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "8b0cd044-958d-4dca-8977-9d2d470d21bc",
+      "kind": "TYPE",
+      "contentType": "NONE",
+      "title": "Data",
+      "icon": "segmented-control",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0ad01471-44b0-4523-9875-487f45a3be57",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default template",
+      "icon": "clipboard",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0636a862-95c3-4cba-934b-c494a5df9db0",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Downstream protocol 1",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "8134ec28-ba67-48f5-a85d-328209f88e5d"
+      ]
+    },
+    {
+      "id": "13550b46-ad20-4806-be79-8440786d7f3b",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Downstream protocol 2",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "8134ec28-ba67-48f5-a85d-328209f88e5d"
+      ]
+    },
+    {
+      "id": "31afcf75-0a7d-4c7e-93e1-2f38e3edaeba",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Example Protocol",
+      "icon": "clipboard",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "7bc8440f-5506-416c-b7f2-07cb61502e1d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample Generation",
+      "icon": "clipboard",
+      "sourceVersion": "1.5"
+    },
+    {
+      "id": "e31c1037-41f0-4949-bcdd-f6e7d850b30d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "HPLC Protocol",
+      "icon": "clipboard",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "a00fa0e6-408c-414e-af48-ddf7314ae940"
+      ]
+    },
+    {
+      "id": "14b52015-1d8b-445e-88bc-b3d47093cae0",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Generate sample list",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "3304d856-7127-4d7a-b333-14c24d451629",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "638a9723-bce8-4280-984c-272079f22c90",
+      "kind": "TEMPLATE",
+      "contentType": "NONE",
+      "title": "Sample Handling",
+      "icon": "segmented-control",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "464be07c-4c02-4dd5-9c22-f2cbc1fbdfe1",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Create sample record (bulk)",
+      "icon": "code",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "03e2070a-d229-4841-b09d-2e2b7c91406d",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script template",
+      "icon": "code",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "8bb5bb15-4a0f-4dbb-bc7b-6eb146a2cf47",
+      "kind": "TEMPLATE",
+      "contentType": "NONE",
+      "title": "New sample logging",
+      "icon": "segmented-control",
+      "sourceVersion": "1.5"
+    },
+    {
+      "id": "a7e2cb9c-44c3-4a47-99a1-9011b4f25860",
+      "kind": "TEMPLATE",
+      "contentType": "NONE",
+      "title": "New aliquot logging",
+      "icon": "segmented-control",
+      "sourceVersion": "1.7"
+    },
+    {
+      "id": "d4c92cc7-9e50-4cce-85bb-ec7157edba9a",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Create aliquots from sample logging",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "008648be-88af-487f-8dc6-9ccb93af416d",
+      "kind": "TEMPLATE",
+      "contentType": "NONE",
+      "title": "Source sample details",
+      "icon": "tag",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "2fe7e717-e0e8-4b3c-9108-e4015fe34782",
+      "kind": "TYPE",
+      "contentType": "NONE",
+      "title": "Source info",
+      "icon": "tag",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fb56800b-f1c2-4e79-8c3c-bf69ed37bcf8",
+      "kind": "TEMPLATE",
+      "contentType": "NONE",
+      "title": "Source material details",
+      "icon": "tag",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "aaf8356a-e13f-4c68-82bf-6581a8144d30",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Create inventory items for selected aliquots",
+      "icon": "code",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "84a018ca-6746-4e07-af91-40065c60055c",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Sample request protocol",
+      "icon": "clipboard",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6997c4ea-5625-411b-8e08-5a0caf3999db",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Upstream protocol 1",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "2c2066e9-58c4-4ba1-b4f8-9ef121c6ca47"
+      ]
+    },
+    {
+      "id": "e9dfaf27-51b9-4e8a-a47b-9681840f0c51",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Upstream protocol 2",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "2c2066e9-58c4-4ba1-b4f8-9ef121c6ca47"
+      ]
+    },
+    {
+      "id": "10ed8718-1204-41ae-a8ee-f5df62d40a3a",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default calibration protocol template",
+      "icon": "wrench",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "8c95e54a-d5b2-4352-8078-3daf8a72a382",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Calibration protocol",
+      "icon": "wrench",
+      "sourceVersion": "1.3"
+    },
+    {
+      "id": "b37914a0-7cfe-44bf-ba00-c9b91601964f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default maintenance protocol template",
+      "icon": "build",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "7c775b5e-392d-42d3-a2c7-7000ea2399b9",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Maintenance Protocol",
+      "icon": "build",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "e93035e7-cf8b-4eb9-9f14-face7d315a2a",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Create sample record inventory (single)",
+      "icon": "code",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "52963e3b-ed9b-464a-876d-b9f71836bda6",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Print label for individual record",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "45213d1e-e4e6-4637-ab6d-3d5026972fef",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Send individual record to request",
+      "icon": "code",
+      "sourceVersion": "1"
+    }
+  ],
+  "tags": [
+    {
+      "id": "a00fa0e6-408c-414e-af48-ddf7314ae940",
+      "text": "AD",
+      "hexCode": "#218968"
+    },
+    {
+      "id": "8134ec28-ba67-48f5-a85d-328209f88e5d",
+      "text": "DSP",
+      "hexCode": "#42bce7"
+    },
+    {
+      "id": "2c2066e9-58c4-4ba1-b4f8-9ef121c6ca47",
+      "text": "USP",
+      "hexCode": "#35769d"
+    }
+  ]
+}

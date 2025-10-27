@@ -1,0 +1,403 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "31afcf75-0a7d-4c7e-93e1-2f38e3edaeba",
+  "title": "Example Protocol",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Experiment ID": {
+      "id": "95901234-3fda-436e-ab76-5b77fef4cd10",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Material usage": {
+      "id": "c3704230-9ea6-44c7-88f1-1c74b799f512",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "d8f6a855-e722-432f-aea7-8e27166d820c",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Project number": {
+      "id": "97be1472-dce6-465a-9189-fb11d3a1e1e9",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Equipment usage": {
+      "id": "20f7899c-c233-4b26-af47-58bce0fda731",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "06fb5d0d-74a3-423f-b1e3-20006964c2f4",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Sample generation": {
+      "id": "15ba2d27-ecb0-4521-9ed5-e448327dfdc0",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "filePreview",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "7bc8440f-5506-416c-b7f2-07cb61502e1d"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Protocol",
+              "config": "Protocol"
+            },
+            {
+              "name": "Experiment ID",
+              "config": "Experiment ID"
+            },
+            {
+              "name": "Project number",
+              "config": "Project number"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fe8a5f14-e916-49b2-984c-1614a3b5d292"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f4bab2c8-41c2-4fe3-b13a-2b94e6feb9cc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c6904c49-6f95-4e38-9f0a-67780f3fb810",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0d17be84-18a5-4c00-8609-1aa3f1560211",
+          "type": "field",
+          "fieldId": "95901234-3fda-436e-ab76-5b77fef4cd10",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "12144d45-4c34-46f7-8c7e-7b65a543ae62",
+          "type": "field",
+          "fieldId": "97be1472-dce6-465a-9189-fb11d3a1e1e9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6cd728be-7d67-46c5-87ec-35827b5459c2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5e23139c-79bb-4a13-b0bc-c1c27d793a53",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Usage logs"
+            }
+          ]
+        },
+        {
+          "id": "1d248770-2ac0-4096-946d-b1f10005332d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cc6a2ca7-afe5-42af-9c02-5680b83e9fce",
+          "type": "field",
+          "fieldId": "c3704230-9ea6-44c7-88f1-1c74b799f512",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Material",
+                "name": "Material",
+                "isHidden": false
+              },
+              {
+                "id": "Type",
+                "name": "Type",
+                "isHidden": false
+              },
+              {
+                "id": "Expiry date",
+                "name": "Expiry date",
+                "isHidden": false
+              },
+              {
+                "id": "Time used",
+                "name": "Time used",
+                "isHidden": false
+              },
+              {
+                "id": "Quantity used: Amount",
+                "name": "Quantity used: Amount",
+                "isHidden": false
+              },
+              {
+                "id": "Quantity used: Unit",
+                "name": "Quantity used: Unit",
+                "isHidden": false
+              },
+              {
+                "id": "Expiry date from opening (UNIX)",
+                "name": "Expiry date from opening (UNIX)",
+                "isHidden": true
+              },
+              {
+                "id": "Manufacturer's expiry date",
+                "name": "Manufacturer's expiry date",
+                "isHidden": true
+              },
+              {
+                "id": "Protocol",
+                "name": "Protocol",
+                "isHidden": true
+              },
+              {
+                "id": "Experiment ID",
+                "name": "Experiment ID",
+                "isHidden": true
+              },
+              {
+                "id": "Project number",
+                "name": "Project number",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "027e3039-b945-46b8-bcb5-b2d8ec6630e2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2181d753-e7ee-477e-89ff-9b0574159b72",
+          "type": "p",
+          "children": [
+            {
+              "text": "Run the script below to update inventory stock levels"
+            }
+          ]
+        },
+        {
+          "id": "dd3d6d1f-30e0-4d93-a8a6-a1ac4d019551",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "73ad4abe-04d4-43c4-8fad-c8e6d2b3b71f",
+          "type": "p",
+          "children": [
+            {
+              "text": "ADD SCRIPT HERE",
+              "backgroundColor": "yellow"
+            }
+          ]
+        },
+        {
+          "id": "f24dbe1f-7848-4583-9b00-b7253a1910df",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "backgroundColor": "yellow"
+            }
+          ]
+        },
+        {
+          "id": "194b3d9a-8359-4fb5-87e8-38d13acb514b",
+          "type": "field",
+          "fieldId": "20f7899c-c233-4b26-af47-58bce0fda731",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Equipment",
+                "name": "Equipment",
+                "isHidden": false
+              },
+              {
+                "id": "Type",
+                "name": "Type",
+                "isHidden": false
+              },
+              {
+                "id": "Time used",
+                "name": "Time used",
+                "isHidden": false
+              },
+              {
+                "id": "Protocol",
+                "name": "Protocol",
+                "isHidden": true
+              },
+              {
+                "id": "Experiment ID",
+                "name": "Experiment ID",
+                "isHidden": true
+              },
+              {
+                "id": "Project number",
+                "name": "Project number",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "ae00e482-9f0b-4659-bd6f-1e8eabe6cfc1",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "backgroundColor": "yellow"
+            }
+          ]
+        },
+        {
+          "id": "344a8253-7b28-4a4d-bf83-b953fe2ac0f0",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Sample generation"
+            }
+          ]
+        },
+        {
+          "id": "ba6f8b7b-b20a-4aca-93fa-472c801b45a3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2101cdbb-5f30-459f-ad2d-5b9042d471aa",
+          "type": "field",
+          "fieldId": "15ba2d27-ecb0-4521-9ed5-e448327dfdc0",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f01ef54a-4b95-4e85-833d-e6e730d6b0ba",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Protocol #@TEMPLATE_INDEX "
+  }
+}

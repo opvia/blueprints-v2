@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "10ed8718-1204-41ae-a8ee-f5df62d40a3a",
+  "title": "Default calibration protocol template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Equipment": {
+      "id": "5be7c2c6-b22c-47bf-b9e1-ee85a6f5ca66",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Calibration date": {
+      "id": "b37e057e-3319-46bf-888a-20ecef9bbb84",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "8c95e54a-d5b2-4352-8078-3daf8a72a382"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "ab4ebd44-720f-427c-a0f8-dadf99e1ddec",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "644b75b8-33ab-4711-8d56-42b32d79cab2",
+          "type": "field",
+          "fieldId": "b37e057e-3319-46bf-888a-20ecef9bbb84",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5d6aa220-c98d-4bd3-b89b-c1bec0dd90fc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "56d6639a-1668-4935-8308-3efdac7b2ad8",
+          "type": "field",
+          "fieldId": "5be7c2c6-b22c-47bf-b9e1-ee85a6f5ca66",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8387c046-86f6-4647-9a74-992812b35daa",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

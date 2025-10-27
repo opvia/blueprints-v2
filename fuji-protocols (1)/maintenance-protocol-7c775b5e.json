@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "7c775b5e-392d-42d3-a2c7-7000ea2399b9",
+  "title": "Maintenance Protocol",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Equipment": {
+      "id": "e56d0e7f-94b1-4e76-97a1-b5329cca6563",
+      "type": "FORMULA",
+      "value": null,
+      "config": {},
+      "dataType": null
+    },
+    "Maintenance date": {
+      "id": "ee020dda-f699-4e28-aeed-61f0942cc7f8",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "build",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "b37914a0-7cfe-44bf-ba00-c9b91601964f",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": true
+    },
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": false
+  }
+}

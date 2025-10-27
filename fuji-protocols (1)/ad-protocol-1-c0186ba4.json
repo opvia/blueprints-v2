@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c0186ba4-35c8-4680-8e2a-428a41fba276",
+  "title": "AD protocol 1",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fe8a5f14-e916-49b2-984c-1614a3b5d292"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "5609094b-6960-469c-9706-02391c6d191f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "AD 1 - #@TEMPLATE_INDEX"
+  }
+}
