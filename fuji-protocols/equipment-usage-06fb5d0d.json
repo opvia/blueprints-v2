@@ -1,0 +1,280 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "06fb5d0d-74a3-423f-b1e3-20006964c2f4",
+  "title": "Equipment usage",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Type": {
+      "id": "d433733c-2c24-4aac-be4b-20f270172326",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Equipment\"), 'Record name')"
+      },
+      "dataType": null
+    },
+    "Cleaned": {
+      "id": "98bfec2a-bfca-48ad-9f53-b388c60a84f1",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Protocol": {
+      "id": "e90307d4-5e1a-4506-a8d9-0df2cd339864",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Equipment": {
+      "id": "6f129690-0373-4f4b-900a-fbed6c6d5dbd",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Equipment"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Time used": {
+      "id": "bd09e2be-e5e8-4a02-b513-b6dfbe6bbe18",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    },
+    "Experiment ID": {
+      "id": "6b0ea4e4-0097-4d41-aacd-d1b450021585",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , 'Experiment ID')"
+      },
+      "dataType": null
+    },
+    "Project number": {
+      "id": "b4b6359b-be80-4a83-89af-93dec2b8bda4",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , 'Project number')"
+      },
+      "dataType": null
+    },
+    "Next calibration check due": {
+      "id": "47dd9d4b-3615-4fd3-8f17-71feba0dbc84",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Equipment\") , 'Next calibration check due')"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "a1721769-24aa-4434-80e5-6dad0a274a66"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "2bf9c754-c4dd-4013-bb5a-3ad785c44b6e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "350ce3e9-15ca-47ce-a546-c0e59c6207e5",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "3522e083-c0f2-4397-904e-23d29891dd62",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "4474d6c5-98a9-4e97-9947-2cc5354046bf",
+                  "type": "field",
+                  "fieldId": "e90307d4-5e1a-4506-a8d9-0df2cd339864",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c3a8ed2a-2322-4194-888e-08409a553c2d",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b6cf38e5-61a7-4280-aadf-a6045a70dfe6",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "ba12f368-db80-4fc6-8962-6750b36efcbb",
+                  "type": "field",
+                  "fieldId": "6b0ea4e4-0097-4d41-aacd-d1b450021585",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "17dfc0cc-41f8-4a72-ad66-afc46fbf7764",
+                  "type": "field",
+                  "fieldId": "b4b6359b-be80-4a83-89af-93dec2b8bda4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "3217209d-1f4e-4d48-a6bb-78ebf93ba4fa",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "486766bf-d217-4196-bacd-1de497211df2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "304f1452-908c-46c9-b552-b55012ff7719",
+          "type": "field",
+          "fieldId": "6f129690-0373-4f4b-900a-fbed6c6d5dbd",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "7ac548ee-f167-4d93-b5fa-b451e5f1920d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4a5d36f1-8bb9-4bfa-aad9-96b7a2fdb528",
+          "type": "field",
+          "fieldId": "d433733c-2c24-4aac-be4b-20f270172326",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c00b06ea-49d5-4b0b-90ae-ff414cc39596",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f76377f5-ceb6-4edc-8ca6-4e06c90c59f6",
+          "type": "field",
+          "fieldId": "bd09e2be-e5e8-4a02-b513-b6dfbe6bbe18",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b16a3541-d30d-4a67-ae78-6222b9311486",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "EQP usage @TEMPLATE_INDEX "
+  }
+}

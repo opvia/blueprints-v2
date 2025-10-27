@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "fb56800b-f1c2-4e79-8c3c-bf69ed37bcf8",
+  "title": "Source material details",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "e68e3aab-ee24-4306-a1d1-e491f6d62b7c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Material ID": {
+      "id": "43045cac-1660-422d-bcba-5ad01298d841",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Material"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Record"
+                    ],
+                    "filter": "field",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Record",
+              "config": "Record"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "New sample name": {
+      "id": "6f14ff22-3c13-410e-8f4c-2b8ca90adc23",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "New Lot Reference 1": {
+      "id": "2378172b-42c3-47fc-a48c-3eb868e7af1e",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"New Lot Reference 1\") == null"
+      },
+      "dataType": "STRING"
+    },
+    "New Lot Reference 2": {
+      "id": "b71ca0fd-3e43-440d-82c9-ac0248327b62",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"New Lot Reference 2\") == null"
+      },
+      "dataType": "STRING"
+    },
+    "New Lot Reference 3": {
+      "id": "197a0267-0c8c-4735-ae50-93c22087570f",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"New Lot Reference 3\") == null"
+      },
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "2fe7e717-e0e8-4b3c-9108-e4015fe34782"
+    }
+  },
+  "content": {
+    "type": "NONE"
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Source Material @43045cac-1660-422d-bcba-5ad01298d841 @TEMPLATE_INDEX "
+  }
+}

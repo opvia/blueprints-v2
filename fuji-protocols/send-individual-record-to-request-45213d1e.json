@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "45213d1e-e4e6-4637-ab6d-3d5026972fef",
+  "title": "Send individual record to request",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "03e2070a-d229-4841-b09d-2e2b7c91406d",
+      "version": "1.1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3304d856-7127-4d7a-b333-14c24d451629"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": ""
+    }
+  }
+}
