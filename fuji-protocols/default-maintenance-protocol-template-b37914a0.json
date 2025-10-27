@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b37914a0-7cfe-44bf-ba00-c9b91601964f",
+  "title": "Default maintenance protocol template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Equipment": {
+      "id": "501896e0-a4dd-4086-ba77-2b6ee7c4a2bd",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Maintenance date": {
+      "id": "416d7ee6-3301-4fa9-827e-80e2a9b24663",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "7c775b5e-392d-42d3-a2c7-7000ea2399b9"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "dc211ef5-f288-4d68-b0bb-0d1f405e3824",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "84f4627a-5cbc-4436-ae53-aee2ec6ad253",
+          "type": "field",
+          "fieldId": "416d7ee6-3301-4fa9-827e-80e2a9b24663",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "13f878fd-187a-4bd3-8059-cfe7594f1c79",
+          "type": "field",
+          "fieldId": "501896e0-a4dd-4086-ba77-2b6ee7c4a2bd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "93ff2aa0-2adf-4c3d-bfd8-b31f489009fd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

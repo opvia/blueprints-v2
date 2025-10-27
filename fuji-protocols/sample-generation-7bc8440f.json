@@ -1,0 +1,1393 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "7bc8440f-5506-416c-b7f2-07cb61502e1d",
+  "title": "Sample Generation",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Study": {
+      "id": "abf2e774-0a8d-4786-8047-0f792b1a92a8",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Protocol": {
+      "id": "aa54bde7-c423-4cc0-a90e-bdb409523352",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Experiment ID": {
+      "id": "e2e8f713-b06c-46b0-ac86-1acf1412125b",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"CREATED_FROM\")  , 'Experiment ID')"
+      },
+      "dataType": null
+    },
+    "Create records": {
+      "id": "1108c277-206e-43b0-a665-75307efd3c57",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "464be07c-4c02-4dd5-9c22-f2cbc1fbdfe1",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create records"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Project number": {
+      "id": "f8bf85c7-ffa6-426d-841c-9f0869d448f7",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"CREATED_FROM\")  , 'Project number')"
+      },
+      "dataType": null
+    },
+    "Sample details": {
+      "id": "92137cdd-ad99-4bbf-97f6-21b9017a9643",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "8bb5bb15-4a0f-4dbb-bc7b-6eb146a2cf47",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Aliquot details": {
+      "id": "75b89754-ba53-41f5-889a-9e6ea7c62b20",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "a7e2cb9c-44c3-4a47-99a1-9011b4f25860",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Create aliquots": {
+      "id": "8d8ff8ef-40d2-47b2-83e1-5ba502dfb85a",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "d4c92cc7-9e50-4cce-85bb-ec7157edba9a",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create aliquots"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Sampling start date": {
+      "id": "4387b686-ef52-4fdb-b1b7-89cab910bbdc",
+      "type": "DATETIME",
+      "value": null,
+      "config": {
+        "format": "dd-MMM-yyyy"
+      },
+      "dataType": "DATETIME"
+    },
+    "Default expiry (days)": {
+      "id": "a3898761-255f-49a2-a8b4-1ba966ca36ad",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Source Sample Details": {
+      "id": "d8466ff6-27d9-48dc-8988-b38bff880fe1",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "008648be-88af-487f-8dc6-9ccb93af416d",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Default specific hazard": {
+      "id": "3f808c95-f727-4db6-91ce-defce2564354",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Harmful",
+          "Corrosive",
+          "Flammable",
+          "Toxic",
+          "Irritant",
+          "Teratogen",
+          "Acid",
+          "Biological",
+          "Toxic to aquatic life"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Source Material Details": {
+      "id": "fb20aa6a-b2f9-4032-a1e1-04270bc8b42c",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "fb56800b-f1c2-4e79-8c3c-bf69ed37bcf8",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Default storage location": {
+      "id": "120fa3df-324f-4129-96e8-3fd0603b4548",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Location"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Add aliquots to inventory": {
+      "id": "43894081-390c-4df3-94c4-a60f479b3ab9",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "aaf8356a-e13f-4c68-82bf-6581a8144d30",
+          "version": "1.1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Add to inventory"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Default storage condition": {
+      "id": "f0783dab-a1b8-466a-99d5-dac0b0969e29",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Incubated (Approx. 37°C)",
+          "Ambient (Approx. 20°C)",
+          "Refrigerated (Approx. 4°C)",
+          "Frozen (Approx. -20°C)",
+          "Frozen (Approx. -30°C)",
+          "Ultra-frozen (Approx. -70°C)",
+          "Ultra-frozen (Approx. -80°C)",
+          "Liquid Nitrogen (LN2) (Approx. -180°C)",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Source Material or Sample": {
+      "id": "21454de6-59d3-4d29-bb71-e87675ef4a97",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "None",
+          "Material",
+          "Sample",
+          "Material & Sample"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Default FDBK health hazard": {
+      "id": "3d9aefa9-8447-4634-855d-e7d312213b24",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "High 1",
+          "High 2",
+          "Medium",
+          "Low"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Default analytical concentration unit": {
+      "id": "661ed872-8b12-4ce5-a423-27551bd74d9c",
+      "type": "SELECT",
+      "value": [
+        "mg/mL"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "mg/mL",
+          "vg/mL"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Number of additional samples to generate": {
+      "id": "a16cd491-4b32-4b12-86ae-09c1d823934e",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fe8a5f14-e916-49b2-984c-1614a3b5d292"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "1de65a04-1373-43d3-bfea-9fdd66bcb1f8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a5a34033-f7e3-4bc6-a7c9-21ba9167fdc7",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Experiment setup"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "1befac0d-799a-4d38-9591-c8b7d62178e8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f127f054-f0c9-4948-b9f0-5d7bc999a2b9",
+          "type": "h3",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Experiment details"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "b38fe881-4dce-4bce-8581-9ac806da5549",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b1aa12d3-8ce6-477b-b2b1-d1f0f3db68c8",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "9a4f564a-88ee-4d81-b4fa-86a58d9f78d7",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "f5750306-314c-4833-92c1-68c40a84c7b7",
+                  "type": "field",
+                  "fieldId": "aa54bde7-c423-4cc0-a90e-bdb409523352",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "6e2b39cd-0b3b-4247-a91d-6d83d81c23a6",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "aab9cefa-a331-45f0-9975-9ecaafcba30c",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "52cc15c7-bbc3-4f33-9a27-db167a7146b2",
+                  "type": "field",
+                  "fieldId": "e2e8f713-b06c-46b0-ac86-1acf1412125b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "eb35d954-091a-4c1f-a123-0da55f4a2163",
+                  "type": "field",
+                  "fieldId": "f8bf85c7-ffa6-426d-841c-9f0869d448f7",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ffe4f700-f874-4e23-9ccb-c289e2f00323",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2f01e40-0620-4627-ab3e-99e19b4f71aa",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bb88a04a-2b26-46c3-91bd-2dde8083182f",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "4f4e3e10-21f4-4146-8dd4-0fda4cdc5ab2",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "035c8222-164f-4662-819e-2040da473cd4",
+                  "type": "field",
+                  "fieldId": "abf2e774-0a8d-4786-8047-0f792b1a92a8",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "2358bc65-2a44-40b0-b24a-60bb1ae0eb24",
+                  "type": "field",
+                  "fieldId": "21454de6-59d3-4d29-bb71-e87675ef4a97",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "106c46ef-100f-4e8e-a4f5-30d328963e11",
+                  "type": "field",
+                  "fieldId": "a16cd491-4b32-4b12-86ae-09c1d823934e",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c86304ed-a63b-4539-b6c3-a80697d99a1b",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d2ae2141-341c-48ee-a624-15cf85d90f67",
+                  "type": "field",
+                  "fieldId": "4387b686-ef52-4fdb-b1b7-89cab910bbdc",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "774d21f4-b944-4669-aba9-84f1ceb87467",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "71b512ba-4658-4a3c-aada-e5775305f886",
+                  "type": "field",
+                  "fieldId": "a3898761-255f-49a2-a8b4-1ba966ca36ad",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "9e7a0c0a-f80b-49b2-b638-d14ff5f75daa",
+                  "type": "field",
+                  "fieldId": "3f808c95-f727-4db6-91ce-defce2564354",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "3407386a-012e-43a0-91eb-852b185ea102",
+                  "type": "field",
+                  "fieldId": "3d9aefa9-8447-4634-855d-e7d312213b24",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ba5eba78-710a-41b7-a731-87bbdd553261",
+                  "type": "field",
+                  "fieldId": "f0783dab-a1b8-466a-99d5-dac0b0969e29",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c39843e4-c2a0-4718-b297-b883eed297b3",
+                  "type": "field",
+                  "fieldId": "120fa3df-324f-4129-96e8-3fd0603b4548",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "502af363-30cb-4471-856b-a4d73491aa63",
+                  "type": "field",
+                  "fieldId": "661ed872-8b12-4ce5-a423-27551bd74d9c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d78cca26-0265-4369-adc6-0b79e4d34863",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a05d91a4-0196-4d1d-b95c-aacf11ca92ea",
+          "type": "h3",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Source details"
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal",
+          "hierListRestart": "1."
+        },
+        {
+          "id": "c2f22ed7-9cdb-4922-addc-42ca6cf23d07",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "42a6a05f-bf89-4a9e-8373-9a24f73eccc8",
+          "type": "field",
+          "fieldId": "d8466ff6-27d9-48dc-8988-b38bff880fe1",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Sample ID",
+                "name": "Sample ID",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 1",
+                "name": "New Lot Reference 1",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 2",
+                "name": "New Lot Reference 2",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 3",
+                "name": "New Lot Reference 3",
+                "isHidden": false
+              },
+              {
+                "id": "New sample name",
+                "name": "New sample name",
+                "isHidden": false
+              },
+              {
+                "id": "Stock sample name",
+                "name": "Stock sample name",
+                "isHidden": false
+              },
+              {
+                "id": "Item name",
+                "name": "Item name",
+                "isHidden": false
+              },
+              {
+                "id": "Available quantity",
+                "name": "Available quantity",
+                "isHidden": false
+              },
+              {
+                "id": "Extinction coefficient",
+                "name": "Extinction coefficient",
+                "isHidden": false
+              },
+              {
+                "id": "Stock sample location",
+                "name": "Stock sample location",
+                "isHidden": false
+              },
+              {
+                "id": "Available Quantity (mL)",
+                "name": "Available Quantity (mL)",
+                "isHidden": false
+              },
+              {
+                "id": "Concentration (mg/mL)",
+                "name": "Concentration (mg/mL)",
+                "isHidden": false
+              },
+              {
+                "id": "Comments",
+                "name": "Comments",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "27d2416e-af15-44c0-8993-d4576e095ce8",
+          "type": "field",
+          "fieldId": "fb20aa6a-b2f9-4032-a1e1-04270bc8b42c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Material ID",
+                "name": "Material ID",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 1",
+                "name": "New Lot Reference 1",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 2",
+                "name": "New Lot Reference 2",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 3",
+                "name": "New Lot Reference 3",
+                "isHidden": false
+              },
+              {
+                "id": "New sample name",
+                "name": "New sample name",
+                "isHidden": false
+              },
+              {
+                "id": "Comments",
+                "name": "Comments",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "271bf228-1d74-48ae-9094-f406bf0350f5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fa7562f4-602f-4382-907e-782659279f00",
+          "type": "h3",
+          "indent": 2,
+          "children": [
+            {
+              "text": "New Sample Details"
+            }
+          ],
+          "listRestart": 3,
+          "listStyleType": "decimal",
+          "hierListRestart": "1."
+        },
+        {
+          "id": "8ceec516-ed91-4e1f-aed4-f1ca31ec1375",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c1cafd09-5a8a-47c8-b6a2-64745dd825f1",
+          "type": "field",
+          "fieldId": "92137cdd-ad99-4bbf-97f6-21b9017a9643",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "New Lot Reference",
+                "name": "New Lot Reference",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 1",
+                "name": "New Lot Reference 1",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 2",
+                "name": "New Lot Reference 2",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 3",
+                "name": "New Lot Reference 3",
+                "isHidden": false
+              },
+              {
+                "id": "New sample name",
+                "name": "New sample name",
+                "isHidden": false
+              },
+              {
+                "id": "Analytical concentration (mg/mL)",
+                "name": "Analytical concentration (mg/mL)",
+                "isHidden": false
+              },
+              {
+                "id": "Density (kg/m3)",
+                "name": "Density (kg/m3)",
+                "isHidden": false
+              },
+              {
+                "id": "Extinction coefficient",
+                "name": "Extinction coefficient",
+                "isHidden": false
+              },
+              {
+                "id": "Comments",
+                "name": "Comments",
+                "isHidden": false
+              },
+              {
+                "id": "Expiry (Days)",
+                "name": "Expiry (Days)",
+                "isHidden": true
+              },
+              {
+                "id": "FDBK health hazard",
+                "name": "FDBK health hazard",
+                "isHidden": true
+              },
+              {
+                "id": "New record link",
+                "name": "New record link",
+                "isHidden": true
+              },
+              {
+                "id": "New storage conditions",
+                "name": "New storage conditions",
+                "isHidden": true
+              },
+              {
+                "id": "Number of aliquots",
+                "name": "Number of aliquots",
+                "isHidden": true
+              },
+              {
+                "id": "Project number",
+                "name": "Project number",
+                "isHidden": true
+              },
+              {
+                "id": "Protocol / default other storage conditions",
+                "name": "Protocol / default other storage conditions",
+                "isHidden": true
+              },
+              {
+                "id": "Protocol / default sample aliquot volume (mL)",
+                "name": "Protocol / default sample aliquot volume (mL)",
+                "isHidden": true
+              },
+              {
+                "id": "Specific hazard",
+                "name": "Specific hazard",
+                "isHidden": true
+              },
+              {
+                "id": "Add record to inventory",
+                "name": "Add record to inventory",
+                "isHidden": true
+              },
+              {
+                "id": "Print record label",
+                "name": "Print record label",
+                "isHidden": true
+              },
+              {
+                "id": "Send record to request",
+                "name": "Send record to request",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "eb9937ec-cf25-44b9-b388-071e0568fbc4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e752c7a4-2b94-48a1-86bc-2a5ed8bbcddf",
+          "type": "h3",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Protocol Sample details"
+            }
+          ],
+          "listRestart": 4,
+          "listStyleType": "decimal",
+          "hierListRestart": "1."
+        },
+        {
+          "id": "68853ad3-d052-45fc-959a-3ea19dfe2697",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c5e4b722-38b4-4f5e-8ff0-779f2299fd63",
+          "type": "p",
+          "children": [
+            {
+              "text": "TO FILL IN",
+              "backgroundColor": "yellow"
+            }
+          ]
+        },
+        {
+          "id": "c47136d2-18d6-4565-8b57-d4950a5f325e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5f452cc4-9689-4a8f-b879-a01c7604818e",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Sample generation"
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "234c519d-f216-4c69-b36f-01f804284e2e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cc3faa5b-3445-49f3-b6fc-f070c01e094f",
+          "type": "h3",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Sample record details"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "87a3a92b-9d08-4b4e-ab8d-e12746be8b88",
+          "type": "p",
+          "children": [
+            {
+              "text": "Some fields are pre-populated if you are using a protocol or have completed the default values in Section 1.1. "
+            },
+            {
+              "text": "Run the script below to add the values",
+              "backgroundColor": "yellow"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "id": "f33c58dc-a254-409f-904b-5c80fb92e0fa",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "231be6b3-0c36-4d58-aaf7-2b2f34bb5a69",
+          "type": "field",
+          "fieldId": "92137cdd-ad99-4bbf-97f6-21b9017a9643",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Analytical concentration (mg/mL)",
+                "name": "Analytical concentration (mg/mL)",
+                "isHidden": true
+              },
+              {
+                "id": "Comments",
+                "name": "Comments",
+                "isHidden": true
+              },
+              {
+                "id": "Density (kg/m3)",
+                "name": "Density (kg/m3)",
+                "isHidden": true
+              },
+              {
+                "id": "Extinction coefficient",
+                "name": "Extinction coefficient",
+                "isHidden": true
+              },
+              {
+                "id": "New Lot Reference",
+                "name": "New Lot Reference",
+                "isHidden": false
+              },
+              {
+                "id": "Number of aliquots",
+                "name": "Number of aliquots",
+                "isHidden": false
+              },
+              {
+                "id": "Protocol / default sample aliquot volume (mL)",
+                "name": "Protocol / default sample aliquot volume (mL)",
+                "isHidden": false
+              },
+              {
+                "id": "New storage conditions",
+                "name": "New storage conditions",
+                "isHidden": false
+              },
+              {
+                "id": "FDBK health hazard",
+                "name": "FDBK health hazard",
+                "isHidden": false
+              },
+              {
+                "id": "Specific hazard",
+                "name": "Specific hazard",
+                "isHidden": false
+              },
+              {
+                "id": "Protocol / default other storage conditions",
+                "name": "Protocol / default other storage conditions",
+                "isHidden": false
+              },
+              {
+                "id": "Expiry (Days)",
+                "name": "Expiry (Days)",
+                "isHidden": false
+              },
+              {
+                "id": "New record link",
+                "name": "New record link",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference 1",
+                "name": "New Lot Reference 1",
+                "isHidden": true
+              },
+              {
+                "id": "New Lot Reference 2",
+                "name": "New Lot Reference 2",
+                "isHidden": true
+              },
+              {
+                "id": "New Lot Reference 3",
+                "name": "New Lot Reference 3",
+                "isHidden": true
+              },
+              {
+                "id": "New sample name",
+                "name": "New sample name",
+                "isHidden": true
+              },
+              {
+                "id": "Project number",
+                "name": "Project number",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "78f9cb28-5488-4a75-91e1-95b8f1740419",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "de57f7a9-e17e-4168-bb8c-406476458293",
+          "type": "p",
+          "children": [
+            {
+              "text": "Individual records can be created per row, or use the button below to create records for all samples in the table above."
+            }
+          ]
+        },
+        {
+          "id": "7a05ba69-aaa4-4054-8311-c63ca5d5f032",
+          "type": "field",
+          "fieldId": "1108c277-206e-43b0-a665-75307efd3c57",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "1b9054c5-0236-4cb8-bfec-e5ecfeacb3a1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dc14fd16-b3e4-4223-bd1d-30ceaa876d94",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "389ea886-34cd-4184-bd46-3eab82672a68",
+          "type": "h3",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Sample aliquot details"
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal",
+          "hierListRestart": "2."
+        },
+        {
+          "id": "dbb66842-2d8d-4593-8cdf-8802a1a3d65e",
+          "type": "p",
+          "children": [
+            {
+              "text": "Press the button below to fill out the aliquots table. Some"
+            },
+            {
+              "text": " fields will be pre-populated i",
+              "backgroundColor": "yellow"
+            },
+            {
+              "text": "f you are using a protocol or have completed the default values in Section 1.1. "
+            }
+          ]
+        },
+        {
+          "id": "bc377d4c-fa0f-473e-b073-7645044577fa",
+          "type": "field",
+          "fieldId": "8d8ff8ef-40d2-47b2-83e1-5ba502dfb85a",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "efc65ad3-8d53-4c3a-9df9-aacbb464b9e1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "aebfd3f2-b104-4843-95e8-213385cc797a",
+          "type": "field",
+          "fieldId": "75b89754-ba53-41f5-889a-9e6ea7c62b20",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": false
+              },
+              {
+                "id": "Aliquot number",
+                "name": "Aliquot number",
+                "isHidden": false
+              },
+              {
+                "id": "Protocol / default aliquot print name",
+                "name": "Protocol / default aliquot print name",
+                "isHidden": false
+              },
+              {
+                "id": "Actual sampling date",
+                "name": "Actual sampling date",
+                "isHidden": false
+              },
+              {
+                "id": "Protocol / default aliquot expiry (days)",
+                "name": "Protocol / default aliquot expiry (days)",
+                "isHidden": true
+              },
+              {
+                "id": "Protocol / default aliquot expiry",
+                "name": "Protocol / default aliquot expiry",
+                "isHidden": false
+              },
+              {
+                "id": "Sample expiry date",
+                "name": "Sample expiry date",
+                "isHidden": false
+              },
+              {
+                "id": "Protocol / default aliquot volume (mL)",
+                "name": "Protocol / default aliquot volume (mL)",
+                "isHidden": false
+              },
+              {
+                "id": "Aliquot volume (mL)",
+                "name": "Aliquot volume (mL)",
+                "isHidden": false
+              },
+              {
+                "id": "Protocol storage condition",
+                "name": "Protocol storage condition",
+                "isHidden": false
+              },
+              {
+                "id": "Aliquot storage condition",
+                "name": "Aliquot storage condition",
+                "isHidden": false
+              },
+              {
+                "id": "Inventory storage location",
+                "name": "Inventory storage location",
+                "isHidden": false
+              },
+              {
+                "id": "External ID",
+                "name": "External ID",
+                "isHidden": false
+              },
+              {
+                "id": "Comments",
+                "name": "Comments",
+                "isHidden": false
+              },
+              {
+                "id": "Aliquot ID",
+                "name": "Aliquot ID",
+                "isHidden": true
+              },
+              {
+                "id": "Generate sample?",
+                "name": "Generate sample?",
+                "isHidden": false
+              },
+              {
+                "id": "Label printed?",
+                "name": "Label printed?",
+                "isHidden": false
+              },
+              {
+                "id": "Send to request?",
+                "name": "Send to request?",
+                "isHidden": false
+              },
+              {
+                "id": "Item link",
+                "name": "Item link",
+                "isHidden": false
+              },
+              {
+                "id": "New Lot Reference",
+                "name": "New Lot Reference",
+                "isHidden": true
+              },
+              {
+                "id": "Parent sample",
+                "name": "Parent sample",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "8e6f9648-236f-405c-8d25-5cd8ab33e65c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e15bfa23-4c9c-49eb-89c3-4e1ff29d2da9",
+          "type": "field",
+          "fieldId": "43894081-390c-4df3-94c4-a60f479b3ab9",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "2daeeada-0b62-44bf-8f72-818fb867be53",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2d124702-b631-43c6-95e4-951d5b248115",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "403a1266-3655-43a8-8d6b-6742f943fe9a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4ff7af7c-429c-4696-888c-6be9bb469330",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "02b754a5-ab6d-4540-b45e-d1c4f3ed11ff",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Sample gen #@TEMPLATE_INDEX "
+  }
+}
