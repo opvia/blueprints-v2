@@ -1,0 +1,389 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "45eb4ecc-a562-411a-b247-91456e64c55f",
+  "title": "Reagent_Consumable",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Name": {
+      "id": "625ddbd0-ad4e-4d1a-ab48-95607ead511c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Type": {
+      "id": "e8a1ce8a-0062-4b81-81c2-4ca23f698587",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Calibration beads",
+          "Comp beads",
+          "Chemical",
+          "Lyse/Fix buffer",
+          "Lysis buffer"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Units": {
+      "id": "f0958b9e-72dd-4e43-885c-3a4853ba7148",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "mL",
+          "uL"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Stocks": {
+      "id": "fa681208-0980-4171-a142-811ba47fd23d",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "9a595b4a-2fe8-4e96-93a1-d86652585cf4"
+                  ],
+                  "filter": "template",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Reagent",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Remaining volume (uL)",
+            "config": "Remaining volume (uL)"
+          },
+          {
+            "name": "Antibody",
+            "config": "Antibody"
+          },
+          {
+            "name": "Lot Number",
+            "config": "Lot Number"
+          },
+          {
+            "name": "Reagent",
+            "config": "Reagent"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Manufacturer": {
+      "id": "396c44c0-be58-4cfe-ab8c-3eb3a30595b4",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "5850a6ee-2ba3-4ce5-af6b-14ba872b6f48"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Type",
+              "config": "Type"
+            },
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Risk Level",
+              "config": "Risk Level"
+            },
+            {
+              "name": "Approved By",
+              "config": "Approved By"
+            },
+            {
+              "name": "Website URL",
+              "config": "Website URL"
+            },
+            {
+              "name": "Impact Level",
+              "config": "Impact Level"
+            },
+            {
+              "name": "Submission 1",
+              "config": "Submission 1"
+            },
+            {
+              "name": "Vendor Status",
+              "config": "Vendor Status"
+            },
+            {
+              "name": "Payment Method",
+              "config": "Payment Method"
+            },
+            {
+              "name": "Purpose of Use",
+              "config": "Purpose of Use"
+            },
+            {
+              "name": "Account No/Info",
+              "config": "Account No/Info"
+            },
+            {
+              "name": "Vendor Email(s)",
+              "config": "Vendor Email(s)"
+            },
+            {
+              "name": "Date of Next Audit",
+              "config": "Date of Next Audit"
+            },
+            {
+              "name": "Likelihood of Risk",
+              "config": "Likelihood of Risk"
+            },
+            {
+              "name": "Date Last Published",
+              "config": "Date Last Published"
+            },
+            {
+              "name": "Main Team(s) of Use",
+              "config": "Main Team(s) of Use"
+            },
+            {
+              "name": "Main Staff Responsible",
+              "config": "Main Staff Responsible"
+            },
+            {
+              "name": "Vendor Phone Number(s)",
+              "config": "Vendor Phone Number(s)"
+            },
+            {
+              "name": "Vendor IMU Questionnaire",
+              "config": "Vendor IMU Questionnaire"
+            },
+            {
+              "name": "Justification of Risk Rating",
+              "config": "Justification of Risk Rating"
+            },
+            {
+              "name": "Frequency of Purchase/Subscription Renewal",
+              "config": "Frequency of Purchase/Subscription Renewal"
+            },
+            {
+              "name": "Average Frequency of Use (of service/reagents)",
+              "config": "Average Frequency of Use (of service/reagents)"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Catalog Number": {
+      "id": "2685d171-4f69-4e6a-b6c1-c59b3f7c98c3",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Seal Unique ID": {
+      "id": "b1dae225-7362-4c19-8792-3074a7655354",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"TEMPLATE_INDEX\")"
+      },
+      "dataType": "STRING"
+    },
+    "Labguru System ID": {
+      "id": "6a2cff07-3c31-4d14-9a8b-ae1da5497669",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "8c425aad-6237-4109-97aa-0be6e27426bf"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "e1005410-1ec9-4a1e-86e2-b7b49a4cba08",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e5b0c0e6-4147-4635-bfc1-6ce0f4788606",
+          "type": "field",
+          "fieldId": "396c44c0-be58-4cfe-ab8c-3eb3a30595b4",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "b8abfa17-37b6-4b4a-82ee-f32c6e8fe3a9",
+          "type": "field",
+          "fieldId": "2685d171-4f69-4e6a-b6c1-c59b3f7c98c3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a6673565-86ef-4e16-aa78-b418408a5a88",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2d7e7229-afad-4aa2-82ea-148390b86f10",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "409bb8ec-e726-4227-b02f-36fdeb3983d2",
+          "type": "field",
+          "fieldId": "b1dae225-7362-4c19-8792-3074a7655354",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f55016e0-8211-44d3-a589-e503027f3875",
+          "type": "field",
+          "fieldId": "e8a1ce8a-0062-4b81-81c2-4ca23f698587",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7db12cf2-d895-4cac-9411-0258fcd29614",
+          "type": "field",
+          "fieldId": "625ddbd0-ad4e-4d1a-ab48-95607ead511c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "733300de-e971-4147-9a75-0524b824c8ce",
+          "type": "field",
+          "fieldId": "f0958b9e-72dd-4e43-885c-3a4853ba7148",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8be4dd3f-6e8e-4f95-bf69-6533ffba5080",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3e096591-f031-49dd-907f-c89c0429220d",
+          "type": "field",
+          "fieldId": "fa681208-0980-4171-a142-811ba47fd23d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6528266e-5daf-4904-a549-1ef92d04e251",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@6a2cff07-3c31-4d14-9a8b-ae1da5497669@"
+  }
+}
