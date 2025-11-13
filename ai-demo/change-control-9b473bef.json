@@ -1,0 +1,721 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "9b473bef-0043-4e62-9bf6-9a5c8aa6db7f",
+  "title": "Change Control",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Overall Risk": {
+      "id": "daeb4ca4-64cf-43c1-b58f-7b98a3952d83",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Justification": {
+      "id": "2e30da0f-fedd-45c6-ab10-048a3c39804d",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Proposed Changes": {
+      "id": "368b5feb-159e-4a13-aaca-59b522cc1e60",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Supporting Documents": {
+      "id": "f729c048-43d3-48e3-8f9a-905cb54aa769",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Validation Master Plan": {
+      "id": "4ffd7bc3-835b-45b4-9a8e-a6805f2a1da4",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "299b62d3-95d4-4349-8cb2-2dec38fd127e",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Required changes to Validation Master Plan": {
+      "id": "a77d6ecd-cd78-4bff-a533-ebd317ed4863",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Required changes to Validation Master Plan?": {
+      "id": "15e48255-20f4-4d20-9fb6-b43d6ee68c15",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "a5a70c1a-8d56-41fa-931a-e34b62e981b8"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8f3a37f2-7f63-44b6-97a0-9b36c21fe98f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "eb4673f9-c33d-4eff-87be-7949e6a30d1d",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Overview"
+            }
+          ]
+        },
+        {
+          "id": "58f31fcc-c368-43db-9f03-e18b5fcd52e4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "58985e3f-32a0-4114-b7fb-1d97be7ec5ca",
+          "type": "field",
+          "fieldId": "368b5feb-159e-4a13-aaca-59b522cc1e60",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fd36a695-48a6-41b5-90f3-3d6279ef88a6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "55d5145a-6ef9-4ead-846e-ac4458175a3f",
+          "type": "field",
+          "fieldId": "2e30da0f-fedd-45c6-ab10-048a3c39804d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "10a31838-f12e-4a84-a4cc-6e0cb2dbd7c9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "20b6e08f-759c-4ba2-b694-9969e2ca9088",
+          "type": "field",
+          "fieldId": "f729c048-43d3-48e3-8f9a-905cb54aa769",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "e5eab224-caa6-4618-b911-d9d083f249d8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "623ccf3b-21c5-45e4-84a4-19de8d62659c",
+          "type": "task",
+          "children": [
+            {
+              "text": "Overview complete."
+            }
+          ]
+        },
+        {
+          "id": "ca8382dc-cbb1-43cc-83fc-b8812731974f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6bc3623b-aa35-44f1-bf20-67c5fb5afe98",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Quality Review"
+            }
+          ]
+        },
+        {
+          "id": "8ba0a1f7-eb2c-4338-bd81-44893011c746",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "095c5898-05a4-46fd-9bfa-5a579b4dd56d",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Name Conventions"
+            }
+          ]
+        },
+        {
+          "id": "e7d8c40e-b42a-40aa-b88d-36985d70c06f",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Template names"
+            },
+            {
+              "text": " must have following pattern: {template-name} = {template-description}. "
+            }
+          ]
+        },
+        {
+          "id": "2fa6797f-b4b7-4691-8042-8ae5475c096b",
+          "type": "p",
+          "children": [
+            {
+              "text": "Examples:"
+            }
+          ]
+        },
+        {
+          "id": "0f4e64d2-205b-458d-be85-043528733d70",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "A script template for automating data collection should be called “Data Collection\". "
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a915723b-9ad2-4cce-ac86-2014af0781ef",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "In the case a single template is used for a type, then use the {type-name} directly. i.e. if just one Script template it should be called “Script”."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "dd3b5564-bb33-410f-bf76-3cc84a9ee65d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "06d46dd3-2a44-43d4-8213-4af644071515",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Instance names"
+            },
+            {
+              "text": " follow must follow the pattern pattern: {script-name} =  {template-name} - {instance-identifier}."
+            }
+          ]
+        },
+        {
+          "id": "74dfbf61-9893-4fac-81bf-3c9c8486ff8c",
+          "type": "p",
+          "children": [
+            {
+              "text": "Examples:"
+            }
+          ]
+        },
+        {
+          "id": "e652101c-8a4c-4906-a844-8c7d156ef05b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "An instance of the “Data Collection\" template might called “Data Collection - Experiment A\"."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "fb27482c-8ff3-411f-9721-cf1053af2dc7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "An instance of a template of Ethanol material template could be: “Ethanol - 1343344” where the number is the lot number."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4dc4342b-ae3e-45f8-a1ea-0912a685e677",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b17f7b2b-1c28-49e8-ad3a-23dbeae6286f",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Automations"
+            }
+          ]
+        },
+        {
+          "id": "972d57fb-fda2-4a41-8059-064ecc41f318",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Human calculations should be replaced with formulas and scripts where possible."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "8549547b-3d76-4390-ae5b-11d722d720a5",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Use scripts where possible to run checks rather than manual validation."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "cfc7c37e-eb1a-4112-b9e0-2a17cb6f1648",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "02fdc805-d4dd-410f-88d3-5e4d838967df",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Checklist"
+            }
+          ]
+        },
+        {
+          "id": "8a840ed6-21c1-478a-ae12-09d7c2632f54",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Entity names follow specified conventions."
+            }
+          ],
+          "listStyleType": "todo"
+        },
+        {
+          "id": "a75770e6-ea47-4e50-8e4d-6b4a28982999",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Automations are always used where possible to avoid manual miscalculation."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "e86416d1-a4e9-411b-9784-09190c462360",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "084f61fb-29ac-4960-9a6e-82e0c5c5908f",
+          "type": "task",
+          "children": [
+            {
+              "text": "Quality assessment complete."
+            }
+          ]
+        },
+        {
+          "id": "2f8ec790-6367-46d9-bb2d-127f8d12e24d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fa0a191a-7ea9-4219-82a2-6b484539add2",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Risk Assessment"
+            }
+          ]
+        },
+        {
+          "id": "8efb7b89-a603-436a-b2ec-4034f636fc9d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4b0658b4-9fa2-4910-bffe-30996be6c2f5",
+          "type": "p",
+          "children": [
+            {
+              "text": "Considerations to guide the assignment of an overall risk level for these changes:"
+            }
+          ]
+        },
+        {
+          "id": "2704228b-eced-4430-9500-c530705087ad",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Will these changes break existing workflows?"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "60392086-e674-4b79-a92c-bcce1ead09be",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "How easy would it be to revert changes? "
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "0536fe9c-2515-4e83-a342-ea33d677e269",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Could these changes mutate or delete existing data?"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "1f785f8f-539a-461a-9651-e2fdc0fc6543",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8b8d8618-882a-4e27-a420-53b82c08f014",
+          "type": "field",
+          "fieldId": "daeb4ca4-64cf-43c1-b58f-7b98a3952d83",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bc643428-1e59-4632-9102-d358efc9ed04",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "855016f6-160e-47df-a932-42e687039d5d",
+          "type": "task",
+          "children": [
+            {
+              "text": "Risk Assessment complete."
+            }
+          ]
+        },
+        {
+          "id": "0aea11ed-460d-4001-a372-7f6d0eea71cd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bf20e0bc-2fd4-4f31-bd9e-06f1ddafa3bb",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Validation & Compliance"
+            }
+          ]
+        },
+        {
+          "id": "2535ead5-8103-4cfa-bdeb-e601fefe232e",
+          "type": "field",
+          "fieldId": "4ffd7bc3-835b-45b4-9a8e-a6805f2a1da4",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f03151c1-3f41-4b6b-ac82-209e9d61c572",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d151557e-642e-4840-b6de-5e8ba02b9b19",
+          "type": "p",
+          "children": [
+            {
+              "text": "Given the changes, and associated risk, consider if changes will be needed to the "
+            },
+            {
+              "bold": true,
+              "text": "Validation Master Plan."
+            },
+            {
+              "text": " Fill out any changes below:"
+            }
+          ]
+        },
+        {
+          "id": "a487b53b-6f0e-4dd4-9deb-405e2a978cf9",
+          "type": "field",
+          "fieldId": "a77d6ecd-cd78-4bff-a533-ebd317ed4863",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d2d10b64-2b00-4385-8092-cd46a0489ff4",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cdfe6afe-aa67-49cc-884a-5c2ca59cf4ad",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Checklist"
+            }
+          ]
+        },
+        {
+          "id": "bfd4e799-0e6b-4617-ba95-fafe11ceae9e",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Validation master plan has been considered and modifications requested if needed."
+            }
+          ],
+          "listStyleType": "todo"
+        },
+        {
+          "id": "087c074f-9703-4189-81de-76bc6d47eb1f",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "All validation scripts have been tested. Test instances were created and try all configurations run."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "346ff3a8-8724-4675-8db2-af2b7a493cac",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ea0dcacd-83c5-4f78-a2cf-d6a4c2837f30",
+          "type": "task",
+          "children": [
+            {
+              "text": "Validation checks complete."
+            }
+          ]
+        },
+        {
+          "id": "f8754d46-e40a-4a75-9767-fbf83e924a48",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "08872980-99c0-496e-baac-df5e22fc3f72",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "034f856f-e7e1-44df-ab75-8e606bfc1238",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4d119ffa-7787-4bb9-a7f1-c43c143ea035",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d45ae421-426d-4aff-9151-2ca706163491",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

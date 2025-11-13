@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a5a70c1a-8d56-41fa-931a-e34b62e981b8",
+  "title": "Change Control",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Justification": {
+      "id": "363e55b0-fbb6-45c7-99cb-59ec86ca5ad0",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Proposed Changes": {
+      "id": "aaff8a83-3919-4e9c-acf4-19fadf8cd432",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Supporting Documents": {
+      "id": "b02d745f-375c-48ee-a272-4a3cec7489f1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "application",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "9b473bef-0043-4e62-9bf6-9a5c8aa6db7f",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": true
+    },
+    "reviewRequirements": {
+      "phases": [
+        {
+          "title": "Role 1",
+          "requestedRoleId": "7d13eaeb-1976-487e-953b-c2b576471bc3",
+          "requiredNumApprovals": 1
+        }
+      ]
+    },
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": true
+  },
+  "templateConfig": {
+    "reviewRequirements": {
+      "phases": [
+        {
+          "title": "Role 1",
+          "requestedRoleId": "7d13eaeb-1976-487e-953b-c2b576471bc3",
+          "requiredNumApprovals": 1
+        }
+      ]
+    }
+  }
+}

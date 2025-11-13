@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "26d1da27-f935-4bf7-9f26-5150b87d46bc",
+  "title": "BlubberCell BPR Script",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "68084f00-71ca-4a5e-ac88-f26a43729b0d",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Script to Modify": {
+      "id": "35a708ee-8e3c-46f4-83ba-f6b487a86074",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "26d1da27-f935-4bf7-9f26-5150b87d46bc",
+          "version": "1"
+        }
+      ],
+      "config": {},
+      "dataType": "SCRIPT"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "b4c56960-b157-44c3-a995-2a62ce7f7c61"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the entity where the script is embedded (an instance of the BPR template)\nentity = seal.get_containing_entity()\nentity_fields = entity.get('fields', {})\n\n# Helper function to safely retrieve a field's value\ndef get_field_value(fields_dict, field_name):\n    field = fields_dict.get(field_name)\n    if field and 'value' in field:\n        return field['value']\n    return None\n\n# Retrieve values for the fields to be validated\ninitial_viability = get_field_value(entity_fields, \"Initial Viability (%)\")\npost_wash_viability = get_field_value(entity_fields, \"Post-Wash Viability (%)\")\nviability_percent_difference = get_field_value(entity_fields, \"Viability Percentage Difference\")\ndose_viable_cells = get_field_value(entity_fields, \"Dose Viable Cells\")\n\n# Lists to store validation results\nerrors = []\nsuccess_messages = []\n\n# Validate \"Initial Viability (%)\"\n# Condition: Initial Viability must be ≥ 80%\nif initial_viability is None:\n    errors.append(\"Specification Error: 'Initial Viability (%)' is required.\")\nelif not isinstance(initial_viability, (int, float)):\n    errors.append(f\"Specification Error: 'Initial Viability (%)' must be a number, but found: {initial_viability}.\")\nelif initial_viability < 80:\n    errors.append(f\"Specification Error: Initial Viability ({initial_viability}%) must be ≥ 80%.\")\nelse:\n    success_messages.append(f\"Validation Passed: Initial Viability ({initial_viability}%) is ≥ 80%.\")\n\n# Validate \"Post-Wash Viability (%)\"\n# Condition: Post-Wash Viability must be ≥ 75%\nif post_wash_viability is None:\n    errors.append(\"Specification Error: 'Post-Wash Viability (%)' is required.\")\nelif not isinstance(post_wash_viability, (int, float)):\n    errors.append(f\"Specification Error: 'Post-Wash Viability (%)' must be a number, but found: {post_wash_viability}.\")\nelif post_wash_viability < 75:\n    errors.append(f\"Specification Error: Post-Wash Viability ({post_wash_viability}%) must be ≥ 75%.\")\nelse:\n    success_messages.append(f\"Validation Passed: Post-Wash Viability ({post_wash_viability}%) is ≥ 75%.\")\n\n# Validate \"Viability Percentage Difference\"\n# Condition: % Difference must be ≤15%\nif viability_percent_difference is None:\n    errors.append(\"Specification Error: 'Viability Percentage Difference' is required.\")\nelif not isinstance(viability_percent_difference, (int, float)):\n    errors.append(f\"Specification Error: 'Viability Percentage Difference' must be a number, but found: {viability_percent_difference}.\")\nelif viability_percent_difference > 15:\n    errors.append(f\"Specification Error: Viability Percentage Difference ({viability_percent_difference}%) must be ≤ 15%.\")\nelse:\n    success_messages.append(f\"Validation Passed: Viability Percentage Difference ({viability_percent_difference}%) is ≤ 15%.\")\n\n# Validate \"Dose Viable Cells\"\n# Condition: target dose range: 1.0 - 5.0 x 10⁹ viable cells\nLOWER_BOUND_DOSE = 1.0 * (10**9)\nUPPER_BOUND_DOSE = 5.0 * (10**9)\n\nif dose_viable_cells is None:\n    errors.append(\"Specification Error: 'Dose Viable Cells' is required.\")\nelif not isinstance(dose_viable_cells, (int, float)):\n    errors.append(f\"Specification Error: 'Dose Viable Cells' must be a number, but found: {dose_viable_cells}.\")\nelif not (LOWER_BOUND_DOSE <= dose_viable_cells <= UPPER_BOUND_DOSE):\n    errors.append(f\"Specification Error: Dose Viable Cells ({dose_viable_cells}) must be between {LOWER_BOUND_DOSE} and {UPPER_BOUND_DOSE} (i.e., 1.0 - 5.0 x 10⁹ viable cells).\")\nelse:\n    success_messages.append(f\"Validation Passed: Dose Viable Cells ({dose_viable_cells}) is within the target range (1.0 - 5.0 x 10⁹).\")\n\n# Print all successful validation messages\nfor msg in success_messages:\n    print(msg)\n\n# If any errors were found, print them and then throw a single error\nif errors:\n    for error in errors:\n        print(error)\n    seal.throw_error(\"Not all Specification criterion met.\")\nelse:\n    print(\"All specified validation checks passed successfully.\")"
+    }
+  }
+}

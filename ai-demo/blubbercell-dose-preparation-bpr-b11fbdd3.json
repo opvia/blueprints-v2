@@ -1,0 +1,3365 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "b11fbdd3-db6c-4568-a827-14590a9d12e5",
+  "title": "BlubberCell Dose Preparation BPR",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Formula": {
+      "id": "b909a915-7aa6-4583-851a-108aaa68c92f",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"Required Dosage (viable cells)\")  / lookup(__self, \"Day 7 V Low Concentration\")"
+      },
+      "dataType": null
+    },
+    "Samples": {
+      "id": "fc212094-468a-4b16-bfb2-dc82a76d858f",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "fa8b41be-eb79-4b47-be3f-d7d7693a3989",
+          "version": "1"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Start Date": {
+      "id": "07428aec-122b-4630-9626-f0923b7d4e89",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Validation": {
+      "id": "b768d515-d9de-4158-af4d-61868ea09ce4",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "26d1da27-f935-4bf7-9f26-5150b87d46bc",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Run script"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Batch Number": {
+      "id": "d37c574a-563f-4525-845c-8a7d5b07ecd9",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Dose Viable Cells": {
+      "id": "964acdf5-96c3-4137-aef6-9fa40192bda5",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "format": "SCI",
+        "formulaExpression": "lookup(__self, \"Concentration (viable cells / mL)\")  * 500"
+      },
+      "dataType": null
+    },
+    "Total Viable Cells": {
+      "id": "4b4f2cec-afa7-4e85-83c1-608936c9f801",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "SCI"
+      },
+      "dataType": "NUMBER"
+    },
+    "Sample Volume (μL)": {
+      "id": "9a95c911-d485-416a-8a24-347a0755e8e5",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Initial Viability (%)": {
+      "id": "28a09d9e-8d50-44ab-bdc8-80888c41e2e1",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"Initial Viability (%)\") >= 80"
+      },
+      "dataType": "NUMBER"
+    },
+    "Day 7 Viability Low (%)": {
+      "id": "3b58b9f4-e20b-4bd3-879a-ab62fed521e7",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Post-Wash Viability (%)": {
+      "id": "8b4b33ce-d4e0-4b99-871d-31d6d28f078c",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"Post-Wash Viability (%)\") > 75"
+      },
+      "dataType": "NUMBER"
+    },
+    "Day 7 V Low Concentration": {
+      "id": "fc2e5b46-ab94-459b-b576-6f8d54eed22d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Total Culture Volume (mL)": {
+      "id": "375a94ed-ad42-4c66-a606-956f6c00f227",
+      "type": "NUMBER",
+      "value": 500,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Day 7 Viability High ( (%)": {
+      "id": "ccdd725c-a3c8-4237-9ff3-c5d9c97e5f84",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Cell Volume After Wash (mL)": {
+      "id": "5f646fe4-1138-4091-bed5-d49a71a13a12",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Start Initialisation Datetime": {
+      "id": "6353bf0e-1409-490e-906c-08bfa9d00a41",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    },
+    "Required Dosage (viable cells)": {
+      "id": "05e5af09-3013-4a07-a7e3-17e93289392a",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Viability Percentage Difference": {
+      "id": "e275e1d2-86cb-4a5b-9c1b-a1a69bd059d9",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "2 * (-lookup(__self, \"Day 7 Viability Low (%)\")  + lookup(__self, \"Day 7 Viability High ( (%)\")) / (lookup(__self, \"Day 7 Viability Low (%)\") + lookup(__self, \"Day 7 Viability High ( (%)\") ) * 100"
+      },
+      "dataType": null
+    },
+    "Concentration (viable cells / mL)": {
+      "id": "53588ec3-71ba-4cdd-b5fe-06977f3f7fdd",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "format": "SCI",
+        "formulaExpression": "lookup(__self, \"Total Viable Cells\") * 1e3 / lookup(__self, \"Sample Volume (μL)\")"
+      },
+      "dataType": null
+    },
+    "Initial Cell Count (viable cells/mL)": {
+      "id": "ed363e14-56c8-40e3-95c4-c493d51a1231",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Post-Wash Cell Count (viable cells/mL)": {
+      "id": "4d17aeb5-4415-475e-ab6c-cda45705df3d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "65fc6103-9e41-4853-922b-358e3bed4aa9"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "7711eb7e-6a2d-45d4-b172-162b8701c42e",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Product:",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "text": " BlubberCell™ Therapeutic Biomass",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "856e0353-1198-4f8f-8c87-6767b00edfb4",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Description: ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "text": "Expansion and quality assessment of proprietary BlubberCell™ therapeutic biomass for manufacturing. Process includes cell culture expansion, in-process sampling, cell count validation, and final container labeling.",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "59b41b2b-226e-439f-b106-f5facec7c13e",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "1ef425e9-642e-4ddb-a370-faa42b3b5f77",
+          "type": "field",
+          "fieldId": "07428aec-122b-4630-9626-f0923b7d4e89",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "28947ecb-1b86-454d-b843-335eb633a997",
+          "type": "field",
+          "fieldId": "d37c574a-563f-4525-845c-8a7d5b07ecd9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "faa36576-9811-4344-a524-d3036e1e1c06",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9e20029d-0328-408c-955f-5a2178be8525",
+          "type": "h1",
+          "children": [
+            {
+              "text": "1 Equipment"
+            }
+          ]
+        },
+        {
+          "id": "790916d0-3369-4ffb-8eab-32943bddc4a2",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record all equipment used for this manufacturing run. Verify calibration status before use.",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "d2f6d3f8-7a04-47f5-a84f-b92334f827dc",
+          "type": "table",
+          "children": [
+            {
+              "id": "e8122b60-014e-4d3a-a66b-4ea450a2ccd5",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "2b97b779-3b68-4090-af1f-34ab44dcd722",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "a250735a-2a63-4627-b3ae-8335585c0ce1",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Equipment",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4ae7e547-d8fd-421f-a374-a2982a554161",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "3559695a-f69e-4b9b-9080-12a5ef4ce63c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Equipment ID",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9e866047-1896-4e3f-b471-ba2550ad6383",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "7b2d1bfd-8727-4531-af97-347051f67c72",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Calibration Due Date",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f5cfc41e-3627-4c26-be1b-621e672d90ca",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "1045e737-406c-49a7-a945-0d1716f7b189",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Performed By / Date",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d3a6c2cb-b3e1-43ab-a173-3d69131815c7",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "458dca6f-9fdd-4bfb-90ef-8fb1c2f05fac",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Verified By / Date",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c71079cc-89ce-46d5-9839-7eb2d469e834",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "04db1cc1-5d95-458e-8847-bdfdc1e4f1cc",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e423ecb5-a364-43b3-bdb1-88a04260b2bd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Incubator (28°C, 8% O₂)",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6a200a82-1cfe-452e-9c1a-85b0775cdc60",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "36e7f7b3-7e46-4b22-8972-b8026347be1c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "46cd9ed3-bda3-454f-84ea-8094bd4cc44f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4b6f4baf-8b70-4f8c-8e63-1bb0c6281676",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e56c1ad9-fed2-4035-b1de-e32d6882037b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "3cb2a7dd-e941-4c45-8de1-15fc48d54c86",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6429b713-ab49-4300-aeae-ca48d4f7f716",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "adcd7d7a-ff21-4232-a362-fe6a7f95d2b6",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5630bc18-030a-44c0-becb-d3f847b2273a",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "2cc3cc59-dbb9-4785-af31-0df1ccd9252a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ae8a2e35-e421-45a3-83cc-949233c9041a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Biological Safety Cabinet",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9b210ee8-5796-41ea-b12d-b9268b570b87",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "97e00a13-0938-43cb-b5a7-e344c0c1d863",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f5b9d6d5-fc25-4e19-bd6e-f043366df802",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "974320c9-5f3c-4188-8f1f-b0116d8776ad",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b2118f15-8382-453c-ae67-db7c239f3c71",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "3b638689-2610-4bb4-8960-9b899085ca73",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1a67e225-4601-4aeb-ba0e-631280008554",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "72839382-f8ea-4314-8b32-cc7677e7493b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e465f981-cd19-4fe7-8ff8-59c33d795bd7",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "638fdd5e-863e-42eb-b7d3-0d7a57276f5e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "92e12c02-b65a-4a5d-a332-99d032ebc69d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Automated Cell Counter",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "da2da484-7504-4fff-abfb-cdb0f7b6063e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a6164644-292d-4c93-af22-09ed1a892e3f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9110f5ea-d310-45b1-835d-640315b70807",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "25a69c58-ce0a-4a4f-9f52-7e35f9c82b9d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "450194b1-2bf0-4e88-a781-f1e7db1aef71",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "f0ef8e11-05b9-4451-a3d7-c2b63011af3c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7daf5323-9027-4cec-9f64-3aca18bb5b44",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "715dfb43-baa9-4c79-9bc5-896566746743",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ce3e58e7-9150-4815-8dcb-fd1b131adf64",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "9f9e1b0e-02fd-4149-899c-fd6914bfb7f4",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "300b9edb-23a4-4847-aeea-5c68f4903484",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Centrifuge",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "3f082833-538c-415e-b91e-55b25f5c12d5",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1d60c765-32a6-44c7-b28b-95462f95fbdb",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d56548d8-bb15-4e27-86af-cb8403f154e3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4ad57e12-23e2-4481-854e-6f1fe24b8e2e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a275b0d9-7039-4730-9047-aec1c63c4147",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1229f3ea-1324-4471-a083-e91a92d337b0",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "be6701f6-a1d8-42fb-9bc7-2af177b170bc",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "72bc2f66-95fa-4d63-95bd-263a76302e9c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "75dbad5c-6552-4d52-b2b1-024114a0303b",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "abd3c9d2-e2ad-47b4-a5e9-b9b172e27194",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "db65d6c5-800e-46d6-90a8-597757a0cfd5",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "pH Meter",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "40072a7d-21ab-4771-b6d5-72dfbab4ffe3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "aa599106-b7fc-4967-a4b8-855421b7fbe2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f9996aff-ac82-40be-9e11-23c451b51017",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "13e2a318-dded-4093-8818-cd05ac770e7a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "868f647f-136a-4209-b41c-ba43ec4dd387",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "95ec4b27-c755-4222-bde4-f9cd89daec73",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d2bd96a8-7f6c-4df8-a700-e2d78dce17c6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "72816e41-97de-4900-b81f-d4df02278b3d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "950f3ade-4b47-4821-941c-651c0e1f6106",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "608b4303-e50d-4d8f-a28b-9b31b2afe7e5",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a86873a2-d15f-4c40-a306-8ea83335426c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Micropipettes (100-1000µL)",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5d3acafd-9bf6-4af9-be0a-aa74d71d4d3b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ae6e0f7e-a015-488c-ae87-9ea72d6845a4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1f63603d-443d-491f-afcc-728b6b3b4267",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "71875608-d91f-4177-bc3b-5fe8e7fcb1ab",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bce40ba6-ceca-4506-8228-d22891ce430f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ccc32d99-620e-4ebf-bc6d-5f9ba7abb9ad",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "00bb18c4-ded9-49e7-8e12-d4da2255d32f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "be2ef1cd-ac75-4f2c-b3ca-83c8ba1d2d55",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "986a2e17-b534-48c9-913f-248de7f3dd24",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3b4c84ed-4177-4ae0-ba76-25116951b161",
+          "type": "h1",
+          "children": [
+            {
+              "text": "2 Materials"
+            }
+          ]
+        },
+        {
+          "id": "a95b2e5d-44c8-4946-9d08-6b27e294dd40",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record all materials used. Verify lot numbers and expiration dates before use.",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "89fa3161-6954-4506-bbac-12aa4ac88028",
+          "type": "table",
+          "children": [
+            {
+              "id": "69186fda-0a3a-40e1-8b92-3c79f85b01b9",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "627c911d-1934-4056-80da-a96e493d2ff5",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "5c80746f-6704-46c8-9d67-0d1ef977ec3c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Material"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "110dfc92-5258-465c-bd25-564427564296",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "8f75d3a9-7e30-422c-8426-d3967eed2b8e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Manufacturer",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8cc8a088-36d0-4322-8714-a7334ac58c1c",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "bbc34a65-a880-4061-94f6-739be49c2667",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Lot Number",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1169aaf1-40f2-4f7e-a0bb-fc3f20b28210",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "47bc4992-12d3-46c4-9c36-9bdc94d69b3a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Expiration Date",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "813b2621-89e4-484f-908a-f21e7b7bd94e",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "357651d3-4f42-4779-8d85-39fc138566e7",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b6ecebcb-a4ca-4679-94d6-e18ca67d8bc4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "AquaGrow™ Media"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7b733c91-c91f-444b-b408-daff308a5653",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "cd5e6209-5ff4-42f0-a013-53b81472cac3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "523e1fb0-f58e-4ae1-aad0-63908990c5c3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "d0cd7046-8997-449a-ac84-aa5b6506bf2d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f066a1fb-3499-4244-b5ba-11335764a3b6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "955aae43-2334-4975-959c-b88bcab1b492",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "351d83cb-537b-4d44-8815-017f539c0512",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "e3111131-d7b9-46dd-8650-1a17191284e1",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "0b12690f-d8c8-442b-97c8-444d2563830c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Marine Growth Factor (MGF-7)",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4dae7b20-01b6-47b9-bb9c-9f2d589af859",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5684d9f9-dbf3-4ed9-b49b-764f1388a4fd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0e41bc5f-54fa-425a-8476-35c31b540475",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ffda6610-6451-41fa-b4ac-0f14f1fa42ab",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b539f442-6d0b-4887-97c9-87b57fd56575",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5239457f-eddb-4659-bbd2-c8277eb75aa3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a5b1be58-14fc-4493-9ef9-4479b89ed3b8",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "429392a7-06f9-49ad-9cdd-516880d6c65a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1bc3f7d1-d0e8-499c-a6fc-b9ddb63962f8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Culture Flasks (T-175)",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0ad1c32a-73d8-4d88-a013-f1fca0f32b40",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "37a66431-1d23-44d1-8ed1-ad1d7099c56a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e0b414a3-c838-4d5a-bc26-7a1cb6d41686",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "3f66b5b6-a215-4767-af43-4a84b2a4fbe4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "79977b13-0e6d-4b06-9641-94b1fe496834",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c2bf6888-bd19-4847-b9f5-9822c7bb3237",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f18e12b3-6f65-448e-a7d6-4d17dec70541",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "54a31173-acd6-4cf3-89f2-6642cccb65cf",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "3e80d265-299d-48ee-95bc-aa6cf21bc94f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Conical Tubes (50mL)",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "16146afd-af10-41f3-bc28-947f0e2b1cd0",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c2f98eb1-1ae3-4e00-aaa5-73bcde1b9fa6",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4c8c5e2a-ab56-4d8b-b453-2aa5302bf9a7",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "edd351f1-94f7-4561-a406-c4827152054b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bc43753d-ea95-4732-a1d5-78cb5e0f0596",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "579c1371-0867-42d0-a315-b875eeb7a9b4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "37460e69-58f1-4c9d-8cab-c0766d0617f2",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "d0e4d538-e6a4-4745-9a26-099fe2f270f3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "44c95061-1626-4a2b-a0cf-518f2378e0f9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Transfer Bags (1000mL)",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4e14b1ff-8e7a-46fe-80b7-a61892964ba3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2092e6ba-3bfc-49a4-9732-9021723fd95e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "07d4fe87-1ddf-4ff4-98f0-cbf436481fe8",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "08e09dbe-bfbf-48bc-bc99-6aa76ddb35a2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6b1ec09c-876c-4806-af19-8ec56d02ef56",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2f8cdafe-309d-4c6e-b41d-c50dc448c124",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "52201c7a-7b50-4cf7-94af-22c62bbedc7a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "57707dc3-f63b-441f-9df3-320f5b3c411b",
+          "type": "h1",
+          "children": [
+            {
+              "text": "3 Sample Preparation"
+            }
+          ]
+        },
+        {
+          "id": "514e30c2-1aea-40a4-af3c-16ec05b018a8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "56a59c12-fa16-4758-a022-0517950027ef",
+          "type": "h2",
+          "children": [
+            {
+              "text": "3.1 ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "text": "Retrieve and record cryopreserved source cells"
+            }
+          ]
+        },
+        {
+          "id": "0c5cf241-3f0a-455a-a735-2fde8626b9ff",
+          "type": "p",
+          "children": [
+            {
+              "text": "Retrieve cryopreserved BlubberCell™ source material from inventory. Make initial measurements:",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "508741e9-3ac5-46ee-877a-dcb04a57c8c7",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "9d31fe2f-f53b-45fa-a14c-e54bf8c6851a",
+          "type": "field",
+          "fieldId": "ed363e14-56c8-40e3-95c4-c493d51a1231",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8ecc6a65-18d1-4240-b418-a5af4802fa7e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f5ee74e8-7f7b-4960-b597-722332ebff4b",
+          "type": "field",
+          "fieldId": "28a09d9e-8d50-44ab-bdc8-80888c41e2e1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "75286f50-eed7-420f-8bc2-b22aa0b20967",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Specification",
+              "underline": true
+            },
+            {
+              "bold": true,
+              "text": ": ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "text": "Initial Viability must be ≥ 80%"
+            }
+          ]
+        },
+        {
+          "id": "3abe717e-ad60-401f-b4bc-d6dd2dd4cbd7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7d92e6bc-b2cb-4303-a679-e2e456f3c17e",
+          "type": "task",
+          "children": [
+            {
+              "text": "Complete source cell retrieval."
+            }
+          ]
+        },
+        {
+          "id": "e81bc011-3b98-4b2a-aeea-ae7a44c2183f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bb7c52ed-3295-4f89-94e1-9ac5a4200951",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "12de3021-89df-4f25-92a6-a1db01fef5f0",
+          "type": "h2",
+          "children": [
+            {
+              "text": "3.2 Thawing and washing",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "4b7aef55-9dba-4bcf-b202-1bd3077253ca",
+          "type": "p",
+          "children": [
+            {
+              "text": "Wash source cells to remove cryoprotectant and debris before culture initiation.",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "31ee593d-63fb-464e-9bd9-292cb4abecf7",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Setup:",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "text": " ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "e32f9d80-4c34-4c70-8f67-949b5e10c250",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Temperature: 20°C, ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "d384fd85-79ad-4260-91a2-580ae3bdb368",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Speed: 300 x g, ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "67131b22-ced3-4e6c-94dd-76851b7d93bd",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Time: 5 minutes",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "6320bf29-d085-4825-9ce2-45a1cc25b53a",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Transfer source cells to 50mL conical tube",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStyleType": "todo"
+        },
+        {
+          "id": "6fbedf46-7131-45d3-a87c-74b3c373a9b3",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Centrifuge using parameters above",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "f1a6bac2-35ca-4a24-8c73-af61776d3e85",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Aspirate supernatant",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "7f56dce3-f6c5-486e-84ad-64e93aa0b5e7",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Resuspend pellet in 25 mL sterile PBS",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "fcf16e84-7be7-4dac-82fe-321900b7be80",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Centrifuge again using same parameters",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "623fda0c-2dd9-4654-974c-a22a6ec90141",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Aspirate supernatant",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "0820354e-6f16-41f4-a98b-d9ea1d3609df",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Resuspend pellet in 10 mL AquaGrow™ Media",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 7,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "8483b75b-8927-4292-b0ed-d2acda54fb63",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "86e2edee-97f8-4f10-98f4-8575613951bd",
+          "type": "field",
+          "fieldId": "5f646fe4-1138-4091-bed5-d49a71a13a12",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e236a967-db4c-4d87-922b-d2ab188fddf1",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "7db338ed-07ac-4042-bbad-1b7fee957f30",
+          "type": "field",
+          "fieldId": "4d17aeb5-4415-475e-ab6c-cda45705df3d",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2b34e1f9-48db-44c9-a7cd-11a0ca0d9e76",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "0be227fb-66b8-45e5-a470-8f59afffc988",
+          "type": "field",
+          "fieldId": "8b4b33ce-d4e0-4b99-871d-31d6d28f078c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "10f901fd-ef66-42ed-957c-0ba9a634cbb1",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Specification",
+              "underline": true
+            },
+            {
+              "bold": true,
+              "text": ": ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "text": "Post-Wash Viability must be ≥ 75%",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "ee7f82b0-d06b-4cd6-9577-59a3bbf9974e",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "29800a57-c6a4-4d68-a55e-351728a0608d",
+          "type": "task",
+          "children": [
+            {
+              "text": "Complete washing and thawing"
+            }
+          ]
+        },
+        {
+          "id": "43929518-1771-4d18-87f1-0b6318470728",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6a657737-b125-4ce8-9983-856045505aa0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a037dbcf-6dae-4587-a024-78711b34226d",
+          "type": "h2",
+          "children": [
+            {
+              "text": "3.3 Prepare culture media according to formulation below",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "265226a6-b19e-475e-af6a-a28e71fc200b",
+          "type": "table",
+          "children": [
+            {
+              "id": "09b400d1-9286-4286-b42e-2e0536dd2703",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "3db8378c-5711-4847-827c-56fda32a36b8",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "d05e2335-45b0-49d6-901d-7f80077751dd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Component",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "74d5a223-1470-4a45-8814-0333bbe4852f",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "eb1aa524-5e59-4393-88b7-ee4efd746c77",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Volume Required",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "07442831-0f42-45e3-b80e-4546f56cb724",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "50e35168-8282-4463-a860-7dc20d6645b4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Actual Volume Added",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5575d723-6c3c-4f24-8fef-95096e215969",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "f0519997-3bcb-4d6a-961d-df498207cccb",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Performed By / Date",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "16ce855c-842d-43fe-8cd0-7cf837c01209",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "fd2193d9-0968-419b-a03d-f1c7fa430b4a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4e96367e-8aee-442f-98b6-b567db9ab2f8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "AquaGrow™ Media",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "74d70f1a-d420-4dba-ad51-059d6e3f547c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "d4cd12a8-cd10-46e0-be0e-417991902a5f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "475 mL",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "824be53f-50f1-47ea-ba73-023ab28e05fc",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "3d9ee996-4dc3-4a0b-ba8c-b36b4c4881a5",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "cc0c0b5c-4aab-4a21-8f85-a8246e47ebc0",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "f1a66a88-a7b0-4aef-8e76-fbf814597984",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5d0a04c3-766f-48cb-8fd4-8cce36e61c8b",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "032ad1a7-d8ab-40e0-9c20-93e4b5e7cfcf",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "de9e822b-bd24-4c26-b085-1bd639fcb231",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Marine Growth Factor (MGF-7)",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "27510a4f-789f-4e07-aa57-01f728707fc0",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e14bb2d8-3595-47e8-922a-eee086e4986a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "25 mL (5% v/v final)",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bb3e5cdc-b6b8-470e-9e14-8a0ed4941971",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7a3c89fd-b828-4a7f-b043-95986af4a532",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f0e0d7d5-bac0-43f4-94f3-0cb52b38ae1c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "051f75e0-96eb-4206-af32-dcc3d7b2bcd9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9857f416-9787-4118-a323-a22769f07a5e",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "bb5e81de-a6e1-4443-a0e1-1cd66124d45f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Value below should remain the same:"
+            }
+          ]
+        },
+        {
+          "id": "1e1c4fba-05c4-42e8-a770-2e7ed1ec9b7e",
+          "type": "field",
+          "fieldId": "375a94ed-ad42-4c66-a606-956f6c00f227",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ce9695ed-779e-414a-95c7-90ef2dfa4432",
+          "type": "h2",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "e0316607-bef9-4d61-9f60-de4f7eb93c7f",
+          "type": "h2",
+          "children": [
+            {
+              "text": "3.4 Cell culture inoculation & initialisation",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "4d91a429-4e8b-47cc-8468-9823593e786b",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "fe2f6a5a-d81e-4613-88a1-e73516a1a492",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Transfer prepared culture to T-175 flask(s)",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStyleType": "todo"
+        },
+        {
+          "id": "1771d5cf-217a-4ab6-b548-483e2bbe0e78",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Place in incubator at 28°C, 8% O₂",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "33f1f642-0000-4f42-81cc-f0efc52a5af0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f371698e-6293-41f4-8f23-7673dc17d44b",
+          "type": "field",
+          "fieldId": "6353bf0e-1409-490e-906c-08bfa9d00a41",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2a7ba7e4-2733-4374-9417-f6ea5f81b5bc",
+          "type": "p",
+          "children": [
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "id": "d2c1d25a-b521-453a-a30f-4524c9155842",
+          "type": "task",
+          "children": [
+            {
+              "text": "Complete culture initialisation"
+            }
+          ]
+        },
+        {
+          "id": "d7e2b66d-d6ea-4a6c-b8a2-3d9fcf6f43ed",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "0bab162c-35fb-4fe7-a4ba-40081d9a7517",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b8ccd92f-3188-478c-8c29-6b1e16f1cbfb",
+          "type": "h1",
+          "children": [
+            {
+              "text": "4 Sampling & Quality Validation"
+            }
+          ]
+        },
+        {
+          "id": "aaff4a50-dd00-4161-bfa1-0d4d4879afc4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e351a6b0-dd32-4a7d-b6a3-133e233324cf",
+          "type": "p",
+          "children": [
+            {
+              "text": "Monitor culture daily for 7 days. Perform cell counts on Days 0, 3, 5, and 7.",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "2a33e0ee-f4ac-49c2-8f7f-3ecec08c4976",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "dab363de-86c5-4532-b546-4fb351fbb8b8",
+          "type": "h2",
+          "children": [
+            {
+              "text": "4.1 Cell count and viability assessment: (Critical Quality Attribute)",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "1ab193a2-95f7-4191-83cb-932ba1da939f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Perform automated cell count using ACC-09. Record results below:",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "b013f138-2d4e-4f85-9a1b-d0158a934f26",
+          "type": "p",
+          "children": [
+            {
+              "text": "Note: duplicated measurements made on day 7.",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "5013269f-d7b7-46fb-a398-bb354857ed9a",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "d4f7d196-0889-4154-90db-78f69f84b582",
+          "type": "field",
+          "fieldId": "fc212094-468a-4b16-bfb2-dc82a76d858f",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Day of Intialisation",
+                "name": "Day of Intialisation",
+                "isHidden": false
+              },
+              {
+                "id": "Sample Volume (μL)",
+                "name": "Sample Volume (μL)",
+                "isHidden": false
+              },
+              {
+                "id": "Dilution Factor",
+                "name": "Dilution Factor",
+                "isHidden": false
+              },
+              {
+                "id": "Total Viable Cells (/mL)",
+                "name": "Total Viable Cells (/mL)",
+                "isHidden": false
+              },
+              {
+                "id": "Viability (%)",
+                "name": "Viability (%)",
+                "isHidden": false
+              },
+              {
+                "id": "Measured By",
+                "name": "Measured By",
+                "isHidden": false
+              },
+              {
+                "id": "Measured On",
+                "name": "Measured On",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "20e88b24-0a23-433e-988b-df7d1a837666",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "f13f46c6-3caf-4d74-a89e-3b24ae3c42f1",
+          "type": "h2",
+          "children": [
+            {
+              "bold": true,
+              "text": "4.2 Cell count validation: (CQA - Day 7 Results)",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "afdac2ac-f0d8-47d7-be5a-9d5734f4c2e6",
+          "type": "p",
+          "children": [
+            {
+              "text": "Calculate percent difference between duplicate Day 7 counts:",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "8baf037d-2b9b-4919-99b5-a10080b00e7c",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "49589eae-f0b4-4421-b968-6a6848cb83f1",
+          "type": "field",
+          "fieldId": "3b58b9f4-e20b-4bd3-879a-ab62fed521e7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "162cc370-1454-43c2-8118-0743b3049b54",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "6d6e0f60-2081-4794-99cc-c75b4985014b",
+          "type": "field",
+          "fieldId": "ccdd725c-a3c8-4237-9ff3-c5d9c97e5f84",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fe915753-7442-478c-b668-9f07d317854e",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "6274a310-1fe7-4af2-a3ab-b9a556834590",
+          "type": "field",
+          "fieldId": "e275e1d2-86cb-4a5b-9c1b-a1a69bd059d9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b1b87228-2636-430d-a566-dd6182d97492",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d79ebd9b-f5eb-47ef-8655-173835580900",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Specification",
+              "underline": true
+            },
+            {
+              "bold": true,
+              "text": ": ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "text": "% Difference must be ≤15%",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "f0e51815-e3b6-428d-9861-7900dc64e22b",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "PASS - % Difference within specification",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStyleType": "todo"
+        },
+        {
+          "id": "7e2b06b2-7ebb-43e9-b92c-0ac4c2cb813d",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "FAIL - % Difference exceeds specification (initiate deviation)",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "ca1a85d5-5309-4e31-b7ad-1e5ee1dfa118",
+          "type": "p",
+          "children": [
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "id": "e403850a-2414-4027-a4b3-ae62a6b0d56b",
+          "type": "task",
+          "children": [
+            {
+              "text": "Cell count validation complete"
+            }
+          ]
+        },
+        {
+          "id": "d878afa9-99c5-41f1-af76-2b8cc9397fa6",
+          "type": "h2",
+          "children": [
+            {
+              "bold": true,
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "1409c4e7-e5e3-47fd-86dd-a0b86b1a3c8a",
+          "type": "h2",
+          "children": [
+            {
+              "bold": true,
+              "text": "4.3 Validate dose",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "c576930d-70dd-4f32-a281-8b79ce35c6c1",
+          "type": "p",
+          "children": [
+            {
+              "text": "Use the ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "bold": true,
+              "text": "lower",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "text": " of the two ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "bold": true,
+              "text": "Day 7",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            },
+            {
+              "text": " samples for calculations.",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "707076b9-f494-43e9-855a-6a683bee489c",
+          "type": "field",
+          "fieldId": "4b4f2cec-afa7-4e85-83c1-608936c9f801",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b99e0306-3ce1-4811-8456-1e6cfb27ad5a",
+          "type": "field",
+          "fieldId": "9a95c911-d485-416a-8a24-347a0755e8e5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b998cecf-35fe-4695-af53-b0578157a32d",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "ae370047-0b71-4fa2-858f-179438890d58",
+          "type": "p",
+          "children": [
+            {
+              "text": "Concentration = Total Viable Cells / Sample Volume",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "007820ee-c7a6-445e-8cab-5bf40cf4cc31",
+          "type": "field",
+          "fieldId": "53588ec3-71ba-4cdd-b5fe-06977f3f7fdd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8ef9c319-c2aa-4971-bbff-9a966beffd2a",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "6dfc3d3f-b25f-4ae2-8657-9d93b6845ac9",
+          "type": "p",
+          "children": [
+            {
+              "text": "Dose viable cells = Concentration × Volume (500 mL)",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "7fcb3f8e-6688-4671-872c-bc05d1e802f4",
+          "type": "field",
+          "fieldId": "964acdf5-96c3-4137-aef6-9fa40192bda5",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "89e1fdc7-6bbc-4611-80ee-34d72476b363",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "bbc5b8a3-a0ba-4081-ab8f-447d688b6984",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Specification",
+              "color": "rgb(0, 0, 0)",
+              "underline": true
+            },
+            {
+              "bold": true,
+              "text": ":",
+              "color": "rgb(0, 0, 0)"
+            },
+            {
+              "text": " target dose range: 1.0 - 5.0 x 10⁹ viable cells",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "849b1c0d-4b0e-4e8d-92e8-3105d6884d84",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Cell count within target range - Proceed to dosing",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStyleType": "todo"
+        },
+        {
+          "id": "c8b5bde7-0184-488d-81ad-81f55280cc76",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Cell count below target range - Initiate deviation",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "56e8dd78-c35b-4e37-a834-2db62852f8b8",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "31f8a6da-9b2a-47e5-81e3-d367ed100731",
+          "type": "task",
+          "children": [
+            {
+              "text": "Dosage calculation complete"
+            }
+          ]
+        },
+        {
+          "id": "918635f2-498c-43c5-9108-c8b21a996e08",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b90048f5-6596-4979-9df2-ca2a3176148b",
+          "type": "h2",
+          "children": [
+            {
+              "bold": true,
+              "text": "4.5 Calculate patient dose",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "8b2baef7-91f0-4f58-af5d-38db566aba65",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "75a7a2e2-19b7-4777-a5db-efa4b339ee67",
+          "type": "field",
+          "fieldId": "05e5af09-3013-4a07-a7e3-17e93289392a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1fc0862d-09dd-4462-a2c6-1de6aa4b94f1",
+          "type": "p",
+          "children": [
+            {
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "b4c40812-8db4-4a1a-a84c-64760290958c",
+          "type": "p",
+          "children": [
+            {
+              "text": "Volume needed = Dose required ÷ Cell concentration ",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "3a789ef2-122e-4194-90a9-1ebb8453d77b",
+          "type": "field",
+          "fieldId": "b909a915-7aa6-4583-851a-108aaa68c92f",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d53701de-a4ba-4978-8a37-d081849bbcc9",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "",
+              "color": "rgb(0, 0, 0)",
+              "backgroundColor": "transparent"
+            }
+          ]
+        },
+        {
+          "id": "b01f70ac-a36b-4a0c-bd31-66990ae2ba2f",
+          "type": "task",
+          "children": [
+            {
+              "text": "Calculating patient dosage is complete"
+            }
+          ]
+        },
+        {
+          "id": "f957a8e7-da32-44f6-986d-91d5fe610bf8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3d8a86a2-529e-4fbb-9b72-752e72498cf8",
+          "type": "h1",
+          "children": [
+            {
+              "text": "5 Final Product Transfer"
+            }
+          ]
+        },
+        {
+          "id": "de4fff9d-6e6f-4491-82c3-14440746bbeb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "52ade234-95f4-4390-8187-c971d3259f08",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Transfer 500 mL of culture to sterile transfer bag"
+            }
+          ],
+          "listStyleType": "todo"
+        },
+        {
+          "id": "675fed90-7db2-4d9f-becd-a9f0135be5e3",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Collect 1.0 mL sample for sterility testing"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "c88348f7-ce72-464b-a449-169cd63c1954",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Collect 1.0 mL sample for retain (Retain Sample #1)"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "ce53bb1a-c2eb-40cd-8ce5-5d43fcf14691",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Collect 1.0 mL sample for retain (Retain Sample #2)"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "173af2e8-4f99-432d-a9d9-741ec1702ffb",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Seal transfer bag"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "187f6e8e-fa7e-47e3-920a-1e9c20ff0728",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Apply final product label to transfer bag"
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "5f83d9c2-fec4-4a0d-8d7f-f379583d42ac",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Store QC samples at 2-8°C"
+            }
+          ],
+          "listStart": 7,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "f008790f-6bf4-467d-bcb3-ebfd5eb5d182",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Place final product in storage at 2-8°C"
+            }
+          ],
+          "listStart": 8,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "e5fc660f-250a-4818-bac5-1772e12f7af8",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "Activate temperature logger"
+            }
+          ],
+          "listStart": 9,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "1a0ac94d-54d4-4cbf-8bc4-39182fefa39b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d94ded41-3b4c-4811-ad08-acfd84e284b0",
+          "type": "task",
+          "children": [
+            {
+              "text": "Product transfer is complete"
+            }
+          ]
+        },
+        {
+          "id": "c99930f4-4c68-419c-9b97-711f33823c51",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "65669b67-0ee7-444d-bae1-6fd735445581",
+          "type": "h1",
+          "children": [
+            {
+              "text": "6 Review & Release"
+            }
+          ]
+        },
+        {
+          "id": "d1411ecf-a396-412d-81a7-1dd610cf6cce",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fd586f0d-3a56-4de8-b8b0-683ce764fcd4",
+          "type": "p",
+          "children": [
+            {
+              "text": "Run the script below to check all fields with specifications contain valid values:"
+            }
+          ]
+        },
+        {
+          "id": "df2af0a1-e50c-40dc-93c4-d908726364d3",
+          "type": "field",
+          "fieldId": "b768d515-d9de-4158-af4d-61868ea09ce4",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "f0a6beaa-17a7-4450-a5e1-0d16aba53785",
+          "type": "p",
+          "children": [
+            {
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "id": "17c703e9-7f77-4029-af7d-3f3449deab56",
+          "type": "table",
+          "children": [
+            {
+              "id": "14d35fec-1f9e-4eeb-849f-648d6d128e42",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "a8738bb7-0850-4ca8-b77f-9824dfb178ee",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "77619023-3550-4477-b5df-e7a0365d9f33",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Review Type",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c72fb87e-c1e8-44f5-920f-0515dc310dad",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "5a5fb113-af71-483f-9160-4d13f653c9c7",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Name",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a69e252b-8e51-4fb3-9d09-9d21c1d4eb75",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "2e197eb6-5552-4bac-bba6-4e89737a500d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Signature ",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "46348aa6-f378-44b3-bff1-c4adb0d35528",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "9fb3d74e-f6d0-410c-bfd1-7f381060dbca",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Date"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2fe84d84-07e4-4c9a-b0b3-a54bec12d617",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "1418055e-45e9-4d86-a34b-f4baa3cf667a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "36796811-ad34-450a-9810-8ce1d6d06893",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Manufacturing Review",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "28da124b-3f96-4141-a68a-4bb2ed1d6130",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6283e875-24ee-40ce-b785-050d580e8f65",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "18e248cc-f74c-4749-958b-377b14d50e86",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7cded91b-7578-4ed1-ab3e-cb4a624ebb46",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a4c8ea12-c36c-4f8f-806b-6bb99182c3e6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a118a130-392a-46a4-9c6c-19941f823c4a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2256c8d1-17fa-4e6e-b7b6-b169f78399c0",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "9a72d66d-b4e2-4b7d-b470-c7e2e8bd74a8",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "81165038-7593-42d0-a696-4b0f19f96cd3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "QA Review",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "30b51d7e-4706-4d6e-9d91-98aca42970a8",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "aed20af1-97ae-4f1f-a604-fd6fe63da547",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "3a94f794-2caf-45b0-8db3-fe9749f5325f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "bbab23b0-1a4e-434a-97ad-9250440f745f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5f337049-8534-4fe1-b54c-74cb38d48af6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "bb3fb6de-b495-4cfe-827d-d46e3bce59d4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8f2ddfe8-d368-4599-ba79-87f56aa64bb5",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "791f440a-f607-4e72-9a7d-d5de09fc5829",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "14badd2c-ae4b-4885-82cf-f2b17237e297",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Final Release Authorisation",
+                          "color": "rgb(0, 0, 0)",
+                          "backgroundColor": "transparent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1d98c752-c248-454e-aad8-c848d86b84af",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2a180bdd-9b79-478f-9044-5464ef45f1d3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4bc1344b-2302-48cd-bb34-7846eadbe5ac",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b5058e12-1b0c-47b0-aeb4-2eb19e7f56bd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "91dedd11-e3a4-4ad2-9feb-220527090ae5",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6427b50a-4a47-45d7-882a-233a7b476e6b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d336aab1-4672-4165-bc85-4107a7c0659e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
