@@ -1,0 +1,112 @@
+{
+  "id": "ai-demo",
+  "version": 1,
+  "name": "ai-demo",
+  "description": "",
+  "entities": [
+    {
+      "id": "c0d8cb34-ca94-4ad9-85a7-7a28025791ef",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a5a70c1a-8d56-41fa-931a-e34b62e981b8",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control",
+      "icon": "application",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "299b62d3-95d4-4349-8cb2-2dec38fd127e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Validation Master Plan",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "2c827258-3002-41fe-8498-95836d4be8a8",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Validation Master Plan",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "9b473bef-0043-4e62-9bf6-9a5c8aa6db7f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control",
+      "icon": "application",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "f866559a-d072-458d-a474-a8640d87ef10",
+      "kind": "TYPE",
+      "contentType": "NONE",
+      "title": "Sample",
+      "icon": "segmented-control",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fa8b41be-eb79-4b47-be3f-d7d7693a3989",
+      "kind": "TEMPLATE",
+      "contentType": "NONE",
+      "title": "ACC-09 Cell Count Sample",
+      "icon": "segmented-control",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b4c56960-b157-44c3-a995-2a62ce7f7c61",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Scripts",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "68084f00-71ca-4a5e-ac88-f26a43729b0d",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Scripts",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "b11fbdd3-db6c-4568-a827-14590a9d12e5",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "BlubberCell Dose Preparation BPR",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "65fc6103-9e41-4853-922b-358e3bed4aa9",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Batch Production Record",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "26d1da27-f935-4bf7-9f26-5150b87d46bc",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "BlubberCell BPR Script",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c361ee96-d7cc-44d3-b3e7-84df8287ded7",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Validation Master Plan",
+      "icon": "document",
+      "sourceVersion": "1"
+    }
+  ]
+}

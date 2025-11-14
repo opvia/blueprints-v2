@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "fa8b41be-eb79-4b47-be3f-d7d7693a3989",
+  "title": "ACC-09 Cell Count Sample",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Measured By": {
+      "id": "cd3fb0e1-3ea0-401d-89e3-9984bf033ee4",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Measured On": {
+      "id": "2a41289e-7798-417a-a0cf-cfe4ad29ab1a",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Viability (%)": {
+      "id": "55f49b86-9366-43c5-8161-3eb60e2c5d0b",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Dilution Factor": {
+      "id": "63388006-50b7-498f-b437-2ef25dd397ae",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Sample Volume (μL)": {
+      "id": "ca2711a3-483c-4233-920c-0103fc3b9af5",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Day of Intialisation": {
+      "id": "8f5cefdc-8e05-4623-981d-e8071355bfa1",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Total Viable Cells (/mL)": {
+      "id": "48ab5f7b-737c-4c93-8454-f86404b6fc6f",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "f866559a-d072-458d-a474-a8640d87ef10"
+    }
+  },
+  "content": {
+    "type": "NONE"
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
