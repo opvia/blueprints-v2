@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c3e343ec-de39-4200-89cc-f9a3fc47c8bb",
+  "title": "Box Template 5x6",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Rows": {
+      "id": "c54cf415-9d37-45a3-ba82-922a0c6f2f9d",
+      "type": "NUMBER",
+      "value": 5,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Inside": {
+      "id": "56b0fd5d-64c3-4de5-9c38-63378bb08082",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Location\") , \"Location\")"
+      },
+      "dataType": null
+    },
+    "Columns": {
+      "id": "2a9b4efd-e122-4c7f-b130-4579813ca363",
+      "type": "NUMBER",
+      "value": 6,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Contents": {
+      "id": "a25425bd-8f47-437c-84e6-fc517692f1f1",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "Sample Log",
+                    "Inventory Type"
+                  ],
+                  "filter": "type",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Box",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Box",
+            "config": "Box"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Location": {
+      "id": "bf7b8ca2-02c2-44e2-a0b0-076c2e799d0b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "a24643fe-00d7-4512-a432-5d0bda046806"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Boxes",
+              "config": "Boxes"
+            },
+            {
+              "name": "tank/Fridge/Freezer",
+              "config": "tank/Fridge/Freezer"
+            },
+            {
+              "name": "Inside",
+              "config": "Inside"
+            },
+            {
+              "name": "Location",
+              "config": "Location"
+            },
+            {
+              "name": "Sub locations",
+              "config": "Sub locations"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Positions": {
+      "id": "3d1386df-82b6-4ebb-bbdb-2770446fa704",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "c3340a0f-8e87-4675-8d1a-6bad14c394c5",
+          "placeholderValue": "activeVersion"
+        },
+        "placeholderInstances": [
+          {
+            "Position": "A1",
+            "Position number": "1"
+          },
+          {
+            "Position": "A2",
+            "Position number": "2"
+          },
+          {
+            "Position": "A3",
+            "Position number": "3"
+          },
+          {
+            "Position": "A4",
+            "Position number": "4"
+          },
+          {
+            "Position": "A5",
+            "Position number": "5"
+          },
+          {
+            "Position": "A6",
+            "Position number": "6"
+          },
+          {
+            "Position": "B1",
+            "Position number": "7"
+          },
+          {
+            "Position": "B2",
+            "Position number": "8"
+          },
+          {
+            "Position": "B3",
+            "Position number": "9"
+          },
+          {
+            "Position": "B4",
+            "Position number": "10"
+          },
+          {
+            "Position": "B5",
+            "Position number": "11"
+          },
+          {
+            "Position": "B6",
+            "Position number": "12"
+          },
+          {
+            "Position": "C1",
+            "Position number": "13"
+          },
+          {
+            "Position": "C2",
+            "Position number": "14"
+          },
+          {
+            "Position": "C3",
+            "Position number": "15"
+          },
+          {
+            "Position": "C4",
+            "Position number": "16"
+          },
+          {
+            "Position": "C5",
+            "Position number": "17"
+          },
+          {
+            "Position": "C6",
+            "Position number": "18"
+          },
+          {
+            "Position": "D1",
+            "Position number": "19"
+          },
+          {
+            "Position": "D2",
+            "Position number": "20"
+          },
+          {
+            "Position": "D3",
+            "Position number": "21"
+          },
+          {
+            "Position": "D4",
+            "Position number": "22"
+          },
+          {
+            "Position": "D5",
+            "Position number": "23"
+          },
+          {
+            "Position": "D6",
+            "Position number": "24"
+          },
+          {
+            "Position": "E1",
+            "Position number": "25"
+          },
+          {
+            "Position": "E2",
+            "Position number": "26"
+          },
+          {
+            "Position": "E3",
+            "Position number": "27"
+          },
+          {
+            "Position": "E4",
+            "Position number": "28"
+          },
+          {
+            "Position": "E5",
+            "Position number": "29"
+          },
+          {
+            "Position": "E6",
+            "Position number": "30"
+          }
+        ]
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "b65517f2-5349-45ee-b18b-0d217d4dc839"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8bb284ac-d713-49e6-a6d3-b26439f1bfb2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a44a0ea5-fcbd-4273-b1c7-8d03f3f069d2",
+          "type": "field",
+          "fieldId": "bf7b8ca2-02c2-44e2-a0b0-076c2e799d0b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "44a684ee-6e13-495d-9fb9-2f93c48077cc",
+          "type": "field",
+          "fieldId": "56b0fd5d-64c3-4de5-9c38-63378bb08082",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7bbcc5b8-b97a-481b-92c2-6d115b825759",
+          "type": "field",
+          "fieldId": "a25425bd-8f47-437c-84e6-fc517692f1f1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8082a7da-ac78-41d7-a4e1-9bc081d661c3",
+          "type": "field",
+          "fieldId": "3d1386df-82b6-4ebb-bbdb-2770446fa704",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Position",
+                "name": "Position",
+                "isHidden": false
+              },
+              {
+                "id": "Position number",
+                "name": "Position number",
+                "isHidden": false
+              },
+              {
+                "id": "Box",
+                "name": "Box",
+                "isHidden": true
+              },
+              {
+                "id": "Status",
+                "name": "Status",
+                "isHidden": false
+              },
+              {
+                "id": "Rack/Shelf/Drawer",
+                "name": "Rack/Shelf/Drawer",
+                "isHidden": true
+              },
+              {
+                "id": "Room",
+                "name": "Room",
+                "isHidden": true
+              },
+              {
+                "id": "Tank/Fridge/Freezer",
+                "name": "Tank/Fridge/Freezer",
+                "isHidden": true
+              },
+              {
+                "id": "Stock unit",
+                "name": "Stock unit",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "2b44b14f-689b-4880-a143-ce05e08c9032",
+          "type": "p",
+          "children": [
+            {
+              "text": "  "
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

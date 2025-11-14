@@ -1,0 +1,679 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c4e94b9c-48f6-435f-b22d-8d871e54f6a5",
+  "title": "Box Template 10x10",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Rows": {
+      "id": "efd6d919-6575-4f63-8f35-8badac9303e9",
+      "type": "NUMBER",
+      "value": 10,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Inside": {
+      "id": "56b0fd5d-64c3-4de5-9c38-63378bb08082",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Location\") , \"Location\")"
+      },
+      "dataType": null
+    },
+    "Columns": {
+      "id": "2a0df661-a21f-414b-b5fd-28713ce6c52e",
+      "type": "NUMBER",
+      "value": 10,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Contents": {
+      "id": "a25425bd-8f47-437c-84e6-fc517692f1f1",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    "Sample Log",
+                    "Inventory Type"
+                  ],
+                  "filter": "type",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Box",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Box",
+            "config": "Box"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Location": {
+      "id": "bf7b8ca2-02c2-44e2-a0b0-076c2e799d0b",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "a24643fe-00d7-4512-a432-5d0bda046806"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Boxes",
+              "config": "Boxes"
+            },
+            {
+              "name": "tank/Fridge/Freezer",
+              "config": "tank/Fridge/Freezer"
+            },
+            {
+              "name": "Inside",
+              "config": "Inside"
+            },
+            {
+              "name": "Location",
+              "config": "Location"
+            },
+            {
+              "name": "Sub locations",
+              "config": "Sub locations"
+            }
+          ]
+        },
+        "allowMultiple": true,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Positions": {
+      "id": "3d1386df-82b6-4ebb-bbdb-2770446fa704",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "c3340a0f-8e87-4675-8d1a-6bad14c394c5",
+          "placeholderValue": "activeVersion"
+        },
+        "placeholderInstances": [
+          {
+            "Position": "A1",
+            "Position number": "1"
+          },
+          {
+            "Position": "A2",
+            "Position number": "2"
+          },
+          {
+            "Position": "A3",
+            "Position number": "3"
+          },
+          {
+            "Position": "A4",
+            "Position number": "4"
+          },
+          {
+            "Position": "A5",
+            "Position number": "5"
+          },
+          {
+            "Position": "A6",
+            "Position number": "6"
+          },
+          {
+            "Position": "A7",
+            "Position number": "7"
+          },
+          {
+            "Position": "A8",
+            "Position number": "8"
+          },
+          {
+            "Position": "A9",
+            "Position number": "9"
+          },
+          {
+            "Position": "A10",
+            "Position number": "10"
+          },
+          {
+            "Position": "B1",
+            "Position number": "11"
+          },
+          {
+            "Position": "B2",
+            "Position number": "12"
+          },
+          {
+            "Position": "B3",
+            "Position number": "13"
+          },
+          {
+            "Position": "B4",
+            "Position number": "14"
+          },
+          {
+            "Position": "B5",
+            "Position number": "15"
+          },
+          {
+            "Position": "B6",
+            "Position number": "16"
+          },
+          {
+            "Position": "B7",
+            "Position number": "17"
+          },
+          {
+            "Position": "B8",
+            "Position number": "18"
+          },
+          {
+            "Position": "B9",
+            "Position number": "19"
+          },
+          {
+            "Position": "B10",
+            "Position number": "20"
+          },
+          {
+            "Position": "C1",
+            "Position number": "21"
+          },
+          {
+            "Position": "C2",
+            "Position number": "22"
+          },
+          {
+            "Position": "C3",
+            "Position number": "23"
+          },
+          {
+            "Position": "C4",
+            "Position number": "24"
+          },
+          {
+            "Position": "C5",
+            "Position number": "25"
+          },
+          {
+            "Position": "C6",
+            "Position number": "26"
+          },
+          {
+            "Position": "C7",
+            "Position number": "27"
+          },
+          {
+            "Position": "C8",
+            "Position number": "28"
+          },
+          {
+            "Position": "C9",
+            "Position number": "29"
+          },
+          {
+            "Position": "C10",
+            "Position number": "30"
+          },
+          {
+            "Position": "D1",
+            "Position number": "31"
+          },
+          {
+            "Position": "D2",
+            "Position number": "32"
+          },
+          {
+            "Position": "D3",
+            "Position number": "33"
+          },
+          {
+            "Position": "D4",
+            "Position number": "34"
+          },
+          {
+            "Position": "D5",
+            "Position number": "35"
+          },
+          {
+            "Position": "D6",
+            "Position number": "36"
+          },
+          {
+            "Position": "D7",
+            "Position number": "37"
+          },
+          {
+            "Position": "D8",
+            "Position number": "38"
+          },
+          {
+            "Position": "D9",
+            "Position number": "39"
+          },
+          {
+            "Position": "D10",
+            "Position number": "40"
+          },
+          {
+            "Position": "E1",
+            "Position number": "41"
+          },
+          {
+            "Position": "E2",
+            "Position number": "42"
+          },
+          {
+            "Position": "E3",
+            "Position number": "43"
+          },
+          {
+            "Position": "E4",
+            "Position number": "44"
+          },
+          {
+            "Position": "E5",
+            "Position number": "45"
+          },
+          {
+            "Position": "E6",
+            "Position number": "46"
+          },
+          {
+            "Position": "E7",
+            "Position number": "47"
+          },
+          {
+            "Position": "E8",
+            "Position number": "48"
+          },
+          {
+            "Position": "E9",
+            "Position number": "49"
+          },
+          {
+            "Position": "E10",
+            "Position number": "50"
+          },
+          {
+            "Position": "F1",
+            "Position number": "51"
+          },
+          {
+            "Position": "F2",
+            "Position number": "52"
+          },
+          {
+            "Position": "F3",
+            "Position number": "53"
+          },
+          {
+            "Position": "F4",
+            "Position number": "54"
+          },
+          {
+            "Position": "F5",
+            "Position number": "55"
+          },
+          {
+            "Position": "F6",
+            "Position number": "56"
+          },
+          {
+            "Position": "F7",
+            "Position number": "57"
+          },
+          {
+            "Position": "F8",
+            "Position number": "58"
+          },
+          {
+            "Position": "F9",
+            "Position number": "59"
+          },
+          {
+            "Position": "F10",
+            "Position number": "60"
+          },
+          {
+            "Position": "G1",
+            "Position number": "61"
+          },
+          {
+            "Position": "G2",
+            "Position number": "62"
+          },
+          {
+            "Position": "G3",
+            "Position number": "63"
+          },
+          {
+            "Position": "G4",
+            "Position number": "64"
+          },
+          {
+            "Position": "G5",
+            "Position number": "65"
+          },
+          {
+            "Position": "G6",
+            "Position number": "66"
+          },
+          {
+            "Position": "G7",
+            "Position number": "67"
+          },
+          {
+            "Position": "G8",
+            "Position number": "68"
+          },
+          {
+            "Position": "G9",
+            "Position number": "69"
+          },
+          {
+            "Position": "G10",
+            "Position number": "70"
+          },
+          {
+            "Position": "H1",
+            "Position number": "71"
+          },
+          {
+            "Position": "H2",
+            "Position number": "72"
+          },
+          {
+            "Position": "H3",
+            "Position number": "73"
+          },
+          {
+            "Position": "H4",
+            "Position number": "74"
+          },
+          {
+            "Position": "H5",
+            "Position number": "75"
+          },
+          {
+            "Position": "H6",
+            "Position number": "76"
+          },
+          {
+            "Position": "H7",
+            "Position number": "77"
+          },
+          {
+            "Position": "H8",
+            "Position number": "78"
+          },
+          {
+            "Position": "H9",
+            "Position number": "79"
+          },
+          {
+            "Position": "H10",
+            "Position number": "80"
+          },
+          {
+            "Position": "I1",
+            "Position number": "81"
+          },
+          {
+            "Position": "I2",
+            "Position number": "82"
+          },
+          {
+            "Position": "I3",
+            "Position number": "83"
+          },
+          {
+            "Position": "I4",
+            "Position number": "84"
+          },
+          {
+            "Position": "I5",
+            "Position number": "85"
+          },
+          {
+            "Position": "I6",
+            "Position number": "86"
+          },
+          {
+            "Position": "I7",
+            "Position number": "87"
+          },
+          {
+            "Position": "I8",
+            "Position number": "88"
+          },
+          {
+            "Position": "I9",
+            "Position number": "89"
+          },
+          {
+            "Position": "I10",
+            "Position number": "90"
+          },
+          {
+            "Position": "J1",
+            "Position number": "91"
+          },
+          {
+            "Position": "J2",
+            "Position number": "92"
+          },
+          {
+            "Position": "J3",
+            "Position number": "93"
+          },
+          {
+            "Position": "J4",
+            "Position number": "94"
+          },
+          {
+            "Position": "J5",
+            "Position number": "95"
+          },
+          {
+            "Position": "J6",
+            "Position number": "96"
+          },
+          {
+            "Position": "J7",
+            "Position number": "97"
+          },
+          {
+            "Position": "J8",
+            "Position number": "98"
+          },
+          {
+            "Position": "J9",
+            "Position number": "99"
+          },
+          {
+            "Position": "J10",
+            "Position number": "100"
+          }
+        ]
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "b65517f2-5349-45ee-b18b-0d217d4dc839"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "8bb284ac-d713-49e6-a6d3-b26439f1bfb2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a44a0ea5-fcbd-4273-b1c7-8d03f3f069d2",
+          "type": "field",
+          "fieldId": "bf7b8ca2-02c2-44e2-a0b0-076c2e799d0b",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "a1c57ad2-041d-480c-ba23-173a4b50b471",
+          "type": "field",
+          "fieldId": "56b0fd5d-64c3-4de5-9c38-63378bb08082",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7bbcc5b8-b97a-481b-92c2-6d115b825759",
+          "type": "field",
+          "fieldId": "a25425bd-8f47-437c-84e6-fc517692f1f1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8082a7da-ac78-41d7-a4e1-9bc081d661c3",
+          "type": "field",
+          "fieldId": "3d1386df-82b6-4ebb-bbdb-2770446fa704",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Position",
+                "name": "Position",
+                "isHidden": false
+              },
+              {
+                "id": "Position number",
+                "name": "Position number",
+                "isHidden": false
+              },
+              {
+                "id": "Box",
+                "name": "Box",
+                "isHidden": true
+              },
+              {
+                "id": "Status",
+                "name": "Status",
+                "isHidden": false
+              },
+              {
+                "id": "Rack/Shelf/Drawer",
+                "name": "Rack/Shelf/Drawer",
+                "isHidden": true
+              },
+              {
+                "id": "Room",
+                "name": "Room",
+                "isHidden": true
+              },
+              {
+                "id": "Tank/Fridge/Freezer",
+                "name": "Tank/Fridge/Freezer",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "2b44b14f-689b-4880-a143-ce05e08c9032",
+          "type": "p",
+          "children": [
+            {
+              "text": "  "
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "93dadba0-35e7-489d-8b35-bff53b4cb721",
+  "title": "Vendor Risk Change Log",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Script": {
+      "id": "9372e099-0e00-46f7-8599-5bf04034bd30",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "c8c5a3ab-6105-43c3-9f04-e7ac6f9fb4a9",
+          "version": "4"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Update Vendor"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Vendor": {
+      "id": "801c3997-14d7-4465-ae3b-74a5916a09d6",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Risk Level": {
+      "id": "2044fe0e-9006-4853-bbf9-8d44503750fd",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Impact Level": {
+      "id": "c70eb78e-5204-41ad-b430-31be1a6ae701",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Risk Mitigation": {
+      "id": "c4dc7f01-7f18-4158-a897-d9b7951901ab",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Risk Description": {
+      "id": "5f0fb2eb-25e1-447a-bef1-11aa2023356a",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Likelihood of Risk": {
+      "id": "dfbf3e92-608c-4b08-af98-b5c7c04defd8",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Low",
+          "Medium",
+          "High"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Name of Assessor(s)": {
+      "id": "0dfba92d-a83e-4822-b4f5-aa197a0d3683",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Date of Risk Assessment": {
+      "id": "e26a09c2-fc9a-4f0a-837b-defc85c25fb9",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Justification of Risk Rating": {
+      "id": "8a7417f6-e3e4-453d-aeb2-e4e59bfd1020",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "d8aa02a0-2ff3-45a6-bfab-ba00dd6c1db1"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "9a0da755-59a4-4946-adf7-59f5041ae0e6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "469807f7-a960-48bc-851d-309d5ff62037",
+          "type": "field",
+          "fieldId": "801c3997-14d7-4465-ae3b-74a5916a09d6",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "7a01e22a-292b-42ee-930b-52933c56a2ca",
+          "type": "field",
+          "fieldId": "e26a09c2-fc9a-4f0a-837b-defc85c25fb9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "02c94c97-d57c-4a95-9037-1289fed0d00f",
+          "type": "field",
+          "fieldId": "0dfba92d-a83e-4822-b4f5-aa197a0d3683",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "66483540-3d6b-4a66-ba5f-91501d2d5211",
+          "type": "field",
+          "fieldId": "5f0fb2eb-25e1-447a-bef1-11aa2023356a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bbe835ec-4412-4a93-b691-812804f9ecab",
+          "type": "field",
+          "fieldId": "c4dc7f01-7f18-4158-a897-d9b7951901ab",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "90a9bd35-6a8e-4263-a069-20485fe8c64b",
+          "type": "field",
+          "fieldId": "c70eb78e-5204-41ad-b430-31be1a6ae701",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3979a878-2195-4a59-811f-68f65575d919",
+          "type": "field",
+          "fieldId": "dfbf3e92-608c-4b08-af98-b5c7c04defd8",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "665221fc-68e9-4fe7-ac04-8fda626d9b9a",
+          "type": "field",
+          "fieldId": "2044fe0e-9006-4853-bbf9-8d44503750fd",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b5e11879-0584-43b2-a27b-c368e6ce75e7",
+          "type": "field",
+          "fieldId": "8a7417f6-e3e4-453d-aeb2-e4e59bfd1020",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8aec7e41-f67f-4743-9684-95f842548c7a",
+          "type": "field",
+          "fieldId": "9372e099-0e00-46f7-8599-5bf04034bd30",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": true
+        },
+        {
+          "id": "5f1d8af4-840f-4496-98a2-05836402f844",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

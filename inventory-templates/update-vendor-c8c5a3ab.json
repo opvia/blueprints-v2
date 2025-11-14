@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "c8c5a3ab-6105-43c3-9f04-e7ac6f9fb4a9",
+  "title": "Update Vendor",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "version": "2"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the entity where this script is embedded (an instance of \"Vendor Risk Change Log\")\ncurrent_entity = seal.get_containing_entity()\nprint(f\"Script running in entity: {current_entity.get('title', 'Untitled Entity')} (ID: {current_entity['id']})\")\n\n# Extract values from the current entity's fields.\n# For SELECT fields, 'value' is returned as a list, so we take the first element if available.\nimpact_level_raw = current_entity[\"fields\"].get(\"Impact Level\", {}).get(\"value\")\nimpact_level_value = impact_level_raw[0] if impact_level_raw else None\n\nlikelihood_of_risk_raw = current_entity[\"fields\"].get(\"Likelihood of Risk\", {}).get(\"value\")\nlikelihood_of_risk_value = likelihood_of_risk_raw[0] if likelihood_of_risk_raw else None\n\nrisk_level_raw = current_entity[\"fields\"].get(\"Risk Level\", {}).get(\"value\")\nrisk_level_value = risk_level_raw[0] if risk_level_raw else None\n\n# 'Justification of Risk Rating' is a STRING field, so its value is directly usable.\njustification_value = current_entity[\"fields\"].get(\"Justification of Risk Rating\", {}).get(\"value\")\n\nprint(f\"Read values from current entity: Impact Level='{impact_level_value}', Likelihood of Risk='{likelihood_of_risk_value}', Risk Level='{risk_level_value}', Justification='{justification_value}'\")\n\n# Get the referenced 'Vendor' entity\nvendor_field = current_entity[\"fields\"].get(\"Vendor\", {})\nvendor_ref_value = vendor_field.get(\"value\")\n\nif not vendor_ref_value:\n    print(\"No Vendor entity referenced in the 'Vendor' field. Exiting script.\")\nelse:\n    # The 'Vendor' field is configured as allowMultiple: false, so take the first (and only) reference\n    vendor_id = vendor_ref_value[0][\"id\"]\n    print(f\"Attempting to update referenced Vendor entity with ID: {vendor_id}\")\n\n    # Get the Vendor entity to check its current status\n    vendor_entity = seal.get_entity(entity_id=vendor_id)\n    print(f\"Vendor entity title: {vendor_entity.get('title', 'Untitled Vendor')}, current status: {vendor_entity['status']}\")\n\n    # If the Vendor entity is not editable, make it editable.\n    if vendor_entity[\"status\"] != \"EDITABLE\":\n        print(f\"Vendor entity is not editable (status: {vendor_entity['status']}). Making it editable...\")\n        seal.make_entity_editable(vendor_id)\n        print(\"Vendor entity is now editable.\")\n    else:\n        print(\"Vendor entity is already editable.\")\n\n    # Update the corresponding fields in the Vendor entity.\n    seal.update_field_value_in_entity(vendor_id, \"Impact Level\", impact_level_value)\n    print(f\"Updated 'Impact Level' in Vendor to: '{impact_level_value}'\")\n\n    seal.update_field_value_in_entity(vendor_id, \"Likelihood of Risk\", likelihood_of_risk_value)\n    print(f\"Updated 'Likelihood of Risk' in Vendor to: '{likelihood_of_risk_value}'\")\n\n    seal.update_field_value_in_entity(vendor_id, \"Risk Level\", risk_level_value)\n    print(f\"Updated 'Risk Level' in Vendor to: '{risk_level_value}'\")\n\n    # Update the new field: 'Justification of Risk Rating'\n    seal.update_field_value_in_entity(vendor_id, \"Justification of Risk Rating\", justification_value)\n    print(f\"Updated 'Justification of Risk Rating' in Vendor to: '{justification_value}'\")\n\n    print(\"Script finished updating Vendor entity fields.\")"
+    }
+  }
+}

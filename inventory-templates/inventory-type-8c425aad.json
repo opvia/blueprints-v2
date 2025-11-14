@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "8c425aad-6237-4109-97aa-0be6e27426bf",
+  "title": "Inventory Type",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "array",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "customStatusGroup": {
+      "editableFirst": {
+        "statuses": [
+          {
+            "text": "In stock",
+            "intent": "success"
+          },
+          {
+            "text": "Draft",
+            "intent": "primary"
+          },
+          {
+            "text": "Consumed",
+            "intent": "danger"
+          },
+          {
+            "text": "Expired",
+            "intent": "warning"
+          },
+          {
+            "text": "In stock - not in use",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "In stock"
+      },
+      "finishedFirst": {
+        "statuses": [
+          {
+            "text": "In stock",
+            "intent": "success"
+          },
+          {
+            "text": "Published",
+            "intent": "primary"
+          },
+          {
+            "text": "Consumed",
+            "intent": "danger"
+          },
+          {
+            "text": "Expired",
+            "intent": "warning"
+          },
+          {
+            "text": "In stock - not in use",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "In stock"
+      },
+      "editableSubsequent": {
+        "statuses": [
+          {
+            "text": "In stock",
+            "intent": "success"
+          },
+          {
+            "text": "Draft",
+            "intent": "primary"
+          },
+          {
+            "text": "Consumed",
+            "intent": "danger"
+          },
+          {
+            "text": "Expired",
+            "intent": "warning"
+          },
+          {
+            "text": "In stock - not in use",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "In stock"
+      },
+      "finishedSubsequent": {
+        "statuses": [
+          {
+            "text": "In stock",
+            "intent": "success"
+          },
+          {
+            "text": "Published",
+            "intent": "primary"
+          },
+          {
+            "text": "Consumed",
+            "intent": "danger"
+          },
+          {
+            "text": "Expired",
+            "intent": "warning"
+          },
+          {
+            "text": "In stock - not in use",
+            "intent": "none"
+          }
+        ],
+        "defaultStatus": "In stock"
+      }
+    },
+    "hideVersionNumber": true,
+    "createFromTemplate": null,
+    "reviewRequirements": {
+      "requireResponsesForAllPhases": true
+    },
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": false
+  },
+  "templateConfig": {
+    "reviewRequirements": {
+      "requireResponsesForAllPhases": true
+    }
+  }
+}

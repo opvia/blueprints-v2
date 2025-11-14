@@ -1,0 +1,256 @@
+{
+  "id": "inventory-templates",
+  "version": 1,
+  "name": "inventory templates",
+  "description": "",
+  "entities": [
+    {
+      "id": "bfeff202-5aeb-4422-90ce-4b0a1b96ad4d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody Lot Number",
+      "icon": "array",
+      "sourceVersion": "6"
+    },
+    {
+      "id": "8c425aad-6237-4109-97aa-0be6e27426bf",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Inventory Type",
+      "icon": "array",
+      "sourceVersion": "6"
+    },
+    {
+      "id": "81f8fbc6-0a41-4b89-b1e6-ad8b6c5f8f24",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Duplicate volumes from antibody to lot",
+      "icon": "code",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script Template",
+      "icon": "code",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "9a595b4a-2fe8-4e96-93a1-d86652585cf4",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Unique Antibody Stock",
+      "icon": "array",
+      "sourceVersion": "8"
+    },
+    {
+      "id": "65097f3f-acef-445e-9cda-1ec0b4e11a6f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Antibody",
+      "icon": "array",
+      "sourceVersion": "21"
+    },
+    {
+      "id": "d525720c-19fe-44e2-90d0-6eb7b6e1d656",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Position Updater Script - On Being Referenced",
+      "icon": "code",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "9e7e8e1d-5577-4a49-b30f-e1f0dec3b8e8",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Positions Script template",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "35e9ffa4-f5fe-46eb-aaab-e7742f951b8b",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Positions Script",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c4e94b9c-48f6-435f-b22d-8d871e54f6a5",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 10x10",
+      "icon": "grid-view",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "b65517f2-5349-45ee-b18b-0d217d4dc839",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box",
+      "icon": "grid-view",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "c3340a0f-8e87-4675-8d1a-6bad14c394c5",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Position Template",
+      "icon": "grid-view",
+      "sourceVersion": "8"
+    },
+    {
+      "id": "f67182ce-4aed-4c54-8418-526fc618c514",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Position",
+      "icon": "grid-view",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a24643fe-00d7-4512-a432-5d0bda046806",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Location Template",
+      "icon": "box",
+      "sourceVersion": "11"
+    },
+    {
+      "id": "dffd72d3-783b-41a0-9e7d-40bb7dbcee5c",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Location",
+      "icon": "box",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "e11aaa67-3e1a-4b02-b726-6c50c853ad40",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 10x20",
+      "icon": "grid-view",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "25047b3b-59a7-4dfa-a4fc-98010f8030bb",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 15x15",
+      "icon": "grid-view",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "c3e343ec-de39-4200-89cc-f9a3fc47c8bb",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 5x6",
+      "icon": "grid-view",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "9f05ed95-f15e-443b-b23f-4a61470a8708",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 6x6",
+      "icon": "grid-view",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "97f7726a-c686-4153-a951-71bdf325aa68",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Box Template 9x9",
+      "icon": "grid-view",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "5850a6ee-2ba3-4ce5-af6b-14ba872b6f48",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor Template",
+      "icon": "array",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "d8aa02a0-2ff3-45a6-bfab-ba00dd6c1db1",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "93dadba0-35e7-489d-8b35-bff53b4cb721",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Vendor Risk Change Log",
+      "icon": "array",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "c8c5a3ab-6105-43c3-9f04-e7ac6f9fb4a9",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Update Vendor",
+      "icon": "code",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "f4c7e06f-5314-4530-9a4a-1024d4fbeb20",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Panel Subpart template",
+      "icon": "array",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "5efe7166-6c3b-430b-9a8f-84e2e5e0d3ff",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Panel Subpart",
+      "icon": "array",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "6babbbb6-8fdd-482c-9f82-2c9939635f66",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Panel",
+      "icon": "array",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "cdd8b443-ed35-46f7-9417-9e40cbaf0bc6",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Panel",
+      "icon": "array",
+      "sourceVersion": "3"
+    },
+    {
+      "id": "3b432281-2755-46f0-ab36-e09e5df2f655",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Find unique fluorochrome numbers",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "45eb4ecc-a562-411a-b247-91456e64c55f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Reagent_Consumable",
+      "icon": "array",
+      "sourceVersion": "2"
+    }
+  ]
+}

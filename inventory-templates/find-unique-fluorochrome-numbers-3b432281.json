@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "3b432281-2755-46f0-ab36-e09e5df2f655",
+  "title": "Find unique fluorochrome numbers",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "version": "2"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "from collections import Counter\n\n# Get the entity where the script is embedded\ncontaining_entity = seal.get_containing_entity()\n\n# Extract the query configuration from the \"Antibodies\" saved search field\nantibodies_search_config = containing_entity[\"fields\"][\"Antibodies\"][\"value\"]\n\n# Search for entities using the extracted query configuration\nantibody_entities = seal.search_entities(query_config=antibodies_search_config)\n\n# Initialize a list to store all fluorophore values encountered\nall_fluorophores = []\n\n# Iterate through each antibody entity found\nfor entity in antibody_entities:\n    # Get the value of the \"Fluorophore\" field from the current entity\n    # For a SELECT field, 'value' is always a list, even for single select.\n    fluorophore_list_value = entity[\"fields\"].get(\"Fluorophore\", {}).get(\"value\")\n    \n    # Extract the fluorophore string if the list is not empty\n    if fluorophore_list_value and isinstance(fluorophore_list_value, list):\n        # Assuming single-select, take the first item.\n        fluorophore_string_value = fluorophore_list_value[0]\n        all_fluorophores.append(fluorophore_string_value)\n\n# Calculate unique fluorophores from the collected list\nunique_fluorophores = set(all_fluorophores)\n\n# Calculate the number of unique fluorophores\nfresh_sample_unique_count = len(unique_fluorophores)\nfrozen_sample_unique_count = fresh_sample_unique_count + 1\n\n# Identify duplicate fluorophores (those appearing more than once)\nfluorophore_counts = Counter(all_fluorophores)\nduplicate_fluorophores = [f for f, count in fluorophore_counts.items() if count > 1]\n\n# Update the \"Fresh sample unique fluorochrome number\" field in the containing entity\nseal.update_field_value(\n    \"Fresh sample unique fluorochrome number\", fresh_sample_unique_count\n)\n\n# Update the \"Frozen sample unique fluorochrome number\" field in the containing entity\nseal.update_field_value(\n    \"Frozen sample unique fluorochrome number\", frozen_sample_unique_count\n)\n\nprint(f\"Updated 'Fresh sample unique fluorochrome number' to: {fresh_sample_unique_count}\")\nprint(f\"Updated 'Frozen sample unique fluorochrome number' to: {frozen_sample_unique_count}\")\n\nif duplicate_fluorophores:\n    print(f\"The following fluorophores appeared more than once: {', '.join(duplicate_fluorophores)}\")\nelse:\n    print(\"No duplicate fluorophores were found.\")"
+    }
+  }
+}

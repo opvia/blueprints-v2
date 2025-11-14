@@ -1,0 +1,532 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "f4c7e06f-5314-4530-9a4a-1024d4fbeb20",
+  "title": "Panel Subpart template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Panel": {
+      "id": "9b98b397-569f-4db2-b42f-6175392f7c99",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "6babbbb6-8fdd-482c-9f82-2c9939635f66"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Status",
+              "config": "Status"
+            },
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Panel Collection Name",
+              "config": "Panel Collection Name"
+            },
+            {
+              "name": "Subparts for mastermixes",
+              "config": "Subparts for mastermixes"
+            },
+            {
+              "name": "Reasons for change/new version",
+              "config": "Reasons for change/new version"
+            },
+            {
+              "name": "Major differences from previous version",
+              "config": "Major differences from previous version"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Reagent 1": {
+      "id": "1a3c937c-4476-4aa6-b3a5-f45fcaccdaec",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "45eb4ecc-a562-411a-b247-91456e64c55f"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Stocks",
+              "config": "Stocks"
+            },
+            {
+              "name": "Inventory ID",
+              "config": "Inventory ID"
+            },
+            {
+              "name": "Manufacturer",
+              "config": "Manufacturer"
+            },
+            {
+              "name": "Catalog Number",
+              "config": "Catalog Number"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Reagent 2": {
+      "id": "c6ea553f-eab6-4334-bd17-a832ea8c3ef4",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "45eb4ecc-a562-411a-b247-91456e64c55f"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Stocks",
+              "config": "Stocks"
+            },
+            {
+              "name": "Inventory ID",
+              "config": "Inventory ID"
+            },
+            {
+              "name": "Manufacturer",
+              "config": "Manufacturer"
+            },
+            {
+              "name": "Catalog Number",
+              "config": "Catalog Number"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Antibodies": {
+      "id": "1bdcc477-df6a-4700-acbc-d9c52a67de04",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Used in Panel Subparts:",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "value": [
+                    "65097f3f-acef-445e-9cda-1ec0b4e11a6f"
+                  ],
+                  "filter": "template",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "Used in Panel Subparts:",
+            "config": "Used in Panel Subparts:"
+          },
+          {
+            "name": "Av1",
+            "config": "Av1"
+          },
+          {
+            "name": "Av2",
+            "config": "Av2"
+          },
+          {
+            "name": "Av3",
+            "config": "Av3"
+          },
+          {
+            "name": "Av4",
+            "config": "Av4"
+          },
+          {
+            "name": "Av5",
+            "config": "Av5"
+          },
+          {
+            "name": "Tv1",
+            "config": "Tv1"
+          },
+          {
+            "name": "Tv2",
+            "config": "Tv2"
+          },
+          {
+            "name": "Tv3",
+            "config": "Tv3"
+          },
+          {
+            "name": "Tv4",
+            "config": "Tv4"
+          },
+          {
+            "name": "Tv5",
+            "config": "Tv5"
+          },
+          {
+            "name": "Clone",
+            "config": "Clone"
+          },
+          {
+            "name": "GD1v1",
+            "config": "GD1v1"
+          },
+          {
+            "name": "GD2v1",
+            "config": "GD2v1"
+          },
+          {
+            "name": "NK1v1",
+            "config": "NK1v1"
+          },
+          {
+            "name": "NK1v2",
+            "config": "NK1v2"
+          },
+          {
+            "name": "NK1v3",
+            "config": "NK1v3"
+          },
+          {
+            "name": "NK2v1",
+            "config": "NK2v1"
+          },
+          {
+            "name": "NK2v2",
+            "config": "NK2v2"
+          },
+          {
+            "name": "NK2v3",
+            "config": "NK2v3"
+          },
+          {
+            "name": "TICv1",
+            "config": "TICv1"
+          },
+          {
+            "name": "Stocks",
+            "config": "Stocks"
+          },
+          {
+            "name": "Antigen",
+            "config": "Antigen"
+          },
+          {
+            "name": "Isotype",
+            "config": "Isotype"
+          },
+          {
+            "name": "Clonality",
+            "config": "Clonality"
+          },
+          {
+            "name": "Vial size",
+            "config": "Vial size"
+          },
+          {
+            "name": "Fluorophore",
+            "config": "Fluorophore"
+          },
+          {
+            "name": "Host species",
+            "config": "Host species"
+          },
+          {
+            "name": "Inventory ID",
+            "config": "Inventory ID"
+          },
+          {
+            "name": "Manufacturer",
+            "config": "Manufacturer"
+          },
+          {
+            "name": "Antibody Name",
+            "config": "Antibody Name"
+          },
+          {
+            "name": "Catalog Number",
+            "config": "Catalog Number"
+          },
+          {
+            "name": "Vial volume (uL)",
+            "config": "Vial volume (uL)"
+          },
+          {
+            "name": "Labelling on SONY",
+            "config": "Labelling on SONY"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Expected Number of Antibodies": {
+      "id": "48904141-2dea-4ddd-aa7a-53d187674f70",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Volume of reagent 1 per panel (uL)": {
+      "id": "e327845d-73d1-4d6a-89df-ab1470c95f7e",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Volume of reagent 2 per panel (uL)": {
+      "id": "0a125817-c494-4492-b44e-cca2af36c41f",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "5efe7166-6c3b-430b-9a8f-84e2e5e0d3ff"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "219e450c-e8ca-4783-909a-40a539515bb5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "07370b5b-d9e0-4ace-afa5-55982c1e1031",
+          "type": "field",
+          "fieldId": "9b98b397-569f-4db2-b42f-6175392f7c99",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "ae8823d4-175b-4fbf-b842-0a9f9f6746d1",
+          "type": "field",
+          "fieldId": "48904141-2dea-4ddd-aa7a-53d187674f70",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "68813b27-cf47-4b80-9c21-72474b404e75",
+          "type": "field",
+          "fieldId": "1bdcc477-df6a-4700-acbc-d9c52a67de04",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c7e6ad3d-c2a3-48aa-b073-8191d3057bb6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "20f12108-3083-409e-885a-e52c419ee238",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "For Mastermix Preparations:"
+            }
+          ]
+        },
+        {
+          "id": "c1b4371c-8a65-44e0-84c1-0f51737c2723",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "ec1b0126-4a44-490d-b7cd-2a40c05ce9b8",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "ae2c63de-9330-4811-b6ad-b4b2b8370087",
+                  "type": "field",
+                  "fieldId": "1a3c937c-4476-4aa6-b3a5-f45fcaccdaec",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "405f6ccc-3f3e-4a18-8763-eb222dff6a03",
+                  "type": "field",
+                  "fieldId": "c6ea553f-eab6-4334-bd17-a832ea8c3ef4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                }
+              ]
+            },
+            {
+              "id": "9e1d1f82-098b-4287-b163-e39b7c8042be",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "19eea860-80db-4d1a-9a74-b9ff7642a110",
+                  "type": "field",
+                  "fieldId": "e327845d-73d1-4d6a-89df-ab1470c95f7e",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c478dd66-62be-400d-90ae-22882c4a0cfd",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "e48b3f65-385d-4c6e-8055-2aaba15110fe",
+                  "type": "field",
+                  "fieldId": "0a125817-c494-4492-b44e-cca2af36c41f",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5b83489-05a2-4b27-9031-0ccb412b8ccc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
