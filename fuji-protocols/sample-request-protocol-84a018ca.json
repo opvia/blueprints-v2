@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "84a018ca-6746-4e07-af91-40065c60055c",
+  "title": "Sample request protocol",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Request ID": {
+      "id": "d78c1135-7466-45e0-a94e-ea3bb0fd5a63",
+      "type": "FORMULA",
+      "value": "Sample req #",
+      "config": {
+        "formulaExpression": "concat ( \"Sample req #\" , string( lookup(__self, \"TEMPLATE_INDEX\") ))"
+      },
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fe8a5f14-e916-49b2-984c-1614a3b5d292"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "a7754ff2-729f-4c3f-af3e-db51f82830b9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2843feb0-07f4-4041-aa00-71f77c01078a",
+          "type": "field",
+          "fieldId": "d78c1135-7466-45e0-a94e-ea3bb0fd5a63",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e74efd84-9c14-4f86-b292-30a12a9c1f6d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}

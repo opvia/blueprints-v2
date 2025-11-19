@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "aaf8356a-e13f-4c68-82bf-6581a8144d30",
+  "title": "Create inventory items for selected aliquots",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "03e2070a-d229-4841-b09d-2e2b7c91406d",
+      "version": "1.1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3304d856-7127-4d7a-b333-14c24d451629"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "import pandas as pd\n\n# 1. Get the containing entity (Protocol INSTANCE)\ncontaining_entity = seal.get_containing_entity()\n\n# Ensure the containing entity is editable before making changes\nif containing_entity[\"status\"] != \"EDITABLE\":\n    print(f\"Making containing entity '{containing_entity['title']}' editable...\")\n    containing_entity = seal.make_entity_editable(containing_entity[\"id\"])\n\n# 2. Get the 'Aliquot details' submission field's value\naliquot_details_field = containing_entity[\"fields\"].get(\"Aliquot details\")\nif not aliquot_details_field or not aliquot_details_field.get(\"value\"):\n    print(\"No 'Aliquot details' found or the submission field is empty. Exiting script.\")\n    exit()\n\naliquot_details_refs = aliquot_details_field[\"value\"]\n\n# Prepare a list to store updates to 'Item link' fields in Aliquot details instances\nupdates_to_aliquot_details = []\n\nfor aliquot_detail_ref in aliquot_details_refs:\n    # Get the current Aliquot Detail entity\n    aliquot_detail_entity = seal.get_entity(ref=aliquot_detail_ref)\n\n    generate_sample = aliquot_detail_entity[\"fields\"].get(\"Generate sample?\", {}).get(\"value\")\n    item_link = aliquot_detail_entity[\"fields\"].get(\"Item link\", {}).get(\"value\")\n\n    # Check conditions: 'Generate sample?' is ticked AND 'Item link' is empty\n    if generate_sample and not item_link:\n        print(f\"Processing aliquot detail ID: {aliquot_detail_entity['id']}\")\n\n        # Get the entity linked in the 'Record link' field from the current Aliquot Detail entity\n        record_link_ref_list = aliquot_detail_entity[\"fields\"].get(\"Record link\", {}).get(\"value\")\n        if not record_link_ref_list:\n            print(f\"Skipping aliquot detail ID {aliquot_detail_entity['id']}: 'Record link' is empty.\")\n            continue\n        record_link_entity = seal.get_entity(ref=record_link_ref_list[0]) # Assuming 'Record link' is a single reference\n\n        # Extract values for the new item from the current Aliquot Detail entity\n        aliquot_number = aliquot_detail_entity[\"fields\"].get(\"Aliquot number\", {}).get(\"value\")\n        aliquot_print_name = aliquot_detail_entity[\"fields\"].get(\"Protocol / default aliquot print name\", {}).get(\"value\")\n        inventory_storage_location = aliquot_detail_entity[\"fields\"].get(\"Inventory storage location\", {}).get(\"value\")\n        aliquot_volume_ml = aliquot_detail_entity[\"fields\"].get(\"Aliquot volume (mL)\", {}).get(\"value\")\n\n        # Prepare field values for the new entity (Item)\n        new_item_field_values = {\n            \"Aliquot number\": aliquot_number,\n            \"Name\": aliquot_print_name,\n            \"Location\": inventory_storage_location, # This is already a list of refs or None, suitable for a reference field\n            \"Initial quantity: Amount\": aliquot_volume_ml,\n            \"Initial quantity: Unit\": [\"mL\"],\n            \"Title\": aliquot_print_name # Set title for the new entity\n        }\n        \n        # Filter out None values to avoid issues with specific field types if the source is empty\n        new_item_field_values = {k: v for k, v in new_item_field_values.items() if v is not None}\n\n        # Get current items in the submission field to identify the new one later\n        current_items_refs = record_link_entity[\"fields\"].get(\"Items\", {}).get(\"value\", [])\n        current_item_ids = {item_ref[\"id\"] for item_ref in current_items_refs} if current_items_refs is not None else {}\n        \n        # Create the new entity in the 'Items' submission field of the record_link_entity\n        new_item_df = pd.DataFrame([new_item_field_values])\n        \n        print(f\"Creating item for aliquot '{aliquot_detail_entity['id']}' in entity '{record_link_entity['id']}'...\")\n        updated_record_link_entity = seal.submit_to_instance_submission_field_in_entity(\n            entity_id=record_link_entity[\"id\"],\n            field_name=\"Items\",\n            field_values_df=new_item_df\n        )\n\n        # Identify the newly created item's reference\n        new_item_ref = None\n        updated_items_refs = updated_record_link_entity[\"fields\"].get(\"Items\", {}).get(\"value\", [])\n        for item_ref in updated_items_refs:\n            if item_ref[\"id\"] not in current_item_ids:\n                new_item_ref = item_ref\n                break\n        \n        if new_item_ref:\n            print(f\"New item created with ID: {new_item_ref['id']}\")\n            # Add update to the list for batch processing later\n            updates_to_aliquot_details.append({\n                \"entity_id\": aliquot_detail_entity[\"id\"],\n                \"field_name\": \"Item link\",\n                \"value\": [new_item_ref] # Reference fields expect a list of refs\n            })\n        else:\n            print(f\"Could not find newly created item for aliquot detail ID: {aliquot_detail_entity['id']}. This might indicate an issue or that the item already existed.\")\n\n# Apply all queued updates to 'Item link' fields in Aliquot details instances\nfor update_info in updates_to_aliquot_details:\n    print(f\"Updating 'Item link' for aliquot detail ID: {update_info['entity_id']}...\")\n    seal.update_field_in_entity(\n        entity_id=update_info[\"entity_id\"],\n        field_name=update_info[\"field_name\"],\n        field_value=update_info[\"value\"]\n    )\n    print(f\"Successfully updated 'Item link' for {update_info['entity_id']} with new item ID: {update_info['value'][0]['id']}\")\n\nprint(\"Script finished.\")"
+    }
+  }
+}

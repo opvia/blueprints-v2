@@ -1,0 +1,3085 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2db56cd9-7c41-4f6a-9d05-9a4de7500c42",
+  "title": "CEX Demo Run",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "User": {
+      "id": "05402363-eabe-44ea-a6a1-179f7ce3ab41",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Issues": {
+      "id": "6bbd0f26-b8c5-4453-949c-2ecc9ce6ee05",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Flow rate": {
+      "id": "daa6ed6d-d453-4928-a096-8990317ac219",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "((3.14 * ( lookup(__self, \"Maximum process linear flow rate (cm/hr)\") )^2 ) * 60 ) / 1000"
+      },
+      "dataType": null
+    },
+    "Resin cat#": {
+      "id": "58138f70-def0-4a00-be89-3a9febc26fd9",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Date packed": {
+      "id": "642ef6b1-5f4e-4ade-8c2c-f39014610795",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    },
+    "Time & date": {
+      "id": "b6721e84-07f9-4430-a736-60dde874cdc1",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    },
+    "Mix end time": {
+      "id": "f4dd5a4c-343e-4599-9eb8-e4caebbca235",
+      "type": "DATETIME",
+      "value": null,
+      "config": {
+        "format": "MMM d, yyyy, h:mm:ss a"
+      },
+      "dataType": "DATETIME"
+    },
+    "Process step": {
+      "id": "16d3506d-d25c-4e5b-88a5-3d530d3ed616",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Diameter (cm)": {
+      "id": "abeb67c2-c4ff-4b3e-bde0-bc7f0f59c105",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Experiment ID": {
+      "id": "12a56cdf-d99c-4002-b24c-d0c9d06430ba",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Resin cycle #": {
+      "id": "f5e8a906-a7b7-4f25-957b-5c8584932f34",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Material usage": {
+      "id": "4ba050b1-0be7-44a5-884f-b73d20c43314",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "d8f6a855-e722-432f-aea7-8e27166d820c",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Mix start time": {
+      "id": "1994ed4a-b363-4ea1-88c9-72e1e872f3f1",
+      "type": "DATETIME",
+      "value": null,
+      "config": {
+        "format": "MMM d, yyyy, h:mm:ss a"
+      },
+      "dataType": "DATETIME"
+    },
+    "Project number": {
+      "id": "9b82962d-0052-4134-945c-b6707cbfc0e2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Total mix time": {
+      "id": "8b20a444-9c09-4f14-803e-b61ebe84db88",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "formatDatetime( lookup(__self, \"Mix end time\") - lookup(__self, \"Mix start time\") , 'HH:mm:ss', 'UTC')"
+      },
+      "dataType": null
+    },
+    "Equipment usage": {
+      "id": "5488d2ca-ca0d-4633-9f7c-850826cc86de",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "06fb5d0d-74a3-423f-b1e3-20006964c2f4",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Run description": {
+      "id": "87c05138-d7ff-4ac8-b48b-fc7cc239b058",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Resin lot number": {
+      "id": "f2e19eac-6a22-412f-9dab-ea2dc324c979",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Column volume (CV)": {
+      "id": "c80bcb1a-2c8a-4e99-969d-45776fdfcf53",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Load material info": {
+      "id": "aaf611a1-64fa-4589-a3aa-c926592b4cc4",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Resin/Manufacturer": {
+      "id": "ba72b0b7-5e8b-46d1-a0b0-0eeebe23737a",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "0c1ad068-f1aa-419b-8434-a7a15e796545"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Name",
+              "config": "Name"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Actual bed height (cm)": {
+      "id": "881cf8d0-f3dc-40db-9393-8f2f68390253",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Target bed height (cm)": {
+      "id": "7534f902-a04f-466d-8e10-594f0f7b06f7",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Storage temperature (°C)": {
+      "id": "9ca6dc69-9c0b-45b2-927e-4a04a432b68b",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Initial titer/concentration": {
+      "id": "16a8ad0a-183c-488b-b117-0bf8ebb81a7e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Maximum process linear flow rate (cm/hr)": {
+      "id": "16ef6c96-8ba2-4896-af20-bba792bee3e1",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fe8a5f14-e916-49b2-984c-1614a3b5d292"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f628672f-a5cb-4301-95c7-c030a4dfdff4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9eafc0c7-9570-434d-b035-af1cf9c0dd89",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Protocol info"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "ea1b19cb-4e74-4fd6-a0f8-16a7f3af86a5",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "21d57e73-26ec-454e-a401-f3ccbb24c1bc",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "883317b1-6ba0-428b-8f10-ab36c68e3f20",
+                  "type": "field",
+                  "fieldId": "12a56cdf-d99c-4002-b24c-d0c9d06430ba",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "3eb887ea-da20-4cd3-ab0b-f9d6e1241698",
+                  "type": "field",
+                  "fieldId": "9b82962d-0052-4134-945c-b6707cbfc0e2",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "b1c17275-75de-4007-8674-76877beedb5a",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2e5c8bd0-2cdf-4e64-840d-56edcb104753",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "782d0a75-7266-4c2e-a84f-c5c3520d2f37",
+                  "type": "field",
+                  "fieldId": "05402363-eabe-44ea-a6a1-179f7ce3ab41",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0f04e669-0bfb-4392-b381-ea144a33a215",
+                  "type": "field",
+                  "fieldId": "b6721e84-07f9-4430-a736-60dde874cdc1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c378b1aa-143e-438e-a500-042eafc7ce7f",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f3d5929d-6775-4c2d-a5f6-d8bb6ac374d5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "85f29402-9b72-4004-b358-ca9957193812",
+          "type": "field",
+          "fieldId": "16d3506d-d25c-4e5b-88a5-3d530d3ed616",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "871c98a4-321c-4492-b6b6-a9fb8528f8ea",
+          "type": "field",
+          "fieldId": "87c05138-d7ff-4ac8-b48b-fc7cc239b058",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "aae096c3-9dac-4a0d-81de-8d59468c10f0",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2d4a39fe-e2b9-4f80-a2c8-642c6907f489",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Process description"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "9acf6b2a-b030-4ac3-bd33-fb344bf3e5a1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "78f6467c-887b-4c89-b345-81efdba4680c",
+          "type": "table",
+          "children": [
+            {
+              "id": "049c0d11-57cf-473a-a12c-be1a1c252b07",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "60376ba2-3078-4b73-9c28-fdb85f5fa4e1",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "6bc2bfa6-ea51-4ef8-a205-8729653fee08",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Method"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "74b432d0-adae-4d0d-8539-53a803e76a73",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "663c959e-19a0-45fc-8bde-82941857a908",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Step Name"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f5819fe6-6143-43a2-bc65-656c693e290b",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "8503ac02-c29f-45d3-86b5-fc6fcd33cb7f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Buffer"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "3653197b-4bea-4dfe-8abd-697a050cde63",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "a39484a2-4c4b-4c74-a700-3ebe7ff90072",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Column Volume (CV) "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d583cef7-8144-4bc4-bb8d-65e2d80701e6",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "30cbc883-1575-482e-9231-dc82a980e7c3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Flow Rate (cm/hr)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f8a08a09-ad93-4a7a-b18e-59ac5b583d70",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "4e40927e-2a3e-4c88-86d2-2701dab1ea87",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Inlet"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "40d81a5b-7422-466c-a77e-98804197acc7",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "f7f72cad-44ca-4fa0-b8ee-53079e08b230",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Outlet"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "763f1461-d021-44a4-a713-de7a88093e86",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "76ab37a1-9ff2-40a9-b26f-65b35ad05e6e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Flow Direction "
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "6d8dce80-aa49-4e7a-9935-18009901c290",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "a624835a-9ae7-4a98-b6b2-83474dedcc74",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "2f76e253-a953-415b-92fa-4deb903709c2",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Method 1: Pre-Use "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b8f02c7c-02ef-4538-93b0-db2b2d1b0aae",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "fccde421-7f89-4f41-bc69-bdee853de83c",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Pre-Use Sanitization"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7b6af6fe-949c-40ff-a11b-43a67c6ff7ce",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "569a270e-2566-440b-9557-3d7fbedff2a1",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "1.0M NaOH "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "9bed2740-f0ec-4d29-b769-8a0b4a544b1c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2395e291-aacc-469f-ab32-2da38d3bae14",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fbb42ef9-cce9-4965-bc3f-3a41c3d79839",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c908233c-0ca3-4ea3-b709-4f6ebb9fe90c",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "60"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "520a85cc-9d0d-4504-9ef4-17f7714ea7cf",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e0e16801-cbda-4d78-8797-da17aa49a169",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "B1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6e3ea4b0-424d-43d4-8e21-913b3a428777",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "482b9762-38d2-472a-bf43-c9b7bbcf5a03",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d4ab6466-806e-4d68-9629-e6ce5d660d7b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "8f9b5212-1b5b-46df-bba4-640af35c09ed",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Up Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "75a9093f-f6b7-45cf-8365-f79ca5923b35",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "1085af29-6e53-46ed-9bc4-8b6d4b042b37",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "115999ea-4d4a-47ea-8311-5daa540da7fd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b4fc26af-d9b8-4bda-9103-760fc216b22a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4a7e40ed-2648-4600-a26f-7f78f0ee548a",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "WPU Rinse"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "275f7331-6827-4ecb-849f-47c27d85f600",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "8178a0a1-cd23-40bf-b424-2a8c2e6c098c",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "WPU"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "eae328b5-d932-4e53-a4de-f76dfae6a641",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e4d6c608-dd30-4737-bde2-7ab6131c3243",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "2"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "2aae7fba-2679-43de-aac2-c557e1d95aa2",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5c4ae7f4-ccde-4dab-9f5f-b07c20c92b4d",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "200"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7d456110-20e6-412d-8fd9-ffe8fe5bee50",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2d68aa9b-2d4f-4d2f-bc03-0de7ccef5f75",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "B2"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0067823d-757a-4c21-834a-3679bbe08558",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "f5592053-b738-4c22-997e-94715019ea9f",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6b8e1124-3d3e-4fd0-aaa3-f5b52447cbcf",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "eaa4c332-766e-4b98-ac12-e41a606320fe",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Up Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "d71ed409-f45c-4412-a108-bde1f1bdd9e0",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "32fbb569-40df-4b35-844a-2388d4cde5a8",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "d2ba94f6-78ad-4dac-8e91-e80b02ab265a",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Method 2: Main"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "7dece440-58b7-443c-80a4-18afa28c1a8d",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Pre-EQ to Strip"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c6429633-977c-4b8e-a146-d72064ca80e4",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "962c4ae6-78dd-46de-b355-febeda995aa6",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Charge/Pre-EQ"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "68d3ab4d-7a32-4ea3-86b6-df8e7603a299",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "14f54100-01b7-4b5e-989d-3345e5e488e7",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "50mM Tris, 2M NaCl, pH 7.5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f59d6247-806c-422d-8222-39868f2edfc4",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a5e07b23-1106-4586-b538-a9f83134b5b6",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "4"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "55c72674-7d49-4452-87a9-c50308a0083f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "0afc16ee-2ed6-48f8-9eed-3c19228d343b",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "250"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "89f05144-d084-4a7a-bf73-84b2b10f0bec",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ed196a89-1278-4078-8f63-85cfa639eec2",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "A3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b4471f0f-686b-4801-b195-1d51853ce627",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2bb165db-052c-4310-bdd8-63695c2177f0",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "edfd8b64-a533-44e2-81a3-699d3240cf9f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7269ff29-a66b-437e-975a-fa30598d6f18",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4a1eca56-5a72-4d4f-9d7f-e26351fc9d77",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "23dd5bc4-fd66-4aa7-b81c-df045b893e63",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "f12b86e4-ef40-4c0d-a69f-09ee536853e1",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7047a1ea-06a0-44e7-b38e-7b4889970a12",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "24ac7b80-316c-4e17-a337-7ec77e844e41",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "EQ"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "012d642b-b043-4664-a29a-2c33e36daafb",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "66ae0237-62f5-4908-ac36-190a6cac73cb",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "50mM Tris, 400mM NaCl, 1mM MgCl"
+                        },
+                        {
+                          "text": "2",
+                          "subscript": true
+                        },
+                        {
+                          "text": ", 5% Glycerol, pH 7.5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d21ff6d0-3edc-4eda-9428-c5075ff93e2f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "479743c7-319d-4247-b144-a3788be4c643",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "08340f7d-af94-4f0d-8d02-bb0a6f3e9675",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "47a6a009-9f19-4fca-bc79-5e6538a76b61",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "250"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "dc0c1d79-9907-4402-b503-8c1b831a4c1f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "d46b6b10-a0bb-49f9-8190-177d4c10a85c",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "A1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5b8bcfbc-df4e-49ea-a7a2-7c45445bf127",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "82520426-4ba9-46bd-8ffd-c61bf5da70d5",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "EQ Check: Outlet1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "54311a45-d715-40d8-ade9-ed1da94b1205",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1400de57-66b9-421d-9877-3934c5418c5c",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4a329436-dd13-4631-8a10-d6ec8fdafc8e",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "a1140332-2886-4ef3-87a9-34f90324c1d3",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "ff5cd01b-e849-49ed-8b13-f033d74fb397",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7924df0d-5aa2-465d-83bd-32479b662070",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c70b6d97-3105-483d-b977-66c1f2e6aa3a",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Load"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0e35bdff-a8bf-4820-b4e0-17baef88d29b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6ce83c78-4ffa-4e73-8008-ea35e88333d6",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "CEX Load"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "2fc3e6bc-2f9d-4172-b8e4-74c0eb05255a",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "(10-25 g/L resin)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a208405f-9854-4471-b0dc-451102481178",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "870ebeee-557a-49f6-a252-29b3af9ea9ab",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Variable"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "255bc729-338a-481e-9c7b-60b38c1963c8",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1eeadeed-8449-44d8-b9a4-e9edae1ae486",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "250"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "32524e4d-ccc5-403e-92ad-1d26dc6e34bc",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "02d99ce0-aa68-4c87-af31-904050f7c6ae",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "A2"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "31f8a574-2fdb-40f7-915f-e9e6e69d12eb",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2a2f0f20-b2a3-43c8-89c6-0801c4ecb0b1",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7903dae5-4b72-45d8-badc-96ad9c9f12c3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "0bb59843-05f6-40e6-89ba-3a3e766997b4",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "af148506-bc96-4949-a8d6-a9c4d62a7125",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "146ff541-d16f-44cf-b2c2-e77063350f00",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "f4ac47ab-081c-46f4-9175-6ec27426cc6c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4e85571c-f332-465f-af78-8a91a896c720",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b3e6515b-75ca-4cec-9cda-993dc5861108",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Wash"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6339ac1f-1adb-40bc-bad0-8a2075ea2a13",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e868a9a8-ca66-4bf3-a8be-53305c59ca7a",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "50mM Tris, 400mM NaCl, 1mM MgCl"
+                        },
+                        {
+                          "text": "2",
+                          "subscript": true
+                        },
+                        {
+                          "text": ", 5% Glycerol, pH 7.5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6282367a-24c9-4e95-abfb-9c32d2b357a4",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "618c773f-b874-4270-9949-81384ac77947",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1c9b94c8-7112-4d98-97d3-fb50209c1560",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "868a5e94-70b7-432e-a3d8-1573f10319ae",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "250"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e36266ef-bbbc-4eb0-b19e-e1f0c81ba79b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "d6f33b38-194c-4427-af66-176699632de3",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "A1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "51c8394c-988e-4f1a-9107-939afaba86d6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "8205abf8-a5a2-44b5-95a7-2a5a81033a44",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a45d5cdc-a75a-46b8-a009-65f02a2c8579",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "54889a3d-8bc8-411d-b89f-8b0a14abc9f7",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "41de387a-e1b3-49b1-80d5-435231893507",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "29719af1-7d5b-4497-9586-cf70c8de1e54",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "101fe4df-ad13-4097-b3f8-699ed9f37c81",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "22df20d8-c1b4-4d5b-9d47-b0ec1cfee7cf",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1969599a-1ce1-4ace-98a1-b60c1be14c6b",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Elution"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fc0c3c70-67a9-4581-850e-607145a3af17",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e0754ba5-bd63-497f-99f1-f26c385d24aa",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "50mM Tris, "
+                        },
+                        {
+                          "bold": true,
+                          "text": "100mM NaCl",
+                          "color": "rgb(0, 112, 192)"
+                        },
+                        {
+                          "text": ", 1mM MgCl"
+                        },
+                        {
+                          "text": "2",
+                          "subscript": true
+                        },
+                        {
+                          "text": ", 5% Glycerol, pH 7.5"
+                        }
+                      ],
+                      "listStyleType": "upper-alpha"
+                    }
+                  ]
+                },
+                {
+                  "id": "e884aca8-f768-4d05-96e8-e9f28fafd1af",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "52b70b9b-8591-4983-9f26-c214291f0791",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "10"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "61216a20-4259-4b0b-a760-487eeceb391e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ea94eb33-aa1a-4d30-8237-4e61852799f8",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "100"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6bb8eb99-a826-4ca1-8c7e-4bb956ccb7cc",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "771ae9f6-29f8-489f-8887-ff7b240e3983",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "A4",
+                          "color": "rgb(0, 112, 192)"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bb18e9c2-2c81-4031-8b4c-50e3109bd827",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "65d173ef-c845-44c5-bb4b-6334b7dd54ba",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "B4"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7f5bb11c-ae3f-4b88-ab1e-f0ac1323614b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4079a6d1-bdd0-4f23-a8f0-d9b243925793",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet 2 "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8f23ad5a-aef6-414d-9815-75a6449d6df5",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5e63dfbd-136e-491c-8729-324a866fef35",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "79a13648-ac05-4836-8195-4c3aa12f7748",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "20dc6d0f-4688-4bf5-94eb-9d663be0fde3",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "a7156084-40cf-4293-be6e-ea56d6caf21c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b938c151-5520-46e1-8ee7-4af63e502c56",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a756b0a8-5895-4950-adfa-6c565201aa64",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "7de8a5f9-c3c4-405c-9721-03836171fd10",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ab5ee146-e4f6-481e-8a58-caf78cd4d8ac",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "50mM Tris, 2M NaCl, 1mM MgCl"
+                        },
+                        {
+                          "text": "2",
+                          "subscript": true
+                        },
+                        {
+                          "text": ", 5% Glycerol, pH 7.5"
+                        }
+                      ],
+                      "listStyleType": "upper-alpha"
+                    }
+                  ]
+                },
+                {
+                  "id": "7eb4de22-7496-4ca7-9bb0-6fbb1322a853",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7767b960-2a41-4dad-bd95-fbd7de8bd473",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e10a3888-ff37-4feb-be15-87f5b74ef125",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4932a621-966f-42a7-b5a2-f3e36b5cb666",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "62f8565d-f06e-4c39-bf98-52760e453cb9",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "83f8945d-2ab1-4d82-9fd6-4f92d75a5794",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fb4b45a8-2e10-4223-b7bb-5cb8d4d1263e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e363d809-db68-400b-8d8a-66341d27d595",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet 2 "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "5b3cb3f5-dff3-4c14-9a9d-c49979b80bf6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "9b4618d7-4dc1-4645-900a-cdf4b8be491e",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "740e96fa-476c-49d2-a498-3a4f1294dd03",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "77488691-0e26-411b-8f3d-d5eb81833ed1",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "c0cc2cd6-fa83-4240-80d7-1001e1ecad3a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "691026ff-ecee-47cd-a0c8-87f2a058f7cf",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "cc5bb7db-bdf3-4dc3-9feb-f87059be3d96",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "32d3b804-257e-4472-b73f-c9e949f46ce7",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b69bb35a-1222-4395-8e44-0e2e6128f1b0",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Gradient Elution: "
+                        },
+                        {
+                          "bold": true,
+                          "text": "16-58% ",
+                          "color": "rgb(0, 112, 192)"
+                        },
+                        {
+                          "bold": true,
+                          "text": "over 10 CV with 2CV hold at 58% Buffer B"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "30fc39f2-04b9-4e81-840c-ac5cc423be7c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Start Collection: 0.75 AU              End Collection: 0.50AU (5mm pathlength) "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "04ee92c4-cb84-4fb1-9358-c0c03eea5cc6",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "adac0fa5-f740-4afa-8231-5e71d09fa494",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1f22b532-98cb-42c1-98f0-6f38d07a3dfc",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "fdcb1cb7-2ea0-49d9-829f-b86991896df9",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c3ba431e-5184-48b8-be88-5b37c789a442",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ec06e285-e917-4fc6-8226-549987919296",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8e294d33-d865-499e-9c23-c34fd96f866d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c3b09dd7-ca6b-4720-ab6e-2ede4481f612",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet 2 "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0de80b23-71f6-446b-947d-9527d0be6c4f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b8f5f095-df49-44f7-a3a1-76cef4161011",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dae6041b-5871-4c87-b676-37af23cdcc3c",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "c22fd836-23e8-464e-9066-91f6fc10b78c",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "702a8c85-4215-4d0a-a6e1-d5e4ffc7572e",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "c2e7b50b-2f0a-423b-a2f2-875361667e29",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1283ee56-93df-467e-abd5-21342025d840",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Strip"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "262dd92e-e3db-4ce3-b884-e5a518888c53",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "afc55e88-0cd5-4f53-bf6f-428d3637dd1c",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "50mM Tris, 2M NaCl, pH 7.5"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "9c113b07-2307-43a0-9233-369734f1c996",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Collect 0.25AU-0.25AU"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "1991c0f0-ebcd-407b-8dd6-1ccc691d8535",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "70d140fe-f5e5-4a64-8ae5-e01097a91953",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "4"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f42f4998-2b2e-4f6a-b0fd-78b9c493e400",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "90e5f464-5b70-41c4-8155-88c92695ca4e",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "250"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "201a0f34-9520-437e-b26c-1673d30c5906",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b81cbc18-0e68-4ac3-9d95-ed59354cd622",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "A3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "98854c18-2929-4ed0-ba9b-aab3937277e7",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1fa20579-3207-446d-8806-933456c42d0d",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "6047181f-5dbe-40d7-898a-977d92461dea",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5b792c15-5e16-4d9d-926d-9e0840f5c0f9",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2d84d07d-7e35-4033-92d4-64cd418973c3",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "1561e003-aac8-4758-a751-97363f77563f",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "6dd0f3a2-3415-4880-b37e-b9f24eabe704",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Method 3: Post Use and Storage"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4228ddb4-ad2f-4e08-ba91-b741c094390c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "d6e4097e-96ac-41c7-b38a-770d46de4dd2",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Regeneration/ Sanitization"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a95b69c8-ba0a-4f2c-b457-d5a2ffac42ce",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a12e6057-4938-4112-8daf-beb46cbd4579",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "1.0M NaOH "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "63030d17-878c-4163-971d-2cb8f529a5b5",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "470c46dc-41c8-4375-a3f9-d6c428adc1c6",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8d01b679-2e0a-4e27-9bc7-bc0b4ec5653c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "97dc26be-93dc-4120-9d0d-ea1203047bb4",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "60"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "b740247f-9c84-4888-910f-804fd67fd933",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "25835a87-9bca-4c25-a60c-22ac3748aa2e",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "B1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "91c64b55-8d5f-4336-b031-5b6f71b904d3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "fe7bf093-d318-407a-bf1e-40151293bfdf",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8595d678-b14d-4ee6-90fd-72585a54b106",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "ab8c5c47-1d14-4c0d-bbf3-455b442d8157",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Up Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "19075272-d5b5-4bda-86d0-3c44c8be72e7",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "d49a2348-ea1c-401a-b95e-6b917b45029e",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "b62c4201-4e51-40d4-a9a3-a7220320aa5c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d015e680-6fe1-4a7e-bd98-dae01685a832",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b4411d99-09ed-4fe4-ad4d-2167c95663ea",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "WPU Rinse"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "37a8648e-d870-496f-9683-34d59b56afa1",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "968fc47a-de8e-40ad-a356-e09eede9a16c",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "WPU"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "470f15ba-907e-4be5-835d-81a13929e89e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2aa6da85-ef18-4c01-8cef-fefe74c254ae",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e2957584-8b18-4e74-a8cc-a1b45a222aee",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "44d42f87-4e0b-448a-922c-4c1e4cc9e840",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "200"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e478fbf0-f15e-4818-855a-8be545e29810",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "d62de200-1f27-400e-a6c8-bce5ec4fa1f0",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "B2"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d7e70465-f149-4e47-9ab8-79b4cb960e5c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e76c440d-da8f-4dad-810c-cf1a9c7984b9",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bc81bf94-a5f3-4fad-8efd-f8e08d61950e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "8ee6ff7e-b6bd-47e0-b137-c1ab99d09172",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Up Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "65772250-af4e-4af5-8193-c779119f0e1d",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "01fb2cb3-5d8a-4e97-8476-927002449dfa",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "2bba1339-ff3f-49c3-89d6-7a98a1f75648",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "fdaec543-8fb8-4a6d-9af2-12438d8d6e4b",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5fce4162-0b87-4bd1-9393-c12ebbed8601",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Storage"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "2c3f9cf7-c8dc-4d90-b799-f2e8bba31352",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b1f0a102-12f8-42a3-b731-d2758ec8eae1",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "0.1M NaOH"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "a853da7a-3bf1-4f7b-9aba-cfb60d3fafae",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "56ef49b2-7f56-4af0-bec5-ebbb97126089",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "30dde0b9-c9b2-458b-8426-ca9d28133e20",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2f23f23d-35b3-4fb5-9011-7b02a29ecd81",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "250"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "be455db9-4aa1-4eb6-a0a6-c4a7911cd3e7",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e5f09fb7-00c4-4c43-bc56-4db08aef1a41",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "B3"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "98374c15-6f83-4428-a34f-ec5b0402e063",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5787349a-4199-4f66-a096-8e018fdbd888",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Outlet1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "99fc8910-456a-48f8-9c5b-19dd5db33a3c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "3ededd04-ff95-4faa-af75-9e544adb0c73",
+                      "type": "p",
+                      "align": "center",
+                      "children": [
+                        {
+                          "text": "Down Flow"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4f684576-956a-4740-9951-8615291d5f1f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a58ab611-c67d-4d14-b9a4-a4f7089a9656",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Equipment information"
+            }
+          ],
+          "listRestart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "7404fe5c-640c-4bce-8130-d47bd4d44007",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "88e37b84-43ad-486c-ae0e-863089b71bbb",
+          "type": "field",
+          "fieldId": "5488d2ca-ca0d-4633-9f7c-850826cc86de",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Protocol",
+                "name": "Protocol",
+                "isHidden": true
+              },
+              {
+                "id": "Experiment ID",
+                "name": "Experiment ID",
+                "isHidden": true
+              },
+              {
+                "id": "Project number",
+                "name": "Project number",
+                "isHidden": true
+              },
+              {
+                "id": "Equipment",
+                "name": "Equipment",
+                "isHidden": false
+              },
+              {
+                "id": "Type",
+                "name": "Type",
+                "isHidden": false
+              },
+              {
+                "id": "Time used",
+                "name": "Time used",
+                "isHidden": false
+              },
+              {
+                "id": "Next calibration check due",
+                "name": "Next calibration check due",
+                "isHidden": false
+              },
+              {
+                "id": "Cleaned",
+                "name": "Cleaned",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "c585f2e0-f03f-42d1-93af-2c7b92bc19b7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5733f554-5a2a-4be7-942a-394799829731",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Consumables/Collection vessels"
+            }
+          ],
+          "listRestart": 4,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "ccbf3009-eca8-4bc1-8a95-b656b4637f1e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4592ba45-751d-4eba-bca6-b3a49b59fc25",
+          "type": "field",
+          "fieldId": "6bbd0f26-b8c5-4453-949c-2ecc9ce6ee05",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "692850be-c764-44f6-9999-bdc8898fc174",
+          "type": "field",
+          "fieldId": "4ba050b1-0be7-44a5-884f-b73d20c43314",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Protocol",
+                "name": "Protocol",
+                "isHidden": true
+              },
+              {
+                "id": "Experiment ID",
+                "name": "Experiment ID",
+                "isHidden": true
+              },
+              {
+                "id": "Project number",
+                "name": "Project number",
+                "isHidden": true
+              },
+              {
+                "id": "Material",
+                "name": "Material",
+                "isHidden": false
+              },
+              {
+                "id": "Type",
+                "name": "Type",
+                "isHidden": false
+              },
+              {
+                "id": "Expiry date",
+                "name": "Expiry date",
+                "isHidden": false
+              },
+              {
+                "id": "Time used",
+                "name": "Time used",
+                "isHidden": false
+              },
+              {
+                "id": "Quantity used: Amount",
+                "name": "Quantity used: Amount",
+                "isHidden": false
+              },
+              {
+                "id": "Quantity used: Unit",
+                "name": "Quantity used: Unit",
+                "isHidden": false
+              },
+              {
+                "id": "Expiry date from opening (UNIX)",
+                "name": "Expiry date from opening (UNIX)",
+                "isHidden": true
+              },
+              {
+                "id": "Manufacturer's expiry date",
+                "name": "Manufacturer's expiry date",
+                "isHidden": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "0c67e001-f32e-4dad-81d5-31c70b42846f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "638cd4a9-8230-49f8-90ae-13af26fe6658",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Column Information"
+            }
+          ],
+          "listRestart": 5,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "ff101759-9bf0-4990-ba75-9e0ba5191dfa",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9d8f4554-2965-49f1-8af9-fb6102b4f852",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record column information below"
+            }
+          ]
+        },
+        {
+          "id": "8262f98d-c81e-45a1-979d-e2577ae13646",
+          "type": "field",
+          "fieldId": "58138f70-def0-4a00-be89-3a9febc26fd9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e2901460-1fb3-4c5e-aa6d-f2827843f3db",
+          "type": "field",
+          "fieldId": "ba72b0b7-5e8b-46d1-a0b0-0eeebe23737a",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "492acb3e-e9ec-4f5b-9322-54516fbcca28",
+          "type": "field",
+          "fieldId": "642ef6b1-5f4e-4ade-8c2c-f39014610795",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f96708d0-0c89-4a5e-b809-138ccd163b78",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "9fc4551a-da38-424c-8201-f4b33d940092",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "0e21dac4-184c-4b07-b2b0-eecdc3ad8649",
+                  "type": "field",
+                  "fieldId": "f2e19eac-6a22-412f-9dab-ea2dc324c979",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "88b5e851-e740-4aa8-bf6f-fc5410b6547a",
+                  "type": "field",
+                  "fieldId": "abeb67c2-c4ff-4b3e-bde0-bc7f0f59c105",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0d6de2b0-c742-4e88-a4b1-d7031ce19746",
+                  "type": "field",
+                  "fieldId": "7534f902-a04f-466d-8e10-594f0f7b06f7",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "76a0b63d-bcd1-4876-9ed6-a59fbb080046",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f02cf2b5-c3a1-44a6-b1f7-5b08bf20a170",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "81a97049-b28b-4e6c-a953-d2121752402b",
+                  "type": "field",
+                  "fieldId": "c80bcb1a-2c8a-4e99-969d-45776fdfcf53",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "29a44c38-2349-43f3-8e9a-318f5fbb5a14",
+                  "type": "field",
+                  "fieldId": "881cf8d0-f3dc-40db-9393-8f2f68390253",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "d9933046-897e-4ee9-90a3-399431d21e1d",
+                  "type": "field",
+                  "fieldId": "f5e8a906-a7b7-4f25-957b-5c8584932f34",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "5af08fa2-aca8-402c-ac3b-36d249699059",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4d0e6894-7ac2-4f8c-92b7-4f19b2ebbc7a",
+          "type": "h3",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Load material and flow rate calculations"
+            }
+          ],
+          "listStyleType": "decimal",
+          "hierListRestart": "5."
+        },
+        {
+          "id": "b01badcd-b45a-4cad-8d74-006284bd0a8a",
+          "type": "field",
+          "fieldId": "aaf611a1-64fa-4589-a3aa-c926592b4cc4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ed5aa5bb-797c-48fc-9afa-408d912915aa",
+          "type": "field",
+          "fieldId": "16a8ad0a-183c-488b-b117-0bf8ebb81a7e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "12154b5f-25f2-4e95-ba2c-e48519bff413",
+          "type": "field",
+          "fieldId": "9ca6dc69-9c0b-45b2-927e-4a04a432b68b",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e8075029-e9dd-4de1-8a70-3ec9b1410765",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6ec30391-bf26-4f0c-b9d0-ebd88f66b2cc",
+          "type": "field",
+          "fieldId": "16ef6c96-8ba2-4896-af20-bba792bee3e1",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "18113705-8e8a-4a7e-b33d-eeb62814d731",
+          "type": "field",
+          "fieldId": "daa6ed6d-d453-4928-a096-8990317ac219",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "64c21525-bf3a-4d0f-be3c-e08074966eab",
+          "type": "task",
+          "children": [
+            {
+              "text": "Initials"
+            }
+          ]
+        },
+        {
+          "id": "93125b44-8066-4da4-9036-25e4d3c0d0aa",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "86bf6248-229d-4b08-b369-eea65c4b6ac8",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Procedure"
+            }
+          ],
+          "listRestart": 6,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "fb4caa12-8c8a-4323-aa3b-562c16f0d777",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "37c738dc-c95c-4518-9720-86b7c1793b45",
+          "type": "task",
+          "children": [
+            {
+              "text": "Operator"
+            }
+          ]
+        },
+        {
+          "id": "7537c098-aa8d-4b21-964a-40308210caf8",
+          "type": "task",
+          "children": [
+            {
+              "text": "Verifier"
+            }
+          ]
+        },
+        {
+          "id": "32d3d4ae-43f7-4826-8048-8356ef69ce97",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d3c4f2d7-9621-40c8-b0ba-7ebc3e27718a",
+          "type": "task",
+          "children": [
+            {
+              "text": "Place and secure all inlet lines into container(s) of WPU. Flush all system inlet and outlet lines with WPU thoroughly BEFORE connecting the column to the "
+            },
+            {
+              "text": " ÄKTA. This can be done manually or with a method.",
+              "color": "rgb(28, 33, 39)",
+              "backgroundColor": "rgb(255, 255, 255)"
+            }
+          ]
+        },
+        {
+          "id": "e7cc7666-505b-420f-9d2b-69e72f7d9516",
+          "type": "task",
+          "children": [
+            {
+              "text": "Connect CEX column to the "
+            },
+            {
+              "text": " ÄKTA system. Record system information in section 4. Record column information in section 5.",
+              "color": "rgb(28, 33, 39)",
+              "backgroundColor": "rgb(255, 255, 255)"
+            }
+          ]
+        },
+        {
+          "id": "25a468d2-ac30-454e-a536-a1eef5706dc5",
+          "type": "task",
+          "children": [
+            {
+              "text": "Measure and record buffer pH and conductivity in section 7."
+            }
+          ]
+        },
+        {
+          "id": "7087e5eb-76b2-46e7-8cba-d8d8c6382d65",
+          "type": "task",
+          "children": [
+            {
+              "text": "Obtain TFF1 Pool materials from RT storage. Record the load information in section 7."
+            }
+          ]
+        },
+        {
+          "id": "4d95aedf-a3cc-4986-a310-ac80065884d2",
+          "type": "task",
+          "children": [
+            {
+              "text": "Gently mix (avoid foaming) for "
+            },
+            {
+              "text": "≥ 5 minutes.",
+              "color": "rgb(28, 33, 39)",
+              "backgroundColor": "rgb(255, 255, 255)"
+            }
+          ]
+        },
+        {
+          "id": "08d9f520-c9d1-4793-bb99-c975df867318",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "83e5c7cb-2ae7-4058-9c49-84fb6f32ac3d",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "dfedbd81-ae52-4a43-921f-2155def591a7",
+                  "type": "field",
+                  "fieldId": "1994ed4a-b363-4ea1-88c9-72e1e872f3f1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "2680bd6f-e9cb-47c2-a729-559671e773af",
+                  "type": "field",
+                  "fieldId": "f4dd5a4c-343e-4599-9eb8-e4caebbca235",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "25946c3b-04dc-43b1-a6f9-7f748a452f88",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "5cb3479b-81a2-44c7-bdc7-4ba5abb49850",
+                  "type": "field",
+                  "fieldId": "8b20a444-9c09-4f14-803e-b61ebe84db88",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "62bd8ee6-f9dd-48f4-964f-8ff30a74e9a8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "452ed6da-0d92-4d11-a19c-2bdb6ad78c6f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8d737d84-3003-44e6-8ee6-1aa6024830dd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "023e70d2-8b21-4b50-8a1c-55f4a8aef6c5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "46618987-62a0-4404-addd-9dc1c66b2543",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "136217e8-0923-48b9-8a67-be7aa56cba09",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "CEX Run #@TEMPLATE_INDEX"
+  }
+}

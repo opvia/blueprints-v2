@@ -1,0 +1,591 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "e31c1037-41f0-4949-bcdd-f6e7d850b30d",
+  "title": "HPLC Protocol",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "CDS": {
+      "id": "12b8e6fd-724f-4552-8251-5b33045b377d",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Empower"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "User": {
+      "id": "05402363-eabe-44ea-a6a1-179f7ce3ab41",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Study": {
+      "id": "22109229-3346-4af8-9c85-1253354839b4",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Request ID": {
+      "id": "65e4bb80-033b-4339-bdc4-275ed090d3b8",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "HPLC method": {
+      "id": "80b5b8de-a741-4f72-865c-bdd38025389c",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Size exclusion"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Time & date": {
+      "id": "b6721e84-07f9-4430-a736-60dde874cdc1",
+      "type": "DATETIME",
+      "value": null,
+      "config": {},
+      "dataType": "DATETIME"
+    },
+    "Experiment ID": {
+      "id": "12a56cdf-d99c-4002-b24c-d0c9d06430ba",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Project number": {
+      "id": "9b82962d-0052-4134-945c-b6707cbfc0e2",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "HPLC method SOP": {
+      "id": "c52f23db-ed03-46aa-a573-58adb9874177",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Generic"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Instrument type": {
+      "id": "16ac284f-9e42-444f-80af-447666844540",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Waters HPLC"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Experiment setup": {
+      "id": "be31171c-0ab4-4d11-97a1-026bcf441080",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "14b52015-1d8b-445e-88bc-b3d47093cae0",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Set up experiment"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Number of samples": {
+      "id": "db617226-6f9c-4a31-ba90-0b127c2c997d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Sample handling table": {
+      "id": "bd48ba63-9a5d-428e-9254-1dc84b8b2d10",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "638a9723-bce8-4280-984c-272079f22c90",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Sample target dilution": {
+      "id": "e7efe294-c8b7-43ac-9d0c-9c0beb7a9ef9",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Analytical reagent preparation required?": {
+      "id": "3dcd0491-5c60-4115-aea0-e563c18c5431",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fe8a5f14-e916-49b2-984c-1614a3b5d292"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "f628672f-a5cb-4301-95c7-c030a4dfdff4",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9eafc0c7-9570-434d-b035-af1cf9c0dd89",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Protocol info"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "ea1b19cb-4e74-4fd6-a0f8-16a7f3af86a5",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "21d57e73-26ec-454e-a401-f3ccbb24c1bc",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "883317b1-6ba0-428b-8f10-ab36c68e3f20",
+                  "type": "field",
+                  "fieldId": "12a56cdf-d99c-4002-b24c-d0c9d06430ba",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "94610bd1-8343-41cb-8302-1401ea94782b",
+                  "type": "field",
+                  "fieldId": "22109229-3346-4af8-9c85-1253354839b4",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "3eb887ea-da20-4cd3-ab0b-f9d6e1241698",
+                  "type": "field",
+                  "fieldId": "9b82962d-0052-4134-945c-b6707cbfc0e2",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2e5c8bd0-2cdf-4e64-840d-56edcb104753",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "782d0a75-7266-4c2e-a84f-c5c3520d2f37",
+                  "type": "field",
+                  "fieldId": "05402363-eabe-44ea-a6a1-179f7ce3ab41",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0f04e669-0bfb-4392-b381-ea144a33a215",
+                  "type": "field",
+                  "fieldId": "b6721e84-07f9-4430-a736-60dde874cdc1",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c378b1aa-143e-438e-a500-042eafc7ce7f",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cd241e0e-9f0c-45a4-b07d-5791b53cfa89",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "d5ba435e-56c2-4283-8565-e8871f9d53a1",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "39b2516e-f5bf-4ac5-9dfd-b3ff4cb15a1f",
+                  "type": "field",
+                  "fieldId": "80b5b8de-a741-4f72-865c-bdd38025389c",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "0aaea745-97a9-4dfd-9b2d-9dfacf3d3354",
+                  "type": "field",
+                  "fieldId": "65e4bb80-033b-4339-bdc4-275ed090d3b8",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "cb8462d3-e346-451b-8737-f0405646dd8e",
+                  "type": "field",
+                  "fieldId": "db617226-6f9c-4a31-ba90-0b127c2c997d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "f5b8af84-bd0b-4bf3-9b8a-40440ae39bf4",
+                  "type": "field",
+                  "fieldId": "e7efe294-c8b7-43ac-9d0c-9c0beb7a9ef9",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "4abc9975-da1d-4fe1-9fac-ccb6661ccabc",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bb953d25-44fc-4689-badd-cbe52a6a2b11",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "50536807-9728-4bf6-83df-efba5b366bfb",
+                  "type": "field",
+                  "fieldId": "c52f23db-ed03-46aa-a573-58adb9874177",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "56abf38b-d132-4d54-bb3e-95707d5462be",
+                  "type": "field",
+                  "fieldId": "12b8e6fd-724f-4552-8251-5b33045b377d",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "46e16600-9d56-45f2-900d-77fb029419a2",
+                  "type": "field",
+                  "fieldId": "16ac284f-9e42-444f-80af-447666844540",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "dbe81fef-ecc8-4ec5-8958-419565d1eca2",
+                  "type": "field",
+                  "fieldId": "3dcd0491-5c60-4115-aea0-e563c18c5431",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "ea962aef-2a64-4001-aef3-05f455e33d9a",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "136217e8-0923-48b9-8a67-be7aa56cba09",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8f6ef67b-4230-4614-9abe-43c883881b77",
+          "type": "field",
+          "fieldId": "be31171c-0ab4-4d11-97a1-026bcf441080",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "showScriptFieldCode": false
+        },
+        {
+          "id": "58543dfa-578a-49c9-b963-6896706a73a2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "47d1b0a5-a12b-49c5-afae-4c73863da99f",
+          "type": "h2",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Sample handling "
+            }
+          ],
+          "listRestart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "08784bf7-625c-4461-9596-69fb4e1ec21f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6d9e19e3-4298-40a0-b06c-b90aa0ba9d89",
+          "type": "field",
+          "fieldId": "bd48ba63-9a5d-428e-9254-1dc84b8b2d10",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "submissionTableConfig": {
+            "properties": [
+              {
+                "id": "TITLE",
+                "name": "Title",
+                "isHidden": true
+              },
+              {
+                "id": "Formula",
+                "name": "Formula",
+                "isHidden": false
+              },
+              {
+                "id": "Sample",
+                "name": "Sample",
+                "isHidden": false
+              },
+              {
+                "id": "Sample number",
+                "name": "Sample number",
+                "isHidden": false
+              },
+              {
+                "id": "Storage temperature",
+                "name": "Storage temperature",
+                "isHidden": false
+              },
+              {
+                "id": "Tested?",
+                "name": "Tested?",
+                "isHidden": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "06612adf-630b-4b0a-882c-bc1afbceb10e",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "82c2c96c-e952-4b53-8d00-5ea0c673dc74",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f91b848c-b763-4f67-a7fe-354f1077c72c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c9c26465-c961-4efa-b2ca-f289f4c9119b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b9f1bbbc-7890-46c5-93c4-8b83220da2c8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a696272e-2237-45fd-9d35-c097672ee01c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d1b24dbf-258d-4e4f-a977-cd8eb0d4cac5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7b538146-55c3-4a50-aa0c-cf9ee7e47ae5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "661effb1-da13-433e-ae29-930154fcbe44",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "de73713a-305c-4c98-889b-4cc0c8bf81dc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "HPLC Run #@TEMPLATE_INDEX"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "638a9723-bce8-4280-984c-272079f22c90",
+  "title": "Sample Handling",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Sample": {
+      "id": "6b354f1f-8a6c-4a03-8250-d550a14ae52a",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Sample"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Record"
+                    ],
+                    "filter": "field",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Record",
+              "config": "Record"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Formula": {
+      "id": "e2698ffc-0496-469a-b3b2-b6e49109c898",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Sample\") , 'Concentration (item)')"
+      },
+      "dataType": null
+    },
+    "Tested?": {
+      "id": "886f556b-0b8c-490e-a14b-d17d6c153208",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Sample number": {
+      "id": "a625385d-3717-4442-ba99-0635d27fe2de",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Storage temperature": {
+      "id": "9e5f62d4-c015-44be-b7c1-34d3f074edc8",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "8b0cd044-958d-4dca-8977-9d2d470d21bc"
+    }
+  },
+  "content": {
+    "type": "NONE"
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Sample handling @6b354f1f-8a6c-4a03-8250-d550a14ae52a "
+  }
+}

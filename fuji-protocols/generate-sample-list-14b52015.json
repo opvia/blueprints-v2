@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "14b52015-1d8b-445e-88bc-b3d47093cae0",
+  "title": "Generate sample list",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "03e2070a-d229-4841-b09d-2e2b7c91406d",
+      "version": "1.1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "3304d856-7127-4d7a-b333-14c24d451629"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "import pandas as pd\n\n# 1. Get the containing entity (the Execution Record instance where the script is embedded)\ncurrent_entity = seal.get_containing_entity()\n\n# 2. Extract the 'Request ID' field value from the current entity\nrequest_id_field = current_entity[\"fields\"].get(\"Request ID\")\nrequest_id_refs = request_id_field.get(\"value\") if request_id_field else None\n\nif not request_id_refs:\n    print(\"No entity referenced in 'Request ID' field. Exiting script.\")\n    exit()\n\n# Assuming 'Request ID' is a single-value reference field, get the first reference\nrequest_entity_ref = request_id_refs[0]\nrequest_entity = seal.get_entity(ref=request_entity_ref)\nprint(f\"Processing Request ID entity: {request_entity.get('title', request_entity['id'])}\")\n\n# 3. Access the 'Submission' field in the referenced 'Request ID' entity\n# This 'Submission' field is expected to contain references to sample entities.\nsource_submission_field = request_entity[\"fields\"].get(\"Submission\")\nsource_sample_refs = source_submission_field.get(\"value\") if source_submission_field else None\n\nif not source_sample_refs:\n    print(f\"No samples found in 'Submission' field of Request ID '{request_entity.get('title', request_entity['id'])}'. Exiting script.\")\n    exit()\n\n# List to store data for new rows that will be added to the current entity's 'Submission' table\nnew_submission_rows_data = []\n# List to store data for new rows that will be added to the current entity's 'Submission 7' table\nnew_submission_7_rows_data = []\n\n# 4. Iterate through each sample entity referenced in the source 'Submission'\nfor sample_ref in source_sample_refs:\n    sample_entity = seal.get_entity(ref=sample_ref)\n\n    # Get the 'Title' and 'Analysis' field values of the sample entity\n    sample_title = sample_entity.get(\"title\", \"Untitled Sample\")\n    \n    # Safely get the 'Analysis' field value, ensuring it's always a list for the 'in' operator\n    sample_analysis_value = sample_entity[\"fields\"].get(\"Analysis\", {}).get(\"value\", [])\n    if not isinstance(sample_analysis_value, list):\n        # If for some reason it's not a list, convert it or make it an empty list\n        sample_analysis_value = [sample_analysis_value] if sample_analysis_value is not None else []\n\n    # 5. Filter: Only include samples where 'HPLC' is in the 'Analysis' select field\n    if \"HPLC\" in sample_analysis_value:\n        print(f\"Sample '{sample_title}' (Analysis: {sample_analysis_value}) meets criteria.\")\n        \n        # Data for 'Submission' table\n        new_row_submission = {\n            \"Title\": sample_title, # Title for the new instance in the current entity's Submission table\n            \"Sample ID\": [sample_ref] # Reference to the original sample entity\n        }\n        new_submission_rows_data.append(new_row_submission)\n\n        # Data for 'Submission 7' table\n        new_row_submission_7 = {\n            \"Title\": sample_title, # Title for the new instance in the current entity's Submission 7 table\n            \"Sample ID\": [sample_ref] # Reference to the original sample entity\n        }\n        new_submission_7_rows_data.append(new_row_submission_7)\n    else:\n        print(f\"Sample '{sample_title}' (Analysis: {sample_analysis_value}) does not meet criteria.\")\n\n# 6. Output filtered entities into the current entity's 'Submission' field\nif new_submission_rows_data:\n    target_submission_field_name = \"Submission\"\n    \n    target_submission_field = current_entity[\"fields\"].get(target_submission_field_name)\n    if not target_submission_field:\n        print(f\"Error: Target submission field '{target_submission_field_name}' not found in the current entity. Exiting script.\")\n        exit()\n        \n    target_submission_config = target_submission_field.get(\"config\")\n    if not target_submission_config:\n        print(f\"Error: Target submission field '{target_submission_field_name}' is missing its 'config'. Exiting script.\")\n        exit()\n\n    target_submission_template_ref = target_submission_config.get(\"typeOrTemplateRef\")\n    if not target_submission_template_ref:\n        print(f\"Error: Target submission field '{target_submission_field_name}' config is missing 'typeOrTemplateRef'. Exiting script.\")\n        exit()\n\n    seal.submit_to_instance_submission_field(\n        field_name=target_submission_field_name,\n        field_values_df=pd.DataFrame(new_submission_rows_data),\n        template_ref=target_submission_template_ref\n    )\n    print(f\"Successfully submitted {len(new_submission_rows_data)} samples to '{target_submission_field_name}' field.\")\nelse:\n    print(\"No samples met the 'HPLC' analysis criteria. No data submitted to 'Submission' field.\")\n\n\n# 7. Output filtered entities into the current entity's 'Submission 7' field\nif new_submission_7_rows_data:\n    target_submission_7_field_name = \"Submission 7\"\n    \n    target_submission_7_field = current_entity[\"fields\"].get(target_submission_7_field_name)\n    if not target_submission_7_field:\n        print(f\"Error: Target submission field '{target_submission_7_field_name}' not found in the current entity. Exiting script.\")\n        exit()\n        \n    target_submission_7_config = target_submission_7_field.get(\"config\")\n    if not target_submission_7_config:\n        print(f\"Error: Target submission field '{target_submission_7_field_name}' is missing its 'config'. Exiting script.\")\n        exit()\n\n    target_submission_7_template_ref = target_submission_7_config.get(\"typeOrTemplateRef\")\n    if not target_submission_7_template_ref:\n        print(f\"Error: Target submission field '{target_submission_7_field_name}' config is missing 'typeOrTemplateRef'. Exiting script.\")\n        exit()\n\n    seal.submit_to_instance_submission_field(\n        field_name=target_submission_7_field_name,\n        field_values_df=pd.DataFrame(new_submission_7_rows_data),\n        template_ref=target_submission_7_template_ref\n    )\n    print(f\"Successfully submitted {len(new_submission_7_rows_data)} samples to '{target_submission_7_field_name}' field.\")\nelse:\n    print(\"No samples met the 'HPLC' analysis criteria. No data submitted to 'Submission 7' field.\")"
+    }
+  }
+}

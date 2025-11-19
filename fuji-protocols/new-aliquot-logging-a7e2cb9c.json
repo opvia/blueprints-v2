@@ -1,0 +1,399 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a7e2cb9c-44c3-4a47-99a1-9011b4f25860",
+  "title": "New aliquot logging",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "9e87e1a6-424e-4084-9eba-a112bd648b3e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Item link": {
+      "id": "c39c0a3b-e21d-4f7a-b5a2-42d68dbaca02",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Sample"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Aliquot ID": {
+      "id": "fd3a3d79-d43c-4a9d-8f18-8bd0c00b9d00",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "concat( lookup(__self, \"New Lot Reference\") , \" - \" , string( lookup(__self, \"Aliquot number\") ))"
+      },
+      "dataType": null
+    },
+    "External ID": {
+      "id": "ba90844d-3792-418b-8c8c-d78f2015cb57",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Record link": {
+      "id": "a6a93c7c-faa6-4e1f-b4b2-a5ca6ad8df93",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Parent sample\") , 'New record link')"
+      },
+      "dataType": null
+    },
+    "Parent sample": {
+      "id": "074a8b1d-c1e5-4d9d-b71f-a6d577e03ede",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "8bb5bb15-4a0f-4dbb-bc7b-6eb146a2cf47"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Comments",
+              "config": "Comments"
+            },
+            {
+              "name": "Expiry (Days)",
+              "config": "Expiry (Days)"
+            },
+            {
+              "name": "Project number",
+              "config": "Project number"
+            },
+            {
+              "name": "Density (kg/m3)",
+              "config": "Density (kg/m3)"
+            },
+            {
+              "name": "New record link",
+              "config": "New record link"
+            },
+            {
+              "name": "New sample name",
+              "config": "New sample name"
+            },
+            {
+              "name": "Specific hazard",
+              "config": "Specific hazard"
+            },
+            {
+              "name": "New Lot Reference",
+              "config": "New Lot Reference"
+            },
+            {
+              "name": "FDBK health hazard",
+              "config": "FDBK health hazard"
+            },
+            {
+              "name": "Number of aliquots",
+              "config": "Number of aliquots"
+            },
+            {
+              "name": "New Lot Reference 1",
+              "config": "New Lot Reference 1"
+            },
+            {
+              "name": "New Lot Reference 2",
+              "config": "New Lot Reference 2"
+            },
+            {
+              "name": "New Lot Reference 3",
+              "config": "New Lot Reference 3"
+            },
+            {
+              "name": "Extinction coefficient",
+              "config": "Extinction coefficient"
+            },
+            {
+              "name": "New storage conditions",
+              "config": "New storage conditions"
+            },
+            {
+              "name": "Add record to inventory",
+              "config": "Add record to inventory"
+            },
+            {
+              "name": "Analytical concentration (mg/mL)",
+              "config": "Analytical concentration (mg/mL)"
+            },
+            {
+              "name": "Protocol / default other storage conditions",
+              "config": "Protocol / default other storage conditions"
+            },
+            {
+              "name": "Protocol / default sample aliquot volume (mL)",
+              "config": "Protocol / default sample aliquot volume (mL)"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Aliquot number": {
+      "id": "f1ee368d-8a84-49cd-ae9f-37771b530d20",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Label required?": {
+      "id": "1761d510-28ff-4c60-a621-cf0f7b0608c7",
+      "type": "BOOLEAN",
+      "value": true,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Generate sample?": {
+      "id": "4b50ada4-63cf-4fb5-8d29-38fe79d279ab",
+      "type": "BOOLEAN",
+      "value": true,
+      "config": {},
+      "dataType": "BOOLEAN"
+    },
+    "Send to request?": {
+      "id": "30ca48f2-b8e2-4e7b-8674-af0d5cccb0af",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No",
+          "Record sent for request"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "New Lot Reference": {
+      "id": "b428e67a-250b-4291-8d5f-860f40d623ef",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Parent sample\") , 'TITLE')"
+      },
+      "dataType": null
+    },
+    "Sample expiry date": {
+      "id": "2dd0bdfa-5226-478c-810e-75fd70f460d0",
+      "type": "DATETIME",
+      "value": null,
+      "config": {
+        "format": "dd-MMM-yyyy"
+      },
+      "dataType": "DATETIME"
+    },
+    "Aliquot volume (mL)": {
+      "id": "f9e7f788-9248-483f-a867-a7a5e7f00e4c",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Actual sampling date": {
+      "id": "4febf2a2-4063-48d2-bd6b-63e9ff351168",
+      "type": "DATETIME",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"Actual sampling date\") == null"
+      },
+      "dataType": "DATETIME"
+    },
+    "Aliquot storage condition": {
+      "id": "9a019961-766e-43de-b1de-b2fdd58a95a4",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Incubated (Approx. 37°C)",
+          "Ambient (Approx. 20°C)",
+          "Refrigerated (Approx. 4°C)",
+          "Frozen (Approx. -20°C)",
+          "Frozen (Approx. -30°C)",
+          "Ultra-frozen (Approx. -70°C)",
+          "Ultra-frozen (Approx. -80°C)",
+          "Liquid Nitrogen (LN2) (Approx. -180°C)",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Inventory storage location": {
+      "id": "6635ee4c-a0fe-42df-bc5b-1407f048d898",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Location"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "Protocol storage condition": {
+      "id": "70dda488-333d-4989-bc92-50c35f387ca3",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Incubated (Approx. 37°C)",
+          "Ambient (Approx. 20°C)",
+          "Refrigerated (Approx. 4°C)",
+          "Frozen (Approx. -20°C)",
+          "Frozen (Approx. -30°C)",
+          "Ultra-frozen (Approx. -70°C)",
+          "Ultra-frozen (Approx. -80°C)",
+          "Liquid Nitrogen (LN2) (Approx. -180°C)",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Protocol / default aliquot expiry": {
+      "id": "075b3c70-513b-470e-80b8-2a28d48a7594",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "formatDatetime( lookup(__self, \"Actual sampling date\") + (lookup(__self, \"Protocol / default aliquot expiry (days)\") * 86400), 'dd-MMM-yyyy', 'Europe/London')"
+      },
+      "dataType": null
+    },
+    "Protocol / default aliquot print name": {
+      "id": "ca164826-96b0-406d-b223-c190b8f3a1e0",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Protocol / default aliquot volume (mL)": {
+      "id": "6f9ef67e-4a72-4701-996d-c7cc53be1fc5",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Protocol / default aliquot expiry (days)": {
+      "id": "f1d222ea-553f-4aaf-ab30-e6a1d0345665",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "8b0cd044-958d-4dca-8977-9d2d470d21bc"
+    }
+  },
+  "content": {
+    "type": "NONE"
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@fd3a3d79-d43c-4a9d-8f18-8bd0c00b9d00"
+  }
+}

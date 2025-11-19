@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "a1721769-24aa-4434-80e5-6dad0a274a66",
+  "title": "Usage Record",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "social-media",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "520cc616-2b69-4f55-aee8-5212730cdc93",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": true
+    },
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": false
+  }
+}
