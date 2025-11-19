@@ -1,0 +1,664 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "9a595b4a-2fe8-4e96-93a1-d86652585cf4",
+  "title": "Unique Antibody Stock",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Box": {
+      "id": "66a267aa-1499-4a03-bfd2-63fe98af4a35",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "c4e94b9c-48f6-435f-b22d-8d871e54f6a5",
+                      "e11aaa67-3e1a-4b02-b726-6c50c853ad40",
+                      "25047b3b-59a7-4dfa-a4fc-98010f8030bb",
+                      "c3e343ec-de39-4200-89cc-f9a3fc47c8bb",
+                      "9f05ed95-f15e-443b-b23f-4a61470a8708",
+                      "97f7726a-c686-4153-a951-71bdf325aa68"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Room",
+              "config": "Room"
+            },
+            {
+              "name": "Samples",
+              "config": "Samples"
+            },
+            {
+              "name": "Positions",
+              "config": "Positions"
+            },
+            {
+              "name": "Rack/Shelf/Drawer",
+              "config": "Rack/Shelf/Drawer"
+            },
+            {
+              "name": "Tank/Fridge/Freezer",
+              "config": "Tank/Fridge/Freezer"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Antibody": {
+      "id": "5e61e5ca-ec6c-40e3-947c-f09868c4daf3",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup ( lookup(__self, \"Lot Number\") , \"Antibody\" )"
+      },
+      "dataType": null
+    },
+    "Position": {
+      "id": "cdcc3bc8-8250-4596-9689-922119401b91",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "c3340a0f-8e87-4675-8d1a-6bad14c394c5"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Box",
+              "config": "Box"
+            },
+            {
+              "name": "Room",
+              "config": "Room"
+            },
+            {
+              "name": "Status",
+              "config": "Status"
+            },
+            {
+              "name": "Position",
+              "config": "Position"
+            },
+            {
+              "name": "Stock unit",
+              "config": "Stock unit"
+            },
+            {
+              "name": "Position number",
+              "config": "Position number"
+            },
+            {
+              "name": "Rack/Shelf/Drawer",
+              "config": "Rack/Shelf/Drawer"
+            },
+            {
+              "name": "Tank/Fridge/Freezer",
+              "config": "Tank/Fridge/Freezer"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Lot Number": {
+      "id": "c9b8bc6e-5ce0-4c04-87a3-5c15d3fa32bc",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "bfeff202-5aeb-4422-90ce-4b0a1b96ad4d"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Antibody",
+              "config": "Antibody"
+            },
+            {
+              "name": "Lot Number",
+              "config": "Lot Number"
+            },
+            {
+              "name": "Remaining volume (uL)",
+              "config": "Remaining volume (uL)"
+            },
+            {
+              "name": "Stocks",
+              "config": "Stocks"
+            },
+            {
+              "name": "Av1 (uL)",
+              "config": "Av1 (uL)"
+            },
+            {
+              "name": "Av2 (uL)",
+              "config": "Av2 (uL)"
+            },
+            {
+              "name": "Av3 (uL)",
+              "config": "Av3 (uL)"
+            },
+            {
+              "name": "Av4 (uL)",
+              "config": "Av4 (uL)"
+            },
+            {
+              "name": "Av5 (uL)",
+              "config": "Av5 (uL)"
+            },
+            {
+              "name": "Tv1 (uL)",
+              "config": "Tv1 (uL)"
+            },
+            {
+              "name": "Tv2 (uL)",
+              "config": "Tv2 (uL)"
+            },
+            {
+              "name": "Tv3 (uL)",
+              "config": "Tv3 (uL)"
+            },
+            {
+              "name": "Tv4 (uL)",
+              "config": "Tv4 (uL)"
+            },
+            {
+              "name": "Tv5 (uL)",
+              "config": "Tv5 (uL)"
+            },
+            {
+              "name": "GD1v1 (uL)",
+              "config": "GD1v1 (uL)"
+            },
+            {
+              "name": "GD2v1 (uL)",
+              "config": "GD2v1 (uL)"
+            },
+            {
+              "name": "NK1v1 (uL)",
+              "config": "NK1v1 (uL)"
+            },
+            {
+              "name": "NK1v2 (uL)",
+              "config": "NK1v2 (uL)"
+            },
+            {
+              "name": "NK1v3 (uL)",
+              "config": "NK1v3 (uL)"
+            },
+            {
+              "name": "NK2v1 (uL)",
+              "config": "NK2v1 (uL)"
+            },
+            {
+              "name": "NK2v2 (uL)",
+              "config": "NK2v2 (uL)"
+            },
+            {
+              "name": "NK2v3 (uL)",
+              "config": "NK2v3 (uL)"
+            },
+            {
+              "name": "TICv1 (uL)",
+              "config": "TICv1 (uL)"
+            },
+            {
+              "name": "Inventory ID",
+              "config": "Inventory ID"
+            },
+            {
+              "name": "Av1 (uL) AUTO",
+              "config": "Av1 (uL) AUTO"
+            },
+            {
+              "name": "Av2 (uL) AUTO",
+              "config": "Av2 (uL) AUTO"
+            },
+            {
+              "name": "Av3 (uL) AUTO",
+              "config": "Av3 (uL) AUTO"
+            },
+            {
+              "name": "Av4 (uL) AUTO",
+              "config": "Av4 (uL) AUTO"
+            },
+            {
+              "name": "Av5 (uL) AUTO",
+              "config": "Av5 (uL) AUTO"
+            },
+            {
+              "name": "Tv1 (uL) AUTO",
+              "config": "Tv1 (uL) AUTO"
+            },
+            {
+              "name": "Tv2 (uL) AUTO",
+              "config": "Tv2 (uL) AUTO"
+            },
+            {
+              "name": "Tv3 (uL) AUTO",
+              "config": "Tv3 (uL) AUTO"
+            },
+            {
+              "name": "Tv4 (uL) AUTO",
+              "config": "Tv4 (uL) AUTO"
+            },
+            {
+              "name": "Tv5 (uL) AUTO",
+              "config": "Tv5 (uL) AUTO"
+            },
+            {
+              "name": "GD1v1 (uL) AUTO",
+              "config": "GD1v1 (uL) AUTO"
+            },
+            {
+              "name": "GD2v1 (uL) AUTO",
+              "config": "GD2v1 (uL) AUTO"
+            },
+            {
+              "name": "NK1v1 (uL) AUTO",
+              "config": "NK1v1 (uL) AUTO"
+            },
+            {
+              "name": "NK1v2 (uL) AUTO",
+              "config": "NK1v2 (uL) AUTO"
+            },
+            {
+              "name": "NK1v3 (uL) AUTO",
+              "config": "NK1v3 (uL) AUTO"
+            },
+            {
+              "name": "NK2v1 (uL) AUTO",
+              "config": "NK2v1 (uL) AUTO"
+            },
+            {
+              "name": "NK2v2 (uL) AUTO",
+              "config": "NK2v2 (uL) AUTO"
+            },
+            {
+              "name": "NK2v3 (uL) AUTO",
+              "config": "NK2v3 (uL) AUTO"
+            },
+            {
+              "name": "TICv1 (uL) AUTO",
+              "config": "TICv1 (uL) AUTO"
+            },
+            {
+              "name": "Accept antibody default volumes",
+              "config": "Accept antibody default volumes"
+            }
+          ]
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Stock name": {
+      "id": "33056c48-8f29-4f52-9ac0-020873a3f436",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Stock type": {
+      "id": "19d56dc2-fa71-479c-a9fd-8a4288bb7744",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Vial",
+          "Tube"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Expiry date": {
+      "id": "69f54e41-3122-4b34-891d-e8818e1e9f6b",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Seal Unique ID": {
+      "id": "7e480e90-5762-4737-8a20-2045785be3b9",
+      "type": "FORMULA",
+      "value": "AB_",
+      "config": {
+        "formulaExpression": "concat(\"AB_\",lookup(__self, \"TEMPLATE_INDEX\"))"
+      },
+      "dataType": "STRING"
+    },
+    "Stored / frozen by": {
+      "id": "74976d05-c63b-4945-aab5-0500e92145e7",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Stored / frozen on": {
+      "id": "f6dba626-171f-4e32-aaa9-bf05edad8e3e",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Remaining volume (uL)": {
+      "id": "7b20ce14-2d1b-4e89-b98c-769d543db488",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Position Status Updater": {
+      "id": "cd867d81-1932-4147-a5bf-9dbed3aac098",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "d525720c-19fe-44e2-90d0-6eb7b6e1d656",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Update"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Stock concentration (mg/mL)": {
+      "id": "e779cc16-c24b-4d85-bd9c-9fcd06c28527",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Position Status Updated to Full?": {
+      "id": "2c1f931c-5853-40f9-9c37-54977d21c6fd",
+      "type": "BOOLEAN",
+      "value": null,
+      "config": {},
+      "dataType": "BOOLEAN"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "8c425aad-6237-4109-97aa-0be6e27426bf"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "966f9a04-7ca8-4f99-9b69-7a5d4ddd8ff3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c4af79ab-1b93-45bf-a3d1-54fb7e85ac08",
+          "type": "two_column",
+          "children": [
+            {
+              "id": "e3f2e392-8cec-42c9-8bda-e4ee185ca6ff",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "2077d966-f31e-4a2f-b4a9-407a7f1c86cf",
+                  "type": "field",
+                  "fieldId": "33056c48-8f29-4f52-9ac0-020873a3f436",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "e2716980-bdf5-4baf-aa87-1f013b81b379",
+                  "type": "field",
+                  "fieldId": "7e480e90-5762-4737-8a20-2045785be3b9",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "cfcedade-0d45-4990-8c66-af7fa1576bfa",
+                  "type": "field",
+                  "fieldId": "c9b8bc6e-5ce0-4c04-87a3-5c15d3fa32bc",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "a8bece00-739c-427d-9d51-cb54755753d9",
+                  "type": "field",
+                  "fieldId": "5e61e5ca-ec6c-40e3-947c-f09868c4daf3",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "c7db1362-3a84-4d5b-bd61-2f33907b9386",
+                  "type": "field",
+                  "fieldId": "7b20ce14-2d1b-4e89-b98c-769d543db488",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "aadc24ca-5de9-4e89-89d4-1adf6a24896c",
+                  "type": "field",
+                  "fieldId": "69f54e41-3122-4b34-891d-e8818e1e9f6b",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "a61ee293-9fa5-4e7e-88fd-5d266995a3d0",
+                  "type": "field",
+                  "fieldId": "e779cc16-c24b-4d85-bd9c-9fcd06c28527",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "cff6b25c-ed28-4462-ba7c-b4917f883f43",
+                  "type": "field",
+                  "fieldId": "19d56dc2-fa71-479c-a9fd-8a4288bb7744",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "4ff6a606-1d8b-4783-b89c-db111d592b47",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b2feebf9-a837-4eb9-a418-4e8c9d388700",
+              "type": "two_column_cell",
+              "children": [
+                {
+                  "id": "98aba4d8-0fac-46ba-a58d-810893bb7cce",
+                  "type": "field",
+                  "fieldId": "74976d05-c63b-4945-aab5-0500e92145e7",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "6131e4f9-f674-43b4-8b71-ed6208a0fbb3",
+                  "type": "field",
+                  "fieldId": "f6dba626-171f-4e32-aaa9-bf05edad8e3e",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "6297cec1-5c32-4ab9-b5ba-2b6c871813f7",
+                  "type": "field",
+                  "fieldId": "66a267aa-1499-4a03-bfd2-63fe98af4a35",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "91c17512-7787-41f7-af25-18404b780119",
+                  "type": "field",
+                  "fieldId": "cdcc3bc8-8250-4596-9689-922119401b91",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "entityPreview": {
+                    "isPreview": false
+                  }
+                },
+                {
+                  "id": "006fa843-ed6a-4baa-9e23-bf79b2a39934",
+                  "type": "field",
+                  "fieldId": "cd867d81-1932-4147-a5bf-9dbed3aac098",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "2fd674e4-2ec4-42cd-a51d-001ecd1f49f4",
+                  "type": "field",
+                  "fieldId": "2c1f931c-5853-40f9-9c37-54977d21c6fd",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "b8b341fc-4b15-4a31-93d0-ac753e99b21f",
+                  "type": "p",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b1d8264b-0732-4766-b9b0-e50038c56196",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@33056c48-8f29-4f52-9ac0-020873a3f436_@7e480e90-5762-4737-8a20-2045785be3b9"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "81f8fbc6-0a41-4b89-b1e6-ad8b6c5f8f24",
+  "title": "Duplicate volumes from antibody to lot",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "4a3102b9-7295-4dfd-b36a-3e66e5f951db",
+      "version": "2"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "# Get the containing entity where the script is embedded\nentity = seal.get_containing_entity()\nfields = entity.get(\"fields\", {})\n\n# Define the mapping between 'AUTO' fields (source) and their corresponding manual fields (target)\n# This mapping is derived from the field names present in the provided entity JSON.\nfield_mappings = {\n    \"Recommended titrated volume (uL) AUTO\": \"Recommended titrated volume (uL)\",\n    \"Av1 (uL) AUTO\": \"Av1 (uL)\",\n    \"Av2 (uL) AUTO\": \"Av2 (uL)\",\n    \"Av3 (uL) AUTO\": \"Av3 (uL)\",\n    \"Av4 (uL) AUTO\": \"Av4 (uL)\",\n    \"Av5 (uL) AUTO\": \"Av5 (uL)\",\n    \"Tv1 (uL) AUTO\": \"Tv1 (uL)\",\n    \"Tv2 (uL) AUTO\": \"Tv2 (uL)\",\n    \"Tv3 (uL) AUTO\": \"Tv3 (uL)\",\n    \"Tv4 (uL) AUTO\": \"Tv4 (uL)\",\n    \"Tv5 (uL) AUTO\": \"Tv5 (uL)\",\n    \"GD1v1 (uL) AUTO\": \"GD1v1 (uL)\",\n    \"GD2v1 (uL) AUTO\": \"GD2v1 (uL)\",\n    \"NK1v1 (uL) AUTO\": \"NK1v1 (uL)\",\n    \"NK1v2 (uL) AUTO\": \"NK1v2 (uL)\",\n    \"NK1v3 (uL) AUTO\": \"NK1v3 (uL)\",\n    \"NK2v1 (uL) AUTO\": \"NK2v1 (uL)\",\n    \"NK2v2 (uL) AUTO\": \"NK2v2 (uL)\",\n    \"NK2v3 (uL) AUTO\": \"NK2v3 (uL)\",\n    \"TICv1 (uL) AUTO\": \"TICv1 (uL)\",\n}\n\n# Check if any target fields already have values\nfor source_field_name, target_field_name in field_mappings.items():\n    target_field_value = fields.get(target_field_name, {}).get(\"value\")\n    if target_field_value is not None:\n        seal.throw_error(\n            \"There are some values in the fields you are trying to copy into. \"\n            \"Some of these may have been manually entered, so we don't want to override them.\"\n        )\n\n# If no target fields have values, proceed with copying\nfor source_field_name, target_field_name in field_mappings.items():\n    source_field_value = fields.get(source_field_name, {}).get(\"value\")\n    if source_field_value is not None:\n        seal.update_field_value(target_field_name, source_field_value)\n        print(f\"Copied '{source_field_value}' from '{source_field_name}' to '{target_field_name}'\")\n    else:\n        print(f\"Source field '{source_field_name}' has no value to copy.\")\n\nprint(\"Script finished successfully.\")"
+    }
+  }
+}

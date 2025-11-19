@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "d525720c-19fe-44e2-90d0-6eb7b6e1d656",
+  "title": "Position Updater Script - On Being Referenced",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "9e7e8e1d-5577-4a49-b30f-e1f0dec3b8e8",
+      "version": "1"
+    }
+  },
+  "fields": {
+    "Description": {
+      "id": "8ca6e1d5-e854-4910-997c-32eb90b17f42",
+      "type": "STRING",
+      "value": "Updates the positions status to 'Full' after being referenced by a sample. ",
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "4eb6726b-c745-4cd0-bf1b-ef63ad35840b"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "import copy\nimport re\n\n# Get the entity where this script is embedded (the 'Sample' instance)\nsample_entity = seal.get_containing_entity()\nprint(f\"Script running on Sample entity: {sample_entity.get('title')} (ID: {sample_entity['id']})\")\n\n# Initialize flags\nposition_update_successful = False\nposition_entity_was_drafted = False\nmultiple_occupants_error_occurred = False # New flag for this specific error\n\n# Get the 'Position' reference field\nposition_field = sample_entity[\"fields\"].get(\"Position\")\n\nif not position_field or not position_field.get(\"value\"):\n    print(\"The 'Position' reference field is empty or not found. No action taken.\")\nelse:\n    # Assume 'Position' is a single reference field. Get the first reference.\n    position_ref = position_field[\"value\"][0]\n    position_entity_id = position_ref[\"id\"]\n    print(f\"Referenced Position entity ID: {position_entity_id}\")\n\n    # Get the current state of the Position entity\n    current_position_entity = seal.get_entity(entity_id=position_entity_id)\n\n    # --- Validation: Check if Position status is already 'Full' ---\n    current_position_status_field = current_position_entity[\"fields\"].get(\"Status\")\n    if current_position_status_field and current_position_status_field.get(\"value\") == [\"Full\"]:\n        seal.throw_error(\"Position is already Full. Cannot update status again.\")\n\n    # --- Validation: Check 'Stock unit' saved search on Position entity ---\n    stock_unit_field = current_position_entity[\"fields\"].get(\"Stock unit\")\n\n    if stock_unit_field:\n        field_ui_type = stock_unit_field.get(\"type\")\n        field_data_type = stock_unit_field.get(\"dataType\")\n        print(f\"Found 'Stock unit' field. UI Type: '{field_ui_type}', Data Type: '{field_data_type}'\")\n\n        if field_data_type == \"SEARCH\":\n            stock_unit_search_config = copy.deepcopy(stock_unit_field.get(\"value\"))\n\n            if stock_unit_search_config and stock_unit_search_config.get(\"filters\"):\n                for filter_group in stock_unit_search_config[\"filters\"].get(\"and\", []):\n                    for filter_item in filter_group.get(\"or\", []):\n                        if filter_item.get(\"filter\") == \"fieldValue\" and filter_item.get(\"value\"):\n                            for fv_item in filter_item[\"value\"]:\n                                original_value_str = fv_item[\"value\"]\n                                # Regex to extract content inside ref()\n                                match = re.search(r'ref\\((.*)\\)', original_value_str)\n                                if match:\n                                    inner_content = match.group(1)\n                                    # Corrected string literal for comparison\n                                    if 'lookup(__self, \"ID\")' in inner_content:\n                                        fv_item[\"value\"] = f\"ref({position_entity_id})\"\n                                        print(f\"Resolved 'Stock unit' filter value to: {fv_item['value']}\")\n                                else:\n                                    print(f\"Warning: 'Stock unit' filter item value '{original_value_str}' does not match 'ref(anything)' pattern. Skipping resolution.\")\n\n                print(f\"Executing 'Stock unit' search with config: {stock_unit_search_config}\")\n                stock_unit_results = seal.search_entities(stock_unit_search_config)\n                if len(stock_unit_results) > 1:\n                    multiple_occupants_error_occurred = True # Set flag instead of throwing error\n                    print(\"Status updated to Full, but you need to pick another Position (multiple occupants found).\")\n                elif len(stock_unit_results) == 0:\n                    print(\"Info: 'Stock unit' search yielded no results, implying the position is empty or the search is misconfigured.\")\n            else:\n                print(\"Warning: 'Stock unit' field found, but its search config or filters are empty. Skipping check.\")\n        else:\n            print(f\"Warning: 'Stock unit' field found, but its data type is '{field_data_type}', not 'SEARCH'. Skipping check.\")\n    else:\n        print(\"Warning: 'Stock unit' field not found on Position entity. Skipping check.\")\n\n\n    # Make the Position entity editable (create a new draft) if not already\n    if current_position_entity[\"status\"] == \"EDITABLE\":\n        print(f\"Position entity {current_position_entity.get('title')} is already in draft.\")\n        position_draft_id = current_position_entity[\"id\"]\n    else:\n        print(f\"Putting Position entity {current_position_entity.get('title')} into draft...\")\n        new_position_draft = seal.make_entity_editable(position_entity_id)\n        position_draft_id = new_position_draft[\"id\"]\n        position_entity_was_drafted = True\n        print(f\"Position entity is now in draft. New draft ID: {position_draft_id}\")\n\n    # Update the 'Status' select field in the Position instance to 'Full'\n    print(f\"Updating 'Status' field of Position entity {position_draft_id} to 'Full'...\")\n    seal.update_field_value_in_entity(\n        entity_id=position_draft_id,\n        field_name=\"Status\",\n        field_value=[\"Full\"]\n    )\n    print(\"Successfully updated 'Status' field.\")\n\n    # Always update the Sample's 'Position' reference field to the latest draft of the Position entity\n    print(f\"Updating 'Position' reference field on Sample to point to latest draft {position_draft_id}...\")\n    seal.update_field_value(\n        field_name=\"Position\",\n        field_value=[{\"id\": position_draft_id, \"version\": None}]\n    )\n    print(\"Sample's 'Position' reference field updated to latest draft.\")\n\n    # Get the change set information for the containing 'Sample' entity\n    sample_change_set = seal.get_change_set_for_containing_entity()\n\n    if not sample_change_set:\n        print(\"The Sample entity is not part of a change set. Cannot add Position entity.\")\n    else:\n        change_set_index = sample_change_set[\"index\"]\n        print(f\"Sample entity is in Change Set: {change_set_index}\")\n\n        # Add the Position draft entity to the Sample's change set\n        print(f\"Adding Position draft ({position_draft_id}) to Change Set {change_set_index}...\")\n        seal.add_entity_to_change_set(position_draft_id, change_set_index)\n        print(\"Position entity successfully added to the Sample's change set.\")\n        # Only set successful if no multiple occupants error occurred\n        if not multiple_occupants_error_occurred:\n            position_update_successful = True\n\n# Check the Sample's checkbox field only if position_update_successful is True\nif position_update_successful:\n    print(\"All position updates completed. Checking 'Position Status Updated to Full?' checkbox on Sample.\")\n    seal.update_field_value(\n        field_name=\"Position Status Updated to Full?\",\n        field_value=True\n    )\n    print(\"Checkbox 'Position Status Updated to Full?' updated on Sample.\")\nelse:\n    # Explicitly uncheck the box if it was not fully successful or multiple occupants were found\n    print(\"Position update not fully successful or multiple occupants found. Explicitly unchecking 'Position Status Updated to Full?' checkbox on Sample.\")\n    seal.update_field_value(\n        field_name=\"Position Status Updated to Full?\",\n        field_value=False\n    )\n    print(\"'Position Status Updated to Full?' checkbox updated to False on Sample.\")"
+    }
+  }
+}
