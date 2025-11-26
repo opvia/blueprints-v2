@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "27304571-e260-4509-847b-2ce6e0fd8541",
+  "title": "Change Control Forms",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "social-media",
+  "contentType": "PAGE_CONTENT",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "e97d70e7-908d-4764-991d-05a572b5499e",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": true
+    },
+    "enforceUniqueTitles": true,
+    "validationScriptsRefs": [
+      {
+        "id": "36face42-bbfd-49e8-b2a4-ca67cbe54667",
+        "placeholderValue": "activeVersion"
+      }
+    ],
+    "canChooseActiveVersion": true
+  }
+}
