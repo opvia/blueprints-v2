@@ -1,0 +1,7 @@
+{
+    "name": "ELN",
+    "description": "This blueprint enables quick visual comparison of results across multiple experiments or batches, ideal for identifying trends, outliers, or process drift over time. With just a few clicks, users can overlay historical test data from different records onto a single plot—grouped by product, method, or custom tags. Built-in templates let you configure which fields to track, how to filter data (e.g. by lot, date range, condition), and how results are visualised (e.g. line charts, scatter plots, control limits).",
+    "members": [
+        {"id": "cross-experiment-comparison", "required": true}
+    ]
+}

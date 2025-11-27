@@ -1,0 +1,8 @@
+{
+    "name": "Training",
+    "description": "<TODO: Add description>",
+    "members": [
+        {"id": "trainee", "required": true},
+        {"id": "trainer", "required": true}
+    ]
+}
