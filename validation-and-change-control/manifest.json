@@ -1,0 +1,92 @@
+{
+  "id": "validation-and-change-control",
+  "version": 1,
+  "name": "Validation and Change Control",
+  "description": "",
+  "entities": [
+    {
+      "id": "36face42-bbfd-49e8-b2a4-ca67cbe54667",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Change Control Form check script",
+      "icon": "cog",
+      "sourceVersion": "1",
+      "tagIds": [
+        "341488a4-9498-4e33-90a8-29a6a2f0d0d6"
+      ]
+    },
+    {
+      "id": "b9624b3e-7551-4d42-92af-f1917a464bd5",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Check Scripts",
+      "icon": "cog",
+      "sourceVersion": "1",
+      "tagIds": [
+        "341488a4-9498-4e33-90a8-29a6a2f0d0d6"
+      ]
+    },
+    {
+      "id": "f5a2ea9a-ad36-479e-910b-9a2af63e13f7",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Default Check Script template",
+      "icon": "cog",
+      "sourceVersion": "1",
+      "tagIds": [
+        "341488a4-9498-4e33-90a8-29a6a2f0d0d6"
+      ]
+    },
+    {
+      "id": "27304571-e260-4509-847b-2ce6e0fd8541",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control Forms",
+      "icon": "social-media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "341488a4-9498-4e33-90a8-29a6a2f0d0d6"
+      ]
+    },
+    {
+      "id": "e97d70e7-908d-4764-991d-05a572b5499e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default Change Control template",
+      "icon": "social-media",
+      "sourceVersion": "1.1",
+      "tagIds": [
+        "341488a4-9498-4e33-90a8-29a6a2f0d0d6"
+      ]
+    },
+    {
+      "id": "afc9c6ca-97f1-49fe-8e6b-f142079dd6c7",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Default Validation Document template",
+      "icon": "git-repo",
+      "sourceVersion": "1",
+      "tagIds": [
+        "341488a4-9498-4e33-90a8-29a6a2f0d0d6"
+      ]
+    },
+    {
+      "id": "c170f101-2913-4201-a5db-5d87ac9f9dd8",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Validation Documents",
+      "icon": "git-repo",
+      "sourceVersion": "1",
+      "tagIds": [
+        "341488a4-9498-4e33-90a8-29a6a2f0d0d6"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "341488a4-9498-4e33-90a8-29a6a2f0d0d6",
+      "text": "Validation Plan & Change Control Blueprint",
+      "hexCode": "#d5f6be"
+    }
+  ]
+}

@@ -1,0 +1,875 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "e97d70e7-908d-4764-991d-05a572b5499e",
+  "title": "Default Change Control template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Risk Impact": {
+      "id": "5883f39f-8b59-442a-8fb4-8f6256ff0b08",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "No Impact",
+          "Reduced Risk",
+          "Minor Increase to Risk",
+          "Significant Increase to Risk"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Impact on V&V": {
+      "id": "38d65052-02b7-44cf-a068-8057dc52aacf",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "None",
+          "Re Validation Required"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Proposed Changes": {
+      "id": "dad2c453-1775-460e-b987-0f82004e6a8c",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    },
+    "Details of VMP Change": {
+      "id": "77f00a44-ad70-45e4-8df1-63db539acf13",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Change Required to VMP": {
+      "id": "a3e413c6-127c-4865-a359-8f96c4703cc9",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "None",
+          "Minor",
+          "Significant"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Validation Master Plan": {
+      "id": "09735abb-42e3-4659-8c52-1c2ffacc3a40",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "External System Changes": {
+      "id": "537a7b3e-f8f5-4b17-96d8-4aacf2814936",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Supporting Documents (if necessary)": {
+      "id": "f5eb99d9-fcdb-47c7-93d8-c5fc00412225",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Validation and verification Change Description": {
+      "id": "722085c7-4eb6-4099-a04d-fe5a63633292",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "multiLine": true
+      },
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "27304571-e260-4509-847b-2ce6e0fd8541"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "b51474b9-4dd1-4f83-a69f-7d443485af89",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "32dc6fca-1005-45ba-b096-ce9715deba77",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Proposed Changes"
+            }
+          ]
+        },
+        {
+          "id": "73db2d38-3c25-47b6-84e9-a7abd773b2d5",
+          "type": "p",
+          "children": [
+            {
+              "text": "Include:"
+            }
+          ]
+        },
+        {
+          "id": "9c9fcd7f-46f3-40be-8de7-3773b61a6fe7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "An outline of the current process"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "00a9da2e-f9fc-4baf-ab37-3145d6138039",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "An outline of the new process"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "932b9d74-5b0e-45c6-9014-914237a8ac49",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Impact of remaining with the current process"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "dbba220a-597f-4615-be9e-1e97aeb3a4cb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5b75ecb7-78d1-4e2f-9c17-934f242e6c87",
+          "type": "field",
+          "fieldId": "dad2c453-1775-460e-b987-0f82004e6a8c",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "20d6ecea-4fbe-45b0-b764-90a7cd61611d",
+          "type": "field",
+          "fieldId": "f5eb99d9-fcdb-47c7-93d8-c5fc00412225",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "c4c8b23a-c1a4-400d-93bb-b8f38e9ccafd",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "0864b13b-bd5a-4dbc-83b8-a7f0b5c4dd3a",
+          "type": "task",
+          "children": [
+            {
+              "text": "Proposed changes section complete"
+            }
+          ]
+        },
+        {
+          "id": "098716fd-870f-4745-bdab-20116c25b171",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1ea721f6-16c5-44ce-98e9-18d799d0b9ba",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Validation and Verification Assessment"
+            }
+          ]
+        },
+        {
+          "id": "c268edd1-5a8e-4969-9c9e-93f08cc5890c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "76be3436-363d-4127-8bd4-e345c33fd052",
+          "type": "p",
+          "children": [
+            {
+              "text": "Does this change impact any previous validation and verification? If yes, details of the changes to be implemented must be added. These changes must be included in this change set."
+            }
+          ]
+        },
+        {
+          "id": "69319c04-a9a4-4c72-a273-495cfd0d4947",
+          "type": "p",
+          "children": [
+            {
+              "text": "Areas to consider:"
+            }
+          ]
+        },
+        {
+          "id": "2704228b-eced-4430-9500-c530705087ad",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Will these changes break existing workflows?"
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "60392086-e674-4b79-a92c-bcce1ead09be",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "How easy will it be to revert changes? "
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "0536fe9c-2515-4e83-a342-ea33d677e269",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Could these changes impact or delete existing data?"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a0ff5740-2db8-44a6-bbcb-461b73d4977b",
+          "type": "field",
+          "fieldId": "38d65052-02b7-44cf-a068-8057dc52aacf",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8147d5cc-b7fb-4839-96c1-dfb92444efa7",
+          "type": "field",
+          "fieldId": "722085c7-4eb6-4099-a04d-fe5a63633292",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e33b37a2-0b7c-460f-b142-788448d1e4cf",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5b2f60a4-f924-441c-b142-cab22fa8d125",
+          "type": "task",
+          "children": [
+            {
+              "text": "Validation and Verification Assessment section complete"
+            }
+          ]
+        },
+        {
+          "id": "c1a697d1-475b-4e6e-8ae8-8935d2f0f335",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "6bc3623b-aa35-44f1-bf20-67c5fb5afe98",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Quality Review"
+            }
+          ]
+        },
+        {
+          "id": "8ba0a1f7-eb2c-4338-bd81-44893011c746",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "095c5898-05a4-46fd-9bfa-5a579b4dd56d",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Name Conventions"
+            }
+          ]
+        },
+        {
+          "id": "e7d8c40e-b42a-40aa-b88d-36985d70c06f",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Template names"
+            },
+            {
+              "text": " must have the following pattern: {template-name} = {template-description}. "
+            }
+          ]
+        },
+        {
+          "id": "2fa6797f-b4b7-4691-8042-8ae5475c096b",
+          "type": "p",
+          "children": [
+            {
+              "text": "Examples:"
+            }
+          ]
+        },
+        {
+          "id": "0f4e64d2-205b-458d-be85-043528733d70",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "A script template for automating data collection should be called “Data Collection\". "
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "a915723b-9ad2-4cce-ac86-2014af0781ef",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "In the case a single template is used for a type, then use the {type-name} directly. i.e. if just one Script template it should be called “Script”."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "dd3b5564-bb33-410f-bf76-3cc84a9ee65d",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "06d46dd3-2a44-43d4-8213-4af644071515",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Instance names"
+            },
+            {
+              "text": " follow must follow the pattern pattern: {script-name} =  {template-name} - {instance-identifier}."
+            }
+          ]
+        },
+        {
+          "id": "74dfbf61-9893-4fac-81bf-3c9c8486ff8c",
+          "type": "p",
+          "children": [
+            {
+              "text": "Examples:"
+            }
+          ]
+        },
+        {
+          "id": "e652101c-8a4c-4906-a844-8c7d156ef05b",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "An instance of the “Data Collection\" template might called “Data Collection - Experiment A\"."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "fb27482c-8ff3-411f-9721-cf1053af2dc7",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "An instance of a template of Ethanol material template should be: “Ethanol - 1343344” where the number is the lot number."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "4dc4342b-ae3e-45f8-a1ea-0912a685e677",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b17f7b2b-1c28-49e8-ad3a-23dbeae6286f",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Automations"
+            }
+          ]
+        },
+        {
+          "id": "972d57fb-fda2-4a41-8059-064ecc41f318",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Human calculations should be replaced with formulas and scripts where possible."
+            }
+          ],
+          "listStyleType": "disc"
+        },
+        {
+          "id": "8549547b-3d76-4390-ae5b-11d722d720a5",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Use scripts where possible to run checks rather than manual validation."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "disc"
+        },
+        {
+          "id": "cfc7c37e-eb1a-4112-b9e0-2a17cb6f1648",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "02fdc805-d4dd-410f-88d3-5e4d838967df",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Checklist"
+            }
+          ]
+        },
+        {
+          "id": "8a840ed6-21c1-478a-ae12-09d7c2632f54",
+          "type": "p",
+          "indent": 2,
+          "checked": false,
+          "children": [
+            {
+              "text": "Entity names follow specified conventions."
+            }
+          ],
+          "listStyleType": "todo"
+        },
+        {
+          "id": "a75770e6-ea47-4e50-8e4d-6b4a28982999",
+          "type": "p",
+          "indent": 2,
+          "checked": false,
+          "children": [
+            {
+              "text": "Automations are always used where possible to avoid manual miscalculation."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "a09297d0-7383-4cdb-9a7b-3439724c613f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "76f01d81-687d-4263-bfde-410a63ba5c04",
+          "type": "task",
+          "children": [
+            {
+              "text": "Quality Review section complete"
+            }
+          ]
+        },
+        {
+          "id": "7f474d05-bd02-4fa9-abce-7dd6063e5984",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a7036a6f-fe13-4a01-a36c-d45a86b40c0e",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Impact on Other Seal Systems"
+            }
+          ]
+        },
+        {
+          "id": "0adb164e-58d2-4687-838b-41592f94c52d",
+          "type": "p",
+          "children": [
+            {
+              "text": "Evaluate whether any associated systems may be affected by your changes. Consider impacts on scripts, reference fields, and any external functionality via the API."
+            }
+          ]
+        },
+        {
+          "id": "33e11ed6-6da1-4f3e-ba56-dfc183878ddc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8718e57f-cc54-43db-8337-c539f23c2f3d",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "No impact on external API links"
+            }
+          ],
+          "listStyleType": "todo"
+        },
+        {
+          "id": "6b5c3ca3-f1f2-4d30-a5c5-9b0484a5f29f",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "No impact on Inventory Management System"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "9a39f8b5-9cf3-45ba-8328-b8e60d92f09e",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "No impact on the Electronic Batch Record System"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "ee83d651-a359-40c2-b21c-c51c5427304a",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "No impact on the Cost and Accounting System"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "cbc94763-1bc5-42a3-b057-ccf53f8917f0",
+          "type": "p",
+          "indent": 1,
+          "checked": false,
+          "children": [
+            {
+              "text": "No impact on the HR system"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "todo"
+        },
+        {
+          "id": "3f89f900-b964-4966-986d-32f2b48c2ac7",
+          "type": "p",
+          "children": [
+            {
+              "text": "If any other systems have been impacted, detail the changes made to these systems here:"
+            }
+          ]
+        },
+        {
+          "id": "d08c322f-24e4-4f73-b309-ec8d64d66213",
+          "type": "field",
+          "fieldId": "537a7b3e-f8f5-4b17-96d8-4aacf2814936",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "60d07f88-3510-4b83-a807-86edb93d41dc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4a9bdc40-6f59-4d61-a5c2-8d0eff9cf075",
+          "type": "task",
+          "children": [
+            {
+              "text": "Impact on Other Seal Systems section complete"
+            }
+          ]
+        },
+        {
+          "id": "bf3c8b5c-a069-414d-b4e0-5d43638ac229",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "9560efe9-2f25-40cc-a8b8-d2d9f118a179",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Impact on Validation Master Plan"
+            }
+          ]
+        },
+        {
+          "id": "a42db5b7-2115-49d1-812c-190894565828",
+          "type": "field",
+          "fieldId": "09735abb-42e3-4659-8c52-1c2ffacc3a40",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "8aed1c79-b659-4f3e-941a-6c978c249564",
+          "type": "p",
+          "children": [
+            {
+              "text": "If any changes are required to the Validation Master Plan these must be documented here. These will require additional sign off in order to ensure the impac"
+            }
+          ]
+        },
+        {
+          "id": "3dc7294c-c9ae-40bc-a1e5-c3ebae3d19e9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2bf05ec0-70f3-4ffa-b3ef-1cf6adc4a1ca",
+          "type": "field",
+          "fieldId": "a3e413c6-127c-4865-a359-8f96c4703cc9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5253b1fe-bce0-492d-845b-3239b898e41e",
+          "type": "field",
+          "fieldId": "77f00a44-ad70-45e4-8df1-63db539acf13",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "82fb94eb-dcb3-464e-8405-48b35fb00ef8",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c4f80720-14a6-480c-ab6e-9b65ce48a1da",
+          "type": "h1",
+          "children": [
+            {
+              "text": "Risk Assessment"
+            }
+          ]
+        },
+        {
+          "id": "28fa895d-11e9-429e-b793-55fc279a5cec",
+          "type": "p",
+          "children": [
+            {
+              "text": "Does this change impact the risk exposure of  our business or process is exposed to?"
+            }
+          ]
+        },
+        {
+          "id": "d34a7161-a87a-461a-8b2a-72af2ea27cd4",
+          "type": "field",
+          "fieldId": "5883f39f-8b59-442a-8fb4-8f6256ff0b08",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "eac9a4ad-c324-4ef2-bc4d-39f71823ccc9",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "05cb90cd-0fec-45e9-876b-431d38773224",
+          "type": "task",
+          "children": [
+            {
+              "text": "Risk Assessment section complete"
+            }
+          ]
+        },
+        {
+          "id": "bb739b04-54ec-49b7-be49-c44cb5d2a164",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ae4a7054-56e4-4a15-bf01-a718d34615cf",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Change Control Form - @TEMPLATE_INDEX "
+  }
+}

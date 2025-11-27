@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "36face42-bbfd-49e8-b2a4-ca67cbe54667",
+  "title": "Change Control Form check script",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "f5a2ea9a-ad36-479e-910b-9a2af63e13f7",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "b9624b3e-7551-4d42-92af-f1917a464bd5"
+    }
+  },
+  "content": {
+    "type": "SCRIPT_CODE",
+    "value": {
+      "scriptCode": "import collections\n\n# Get the \"Default Change Control\" template\nentity = seal.get_validating_entity()\n\nif not entity:\n    seal.throw_error(\"Entity to validate not found.\")\n\n# Get the page content\npage_content = entity.get(\"content\", {}).get(\"value\", {}).get(\"pageContent\", [])\n\nunchecked_tasks_info = []\n\n# Recursive function to find unchecked tasks\ndef find_unchecked_tasks(blocks):\n    for block in blocks:\n        print(block)\n        # Check if the block has a 'taskData' property and is unchecked\n        # This typically indicates a task list item or similar checkbox component\n        if \"type\" in block and block['type'] == 'task':\n            if \"taskData\" not in block or (\"taskData\" in block and block[\"taskData\"][\"checked\"] is False):\n                task_description = \"\"\n                # Attempt to extract descriptive text from children for a clear error message\n                if \"children\" in block and isinstance(block[\"children\"], list):\n                    for child in block[\"children\"]:\n                        if isinstance(child, dict) and \"text\" in child:\n                            task_description += child[\"text\"]\n                        elif isinstance(child, dict) and \"children\" in child and isinstance(child[\"children\"], list):\n                            # Handle nested text within paragraphs inside the task item\n                            for sub_child in child[\"children\"]:\n                                if isinstance(sub_child, dict) and \"text\" in sub_child:\n                                    task_description += sub_child[\"text\"]\n                \n                unchecked_tasks_info.append(task_description if task_description else f\"Unnamed task (ID: {block.get('id', 'N/A')})\")\n            \n        # Recursively check children if they exist and are a list\n        if \"children\" in block and isinstance(block[\"children\"], list):\n            find_unchecked_tasks(block[\"children\"])\n\n# Start the recursive search from the top-level page content\nfind_unchecked_tasks(page_content)\n\nif unchecked_tasks_info:\n    error_message = f\"Found unchecked task boxes in 'Default Change Control' template: {', '.join(unchecked_tasks_info)}. All task boxes must be checked before publishing.\"\n    seal.throw_error(error_message)\nelse:\n    print(\"All task boxes in the Change Control Form are checked.\")"
+    }
+  }
+}
