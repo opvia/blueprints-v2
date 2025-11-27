@@ -1,0 +1,11 @@
+{
+    "name": "LIMS",
+    "description": "This blueprint quickly sets up the framework for implementing an inventory system for tracking of goods throughout the development and manufacturing processes. Track components at a specification and batch level, build out processes that automatically update the inventory, and improve visibility of stock levels across the lab. Once installed, visit the 'Inventory How To' page to get a deeper understanding of how the system works, and how it can best be built upon to suit your particular use case.",
+    "members": [
+        {"id": "coa-automation", "required": false},
+        {"id": "equipment-management", "required": false},
+        {"id": "inventory-system", "required": false},
+        {"id": "labels", "required": false},
+        {"id": "sample-location-management", "required": false}
+    ]
+}
