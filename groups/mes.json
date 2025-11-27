@@ -1,6 +1,6 @@
 {
     "name": "MES",
-    "description": "",
+    "description": "<TODO: Add description>",
     "members": [
         {"id": "inventory-system", "required": true},
         {"id": "labels-v2", "required": false}

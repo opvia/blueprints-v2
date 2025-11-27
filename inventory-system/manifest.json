@@ -2,7 +2,7 @@
   "id": "inventory-system",
   "version": 1,
   "name": "Inventory System",
-  "description": "",
+  "description": "<TODO: Add description>",
   "entities": [
     {
       "id": "51aff22c-6a06-436e-b20c-02b87811c41a",

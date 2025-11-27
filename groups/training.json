@@ -1,6 +1,6 @@
 {
     "name": "Training",
-    "description": "For training new users or updating existing users on the system.",
+    "description": "<TODO: Add description>",
     "members": [
         {"id": "trainee", "required": true},
         {"id": "trainer", "required": true}
