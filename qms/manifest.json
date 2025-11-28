@@ -1,0 +1,768 @@
+{
+  "id": "qms",
+  "version": 1,
+  "name": "QMS",
+  "description": "",
+  "entities": [
+    {
+      "id": "d9c7a2db-2b1b-47e2-88b4-788851d296f1",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supplier",
+      "icon": "tag",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "fe2fbeac-d3bb-4a25-ad8a-915e1546644f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Supplier Template",
+      "icon": "tag",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "e4525576-c14d-4e2a-a24a-2d6778cbfbc8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Internal Audit",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "3",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "01ee5eb6-68be-44de-b879-49814de609fc",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Checklist",
+      "icon": "horizontal-bar-chart",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "df98c874-a614-48b1-8460-c89a1a4d6bcb",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "SOP - Internal Audit",
+      "icon": "document",
+      "sourceVersion": "2",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "866898d2-eb00-4fe0-aeae-0805d91acec2",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "4f31ad5f-9031-4fc2-8e5e-0bd0b29fad67",
+      "kind": "INSTANCE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Audit Report Generating Script",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "2a0321c1-7371-4b7b-a5f1-70893afd9a29",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Audit Script",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "c022648d-fae3-4258-a2ff-d6c04ad82433",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Audit Script",
+      "icon": "code",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "1685b58d-88d1-4222-b7d5-2f1ce7e96238",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Template",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "3e61e49c-9e16-42f2-8fbb-24806cfffeb1"
+      ]
+    },
+    {
+      "id": "96dc41f4-f830-4cf4-9cf8-f2a2d40cb5a6",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "3e61e49c-9e16-42f2-8fbb-24806cfffeb1"
+      ]
+    },
+    {
+      "id": "aa7253a0-7f79-41fe-9550-3fa10696b2fe",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Report Form",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "0e272752-61b5-4b53-92b5-aa7468a8d6b2",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Form",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "677a09fd-000b-401e-b8e7-0c0d75f61019",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Findings Log",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "4a0a78d4-b1a5-47a9-b278-05bc29aad7a0",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Internal Audit Notification",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "05015d23-d399-4e41-8b91-35e052f19f49",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Meeting Summary Form",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "6c47ba23-76d0-4d13-b774-56711d50cc1e",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Audit Completion Form",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "7f015441-9740-4d73-a8ca-68bae292b583",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Evidence Request Form",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "7ffe1a20-9922-4008-ab51-0c3a65c7e678",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis Form",
+      "icon": "application",
+      "sourceVersion": "4",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "ee6e583f-be54-4120-ac13-72538cffdcd0",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "c8db7033-acd8-44c2-a67d-609380613c27",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Question and Response Log",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "2565bcca-6578-4faa-8b35-87403b3f8bc8",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "6a5b8890-3745-439a-9ae0-7179c12e6d18",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QMS SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "99952d34-6481-49ed-8532-b5c08b417461",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Form",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "b48769e5-4720-4ece-91b3-59f1ba9f0c1b",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Effectiveness Review Form",
+      "icon": "clipboard",
+      "sourceVersion": "1",
+      "tagIds": [
+        "507f47fd-e385-4ed8-b614-3d21fde6b125"
+      ]
+    },
+    {
+      "id": "9f9702fd-708c-4166-a095-5ffadf496129",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Out of Specification",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "f2049468-d6f0-48d2-9369-df43e5a88971",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Out of Specification",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "d20d77a4-53a1-47c0-9780-531b5478ce8e",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Out of Specification SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "085c3016-7118-48eb-a980-c39fc9ad75f0",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Deviation",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "333af44a-465c-403a-ad4e-12a1b15017e5",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Deviation",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "37ce060a-d0ce-403e-b6ea-383d548c9d20",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Machine",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "946a3147-37fa-423f-82ed-a1814c3477fb",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Human",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "aa921200-310f-4aad-a253-400cc31f7c01",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Material",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "697846e7-bf42-4f0b-9e98-d2f2deb1c04d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Measurement and Environment",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "436ca2e0-548a-42fc-970e-007cd9022942",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "OOS - Method",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "2c757455-91d6-4ca2-bf9f-aaf9adf02745",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Deviation SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "1a26cb23-5802-4473-a9d1-3f22ef644da0",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "42e15e06-894d-4168-8123-cef1708df1b6",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Root Cause Analysis SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "d525f459-881d-4788-a9aa-da4f2c50f51d",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Corrective Action",
+      "icon": "comparison",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "6ef1d432-7155-452c-922f-08663c0ec7fc",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA - OLD",
+      "icon": "comparison",
+      "sourceVersion": "2",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "b135c445-98e2-49b2-82aa-0c3854d48aac",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "e8011c7c-094c-4967-82e8-c9e22cfa8fbc",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Effectiveness Check",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "5628667d-fdd2-4f65-a105-b7601ed6fb9b",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Effectiveness Check",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "6970b120-a0ba-4886-b222-31e1034b0477",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control",
+      "icon": "console",
+      "sourceVersion": "2",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "e061b2b4-4c65-4329-a96b-70d50d7b5a40",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control",
+      "icon": "console",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "7bd89ff6-4a59-4361-9541-4efa9578216c",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Preventive Action",
+      "icon": "comparison",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "efb5af30-ad49-4137-a75b-df711431ed39",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document Change Request",
+      "icon": "console",
+      "sourceVersion": "2",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "0d909376-bae9-45c7-b972-b1109345c816",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document Change Request",
+      "icon": "console",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "ccf0b9e9-6c70-474e-80de-16bd522e4680",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Non-Conformance Report",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "b52bb659-3b28-4eb7-9302-6e1f55aea135",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Non-Conformance Report",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "cb018b92-1612-41b5-8f99-4483c3ca923f",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Non-Conformance Report SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0a864697-c588-41d9-a6ff-0f8b77c5467c",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Customer Template",
+      "icon": "office",
+      "sourceVersion": "5"
+    },
+    {
+      "id": "240bde3c-b282-40c9-b79f-a3dc97cafadc",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Customer",
+      "icon": "office",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0b1b4339-0d1e-4aac-8fca-b5fb356408af",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Complaint",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "00213347-e0b5-449d-a48b-2ff0d8699b23",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Complaint",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "1a8a8d51-5808-47e8-8f10-4a5f851ed3a1",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Complaint SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "f4e2ba36-6f40-493f-a6c8-9836432c7b30",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "a3097c25-fdb9-4346-9f67-253b4fb75632",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Template - Actions Stage",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "3e61e49c-9e16-42f2-8fbb-24806cfffeb1"
+      ]
+    },
+    {
+      "id": "fc8dd0e8-a94d-4e8a-b2e3-f19b7730c655",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Action Plan",
+      "icon": "application",
+      "sourceVersion": "2",
+      "tagIds": [
+        "3e61e49c-9e16-42f2-8fbb-24806cfffeb1"
+      ]
+    },
+    {
+      "id": "0dff5fcf-1f3b-421c-b700-555153ecec7b",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "CAPA Template - Raising Stage",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "3e61e49c-9e16-42f2-8fbb-24806cfffeb1"
+      ]
+    },
+    {
+      "id": "ec973968-d66a-433e-a6a1-c72333641081",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Corrective Action Template",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "3e61e49c-9e16-42f2-8fbb-24806cfffeb1"
+      ]
+    },
+    {
+      "id": "d308b9a8-fce4-4155-a113-ca6a50c6e5cf",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Preventative Action Template",
+      "icon": "application",
+      "sourceVersion": "1",
+      "tagIds": [
+        "3e61e49c-9e16-42f2-8fbb-24806cfffeb1"
+      ]
+    },
+    {
+      "id": "020c190b-69a7-4fb3-a513-636be9d3ebcc",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QMS SOP",
+      "icon": "document",
+      "sourceVersion": "1",
+      "tagIds": [
+        "e2079d12-287d-4b8a-ad7a-9291a528498a"
+      ]
+    },
+    {
+      "id": "e6eef3d4-3ea1-4f70-b9e4-84d4d55ec9b6",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Effectiveness Check SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "54957b9b-7616-4af0-a96c-91184c66a356",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Document Change Request SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "dfcb0e86-9764-466d-8926-84920504f932",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Change Control SOP",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "283c1eb8-1d5b-4834-beea-aa49a7fd626b",
+      "kind": "TEMPLATE",
+      "contentType": "FILE",
+      "title": "Document File Template",
+      "icon": "paperclip",
+      "sourceVersion": "2"
+    },
+    {
+      "id": "a7140921-ee28-442d-b8ae-dc2d7ac79698",
+      "kind": "TYPE",
+      "contentType": "FILE",
+      "title": "Document File",
+      "icon": "paperclip",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "0c34860e-d6db-4a86-aea5-f6ada904f18b",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "QMS Blueprint Instructions",
+      "icon": "document",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "34561dba-467b-4f62-a341-93216d1e2c8b",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Seal Guide",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "4e97cd7a-0516-4b68-b162-b3f39f85ba3f",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Seal Guide Template",
+      "icon": "document",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "94d9b0f0-ae92-408d-b3d1-dc13e7c77bf0",
+      "kind": "TEMPLATE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script Template",
+      "icon": "code",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "84e83332-158a-4e2a-b19b-4703e0a4a2f3",
+      "kind": "TYPE",
+      "contentType": "SCRIPT_CODE",
+      "title": "Script",
+      "icon": "code",
+      "sourceVersion": "1"
+    }
+  ],
+  "tags": [
+    {
+      "id": "507f47fd-e385-4ed8-b614-3d21fde6b125",
+      "text": "Internal Audit Blueprint",
+      "hexCode": "#be7a2e"
+    },
+    {
+      "id": "3e61e49c-9e16-42f2-8fbb-24806cfffeb1",
+      "text": "CAPA",
+      "hexCode": "#9064e8"
+    },
+    {
+      "id": "e2079d12-287d-4b8a-ad7a-9291a528498a",
+      "text": "QMS Blueprint",
+      "hexCode": "#8173ea"
+    }
+  ]
+}

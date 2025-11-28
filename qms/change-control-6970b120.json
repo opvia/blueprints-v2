@@ -1,0 +1,1100 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "6970b120-a0ba-4886-b222-31e1034b0477",
+  "title": "Change Control",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "SOP": {
+      "id": "248bb5c8-12a3-407e-a20e-f2015e1f8c01",
+      "type": "REFERENCE",
+      "value": [
+        {
+          "id": "dfcb0e86-9764-466d-8926-84920504f932",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "QMS SOP"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Source": {
+      "id": "4dacb8ed-ec40-4965-96a2-77796f879675",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"CREATED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Approver": {
+      "id": "47e5ba1e-f55d-41f3-8b85-4f5c45261ec3",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Assessed By": {
+      "id": "0e4d4f8f-3177-47b4-8fb8-81178fabd4bb",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Implemented By": {
+      "id": "6aaad240-4644-4a45-90b9-ec53d2e897bb",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Change Proposed": {
+      "id": "f071d5fe-4a35-425d-9be7-4fc523633a0a",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Closure Decision": {
+      "id": "defb2f55-0880-46be-b581-103f66ffaf61",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Documents Issued": {
+      "id": "f698ae6e-b64d-4de0-9b9e-47ac9ba8fbc1",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Training Required": {
+      "id": "94d9045e-5c41-463e-8bdd-cc9c3708947e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Training Completed": {
+      "id": "716bbdc4-11f3-4bd6-84c4-0680caa472e7",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Effectiveness Check": {
+      "id": "92bbe68c-a58a-4430-9f34-a0903d60fa8d",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "e8011c7c-094c-4967-82e8-c9e22cfa8fbc"
+                    ],
+                    "filter": "template",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "qualifiedColumns": [
+            {
+              "name": "SOP",
+              "config": "SOP"
+            },
+            {
+              "name": "Author",
+              "config": "Author"
+            },
+            {
+              "name": "Source",
+              "config": "Source"
+            },
+            {
+              "name": "Attachments",
+              "config": "Attachments"
+            },
+            {
+              "name": "Source type",
+              "config": "Source type"
+            },
+            {
+              "name": "Completed By",
+              "config": "Completed By"
+            },
+            {
+              "name": "Describe why",
+              "config": "Describe why"
+            },
+            {
+              "name": "Saved search",
+              "config": "Saved search"
+            },
+            {
+              "name": "New Deviation",
+              "config": "New Deviation"
+            },
+            {
+              "name": "Date completed",
+              "config": "Date completed"
+            },
+            {
+              "name": "Actions Completed",
+              "config": "Actions Completed"
+            },
+            {
+              "name": "Effectiveness Check Title",
+              "config": "Effectiveness Check Title"
+            },
+            {
+              "name": "Additional Action Required",
+              "config": "Additional Action Required"
+            },
+            {
+              "name": "Effectiveness Check Agreed",
+              "config": "Effectiveness Check Agreed"
+            },
+            {
+              "name": "Has action been effective?",
+              "config": "Has action been effective?"
+            },
+            {
+              "name": "Effectiveness Check Closure",
+              "config": "Effectiveness Check Closure"
+            },
+            {
+              "name": "Attach evidence of completion, and outcome",
+              "config": "Attach evidence of completion, and outcome"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "Further Attachments": {
+      "id": "4081b52b-2d45-429e-b920-b4853dca08a0",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "RA & IA Attachments": {
+      "id": "39b4dbc5-a108-455e-8393-a92de5ecf90c",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Validation Required": {
+      "id": "1c4d346e-52dc-47a0-9c95-57e781c61884",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Change Control Title": {
+      "id": "b001b346-3eeb-4573-acea-dbadf535afec",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Supporting Documents": {
+      "id": "e98cbb33-999d-445f-ab05-83b01c24f621",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Validation Completed": {
+      "id": "2ce318ac-44c9-4a6e-80d4-34bb81ed9482",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Any other attachments": {
+      "id": "12a58cb1-66f4-4ff5-8bd2-5c05ec19e883",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Any Additional Actions": {
+      "id": "c7baf960-cf8d-483c-82c5-360b63162184",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Evidence of Completion": {
+      "id": "f93080a4-205e-472c-b42b-fdd2598c4945",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Document Updates Required": {
+      "id": "23715da5-0c0d-49d1-81ac-838ff9236ace",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Document Updates Completed": {
+      "id": "02087cf7-ee49-4d71-94ea-d6cd9cd3ebbb",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Additional Actions Completed": {
+      "id": "a0700512-c8b3-4cd0-8ba8-dd86606fe7df",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Any Additional Actions Required": {
+      "id": "6d5de601-2cad-4a60-8e6c-20c3a9e8f106",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Any Additional Actions Completed": {
+      "id": "7ada2e07-20b5-4b72-aaa4-d5f153084756",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Approval Decision and Justification": {
+      "id": "e9022fd6-6c43-45ed-800b-7a7ba1321990",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Risk Analysis and Impact Assessment": {
+      "id": "47b252a4-66fa-4356-8a5c-fd05f5542e33",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "e061b2b4-4c65-4329-a96b-70d50d7b5a40"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "d51c2f7b-dc17-4e91-a682-5ec593f2c3a6",
+          "type": "p",
+          "children": [
+            {
+              "text": "For detailed instructions see:"
+            }
+          ]
+        },
+        {
+          "id": "f30eee6f-fe2b-4a67-aeca-29bd52864eb1",
+          "type": "field",
+          "fieldId": "248bb5c8-12a3-407e-a20e-f2015e1f8c01",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "aa3b3001-6dd3-4669-a2f8-2271e5e32bb7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a8c63a4b-7fde-42b9-880f-10d5213f4286",
+          "type": "field",
+          "fieldId": "b001b346-3eeb-4573-acea-dbadf535afec",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ce96fdf4-a9fa-4fb6-aca4-09e8965384dd",
+          "type": "field",
+          "fieldId": "4dacb8ed-ec40-4965-96a2-77796f879675",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "414dd7b9-0598-48be-b473-9cbfd8aa15ba",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4a4f2f4c-4114-4dca-8478-e4ac2d23c090",
+          "type": "h2",
+          "children": [
+            {
+              "text": "1.Change Proposed"
+            }
+          ]
+        },
+        {
+          "id": "453fdd29-f455-4ad3-924e-ee4acaf058da",
+          "type": "p",
+          "children": [
+            {
+              "text": "Include what the current process is, what it will be changed to, and the impact of not completing the change. If the change is an outcome of a CAPA, please include that in the proposal."
+            }
+          ]
+        },
+        {
+          "id": "dc28b7b1-50d0-4560-bfa1-c201628cdf92",
+          "type": "field",
+          "fieldId": "f071d5fe-4a35-425d-9be7-4fc523633a0a",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fb88ea74-7943-4fac-b16f-f8291f944dfd",
+          "type": "field",
+          "fieldId": "e98cbb33-999d-445f-ab05-83b01c24f621",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "7a59dd83-7e9a-4bcf-96f6-82362eca9f59",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "Add the subject matter experts from the relevant departments as “Assignees”.",
+              "italic": true
+            }
+          ]
+        },
+        {
+          "id": "7fd23d01-84a5-4257-ad5a-9f2a098b408c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "74a0bfd0-7083-4d21-997b-308e0302bc5b",
+          "type": "h2",
+          "children": [
+            {
+              "text": "2.Approval to Proceed"
+            }
+          ],
+          "listRestart": 2
+        },
+        {
+          "id": "e71af198-8385-423e-94ee-c94e4cd0b63f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Subject matter expert from each relevant department should document their approval decision and justification. If no department affected then QA to mark as N/A."
+            }
+          ]
+        },
+        {
+          "id": "9d1dc559-9b75-412f-a32e-74ae3b1ce0b9",
+          "type": "field",
+          "fieldId": "e9022fd6-6c43-45ed-800b-7a7ba1321990",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2b369abe-d5a5-4d62-85b6-22697201089d",
+          "type": "field",
+          "fieldId": "47e5ba1e-f55d-41f3-8b85-4f5c45261ec3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f3b28a82-1615-4dc3-9cb2-ac5c9d0e4cb6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cb740b44-3943-4472-b712-b5a755139551",
+          "type": "h2",
+          "children": [
+            {
+              "text": "3.Assessment"
+            }
+          ]
+        },
+        {
+          "id": "fa02cf9e-770c-40ca-bd79-213704698818",
+          "type": "field",
+          "fieldId": "0e4d4f8f-3177-47b4-8fb8-81178fabd4bb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e6187d01-2eb7-4e01-886a-39cb6ddb8fb7",
+          "type": "h3",
+          "children": [
+            {
+              "text": "3.1 Risk Analysis and Impact Assessment"
+            }
+          ]
+        },
+        {
+          "id": "49dfcfec-329f-4035-aa2c-83d8251d9c04",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the risk assessment process and attach all findings. Include review of the impact of the change o other departments, current projects, previously released material etc."
+            }
+          ]
+        },
+        {
+          "id": "0150ee37-a519-4711-90a4-0237102d24c5",
+          "type": "field",
+          "fieldId": "47b252a4-66fa-4356-8a5c-fd05f5542e33",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d284ff6f-aeb0-43d1-8787-92df608a8169",
+          "type": "field",
+          "fieldId": "39b4dbc5-a108-455e-8393-a92de5ecf90c",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "d055e673-181b-4bb6-89aa-115a053a09c5",
+          "type": "h3",
+          "children": [
+            {
+              "text": "3.2 Validation Required"
+            }
+          ]
+        },
+        {
+          "id": "85462c62-b2b4-4e4e-a45b-ec56a40365c0",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the validation that will be required before the implementation of the change, e.g. equipment qualification, process validation. If not required, justify."
+            }
+          ]
+        },
+        {
+          "id": "a1d5a8e3-4077-43fc-9666-4dd115829804",
+          "type": "field",
+          "fieldId": "1c4d346e-52dc-47a0-9c95-57e781c61884",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2d500810-cd10-439e-b9bd-407f9a12c4af",
+          "type": "h3",
+          "children": [
+            {
+              "text": "3.3 Training Required"
+            }
+          ]
+        },
+        {
+          "id": "78e70ea3-8661-4b14-b0b8-2c7dfdf0daf9",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the training that will be required before the implementation of the change, e.g. read and acknowledge documents, internal training session, external training etc. If training is to be included at the time of document issue only, or after implementation this shall be documented."
+            }
+          ]
+        },
+        {
+          "id": "f7f76602-dc0a-4759-bfbf-40549152984a",
+          "type": "p",
+          "children": [
+            {
+              "text": "List all staff, or departments, who are required to complete the training."
+            }
+          ]
+        },
+        {
+          "id": "667f5aed-17de-4eb7-96f4-64c09ad6b9af",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no training is required, this must be justified."
+            }
+          ]
+        },
+        {
+          "id": "5cbc560c-f1d3-4cf2-8408-56a4b775d896",
+          "type": "field",
+          "fieldId": "94d9045e-5c41-463e-8bdd-cc9c3708947e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "845d6aee-e2f2-4691-bfce-fe95dc0fde48",
+          "type": "h3",
+          "children": [
+            {
+              "text": "3.4 Document Updates Required"
+            }
+          ]
+        },
+        {
+          "id": "53d461e7-3cb2-4d1a-8a4f-56c5cddebcea",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the documents that will be required to be updated before the implementation of the change. Ensure that the associated forms, work instructions and attachments are considered. Review associated processes to ensure they are viewed and updated if they are impacted."
+            }
+          ]
+        },
+        {
+          "id": "7c36b9f1-0015-4d06-87c1-f06299e3e9cf",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no documents are updated, this must be justified."
+            }
+          ]
+        },
+        {
+          "id": "622e7bab-5114-4efb-8b1c-fe1e01575e85",
+          "type": "field",
+          "fieldId": "23715da5-0c0d-49d1-81ac-838ff9236ace",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e85f38da-1013-4f26-a3a4-41da3c0891d1",
+          "type": "h3",
+          "children": [
+            {
+              "text": "3.5 Any Additional Actions"
+            }
+          ]
+        },
+        {
+          "id": "39fa7366-3c83-47b6-9f47-07bf9b2cdaf8",
+          "type": "field",
+          "fieldId": "c7baf960-cf8d-483c-82c5-360b63162184",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ec590811-d2e5-4922-87cf-c99ab4b4051a",
+          "type": "field",
+          "fieldId": "12a58cb1-66f4-4ff5-8bd2-5c05ec19e883",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "16ffa571-8b21-4d2a-810c-9df2c45dfdcc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5ea3174c-7f83-44a7-81dd-85ee7d8e72fd",
+          "type": "h2",
+          "children": [
+            {
+              "text": "4.Implementation"
+            }
+          ]
+        },
+        {
+          "id": "d6a4fc4b-0b67-44a1-a3bb-558b5efadf0e",
+          "type": "field",
+          "fieldId": "6aaad240-4644-4a45-90b9-ec53d2e897bb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "80587ad2-2524-4ec9-b038-6ae860eddbfa",
+          "type": "h3",
+          "children": [
+            {
+              "text": "4.1 Validation Completed"
+            }
+          ]
+        },
+        {
+          "id": "9d75971e-b2b2-4fed-8f3c-091f1716f30a",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the validation that has been completed, and the outcomes."
+            }
+          ]
+        },
+        {
+          "id": "87ed92e0-e271-4b04-a96f-f364a1745fa1",
+          "type": "p",
+          "children": [
+            {
+              "text": "If validation is not successful, the change cannot be implemented."
+            }
+          ]
+        },
+        {
+          "id": "a8cd9bab-ab27-4b6f-af1e-62aea7e8a5fc",
+          "type": "p",
+          "children": [
+            {
+              "text": "If not required, justify."
+            }
+          ]
+        },
+        {
+          "id": "883d57b3-acda-438d-8b16-ae327c9f767c",
+          "type": "field",
+          "fieldId": "2ce318ac-44c9-4a6e-80d4-34bb81ed9482",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4a74bfdc-9bc0-44ac-8c25-7a9539a82181",
+          "type": "h3",
+          "children": [
+            {
+              "text": "4.2 Training Completed"
+            }
+          ]
+        },
+        {
+          "id": "4f81f858-46ef-48d2-900f-31674282a434",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the training that has been completed."
+            }
+          ]
+        },
+        {
+          "id": "7f0623d9-7046-468d-8e43-1a08e921243a",
+          "type": "p",
+          "children": [
+            {
+              "text": "If training is to be included at time of document issue or after implementation, this shall be documented.  A CA shall be raised to document the training and the CA reference included."
+            }
+          ]
+        },
+        {
+          "id": "ceb07cb0-ab9f-4b5d-a144-6554d2ba969a",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no training is required, this must be justified."
+            }
+          ]
+        },
+        {
+          "id": "7177525b-425b-4dd7-bd71-c64695b77f0d",
+          "type": "field",
+          "fieldId": "716bbdc4-11f3-4bd6-84c4-0680caa472e7",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ca27cf87-12e6-4aaf-a2bf-eb1ee82c4de5",
+          "type": "h3",
+          "children": [
+            {
+              "text": "4.3 Document Updates Completed"
+            }
+          ]
+        },
+        {
+          "id": "bffae7f1-135e-41b3-adf8-fe35f1fbbd3f",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the documents that have been updated as part of the change.  The documents must NOT be issued at this stage."
+            }
+          ]
+        },
+        {
+          "id": "1948e369-020f-4577-9df7-97ed9aca8b3a",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no documents are updated, this must be justified."
+            }
+          ]
+        },
+        {
+          "id": "48c7d038-1847-4d67-8662-3a2283d5f5a7",
+          "type": "field",
+          "fieldId": "02087cf7-ee49-4d71-94ea-d6cd9cd3ebbb",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "957e692b-b2a5-4384-9992-381e0b83063e",
+          "type": "h3",
+          "children": [
+            {
+              "text": "4.4 Any Additional Actions Completed"
+            }
+          ]
+        },
+        {
+          "id": "7ec0a7e5-35ac-4379-bcac-35f7839e6e24",
+          "type": "p",
+          "children": [
+            {
+              "text": "Record the additional actions completed."
+            }
+          ]
+        },
+        {
+          "id": "a15c2037-a182-4eb0-9767-c3f5fb24178b",
+          "type": "p",
+          "children": [
+            {
+              "text": "If notifications to customers or regulators were carried out, evidence of the response / approval to proceed shall be attached."
+            }
+          ]
+        },
+        {
+          "id": "f147d3a0-98f9-4a90-873c-26b3983d4164",
+          "type": "p",
+          "children": [
+            {
+              "text": "If no additional actions were identified, this must be justified"
+            }
+          ]
+        },
+        {
+          "id": "e468ea18-cc6c-4e52-bd2a-9892e01d20fa",
+          "type": "field",
+          "fieldId": "7ada2e07-20b5-4b72-aaa4-d5f153084756",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1a91cbde-950d-4704-bc4d-0ff352317ed0",
+          "type": "field",
+          "fieldId": "4081b52b-2d45-429e-b920-b4853dca08a0",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "239e1bc4-f3a5-42f3-b918-fcb3e18044e5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "70f831dd-cb65-44f0-946a-771835b30b90",
+          "type": "h2",
+          "children": [
+            {
+              "text": "5.Quality"
+            }
+          ]
+        },
+        {
+          "id": "d4e3888e-2db7-42c4-bde8-b7dabebf0c32",
+          "type": "h3",
+          "children": [
+            {
+              "text": "5.1 Document Issuing"
+            }
+          ]
+        },
+        {
+          "id": "3b92a2bd-f123-4dbc-8d4d-e2537b9d951c",
+          "type": "p",
+          "children": [
+            {
+              "text": "List all documents that have been issued, specifying version number."
+            }
+          ]
+        },
+        {
+          "id": "613d6703-3d80-469d-afed-b3e9de243a89",
+          "type": "field",
+          "fieldId": "f698ae6e-b64d-4de0-9b9e-47ac9ba8fbc1",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "fb802c12-a2e7-4c9f-b4ed-112d5ad4b36b",
+          "type": "h3",
+          "children": [
+            {
+              "text": "5.2 Create Effectiveness Check"
+            }
+          ]
+        },
+        {
+          "id": "86f9d7f9-76d0-44f6-a8e4-c9d6a2b4179d",
+          "type": "field",
+          "fieldId": "92bbe68c-a58a-4430-9f34-a0903d60fa8d",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f0d3b6ce-c03a-4224-b918-9303e8a789b8",
+          "type": "h3",
+          "children": [
+            {
+              "text": "5.3 Closure"
+            }
+          ]
+        },
+        {
+          "id": "faffaede-8d2e-4b02-95d3-ef95f49cb28a",
+          "type": "field",
+          "fieldId": "defb2f55-0880-46be-b581-103f66ffaf61",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "717d54f7-a85e-4239-812d-313b9923dd62",
+          "type": "field",
+          "fieldId": "6d5de601-2cad-4a60-8e6c-20c3a9e8f106",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e0d72a4c-1c0b-447e-8545-fb626b355719",
+          "type": "field",
+          "fieldId": "a0700512-c8b3-4cd0-8ba8-dd86606fe7df",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "529aac68-7476-4a50-8915-4897d1dcaf05",
+          "type": "field",
+          "fieldId": "f93080a4-205e-472c-b42b-fdd2598c4945",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "edd1f40f-2b4f-4892-8836-0f2e1d981656",
+          "type": "task",
+          "children": [
+            {
+              "text": "Confirm Change Control Closure"
+            }
+          ]
+        },
+        {
+          "id": "6b4a2d8d-e2c2-4f10-82e8-f98859800100",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "54d4db74-4501-4e76-877c-05a5e7c097a7",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "CC-@TEMPLATE_INDEX @b001b346-3eeb-4573-acea-dbadf535afec"
+  }
+}

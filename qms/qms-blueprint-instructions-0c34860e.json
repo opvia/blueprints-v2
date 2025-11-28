@@ -1,0 +1,1324 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "0c34860e-d6db-4a86-aea5-f6ada904f18b",
+  "title": "QMS Blueprint Instructions",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "4e97cd7a-0516-4b68-b162-b3f39f85ba3f",
+      "version": "1"
+    }
+  },
+  "fields": {},
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "34561dba-467b-4f62-a341-93216d1e2c8b"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "7fe98bb4-aa0d-4cf4-8b26-d9bbeb5871a5",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            },
+            {
+              "url": "https://seal.run/blueprints/quality-management",
+              "type": "a",
+              "children": [
+                {
+                  "text": "Seal Blueprint Documentation"
+                }
+              ]
+            },
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "99f21907-dad4-4e42-b933-9208b16cea43",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "62ff3147-ec1e-4662-9edd-4f6c58f7b959",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Setup"
+            }
+          ]
+        },
+        {
+          "id": "e70ab76d-a6d8-4f6d-a582-1fa6f9113c1b",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "View Group"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "02b599c5-9952-4615-acac-04e4465254be",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Settings > View Groups > + New"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "517b9d59-4942-4e90-8b6c-732a6f9f9b27",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Click the edit icon to change the view group name, icon and position in side panel, suggested name “QMS”"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "904599d7-dd44-475f-afb5-67a98d0736cf",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Saved Views"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "81cfd17f-95f0-4313-a476-46dcf345de10",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Add to search bar “tag:QMS Blueprint” to bring up all of the entities contained in this blueprint."
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "497f1e3a-a081-4950-be49-928c8506f19d",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "If desired, this can be saved through the panel at the top of the page"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2.1."
+        },
+        {
+          "id": "bd5b7de8-53d3-4f2e-9f5c-592287614f3d",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Suggested Saved Views:"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "1798eadf-1678-4121-a1d3-530aa140e1c9",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Templates, search for: tag:\"QMS Blueprint\" kind:template"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "3fa30f7a-0d5d-43d7-8fd2-5db8a083122e",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Deviations, search for template:Deviation"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "3d0404ba-6487-41fa-990d-8f72ce235df6",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "NCR, search for template:Non-Conformance Report"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "d4bf9494-dcbd-4f9b-a60f-4b5f079963f6",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "OOS, search for template:Out of Specification"
+            }
+          ],
+          "listStart": 4,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "2d6bc83c-efbb-4426-9f37-bd5c4d489d59",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "Complaints, search for template:Complaint"
+            }
+          ],
+          "listStart": 5,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "d9d883eb-46e6-4b54-b510-8fae9cc6c1fa",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "RCA, search for template:Root Cause Analysis"
+            }
+          ],
+          "listStart": 6,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "60ab6fb1-c925-4ff8-b963-85139dfd36a2",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "CC, search for template:Change Control"
+            }
+          ],
+          "listStart": 7,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "dab6f476-a936-41ff-be0c-bdfc1a57bbff",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "DCR, search for template:Document Change Request"
+            }
+          ],
+          "listStart": 8,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "5fb54eca-f4ae-4e57-bf09-2b34454bcd64",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "CAPA, search for template:Corrective Action template:Preventive Action"
+            }
+          ],
+          "listStart": 9,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "ac777b80-058c-4d1b-9df4-9afba020c00e",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "EC, search for template:Effectiveness Check"
+            }
+          ],
+          "listStart": 10,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "772bac66-ea30-425b-b107-e54ff8b821fa",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "SOPs, search for template:QMS SOP"
+            }
+          ],
+          "listStart": 11,
+          "listStyleType": "decimal",
+          "listParentIndex": "2.2."
+        },
+        {
+          "id": "f556cf10-80f5-4aa3-b195-5e86694a22e2",
+          "type": "h3",
+          "indent": 1,
+          "children": [
+            {
+              "text": "QMS SOPs"
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "617578b7-d363-4557-a8d2-889110b1b180",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "QMS SOPs should all be completed to contain details specific to your company and its procedures."
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "e174811a-d58b-4c56-bc3d-a1efe52e8e6c",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Select the SOP of interest , (if published) Make Changes > make the changes > Go to change set > Publish."
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "3."
+        },
+        {
+          "id": "b1fdce96-8c8c-4eb5-91f6-193ddbca7b2b",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3b089be5-d01d-4b52-9af4-054921a085d8",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Instructions"
+            }
+          ]
+        },
+        {
+          "id": "e138346e-c9c2-444c-a5b7-d2fbe39b1724",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "To raise a new issue:"
+            }
+          ],
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "b38af236-bc7a-40a0-b116-3b5b6801c039",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Click on the Change set button in the top left > then ‘+ New change set'"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "bdc0a688-6c18-4bb0-b3a2-41f4b8f3cb6e",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Click ‘+ Add entity’ in the bottom left > ‘New Instance’"
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "a5449329-8bc3-42d4-9cf1-cccf8f6ac2da",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "Chose the template you are creating an instance of."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal",
+          "listParentIndex": "1."
+        },
+        {
+          "id": "0a6c06f0-90b2-4b48-9e60-5c796a29782e",
+          "type": "p",
+          "indent": 3,
+          "children": [
+            {
+              "text": "You can also navigate to the template you want to use and create an instance from there ('+ Add Instance' button in the top right)"
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "1.2."
+        },
+        {
+          "id": "697f3a81-1758-46a3-bdc9-b24ee8c13f6f",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Complete all information as it becomes available "
+            }
+          ],
+          "listStart": 2,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "f46c4abb-2c63-4e64-944f-3cea91ee8ee8",
+          "type": "p",
+          "indent": 2,
+          "children": [
+            {
+              "text": "You can add assignees to the instance to notify who must complete certain sections."
+            }
+          ],
+          "listStyleType": "decimal",
+          "listParentIndex": "2."
+        },
+        {
+          "id": "82312a8c-2474-4cc6-a6d8-cd028e495aeb",
+          "type": "p",
+          "indent": 1,
+          "children": [
+            {
+              "text": "Subsequent stages of investigation are started by creating instances in a nested fashion as you complete the steps in one of the processes."
+            }
+          ],
+          "listStart": 3,
+          "listStyleType": "decimal"
+        },
+        {
+          "id": "13696748-7616-4647-8112-2558cdf978f2",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a7ce9e53-caca-4d9e-809c-ab9f38e635d3",
+          "type": "h2",
+          "children": [
+            {
+              "text": "Entities included in Blueprint:"
+            }
+          ]
+        },
+        {
+          "id": "3aebda14-50af-4df0-8a54-9048294ae5a0",
+          "type": "table",
+          "children": [
+            {
+              "id": "80938e83-cd40-4439-9eee-d15454cc5c83",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "5eebb981-6057-4a53-b652-d4b984e18a0f",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "b51d604a-2658-4b8d-b8a9-3a2b162cdadd",
+                      "type": "h3",
+                      "children": [
+                        {
+                          "text": "Types"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "75b327ee-487e-4ef1-b623-87dd0552d745",
+                  "type": "th",
+                  "children": [
+                    {
+                      "id": "011d89f7-45d4-4121-9feb-418c68ea60f2",
+                      "type": "h3",
+                      "children": [
+                        {
+                          "text": "Templates"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c858a2c2-1519-4f4e-b2dd-ddc202f30d4f",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "7233c5ab-31e2-4476-b1c8-648b01d81f29",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "26401563-5807-4056-9375-47b78efd8a24",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "QMS SOP"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "c3fcaace-e391-4d70-a591-5ccb4edfd39b",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "Used for Seal Document SOPs"
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    }
+                  ]
+                },
+                {
+                  "id": "460c17a6-0574-41f2-9a2c-f2361e36f6a9",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b684a46d-13ad-47fd-9f6e-248faec9f37f",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "QMS SOP"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "037abe68-8d64-41e4-b0a7-81ad7bdfc4eb",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "d491ef72-534a-4f09-b077-18276e320367",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "16370bc3-24bb-4427-9c88-98b78a4bb136",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Document File"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "dffe02d5-4054-4c6b-9ba7-8f7ed9b66fc3",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "Used for pdf/docx file documents"
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    }
+                  ]
+                },
+                {
+                  "id": "9fafe99f-79b5-4b90-a0b4-d5ec0e4fdd7e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "02bfbd42-d773-4959-afb5-897b6697073c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Document File Template"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0b0451d8-c796-4fd3-9ba9-b7733f77712e",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "bd98a698-8579-48d9-9a13-2718f1f14696",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "e5d27ed1-4b67-4c6d-a4fe-3710c361adfd",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Deviation"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "8a5cf29c-eba3-4681-b01a-db1084790e81",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "1893e76d-2b5f-4abc-a262-30df00724ca2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Deviation"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ce061c37-8323-420f-90a8-db45d972ac77",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "fa8d6230-856b-4783-bb56-457d29981884",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "a9f27f1c-f181-40b8-91da-2aca1b1b61ca",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Out of Specification"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "711773f1-ac9a-4ef6-b9a9-667a4f0fcc00",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "cfe80f7e-d7b5-4128-bcd9-4b45ec2350f7",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Out of Specification"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "febc0784-66b8-4d70-abd8-1f601646b309",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Subsection Templates:"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bfff180c-3ead-4ac3-b04a-236f8f3e4e17",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "OOS - Machine"
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "81d21a3d-e48b-42b2-8c86-5e0634c8ba5e",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "OOS - Material"
+                        }
+                      ],
+                      "listStart": 2,
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "50d36f50-10aa-4536-a2d9-2dd2d24d3998",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "OOS - Method"
+                        }
+                      ],
+                      "listStart": 3,
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "ebe4c5d7-18e4-4a77-9370-efa1c0e1da5a",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "OOS - Measurement and Environment"
+                        }
+                      ],
+                      "listStart": 4,
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "11e9d6dd-7049-45c3-a4c0-00faeca08e9e",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "OOS - Human"
+                        }
+                      ],
+                      "listStart": 5,
+                      "listStyleType": "disc"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "97dfccf3-6793-492d-b27f-f285ef0b6e2a",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "bc2242e9-583e-4556-a655-b52098303a46",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "042a76d8-3d72-43b8-9ae0-4a845e514198",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Non-Conformance Report"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d28d7191-1b95-4ee1-83bd-59a29fedc22a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "833ea47f-013b-45c0-a20c-34dd49cf0f66",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Non-Conformance Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f53927aa-bcdf-47d6-8115-89fbe31492c0",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "32911d69-9bec-4fc6-9603-72cbc0dc24a4",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "041d45f2-0099-4420-a927-14966deab69b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Complaint"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "4a4f3a63-cd72-45ff-9bca-0610b13688e0",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "490f0ae0-cb06-41ea-8980-0ec6461051c3",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Complaint"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cf537697-f993-489d-a5e3-85f01fdd7571",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "1703ea84-b5b3-45ec-88e6-927c52f912c9",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "db02f559-5079-4b57-9b7a-0b1ae4acf5f0",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Root Cause Analysis"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ef1fe94b-2838-4455-9e61-53c324c731ef",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2ec62c47-a100-41ca-92f8-fea6b9c32488",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Root Cause Analysis Form"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a7579a31-1431-4654-b272-7c474d512263",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "f5f8296f-f381-4c90-a3ba-0462ae3bef5d",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "cbb1d682-bbb6-4284-ac30-5fad0ebe2471",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Change Control"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "e0b334e8-fc05-4005-96a8-ca61410d816f",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6cc2ca05-3c39-4f1d-bfd9-aa16d09e6445",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Change Control"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "38b16e3c-66ab-4d59-a38a-bc8aead44011",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "fcd83ea5-9390-43ca-a12c-75ac113ef851",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "615715c0-ebd5-4306-acfe-b5a4ee507b46",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Document Change Request"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ef03602b-8f8a-45b8-95de-4473c2674ad8",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c4690814-268e-4b3b-9b52-51600d8f5516",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Document Change Request"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b9ba8c9f-5b47-481c-a3d1-886b6280e4fe",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "bae9e0cc-b770-4de9-8755-73336b147fca",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "68d6b7b7-f1be-49a4-82cc-94d7065d5fae",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "CAPA"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "033541b9-3cd2-4a4c-a480-eba6c82d58cd",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "6b91dca7-2c6d-4621-98e2-37f355bb6a4c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "CAPA Template"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "4dcdc7b2-c6c1-40ad-8144-7a18c5b4544b",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "Subsection Templates:"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "bdbeeb6b-40ac-4c8d-8a54-93a161209309",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "CAPA Template - Raising Stage"
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f327ae2c-f1ad-4a0b-98e5-b2151fd2a3bf",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "40e08df7-087a-4088-95ab-7dbaf56aa73e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "2e4adbf9-f05b-4986-b06a-135f1806da7a",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Action Plan"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "58a32545-ea55-40a6-9ce3-7f173d251ed3",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c3a36415-8a94-4654-8d15-bbb9104851d5",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "All are subsections of the CAPA Template:"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "d030fe6f-3452-43ad-bc52-a5c61d768ec0",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "CAPA Template - Actions Stage"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "fa53d9ce-e857-4d05-bba9-95d29d512a4c",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Corrective Action Template"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "206d8f2b-2448-485c-a977-c3e6dd4c2542",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Preventative Action Template"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8a83439c-2654-4e19-9849-7174c4414e74",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "0a7a7d73-e093-4dd8-aac6-b162aff9ec7a",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "f35d2a4d-4019-4b60-b2e0-917b7d242eea",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Effectiveness Check"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "3e001069-0c0d-4804-90be-cda601342848",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "f9875ff2-e801-4ab7-9c23-9579018b73e8",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Effectiveness Check"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ad5cfe3e-306f-4b6c-a211-d75ce4296d83",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "abd532f6-4d75-458a-97ab-fd5db22e5082",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "7ff97350-6628-4e8e-9565-4f30221be084",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Customer"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "25e76c39-e18e-48f9-ad23-6299043e344c",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "4e9f710f-f25f-49ef-bcdb-35c5c003f0ed",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Customer Template"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "86c21919-1581-4129-80fb-a2aa672eaf7b",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "94482e2f-9e72-42d3-8a38-dcca5f0c1504",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "b9a5db77-08a0-44a6-8ad7-90e89b973ebe",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit SOP"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bbd446ad-53cc-487b-90f8-89e460ef6bf7",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "c70c6b70-3082-4dca-80a3-7893309403f4",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "SOP - Internal Audit"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b2d65f05-f73a-4cbe-81bb-1d382a59d7a8",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "87c56f4f-6529-4f0e-b269-82ffd4d2b1a8",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5bf3d49b-4078-4d90-975a-b33392eebf8d",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Checklist"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "07d1a814-e8d4-4f4f-afdd-437e0700d465",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "54a0c1be-5746-4b66-8643-b73a28d4ecab",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Internal Audit"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1ead6112-792b-4d94-a225-ca3dd1d51bad",
+              "type": "tr",
+              "children": [
+                {
+                  "id": "fbf9c194-4466-4287-b11f-1138a0a7ba0e",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "03d88f18-3425-4883-b997-399eeb79b353",
+                      "type": "p",
+                      "children": [
+                        {
+                          "text": "Audit Form"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "bb1e594b-478a-4aa5-b631-d0bfb95791f8",
+                  "type": "td",
+                  "children": [
+                    {
+                      "id": "5d45f149-3c5a-4530-985d-ec190288fde2",
+                      "type": "p",
+                      "children": [
+                        {
+                          "bold": true,
+                          "text": "All are subsections of the Internal Audit Template:"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "6354808e-2b35-4ba0-9de1-7f66810017b6",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "Audit Report Form"
+                        }
+                      ],
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "df1bc250-2548-41fa-9526-26a52d0ab622",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "Audit Findings Log"
+                        }
+                      ],
+                      "listStart": 2,
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "9ba4818e-5c6a-4588-9034-4048eb7b70f7",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "Meeting Summary Form"
+                        }
+                      ],
+                      "listStart": 3,
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "b02271a3-9fe6-4bcf-bf7c-f7d049dc8323",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "Audit Completion Form"
+                        }
+                      ],
+                      "listStart": 4,
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "22620d58-0a45-47a0-bb21-e3c33a235acd",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "Evidence Request Form"
+                        }
+                      ],
+                      "listStart": 5,
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "d447361a-8fee-4242-b12a-789c9cde4b32",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "Question and Response Log"
+                        }
+                      ],
+                      "listStart": 6,
+                      "listStyleType": "disc"
+                    },
+                    {
+                      "id": "aca6d862-de00-4955-b41d-4f6b0541316b",
+                      "type": "p",
+                      "indent": 1,
+                      "children": [
+                        {
+                          "text": "Internal Audit Notification"
+                        }
+                      ],
+                      "listStart": 7,
+                      "listStyleType": "disc"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "40f8a496-cddd-44fd-9061-86d39e992751",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

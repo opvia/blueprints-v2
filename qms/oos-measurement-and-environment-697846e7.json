@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "697846e7-bf42-4f0b-9e98-d2f2deb1c04d",
+  "title": "OOS - Measurement and Environment",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "OOS": {
+      "id": "f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6",
+      "type": "FORMULA",
+      "value": "null",
+      "config": {
+        "formulaExpression": "string(lookup(__self, \"CREATED_FROM\"))"
+      },
+      "dataType": "STRING"
+    },
+    "Attach supporting documents": {
+      "id": "6f825b26-acdf-4852-a373-5d817c9d3047",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": true
+      },
+      "dataType": "ENTITY"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "f2049468-d6f0-48d2-9369-df43e5a88971"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "7321d0a9-6dd8-4c1a-b238-822ebf5e9835",
+          "type": "field",
+          "fieldId": "f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f6781b63-a4bc-46b5-84bb-00b27830d980",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c905ab1b-530c-4993-8aec-2372c54f8615",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Confirm all calculations have been performed correctly:"
+            }
+          ]
+        },
+        {
+          "id": "4e1483d8-89ab-4b02-b20c-596a32a40604",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1c4062f4-4aa9-44a4-a0ea-c3d3f756a4e1",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e6cb22b6-b331-4e82-9d8f-05ec93d8c61f",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Did the reference standard perform as expected? Is it in line with trended reference data?"
+            }
+          ]
+        },
+        {
+          "id": "ea5ec815-f3ba-4b47-80b3-79a8302c026f",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "7d17f961-34b5-4219-b3c5-38e0f1a88c06",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e0b72a45-f2ee-4775-993a-d0867d857efb",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Did the controls perform as expected?"
+            }
+          ]
+        },
+        {
+          "id": "98e55395-03ab-4030-97d3-27d5973b2928",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "00a749ef-7403-4046-a0bf-ab4823c2a90c",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3dd59ffe-d152-43ba-9ecc-ad1def86f297",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Was the assay considered valid?"
+            }
+          ]
+        },
+        {
+          "id": "d3d8c0c7-6f5b-4e11-98cf-fd05951407f3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "497308d4-2996-4f7a-bc96-875ba3c156eb",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b91bea79-2ffd-4e37-8d8b-eef74975113a",
+          "type": "h3",
+          "children": [
+            {
+              "text": "Was the test environment suitable? Were there are any atypical events noted on the day of test or during testing?"
+            }
+          ]
+        },
+        {
+          "id": "e9f0bb23-8708-46a3-abb5-09d3fd252075",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "92266e01-e2b8-4d75-9a5d-9cdbc6dc75f6",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "4b65e486-d509-4648-bc94-05e244e77715",
+          "type": "field",
+          "fieldId": "6f825b26-acdf-4852-a373-5d817c9d3047",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "bd7a0d75-5363-47c1-8f4e-306bb5b4f4fc",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@f1ca9b5a-88ce-4a68-ab64-3746f3bf66a6 - Measurement and Environment"
+  }
+}
