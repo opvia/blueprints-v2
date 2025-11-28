@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ad8791b2-e980-4203-8a8d-658aece598e8",
+  "title": "Well ID template (Copy)",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Plate": {
+      "id": "4d7dfa98-b545-4713-8026-6f42e4619610",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup(__self, \"SUBMITTED_FROM\")"
+      },
+      "dataType": null
+    },
+    "Sample": {
+      "id": "fbfe65c0-14a2-47e1-a819-e2a831524ae6",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": []
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Results": {
+      "id": "d58edd95-1449-4dba-b491-4bf0e0e3e3f9",
+      "type": "SEARCH",
+      "value": {
+        "filters": {
+          "and": [
+            {
+              "or": [
+                {
+                  "value": [
+                    {
+                      "name": "Well",
+                      "value": "ref(lookup(__self, \"ID\"))",
+                      "operator": "="
+                    }
+                  ],
+                  "filter": "fieldValue",
+                  "operator": "in"
+                }
+              ]
+            }
+          ]
+        },
+        "searchType": "LIVE",
+        "qualifiedColumns": [
+          {
+            "name": "WSP",
+            "config": "WSP"
+          },
+          {
+            "name": "FCS #",
+            "config": "FCS #"
+          },
+          {
+            "name": "Panel",
+            "config": "Panel"
+          },
+          {
+            "name": "Exclude",
+            "config": "Exclude"
+          },
+          {
+            "name": "Project",
+            "config": "Project"
+          },
+          {
+            "name": "Well ID",
+            "config": "Well ID"
+          },
+          {
+            "name": "Comments",
+            "config": "Comments"
+          },
+          {
+            "name": "Plate ID",
+            "config": "Plate ID"
+          },
+          {
+            "name": "Training",
+            "config": "Training"
+          },
+          {
+            "name": "SONY mode",
+            "config": "SONY mode"
+          },
+          {
+            "name": "Sample ID",
+            "config": "Sample ID"
+          },
+          {
+            "name": "Experiment",
+            "config": "Experiment"
+          },
+          {
+            "name": "QC records",
+            "config": "QC records"
+          },
+          {
+            "name": "Sample Type",
+            "config": "Sample Type"
+          },
+          {
+            "name": "S3 file path",
+            "config": "S3 file path"
+          },
+          {
+            "name": "SONY Operator",
+            "config": "SONY Operator"
+          },
+          {
+            "name": "Other Projects",
+            "config": "Other Projects"
+          },
+          {
+            "name": "SONY serial ID",
+            "config": "SONY serial ID"
+          },
+          {
+            "name": "Acquisition Date",
+            "config": "Acquisition Date"
+          },
+          {
+            "name": "Exclusion reason",
+            "config": "Exclusion reason"
+          },
+          {
+            "name": "Manual Analyst(s)",
+            "config": "Manual Analyst(s)"
+          },
+          {
+            "name": "Gating Reviewer(s)",
+            "config": "Gating Reviewer(s)"
+          },
+          {
+            "name": "Project Batch Name",
+            "config": "Project Batch Name"
+          },
+          {
+            "name": "Phenotypes comments",
+            "config": "Phenotypes comments"
+          },
+          {
+            "name": "SONY Machine Operator",
+            "config": "SONY Machine Operator"
+          },
+          {
+            "name": "Markers lacking or compromised",
+            "config": "Markers lacking or compromised"
+          },
+          {
+            "name": "Well",
+            "config": "Well"
+          }
+        ]
+      },
+      "config": {},
+      "dataType": "SEARCH"
+    },
+    "Position": {
+      "id": "519e6802-138a-4879-905c-bfd7310232c4",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Worksheet": {
+      "id": "cd50ba17-0ccb-47b4-a8a6-a303e4e95af2",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\")  , \"Worksheet\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "addc8056-f14d-4ef1-91a4-6071b54e41c8"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "1d0cce0d-dab0-45bc-9c36-eecbfca9190a",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a45d44a5-dabf-420e-8c09-ffeb57d7f009",
+          "type": "field",
+          "fieldId": "cd50ba17-0ccb-47b4-a8a6-a303e4e95af2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "53dc2da8-5d49-4abe-9595-874e11409f3c",
+          "type": "field",
+          "fieldId": "4d7dfa98-b545-4713-8026-6f42e4619610",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "526bbf43-d27d-4677-811b-8fd12332aca3",
+          "type": "field",
+          "fieldId": "519e6802-138a-4879-905c-bfd7310232c4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "01574289-93d8-4f81-bab4-d681c5aadb51",
+          "type": "field",
+          "fieldId": "fbfe65c0-14a2-47e1-a819-e2a831524ae6",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "f365b083-169b-4e7f-888a-00fd93396da8",
+          "type": "field",
+          "fieldId": "d58edd95-1449-4dba-b491-4bf0e0e3e3f9",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "71a33c84-b7cf-4679-86e5-0c10358ab3e3",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@519e6802-138a-4879-905c-bfd7310232c4 - @SUBMITTED_FROM"
+  }
+}

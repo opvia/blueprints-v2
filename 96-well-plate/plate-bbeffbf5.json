@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "bbeffbf5-c752-4904-a802-974470da1bee",
+  "title": "Plate",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {},
+  "kind": "TYPE",
+  "icon": "shapes",
+  "contentType": "CUSTOM",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "a15751bd-ed87-45c4-9af9-73f6d97d984b",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": true,
+    "createFromTemplate": {
+      "onlyCreateFromActiveVersion": true
+    },
+    "reviewRequirements": {},
+    "enforceUniqueTitles": true,
+    "canChooseActiveVersion": false
+  },
+  "templateConfig": {
+    "reviewRequirements": {}
+  },
+  "customContentUploadId": "fbe531ab-f6c3-40dc-adb4-d6644f931918"
+}
