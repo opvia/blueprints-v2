@@ -1,0 +1,49 @@
+{
+  "id": "96-well-plate",
+  "version": 1,
+  "name": "96-well plate",
+  "description": "",
+  "entities": [
+    {
+      "id": "21269edc-62c8-423e-92cd-330075995305",
+      "kind": "TEMPLATE",
+      "contentType": "CUSTOM",
+      "title": "Plate template (Copy)",
+      "icon": "shapes",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "bbeffbf5-c752-4904-a802-974470da1bee",
+      "kind": "TYPE",
+      "contentType": "CUSTOM",
+      "title": "Plate",
+      "icon": "shapes",
+      "sourceVersion": "4"
+    },
+    {
+      "id": "ad8791b2-e980-4203-8a8d-658aece598e8",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Well ID template (Copy)",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "addc8056-f14d-4ef1-91a4-6071b54e41c8",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "Well ID",
+      "icon": "array",
+      "sourceVersion": "2"
+    }
+  ],
+  "assets": [
+    {
+      "id": "fbe531ab-f6c3-40dc-adb4-d6644f931918",
+      "entityId": "bbeffbf5-c752-4904-a802-974470da1bee",
+      "filename": "imu-plate-submission.zip",
+      "contentType": "application/zip",
+      "uploadFolder": "custom-entities"
+    }
+  ]
+}

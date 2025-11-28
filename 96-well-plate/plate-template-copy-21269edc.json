@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "21269edc-62c8-423e-92cd-330075995305",
+  "title": "Plate template (Copy)",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Wells": {
+      "id": "08ce591e-0ad4-4123-b6ce-e84bbc2a78eb",
+      "type": "INSTANCE_SUBMISSION",
+      "value": null,
+      "config": {
+        "typeOrTemplateRef": {
+          "id": "ad8791b2-e980-4203-8a8d-658aece598e8",
+          "placeholderValue": "activeVersion"
+        }
+      },
+      "dataType": "INSTANCE_SUBMISSION"
+    },
+    "Worksheet": {
+      "id": "3fe7d07b-adc3-4cae-88d7-2d29ca51f361",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": []
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Date",
+              "config": "Date"
+            },
+            {
+              "name": "Fresh",
+              "config": "Fresh"
+            },
+            {
+              "name": "Plate",
+              "config": "Plate"
+            },
+            {
+              "name": "Frozen",
+              "config": "Frozen"
+            },
+            {
+              "name": "Project",
+              "config": "Project"
+            },
+            {
+              "name": "Daily QC",
+              "config": "Daily QC"
+            },
+            {
+              "name": "Panel(s)",
+              "config": "Panel(s)"
+            },
+            {
+              "name": "MM Made By",
+              "config": "MM Made By"
+            },
+            {
+              "name": "Submission",
+              "config": "Submission"
+            },
+            {
+              "name": "csv export",
+              "config": "csv export"
+            },
+            {
+              "name": "MM products",
+              "config": "MM products"
+            },
+            {
+              "name": "Staining By",
+              "config": "Staining By"
+            },
+            {
+              "name": "Start Stain",
+              "config": "Start Stain"
+            },
+            {
+              "name": "Final MM IDs",
+              "config": "Final MM IDs"
+            },
+            {
+              "name": "Finish Stain",
+              "config": "Finish Stain"
+            },
+            {
+              "name": "Submission 1",
+              "config": "Submission 1"
+            },
+            {
+              "name": "Submission 2",
+              "config": "Submission 2"
+            },
+            {
+              "name": "Submission 3",
+              "config": "Submission 3"
+            },
+            {
+              "name": "Submission 4",
+              "config": "Submission 4"
+            },
+            {
+              "name": "Undo consume",
+              "config": "Undo consume"
+            },
+            {
+              "name": "Other Projects",
+              "config": "Other Projects"
+            },
+            {
+              "name": "Performance QC",
+              "config": "Performance QC"
+            },
+            {
+              "name": "Create SONY csv",
+              "config": "Create SONY csv"
+            },
+            {
+              "name": "MM preparations",
+              "config": "MM preparations"
+            },
+            {
+              "name": "Pooling Actions",
+              "config": "Pooling Actions"
+            },
+            {
+              "name": "Thaw Start Time",
+              "config": "Thaw Start Time"
+            },
+            {
+              "name": "Thaw Temp (˚C)",
+              "config": "Thaw Temp (˚C)"
+            },
+            {
+              "name": "Consume (nested)",
+              "config": "Consume (nested)"
+            },
+            {
+              "name": "Experiment Name(s)",
+              "config": "Experiment Name(s)"
+            },
+            {
+              "name": "Standardisation QC",
+              "config": "Standardisation QC"
+            },
+            {
+              "name": "Define Sample Order",
+              "config": "Define Sample Order"
+            },
+            {
+              "name": "Plasma Aliquoted By",
+              "config": "Plasma Aliquoted By"
+            },
+            {
+              "name": "SOP / Version Number",
+              "config": "SOP / Version Number"
+            },
+            {
+              "name": "Sony Checks per Panel",
+              "config": "Sony Checks per Panel"
+            },
+            {
+              "name": "Sony ID7000 Serial No.",
+              "config": "Sony ID7000 Serial No."
+            },
+            {
+              "name": "Thaw & Cell Counting By",
+              "config": "Thaw & Cell Counting By"
+            },
+            {
+              "name": "MM Made By - Operator ID",
+              "config": "MM Made By - Operator ID"
+            },
+            {
+              "name": "Antibody Vial Consumption",
+              "config": "Antibody Vial Consumption"
+            },
+            {
+              "name": "Define Sample Order - Plate",
+              "config": "Define Sample Order - Plate"
+            },
+            {
+              "name": "Identifying consumed antibodies",
+              "config": "Identifying consumed antibodies"
+            },
+            {
+              "name": "Sony ID7000 Serial No. (others)",
+              "config": "Sony ID7000 Serial No. (others)"
+            },
+            {
+              "name": "Chemokine Receptor Stain Temp (˚C)",
+              "config": "Chemokine Receptor Stain Temp (˚C)"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "formatted worksheet string": {
+      "id": "edbc5f36-a663-4aa8-bbab-60b3d5155763",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Worksheet\")  , \"TITLE\")"
+      },
+      "dataType": null
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "bbeffbf5-c752-4904-a802-974470da1bee"
+    }
+  },
+  "content": {
+    "type": "CUSTOM"
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@edbc5f36-a663-4aa8-bbab-60b3d5155763_Plate #@TYPE_INDEX"
+  }
+}
