@@ -1,0 +1,306 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "8bb5bb15-4a0f-4dbb-bc7b-6eb146a2cf47",
+  "title": "New sample logging",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "43393f37-3095-4707-88dc-01101d19d71e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Expiry (Days)": {
+      "id": "9d35aae7-8682-4237-83d5-d2ee64838f49",
+      "type": "NUMBER",
+      "value": 365,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Project number": {
+      "id": "9d68db8d-d4eb-468d-8f62-6e890edd7790",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"SUBMITTED_FROM\") , 'Project number')"
+      },
+      "dataType": null
+    },
+    "Density (kg/m3)": {
+      "id": "25936caf-667e-4dce-9e53-13d79dfbc38b",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "New record link": {
+      "id": "7b985040-7727-49dd-8333-36fe4cbc7bb8",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Sample"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE"
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "FILE_UPLOAD"
+      },
+      "dataType": "ENTITY"
+    },
+    "New sample name": {
+      "id": "69021314-b39a-466d-8b04-505fe67392ae",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"New sample name\") == null"
+      },
+      "dataType": "STRING"
+    },
+    "Specific hazard": {
+      "id": "b748d309-eb46-4233-8350-b43b51b12097",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Harmful",
+          "Corrosive",
+          "Flammable",
+          "Toxic",
+          "Irritant",
+          "Teratogen",
+          "Acid",
+          "Biological",
+          "Toxic to aquatic life"
+        ],
+        "outOfSpecExpression": "lookup(__self, \"Specific hazard\") == null"
+      },
+      "dataType": "SELECT"
+    },
+    "New Lot Reference": {
+      "id": "77e1d3f3-9366-4713-a25f-3678c52b334b",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "concat( lookup(__self, \"Project number\") , \" \", lookup(__self, \"New Lot Reference 1\")  , \" \",  lookup(__self, \"New Lot Reference 2\")  , \" \" , string( lookup(__self, \"New Lot Reference 3\") )  )",
+        "outOfSpecExpression": "size( lookup(__self, \"New Lot Reference\") )[1] > 32"
+      },
+      "dataType": null
+    },
+    "FDBK health hazard": {
+      "id": "8464013d-c12c-46ac-a060-7366bd621164",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "High 1",
+          "High 2",
+          "Medium",
+          "Low",
+          "Potent"
+        ],
+        "outOfSpecExpression": "lookup(__self, \"FDBK health hazard\") == null"
+      },
+      "dataType": "SELECT"
+    },
+    "Number of aliquots": {
+      "id": "24a3bc68-c421-4226-939e-73885c802dee",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Print record label": {
+      "id": "1f1e7e0b-6971-4246-85b7-229a4f2ba7f2",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "52963e3b-ed9b-464a-876d-b9f71836bda6",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Print label"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "New Lot Reference 1": {
+      "id": "8359792f-8ee0-4886-b592-da7bdc45eb5c",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"New Lot Reference 1\") == null"
+      },
+      "dataType": "STRING"
+    },
+    "New Lot Reference 2": {
+      "id": "ec4feb98-34f5-4637-81c1-ed1228e6b629",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"New Lot Reference 2\") == null"
+      },
+      "dataType": "STRING"
+    },
+    "New Lot Reference 3": {
+      "id": "5418e78a-e101-4abe-b8cc-f1d7e60a9c9d",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X",
+        "outOfSpecExpression": "lookup(__self, \"New Lot Reference 3\") == null"
+      },
+      "dataType": "NUMBER"
+    },
+    "Extinction coefficient": {
+      "id": "61b7cecb-7814-4faf-b554-145962bdc7f6",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "New storage conditions": {
+      "id": "74cd15b5-76fc-40f6-90ca-0e853fb12023",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Incubated (Approx. 37°C)",
+          "Ambient (Approx. 20°C)",
+          "Refrigerated (Approx. 4°C)",
+          "Frozen (Approx. -20°C)",
+          "Frozen (Approx. -30°C)",
+          "Ultra-frozen (Approx. -70°C)",
+          "Ultra-frozen (Approx. -80°C)",
+          "Liquid Nitrogen (LN2) (Approx. -180°C)",
+          "Other"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Send record to request": {
+      "id": "c8d3a1c7-6898-4f05-b51f-92335f8cde50",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "45213d1e-e4e6-4637-ab6d-3d5026972fef",
+          "version": "1"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Send to request"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Add record to inventory": {
+      "id": "eb831c69-4661-45d1-83a2-ddaa3a440943",
+      "type": "SCRIPT",
+      "value": [
+        {
+          "id": "e93035e7-cf8b-4eb9-9f14-face7d315a2a",
+          "placeholderValue": "activeVersion"
+        }
+      ],
+      "config": {
+        "buttonProps": {
+          "icon": "play",
+          "label": "Create record"
+        }
+      },
+      "dataType": "SCRIPT"
+    },
+    "Analytical concentration (mg/mL)": {
+      "id": "211439f5-f726-4e29-b65f-5810827f96c3",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Protocol / default other storage conditions": {
+      "id": "45ce2a05-942f-4bd9-bb6d-388fe782efad",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Protocol / default sample aliquot volume (mL)": {
+      "id": "3d6b83e2-559f-4222-ba94-b4e30893464e",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "8b0cd044-958d-4dca-8977-9d2d470d21bc"
+    }
+  },
+  "content": {
+    "type": "NONE"
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "@77e1d3f3-9366-4713-a25f-3678c52b334b"
+  }
+}

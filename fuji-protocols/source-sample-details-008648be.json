@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "008648be-88af-487f-8dc6-9ccb93af416d",
+  "title": "Source sample details",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "08b0a83b-730a-4016-aab6-19b2ea51d57f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Item name": {
+      "id": "6a1fb3cd-6a8a-43c4-ac8d-84de988f3bfc",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Sample ID\") , 'Name')"
+      },
+      "dataType": null
+    },
+    "Sample ID": {
+      "id": "728aaca4-586d-4a53-a94d-9dcc0d1c2211",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "displayMode": "pills",
+        "searchConfig": {
+          "filters": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Sample"
+                    ],
+                    "filter": "type",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "INSTANCE"
+                    ],
+                    "filter": "kind",
+                    "operator": "in"
+                  }
+                ]
+              },
+              {
+                "or": [
+                  {
+                    "value": [
+                      "Record"
+                    ],
+                    "filter": "field",
+                    "operator": "in"
+                  }
+                ]
+              }
+            ]
+          },
+          "searchType": "LIVE",
+          "qualifiedColumns": [
+            {
+              "name": "Record",
+              "config": "Record"
+            }
+          ]
+        },
+        "allowMultiple": false,
+        "allowEntitiesFrom": "PLATFORM"
+      },
+      "dataType": "ENTITY"
+    },
+    "New sample name": {
+      "id": "9b8bc276-bf75-490a-827f-25d6a0c287b9",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Stock sample name": {
+      "id": "bede43f3-64a2-40fc-98d1-37088520fd58",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Sample ID\") , 'Record name')"
+      },
+      "dataType": null
+    },
+    "Available quantity": {
+      "id": "7f0b3a49-565c-432f-a2d5-783fbb4e55b4",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "concat( string( lookup( lookup(__self, \"Sample ID\") , 'Remaining quantity: Amount')), lookup( lookup(__self, \"Sample ID\")  , 'Remaining quantity: Unit'))"
+      },
+      "dataType": null
+    },
+    "New Lot Reference 1": {
+      "id": "c366d38e-3007-480e-b21c-9537493f549d",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"New Lot Reference 1\") == null"
+      },
+      "dataType": "STRING"
+    },
+    "New Lot Reference 2": {
+      "id": "978502d5-1981-4a5b-9add-3ca74f47049e",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"New Lot Reference 2\") == null"
+      },
+      "dataType": "STRING"
+    },
+    "New Lot Reference 3": {
+      "id": "cbae755c-be25-4b70-bb95-f3bc1b9219b1",
+      "type": "STRING",
+      "value": null,
+      "config": {
+        "outOfSpecExpression": "lookup(__self, \"New Lot Reference 3\") == null"
+      },
+      "dataType": "STRING"
+    },
+    "Concentration (mg/mL)": {
+      "id": "e565a6e6-150e-4837-88d5-d10a865a8691",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    },
+    "Stock sample location": {
+      "id": "05e0720a-392a-4cf0-a0a3-e718a8ac7f1a",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Sample ID\") , 'Location')"
+      },
+      "dataType": null
+    },
+    "Extinction coefficient": {
+      "id": "e5980ff6-08c4-4840-9cce-ccd31bb61aab",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "lookup( lookup(__self, \"Sample ID\") , 'Extinction coefficient')"
+      },
+      "dataType": null
+    },
+    "Available Quantity (mL)": {
+      "id": "732536f6-cbab-4014-ab1a-ea94cd65c3f7",
+      "type": "NUMBER",
+      "value": null,
+      "config": {
+        "format": "0.X"
+      },
+      "dataType": "NUMBER"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "2fe7e717-e0e8-4b3c-9108-e4015fe34782"
+    }
+  },
+  "content": {
+    "type": "NONE"
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "Source Sample @728aaca4-586d-4a53-a94d-9dcc0d1c2211 @TEMPLATE_INDEX "
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "2fe7e717-e0e8-4b3c-9108-e4015fe34782",
+  "title": "Source info",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Comments": {
+      "id": "e68e3aab-ee24-4306-a1d1-e491f6d62b7c",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "New sample name": {
+      "id": "6f14ff22-3c13-410e-8f4c-2b8ca90adc23",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "New Lot Reference 1": {
+      "id": "2378172b-42c3-47fc-a48c-3eb868e7af1e",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "New Lot Reference 2": {
+      "id": "b71ca0fd-3e43-440d-82c9-ac0248327b62",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "New Lot Reference 3": {
+      "id": "197a0267-0c8c-4735-ae50-93c22087570f",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "TYPE",
+  "icon": "tag",
+  "contentType": "NONE",
+  "instanceConfig": {
+    "strictMode": false,
+    "defaultTemplate": {
+      "id": "008648be-88af-487f-8dc6-9ccb93af416d",
+      "placeholderValue": "activeVersion"
+    },
+    "hideVersionNumber": false,
+    "createFromTemplate": null,
+    "enforceUniqueTitles": false,
+    "canChooseActiveVersion": true
+  }
+}
