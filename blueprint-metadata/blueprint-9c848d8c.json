@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "9c848d8c-1242-436f-9983-47611d61b159",
+  "title": "_blueprint",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {
+    "template": {
+      "id": "64c2daf3-5aae-4a44-a773-98adac56fa40",
+      "version": "1.1"
+    }
+  },
+  "fields": {
+    "name": {
+      "id": "5c300b39-cb81-428c-b4d4-96691dbe14c2",
+      "type": "STRING",
+      "value": "Test ",
+      "config": {},
+      "dataType": "STRING"
+    },
+    "description": {
+      "id": "7c4de556-8117-4aa7-8b71-25aa8384d8b3",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    }
+  },
+  "kind": "INSTANCE",
+  "type": {
+    "ref": {
+      "id": "132a1bd0-e066-44cb-af71-1ed03e8caa8e"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "020e2ba3-22a6-4656-a078-def1e34aac1d",
+          "type": "p",
+          "children": [
+            {
+              "bold": true,
+              "text": "ONLY ONE INSTANCE:"
+            },
+            {
+              "text": " used for overall blueprint (named _blueprint)"
+            }
+          ]
+        },
+        {
+          "id": "270e9b4b-ea82-48e7-8591-1656cdf60487",
+          "type": "field",
+          "fieldId": "5c300b39-cb81-428c-b4d4-96691dbe14c2",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b9260e40-b487-414f-a1d3-d1bd86a42bea",
+          "type": "field",
+          "fieldId": "7c4de556-8117-4aa7-8b71-25aa8384d8b3",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2fbef596-3757-423b-a016-e3db7397f793",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

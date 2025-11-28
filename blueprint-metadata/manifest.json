@@ -1,0 +1,90 @@
+{
+  "id": "blueprint-metadata",
+  "version": 1,
+  "name": "Blueprint Metadata",
+  "description": "",
+  "entities": [
+    {
+      "id": "feed0093-dba7-4fa8-8c69-eebd34306456",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "_add-ons",
+      "icon": "array",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "132a1bd0-e066-44cb-af71-1ed03e8caa8e",
+      "kind": "TYPE",
+      "contentType": "PAGE_CONTENT",
+      "title": "_metadata",
+      "icon": "array",
+      "sourceVersion": "1.2"
+    },
+    {
+      "id": "64c2daf3-5aae-4a44-a773-98adac56fa40",
+      "kind": "TEMPLATE",
+      "contentType": "PAGE_CONTENT",
+      "title": "_blueprint",
+      "icon": "array",
+      "sourceVersion": "1.1"
+    },
+    {
+      "id": "9c848d8c-1242-436f-9983-47611d61b159",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "_blueprint",
+      "icon": "array",
+      "sourceVersion": "1"
+    },
+    {
+      "id": "13808ba4-491f-483d-b76c-5269259accdd",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "_gxp",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "4a3f9c8d-3914-4b9a-8383-cfd255bbeb21"
+      ]
+    },
+    {
+      "id": "9993697a-d7e5-4fee-b4c9-0482f3a4b84d",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "_programming",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "509f91c4-a0d8-4d26-b62a-3dcabe625429"
+      ]
+    },
+    {
+      "id": "c2fdf3d2-b156-4c62-83e8-3698207bb349",
+      "kind": "INSTANCE",
+      "contentType": "PAGE_CONTENT",
+      "title": "_science",
+      "icon": "array",
+      "sourceVersion": "1",
+      "tagIds": [
+        "fb7a1c24-86c0-48d8-af44-a149d8070dcc"
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": "4a3f9c8d-3914-4b9a-8383-cfd255bbeb21",
+      "text": "_gxp",
+      "hexCode": "#412ed8"
+    },
+    {
+      "id": "509f91c4-a0d8-4d26-b62a-3dcabe625429",
+      "text": "_programming",
+      "hexCode": "#6cbfbd"
+    },
+    {
+      "id": "fb7a1c24-86c0-48d8-af44-a149d8070dcc",
+      "text": "_science",
+      "hexCode": "#af9b75"
+    }
+  ]
+}
