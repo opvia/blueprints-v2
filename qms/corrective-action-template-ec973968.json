@@ -1,0 +1,256 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "ec973968-d66a-433e-a6a1-c72333641081",
+  "title": "Corrective Action Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Status": {
+      "id": "c2e89ca9-f706-481b-ba7f-139596f96096",
+      "type": "SELECT",
+      "value": [
+        "Open"
+      ],
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Open",
+          "Closed"
+        ]
+      },
+      "dataType": "SELECT"
+    },
+    "Due Date": {
+      "id": "70b8e286-7505-4228-9bad-6facc971d03e",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Attachments": {
+      "id": "e7084d16-dbc9-4d05-b960-2ccb9b7f10fb",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Date Completed": {
+      "id": "7debb246-642d-420d-a5cb-7e65d4611f09",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    },
+    "Responsible person": {
+      "id": "9d30330b-7e72-4332-a2ec-fa588a6ff816",
+      "type": "USER",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ROLE"
+    },
+    "Implementation plan": {
+      "id": "50d8cdce-e3bd-4428-b96a-235dcb7061a4",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Corrective Action Plan": {
+      "id": "380201b0-f6cb-4a28-9548-1edeaa513492",
+      "type": "STRING",
+      "value": null,
+      "config": {},
+      "dataType": "STRING"
+    },
+    "Evidence of Completion": {
+      "id": "a9196438-e50b-41ca-9886-e45178b5fe29",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Evidence of Effectiveness": {
+      "id": "1b50f483-ac00-4e70-ac36-55a4a2bf5f26",
+      "type": "REFERENCE",
+      "value": null,
+      "config": {
+        "allowMultiple": false
+      },
+      "dataType": "ENTITY"
+    },
+    "Has Action Been Effective?": {
+      "id": "5211229e-1cd3-4e44-aaea-82d8a655e5c6",
+      "type": "SELECT",
+      "value": null,
+      "config": {
+        "allowMultiple": false,
+        "selectOptions": [
+          "Yes",
+          "No"
+        ]
+      },
+      "dataType": "SELECT"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "fc8dd0e8-a94d-4e8a-b2e3-f19b7730c655"
+    }
+  },
+  "content": {
+    "type": "PAGE_CONTENT",
+    "value": {
+      "pageContent": [
+        {
+          "id": "a7c17cfb-43a2-49ec-8f2e-befd067af913",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "05e65338-31ac-48bb-9731-7bc56d4dd11c",
+          "type": "field",
+          "fieldId": "380201b0-f6cb-4a28-9548-1edeaa513492",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "84921de9-d264-459a-acbd-fc0d3da07a81",
+          "type": "field",
+          "fieldId": "50d8cdce-e3bd-4428-b96a-235dcb7061a4",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d7406154-e46c-4f06-ad94-29ee2ba6e227",
+          "type": "field",
+          "fieldId": "9d30330b-7e72-4332-a2ec-fa588a6ff816",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d73c4813-4ecd-4435-8667-d2ad552c2531",
+          "type": "field",
+          "fieldId": "70b8e286-7505-4228-9bad-6facc971d03e",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "21c31e02-5089-41fe-a807-17f1bc51f225",
+          "type": "field",
+          "fieldId": "e7084d16-dbc9-4d05-b960-2ccb9b7f10fb",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "0a9ab01d-10ab-4d1b-9ea0-c1c10be76322",
+          "type": "field",
+          "fieldId": "c2e89ca9-f706-481b-ba7f-139596f96096",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "21a17ef3-6207-426e-82e4-7cd9f954e3f0",
+          "type": "field",
+          "fieldId": "7debb246-642d-420d-a5cb-7e65d4611f09",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "95345300-9bde-4e2c-b94b-f0ad9d8e4037",
+          "type": "field",
+          "fieldId": "a9196438-e50b-41ca-9886-e45178b5fe29",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "627ac964-2fb6-45b6-a408-8dadd947bc83",
+          "type": "field",
+          "fieldId": "5211229e-1cd3-4e44-aaea-82d8a655e5c6",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2b42c0cc-8720-4362-9473-ddd38ddd2b48",
+          "type": "field",
+          "fieldId": "1b50f483-ac00-4e70-ac36-55a4a2bf5f26",
+          "children": [
+            {
+              "text": ""
+            }
+          ],
+          "entityPreview": {
+            "isPreview": false
+          }
+        },
+        {
+          "id": "4c28eb1e-126b-495e-91ff-ed2b1f7f90ec",
+          "type": "p",
+          "children": [
+            {
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false,
+    "computedTitle": "CA-@TEMPLATE_INDEX - @SUBMITTED_FROM "
+  }
+}

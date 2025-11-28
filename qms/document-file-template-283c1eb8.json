@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "283c1eb8-1d5b-4834-beea-aa49a7fd626b",
+  "title": "Document File Template",
+  "status": "EDITABLE",
+  "version": null,
+  "previousVersion": null,
+  "metadata": {
+    "index": "0",
+    "createdAt": "1970-01-01T00:00:00.000Z",
+    "lastUpdatedAt": "1970-01-01T00:00:00.000Z",
+    "createdByRoleId": "44444444-4444-4444-8888-444444444444",
+    "lastUpdatedByRoleId": "44444444-4444-4444-8888-444444444444",
+    "editors": [],
+    "typeIndex": "0"
+  },
+  "sourceInfo": {},
+  "fields": {
+    "Review Date": {
+      "id": "c5de6ec1-895a-43f7-960d-765179e23005",
+      "type": "FORMULA",
+      "value": null,
+      "config": {
+        "formulaExpression": "dateAdd( lookup(__self, \"Effective Date\") , 3, \"years\")"
+      },
+      "dataType": null
+    },
+    "Effective Date": {
+      "id": "de7250fb-f230-49ce-96da-82bca3b58258",
+      "type": "DATE",
+      "value": null,
+      "config": {},
+      "dataType": "DATE"
+    }
+  },
+  "kind": "TEMPLATE",
+  "type": {
+    "ref": {
+      "id": "a7140921-ee28-442d-b8ae-dc2d7ac79698"
+    }
+  },
+  "content": {
+    "type": "FILE",
+    "value": {
+      "fileId": null
+    }
+  },
+  "instanceConfig": {
+    "strictMode": false
+  }
+}
